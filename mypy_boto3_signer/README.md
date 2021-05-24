@@ -1,9 +1,9 @@
-# Type annotations for boto3 Signer module
+# Type annotations for boto3 signer module
 
-> [Index](..) > Signer
+> [Index](..) > signer
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/signer.html#Signer)
+[signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
@@ -11,8 +11,8 @@ type annotations stubs module
 pip install mypy-boto3-signer
 ```
 
-- [Type annotations for boto3 Signer module](#type-annotations-for-boto3-signer-module)
-  - [SignerClient](#signerclient)
+- [Type annotations for boto3 signer module](#type-annotations-for-boto3-signer-module)
+  - [signerClient](#signerclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
@@ -20,14 +20,14 @@ pip install mypy-boto3-signer
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
-## SignerClient
+## signerClient
 
-Type annotations for `boto3.client("signer")` as [SignerClient](./client.md)
+Type annotations for `boto3.client("signer")` as [signerClient](./client.md)
 
 Can be used directly:
 
 ```python
-from mypy_boto3_signer.client import SignerClient
+from mypy_boto3_signer.client import signerClient
 ```
 
 ### Methods
@@ -56,7 +56,7 @@ from mypy_boto3_signer.client import SignerClient
 
 ### Exceptions
 
-SignerClient [exceptions](./client.md#exceptions)
+signerClient [exceptions](./client.md#exceptions)
 
 - AccessDeniedException
 - BadRequestException

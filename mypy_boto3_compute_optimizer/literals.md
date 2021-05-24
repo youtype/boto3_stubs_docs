@@ -3,7 +3,7 @@
 > [Index](..) > [ComputeOptimizer](.) > Literals
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -19,6 +19,7 @@ type annotations stubs module
   - [FilterNameType](#filternametype)
   - [FindingReasonCodeType](#findingreasoncodetype)
   - [FindingType](#findingtype)
+  - [InstanceRecommendationFindingReasonCodeType](#instancerecommendationfindingreasoncodetype)
   - [JobFilterNameType](#jobfilternametype)
   - [JobStatusType](#jobstatustype)
   - [LambdaFunctionMemoryMetricNameType](#lambdafunctionmemorymetricnametype)
@@ -30,6 +31,7 @@ type annotations stubs module
   - [LambdaFunctionRecommendationFindingType](#lambdafunctionrecommendationfindingtype)
   - [MetricNameType](#metricnametype)
   - [MetricStatisticType](#metricstatistictype)
+  - [PlatformDifferenceType](#platformdifferencetype)
   - [RecommendationSourceTypeType](#recommendationsourcetypetype)
   - [ResourceTypeType](#resourcetypetype)
   - [StatusType](#statustype)
@@ -108,11 +110,19 @@ Values:
 - `RecommendationOptionsStorage`
 - `RecommendationOptionsVcpus`
 - `UtilizationMetricsCpuMaximum`
+- `UtilizationMetricsDiskReadBytesPerSecondMaximum`
+- `UtilizationMetricsDiskReadOpsPerSecondMaximum`
+- `UtilizationMetricsDiskWriteBytesPerSecondMaximum`
+- `UtilizationMetricsDiskWriteOpsPerSecondMaximum`
 - `UtilizationMetricsEbsReadBytesPerSecondMaximum`
 - `UtilizationMetricsEbsReadOpsPerSecondMaximum`
 - `UtilizationMetricsEbsWriteBytesPerSecondMaximum`
 - `UtilizationMetricsEbsWriteOpsPerSecondMaximum`
 - `UtilizationMetricsMemoryMaximum`
+- `UtilizationMetricsNetworkInBytesPerSecondMaximum`
+- `UtilizationMetricsNetworkOutBytesPerSecondMaximum`
+- `UtilizationMetricsNetworkPacketsInPerSecondMaximum`
+- `UtilizationMetricsNetworkPacketsOutPerSecondMaximum`
 
 ## ExportableInstanceFieldType
 
@@ -132,6 +142,7 @@ Values:
 - `CurrentStorage`
 - `CurrentVCpus`
 - `Finding`
+- `FindingReasonCodes`
 - `InstanceArn`
 - `InstanceName`
 - `LastRefreshTimestamp`
@@ -141,6 +152,7 @@ Values:
 - `RecommendationOptionsNetwork`
 - `RecommendationOptionsOnDemandPrice`
 - `RecommendationOptionsPerformanceRisk`
+- `RecommendationOptionsPlatformDifferences`
 - `RecommendationOptionsProjectedUtilizationMetricsCpuMaximum`
 - `RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum`
 - `RecommendationOptionsStandardOneYearNoUpfrontReservedPrice`
@@ -150,11 +162,19 @@ Values:
 - `RecommendationsSourcesRecommendationSourceArn`
 - `RecommendationsSourcesRecommendationSourceType`
 - `UtilizationMetricsCpuMaximum`
+- `UtilizationMetricsDiskReadBytesPerSecondMaximum`
+- `UtilizationMetricsDiskReadOpsPerSecondMaximum`
+- `UtilizationMetricsDiskWriteBytesPerSecondMaximum`
+- `UtilizationMetricsDiskWriteOpsPerSecondMaximum`
 - `UtilizationMetricsEbsReadBytesPerSecondMaximum`
 - `UtilizationMetricsEbsReadOpsPerSecondMaximum`
 - `UtilizationMetricsEbsWriteBytesPerSecondMaximum`
 - `UtilizationMetricsEbsWriteOpsPerSecondMaximum`
 - `UtilizationMetricsMemoryMaximum`
+- `UtilizationMetricsNetworkInBytesPerSecondMaximum`
+- `UtilizationMetricsNetworkOutBytesPerSecondMaximum`
+- `UtilizationMetricsNetworkPacketsInPerSecondMaximum`
+- `UtilizationMetricsNetworkPacketsOutPerSecondMaximum`
 
 ## ExportableLambdaFunctionFieldType
 
@@ -239,6 +259,7 @@ from mypy_boto3_compute_optimizer.literals import FilterNameType
 Values:
 
 - `Finding`
+- `FindingReasonCodes`
 - `RecommendationSourceType`
 
 ## FindingReasonCodeType
@@ -264,6 +285,31 @@ Values:
 - `Optimized`
 - `Overprovisioned`
 - `Underprovisioned`
+
+## InstanceRecommendationFindingReasonCodeType
+
+```python
+from mypy_boto3_compute_optimizer.literals import InstanceRecommendationFindingReasonCodeType
+```
+
+Values:
+
+- `CPUOverprovisioned`
+- `CPUUnderprovisioned`
+- `DiskIOPSOverprovisioned`
+- `DiskIOPSUnderprovisioned`
+- `DiskThroughputOverprovisioned`
+- `DiskThroughputUnderprovisioned`
+- `EBSIOPSOverprovisioned`
+- `EBSIOPSUnderprovisioned`
+- `EBSThroughputOverprovisioned`
+- `EBSThroughputUnderprovisioned`
+- `MemoryOverprovisioned`
+- `MemoryUnderprovisioned`
+- `NetworkBandwidthOverprovisioned`
+- `NetworkBandwidthUnderprovisioned`
+- `NetworkPPSOverprovisioned`
+- `NetworkPPSUnderprovisioned`
 
 ## JobFilterNameType
 
@@ -378,11 +424,19 @@ from mypy_boto3_compute_optimizer.literals import MetricNameType
 Values:
 
 - `Cpu`
+- `DISK_READ_BYTES_PER_SECOND`
+- `DISK_READ_OPS_PER_SECOND`
+- `DISK_WRITE_BYTES_PER_SECOND`
+- `DISK_WRITE_OPS_PER_SECOND`
 - `EBS_READ_BYTES_PER_SECOND`
 - `EBS_READ_OPS_PER_SECOND`
 - `EBS_WRITE_BYTES_PER_SECOND`
 - `EBS_WRITE_OPS_PER_SECOND`
 - `Memory`
+- `NETWORK_IN_BYTES_PER_SECOND`
+- `NETWORK_OUT_BYTES_PER_SECOND`
+- `NETWORK_PACKETS_IN_PER_SECOND`
+- `NETWORK_PACKETS_OUT_PER_SECOND`
 
 ## MetricStatisticType
 
@@ -394,6 +448,20 @@ Values:
 
 - `Average`
 - `Maximum`
+
+## PlatformDifferenceType
+
+```python
+from mypy_boto3_compute_optimizer.literals import PlatformDifferenceType
+```
+
+Values:
+
+- `Hypervisor`
+- `InstanceStoreAvailability`
+- `NetworkInterface`
+- `StorageInterface`
+- `VirtualizationType`
 
 ## RecommendationSourceTypeType
 

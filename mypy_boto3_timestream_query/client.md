@@ -3,7 +3,7 @@
 > [Index](..) > [TimestreamQuery](.) > TimestreamQueryClient
 
 Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/timestream-query.html#TimestreamQuery)
+[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
@@ -32,7 +32,7 @@ def get_timestream-query_client() -> TimestreamQueryClient:
 ```
 
 Boto3 documentation:
-[TimestreamQuery.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/timestream-query.html#TimestreamQuery.Client)
+[TimestreamQuery.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
 
 ## Exceptions
 
@@ -64,7 +64,7 @@ Exceptions:
 Type annotations for `boto3.client("timestream-query").can_paginate` method.
 
 Boto3 documentation:
-[TimestreamQuery.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/timestream-query.html#TimestreamQuery.Client.can_paginate)
+[TimestreamQuery.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.can_paginate)
 
 Arguments:
 
@@ -77,7 +77,7 @@ Returns `bool`.
 Type annotations for `boto3.client("timestream-query").cancel_query` method.
 
 Boto3 documentation:
-[TimestreamQuery.Client.cancel_query](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query)
+[TimestreamQuery.Client.cancel_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Type annotations for `boto3.client("timestream-query").describe_endpoints`
 method.
 
 Boto3 documentation:
-[TimestreamQuery.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints)
+[TimestreamQuery.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints)
 
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
@@ -103,7 +103,7 @@ Type annotations for `boto3.client("timestream-query").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[TimestreamQuery.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/timestream-query.html#TimestreamQuery.Client.generate_presigned_url)
+[TimestreamQuery.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.generate_presigned_url)
 
 Arguments:
 
@@ -119,7 +119,7 @@ Returns `str`.
 Type annotations for `boto3.client("timestream-query").query` method.
 
 Boto3 documentation:
-[TimestreamQuery.Client.query](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/timestream-query.html#TimestreamQuery.Client.query)
+[TimestreamQuery.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query)
 
 Arguments:
 

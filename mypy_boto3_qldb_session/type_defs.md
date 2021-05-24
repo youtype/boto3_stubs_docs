@@ -3,7 +3,7 @@
 > [Index](..) > [QLDBSession](.) > Typed dictionaries
 
 Auto-generated documentation for
-[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/qldb-session.html#QLDBSession)
+[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module
 [mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
 

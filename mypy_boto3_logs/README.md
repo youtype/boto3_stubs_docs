@@ -3,7 +3,7 @@
 > [Index](..) > CloudWatchLogs
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
@@ -139,6 +139,7 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
 - [FilterLogEventsPaginatorName](./literals.md#filterlogeventspaginatorname)
 - [OrderByType](./literals.md#orderbytype)
 - [QueryStatusType](./literals.md#querystatustype)
+- [StandardUnitType](./literals.md#standardunittype)
 
 ## Typed dictionaries
 

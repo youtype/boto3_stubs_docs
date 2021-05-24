@@ -1,9 +1,9 @@
-# Type annotations for boto3 SagemakerFeatureStoreRuntime module
+# Type annotations for boto3 SageMakerFeatureStoreRuntime module
 
-> [Index](..) > SagemakerFeatureStoreRuntime
+> [Index](..) > SageMakerFeatureStoreRuntime
 
 Auto-generated documentation for
-[SagemakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker-featurestore-runtime.html#SagemakerFeatureStoreRuntime)
+[SageMakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_featurestore_runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
 
@@ -11,21 +11,21 @@ type annotations stubs module
 pip install mypy-boto3-sagemaker-featurestore-runtime
 ```
 
-- [Type annotations for boto3 SagemakerFeatureStoreRuntime module](#type-annotations-for-boto3-sagemakerfeaturestoreruntime-module)
-  - [SagemakerFeatureStoreRuntimeClient](#sagemakerfeaturestoreruntimeclient)
+- [Type annotations for boto3 SageMakerFeatureStoreRuntime module](#type-annotations-for-boto3-sagemakerfeaturestoreruntime-module)
+  - [SageMakerFeatureStoreRuntimeClient](#sagemakerfeaturestoreruntimeclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Typed dictionaries](#typed-dictionaries)
 
-## SagemakerFeatureStoreRuntimeClient
+## SageMakerFeatureStoreRuntimeClient
 
 Type annotations for `boto3.client("sagemaker-featurestore-runtime")` as
-[SagemakerFeatureStoreRuntimeClient](./client.md)
+[SageMakerFeatureStoreRuntimeClient](./client.md)
 
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.client import SagemakerFeatureStoreRuntimeClient
+from mypy_boto3_sagemaker_featurestore_runtime.client import SageMakerFeatureStoreRuntimeClient
 ```
 
 ### Methods
@@ -38,7 +38,7 @@ from mypy_boto3_sagemaker_featurestore_runtime.client import SagemakerFeatureSto
 
 ### Exceptions
 
-SagemakerFeatureStoreRuntimeClient [exceptions](./client.md#exceptions)
+SageMakerFeatureStoreRuntimeClient [exceptions](./client.md#exceptions)
 
 - AccessForbidden
 - ClientError

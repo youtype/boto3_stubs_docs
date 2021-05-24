@@ -3,7 +3,7 @@
 > [Index](..) > [ECS](.) > ECSClient
 
 Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS)
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
 type annotations stubs module
 [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
@@ -82,7 +82,7 @@ def get_ecs_client() -> ECSClient:
 ```
 
 Boto3 documentation:
-[ECS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client)
+[ECS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
 
 ## Exceptions
 
@@ -131,7 +131,7 @@ Exceptions:
 Type annotations for `boto3.client("ecs").can_paginate` method.
 
 Boto3 documentation:
-[ECS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.can_paginate)
+[ECS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.can_paginate)
 
 Arguments:
 
@@ -144,7 +144,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ecs").create_capacity_provider` method.
 
 Boto3 documentation:
-[ECS.Client.create_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.create_capacity_provider)
+[ECS.Client.create_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns
 Type annotations for `boto3.client("ecs").create_cluster` method.
 
 Boto3 documentation:
-[ECS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.create_cluster)
+[ECS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Returns
 Type annotations for `boto3.client("ecs").create_service` method.
 
 Boto3 documentation:
-[ECS.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.create_service)
+[ECS.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service)
 
 Arguments:
 
@@ -228,7 +228,7 @@ Returns
 Type annotations for `boto3.client("ecs").create_task_set` method.
 
 Boto3 documentation:
-[ECS.Client.create_task_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.create_task_set)
+[ECS.Client.create_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Returns
 Type annotations for `boto3.client("ecs").delete_account_setting` method.
 
 Boto3 documentation:
-[ECS.Client.delete_account_setting](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.delete_account_setting)
+[ECS.Client.delete_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Returns
 Type annotations for `boto3.client("ecs").delete_attributes` method.
 
 Boto3 documentation:
-[ECS.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.delete_attributes)
+[ECS.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes)
 
 Arguments:
 
@@ -289,7 +289,7 @@ Returns
 Type annotations for `boto3.client("ecs").delete_capacity_provider` method.
 
 Boto3 documentation:
-[ECS.Client.delete_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.delete_capacity_provider)
+[ECS.Client.delete_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider)
 
 Arguments:
 
@@ -303,7 +303,7 @@ Returns
 Type annotations for `boto3.client("ecs").delete_cluster` method.
 
 Boto3 documentation:
-[ECS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.delete_cluster)
+[ECS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster)
 
 Arguments:
 
@@ -317,7 +317,7 @@ Returns
 Type annotations for `boto3.client("ecs").delete_service` method.
 
 Boto3 documentation:
-[ECS.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.delete_service)
+[ECS.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Returns
 Type annotations for `boto3.client("ecs").delete_task_set` method.
 
 Boto3 documentation:
-[ECS.Client.delete_task_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.delete_task_set)
+[ECS.Client.delete_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set)
 
 Arguments:
 
@@ -351,7 +351,7 @@ Type annotations for `boto3.client("ecs").deregister_container_instance`
 method.
 
 Boto3 documentation:
-[ECS.Client.deregister_container_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.deregister_container_instance)
+[ECS.Client.deregister_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns
 Type annotations for `boto3.client("ecs").deregister_task_definition` method.
 
 Boto3 documentation:
-[ECS.Client.deregister_task_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.deregister_task_definition)
+[ECS.Client.deregister_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Returns
 Type annotations for `boto3.client("ecs").describe_capacity_providers` method.
 
 Boto3 documentation:
-[ECS.Client.describe_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.describe_capacity_providers)
+[ECS.Client.describe_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Returns
 Type annotations for `boto3.client("ecs").describe_clusters` method.
 
 Boto3 documentation:
-[ECS.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.describe_clusters)
+[ECS.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters)
 
 Arguments:
 
@@ -414,7 +414,7 @@ Returns
 Type annotations for `boto3.client("ecs").describe_container_instances` method.
 
 Boto3 documentation:
-[ECS.Client.describe_container_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.describe_container_instances)
+[ECS.Client.describe_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances)
 
 Arguments:
 
@@ -431,7 +431,7 @@ Returns
 Type annotations for `boto3.client("ecs").describe_services` method.
 
 Boto3 documentation:
-[ECS.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.describe_services)
+[ECS.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Returns
 Type annotations for `boto3.client("ecs").describe_task_definition` method.
 
 Boto3 documentation:
-[ECS.Client.describe_task_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.describe_task_definition)
+[ECS.Client.describe_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Returns
 Type annotations for `boto3.client("ecs").describe_task_sets` method.
 
 Boto3 documentation:
-[ECS.Client.describe_task_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.describe_task_sets)
+[ECS.Client.describe_task_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets)
 
 Arguments:
 
@@ -482,7 +482,7 @@ Returns
 Type annotations for `boto3.client("ecs").describe_tasks` method.
 
 Boto3 documentation:
-[ECS.Client.describe_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.describe_tasks)
+[ECS.Client.describe_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks)
 
 Arguments:
 
@@ -499,7 +499,7 @@ Returns
 Type annotations for `boto3.client("ecs").discover_poll_endpoint` method.
 
 Boto3 documentation:
-[ECS.Client.discover_poll_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.discover_poll_endpoint)
+[ECS.Client.discover_poll_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint)
 
 Arguments:
 
@@ -514,7 +514,7 @@ Returns
 Type annotations for `boto3.client("ecs").execute_command` method.
 
 Boto3 documentation:
-[ECS.Client.execute_command](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.execute_command)
+[ECS.Client.execute_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command)
 
 Arguments:
 
@@ -532,7 +532,7 @@ Returns
 Type annotations for `boto3.client("ecs").generate_presigned_url` method.
 
 Boto3 documentation:
-[ECS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.generate_presigned_url)
+[ECS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -548,7 +548,7 @@ Returns `str`.
 Type annotations for `boto3.client("ecs").list_account_settings` method.
 
 Boto3 documentation:
-[ECS.Client.list_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_account_settings)
+[ECS.Client.list_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings)
 
 Arguments:
 
@@ -567,7 +567,7 @@ Returns
 Type annotations for `boto3.client("ecs").list_attributes` method.
 
 Boto3 documentation:
-[ECS.Client.list_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_attributes)
+[ECS.Client.list_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes)
 
 Arguments:
 
@@ -587,7 +587,7 @@ Returns
 Type annotations for `boto3.client("ecs").list_clusters` method.
 
 Boto3 documentation:
-[ECS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_clusters)
+[ECS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Returns
 Type annotations for `boto3.client("ecs").list_container_instances` method.
 
 Boto3 documentation:
-[ECS.Client.list_container_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_container_instances)
+[ECS.Client.list_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances)
 
 Arguments:
 
@@ -621,7 +621,7 @@ Returns
 Type annotations for `boto3.client("ecs").list_services` method.
 
 Boto3 documentation:
-[ECS.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_services)
+[ECS.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services)
 
 Arguments:
 
@@ -640,7 +640,7 @@ Returns
 Type annotations for `boto3.client("ecs").list_tags_for_resource` method.
 
 Boto3 documentation:
-[ECS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_tags_for_resource)
+[ECS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -655,7 +655,7 @@ Type annotations for `boto3.client("ecs").list_task_definition_families`
 method.
 
 Boto3 documentation:
-[ECS.Client.list_task_definition_families](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_task_definition_families)
+[ECS.Client.list_task_definition_families](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families)
 
 Arguments:
 
@@ -673,7 +673,7 @@ Returns
 Type annotations for `boto3.client("ecs").list_task_definitions` method.
 
 Boto3 documentation:
-[ECS.Client.list_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_task_definitions)
+[ECS.Client.list_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions)
 
 Arguments:
 
@@ -691,7 +691,7 @@ Returns
 Type annotations for `boto3.client("ecs").list_tasks` method.
 
 Boto3 documentation:
-[ECS.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.list_tasks)
+[ECS.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks)
 
 Arguments:
 
@@ -712,7 +712,7 @@ Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
 Type annotations for `boto3.client("ecs").put_account_setting` method.
 
 Boto3 documentation:
-[ECS.Client.put_account_setting](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.put_account_setting)
+[ECS.Client.put_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting)
 
 Arguments:
 
@@ -728,7 +728,7 @@ Returns
 Type annotations for `boto3.client("ecs").put_account_setting_default` method.
 
 Boto3 documentation:
-[ECS.Client.put_account_setting_default](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.put_account_setting_default)
+[ECS.Client.put_account_setting_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default)
 
 Arguments:
 
@@ -743,7 +743,7 @@ Returns
 Type annotations for `boto3.client("ecs").put_attributes` method.
 
 Boto3 documentation:
-[ECS.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.put_attributes)
+[ECS.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes)
 
 Arguments:
 
@@ -760,7 +760,7 @@ Type annotations for `boto3.client("ecs").put_cluster_capacity_providers`
 method.
 
 Boto3 documentation:
-[ECS.Client.put_cluster_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers)
+[ECS.Client.put_cluster_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers)
 
 Arguments:
 
@@ -778,7 +778,7 @@ Returns
 Type annotations for `boto3.client("ecs").register_container_instance` method.
 
 Boto3 documentation:
-[ECS.Client.register_container_instance](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.register_container_instance)
+[ECS.Client.register_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance)
 
 Arguments:
 
@@ -801,7 +801,7 @@ Returns
 Type annotations for `boto3.client("ecs").register_task_definition` method.
 
 Boto3 documentation:
-[ECS.Client.register_task_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.register_task_definition)
+[ECS.Client.register_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition)
 
 Arguments:
 
@@ -837,7 +837,7 @@ Returns
 Type annotations for `boto3.client("ecs").run_task` method.
 
 Boto3 documentation:
-[ECS.Client.run_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.run_task)
+[ECS.Client.run_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task)
 
 Arguments:
 
@@ -870,7 +870,7 @@ Returns [RunTaskResponseTypeDef](./type_defs.md#runtaskresponsetypedef).
 Type annotations for `boto3.client("ecs").start_task` method.
 
 Boto3 documentation:
-[ECS.Client.start_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.start_task)
+[ECS.Client.start_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task)
 
 Arguments:
 
@@ -895,7 +895,7 @@ Returns [StartTaskResponseTypeDef](./type_defs.md#starttaskresponsetypedef).
 Type annotations for `boto3.client("ecs").stop_task` method.
 
 Boto3 documentation:
-[ECS.Client.stop_task](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.stop_task)
+[ECS.Client.stop_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task)
 
 Arguments:
 
@@ -911,7 +911,7 @@ Type annotations for `boto3.client("ecs").submit_attachment_state_changes`
 method.
 
 Boto3 documentation:
-[ECS.Client.submit_attachment_state_changes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes)
+[ECS.Client.submit_attachment_state_changes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes)
 
 Arguments:
 
@@ -929,7 +929,7 @@ Type annotations for `boto3.client("ecs").submit_container_state_change`
 method.
 
 Boto3 documentation:
-[ECS.Client.submit_container_state_change](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.submit_container_state_change)
+[ECS.Client.submit_container_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change)
 
 Arguments:
 
@@ -951,7 +951,7 @@ Returns
 Type annotations for `boto3.client("ecs").submit_task_state_change` method.
 
 Boto3 documentation:
-[ECS.Client.submit_task_state_change](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.submit_task_state_change)
+[ECS.Client.submit_task_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change)
 
 Arguments:
 
@@ -977,7 +977,7 @@ Returns
 Type annotations for `boto3.client("ecs").tag_resource` method.
 
 Boto3 documentation:
-[ECS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.tag_resource)
+[ECS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource)
 
 Arguments:
 
@@ -991,7 +991,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ecs").untag_resource` method.
 
 Boto3 documentation:
-[ECS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.untag_resource)
+[ECS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource)
 
 Arguments:
 
@@ -1005,7 +1005,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ecs").update_capacity_provider` method.
 
 Boto3 documentation:
-[ECS.Client.update_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.update_capacity_provider)
+[ECS.Client.update_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider)
 
 Arguments:
 
@@ -1022,7 +1022,7 @@ Returns
 Type annotations for `boto3.client("ecs").update_cluster` method.
 
 Boto3 documentation:
-[ECS.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.update_cluster)
+[ECS.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster)
 
 Arguments:
 
@@ -1040,7 +1040,7 @@ Returns
 Type annotations for `boto3.client("ecs").update_cluster_settings` method.
 
 Boto3 documentation:
-[ECS.Client.update_cluster_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.update_cluster_settings)
+[ECS.Client.update_cluster_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings)
 
 Arguments:
 
@@ -1057,7 +1057,7 @@ Returns
 Type annotations for `boto3.client("ecs").update_container_agent` method.
 
 Boto3 documentation:
-[ECS.Client.update_container_agent](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.update_container_agent)
+[ECS.Client.update_container_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent)
 
 Arguments:
 
@@ -1073,7 +1073,7 @@ Type annotations for `boto3.client("ecs").update_container_instances_state`
 method.
 
 Boto3 documentation:
-[ECS.Client.update_container_instances_state](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.update_container_instances_state)
+[ECS.Client.update_container_instances_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state)
 
 Arguments:
 
@@ -1091,7 +1091,7 @@ Returns
 Type annotations for `boto3.client("ecs").update_service` method.
 
 Boto3 documentation:
-[ECS.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.update_service)
+[ECS.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)
 
 Arguments:
 
@@ -1123,7 +1123,7 @@ Type annotations for `boto3.client("ecs").update_service_primary_task_set`
 method.
 
 Boto3 documentation:
-[ECS.Client.update_service_primary_task_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.update_service_primary_task_set)
+[ECS.Client.update_service_primary_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set)
 
 Arguments:
 
@@ -1139,7 +1139,7 @@ Returns
 Type annotations for `boto3.client("ecs").update_task_set` method.
 
 Boto3 documentation:
-[ECS.Client.update_task_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Client.update_task_set)
+[ECS.Client.update_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set)
 
 Arguments:
 

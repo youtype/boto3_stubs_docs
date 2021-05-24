@@ -3,7 +3,7 @@
 > [Index](..) > [Rekognition](.) > RekognitionClient
 
 Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition)
+[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
 [mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
@@ -81,7 +81,7 @@ def get_rekognition_client() -> RekognitionClient:
 ```
 
 Boto3 documentation:
-[Rekognition.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client)
+[Rekognition.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
 
 ## Exceptions
 
@@ -124,7 +124,7 @@ Exceptions:
 Type annotations for `boto3.client("rekognition").can_paginate` method.
 
 Boto3 documentation:
-[Rekognition.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.can_paginate)
+[Rekognition.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.can_paginate)
 
 Arguments:
 
@@ -137,7 +137,7 @@ Returns `bool`.
 Type annotations for `boto3.client("rekognition").compare_faces` method.
 
 Boto3 documentation:
-[Rekognition.Client.compare_faces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.compare_faces)
+[Rekognition.Client.compare_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Returns
 Type annotations for `boto3.client("rekognition").create_collection` method.
 
 Boto3 documentation:
-[Rekognition.Client.create_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.create_collection)
+[Rekognition.Client.create_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Returns
 Type annotations for `boto3.client("rekognition").create_project` method.
 
 Boto3 documentation:
-[Rekognition.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.create_project)
+[Rekognition.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Type annotations for `boto3.client("rekognition").create_project_version`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.create_project_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.create_project_version)
+[Rekognition.Client.create_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version)
 
 Arguments:
 
@@ -208,7 +208,7 @@ Type annotations for `boto3.client("rekognition").create_stream_processor`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.create_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.create_stream_processor)
+[Rekognition.Client.create_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Returns
 Type annotations for `boto3.client("rekognition").delete_collection` method.
 
 Boto3 documentation:
-[Rekognition.Client.delete_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.delete_collection)
+[Rekognition.Client.delete_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection)
 
 Arguments:
 
@@ -247,7 +247,7 @@ Returns
 Type annotations for `boto3.client("rekognition").delete_faces` method.
 
 Boto3 documentation:
-[Rekognition.Client.delete_faces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.delete_faces)
+[Rekognition.Client.delete_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces)
 
 Arguments:
 
@@ -262,7 +262,7 @@ Returns
 Type annotations for `boto3.client("rekognition").delete_project` method.
 
 Boto3 documentation:
-[Rekognition.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.delete_project)
+[Rekognition.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Type annotations for `boto3.client("rekognition").delete_project_version`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.delete_project_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.delete_project_version)
+[Rekognition.Client.delete_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Type annotations for `boto3.client("rekognition").delete_stream_processor`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.delete_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor)
+[Rekognition.Client.delete_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor)
 
 Arguments:
 
@@ -305,7 +305,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("rekognition").describe_collection` method.
 
 Boto3 documentation:
-[Rekognition.Client.describe_collection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.describe_collection)
+[Rekognition.Client.describe_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection)
 
 Arguments:
 
@@ -320,7 +320,7 @@ Type annotations for `boto3.client("rekognition").describe_project_versions`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.describe_project_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.describe_project_versions)
+[Rekognition.Client.describe_project_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns
 Type annotations for `boto3.client("rekognition").describe_projects` method.
 
 Boto3 documentation:
-[Rekognition.Client.describe_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.describe_projects)
+[Rekognition.Client.describe_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects)
 
 Arguments:
 
@@ -353,7 +353,7 @@ Type annotations for `boto3.client("rekognition").describe_stream_processor`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.describe_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor)
+[Rekognition.Client.describe_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns
 Type annotations for `boto3.client("rekognition").detect_custom_labels` method.
 
 Boto3 documentation:
-[Rekognition.Client.detect_custom_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels)
+[Rekognition.Client.detect_custom_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Returns
 Type annotations for `boto3.client("rekognition").detect_faces` method.
 
 Boto3 documentation:
-[Rekognition.Client.detect_faces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.detect_faces)
+[Rekognition.Client.detect_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces)
 
 Arguments:
 
@@ -399,7 +399,7 @@ Returns
 Type annotations for `boto3.client("rekognition").detect_labels` method.
 
 Boto3 documentation:
-[Rekognition.Client.detect_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.detect_labels)
+[Rekognition.Client.detect_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Type annotations for `boto3.client("rekognition").detect_moderation_labels`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.detect_moderation_labels](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels)
+[Rekognition.Client.detect_moderation_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Type annotations for `boto3.client("rekognition").detect_protective_equipment`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.detect_protective_equipment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment)
+[Rekognition.Client.detect_protective_equipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment)
 
 Arguments:
 
@@ -450,7 +450,7 @@ Returns
 Type annotations for `boto3.client("rekognition").detect_text` method.
 
 Boto3 documentation:
-[Rekognition.Client.detect_text](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.detect_text)
+[Rekognition.Client.detect_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text)
 
 Arguments:
 
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("rekognition").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.generate_presigned_url)
+[Rekognition.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.generate_presigned_url)
 
 Arguments:
 
@@ -482,7 +482,7 @@ Returns `str`.
 Type annotations for `boto3.client("rekognition").get_celebrity_info` method.
 
 Boto3 documentation:
-[Rekognition.Client.get_celebrity_info](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info)
+[Rekognition.Client.get_celebrity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info)
 
 Arguments:
 
@@ -497,7 +497,7 @@ Type annotations for `boto3.client("rekognition").get_celebrity_recognition`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.get_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition)
+[Rekognition.Client.get_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition)
 
 Arguments:
 
@@ -516,7 +516,7 @@ Type annotations for `boto3.client("rekognition").get_content_moderation`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.get_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_content_moderation)
+[Rekognition.Client.get_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Returns
 Type annotations for `boto3.client("rekognition").get_face_detection` method.
 
 Boto3 documentation:
-[Rekognition.Client.get_face_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_face_detection)
+[Rekognition.Client.get_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Returns
 Type annotations for `boto3.client("rekognition").get_face_search` method.
 
 Boto3 documentation:
-[Rekognition.Client.get_face_search](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_face_search)
+[Rekognition.Client.get_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search)
 
 Arguments:
 
@@ -567,7 +567,7 @@ Returns
 Type annotations for `boto3.client("rekognition").get_label_detection` method.
 
 Boto3 documentation:
-[Rekognition.Client.get_label_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_label_detection)
+[Rekognition.Client.get_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection)
 
 Arguments:
 
@@ -584,7 +584,7 @@ Returns
 Type annotations for `boto3.client("rekognition").get_person_tracking` method.
 
 Boto3 documentation:
-[Rekognition.Client.get_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_person_tracking)
+[Rekognition.Client.get_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking)
 
 Arguments:
 
@@ -602,7 +602,7 @@ Type annotations for `boto3.client("rekognition").get_segment_detection`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.get_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_segment_detection)
+[Rekognition.Client.get_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection)
 
 Arguments:
 
@@ -618,7 +618,7 @@ Returns
 Type annotations for `boto3.client("rekognition").get_text_detection` method.
 
 Boto3 documentation:
-[Rekognition.Client.get_text_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.get_text_detection)
+[Rekognition.Client.get_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection)
 
 Arguments:
 
@@ -634,7 +634,7 @@ Returns
 Type annotations for `boto3.client("rekognition").index_faces` method.
 
 Boto3 documentation:
-[Rekognition.Client.index_faces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.index_faces)
+[Rekognition.Client.index_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces)
 
 Arguments:
 
@@ -652,7 +652,7 @@ Returns [IndexFacesResponseTypeDef](./type_defs.md#indexfacesresponsetypedef).
 Type annotations for `boto3.client("rekognition").list_collections` method.
 
 Boto3 documentation:
-[Rekognition.Client.list_collections](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.list_collections)
+[Rekognition.Client.list_collections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections)
 
 Arguments:
 
@@ -667,7 +667,7 @@ Returns
 Type annotations for `boto3.client("rekognition").list_faces` method.
 
 Boto3 documentation:
-[Rekognition.Client.list_faces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.list_faces)
+[Rekognition.Client.list_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces)
 
 Arguments:
 
@@ -683,7 +683,7 @@ Type annotations for `boto3.client("rekognition").list_stream_processors`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.list_stream_processors](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.list_stream_processors)
+[Rekognition.Client.list_stream_processors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors)
 
 Arguments:
 
@@ -699,7 +699,7 @@ Type annotations for `boto3.client("rekognition").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource)
+[Rekognition.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -714,7 +714,7 @@ Type annotations for `boto3.client("rekognition").recognize_celebrities`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.recognize_celebrities](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities)
+[Rekognition.Client.recognize_celebrities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities)
 
 Arguments:
 
@@ -728,7 +728,7 @@ Returns
 Type annotations for `boto3.client("rekognition").search_faces` method.
 
 Boto3 documentation:
-[Rekognition.Client.search_faces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.search_faces)
+[Rekognition.Client.search_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces)
 
 Arguments:
 
@@ -746,7 +746,7 @@ Type annotations for `boto3.client("rekognition").search_faces_by_image`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.search_faces_by_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image)
+[Rekognition.Client.search_faces_by_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image)
 
 Arguments:
 
@@ -765,7 +765,7 @@ Type annotations for `boto3.client("rekognition").start_celebrity_recognition`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.start_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition)
+[Rekognition.Client.start_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition)
 
 Arguments:
 
@@ -784,7 +784,7 @@ Type annotations for `boto3.client("rekognition").start_content_moderation`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.start_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_content_moderation)
+[Rekognition.Client.start_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation)
 
 Arguments:
 
@@ -803,7 +803,7 @@ Returns
 Type annotations for `boto3.client("rekognition").start_face_detection` method.
 
 Boto3 documentation:
-[Rekognition.Client.start_face_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_face_detection)
+[Rekognition.Client.start_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection)
 
 Arguments:
 
@@ -822,7 +822,7 @@ Returns
 Type annotations for `boto3.client("rekognition").start_face_search` method.
 
 Boto3 documentation:
-[Rekognition.Client.start_face_search](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_face_search)
+[Rekognition.Client.start_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search)
 
 Arguments:
 
@@ -843,7 +843,7 @@ Type annotations for `boto3.client("rekognition").start_label_detection`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.start_label_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_label_detection)
+[Rekognition.Client.start_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection)
 
 Arguments:
 
@@ -863,7 +863,7 @@ Type annotations for `boto3.client("rekognition").start_person_tracking`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.start_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_person_tracking)
+[Rekognition.Client.start_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking)
 
 Arguments:
 
@@ -882,7 +882,7 @@ Type annotations for `boto3.client("rekognition").start_project_version`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.start_project_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_project_version)
+[Rekognition.Client.start_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version)
 
 Arguments:
 
@@ -898,7 +898,7 @@ Type annotations for `boto3.client("rekognition").start_segment_detection`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.start_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_segment_detection)
+[Rekognition.Client.start_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection)
 
 Arguments:
 
@@ -921,7 +921,7 @@ Type annotations for `boto3.client("rekognition").start_stream_processor`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.start_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_stream_processor)
+[Rekognition.Client.start_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor)
 
 Arguments:
 
@@ -934,7 +934,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("rekognition").start_text_detection` method.
 
 Boto3 documentation:
-[Rekognition.Client.start_text_detection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.start_text_detection)
+[Rekognition.Client.start_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection)
 
 Arguments:
 
@@ -954,7 +954,7 @@ Returns
 Type annotations for `boto3.client("rekognition").stop_project_version` method.
 
 Boto3 documentation:
-[Rekognition.Client.stop_project_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.stop_project_version)
+[Rekognition.Client.stop_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version)
 
 Arguments:
 
@@ -969,7 +969,7 @@ Type annotations for `boto3.client("rekognition").stop_stream_processor`
 method.
 
 Boto3 documentation:
-[Rekognition.Client.stop_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor)
+[Rekognition.Client.stop_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor)
 
 Arguments:
 
@@ -982,7 +982,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("rekognition").tag_resource` method.
 
 Boto3 documentation:
-[Rekognition.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.tag_resource)
+[Rekognition.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource)
 
 Arguments:
 
@@ -996,7 +996,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("rekognition").untag_resource` method.
 
 Boto3 documentation:
-[Rekognition.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/rekognition.html#Rekognition.Client.untag_resource)
+[Rekognition.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource)
 
 Arguments:
 

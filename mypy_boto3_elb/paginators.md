@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticLoadBalancing](.) > Paginators
 
 Auto-generated documentation for
-[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elb.html#ElasticLoadBalancing)
+[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module
 [mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
 
@@ -26,7 +26,7 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancing.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeAccountLimits)
+[ElasticLoadBalancing.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeAccountLimits)
 
 Arguments for `DescribeAccountLimitsPaginator.paginate` method:
 
@@ -51,7 +51,7 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancing.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeLoadBalancers)
+[ElasticLoadBalancing.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeLoadBalancers)
 
 Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 

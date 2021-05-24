@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDBStreams](.) > Literals
 
 Auto-generated documentation for
-[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams)
+[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
 [mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CostExplorer](.) > Literals
 
 Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer)
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module
 [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
@@ -18,6 +18,7 @@ type annotations stubs module
   - [CostCategoryStatusComponentType](#costcategorystatuscomponenttype)
   - [CostCategoryStatusType](#costcategorystatustype)
   - [DimensionType](#dimensiontype)
+  - [FindingReasonCodeType](#findingreasoncodetype)
   - [GranularityType](#granularitytype)
   - [GroupDefinitionTypeType](#groupdefinitiontypetype)
   - [LookbackPeriodInDaysType](#lookbackperiodindaystype)
@@ -28,6 +29,7 @@ type annotations stubs module
   - [NumericOperatorType](#numericoperatortype)
   - [OfferingClassType](#offeringclasstype)
   - [PaymentOptionType](#paymentoptiontype)
+  - [PlatformDifferenceType](#platformdifferencetype)
   - [RecommendationTargetType](#recommendationtargettype)
   - [RightsizingTypeType](#rightsizingtypetype)
   - [SavingsPlansDataTypeType](#savingsplansdatatypetype)
@@ -177,6 +179,31 @@ Values:
 - `USAGE_TYPE`
 - `USAGE_TYPE_GROUP`
 
+## FindingReasonCodeType
+
+```python
+from mypy_boto3_ce.literals import FindingReasonCodeType
+```
+
+Values:
+
+- `CPU_OVER_PROVISIONED`
+- `CPU_UNDER_PROVISIONED`
+- `DISK_IOPS_OVER_PROVISIONED`
+- `DISK_IOPS_UNDER_PROVISIONED`
+- `DISK_THROUGHPUT_OVER_PROVISIONED`
+- `DISK_THROUGHPUT_UNDER_PROVISIONED`
+- `EBS_IOPS_OVER_PROVISIONED`
+- `EBS_IOPS_UNDER_PROVISIONED`
+- `EBS_THROUGHPUT_OVER_PROVISIONED`
+- `EBS_THROUGHPUT_UNDER_PROVISIONED`
+- `MEMORY_OVER_PROVISIONED`
+- `MEMORY_UNDER_PROVISIONED`
+- `NETWORK_BANDWIDTH_OVER_PROVISIONED`
+- `NETWORK_BANDWIDTH_UNDER_PROVISIONED`
+- `NETWORK_PPS_OVER_PROVISIONED`
+- `NETWORK_PPS_UNDER_PROVISIONED`
+
 ## GranularityType
 
 ```python
@@ -306,6 +333,20 @@ Values:
 - `MEDIUM_UTILIZATION`
 - `NO_UPFRONT`
 - `PARTIAL_UPFRONT`
+
+## PlatformDifferenceType
+
+```python
+from mypy_boto3_ce.literals import PlatformDifferenceType
+```
+
+Values:
+
+- `HYPERVISOR`
+- `INSTANCE_STORE_AVAILABILITY`
+- `NETWORK_INTERFACE`
+- `STORAGE_INTERFACE`
+- `VIRTUALIZATION_TYPE`
 
 ## RecommendationTargetType
 

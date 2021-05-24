@@ -3,7 +3,7 @@
 > [Index](..) > [IoTSiteWise](.) > Paginators
 
 Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise)
+[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
 [mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
@@ -37,7 +37,7 @@ def get_get_asset_property_aggregates_paginator() -> GetAssetPropertyAggregatesP
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.GetAssetPropertyAggregates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyAggregates)
+[IoTSiteWise.Paginator.GetAssetPropertyAggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyAggregates)
 
 Arguments for `GetAssetPropertyAggregatesPaginator.paginate` method:
 
@@ -72,7 +72,7 @@ def get_get_asset_property_value_history_paginator() -> GetAssetPropertyValueHis
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.GetAssetPropertyValueHistory](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyValueHistory)
+[IoTSiteWise.Paginator.GetAssetPropertyValueHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetAssetPropertyValueHistory)
 
 Arguments for `GetAssetPropertyValueHistoryPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_get_interpolated_asset_property_values_paginator() -> GetInterpolatedAss
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues)
+[IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.GetInterpolatedAssetPropertyValues)
 
 Arguments for `GetInterpolatedAssetPropertyValuesPaginator.paginate` method:
 
@@ -139,7 +139,7 @@ def get_list_access_policies_paginator() -> ListAccessPoliciesPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListAccessPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAccessPolicies)
+[IoTSiteWise.Paginator.ListAccessPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAccessPolicies)
 
 Arguments for `ListAccessPoliciesPaginator.paginate` method:
 
@@ -169,7 +169,7 @@ def get_list_asset_models_paginator() -> ListAssetModelsPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListAssetModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModels)
+[IoTSiteWise.Paginator.ListAssetModels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModels)
 
 Arguments for `ListAssetModelsPaginator.paginate` method:
 
@@ -194,7 +194,7 @@ def get_list_asset_relationships_paginator() -> ListAssetRelationshipsPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListAssetRelationships](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetRelationships)
+[IoTSiteWise.Paginator.ListAssetRelationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetRelationships)
 
 Arguments for `ListAssetRelationshipsPaginator.paginate` method:
 
@@ -222,7 +222,7 @@ def get_list_assets_paginator() -> ListAssetsPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListAssets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssets)
+[IoTSiteWise.Paginator.ListAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssets)
 
 Arguments for `ListAssetsPaginator.paginate` method:
 
@@ -249,7 +249,7 @@ def get_list_associated_assets_paginator() -> ListAssociatedAssetsPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListAssociatedAssets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssociatedAssets)
+[IoTSiteWise.Paginator.ListAssociatedAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssociatedAssets)
 
 Arguments for `ListAssociatedAssetsPaginator.paginate` method:
 
@@ -278,7 +278,7 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListDashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListDashboards)
+[IoTSiteWise.Paginator.ListDashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListDashboards)
 
 Arguments for `ListDashboardsPaginator.paginate` method:
 
@@ -304,7 +304,7 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListGateways](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListGateways)
+[IoTSiteWise.Paginator.ListGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListGateways)
 
 Arguments for `ListGatewaysPaginator.paginate` method:
 
@@ -329,7 +329,7 @@ def get_list_portals_paginator() -> ListPortalsPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListPortals](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListPortals)
+[IoTSiteWise.Paginator.ListPortals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListPortals)
 
 Arguments for `ListPortalsPaginator.paginate` method:
 
@@ -354,7 +354,7 @@ def get_list_project_assets_paginator() -> ListProjectAssetsPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListProjectAssets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjectAssets)
+[IoTSiteWise.Paginator.ListProjectAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjectAssets)
 
 Arguments for `ListProjectAssetsPaginator.paginate` method:
 
@@ -380,7 +380,7 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
 ```
 
 Boto3 documentation:
-[IoTSiteWise.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjects)
+[IoTSiteWise.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListProjects)
 
 Arguments for `ListProjectsPaginator.paginate` method:
 

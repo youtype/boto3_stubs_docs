@@ -3,7 +3,7 @@
 > [Index](..) > [S3Outposts](.) > S3OutpostsClient
 
 Auto-generated documentation for
-[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts)
+[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module
 [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
@@ -32,7 +32,7 @@ def get_s3outposts_client() -> S3OutpostsClient:
 ```
 
 Boto3 documentation:
-[S3Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts.Client)
+[S3Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client)
 
 ## Exceptions
 
@@ -62,7 +62,7 @@ Exceptions:
 Type annotations for `boto3.client("s3outposts").can_paginate` method.
 
 Boto3 documentation:
-[S3Outposts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts.Client.can_paginate)
+[S3Outposts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.can_paginate)
 
 Arguments:
 
@@ -75,7 +75,7 @@ Returns `bool`.
 Type annotations for `boto3.client("s3outposts").create_endpoint` method.
 
 Boto3 documentation:
-[S3Outposts.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts.Client.create_endpoint)
+[S3Outposts.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.create_endpoint)
 
 Arguments:
 
@@ -91,7 +91,7 @@ Returns
 Type annotations for `boto3.client("s3outposts").delete_endpoint` method.
 
 Boto3 documentation:
-[S3Outposts.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint)
+[S3Outposts.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint)
 
 Arguments:
 
@@ -104,7 +104,7 @@ Type annotations for `boto3.client("s3outposts").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[S3Outposts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts.Client.generate_presigned_url)
+[S3Outposts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.generate_presigned_url)
 
 Arguments:
 
@@ -120,7 +120,7 @@ Returns `str`.
 Type annotations for `boto3.client("s3outposts").list_endpoints` method.
 
 Boto3 documentation:
-[S3Outposts.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints)
+[S3Outposts.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints)
 
 Arguments:
 

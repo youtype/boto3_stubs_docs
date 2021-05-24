@@ -3,7 +3,7 @@
 > [Index](..) > [Snowball](.) > Paginators
 
 Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/snowball.html#Snowball)
+[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
 type annotations stubs module
 [mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
@@ -29,7 +29,7 @@ def get_describe_addresses_paginator() -> DescribeAddressesPaginator:
 ```
 
 Boto3 documentation:
-[Snowball.Paginator.DescribeAddresses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/snowball.html#Snowball.Paginator.DescribeAddresses)
+[Snowball.Paginator.DescribeAddresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.DescribeAddresses)
 
 Arguments for `DescribeAddressesPaginator.paginate` method:
 
@@ -54,7 +54,7 @@ def get_list_cluster_jobs_paginator() -> ListClusterJobsPaginator:
 ```
 
 Boto3 documentation:
-[Snowball.Paginator.ListClusterJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/snowball.html#Snowball.Paginator.ListClusterJobs)
+[Snowball.Paginator.ListClusterJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusterJobs)
 
 Arguments for `ListClusterJobsPaginator.paginate` method:
 
@@ -79,7 +79,7 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
 ```
 
 Boto3 documentation:
-[Snowball.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/snowball.html#Snowball.Paginator.ListClusters)
+[Snowball.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListClusters)
 
 Arguments for `ListClustersPaginator.paginate` method:
 
@@ -104,7 +104,7 @@ def get_list_compatible_images_paginator() -> ListCompatibleImagesPaginator:
 ```
 
 Boto3 documentation:
-[Snowball.Paginator.ListCompatibleImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/snowball.html#Snowball.Paginator.ListCompatibleImages)
+[Snowball.Paginator.ListCompatibleImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListCompatibleImages)
 
 Arguments for `ListCompatibleImagesPaginator.paginate` method:
 
@@ -128,7 +128,7 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
 ```
 
 Boto3 documentation:
-[Snowball.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/snowball.html#Snowball.Paginator.ListJobs)
+[Snowball.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListJobs)
 
 Arguments for `ListJobsPaginator.paginate` method:
 

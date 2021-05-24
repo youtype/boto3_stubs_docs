@@ -3,7 +3,7 @@
 > [Index](..) > [ECS](.) > Paginators
 
 Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS)
+[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
 type annotations stubs module
 [mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
@@ -32,7 +32,7 @@ def get_list_account_settings_paginator() -> ListAccountSettingsPaginator:
 ```
 
 Boto3 documentation:
-[ECS.Paginator.ListAccountSettings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Paginator.ListAccountSettings)
+[ECS.Paginator.ListAccountSettings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListAccountSettings)
 
 Arguments for `ListAccountSettingsPaginator.paginate` method:
 
@@ -60,7 +60,7 @@ def get_list_attributes_paginator() -> ListAttributesPaginator:
 ```
 
 Boto3 documentation:
-[ECS.Paginator.ListAttributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Paginator.ListAttributes)
+[ECS.Paginator.ListAttributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListAttributes)
 
 Arguments for `ListAttributesPaginator.paginate` method:
 
@@ -89,7 +89,7 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
 ```
 
 Boto3 documentation:
-[ECS.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Paginator.ListClusters)
+[ECS.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListClusters)
 
 Arguments for `ListClustersPaginator.paginate` method:
 
@@ -114,7 +114,7 @@ def get_list_container_instances_paginator() -> ListContainerInstancesPaginator:
 ```
 
 Boto3 documentation:
-[ECS.Paginator.ListContainerInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Paginator.ListContainerInstances)
+[ECS.Paginator.ListContainerInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListContainerInstances)
 
 Arguments for `ListContainerInstancesPaginator.paginate` method:
 
@@ -142,7 +142,7 @@ def get_list_services_paginator() -> ListServicesPaginator:
 ```
 
 Boto3 documentation:
-[ECS.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Paginator.ListServices)
+[ECS.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListServices)
 
 Arguments for `ListServicesPaginator.paginate` method:
 
@@ -171,7 +171,7 @@ def get_list_task_definition_families_paginator() -> ListTaskDefinitionFamiliesP
 ```
 
 Boto3 documentation:
-[ECS.Paginator.ListTaskDefinitionFamilies](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Paginator.ListTaskDefinitionFamilies)
+[ECS.Paginator.ListTaskDefinitionFamilies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTaskDefinitionFamilies)
 
 Arguments for `ListTaskDefinitionFamiliesPaginator.paginate` method:
 
@@ -199,7 +199,7 @@ def get_list_task_definitions_paginator() -> ListTaskDefinitionsPaginator:
 ```
 
 Boto3 documentation:
-[ECS.Paginator.ListTaskDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Paginator.ListTaskDefinitions)
+[ECS.Paginator.ListTaskDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTaskDefinitions)
 
 Arguments for `ListTaskDefinitionsPaginator.paginate` method:
 
@@ -226,7 +226,7 @@ def get_list_tasks_paginator() -> ListTasksPaginator:
 ```
 
 Boto3 documentation:
-[ECS.Paginator.ListTasks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ecs.html#ECS.Paginator.ListTasks)
+[ECS.Paginator.ListTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTasks)
 
 Arguments for `ListTasksPaginator.paginate` method:
 

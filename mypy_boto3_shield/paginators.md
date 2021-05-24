@@ -3,7 +3,7 @@
 > [Index](..) > [Shield](.) > Paginators
 
 Auto-generated documentation for
-[Shield](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/shield.html#Shield)
+[Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
 type annotations stubs module
 [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
@@ -25,7 +25,7 @@ def get_list_attacks_paginator() -> ListAttacksPaginator:
 ```
 
 Boto3 documentation:
-[Shield.Paginator.ListAttacks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/shield.html#Shield.Paginator.ListAttacks)
+[Shield.Paginator.ListAttacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListAttacks)
 
 Arguments for `ListAttacksPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_protections_paginator() -> ListProtectionsPaginator:
 ```
 
 Boto3 documentation:
-[Shield.Paginator.ListProtections](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/shield.html#Shield.Paginator.ListProtections)
+[Shield.Paginator.ListProtections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Paginator.ListProtections)
 
 Arguments for `ListProtectionsPaginator.paginate` method:
 

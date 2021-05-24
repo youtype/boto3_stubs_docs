@@ -1,9 +1,9 @@
-# Type annotations for boto3 Imagebuilder module
+# Type annotations for boto3 imagebuilder module
 
-> [Index](..) > Imagebuilder
+> [Index](..) > imagebuilder
 
 Auto-generated documentation for
-[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder)
+[imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
 type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
@@ -11,22 +11,22 @@ type annotations stubs module
 pip install mypy-boto3-imagebuilder
 ```
 
-- [Type annotations for boto3 Imagebuilder module](#type-annotations-for-boto3-imagebuilder-module)
-  - [ImagebuilderClient](#imagebuilderclient)
+- [Type annotations for boto3 imagebuilder module](#type-annotations-for-boto3-imagebuilder-module)
+  - [imagebuilderClient](#imagebuilderclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
-## ImagebuilderClient
+## imagebuilderClient
 
 Type annotations for `boto3.client("imagebuilder")` as
-[ImagebuilderClient](./client.md)
+[imagebuilderClient](./client.md)
 
 Can be used directly:
 
 ```python
-from mypy_boto3_imagebuilder.client import ImagebuilderClient
+from mypy_boto3_imagebuilder.client import imagebuilderClient
 ```
 
 ### Methods
@@ -85,7 +85,7 @@ from mypy_boto3_imagebuilder.client import ImagebuilderClient
 
 ### Exceptions
 
-ImagebuilderClient [exceptions](./client.md#exceptions)
+imagebuilderClient [exceptions](./client.md#exceptions)
 
 - CallRateLimitExceededException
 - ClientError

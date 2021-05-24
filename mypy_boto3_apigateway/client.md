@@ -3,7 +3,7 @@
 > [Index](..) > [APIGateway](.) > APIGatewayClient
 
 Auto-generated documentation for
-[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway)
+[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
 type annotations stubs module
 [mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
@@ -149,7 +149,7 @@ def get_apigateway_client() -> APIGatewayClient:
 ```
 
 Boto3 documentation:
-[APIGateway.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client)
+[APIGateway.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client)
 
 ## Exceptions
 
@@ -181,7 +181,7 @@ Exceptions:
 Type annotations for `boto3.client("apigateway").can_paginate` method.
 
 Boto3 documentation:
-[APIGateway.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.can_paginate)
+[APIGateway.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.can_paginate)
 
 Arguments:
 
@@ -194,7 +194,7 @@ Returns `bool`.
 Type annotations for `boto3.client("apigateway").create_api_key` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_api_key)
+[APIGateway.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_api_key)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns [ApiKeyTypeDef](./type_defs.md#apikeytypedef).
 Type annotations for `boto3.client("apigateway").create_authorizer` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_authorizer)
+[APIGateway.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_authorizer)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("apigateway").create_base_path_mapping`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.create_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping)
+[APIGateway.Client.create_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping)
 
 Arguments:
 
@@ -253,7 +253,7 @@ Returns [BasePathMappingTypeDef](./type_defs.md#basepathmappingtypedef).
 Type annotations for `boto3.client("apigateway").create_deployment` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_deployment)
+[APIGateway.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_deployment)
 
 Arguments:
 
@@ -277,7 +277,7 @@ Type annotations for `boto3.client("apigateway").create_documentation_part`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.create_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_documentation_part)
+[APIGateway.Client.create_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_part)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Type annotations for `boto3.client("apigateway").create_documentation_version`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.create_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_documentation_version)
+[APIGateway.Client.create_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_version)
 
 Arguments:
 
@@ -312,7 +312,7 @@ Returns
 Type annotations for `boto3.client("apigateway").create_domain_name` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_domain_name)
+[APIGateway.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_domain_name)
 
 Arguments:
 
@@ -338,7 +338,7 @@ Returns [DomainNameTypeDef](./type_defs.md#domainnametypedef).
 Type annotations for `boto3.client("apigateway").create_model` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_model)
+[APIGateway.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_model)
 
 Arguments:
 
@@ -356,7 +356,7 @@ Type annotations for `boto3.client("apigateway").create_request_validator`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.create_request_validator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_request_validator)
+[APIGateway.Client.create_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_request_validator)
 
 Arguments:
 
@@ -372,7 +372,7 @@ Returns [RequestValidatorTypeDef](./type_defs.md#requestvalidatortypedef).
 Type annotations for `boto3.client("apigateway").create_resource` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_resource)
+[APIGateway.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_resource)
 
 Arguments:
 
@@ -387,7 +387,7 @@ Returns [ResourceTypeDef](./type_defs.md#resourcetypedef).
 Type annotations for `boto3.client("apigateway").create_rest_api` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_rest_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_rest_api)
+[APIGateway.Client.create_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_rest_api)
 
 Arguments:
 
@@ -411,7 +411,7 @@ Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
 Type annotations for `boto3.client("apigateway").create_stage` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_stage)
+[APIGateway.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_stage)
 
 Arguments:
 
@@ -436,7 +436,7 @@ Returns [StageTypeDef](./type_defs.md#stagetypedef).
 Type annotations for `boto3.client("apigateway").create_usage_plan` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_usage_plan)
+[APIGateway.Client.create_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan)
 
 Arguments:
 
@@ -454,7 +454,7 @@ Returns [UsagePlanTypeDef](./type_defs.md#usageplantypedef).
 Type annotations for `boto3.client("apigateway").create_usage_plan_key` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_usage_plan_key)
+[APIGateway.Client.create_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan_key)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Returns [UsagePlanKeyTypeDef](./type_defs.md#usageplankeytypedef).
 Type annotations for `boto3.client("apigateway").create_vpc_link` method.
 
 Boto3 documentation:
-[APIGateway.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.create_vpc_link)
+[APIGateway.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_vpc_link)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Returns [VpcLinkTypeDef](./type_defs.md#vpclinktypedef).
 Type annotations for `boto3.client("apigateway").delete_api_key` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_api_key)
+[APIGateway.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_api_key)
 
 Arguments:
 
@@ -496,7 +496,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_authorizer` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_authorizer)
+[APIGateway.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_authorizer)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Type annotations for `boto3.client("apigateway").delete_base_path_mapping`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_base_path_mapping)
+[APIGateway.Client.delete_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_base_path_mapping)
 
 Arguments:
 
@@ -522,7 +522,7 @@ Type annotations for `boto3.client("apigateway").delete_client_certificate`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_client_certificate)
+[APIGateway.Client.delete_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_client_certificate)
 
 Arguments:
 
@@ -533,7 +533,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_deployment` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_deployment)
+[APIGateway.Client.delete_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_deployment)
 
 Arguments:
 
@@ -546,7 +546,7 @@ Type annotations for `boto3.client("apigateway").delete_documentation_part`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_documentation_part)
+[APIGateway.Client.delete_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_part)
 
 Arguments:
 
@@ -559,7 +559,7 @@ Type annotations for `boto3.client("apigateway").delete_documentation_version`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_documentation_version)
+[APIGateway.Client.delete_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_version)
 
 Arguments:
 
@@ -571,7 +571,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_domain_name` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_domain_name)
+[APIGateway.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_domain_name)
 
 Arguments:
 
@@ -583,7 +583,7 @@ Type annotations for `boto3.client("apigateway").delete_gateway_response`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_gateway_response)
+[APIGateway.Client.delete_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_gateway_response)
 
 Arguments:
 
@@ -596,7 +596,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_integration` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_integration)
+[APIGateway.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration)
 
 Arguments:
 
@@ -610,7 +610,7 @@ Type annotations for `boto3.client("apigateway").delete_integration_response`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_integration_response)
+[APIGateway.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration_response)
 
 Arguments:
 
@@ -624,7 +624,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_method` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_method)
+[APIGateway.Client.delete_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method)
 
 Arguments:
 
@@ -638,7 +638,7 @@ Type annotations for `boto3.client("apigateway").delete_method_response`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_method_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_method_response)
+[APIGateway.Client.delete_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method_response)
 
 Arguments:
 
@@ -652,7 +652,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_model` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_model)
+[APIGateway.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_model)
 
 Arguments:
 
@@ -665,7 +665,7 @@ Type annotations for `boto3.client("apigateway").delete_request_validator`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_request_validator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_request_validator)
+[APIGateway.Client.delete_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_request_validator)
 
 Arguments:
 
@@ -677,7 +677,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_resource` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_resource)
+[APIGateway.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_resource)
 
 Arguments:
 
@@ -689,7 +689,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_rest_api` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_rest_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_rest_api)
+[APIGateway.Client.delete_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_rest_api)
 
 Arguments:
 
@@ -700,7 +700,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_stage` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_stage)
+[APIGateway.Client.delete_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_stage)
 
 Arguments:
 
@@ -712,7 +712,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_usage_plan` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan)
+[APIGateway.Client.delete_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan)
 
 Arguments:
 
@@ -723,7 +723,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_usage_plan_key` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan_key)
+[APIGateway.Client.delete_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan_key)
 
 Arguments:
 
@@ -735,7 +735,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").delete_vpc_link` method.
 
 Boto3 documentation:
-[APIGateway.Client.delete_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.delete_vpc_link)
+[APIGateway.Client.delete_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_vpc_link)
 
 Arguments:
 
@@ -747,7 +747,7 @@ Type annotations for `boto3.client("apigateway").flush_stage_authorizers_cache`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.flush_stage_authorizers_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.flush_stage_authorizers_cache)
+[APIGateway.Client.flush_stage_authorizers_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_authorizers_cache)
 
 Arguments:
 
@@ -759,7 +759,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").flush_stage_cache` method.
 
 Boto3 documentation:
-[APIGateway.Client.flush_stage_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.flush_stage_cache)
+[APIGateway.Client.flush_stage_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_cache)
 
 Arguments:
 
@@ -772,7 +772,7 @@ Type annotations for `boto3.client("apigateway").generate_client_certificate`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.generate_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.generate_client_certificate)
+[APIGateway.Client.generate_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_client_certificate)
 
 Arguments:
 
@@ -787,7 +787,7 @@ Type annotations for `boto3.client("apigateway").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.generate_presigned_url)
+[APIGateway.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_presigned_url)
 
 Arguments:
 
@@ -803,7 +803,7 @@ Returns `str`.
 Type annotations for `boto3.client("apigateway").get_account` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_account)
+[APIGateway.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_account)
 
 Returns [AccountTypeDef](./type_defs.md#accounttypedef).
 
@@ -812,7 +812,7 @@ Returns [AccountTypeDef](./type_defs.md#accounttypedef).
 Type annotations for `boto3.client("apigateway").get_api_key` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_api_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_api_key)
+[APIGateway.Client.get_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key)
 
 Arguments:
 
@@ -826,7 +826,7 @@ Returns [ApiKeyTypeDef](./type_defs.md#apikeytypedef).
 Type annotations for `boto3.client("apigateway").get_api_keys` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_api_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_api_keys)
+[APIGateway.Client.get_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_keys)
 
 Arguments:
 
@@ -843,7 +843,7 @@ Returns [ApiKeysTypeDef](./type_defs.md#apikeystypedef).
 Type annotations for `boto3.client("apigateway").get_authorizer` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_authorizer)
+[APIGateway.Client.get_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizer)
 
 Arguments:
 
@@ -857,7 +857,7 @@ Returns [AuthorizerTypeDef](./type_defs.md#authorizertypedef).
 Type annotations for `boto3.client("apigateway").get_authorizers` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_authorizers)
+[APIGateway.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizers)
 
 Arguments:
 
@@ -872,7 +872,7 @@ Returns [AuthorizersTypeDef](./type_defs.md#authorizerstypedef).
 Type annotations for `boto3.client("apigateway").get_base_path_mapping` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_base_path_mapping)
+[APIGateway.Client.get_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mapping)
 
 Arguments:
 
@@ -887,7 +887,7 @@ Type annotations for `boto3.client("apigateway").get_base_path_mappings`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_base_path_mappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings)
+[APIGateway.Client.get_base_path_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings)
 
 Arguments:
 
@@ -903,7 +903,7 @@ Type annotations for `boto3.client("apigateway").get_client_certificate`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_client_certificate)
+[APIGateway.Client.get_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificate)
 
 Arguments:
 
@@ -917,7 +917,7 @@ Type annotations for `boto3.client("apigateway").get_client_certificates`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_client_certificates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_client_certificates)
+[APIGateway.Client.get_client_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificates)
 
 Arguments:
 
@@ -931,7 +931,7 @@ Returns [ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef).
 Type annotations for `boto3.client("apigateway").get_deployment` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_deployment)
+[APIGateway.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployment)
 
 Arguments:
 
@@ -946,7 +946,7 @@ Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 Type annotations for `boto3.client("apigateway").get_deployments` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_deployments)
+[APIGateway.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployments)
 
 Arguments:
 
@@ -962,7 +962,7 @@ Type annotations for `boto3.client("apigateway").get_documentation_part`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_documentation_part)
+[APIGateway.Client.get_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_part)
 
 Arguments:
 
@@ -977,7 +977,7 @@ Type annotations for `boto3.client("apigateway").get_documentation_parts`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts)
+[APIGateway.Client.get_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts)
 
 Arguments:
 
@@ -998,7 +998,7 @@ Type annotations for `boto3.client("apigateway").get_documentation_version`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_documentation_version)
+[APIGateway.Client.get_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_version)
 
 Arguments:
 
@@ -1014,7 +1014,7 @@ Type annotations for `boto3.client("apigateway").get_documentation_versions`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_documentation_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions)
+[APIGateway.Client.get_documentation_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions)
 
 Arguments:
 
@@ -1030,7 +1030,7 @@ Returns
 Type annotations for `boto3.client("apigateway").get_domain_name` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_domain_name)
+[APIGateway.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_name)
 
 Arguments:
 
@@ -1043,7 +1043,7 @@ Returns [DomainNameTypeDef](./type_defs.md#domainnametypedef).
 Type annotations for `boto3.client("apigateway").get_domain_names` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_domain_names](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_domain_names)
+[APIGateway.Client.get_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_names)
 
 Arguments:
 
@@ -1057,7 +1057,7 @@ Returns [DomainNamesTypeDef](./type_defs.md#domainnamestypedef).
 Type annotations for `boto3.client("apigateway").get_export` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_export](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_export)
+[APIGateway.Client.get_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_export)
 
 Arguments:
 
@@ -1074,7 +1074,7 @@ Returns [ExportResponseTypeDef](./type_defs.md#exportresponsetypedef).
 Type annotations for `boto3.client("apigateway").get_gateway_response` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_gateway_response)
+[APIGateway.Client.get_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_response)
 
 Arguments:
 
@@ -1089,7 +1089,7 @@ Returns [GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef).
 Type annotations for `boto3.client("apigateway").get_gateway_responses` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_gateway_responses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses)
+[APIGateway.Client.get_gateway_responses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses)
 
 Arguments:
 
@@ -1104,7 +1104,7 @@ Returns [GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef).
 Type annotations for `boto3.client("apigateway").get_integration` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_integration)
+[APIGateway.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration)
 
 Arguments:
 
@@ -1120,7 +1120,7 @@ Type annotations for `boto3.client("apigateway").get_integration_response`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_integration_response)
+[APIGateway.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration_response)
 
 Arguments:
 
@@ -1137,7 +1137,7 @@ Returns
 Type annotations for `boto3.client("apigateway").get_method` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_method)
+[APIGateway.Client.get_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method)
 
 Arguments:
 
@@ -1152,7 +1152,7 @@ Returns [MethodTypeDef](./type_defs.md#methodtypedef).
 Type annotations for `boto3.client("apigateway").get_method_response` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_method_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_method_response)
+[APIGateway.Client.get_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method_response)
 
 Arguments:
 
@@ -1168,7 +1168,7 @@ Returns [MethodResponseTypeDef](./type_defs.md#methodresponsetypedef).
 Type annotations for `boto3.client("apigateway").get_model` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_model)
+[APIGateway.Client.get_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model)
 
 Arguments:
 
@@ -1183,7 +1183,7 @@ Returns [ModelTypeDef](./type_defs.md#modeltypedef).
 Type annotations for `boto3.client("apigateway").get_model_template` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_model_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_model_template)
+[APIGateway.Client.get_model_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model_template)
 
 Arguments:
 
@@ -1197,7 +1197,7 @@ Returns [TemplateTypeDef](./type_defs.md#templatetypedef).
 Type annotations for `boto3.client("apigateway").get_models` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_models)
+[APIGateway.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_models)
 
 Arguments:
 
@@ -1212,7 +1212,7 @@ Returns [ModelsTypeDef](./type_defs.md#modelstypedef).
 Type annotations for `boto3.client("apigateway").get_request_validator` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_request_validator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_request_validator)
+[APIGateway.Client.get_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validator)
 
 Arguments:
 
@@ -1227,7 +1227,7 @@ Type annotations for `boto3.client("apigateway").get_request_validators`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.get_request_validators](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_request_validators)
+[APIGateway.Client.get_request_validators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validators)
 
 Arguments:
 
@@ -1242,7 +1242,7 @@ Returns [RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef).
 Type annotations for `boto3.client("apigateway").get_resource` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_resource)
+[APIGateway.Client.get_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resource)
 
 Arguments:
 
@@ -1257,7 +1257,7 @@ Returns [ResourceTypeDef](./type_defs.md#resourcetypedef).
 Type annotations for `boto3.client("apigateway").get_resources` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_resources)
+[APIGateway.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resources)
 
 Arguments:
 
@@ -1273,7 +1273,7 @@ Returns [ResourcesTypeDef](./type_defs.md#resourcestypedef).
 Type annotations for `boto3.client("apigateway").get_rest_api` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_rest_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_rest_api)
+[APIGateway.Client.get_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_api)
 
 Arguments:
 
@@ -1286,7 +1286,7 @@ Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
 Type annotations for `boto3.client("apigateway").get_rest_apis` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_rest_apis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_rest_apis)
+[APIGateway.Client.get_rest_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_apis)
 
 Arguments:
 
@@ -1300,7 +1300,7 @@ Returns [RestApisTypeDef](./type_defs.md#restapistypedef).
 Type annotations for `boto3.client("apigateway").get_sdk` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_sdk](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_sdk)
+[APIGateway.Client.get_sdk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk)
 
 Arguments:
 
@@ -1316,7 +1316,7 @@ Returns [SdkResponseTypeDef](./type_defs.md#sdkresponsetypedef).
 Type annotations for `boto3.client("apigateway").get_sdk_type` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_sdk_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_sdk_type)
+[APIGateway.Client.get_sdk_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_type)
 
 Arguments:
 
@@ -1329,7 +1329,7 @@ Returns [SdkTypeTypeDef](./type_defs.md#sdktypetypedef).
 Type annotations for `boto3.client("apigateway").get_sdk_types` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_sdk_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_sdk_types)
+[APIGateway.Client.get_sdk_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_types)
 
 Arguments:
 
@@ -1343,7 +1343,7 @@ Returns [SdkTypesTypeDef](./type_defs.md#sdktypestypedef).
 Type annotations for `boto3.client("apigateway").get_stage` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_stage)
+[APIGateway.Client.get_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stage)
 
 Arguments:
 
@@ -1357,7 +1357,7 @@ Returns [StageTypeDef](./type_defs.md#stagetypedef).
 Type annotations for `boto3.client("apigateway").get_stages` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_stages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_stages)
+[APIGateway.Client.get_stages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stages)
 
 Arguments:
 
@@ -1371,7 +1371,7 @@ Returns [StagesTypeDef](./type_defs.md#stagestypedef).
 Type annotations for `boto3.client("apigateway").get_tags` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_tags)
+[APIGateway.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_tags)
 
 Arguments:
 
@@ -1386,7 +1386,7 @@ Returns [TagsTypeDef](./type_defs.md#tagstypedef).
 Type annotations for `boto3.client("apigateway").get_usage` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_usage)
+[APIGateway.Client.get_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage)
 
 Arguments:
 
@@ -1404,7 +1404,7 @@ Returns [UsageTypeDef](./type_defs.md#usagetypedef).
 Type annotations for `boto3.client("apigateway").get_usage_plan` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_usage_plan)
+[APIGateway.Client.get_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan)
 
 Arguments:
 
@@ -1417,7 +1417,7 @@ Returns [UsagePlanTypeDef](./type_defs.md#usageplantypedef).
 Type annotations for `boto3.client("apigateway").get_usage_plan_key` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_key)
+[APIGateway.Client.get_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_key)
 
 Arguments:
 
@@ -1431,7 +1431,7 @@ Returns [UsagePlanKeyTypeDef](./type_defs.md#usageplankeytypedef).
 Type annotations for `boto3.client("apigateway").get_usage_plan_keys` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_usage_plan_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_keys)
+[APIGateway.Client.get_usage_plan_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_keys)
 
 Arguments:
 
@@ -1447,7 +1447,7 @@ Returns [UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef).
 Type annotations for `boto3.client("apigateway").get_usage_plans` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_usage_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_usage_plans)
+[APIGateway.Client.get_usage_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plans)
 
 Arguments:
 
@@ -1462,7 +1462,7 @@ Returns [UsagePlansTypeDef](./type_defs.md#usageplanstypedef).
 Type annotations for `boto3.client("apigateway").get_vpc_link` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_vpc_link)
+[APIGateway.Client.get_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_link)
 
 Arguments:
 
@@ -1475,7 +1475,7 @@ Returns [VpcLinkTypeDef](./type_defs.md#vpclinktypedef).
 Type annotations for `boto3.client("apigateway").get_vpc_links` method.
 
 Boto3 documentation:
-[APIGateway.Client.get_vpc_links](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.get_vpc_links)
+[APIGateway.Client.get_vpc_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_links)
 
 Arguments:
 
@@ -1489,7 +1489,7 @@ Returns [VpcLinksTypeDef](./type_defs.md#vpclinkstypedef).
 Type annotations for `boto3.client("apigateway").import_api_keys` method.
 
 Boto3 documentation:
-[APIGateway.Client.import_api_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.import_api_keys)
+[APIGateway.Client.import_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_api_keys)
 
 Arguments:
 
@@ -1506,7 +1506,7 @@ Type annotations for `boto3.client("apigateway").import_documentation_parts`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.import_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.import_documentation_parts)
+[APIGateway.Client.import_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_documentation_parts)
 
 Arguments:
 
@@ -1523,7 +1523,7 @@ Returns
 Type annotations for `boto3.client("apigateway").import_rest_api` method.
 
 Boto3 documentation:
-[APIGateway.Client.import_rest_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.import_rest_api)
+[APIGateway.Client.import_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_rest_api)
 
 Arguments:
 
@@ -1538,7 +1538,7 @@ Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
 Type annotations for `boto3.client("apigateway").put_gateway_response` method.
 
 Boto3 documentation:
-[APIGateway.Client.put_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.put_gateway_response)
+[APIGateway.Client.put_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_gateway_response)
 
 Arguments:
 
@@ -1556,7 +1556,7 @@ Returns [GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef).
 Type annotations for `boto3.client("apigateway").put_integration` method.
 
 Boto3 documentation:
-[APIGateway.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.put_integration)
+[APIGateway.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration)
 
 Arguments:
 
@@ -1587,7 +1587,7 @@ Type annotations for `boto3.client("apigateway").put_integration_response`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.put_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.put_integration_response)
+[APIGateway.Client.put_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration_response)
 
 Arguments:
 
@@ -1609,7 +1609,7 @@ Returns
 Type annotations for `boto3.client("apigateway").put_method` method.
 
 Boto3 documentation:
-[APIGateway.Client.put_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.put_method)
+[APIGateway.Client.put_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method)
 
 Arguments:
 
@@ -1632,7 +1632,7 @@ Returns [MethodTypeDef](./type_defs.md#methodtypedef).
 Type annotations for `boto3.client("apigateway").put_method_response` method.
 
 Boto3 documentation:
-[APIGateway.Client.put_method_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.put_method_response)
+[APIGateway.Client.put_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method_response)
 
 Arguments:
 
@@ -1650,7 +1650,7 @@ Returns [MethodResponseTypeDef](./type_defs.md#methodresponsetypedef).
 Type annotations for `boto3.client("apigateway").put_rest_api` method.
 
 Boto3 documentation:
-[APIGateway.Client.put_rest_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.put_rest_api)
+[APIGateway.Client.put_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_rest_api)
 
 Arguments:
 
@@ -1667,7 +1667,7 @@ Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
 Type annotations for `boto3.client("apigateway").tag_resource` method.
 
 Boto3 documentation:
-[APIGateway.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.tag_resource)
+[APIGateway.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.tag_resource)
 
 Arguments:
 
@@ -1680,7 +1680,7 @@ Type annotations for `boto3.client("apigateway").test_invoke_authorizer`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.test_invoke_authorizer)
+[APIGateway.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_authorizer)
 
 Arguments:
 
@@ -1701,7 +1701,7 @@ Returns
 Type annotations for `boto3.client("apigateway").test_invoke_method` method.
 
 Boto3 documentation:
-[APIGateway.Client.test_invoke_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.test_invoke_method)
+[APIGateway.Client.test_invoke_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_method)
 
 Arguments:
 
@@ -1723,7 +1723,7 @@ Returns
 Type annotations for `boto3.client("apigateway").untag_resource` method.
 
 Boto3 documentation:
-[APIGateway.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.untag_resource)
+[APIGateway.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.untag_resource)
 
 Arguments:
 
@@ -1735,7 +1735,7 @@ Arguments:
 Type annotations for `boto3.client("apigateway").update_account` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_account)
+[APIGateway.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_account)
 
 Arguments:
 
@@ -1749,7 +1749,7 @@ Returns [AccountTypeDef](./type_defs.md#accounttypedef).
 Type annotations for `boto3.client("apigateway").update_api_key` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_api_key)
+[APIGateway.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_api_key)
 
 Arguments:
 
@@ -1764,7 +1764,7 @@ Returns [ApiKeyTypeDef](./type_defs.md#apikeytypedef).
 Type annotations for `boto3.client("apigateway").update_authorizer` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_authorizer)
+[APIGateway.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_authorizer)
 
 Arguments:
 
@@ -1781,7 +1781,7 @@ Type annotations for `boto3.client("apigateway").update_base_path_mapping`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.update_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping)
+[APIGateway.Client.update_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping)
 
 Arguments:
 
@@ -1798,7 +1798,7 @@ Type annotations for `boto3.client("apigateway").update_client_certificate`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.update_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_client_certificate)
+[APIGateway.Client.update_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_client_certificate)
 
 Arguments:
 
@@ -1813,7 +1813,7 @@ Returns [ClientCertificateTypeDef](./type_defs.md#clientcertificatetypedef).
 Type annotations for `boto3.client("apigateway").update_deployment` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_deployment)
+[APIGateway.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_deployment)
 
 Arguments:
 
@@ -1830,7 +1830,7 @@ Type annotations for `boto3.client("apigateway").update_documentation_part`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.update_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_documentation_part)
+[APIGateway.Client.update_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_part)
 
 Arguments:
 
@@ -1847,7 +1847,7 @@ Type annotations for `boto3.client("apigateway").update_documentation_version`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.update_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_documentation_version)
+[APIGateway.Client.update_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_version)
 
 Arguments:
 
@@ -1864,7 +1864,7 @@ Returns
 Type annotations for `boto3.client("apigateway").update_domain_name` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_domain_name)
+[APIGateway.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_domain_name)
 
 Arguments:
 
@@ -1880,7 +1880,7 @@ Type annotations for `boto3.client("apigateway").update_gateway_response`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.update_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_gateway_response)
+[APIGateway.Client.update_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_gateway_response)
 
 Arguments:
 
@@ -1897,7 +1897,7 @@ Returns [GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef).
 Type annotations for `boto3.client("apigateway").update_integration` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_integration)
+[APIGateway.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration)
 
 Arguments:
 
@@ -1915,7 +1915,7 @@ Type annotations for `boto3.client("apigateway").update_integration_response`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_integration_response)
+[APIGateway.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration_response)
 
 Arguments:
 
@@ -1934,7 +1934,7 @@ Returns
 Type annotations for `boto3.client("apigateway").update_method` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_method](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_method)
+[APIGateway.Client.update_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method)
 
 Arguments:
 
@@ -1952,7 +1952,7 @@ Type annotations for `boto3.client("apigateway").update_method_response`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.update_method_response](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_method_response)
+[APIGateway.Client.update_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method_response)
 
 Arguments:
 
@@ -1970,7 +1970,7 @@ Returns [MethodResponseTypeDef](./type_defs.md#methodresponsetypedef).
 Type annotations for `boto3.client("apigateway").update_model` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_model)
+[APIGateway.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_model)
 
 Arguments:
 
@@ -1987,7 +1987,7 @@ Type annotations for `boto3.client("apigateway").update_request_validator`
 method.
 
 Boto3 documentation:
-[APIGateway.Client.update_request_validator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_request_validator)
+[APIGateway.Client.update_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_request_validator)
 
 Arguments:
 
@@ -2003,7 +2003,7 @@ Returns [RequestValidatorTypeDef](./type_defs.md#requestvalidatortypedef).
 Type annotations for `boto3.client("apigateway").update_resource` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_resource)
+[APIGateway.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_resource)
 
 Arguments:
 
@@ -2019,7 +2019,7 @@ Returns [ResourceTypeDef](./type_defs.md#resourcetypedef).
 Type annotations for `boto3.client("apigateway").update_rest_api` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_rest_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_rest_api)
+[APIGateway.Client.update_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_rest_api)
 
 Arguments:
 
@@ -2034,7 +2034,7 @@ Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
 Type annotations for `boto3.client("apigateway").update_stage` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_stage)
+[APIGateway.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_stage)
 
 Arguments:
 
@@ -2050,7 +2050,7 @@ Returns [StageTypeDef](./type_defs.md#stagetypedef).
 Type annotations for `boto3.client("apigateway").update_usage` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_usage)
+[APIGateway.Client.update_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage)
 
 Arguments:
 
@@ -2066,7 +2066,7 @@ Returns [UsageTypeDef](./type_defs.md#usagetypedef).
 Type annotations for `boto3.client("apigateway").update_usage_plan` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_usage_plan)
+[APIGateway.Client.update_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage_plan)
 
 Arguments:
 
@@ -2081,7 +2081,7 @@ Returns [UsagePlanTypeDef](./type_defs.md#usageplantypedef).
 Type annotations for `boto3.client("apigateway").update_vpc_link` method.
 
 Boto3 documentation:
-[APIGateway.Client.update_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/apigateway.html#APIGateway.Client.update_vpc_link)
+[APIGateway.Client.update_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_vpc_link)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [Budgets](.) > BudgetsClient
 
 Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets)
+[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
 type annotations stubs module
 [mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
@@ -51,7 +51,7 @@ def get_budgets_client() -> BudgetsClient:
 ```
 
 Boto3 documentation:
-[Budgets.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client)
+[Budgets.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client)
 
 ## Exceptions
 
@@ -85,7 +85,7 @@ Exceptions:
 Type annotations for `boto3.client("budgets").can_paginate` method.
 
 Boto3 documentation:
-[Budgets.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.can_paginate)
+[Budgets.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.can_paginate)
 
 Arguments:
 
@@ -98,7 +98,7 @@ Returns `bool`.
 Type annotations for `boto3.client("budgets").create_budget` method.
 
 Boto3 documentation:
-[Budgets.Client.create_budget](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.create_budget)
+[Budgets.Client.create_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("budgets").create_budget_action` method.
 
 Boto3 documentation:
-[Budgets.Client.create_budget_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.create_budget_action)
+[Budgets.Client.create_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Returns
 Type annotations for `boto3.client("budgets").create_notification` method.
 
 Boto3 documentation:
-[Budgets.Client.create_notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.create_notification)
+[Budgets.Client.create_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("budgets").create_subscriber` method.
 
 Boto3 documentation:
-[Budgets.Client.create_subscriber](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.create_subscriber)
+[Budgets.Client.create_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber)
 
 Arguments:
 
@@ -177,7 +177,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("budgets").delete_budget` method.
 
 Boto3 documentation:
-[Budgets.Client.delete_budget](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.delete_budget)
+[Budgets.Client.delete_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget)
 
 Arguments:
 
@@ -191,7 +191,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("budgets").delete_budget_action` method.
 
 Boto3 documentation:
-[Budgets.Client.delete_budget_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.delete_budget_action)
+[Budgets.Client.delete_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action)
 
 Arguments:
 
@@ -207,7 +207,7 @@ Returns
 Type annotations for `boto3.client("budgets").delete_notification` method.
 
 Boto3 documentation:
-[Budgets.Client.delete_notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.delete_notification)
+[Budgets.Client.delete_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("budgets").delete_subscriber` method.
 
 Boto3 documentation:
-[Budgets.Client.delete_subscriber](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.delete_subscriber)
+[Budgets.Client.delete_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber)
 
 Arguments:
 
@@ -241,7 +241,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("budgets").describe_budget` method.
 
 Boto3 documentation:
-[Budgets.Client.describe_budget](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_budget)
+[Budgets.Client.describe_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget)
 
 Arguments:
 
@@ -256,7 +256,7 @@ Returns
 Type annotations for `boto3.client("budgets").describe_budget_action` method.
 
 Boto3 documentation:
-[Budgets.Client.describe_budget_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_budget_action)
+[Budgets.Client.describe_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action)
 
 Arguments:
 
@@ -273,7 +273,7 @@ Type annotations for `boto3.client("budgets").describe_budget_action_histories`
 method.
 
 Boto3 documentation:
-[Budgets.Client.describe_budget_action_histories](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories)
+[Budgets.Client.describe_budget_action_histories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Type annotations for
 `boto3.client("budgets").describe_budget_actions_for_account` method.
 
 Boto3 documentation:
-[Budgets.Client.describe_budget_actions_for_account](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account)
+[Budgets.Client.describe_budget_actions_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Type annotations for
 `boto3.client("budgets").describe_budget_actions_for_budget` method.
 
 Boto3 documentation:
-[Budgets.Client.describe_budget_actions_for_budget](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget)
+[Budgets.Client.describe_budget_actions_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget)
 
 Arguments:
 
@@ -328,7 +328,7 @@ Type annotations for
 `boto3.client("budgets").describe_budget_performance_history` method.
 
 Boto3 documentation:
-[Budgets.Client.describe_budget_performance_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history)
+[Budgets.Client.describe_budget_performance_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history)
 
 Arguments:
 
@@ -346,7 +346,7 @@ Returns
 Type annotations for `boto3.client("budgets").describe_budgets` method.
 
 Boto3 documentation:
-[Budgets.Client.describe_budgets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_budgets)
+[Budgets.Client.describe_budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets)
 
 Arguments:
 
@@ -363,7 +363,7 @@ Type annotations for
 `boto3.client("budgets").describe_notifications_for_budget` method.
 
 Boto3 documentation:
-[Budgets.Client.describe_notifications_for_budget](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget)
+[Budgets.Client.describe_notifications_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Type annotations for
 `boto3.client("budgets").describe_subscribers_for_notification` method.
 
 Boto3 documentation:
-[Budgets.Client.describe_subscribers_for_notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification)
+[Budgets.Client.describe_subscribers_for_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Returns
 Type annotations for `boto3.client("budgets").execute_budget_action` method.
 
 Boto3 documentation:
-[Budgets.Client.execute_budget_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.execute_budget_action)
+[Budgets.Client.execute_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action)
 
 Arguments:
 
@@ -418,7 +418,7 @@ Returns
 Type annotations for `boto3.client("budgets").generate_presigned_url` method.
 
 Boto3 documentation:
-[Budgets.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.generate_presigned_url)
+[Budgets.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.generate_presigned_url)
 
 Arguments:
 
@@ -434,7 +434,7 @@ Returns `str`.
 Type annotations for `boto3.client("budgets").update_budget` method.
 
 Boto3 documentation:
-[Budgets.Client.update_budget](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.update_budget)
+[Budgets.Client.update_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget)
 
 Arguments:
 
@@ -448,7 +448,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("budgets").update_budget_action` method.
 
 Boto3 documentation:
-[Budgets.Client.update_budget_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.update_budget_action)
+[Budgets.Client.update_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action)
 
 Arguments:
 
@@ -473,7 +473,7 @@ Returns
 Type annotations for `boto3.client("budgets").update_notification` method.
 
 Boto3 documentation:
-[Budgets.Client.update_notification](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.update_notification)
+[Budgets.Client.update_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification)
 
 Arguments:
 
@@ -491,7 +491,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("budgets").update_subscriber` method.
 
 Boto3 documentation:
-[Budgets.Client.update_subscriber](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/budgets.html#Budgets.Client.update_subscriber)
+[Budgets.Client.update_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [ComputeOptimizer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -313,6 +313,8 @@ Optional fields:
 - `instanceType`: `str`
 - `projectedUtilizationMetrics`:
   `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
+- `platformDifferences`:
+  `List`\[[PlatformDifferenceType](./literals.md#platformdifferencetype)\]
 - `performanceRisk`: `float`
 - `rank`: `int`
 
@@ -329,6 +331,8 @@ Optional fields:
 - `instanceName`: `str`
 - `currentInstanceType`: `str`
 - `finding`: [FindingType](./literals.md#findingtype)
+- `findingReasonCodes`:
+  `List`\[[InstanceRecommendationFindingReasonCodeType](./literals.md#instancerecommendationfindingreasoncodetype)\]
 - `utilizationMetrics`:
   `List`\[[UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef)\]
 - `lookBackPeriodInDays`: `float`

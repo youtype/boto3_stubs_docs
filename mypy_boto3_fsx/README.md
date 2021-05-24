@@ -3,7 +3,7 @@
 > [Index](..) > FSx
 
 Auto-generated documentation for
-[FSx](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/fsx.html#FSx)
+[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
 type annotations stubs module
 [mypy_boto3_fsx](https://pypi.org/project/mypy-boto3-fsx/).
 

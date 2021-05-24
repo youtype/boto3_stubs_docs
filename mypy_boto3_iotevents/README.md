@@ -3,7 +3,7 @@
 > [Index](..) > IoTEvents
 
 Auto-generated documentation for
-[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iotevents.html#IoTEvents)
+[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module
 [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 

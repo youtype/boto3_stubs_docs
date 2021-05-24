@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatchLogs](.) > Literals
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
@@ -21,6 +21,7 @@ type annotations stubs module
   - [FilterLogEventsPaginatorName](#filterlogeventspaginatorname)
   - [OrderByType](#orderbytype)
   - [QueryStatusType](#querystatustype)
+  - [StandardUnitType](#standardunittype)
 
 ## DescribeDestinationsPaginatorName
 
@@ -162,3 +163,41 @@ Values:
 - `Failed`
 - `Running`
 - `Scheduled`
+- `Timeout`
+- `Unknown`
+
+## StandardUnitType
+
+```python
+from mypy_boto3_logs.literals import StandardUnitType
+```
+
+Values:
+
+- `Bits`
+- `Bits/Second`
+- `Bytes`
+- `Bytes/Second`
+- `Count`
+- `Count/Second`
+- `Gigabits`
+- `Gigabits/Second`
+- `Gigabytes`
+- `Gigabytes/Second`
+- `Kilobits`
+- `Kilobits/Second`
+- `Kilobytes`
+- `Kilobytes/Second`
+- `Megabits`
+- `Megabits/Second`
+- `Megabytes`
+- `Megabytes/Second`
+- `Microseconds`
+- `Milliseconds`
+- `None`
+- `Percent`
+- `Seconds`
+- `Terabits`
+- `Terabits/Second`
+- `Terabytes`
+- `Terabytes/Second`

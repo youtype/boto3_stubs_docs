@@ -3,7 +3,7 @@
 > [Index](..) > [Glue](.) > Literals
 
 Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/glue.html#Glue)
+[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
 type annotations stubs module
 [mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
 

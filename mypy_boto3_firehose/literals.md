@@ -3,7 +3,7 @@
 > [Index](..) > [Firehose](.) > Literals
 
 Auto-generated documentation for
-[Firehose](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/firehose.html#Firehose)
+[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
 type annotations stubs module
 [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 

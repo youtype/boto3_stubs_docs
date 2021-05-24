@@ -3,7 +3,7 @@
 > [Index](..) > [WellArchitected](.) > Literals
 
 Auto-generated documentation for
-[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/wellarchitected.html#WellArchitected)
+[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module
 [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 

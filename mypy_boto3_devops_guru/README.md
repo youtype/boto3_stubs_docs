@@ -1,9 +1,9 @@
-# Type annotations for boto3 DevopsGuru module
+# Type annotations for boto3 DevOpsGuru module
 
-> [Index](..) > DevopsGuru
+> [Index](..) > DevOpsGuru
 
 Auto-generated documentation for
-[DevopsGuru](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/devops-guru.html#DevopsGuru)
+[DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
 type annotations stubs module
 [mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
@@ -11,23 +11,23 @@ type annotations stubs module
 pip install mypy-boto3-devops-guru
 ```
 
-- [Type annotations for boto3 DevopsGuru module](#type-annotations-for-boto3-devopsguru-module)
-  - [DevopsGuruClient](#devopsguruclient)
+- [Type annotations for boto3 DevOpsGuru module](#type-annotations-for-boto3-devopsguru-module)
+  - [DevOpsGuruClient](#devopsguruclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
-## DevopsGuruClient
+## DevOpsGuruClient
 
 Type annotations for `boto3.client("devops-guru")` as
-[DevopsGuruClient](./client.md)
+[DevOpsGuruClient](./client.md)
 
 Can be used directly:
 
 ```python
-from mypy_boto3_devops_guru.client import DevopsGuruClient
+from mypy_boto3_devops_guru.client import DevOpsGuruClient
 ```
 
 ### Methods
@@ -59,7 +59,7 @@ from mypy_boto3_devops_guru.client import DevopsGuruClient
 
 ### Exceptions
 
-DevopsGuruClient [exceptions](./client.md#exceptions)
+DevOpsGuruClient [exceptions](./client.md#exceptions)
 
 - AccessDeniedException
 - ClientError

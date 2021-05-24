@@ -3,7 +3,7 @@
 > [Index](..) > [AppSync](.) > Paginators
 
 Auto-generated documentation for
-[AppSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync)
+[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
 type annotations stubs module
 [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
@@ -30,7 +30,7 @@ def get_list_api_keys_paginator() -> ListApiKeysPaginator:
 ```
 
 Boto3 documentation:
-[AppSync.Paginator.ListApiKeys](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Paginator.ListApiKeys)
+[AppSync.Paginator.ListApiKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListApiKeys)
 
 Arguments for `ListApiKeysPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
 ```
 
 Boto3 documentation:
-[AppSync.Paginator.ListDataSources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Paginator.ListDataSources)
+[AppSync.Paginator.ListDataSources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListDataSources)
 
 Arguments for `ListDataSourcesPaginator.paginate` method:
 
@@ -81,7 +81,7 @@ def get_list_functions_paginator() -> ListFunctionsPaginator:
 ```
 
 Boto3 documentation:
-[AppSync.Paginator.ListFunctions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Paginator.ListFunctions)
+[AppSync.Paginator.ListFunctions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListFunctions)
 
 Arguments for `ListFunctionsPaginator.paginate` method:
 
@@ -107,7 +107,7 @@ def get_list_graphql_apis_paginator() -> ListGraphqlApisPaginator:
 ```
 
 Boto3 documentation:
-[AppSync.Paginator.ListGraphqlApis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Paginator.ListGraphqlApis)
+[AppSync.Paginator.ListGraphqlApis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListGraphqlApis)
 
 Arguments for `ListGraphqlApisPaginator.paginate` method:
 
@@ -131,7 +131,7 @@ def get_list_resolvers_paginator() -> ListResolversPaginator:
 ```
 
 Boto3 documentation:
-[AppSync.Paginator.ListResolvers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Paginator.ListResolvers)
+[AppSync.Paginator.ListResolvers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolvers)
 
 Arguments for `ListResolversPaginator.paginate` method:
 
@@ -158,7 +158,7 @@ def get_list_resolvers_by_function_paginator() -> ListResolversByFunctionPaginat
 ```
 
 Boto3 documentation:
-[AppSync.Paginator.ListResolversByFunction](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Paginator.ListResolversByFunction)
+[AppSync.Paginator.ListResolversByFunction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolversByFunction)
 
 Arguments for `ListResolversByFunctionPaginator.paginate` method:
 
@@ -184,7 +184,7 @@ def get_list_types_paginator() -> ListTypesPaginator:
 ```
 
 Boto3 documentation:
-[AppSync.Paginator.ListTypes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Paginator.ListTypes)
+[AppSync.Paginator.ListTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListTypes)
 
 Arguments for `ListTypesPaginator.paginate` method:
 

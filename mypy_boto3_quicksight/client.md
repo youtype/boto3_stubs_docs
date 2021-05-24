@@ -3,7 +3,7 @@
 > [Index](..) > [QuickSight](.) > QuickSightClient
 
 Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight)
+[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
 [mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
@@ -128,7 +128,7 @@ def get_quicksight_client() -> QuickSightClient:
 ```
 
 Boto3 documentation:
-[QuickSight.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client)
+[QuickSight.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client)
 
 ## Exceptions
 
@@ -171,7 +171,7 @@ Exceptions:
 Type annotations for `boto3.client("quicksight").can_paginate` method.
 
 Boto3 documentation:
-[QuickSight.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.can_paginate)
+[QuickSight.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.can_paginate)
 
 Arguments:
 
@@ -184,7 +184,7 @@ Returns `bool`.
 Type annotations for `boto3.client("quicksight").cancel_ingestion` method.
 
 Boto3 documentation:
-[QuickSight.Client.cancel_ingestion](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.cancel_ingestion)
+[QuickSight.Client.cancel_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.cancel_ingestion)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("quicksight").create_account_customization`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.create_account_customization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_account_customization)
+[QuickSight.Client.create_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_account_customization)
 
 Arguments:
 
@@ -220,7 +220,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_analysis` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_analysis)
+[QuickSight.Client.create_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_analysis)
 
 Arguments:
 
@@ -244,7 +244,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_dashboard` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_dashboard)
+[QuickSight.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_dashboard)
 
 Arguments:
 
@@ -271,7 +271,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_data_set` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_data_set)
+[QuickSight.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_set)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_data_source` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_data_source)
+[QuickSight.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_source)
 
 Arguments:
 
@@ -331,7 +331,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_group` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_group)
+[QuickSight.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group)
 
 Arguments:
 
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("quicksight").create_group_membership`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.create_group_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_group_membership)
+[QuickSight.Client.create_group_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group_membership)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("quicksight").create_iam_policy_assignment`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.create_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_iam_policy_assignment)
+[QuickSight.Client.create_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_iam_policy_assignment)
 
 Arguments:
 
@@ -387,7 +387,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_ingestion` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_ingestion](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_ingestion)
+[QuickSight.Client.create_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_ingestion)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_namespace` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_namespace)
+[QuickSight.Client.create_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_namespace)
 
 Arguments:
 
@@ -421,7 +421,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_template` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_template)
+[QuickSight.Client.create_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template)
 
 Arguments:
 
@@ -444,7 +444,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_template_alias` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_template_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_template_alias)
+[QuickSight.Client.create_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template_alias)
 
 Arguments:
 
@@ -461,7 +461,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_theme` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_theme](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_theme)
+[QuickSight.Client.create_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Returns
 Type annotations for `boto3.client("quicksight").create_theme_alias` method.
 
 Boto3 documentation:
-[QuickSight.Client.create_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.create_theme_alias)
+[QuickSight.Client.create_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme_alias)
 
 Arguments:
 
@@ -503,7 +503,7 @@ Type annotations for `boto3.client("quicksight").delete_account_customization`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_account_customization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_account_customization)
+[QuickSight.Client.delete_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_account_customization)
 
 Arguments:
 
@@ -518,7 +518,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_analysis` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_analysis)
+[QuickSight.Client.delete_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_analysis)
 
 Arguments:
 
@@ -535,7 +535,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_dashboard` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_dashboard)
+[QuickSight.Client.delete_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_dashboard)
 
 Arguments:
 
@@ -551,7 +551,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_data_set` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_data_set)
+[QuickSight.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_set)
 
 Arguments:
 
@@ -566,7 +566,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_data_source` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_data_source)
+[QuickSight.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_source)
 
 Arguments:
 
@@ -581,7 +581,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_group` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_group)
+[QuickSight.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group)
 
 Arguments:
 
@@ -598,7 +598,7 @@ Type annotations for `boto3.client("quicksight").delete_group_membership`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_group_membership](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_group_membership)
+[QuickSight.Client.delete_group_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group_membership)
 
 Arguments:
 
@@ -616,7 +616,7 @@ Type annotations for `boto3.client("quicksight").delete_iam_policy_assignment`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_iam_policy_assignment)
+[QuickSight.Client.delete_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_iam_policy_assignment)
 
 Arguments:
 
@@ -632,7 +632,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_namespace` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_namespace)
+[QuickSight.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_namespace)
 
 Arguments:
 
@@ -647,7 +647,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_template` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_template)
+[QuickSight.Client.delete_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template)
 
 Arguments:
 
@@ -663,7 +663,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_template_alias` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_template_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_template_alias)
+[QuickSight.Client.delete_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template_alias)
 
 Arguments:
 
@@ -679,7 +679,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_theme` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_theme](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_theme)
+[QuickSight.Client.delete_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme)
 
 Arguments:
 
@@ -695,7 +695,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_theme_alias` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_theme_alias)
+[QuickSight.Client.delete_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme_alias)
 
 Arguments:
 
@@ -711,7 +711,7 @@ Returns
 Type annotations for `boto3.client("quicksight").delete_user` method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_user)
+[QuickSight.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user)
 
 Arguments:
 
@@ -727,7 +727,7 @@ Type annotations for `boto3.client("quicksight").delete_user_by_principal_id`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.delete_user_by_principal_id](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.delete_user_by_principal_id)
+[QuickSight.Client.delete_user_by_principal_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user_by_principal_id)
 
 Arguments:
 
@@ -744,7 +744,7 @@ Type annotations for
 `boto3.client("quicksight").describe_account_customization` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_account_customization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_account_customization)
+[QuickSight.Client.describe_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_customization)
 
 Arguments:
 
@@ -761,7 +761,7 @@ Type annotations for `boto3.client("quicksight").describe_account_settings`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_account_settings)
+[QuickSight.Client.describe_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_settings)
 
 Arguments:
 
@@ -775,7 +775,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_analysis` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_analysis)
+[QuickSight.Client.describe_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis)
 
 Arguments:
 
@@ -791,7 +791,7 @@ Type annotations for `boto3.client("quicksight").describe_analysis_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_analysis_permissions)
+[QuickSight.Client.describe_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_permissions)
 
 Arguments:
 
@@ -806,7 +806,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_dashboard` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_dashboard)
+[QuickSight.Client.describe_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard)
 
 Arguments:
 
@@ -824,7 +824,7 @@ Type annotations for
 `boto3.client("quicksight").describe_dashboard_permissions` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_permissions)
+[QuickSight.Client.describe_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_permissions)
 
 Arguments:
 
@@ -839,7 +839,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_data_set` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_data_set)
+[QuickSight.Client.describe_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set)
 
 Arguments:
 
@@ -855,7 +855,7 @@ Type annotations for `boto3.client("quicksight").describe_data_set_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_data_set_permissions)
+[QuickSight.Client.describe_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set_permissions)
 
 Arguments:
 
@@ -870,7 +870,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_data_source` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_data_source)
+[QuickSight.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source)
 
 Arguments:
 
@@ -886,7 +886,7 @@ Type annotations for
 `boto3.client("quicksight").describe_data_source_permissions` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_data_source_permissions)
+[QuickSight.Client.describe_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source_permissions)
 
 Arguments:
 
@@ -901,7 +901,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_group` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_group)
+[QuickSight.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group)
 
 Arguments:
 
@@ -918,7 +918,7 @@ Type annotations for
 `boto3.client("quicksight").describe_iam_policy_assignment` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_iam_policy_assignment)
+[QuickSight.Client.describe_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_iam_policy_assignment)
 
 Arguments:
 
@@ -934,7 +934,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_ingestion` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_ingestion](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_ingestion)
+[QuickSight.Client.describe_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ingestion)
 
 Arguments:
 
@@ -950,7 +950,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_namespace` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_namespace](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_namespace)
+[QuickSight.Client.describe_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_namespace)
 
 Arguments:
 
@@ -965,7 +965,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_template` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_template)
+[QuickSight.Client.describe_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template)
 
 Arguments:
 
@@ -983,7 +983,7 @@ Type annotations for `boto3.client("quicksight").describe_template_alias`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_template_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_template_alias)
+[QuickSight.Client.describe_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_alias)
 
 Arguments:
 
@@ -1000,7 +1000,7 @@ Type annotations for `boto3.client("quicksight").describe_template_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_template_permissions)
+[QuickSight.Client.describe_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_permissions)
 
 Arguments:
 
@@ -1015,7 +1015,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_theme` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_theme](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_theme)
+[QuickSight.Client.describe_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme)
 
 Arguments:
 
@@ -1032,7 +1032,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_theme_alias` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_theme_alias)
+[QuickSight.Client.describe_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_alias)
 
 Arguments:
 
@@ -1049,7 +1049,7 @@ Type annotations for `boto3.client("quicksight").describe_theme_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_theme_permissions)
+[QuickSight.Client.describe_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_permissions)
 
 Arguments:
 
@@ -1064,7 +1064,7 @@ Returns
 Type annotations for `boto3.client("quicksight").describe_user` method.
 
 Boto3 documentation:
-[QuickSight.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.describe_user)
+[QuickSight.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_user)
 
 Arguments:
 
@@ -1081,7 +1081,7 @@ Type annotations for `boto3.client("quicksight").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.generate_presigned_url)
+[QuickSight.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1098,7 +1098,7 @@ Type annotations for `boto3.client("quicksight").get_dashboard_embed_url`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.get_dashboard_embed_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url)
+[QuickSight.Client.get_dashboard_embed_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url)
 
 Arguments:
 
@@ -1123,7 +1123,7 @@ Returns
 Type annotations for `boto3.client("quicksight").get_session_embed_url` method.
 
 Boto3 documentation:
-[QuickSight.Client.get_session_embed_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.get_session_embed_url)
+[QuickSight.Client.get_session_embed_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_session_embed_url)
 
 Arguments:
 
@@ -1140,7 +1140,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_analyses` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_analyses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_analyses)
+[QuickSight.Client.list_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_analyses)
 
 Arguments:
 
@@ -1157,7 +1157,7 @@ Type annotations for `boto3.client("quicksight").list_dashboard_versions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.list_dashboard_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_dashboard_versions)
+[QuickSight.Client.list_dashboard_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboard_versions)
 
 Arguments:
 
@@ -1174,7 +1174,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_dashboards` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_dashboards)
+[QuickSight.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboards)
 
 Arguments:
 
@@ -1190,7 +1190,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_data_sets` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_data_sets)
+[QuickSight.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sets)
 
 Arguments:
 
@@ -1206,7 +1206,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_data_sources` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_data_sources)
+[QuickSight.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sources)
 
 Arguments:
 
@@ -1223,7 +1223,7 @@ Type annotations for `boto3.client("quicksight").list_group_memberships`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.list_group_memberships](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_group_memberships)
+[QuickSight.Client.list_group_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_group_memberships)
 
 Arguments:
 
@@ -1241,7 +1241,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_groups` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_groups)
+[QuickSight.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_groups)
 
 Arguments:
 
@@ -1258,7 +1258,7 @@ Type annotations for `boto3.client("quicksight").list_iam_policy_assignments`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.list_iam_policy_assignments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments)
+[QuickSight.Client.list_iam_policy_assignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments)
 
 Arguments:
 
@@ -1278,7 +1278,7 @@ Type annotations for
 `boto3.client("quicksight").list_iam_policy_assignments_for_user` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_iam_policy_assignments_for_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments_for_user)
+[QuickSight.Client.list_iam_policy_assignments_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments_for_user)
 
 Arguments:
 
@@ -1296,7 +1296,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_ingestions` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_ingestions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_ingestions)
+[QuickSight.Client.list_ingestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_ingestions)
 
 Arguments:
 
@@ -1313,7 +1313,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_namespaces` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_namespaces)
+[QuickSight.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_namespaces)
 
 Arguments:
 
@@ -1330,7 +1330,7 @@ Type annotations for `boto3.client("quicksight").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_tags_for_resource)
+[QuickSight.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -1344,7 +1344,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_template_aliases` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_template_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_template_aliases)
+[QuickSight.Client.list_template_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_aliases)
 
 Arguments:
 
@@ -1362,7 +1362,7 @@ Type annotations for `boto3.client("quicksight").list_template_versions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_template_versions)
+[QuickSight.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_versions)
 
 Arguments:
 
@@ -1379,7 +1379,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_templates` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_templates)
+[QuickSight.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_templates)
 
 Arguments:
 
@@ -1395,7 +1395,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_theme_aliases` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_theme_aliases](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_theme_aliases)
+[QuickSight.Client.list_theme_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_aliases)
 
 Arguments:
 
@@ -1412,7 +1412,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_theme_versions` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_theme_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_theme_versions)
+[QuickSight.Client.list_theme_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_versions)
 
 Arguments:
 
@@ -1429,7 +1429,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_themes` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_themes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_themes)
+[QuickSight.Client.list_themes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_themes)
 
 Arguments:
 
@@ -1445,7 +1445,7 @@ Returns [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef).
 Type annotations for `boto3.client("quicksight").list_user_groups` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_user_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_user_groups)
+[QuickSight.Client.list_user_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_user_groups)
 
 Arguments:
 
@@ -1463,7 +1463,7 @@ Returns
 Type annotations for `boto3.client("quicksight").list_users` method.
 
 Boto3 documentation:
-[QuickSight.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.list_users)
+[QuickSight.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_users)
 
 Arguments:
 
@@ -1479,7 +1479,7 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 Type annotations for `boto3.client("quicksight").register_user` method.
 
 Boto3 documentation:
-[QuickSight.Client.register_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.register_user)
+[QuickSight.Client.register_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.register_user)
 
 Arguments:
 
@@ -1493,6 +1493,9 @@ Arguments:
 - `SessionName`: `str`
 - `UserName`: `str`
 - `CustomPermissionsName`: `str`
+- `ExternalLoginFederationProviderType`: `str`
+- `CustomFederationProviderUrl`: `str`
+- `ExternalLoginId`: `str`
 
 Returns
 [RegisterUserResponseTypeDef](./type_defs.md#registeruserresponsetypedef).
@@ -1502,7 +1505,7 @@ Returns
 Type annotations for `boto3.client("quicksight").restore_analysis` method.
 
 Boto3 documentation:
-[QuickSight.Client.restore_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.restore_analysis)
+[QuickSight.Client.restore_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.restore_analysis)
 
 Arguments:
 
@@ -1517,7 +1520,7 @@ Returns
 Type annotations for `boto3.client("quicksight").search_analyses` method.
 
 Boto3 documentation:
-[QuickSight.Client.search_analyses](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.search_analyses)
+[QuickSight.Client.search_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_analyses)
 
 Arguments:
 
@@ -1536,7 +1539,7 @@ Returns
 Type annotations for `boto3.client("quicksight").search_dashboards` method.
 
 Boto3 documentation:
-[QuickSight.Client.search_dashboards](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.search_dashboards)
+[QuickSight.Client.search_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_dashboards)
 
 Arguments:
 
@@ -1555,7 +1558,7 @@ Returns
 Type annotations for `boto3.client("quicksight").tag_resource` method.
 
 Boto3 documentation:
-[QuickSight.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.tag_resource)
+[QuickSight.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.tag_resource)
 
 Arguments:
 
@@ -1570,7 +1573,7 @@ Returns
 Type annotations for `boto3.client("quicksight").untag_resource` method.
 
 Boto3 documentation:
-[QuickSight.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.untag_resource)
+[QuickSight.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.untag_resource)
 
 Arguments:
 
@@ -1586,7 +1589,7 @@ Type annotations for `boto3.client("quicksight").update_account_customization`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.update_account_customization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_account_customization)
+[QuickSight.Client.update_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_customization)
 
 Arguments:
 
@@ -1605,7 +1608,7 @@ Type annotations for `boto3.client("quicksight").update_account_settings`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_account_settings)
+[QuickSight.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_settings)
 
 Arguments:
 
@@ -1621,7 +1624,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_analysis` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_analysis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_analysis)
+[QuickSight.Client.update_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis)
 
 Arguments:
 
@@ -1643,7 +1646,7 @@ Type annotations for `boto3.client("quicksight").update_analysis_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.update_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_analysis_permissions)
+[QuickSight.Client.update_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis_permissions)
 
 Arguments:
 
@@ -1662,7 +1665,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_dashboard` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_dashboard)
+[QuickSight.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard)
 
 Arguments:
 
@@ -1687,7 +1690,7 @@ Type annotations for `boto3.client("quicksight").update_dashboard_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.update_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_dashboard_permissions)
+[QuickSight.Client.update_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_permissions)
 
 Arguments:
 
@@ -1707,7 +1710,7 @@ Type annotations for
 `boto3.client("quicksight").update_dashboard_published_version` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_dashboard_published_version](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_dashboard_published_version)
+[QuickSight.Client.update_dashboard_published_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_published_version)
 
 Arguments:
 
@@ -1723,7 +1726,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_data_set` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_data_set)
+[QuickSight.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set)
 
 Arguments:
 
@@ -1754,7 +1757,7 @@ Type annotations for `boto3.client("quicksight").update_data_set_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.update_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_data_set_permissions)
+[QuickSight.Client.update_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set_permissions)
 
 Arguments:
 
@@ -1773,7 +1776,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_data_source` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_data_source)
+[QuickSight.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source)
 
 Arguments:
 
@@ -1797,7 +1800,7 @@ Type annotations for
 `boto3.client("quicksight").update_data_source_permissions` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_data_source_permissions)
+[QuickSight.Client.update_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source_permissions)
 
 Arguments:
 
@@ -1816,7 +1819,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_group` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_group)
+[QuickSight.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_group)
 
 Arguments:
 
@@ -1834,7 +1837,7 @@ Type annotations for `boto3.client("quicksight").update_iam_policy_assignment`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.update_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_iam_policy_assignment)
+[QuickSight.Client.update_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_iam_policy_assignment)
 
 Arguments:
 
@@ -1854,7 +1857,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_template` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_template](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_template)
+[QuickSight.Client.update_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template)
 
 Arguments:
 
@@ -1874,7 +1877,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_template_alias` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_template_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_template_alias)
+[QuickSight.Client.update_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_alias)
 
 Arguments:
 
@@ -1892,7 +1895,7 @@ Type annotations for `boto3.client("quicksight").update_template_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.update_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_template_permissions)
+[QuickSight.Client.update_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_permissions)
 
 Arguments:
 
@@ -1911,7 +1914,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_theme` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_theme](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_theme)
+[QuickSight.Client.update_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme)
 
 Arguments:
 
@@ -1931,7 +1934,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_theme_alias` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_theme_alias)
+[QuickSight.Client.update_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_alias)
 
 Arguments:
 
@@ -1949,7 +1952,7 @@ Type annotations for `boto3.client("quicksight").update_theme_permissions`
 method.
 
 Boto3 documentation:
-[QuickSight.Client.update_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_theme_permissions)
+[QuickSight.Client.update_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_permissions)
 
 Arguments:
 
@@ -1968,7 +1971,7 @@ Returns
 Type annotations for `boto3.client("quicksight").update_user` method.
 
 Boto3 documentation:
-[QuickSight.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/quicksight.html#QuickSight.Client.update_user)
+[QuickSight.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_user)
 
 Arguments:
 
@@ -1979,6 +1982,9 @@ Arguments:
 - `Role`: [UserRoleType](./literals.md#userroletype) *(required)*
 - `CustomPermissionsName`: `str`
 - `UnapplyCustomPermissions`: `bool`
+- `ExternalLoginFederationProviderType`: `str`
+- `CustomFederationProviderUrl`: `str`
+- `ExternalLoginId`: `str`
 
 Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 

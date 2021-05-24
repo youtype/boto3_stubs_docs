@@ -3,7 +3,7 @@
 > [Index](..) > [Redshift](.) > Literals
 
 Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/redshift.html#Redshift)
+[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
 type annotations stubs module
 [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 

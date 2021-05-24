@@ -3,7 +3,7 @@
 > [Index](..) > [StorageGateway](.) > Literals
 
 Auto-generated documentation for
-[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/storagegateway.html#StorageGateway)
+[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module
 [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 

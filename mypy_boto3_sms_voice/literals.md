@@ -1,13 +1,13 @@
-# Literals for boto3 SMSVoice module
+# Literals for boto3 PinpointSMSVoice module
 
-> [Index](..) > [SMSVoice](.) > Literals
+> [Index](..) > [PinpointSMSVoice](.) > Literals
 
 Auto-generated documentation for
-[SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms-voice.html#SMSVoice)
+[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice)
 type annotations stubs module
 [mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
 
-- [Literals for boto3 SMSVoice module](#literals-for-boto3-smsvoice-module)
+- [Literals for boto3 PinpointSMSVoice module](#literals-for-boto3-pinpointsmsvoice-module)
   - [EventTypeType](#eventtypetype)
 
 ## EventTypeType

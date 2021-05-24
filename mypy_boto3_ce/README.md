@@ -3,7 +3,7 @@
 > [Index](..) > CostExplorer
 
 Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer)
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module
 [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
@@ -99,6 +99,7 @@ from mypy_boto3_ce.literals import AccountScopeType, ...
 - [CostCategoryStatusComponentType](./literals.md#costcategorystatuscomponenttype)
 - [CostCategoryStatusType](./literals.md#costcategorystatustype)
 - [DimensionType](./literals.md#dimensiontype)
+- [FindingReasonCodeType](./literals.md#findingreasoncodetype)
 - [GranularityType](./literals.md#granularitytype)
 - [GroupDefinitionTypeType](./literals.md#groupdefinitiontypetype)
 - [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
@@ -109,6 +110,7 @@ from mypy_boto3_ce.literals import AccountScopeType, ...
 - [NumericOperatorType](./literals.md#numericoperatortype)
 - [OfferingClassType](./literals.md#offeringclasstype)
 - [PaymentOptionType](./literals.md#paymentoptiontype)
+- [PlatformDifferenceType](./literals.md#platformdifferencetype)
 - [RecommendationTargetType](./literals.md#recommendationtargettype)
 - [RightsizingTypeType](./literals.md#rightsizingtypetype)
 - [SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype)
@@ -154,6 +156,7 @@ from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef, ...
 - [DescribeCostCategoryDefinitionResponseTypeDef](./type_defs.md#describecostcategorydefinitionresponsetypedef)
 - [DimensionValuesTypeDef](./type_defs.md#dimensionvaluestypedef)
 - [DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef)
+- [DiskResourceUtilizationTypeDef](./type_defs.md#diskresourceutilizationtypedef)
 - [EBSResourceUtilizationTypeDef](./type_defs.md#ebsresourceutilizationtypedef)
 - [EC2InstanceDetailsTypeDef](./type_defs.md#ec2instancedetailstypedef)
 - [EC2ResourceDetailsTypeDef](./type_defs.md#ec2resourcedetailstypedef)
@@ -188,6 +191,7 @@ from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef, ...
 - [ListCostCategoryDefinitionsResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponsetypedef)
 - [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
 - [ModifyRecommendationDetailTypeDef](./type_defs.md#modifyrecommendationdetailtypedef)
+- [NetworkResourceUtilizationTypeDef](./type_defs.md#networkresourceutilizationtypedef)
 - [ProvideAnomalyFeedbackResponseTypeDef](./type_defs.md#provideanomalyfeedbackresponsetypedef)
 - [RDSInstanceDetailsTypeDef](./type_defs.md#rdsinstancedetailstypedef)
 - [RedshiftInstanceDetailsTypeDef](./type_defs.md#redshiftinstancedetailstypedef)

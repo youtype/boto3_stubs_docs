@@ -3,7 +3,7 @@
 > [Index](..) > [NimbleStudio](.) > Typed dictionaries
 
 Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio)
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
 [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 

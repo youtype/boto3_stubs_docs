@@ -3,7 +3,7 @@
 > [Index](..) > [AccessAnalyzer](.) > AccessAnalyzerClient
 
 Auto-generated documentation for
-[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer)
+[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
 [mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
@@ -57,7 +57,7 @@ def get_accessanalyzer_client() -> AccessAnalyzerClient:
 ```
 
 Boto3 documentation:
-[AccessAnalyzer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client)
+[AccessAnalyzer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client)
 
 ## Exceptions
 
@@ -90,7 +90,7 @@ Type annotations for `boto3.client("accessanalyzer").apply_archive_rule`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.apply_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.apply_archive_rule)
+[AccessAnalyzer.Client.apply_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.apply_archive_rule)
 
 Arguments:
 
@@ -103,7 +103,7 @@ Arguments:
 Type annotations for `boto3.client("accessanalyzer").can_paginate` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.can_paginate)
+[AccessAnalyzer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.can_paginate)
 
 Arguments:
 
@@ -117,7 +117,7 @@ Type annotations for `boto3.client("accessanalyzer").cancel_policy_generation`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.cancel_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.cancel_policy_generation)
+[AccessAnalyzer.Client.cancel_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.cancel_policy_generation)
 
 Arguments:
 
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("accessanalyzer").create_access_preview`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.create_access_preview](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_access_preview)
+[AccessAnalyzer.Client.create_access_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_access_preview)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns
 Type annotations for `boto3.client("accessanalyzer").create_analyzer` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.create_analyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_analyzer)
+[AccessAnalyzer.Client.create_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_analyzer)
 
 Arguments:
 
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("accessanalyzer").create_archive_rule`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.create_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_archive_rule)
+[AccessAnalyzer.Client.create_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_archive_rule)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Arguments:
 Type annotations for `boto3.client("accessanalyzer").delete_analyzer` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.delete_analyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_analyzer)
+[AccessAnalyzer.Client.delete_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_analyzer)
 
 Arguments:
 
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("accessanalyzer").delete_archive_rule`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.delete_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_archive_rule)
+[AccessAnalyzer.Client.delete_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_archive_rule)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Type annotations for `boto3.client("accessanalyzer").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.generate_presigned_url)
+[AccessAnalyzer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.generate_presigned_url)
 
 Arguments:
 
@@ -227,7 +227,7 @@ Type annotations for `boto3.client("accessanalyzer").get_access_preview`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.get_access_preview](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_access_preview)
+[AccessAnalyzer.Client.get_access_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_access_preview)
 
 Arguments:
 
@@ -243,7 +243,7 @@ Type annotations for `boto3.client("accessanalyzer").get_analyzed_resource`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.get_analyzed_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzed_resource)
+[AccessAnalyzer.Client.get_analyzed_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzed_resource)
 
 Arguments:
 
@@ -258,7 +258,7 @@ Returns
 Type annotations for `boto3.client("accessanalyzer").get_analyzer` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.get_analyzer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzer)
+[AccessAnalyzer.Client.get_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzer)
 
 Arguments:
 
@@ -272,7 +272,7 @@ Returns
 Type annotations for `boto3.client("accessanalyzer").get_archive_rule` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.get_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_archive_rule)
+[AccessAnalyzer.Client.get_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_archive_rule)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns
 Type annotations for `boto3.client("accessanalyzer").get_finding` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.get_finding](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_finding)
+[AccessAnalyzer.Client.get_finding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_finding)
 
 Arguments:
 
@@ -302,7 +302,7 @@ Type annotations for `boto3.client("accessanalyzer").get_generated_policy`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.get_generated_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_generated_policy)
+[AccessAnalyzer.Client.get_generated_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_generated_policy)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Type annotations for
 `boto3.client("accessanalyzer").list_access_preview_findings` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.list_access_preview_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_preview_findings)
+[AccessAnalyzer.Client.list_access_preview_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_preview_findings)
 
 Arguments:
 
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("accessanalyzer").list_access_previews`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.list_access_previews](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_previews)
+[AccessAnalyzer.Client.list_access_previews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_previews)
 
 Arguments:
 
@@ -356,7 +356,7 @@ Type annotations for `boto3.client("accessanalyzer").list_analyzed_resources`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.list_analyzed_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzed_resources)
+[AccessAnalyzer.Client.list_analyzed_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzed_resources)
 
 Arguments:
 
@@ -373,7 +373,7 @@ Returns
 Type annotations for `boto3.client("accessanalyzer").list_analyzers` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.list_analyzers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzers)
+[AccessAnalyzer.Client.list_analyzers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzers)
 
 Arguments:
 
@@ -390,7 +390,7 @@ Type annotations for `boto3.client("accessanalyzer").list_archive_rules`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.list_archive_rules](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_archive_rules)
+[AccessAnalyzer.Client.list_archive_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_archive_rules)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Returns
 Type annotations for `boto3.client("accessanalyzer").list_findings` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_findings)
+[AccessAnalyzer.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_findings)
 
 Arguments:
 
@@ -426,7 +426,7 @@ Type annotations for `boto3.client("accessanalyzer").list_policy_generations`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.list_policy_generations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_policy_generations)
+[AccessAnalyzer.Client.list_policy_generations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_policy_generations)
 
 Arguments:
 
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("accessanalyzer").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_tags_for_resource)
+[AccessAnalyzer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Type annotations for `boto3.client("accessanalyzer").start_policy_generation`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.start_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_policy_generation)
+[AccessAnalyzer.Client.start_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_policy_generation)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Type annotations for `boto3.client("accessanalyzer").start_resource_scan`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.start_resource_scan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_resource_scan)
+[AccessAnalyzer.Client.start_resource_scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_resource_scan)
 
 Arguments:
 
@@ -490,7 +490,7 @@ Arguments:
 Type annotations for `boto3.client("accessanalyzer").tag_resource` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.tag_resource)
+[AccessAnalyzer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.tag_resource)
 
 Arguments:
 
@@ -504,7 +504,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("accessanalyzer").untag_resource` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.untag_resource)
+[AccessAnalyzer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.untag_resource)
 
 Arguments:
 
@@ -519,7 +519,7 @@ Type annotations for `boto3.client("accessanalyzer").update_archive_rule`
 method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.update_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_archive_rule)
+[AccessAnalyzer.Client.update_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_archive_rule)
 
 Arguments:
 
@@ -534,7 +534,7 @@ Arguments:
 Type annotations for `boto3.client("accessanalyzer").update_findings` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_findings)
+[AccessAnalyzer.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_findings)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Arguments:
 Type annotations for `boto3.client("accessanalyzer").validate_policy` method.
 
 Boto3 documentation:
-[AccessAnalyzer.Client.validate_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/accessanalyzer.html#AccessAnalyzer.Client.validate_policy)
+[AccessAnalyzer.Client.validate_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.validate_policy)
 
 Arguments:
 

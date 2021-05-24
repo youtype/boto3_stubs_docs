@@ -3,7 +3,7 @@
 > [Index](..) > [SageMakerRuntime](.) > SageMakerRuntimeClient
 
 Auto-generated documentation for
-[SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker-runtime.html#SageMakerRuntime)
+[SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
 type annotations stubs module
 [mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
@@ -29,7 +29,7 @@ def get_sagemaker-runtime_client() -> SageMakerRuntimeClient:
 ```
 
 Boto3 documentation:
-[SageMakerRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client)
+[SageMakerRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client)
 
 ## Exceptions
 
@@ -58,7 +58,7 @@ Exceptions:
 Type annotations for `boto3.client("sagemaker-runtime").can_paginate` method.
 
 Boto3 documentation:
-[SageMakerRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.can_paginate)
+[SageMakerRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.can_paginate)
 
 Arguments:
 
@@ -72,7 +72,7 @@ Type annotations for `boto3.client("sagemaker-runtime").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[SageMakerRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.generate_presigned_url)
+[SageMakerRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.generate_presigned_url)
 
 Arguments:
 
@@ -89,7 +89,7 @@ Type annotations for `boto3.client("sagemaker-runtime").invoke_endpoint`
 method.
 
 Boto3 documentation:
-[SageMakerRuntime.Client.invoke_endpoint](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint)
+[SageMakerRuntime.Client.invoke_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint)
 
 Arguments:
 

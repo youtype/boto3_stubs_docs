@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticTranscoder](.) > Paginators
 
 Auto-generated documentation for
-[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder)
+[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
 [mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
@@ -28,7 +28,7 @@ def get_list_jobs_by_pipeline_paginator() -> ListJobsByPipelinePaginator:
 ```
 
 Boto3 documentation:
-[ElasticTranscoder.Paginator.ListJobsByPipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByPipeline)
+[ElasticTranscoder.Paginator.ListJobsByPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByPipeline)
 
 Arguments for `ListJobsByPipelinePaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_list_jobs_by_status_paginator() -> ListJobsByStatusPaginator:
 ```
 
 Boto3 documentation:
-[ElasticTranscoder.Paginator.ListJobsByStatus](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByStatus)
+[ElasticTranscoder.Paginator.ListJobsByStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByStatus)
 
 Arguments for `ListJobsByStatusPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
 ```
 
 Boto3 documentation:
-[ElasticTranscoder.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPipelines)
+[ElasticTranscoder.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPipelines)
 
 Arguments for `ListPipelinesPaginator.paginate` method:
 
@@ -108,7 +108,7 @@ def get_list_presets_paginator() -> ListPresetsPaginator:
 ```
 
 Boto3 documentation:
-[ElasticTranscoder.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPresets)
+[ElasticTranscoder.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPresets)
 
 Arguments for `ListPresetsPaginator.paginate` method:
 

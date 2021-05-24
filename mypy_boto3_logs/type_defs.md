@@ -3,7 +3,7 @@
 > [Index](..) > [CloudWatchLogs](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/logs.html#CloudWatchLogs)
+[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
@@ -418,6 +418,8 @@ Required fields:
 Optional fields:
 
 - `defaultValue`: `float`
+- `dimensions`: `Dict`\[`str`, `str`\]
+- `unit`: [StandardUnitType](./literals.md#standardunittype)
 
 ## OutputLogEventTypeDef
 

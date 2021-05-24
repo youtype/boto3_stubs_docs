@@ -3,7 +3,7 @@
 > [Index](..) > [SSMIncidents](.) > Paginators
 
 Auto-generated documentation for
-[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ssm-incidents.html#SSMIncidents)
+[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
 type annotations stubs module
 [mypy_boto3_ssm_incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
@@ -30,7 +30,7 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
 ```
 
 Boto3 documentation:
-[SSMIncidents.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ssm-incidents.html#SSMIncidents.Paginator.GetResourcePolicies)
+[SSMIncidents.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Paginator.GetResourcePolicies)
 
 Arguments for `GetResourcePoliciesPaginator.paginate` method:
 
@@ -56,7 +56,7 @@ def get_list_incident_records_paginator() -> ListIncidentRecordsPaginator:
 ```
 
 Boto3 documentation:
-[SSMIncidents.Paginator.ListIncidentRecords](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListIncidentRecords)
+[SSMIncidents.Paginator.ListIncidentRecords](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListIncidentRecords)
 
 Arguments for `ListIncidentRecordsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_related_items_paginator() -> ListRelatedItemsPaginator:
 ```
 
 Boto3 documentation:
-[SSMIncidents.Paginator.ListRelatedItems](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListRelatedItems)
+[SSMIncidents.Paginator.ListRelatedItems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListRelatedItems)
 
 Arguments for `ListRelatedItemsPaginator.paginate` method:
 
@@ -108,7 +108,7 @@ def get_list_replication_sets_paginator() -> ListReplicationSetsPaginator:
 ```
 
 Boto3 documentation:
-[SSMIncidents.Paginator.ListReplicationSets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListReplicationSets)
+[SSMIncidents.Paginator.ListReplicationSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListReplicationSets)
 
 Arguments for `ListReplicationSetsPaginator.paginate` method:
 
@@ -133,7 +133,7 @@ def get_list_response_plans_paginator() -> ListResponsePlansPaginator:
 ```
 
 Boto3 documentation:
-[SSMIncidents.Paginator.ListResponsePlans](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListResponsePlans)
+[SSMIncidents.Paginator.ListResponsePlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListResponsePlans)
 
 Arguments for `ListResponsePlansPaginator.paginate` method:
 
@@ -158,7 +158,7 @@ def get_list_timeline_events_paginator() -> ListTimelineEventsPaginator:
 ```
 
 Boto3 documentation:
-[SSMIncidents.Paginator.ListTimelineEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListTimelineEvents)
+[SSMIncidents.Paginator.ListTimelineEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Paginator.ListTimelineEvents)
 
 Arguments for `ListTimelineEventsPaginator.paginate` method:
 

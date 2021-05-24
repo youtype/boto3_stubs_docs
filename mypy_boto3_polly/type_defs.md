@@ -3,7 +3,7 @@
 > [Index](..) > [Polly](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/polly.html#Polly)
+[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
 type annotations stubs module
 [mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
 

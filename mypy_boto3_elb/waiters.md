@@ -3,7 +3,7 @@
 > [Index](..) > [ElasticLoadBalancing](.) > Waiters
 
 Auto-generated documentation for
-[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elb.html#ElasticLoadBalancing)
+[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module
 [mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
 
@@ -27,7 +27,7 @@ def get_any_instance_in_service_waiter() -> AnyInstanceInServiceWaiter:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancing.Waiter.any_instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elb.html#ElasticLoadBalancing.Waiter.any_instance_in_service)
+[ElasticLoadBalancing.Waiter.any_instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.any_instance_in_service)
 
 Arguments for `AnyInstanceInServiceWaiter.wait` method:
 
@@ -49,7 +49,7 @@ def get_instance_deregistered_waiter() -> InstanceDeregisteredWaiter:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancing.Waiter.instance_deregistered](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_deregistered)
+[ElasticLoadBalancing.Waiter.instance_deregistered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_deregistered)
 
 Arguments for `InstanceDeregisteredWaiter.wait` method:
 
@@ -71,7 +71,7 @@ def get_instance_in_service_waiter() -> InstanceInServiceWaiter:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancing.Waiter.instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_in_service)
+[ElasticLoadBalancing.Waiter.instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.instance_in_service)
 
 Arguments for `InstanceInServiceWaiter.wait` method:
 

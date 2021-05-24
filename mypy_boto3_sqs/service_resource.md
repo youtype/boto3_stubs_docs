@@ -3,7 +3,7 @@
 > [Index](..) > [SQS](.) > SQSServiceResource
 
 Auto-generated documentation for
-[SQS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS)
+[SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
 type annotations stubs module
 [mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
@@ -41,7 +41,7 @@ def get_sqs_resource() -> SQSServiceResource:
 ```
 
 Boto3 documentation:
-[SQS.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource)
+[SQS.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource)
 
 ## Attributes
 
@@ -65,7 +65,7 @@ def get_collection() -> ServiceResourceQueuesCollection:
 Provides access to [Queue](#queue) resource.
 
 Boto3 documentation:
-[SQS.ServiceResource.queues](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource.queues)
+[SQS.ServiceResource.queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.queues)
 
 ## Methods
 
@@ -74,7 +74,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("sqs").Message` method.
 
 Boto3 documentation:
-[SQS.ServiceResource.Message](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource.Message)
+[SQS.ServiceResource.Message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.Message)
 
 Arguments:
 
@@ -88,7 +88,7 @@ Returns [Message](#message).
 Type annotations for `boto3.resource("sqs").Queue` method.
 
 Boto3 documentation:
-[SQS.ServiceResource.Queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource.Queue)
+[SQS.ServiceResource.Queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.Queue)
 
 Arguments:
 
@@ -101,7 +101,7 @@ Returns [Queue](#queue).
 Type annotations for `boto3.resource("sqs").create_queue` method.
 
 Boto3 documentation:
-[SQS.ServiceResource.create_queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource.create_queue)
+[SQS.ServiceResource.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.create_queue)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Returns [Queue](#queue).
 Type annotations for `boto3.resource("sqs").get_available_subresources` method.
 
 Boto3 documentation:
-[SQS.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource.get_available_subresources)
+[SQS.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -127,7 +127,7 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("sqs").get_queue_by_name` method.
 
 Boto3 documentation:
-[SQS.ServiceResource.get_queue_by_name](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource.get_queue_by_name)
+[SQS.ServiceResource.get_queue_by_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.get_queue_by_name)
 
 Arguments:
 
@@ -150,7 +150,7 @@ def get_resource() -> Message:
 ```
 
 Boto3 documentation:
-[SQS.Message](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource.Message)
+[SQS.Message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.Message)
 
 ### Message attributes
 
@@ -170,7 +170,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("sqs").Queue` method.
 
 Boto3 documentation:
-[SQS.Message.Queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Message.Queue)
+[SQS.Message.Queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.Queue)
 
 Returns [Queue](#queue).
 
@@ -179,7 +179,7 @@ Returns [Queue](#queue).
 Type annotations for `boto3.resource("sqs").change_visibility` method.
 
 Boto3 documentation:
-[SQS.Message.change_visibility](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Message.change_visibility)
+[SQS.Message.change_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.change_visibility)
 
 Arguments:
 
@@ -190,14 +190,14 @@ Arguments:
 Type annotations for `boto3.resource("sqs").delete` method.
 
 Boto3 documentation:
-[SQS.Message.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Message.delete)
+[SQS.Message.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.delete)
 
 #### Message.get_available_subresources method
 
 Type annotations for `boto3.resource("sqs").get_available_subresources` method.
 
 Boto3 documentation:
-[SQS.Message.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Message.get_available_subresources)
+[SQS.Message.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -215,7 +215,7 @@ def get_resource() -> Queue:
 ```
 
 Boto3 documentation:
-[SQS.Queue](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.ServiceResource.Queue)
+[SQS.Queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.Queue)
 
 ### Queue attributes
 
@@ -244,7 +244,7 @@ def get_collection() -> QueueDeadLetterSourceQueuesCollection:
 Provides access to [Queue](#queue) resource.
 
 Boto3 documentation:
-[SQS.Queue.QueueDeadLetterSourceQueuesCollection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.dead_letter_source_queues)
+[SQS.Queue.QueueDeadLetterSourceQueuesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.dead_letter_source_queues)
 
 ### Queue methods
 
@@ -253,7 +253,7 @@ Boto3 documentation:
 Type annotations for `boto3.resource("sqs").Message` method.
 
 Boto3 documentation:
-[SQS.Queue.Message](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.Message)
+[SQS.Queue.Message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.Message)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Returns [Message](#message).
 Type annotations for `boto3.resource("sqs").add_permission` method.
 
 Boto3 documentation:
-[SQS.Queue.add_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.add_permission)
+[SQS.Queue.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.add_permission)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Type annotations for `boto3.resource("sqs").change_message_visibility_batch`
 method.
 
 Boto3 documentation:
-[SQS.Queue.change_message_visibility_batch](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.change_message_visibility_batch)
+[SQS.Queue.change_message_visibility_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.change_message_visibility_batch)
 
 Arguments:
 
@@ -296,14 +296,14 @@ Returns
 Type annotations for `boto3.resource("sqs").delete` method.
 
 Boto3 documentation:
-[SQS.Queue.delete](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.delete)
+[SQS.Queue.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.delete)
 
 #### Queue.delete_messages method
 
 Type annotations for `boto3.resource("sqs").delete_messages` method.
 
 Boto3 documentation:
-[SQS.Queue.delete_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.delete_messages)
+[SQS.Queue.delete_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.delete_messages)
 
 Arguments:
 
@@ -319,7 +319,7 @@ Returns
 Type annotations for `boto3.resource("sqs").get_available_subresources` method.
 
 Boto3 documentation:
-[SQS.Queue.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.get_available_subresources)
+[SQS.Queue.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.get_available_subresources)
 
 Returns `List`\[`str`\].
 
@@ -328,21 +328,21 @@ Returns `List`\[`str`\].
 Type annotations for `boto3.resource("sqs").load` method.
 
 Boto3 documentation:
-[SQS.Queue.load](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.load)
+[SQS.Queue.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.load)
 
 #### Queue.purge method
 
 Type annotations for `boto3.resource("sqs").purge` method.
 
 Boto3 documentation:
-[SQS.Queue.purge](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.purge)
+[SQS.Queue.purge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.purge)
 
 #### Queue.receive_messages method
 
 Type annotations for `boto3.resource("sqs").receive_messages` method.
 
 Boto3 documentation:
-[SQS.Queue.receive_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.receive_messages)
+[SQS.Queue.receive_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.receive_messages)
 
 Arguments:
 
@@ -361,14 +361,14 @@ Returns `List`\[[Message](#message)\].
 Type annotations for `boto3.resource("sqs").reload` method.
 
 Boto3 documentation:
-[SQS.Queue.reload](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.reload)
+[SQS.Queue.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.reload)
 
 #### Queue.remove_permission method
 
 Type annotations for `boto3.resource("sqs").remove_permission` method.
 
 Boto3 documentation:
-[SQS.Queue.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.remove_permission)
+[SQS.Queue.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.remove_permission)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Arguments:
 Type annotations for `boto3.resource("sqs").send_message` method.
 
 Boto3 documentation:
-[SQS.Queue.send_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.send_message)
+[SQS.Queue.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.send_message)
 
 Arguments:
 
@@ -400,7 +400,7 @@ Returns [SendMessageResultTypeDef](./type_defs.md#sendmessageresulttypedef).
 Type annotations for `boto3.resource("sqs").send_messages` method.
 
 Boto3 documentation:
-[SQS.Queue.send_messages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.send_messages)
+[SQS.Queue.send_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.send_messages)
 
 Arguments:
 
@@ -416,7 +416,7 @@ Returns
 Type annotations for `boto3.resource("sqs").set_attributes` method.
 
 Boto3 documentation:
-[SQS.Queue.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sqs.html#SQS.Queue.set_attributes)
+[SQS.Queue.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.set_attributes)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [IoTJobsDataPlane](.) > Typed dictionaries
 
 Auto-generated documentation for
-[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
 type annotations stubs module
 [mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 

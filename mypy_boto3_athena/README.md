@@ -3,7 +3,7 @@
 > [Index](..) > Athena
 
 Auto-generated documentation for
-[Athena](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/athena.html#Athena)
+[Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
 type annotations stubs module
 [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 

@@ -1,13 +1,13 @@
-# Literals for boto3 Kendra module
+# Literals for boto3 kendra module
 
-> [Index](..) > [Kendra](.) > Literals
+> [Index](..) > [kendra](.) > Literals
 
 Auto-generated documentation for
-[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kendra.html#Kendra)
+[kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
 type annotations stubs module
 [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
-- [Literals for boto3 Kendra module](#literals-for-boto3-kendra-module)
+- [Literals for boto3 kendra module](#literals-for-boto3-kendra-module)
   - [AdditionalResultAttributeValueTypeType](#additionalresultattributevaluetypetype)
   - [ConfluenceAttachmentFieldNameType](#confluenceattachmentfieldnametype)
   - [ConfluenceBlogFieldNameType](#confluenceblogfieldnametype)

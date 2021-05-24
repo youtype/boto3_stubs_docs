@@ -1,13 +1,13 @@
-# Typed dictionaries for boto3 Kendra module
+# Typed dictionaries for boto3 kendra module
 
-> [Index](..) > [Kendra](.) > Typed dictionaries
+> [Index](..) > [kendra](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kendra.html#Kendra)
+[kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
 type annotations stubs module
 [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
-- [Typed dictionaries for boto3 Kendra module](#typed-dictionaries-for-boto3-kendra-module)
+- [Typed dictionaries for boto3 kendra module](#typed-dictionaries-for-boto3-kendra-module)
   - [AccessControlListConfigurationTypeDef](#accesscontrollistconfigurationtypedef)
   - [AclConfigurationTypeDef](#aclconfigurationtypedef)
   - [AdditionalResultAttributeTypeDef](#additionalresultattributetypedef)

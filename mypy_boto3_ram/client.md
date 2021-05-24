@@ -3,7 +3,7 @@
 > [Index](..) > [RAM](.) > RAMClient
 
 Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM)
+[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
 type annotations stubs module
 [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
@@ -53,7 +53,7 @@ def get_ram_client() -> RAMClient:
 ```
 
 Boto3 documentation:
-[RAM.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client)
+[RAM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client)
 
 ## Exceptions
 
@@ -100,7 +100,7 @@ Type annotations for `boto3.client("ram").accept_resource_share_invitation`
 method.
 
 Boto3 documentation:
-[RAM.Client.accept_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.accept_resource_share_invitation)
+[RAM.Client.accept_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.accept_resource_share_invitation)
 
 Arguments:
 
@@ -115,7 +115,7 @@ Returns
 Type annotations for `boto3.client("ram").associate_resource_share` method.
 
 Boto3 documentation:
-[RAM.Client.associate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.associate_resource_share)
+[RAM.Client.associate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("ram").associate_resource_share_permission`
 method.
 
 Boto3 documentation:
-[RAM.Client.associate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.associate_resource_share_permission)
+[RAM.Client.associate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share_permission)
 
 Arguments:
 
@@ -150,7 +150,7 @@ Returns
 Type annotations for `boto3.client("ram").can_paginate` method.
 
 Boto3 documentation:
-[RAM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.can_paginate)
+[RAM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.can_paginate)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ram").create_resource_share` method.
 
 Boto3 documentation:
-[RAM.Client.create_resource_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.create_resource_share)
+[RAM.Client.create_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.create_resource_share)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Returns
 Type annotations for `boto3.client("ram").delete_resource_share` method.
 
 Boto3 documentation:
-[RAM.Client.delete_resource_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.delete_resource_share)
+[RAM.Client.delete_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.delete_resource_share)
 
 Arguments:
 
@@ -198,7 +198,7 @@ Returns
 Type annotations for `boto3.client("ram").disassociate_resource_share` method.
 
 Boto3 documentation:
-[RAM.Client.disassociate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.disassociate_resource_share)
+[RAM.Client.disassociate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Type annotations for
 `boto3.client("ram").disassociate_resource_share_permission` method.
 
 Boto3 documentation:
-[RAM.Client.disassociate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission)
+[RAM.Client.disassociate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("ram").enable_sharing_with_aws_organization`
 method.
 
 Boto3 documentation:
-[RAM.Client.enable_sharing_with_aws_organization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization)
+[RAM.Client.enable_sharing_with_aws_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization)
 
 Returns
 [EnableSharingWithAwsOrganizationResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponsetypedef).
@@ -243,7 +243,7 @@ Returns
 Type annotations for `boto3.client("ram").generate_presigned_url` method.
 
 Boto3 documentation:
-[RAM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.generate_presigned_url)
+[RAM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.generate_presigned_url)
 
 Arguments:
 
@@ -259,7 +259,7 @@ Returns `str`.
 Type annotations for `boto3.client("ram").get_permission` method.
 
 Boto3 documentation:
-[RAM.Client.get_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.get_permission)
+[RAM.Client.get_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_permission)
 
 Arguments:
 
@@ -274,7 +274,7 @@ Returns
 Type annotations for `boto3.client("ram").get_resource_policies` method.
 
 Boto3 documentation:
-[RAM.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.get_resource_policies)
+[RAM.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_policies)
 
 Arguments:
 
@@ -292,7 +292,7 @@ Type annotations for `boto3.client("ram").get_resource_share_associations`
 method.
 
 Boto3 documentation:
-[RAM.Client.get_resource_share_associations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.get_resource_share_associations)
+[RAM.Client.get_resource_share_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_associations)
 
 Arguments:
 
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("ram").get_resource_share_invitations`
 method.
 
 Boto3 documentation:
-[RAM.Client.get_resource_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.get_resource_share_invitations)
+[RAM.Client.get_resource_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_invitations)
 
 Arguments:
 
@@ -333,7 +333,7 @@ Returns
 Type annotations for `boto3.client("ram").get_resource_shares` method.
 
 Boto3 documentation:
-[RAM.Client.get_resource_shares](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.get_resource_shares)
+[RAM.Client.get_resource_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_shares)
 
 Arguments:
 
@@ -356,7 +356,7 @@ Type annotations for `boto3.client("ram").list_pending_invitation_resources`
 method.
 
 Boto3 documentation:
-[RAM.Client.list_pending_invitation_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.list_pending_invitation_resources)
+[RAM.Client.list_pending_invitation_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_pending_invitation_resources)
 
 Arguments:
 
@@ -372,7 +372,7 @@ Returns
 Type annotations for `boto3.client("ram").list_permissions` method.
 
 Boto3 documentation:
-[RAM.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.list_permissions)
+[RAM.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permissions)
 
 Arguments:
 
@@ -388,7 +388,7 @@ Returns
 Type annotations for `boto3.client("ram").list_principals` method.
 
 Boto3 documentation:
-[RAM.Client.list_principals](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.list_principals)
+[RAM.Client.list_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_principals)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("ram").list_resource_share_permissions`
 method.
 
 Boto3 documentation:
-[RAM.Client.list_resource_share_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.list_resource_share_permissions)
+[RAM.Client.list_resource_share_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_share_permissions)
 
 Arguments:
 
@@ -426,7 +426,7 @@ Returns
 Type annotations for `boto3.client("ram").list_resource_types` method.
 
 Boto3 documentation:
-[RAM.Client.list_resource_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.list_resource_types)
+[RAM.Client.list_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_types)
 
 Arguments:
 
@@ -441,7 +441,7 @@ Returns
 Type annotations for `boto3.client("ram").list_resources` method.
 
 Boto3 documentation:
-[RAM.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.list_resources)
+[RAM.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resources)
 
 Arguments:
 
@@ -463,7 +463,7 @@ Type annotations for
 `boto3.client("ram").promote_resource_share_created_from_policy` method.
 
 Boto3 documentation:
-[RAM.Client.promote_resource_share_created_from_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.promote_resource_share_created_from_policy)
+[RAM.Client.promote_resource_share_created_from_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.promote_resource_share_created_from_policy)
 
 Arguments:
 
@@ -478,7 +478,7 @@ Type annotations for `boto3.client("ram").reject_resource_share_invitation`
 method.
 
 Boto3 documentation:
-[RAM.Client.reject_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.reject_resource_share_invitation)
+[RAM.Client.reject_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.reject_resource_share_invitation)
 
 Arguments:
 
@@ -493,7 +493,7 @@ Returns
 Type annotations for `boto3.client("ram").tag_resource` method.
 
 Boto3 documentation:
-[RAM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.tag_resource)
+[RAM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.tag_resource)
 
 Arguments:
 
@@ -507,7 +507,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ram").untag_resource` method.
 
 Boto3 documentation:
-[RAM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.untag_resource)
+[RAM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.untag_resource)
 
 Arguments:
 
@@ -521,7 +521,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ram").update_resource_share` method.
 
 Boto3 documentation:
-[RAM.Client.update_resource_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ram.html#RAM.Client.update_resource_share)
+[RAM.Client.update_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.update_resource_share)
 
 Arguments:
 

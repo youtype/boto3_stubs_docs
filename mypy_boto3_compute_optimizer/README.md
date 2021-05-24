@@ -3,7 +3,7 @@
 > [Index](..) > ComputeOptimizer
 
 Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/compute-optimizer.html#ComputeOptimizer)
+[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
@@ -83,6 +83,7 @@ from mypy_boto3_compute_optimizer.literals import EBSFilterNameType, ...
 - [FilterNameType](./literals.md#filternametype)
 - [FindingReasonCodeType](./literals.md#findingreasoncodetype)
 - [FindingType](./literals.md#findingtype)
+- [InstanceRecommendationFindingReasonCodeType](./literals.md#instancerecommendationfindingreasoncodetype)
 - [JobFilterNameType](./literals.md#jobfilternametype)
 - [JobStatusType](./literals.md#jobstatustype)
 - [LambdaFunctionMemoryMetricNameType](./literals.md#lambdafunctionmemorymetricnametype)
@@ -94,6 +95,7 @@ from mypy_boto3_compute_optimizer.literals import EBSFilterNameType, ...
 - [LambdaFunctionRecommendationFindingType](./literals.md#lambdafunctionrecommendationfindingtype)
 - [MetricNameType](./literals.md#metricnametype)
 - [MetricStatisticType](./literals.md#metricstatistictype)
+- [PlatformDifferenceType](./literals.md#platformdifferencetype)
 - [RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [StatusType](./literals.md#statustype)

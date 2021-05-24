@@ -3,7 +3,7 @@
 > [Index](..) > [DirectConnect](.) > Literals
 
 Auto-generated documentation for
-[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/directconnect.html#DirectConnect)
+[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
 [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 

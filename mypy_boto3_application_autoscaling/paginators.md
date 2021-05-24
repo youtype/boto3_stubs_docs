@@ -3,7 +3,7 @@
 > [Index](..) > [ApplicationAutoScaling](.) > Paginators
 
 Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
 [mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
@@ -28,7 +28,7 @@ def get_describe_scalable_targets_paginator() -> DescribeScalableTargetsPaginato
 ```
 
 Boto3 documentation:
-[ApplicationAutoScaling.Paginator.DescribeScalableTargets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalableTargets)
+[ApplicationAutoScaling.Paginator.DescribeScalableTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalableTargets)
 
 Arguments for `DescribeScalableTargetsPaginator.paginate` method:
 
@@ -58,7 +58,7 @@ def get_describe_scaling_activities_paginator() -> DescribeScalingActivitiesPagi
 ```
 
 Boto3 documentation:
-[ApplicationAutoScaling.Paginator.DescribeScalingActivities](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalingActivities)
+[ApplicationAutoScaling.Paginator.DescribeScalingActivities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalingActivities)
 
 Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
 
@@ -88,7 +88,7 @@ def get_describe_scaling_policies_paginator() -> DescribeScalingPoliciesPaginato
 ```
 
 Boto3 documentation:
-[ApplicationAutoScaling.Paginator.DescribeScalingPolicies](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalingPolicies)
+[ApplicationAutoScaling.Paginator.DescribeScalingPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalingPolicies)
 
 Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
 
@@ -119,7 +119,7 @@ def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPagina
 ```
 
 Boto3 documentation:
-[ApplicationAutoScaling.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScheduledActions)
+[ApplicationAutoScaling.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScheduledActions)
 
 Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 

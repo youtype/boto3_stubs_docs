@@ -1,13 +1,13 @@
-# Literals for boto3 Signer module
+# Literals for boto3 signer module
 
-> [Index](..) > [Signer](.) > Literals
+> [Index](..) > [signer](.) > Literals
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/signer.html#Signer)
+[signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
-- [Literals for boto3 Signer module](#literals-for-boto3-signer-module)
+- [Literals for boto3 signer module](#literals-for-boto3-signer-module)
   - [CategoryType](#categorytype)
   - [EncryptionAlgorithmType](#encryptionalgorithmtype)
   - [HashAlgorithmType](#hashalgorithmtype)

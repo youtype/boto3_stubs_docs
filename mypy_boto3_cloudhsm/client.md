@@ -3,7 +3,7 @@
 > [Index](..) > [CloudHSM](.) > CloudHSMClient
 
 Auto-generated documentation for
-[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM)
+[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
 [mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
@@ -49,7 +49,7 @@ def get_cloudhsm_client() -> CloudHSMClient:
 ```
 
 Boto3 documentation:
-[CloudHSM.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client)
+[CloudHSM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client)
 
 ## Exceptions
 
@@ -77,7 +77,7 @@ Exceptions:
 Type annotations for `boto3.client("cloudhsm").add_tags_to_resource` method.
 
 Boto3 documentation:
-[CloudHSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource)
+[CloudHSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").can_paginate` method.
 
 Boto3 documentation:
-[CloudHSM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.can_paginate)
+[CloudHSM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.can_paginate)
 
 Arguments:
 
@@ -105,7 +105,7 @@ Returns `bool`.
 Type annotations for `boto3.client("cloudhsm").create_hapg` method.
 
 Boto3 documentation:
-[CloudHSM.Client.create_hapg](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg)
+[CloudHSM.Client.create_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg)
 
 Arguments:
 
@@ -118,7 +118,7 @@ Returns [CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").create_hsm` method.
 
 Boto3 documentation:
-[CloudHSM.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm)
+[CloudHSM.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").create_luna_client` method.
 
 Boto3 documentation:
-[CloudHSM.Client.create_luna_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client)
+[CloudHSM.Client.create_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client)
 
 Arguments:
 
@@ -154,7 +154,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").delete_hapg` method.
 
 Boto3 documentation:
-[CloudHSM.Client.delete_hapg](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg)
+[CloudHSM.Client.delete_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Returns [DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").delete_hsm` method.
 
 Boto3 documentation:
-[CloudHSM.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm)
+[CloudHSM.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm)
 
 Arguments:
 
@@ -180,7 +180,7 @@ Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").delete_luna_client` method.
 
 Boto3 documentation:
-[CloudHSM.Client.delete_luna_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client)
+[CloudHSM.Client.delete_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client)
 
 Arguments:
 
@@ -194,7 +194,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").describe_hapg` method.
 
 Boto3 documentation:
-[CloudHSM.Client.describe_hapg](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg)
+[CloudHSM.Client.describe_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg)
 
 Arguments:
 
@@ -208,7 +208,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").describe_hsm` method.
 
 Boto3 documentation:
-[CloudHSM.Client.describe_hsm](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm)
+[CloudHSM.Client.describe_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").describe_luna_client` method.
 
 Boto3 documentation:
-[CloudHSM.Client.describe_luna_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client)
+[CloudHSM.Client.describe_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").generate_presigned_url` method.
 
 Boto3 documentation:
-[CloudHSM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.generate_presigned_url)
+[CloudHSM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.generate_presigned_url)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Returns `str`.
 Type annotations for `boto3.client("cloudhsm").get_config` method.
 
 Boto3 documentation:
-[CloudHSM.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.get_config)
+[CloudHSM.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").list_available_zones` method.
 
 Boto3 documentation:
-[CloudHSM.Client.list_available_zones](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones)
+[CloudHSM.Client.list_available_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones)
 
 Returns
 [ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef).
@@ -280,7 +280,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").list_hapgs` method.
 
 Boto3 documentation:
-[CloudHSM.Client.list_hapgs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs)
+[CloudHSM.Client.list_hapgs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs)
 
 Arguments:
 
@@ -293,7 +293,7 @@ Returns [ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").list_hsms` method.
 
 Boto3 documentation:
-[CloudHSM.Client.list_hsms](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms)
+[CloudHSM.Client.list_hsms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms)
 
 Arguments:
 
@@ -306,7 +306,7 @@ Returns [ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").list_luna_clients` method.
 
 Boto3 documentation:
-[CloudHSM.Client.list_luna_clients](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients)
+[CloudHSM.Client.list_luna_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients)
 
 Arguments:
 
@@ -320,7 +320,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").list_tags_for_resource` method.
 
 Boto3 documentation:
-[CloudHSM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource)
+[CloudHSM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -334,7 +334,7 @@ Returns
 Type annotations for `boto3.client("cloudhsm").modify_hapg` method.
 
 Boto3 documentation:
-[CloudHSM.Client.modify_hapg](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg)
+[CloudHSM.Client.modify_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg)
 
 Arguments:
 
@@ -349,7 +349,7 @@ Returns [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").modify_hsm` method.
 
 Boto3 documentation:
-[CloudHSM.Client.modify_hsm](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm)
+[CloudHSM.Client.modify_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm)
 
 Arguments:
 
@@ -367,7 +367,7 @@ Returns [ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef).
 Type annotations for `boto3.client("cloudhsm").modify_luna_client` method.
 
 Boto3 documentation:
-[CloudHSM.Client.modify_luna_client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client)
+[CloudHSM.Client.modify_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client)
 
 Arguments:
 
@@ -383,7 +383,7 @@ Type annotations for `boto3.client("cloudhsm").remove_tags_from_resource`
 method.
 
 Boto3 documentation:
-[CloudHSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource)
+[CloudHSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource)
 
 Arguments:
 

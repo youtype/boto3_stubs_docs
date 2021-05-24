@@ -3,7 +3,7 @@
 > [Index](..) > [Route53Domains](.) > Paginators
 
 Auto-generated documentation for
-[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/route53domains.html#Route53Domains)
+[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module
 [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
@@ -27,7 +27,7 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
 ```
 
 Boto3 documentation:
-[Route53Domains.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/route53domains.html#Route53Domains.Paginator.ListDomains)
+[Route53Domains.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListDomains)
 
 Arguments for `ListDomainsPaginator.paginate` method:
 
@@ -52,7 +52,7 @@ def get_list_operations_paginator() -> ListOperationsPaginator:
 ```
 
 Boto3 documentation:
-[Route53Domains.Paginator.ListOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/route53domains.html#Route53Domains.Paginator.ListOperations)
+[Route53Domains.Paginator.ListOperations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListOperations)
 
 Arguments for `ListOperationsPaginator.paginate` method:
 
@@ -78,7 +78,7 @@ def get_view_billing_paginator() -> ViewBillingPaginator:
 ```
 
 Boto3 documentation:
-[Route53Domains.Paginator.ViewBilling](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/route53domains.html#Route53Domains.Paginator.ViewBilling)
+[Route53Domains.Paginator.ViewBilling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ViewBilling)
 
 Arguments for `ViewBillingPaginator.paginate` method:
 

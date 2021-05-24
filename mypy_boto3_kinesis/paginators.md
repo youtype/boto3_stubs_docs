@@ -3,7 +3,7 @@
 > [Index](..) > [Kinesis](.) > Paginators
 
 Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis.html#Kinesis)
+[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
 type annotations stubs module
 [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
@@ -28,7 +28,7 @@ def get_describe_stream_paginator() -> DescribeStreamPaginator:
 ```
 
 Boto3 documentation:
-[Kinesis.Paginator.DescribeStream](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis.html#Kinesis.Paginator.DescribeStream)
+[Kinesis.Paginator.DescribeStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.DescribeStream)
 
 Arguments for `DescribeStreamPaginator.paginate` method:
 
@@ -53,7 +53,7 @@ def get_list_shards_paginator() -> ListShardsPaginator:
 ```
 
 Boto3 documentation:
-[Kinesis.Paginator.ListShards](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis.html#Kinesis.Paginator.ListShards)
+[Kinesis.Paginator.ListShards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListShards)
 
 Arguments for `ListShardsPaginator.paginate` method:
 
@@ -82,7 +82,7 @@ def get_list_stream_consumers_paginator() -> ListStreamConsumersPaginator:
 ```
 
 Boto3 documentation:
-[Kinesis.Paginator.ListStreamConsumers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis.html#Kinesis.Paginator.ListStreamConsumers)
+[Kinesis.Paginator.ListStreamConsumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreamConsumers)
 
 Arguments for `ListStreamConsumersPaginator.paginate` method:
 
@@ -108,7 +108,7 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
 ```
 
 Boto3 documentation:
-[Kinesis.Paginator.ListStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kinesis.html#Kinesis.Paginator.ListStreams)
+[Kinesis.Paginator.ListStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Paginator.ListStreams)
 
 Arguments for `ListStreamsPaginator.paginate` method:
 

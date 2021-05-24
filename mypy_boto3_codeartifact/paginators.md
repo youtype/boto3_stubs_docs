@@ -3,7 +3,7 @@
 > [Index](..) > [CodeArtifact](.) > Paginators
 
 Auto-generated documentation for
-[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codeartifact.html#CodeArtifact)
+[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
 [mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
@@ -30,7 +30,7 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
 ```
 
 Boto3 documentation:
-[CodeArtifact.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codeartifact.html#CodeArtifact.Paginator.ListDomains)
+[CodeArtifact.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListDomains)
 
 Arguments for `ListDomainsPaginator.paginate` method:
 
@@ -55,7 +55,7 @@ def get_list_package_version_assets_paginator() -> ListPackageVersionAssetsPagin
 ```
 
 Boto3 documentation:
-[CodeArtifact.Paginator.ListPackageVersionAssets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersionAssets)
+[CodeArtifact.Paginator.ListPackageVersionAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersionAssets)
 
 Arguments for `ListPackageVersionAssetsPaginator.paginate` method:
 
@@ -87,7 +87,7 @@ def get_list_package_versions_paginator() -> ListPackageVersionsPaginator:
 ```
 
 Boto3 documentation:
-[CodeArtifact.Paginator.ListPackageVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersions)
+[CodeArtifact.Paginator.ListPackageVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersions)
 
 Arguments for `ListPackageVersionsPaginator.paginate` method:
 
@@ -121,7 +121,7 @@ def get_list_packages_paginator() -> ListPackagesPaginator:
 ```
 
 Boto3 documentation:
-[CodeArtifact.Paginator.ListPackages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackages)
+[CodeArtifact.Paginator.ListPackages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackages)
 
 Arguments for `ListPackagesPaginator.paginate` method:
 
@@ -152,7 +152,7 @@ def get_list_repositories_paginator() -> ListRepositoriesPaginator:
 ```
 
 Boto3 documentation:
-[CodeArtifact.Paginator.ListRepositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositories)
+[CodeArtifact.Paginator.ListRepositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositories)
 
 Arguments for `ListRepositoriesPaginator.paginate` method:
 
@@ -178,7 +178,7 @@ def get_list_repositories_in_domain_paginator() -> ListRepositoriesInDomainPagin
 ```
 
 Boto3 documentation:
-[CodeArtifact.Paginator.ListRepositoriesInDomain](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositoriesInDomain)
+[CodeArtifact.Paginator.ListRepositoriesInDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositoriesInDomain)
 
 Arguments for `ListRepositoriesInDomainPaginator.paginate` method:
 

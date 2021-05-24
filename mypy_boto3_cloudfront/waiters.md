@@ -3,7 +3,7 @@
 > [Index](..) > [CloudFront](.) > Waiters
 
 Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront)
+[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
 [mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
@@ -27,7 +27,7 @@ def get_distribution_deployed_waiter() -> DistributionDeployedWaiter:
 ```
 
 Boto3 documentation:
-[CloudFront.Waiter.distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront.Waiter.distribution_deployed)
+[CloudFront.Waiter.distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.distribution_deployed)
 
 Arguments for `DistributionDeployedWaiter.wait` method:
 
@@ -49,7 +49,7 @@ def get_invalidation_completed_waiter() -> InvalidationCompletedWaiter:
 ```
 
 Boto3 documentation:
-[CloudFront.Waiter.invalidation_completed](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront.Waiter.invalidation_completed)
+[CloudFront.Waiter.invalidation_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.invalidation_completed)
 
 Arguments for `InvalidationCompletedWaiter.wait` method:
 
@@ -72,7 +72,7 @@ def get_streaming_distribution_deployed_waiter() -> StreamingDistributionDeploye
 ```
 
 Boto3 documentation:
-[CloudFront.Waiter.streaming_distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/cloudfront.html#CloudFront.Waiter.streaming_distribution_deployed)
+[CloudFront.Waiter.streaming_distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.streaming_distribution_deployed)
 
 Arguments for `StreamingDistributionDeployedWaiter.wait` method:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [STS](.) > STSClient
 
 Auto-generated documentation for
-[STS](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS)
+[STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
 type annotations stubs module
 [mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
 
@@ -36,7 +36,7 @@ def get_sts_client() -> STSClient:
 ```
 
 Boto3 documentation:
-[STS.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client)
+[STS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
 
 ## Exceptions
 
@@ -69,7 +69,7 @@ Exceptions:
 Type annotations for `boto3.client("sts").assume_role` method.
 
 Boto3 documentation:
-[STS.Client.assume_role](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.assume_role)
+[STS.Client.assume_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role)
 
 Arguments:
 
@@ -93,7 +93,7 @@ Returns [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef).
 Type annotations for `boto3.client("sts").assume_role_with_saml` method.
 
 Boto3 documentation:
-[STS.Client.assume_role_with_saml](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.assume_role_with_saml)
+[STS.Client.assume_role_with_saml](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml)
 
 Arguments:
 
@@ -114,7 +114,7 @@ Type annotations for `boto3.client("sts").assume_role_with_web_identity`
 method.
 
 Boto3 documentation:
-[STS.Client.assume_role_with_web_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.assume_role_with_web_identity)
+[STS.Client.assume_role_with_web_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Returns
 Type annotations for `boto3.client("sts").can_paginate` method.
 
 Boto3 documentation:
-[STS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.can_paginate)
+[STS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.can_paginate)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns `bool`.
 Type annotations for `boto3.client("sts").decode_authorization_message` method.
 
 Boto3 documentation:
-[STS.Client.decode_authorization_message](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.decode_authorization_message)
+[STS.Client.decode_authorization_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message)
 
 Arguments:
 
@@ -162,7 +162,7 @@ Returns
 Type annotations for `boto3.client("sts").generate_presigned_url` method.
 
 Boto3 documentation:
-[STS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.generate_presigned_url)
+[STS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.generate_presigned_url)
 
 Arguments:
 
@@ -178,7 +178,7 @@ Returns `str`.
 Type annotations for `boto3.client("sts").get_access_key_info` method.
 
 Boto3 documentation:
-[STS.Client.get_access_key_info](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.get_access_key_info)
+[STS.Client.get_access_key_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info)
 
 Arguments:
 
@@ -192,7 +192,7 @@ Returns
 Type annotations for `boto3.client("sts").get_caller_identity` method.
 
 Boto3 documentation:
-[STS.Client.get_caller_identity](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.get_caller_identity)
+[STS.Client.get_caller_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity)
 
 Returns
 [GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef).
@@ -202,7 +202,7 @@ Returns
 Type annotations for `boto3.client("sts").get_federation_token` method.
 
 Boto3 documentation:
-[STS.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.get_federation_token)
+[STS.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token)
 
 Arguments:
 
@@ -221,7 +221,7 @@ Returns
 Type annotations for `boto3.client("sts").get_session_token` method.
 
 Boto3 documentation:
-[STS.Client.get_session_token](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sts.html#STS.Client.get_session_token)
+[STS.Client.get_session_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token)
 
 Arguments:
 

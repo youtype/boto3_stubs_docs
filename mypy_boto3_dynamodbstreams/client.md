@@ -3,7 +3,7 @@
 > [Index](..) > [DynamoDBStreams](.) > DynamoDBStreamsClient
 
 Auto-generated documentation for
-[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams)
+[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
 [mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
@@ -32,7 +32,7 @@ def get_dynamodbstreams_client() -> DynamoDBStreamsClient:
 ```
 
 Boto3 documentation:
-[DynamoDBStreams.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams.Client)
+[DynamoDBStreams.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client)
 
 ## Exceptions
 
@@ -62,7 +62,7 @@ Exceptions:
 Type annotations for `boto3.client("dynamodbstreams").can_paginate` method.
 
 Boto3 documentation:
-[DynamoDBStreams.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.can_paginate)
+[DynamoDBStreams.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.can_paginate)
 
 Arguments:
 
@@ -75,7 +75,7 @@ Returns `bool`.
 Type annotations for `boto3.client("dynamodbstreams").describe_stream` method.
 
 Boto3 documentation:
-[DynamoDBStreams.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream)
+[DynamoDBStreams.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Type annotations for `boto3.client("dynamodbstreams").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[DynamoDBStreams.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.generate_presigned_url)
+[DynamoDBStreams.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.generate_presigned_url)
 
 Arguments:
 
@@ -108,7 +108,7 @@ Returns `str`.
 Type annotations for `boto3.client("dynamodbstreams").get_records` method.
 
 Boto3 documentation:
-[DynamoDBStreams.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records)
+[DynamoDBStreams.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records)
 
 Arguments:
 
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("dynamodbstreams").get_shard_iterator`
 method.
 
 Boto3 documentation:
-[DynamoDBStreams.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator)
+[DynamoDBStreams.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Returns
 Type annotations for `boto3.client("dynamodbstreams").list_streams` method.
 
 Boto3 documentation:
-[DynamoDBStreams.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams)
+[DynamoDBStreams.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams)
 
 Arguments:
 

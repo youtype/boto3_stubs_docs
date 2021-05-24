@@ -3,7 +3,7 @@
 > [Index](..) > [Lightsail](.) > Paginators
 
 Auto-generated documentation for
-[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail)
+[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
 type annotations stubs module
 [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
@@ -44,7 +44,7 @@ def get_get_active_names_paginator() -> GetActiveNamesPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetActiveNames](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetActiveNames)
+[Lightsail.Paginator.GetActiveNames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetActiveNames)
 
 Arguments for `GetActiveNamesPaginator.paginate` method:
 
@@ -69,7 +69,7 @@ def get_get_blueprints_paginator() -> GetBlueprintsPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetBlueprints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetBlueprints)
+[Lightsail.Paginator.GetBlueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBlueprints)
 
 Arguments for `GetBlueprintsPaginator.paginate` method:
 
@@ -94,7 +94,7 @@ def get_get_bundles_paginator() -> GetBundlesPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetBundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetBundles)
+[Lightsail.Paginator.GetBundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBundles)
 
 Arguments for `GetBundlesPaginator.paginate` method:
 
@@ -120,7 +120,7 @@ def get_get_cloud_formation_stack_records_paginator() -> GetCloudFormationStackR
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetCloudFormationStackRecords](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetCloudFormationStackRecords)
+[Lightsail.Paginator.GetCloudFormationStackRecords](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetCloudFormationStackRecords)
 
 Arguments for `GetCloudFormationStackRecordsPaginator.paginate` method:
 
@@ -145,7 +145,7 @@ def get_get_disk_snapshots_paginator() -> GetDiskSnapshotsPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetDiskSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetDiskSnapshots)
+[Lightsail.Paginator.GetDiskSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDiskSnapshots)
 
 Arguments for `GetDiskSnapshotsPaginator.paginate` method:
 
@@ -169,7 +169,7 @@ def get_get_disks_paginator() -> GetDisksPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetDisks](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetDisks)
+[Lightsail.Paginator.GetDisks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDisks)
 
 Arguments for `GetDisksPaginator.paginate` method:
 
@@ -193,7 +193,7 @@ def get_get_domains_paginator() -> GetDomainsPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetDomains)
+[Lightsail.Paginator.GetDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDomains)
 
 Arguments for `GetDomainsPaginator.paginate` method:
 
@@ -218,7 +218,7 @@ def get_get_export_snapshot_records_paginator() -> GetExportSnapshotRecordsPagin
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetExportSnapshotRecords](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetExportSnapshotRecords)
+[Lightsail.Paginator.GetExportSnapshotRecords](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetExportSnapshotRecords)
 
 Arguments for `GetExportSnapshotRecordsPaginator.paginate` method:
 
@@ -243,7 +243,7 @@ def get_get_instance_snapshots_paginator() -> GetInstanceSnapshotsPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetInstanceSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetInstanceSnapshots)
+[Lightsail.Paginator.GetInstanceSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstanceSnapshots)
 
 Arguments for `GetInstanceSnapshotsPaginator.paginate` method:
 
@@ -268,7 +268,7 @@ def get_get_instances_paginator() -> GetInstancesPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetInstances)
+[Lightsail.Paginator.GetInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstances)
 
 Arguments for `GetInstancesPaginator.paginate` method:
 
@@ -293,7 +293,7 @@ def get_get_key_pairs_paginator() -> GetKeyPairsPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetKeyPairs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetKeyPairs)
+[Lightsail.Paginator.GetKeyPairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetKeyPairs)
 
 Arguments for `GetKeyPairsPaginator.paginate` method:
 
@@ -318,7 +318,7 @@ def get_get_load_balancers_paginator() -> GetLoadBalancersPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetLoadBalancers)
+[Lightsail.Paginator.GetLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetLoadBalancers)
 
 Arguments for `GetLoadBalancersPaginator.paginate` method:
 
@@ -343,7 +343,7 @@ def get_get_operations_paginator() -> GetOperationsPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetOperations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetOperations)
+[Lightsail.Paginator.GetOperations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetOperations)
 
 Arguments for `GetOperationsPaginator.paginate` method:
 
@@ -368,7 +368,7 @@ def get_get_relational_database_blueprints_paginator() -> GetRelationalDatabaseB
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseBlueprints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBlueprints)
+[Lightsail.Paginator.GetRelationalDatabaseBlueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBlueprints)
 
 Arguments for `GetRelationalDatabaseBlueprintsPaginator.paginate` method:
 
@@ -393,7 +393,7 @@ def get_get_relational_database_bundles_paginator() -> GetRelationalDatabaseBund
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseBundles](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBundles)
+[Lightsail.Paginator.GetRelationalDatabaseBundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBundles)
 
 Arguments for `GetRelationalDatabaseBundlesPaginator.paginate` method:
 
@@ -418,7 +418,7 @@ def get_get_relational_database_events_paginator() -> GetRelationalDatabaseEvent
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseEvents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseEvents)
+[Lightsail.Paginator.GetRelationalDatabaseEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseEvents)
 
 Arguments for `GetRelationalDatabaseEventsPaginator.paginate` method:
 
@@ -445,7 +445,7 @@ def get_get_relational_database_parameters_paginator() -> GetRelationalDatabaseP
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseParameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseParameters)
+[Lightsail.Paginator.GetRelationalDatabaseParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseParameters)
 
 Arguments for `GetRelationalDatabaseParametersPaginator.paginate` method:
 
@@ -471,7 +471,7 @@ def get_get_relational_database_snapshots_paginator() -> GetRelationalDatabaseSn
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseSnapshots](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseSnapshots)
+[Lightsail.Paginator.GetRelationalDatabaseSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseSnapshots)
 
 Arguments for `GetRelationalDatabaseSnapshotsPaginator.paginate` method:
 
@@ -496,7 +496,7 @@ def get_get_relational_databases_paginator() -> GetRelationalDatabasesPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabases](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabases)
+[Lightsail.Paginator.GetRelationalDatabases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabases)
 
 Arguments for `GetRelationalDatabasesPaginator.paginate` method:
 
@@ -521,7 +521,7 @@ def get_get_static_ips_paginator() -> GetStaticIpsPaginator:
 ```
 
 Boto3 documentation:
-[Lightsail.Paginator.GetStaticIps](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/lightsail.html#Lightsail.Paginator.GetStaticIps)
+[Lightsail.Paginator.GetStaticIps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetStaticIps)
 
 Arguments for `GetStaticIpsPaginator.paginate` method:
 

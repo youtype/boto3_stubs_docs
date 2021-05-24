@@ -1,13 +1,13 @@
-# Literals for boto3 Imagebuilder module
+# Literals for boto3 imagebuilder module
 
-> [Index](..) > [Imagebuilder](.) > Literals
+> [Index](..) > [imagebuilder](.) > Literals
 
 Auto-generated documentation for
-[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder)
+[imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
 type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
-- [Literals for boto3 Imagebuilder module](#literals-for-boto3-imagebuilder-module)
+- [Literals for boto3 imagebuilder module](#literals-for-boto3-imagebuilder-module)
   - [ComponentFormatType](#componentformattype)
   - [ComponentTypeType](#componenttypetype)
   - [ContainerRepositoryServiceType](#containerrepositoryservicetype)

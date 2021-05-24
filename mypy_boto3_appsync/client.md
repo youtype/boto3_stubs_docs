@@ -3,7 +3,7 @@
 > [Index](..) > [AppSync](.) > AppSyncClient
 
 Auto-generated documentation for
-[AppSync](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync)
+[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
 type annotations stubs module
 [mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
@@ -70,7 +70,7 @@ def get_appsync_client() -> AppSyncClient:
 ```
 
 Boto3 documentation:
-[AppSync.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client)
+[AppSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client)
 
 ## Exceptions
 
@@ -106,7 +106,7 @@ Exceptions:
 Type annotations for `boto3.client("appsync").can_paginate` method.
 
 Boto3 documentation:
-[AppSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.can_paginate)
+[AppSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.can_paginate)
 
 Arguments:
 
@@ -119,7 +119,7 @@ Returns `bool`.
 Type annotations for `boto3.client("appsync").create_api_cache` method.
 
 Boto3 documentation:
-[AppSync.Client.create_api_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.create_api_cache)
+[AppSync.Client.create_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns
 Type annotations for `boto3.client("appsync").create_api_key` method.
 
 Boto3 documentation:
-[AppSync.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.create_api_key)
+[AppSync.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key)
 
 Arguments:
 
@@ -155,7 +155,7 @@ Returns
 Type annotations for `boto3.client("appsync").create_data_source` method.
 
 Boto3 documentation:
-[AppSync.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.create_data_source)
+[AppSync.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Returns
 Type annotations for `boto3.client("appsync").create_function` method.
 
 Boto3 documentation:
-[AppSync.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.create_function)
+[AppSync.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function)
 
 Arguments:
 
@@ -204,7 +204,7 @@ Returns
 Type annotations for `boto3.client("appsync").create_graphql_api` method.
 
 Boto3 documentation:
-[AppSync.Client.create_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.create_graphql_api)
+[AppSync.Client.create_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Returns
 Type annotations for `boto3.client("appsync").create_resolver` method.
 
 Boto3 documentation:
-[AppSync.Client.create_resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.create_resolver)
+[AppSync.Client.create_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver)
 
 Arguments:
 
@@ -253,7 +253,7 @@ Returns
 Type annotations for `boto3.client("appsync").create_type` method.
 
 Boto3 documentation:
-[AppSync.Client.create_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.create_type)
+[AppSync.Client.create_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type)
 
 Arguments:
 
@@ -269,7 +269,7 @@ Returns [CreateTypeResponseTypeDef](./type_defs.md#createtyperesponsetypedef).
 Type annotations for `boto3.client("appsync").delete_api_cache` method.
 
 Boto3 documentation:
-[AppSync.Client.delete_api_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.delete_api_cache)
+[AppSync.Client.delete_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache)
 
 Arguments:
 
@@ -282,7 +282,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").delete_api_key` method.
 
 Boto3 documentation:
-[AppSync.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.delete_api_key)
+[AppSync.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key)
 
 Arguments:
 
@@ -296,7 +296,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").delete_data_source` method.
 
 Boto3 documentation:
-[AppSync.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.delete_data_source)
+[AppSync.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").delete_function` method.
 
 Boto3 documentation:
-[AppSync.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.delete_function)
+[AppSync.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function)
 
 Arguments:
 
@@ -324,7 +324,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").delete_graphql_api` method.
 
 Boto3 documentation:
-[AppSync.Client.delete_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.delete_graphql_api)
+[AppSync.Client.delete_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api)
 
 Arguments:
 
@@ -337,7 +337,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").delete_resolver` method.
 
 Boto3 documentation:
-[AppSync.Client.delete_resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.delete_resolver)
+[AppSync.Client.delete_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").delete_type` method.
 
 Boto3 documentation:
-[AppSync.Client.delete_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.delete_type)
+[AppSync.Client.delete_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").flush_api_cache` method.
 
 Boto3 documentation:
-[AppSync.Client.flush_api_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.flush_api_cache)
+[AppSync.Client.flush_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache)
 
 Arguments:
 
@@ -379,7 +379,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").generate_presigned_url` method.
 
 Boto3 documentation:
-[AppSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.generate_presigned_url)
+[AppSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.generate_presigned_url)
 
 Arguments:
 
@@ -395,7 +395,7 @@ Returns `str`.
 Type annotations for `boto3.client("appsync").get_api_cache` method.
 
 Boto3 documentation:
-[AppSync.Client.get_api_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.get_api_cache)
+[AppSync.Client.get_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache)
 
 Arguments:
 
@@ -409,7 +409,7 @@ Returns
 Type annotations for `boto3.client("appsync").get_data_source` method.
 
 Boto3 documentation:
-[AppSync.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.get_data_source)
+[AppSync.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source)
 
 Arguments:
 
@@ -424,7 +424,7 @@ Returns
 Type annotations for `boto3.client("appsync").get_function` method.
 
 Boto3 documentation:
-[AppSync.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.get_function)
+[AppSync.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function)
 
 Arguments:
 
@@ -439,7 +439,7 @@ Returns
 Type annotations for `boto3.client("appsync").get_graphql_api` method.
 
 Boto3 documentation:
-[AppSync.Client.get_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.get_graphql_api)
+[AppSync.Client.get_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api)
 
 Arguments:
 
@@ -453,7 +453,7 @@ Returns
 Type annotations for `boto3.client("appsync").get_introspection_schema` method.
 
 Boto3 documentation:
-[AppSync.Client.get_introspection_schema](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.get_introspection_schema)
+[AppSync.Client.get_introspection_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema)
 
 Arguments:
 
@@ -469,7 +469,7 @@ Returns
 Type annotations for `boto3.client("appsync").get_resolver` method.
 
 Boto3 documentation:
-[AppSync.Client.get_resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.get_resolver)
+[AppSync.Client.get_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver)
 
 Arguments:
 
@@ -486,7 +486,7 @@ Type annotations for `boto3.client("appsync").get_schema_creation_status`
 method.
 
 Boto3 documentation:
-[AppSync.Client.get_schema_creation_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.get_schema_creation_status)
+[AppSync.Client.get_schema_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status)
 
 Arguments:
 
@@ -500,7 +500,7 @@ Returns
 Type annotations for `boto3.client("appsync").get_type` method.
 
 Boto3 documentation:
-[AppSync.Client.get_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.get_type)
+[AppSync.Client.get_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type)
 
 Arguments:
 
@@ -516,7 +516,7 @@ Returns [GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef).
 Type annotations for `boto3.client("appsync").list_api_keys` method.
 
 Boto3 documentation:
-[AppSync.Client.list_api_keys](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.list_api_keys)
+[AppSync.Client.list_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys)
 
 Arguments:
 
@@ -532,7 +532,7 @@ Returns
 Type annotations for `boto3.client("appsync").list_data_sources` method.
 
 Boto3 documentation:
-[AppSync.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.list_data_sources)
+[AppSync.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources)
 
 Arguments:
 
@@ -548,7 +548,7 @@ Returns
 Type annotations for `boto3.client("appsync").list_functions` method.
 
 Boto3 documentation:
-[AppSync.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.list_functions)
+[AppSync.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions)
 
 Arguments:
 
@@ -564,7 +564,7 @@ Returns
 Type annotations for `boto3.client("appsync").list_graphql_apis` method.
 
 Boto3 documentation:
-[AppSync.Client.list_graphql_apis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.list_graphql_apis)
+[AppSync.Client.list_graphql_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis)
 
 Arguments:
 
@@ -579,7 +579,7 @@ Returns
 Type annotations for `boto3.client("appsync").list_resolvers` method.
 
 Boto3 documentation:
-[AppSync.Client.list_resolvers](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.list_resolvers)
+[AppSync.Client.list_resolvers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers)
 
 Arguments:
 
@@ -597,7 +597,7 @@ Type annotations for `boto3.client("appsync").list_resolvers_by_function`
 method.
 
 Boto3 documentation:
-[AppSync.Client.list_resolvers_by_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function)
+[AppSync.Client.list_resolvers_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function)
 
 Arguments:
 
@@ -614,7 +614,7 @@ Returns
 Type annotations for `boto3.client("appsync").list_tags_for_resource` method.
 
 Boto3 documentation:
-[AppSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.list_tags_for_resource)
+[AppSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -628,7 +628,7 @@ Returns
 Type annotations for `boto3.client("appsync").list_types` method.
 
 Boto3 documentation:
-[AppSync.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.list_types)
+[AppSync.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types)
 
 Arguments:
 
@@ -645,7 +645,7 @@ Returns [ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef).
 Type annotations for `boto3.client("appsync").start_schema_creation` method.
 
 Boto3 documentation:
-[AppSync.Client.start_schema_creation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.start_schema_creation)
+[AppSync.Client.start_schema_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation)
 
 Arguments:
 
@@ -660,7 +660,7 @@ Returns
 Type annotations for `boto3.client("appsync").tag_resource` method.
 
 Boto3 documentation:
-[AppSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.tag_resource)
+[AppSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource)
 
 Arguments:
 
@@ -674,7 +674,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").untag_resource` method.
 
 Boto3 documentation:
-[AppSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.untag_resource)
+[AppSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource)
 
 Arguments:
 
@@ -688,7 +688,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("appsync").update_api_cache` method.
 
 Boto3 documentation:
-[AppSync.Client.update_api_cache](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.update_api_cache)
+[AppSync.Client.update_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache)
 
 Arguments:
 
@@ -706,7 +706,7 @@ Returns
 Type annotations for `boto3.client("appsync").update_api_key` method.
 
 Boto3 documentation:
-[AppSync.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.update_api_key)
+[AppSync.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key)
 
 Arguments:
 
@@ -723,7 +723,7 @@ Returns
 Type annotations for `boto3.client("appsync").update_data_source` method.
 
 Boto3 documentation:
-[AppSync.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.update_data_source)
+[AppSync.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source)
 
 Arguments:
 
@@ -751,7 +751,7 @@ Returns
 Type annotations for `boto3.client("appsync").update_function` method.
 
 Boto3 documentation:
-[AppSync.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.update_function)
+[AppSync.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function)
 
 Arguments:
 
@@ -773,7 +773,7 @@ Returns
 Type annotations for `boto3.client("appsync").update_graphql_api` method.
 
 Boto3 documentation:
-[AppSync.Client.update_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.update_graphql_api)
+[AppSync.Client.update_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api)
 
 Arguments:
 
@@ -798,7 +798,7 @@ Returns
 Type annotations for `boto3.client("appsync").update_resolver` method.
 
 Boto3 documentation:
-[AppSync.Client.update_resolver](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.update_resolver)
+[AppSync.Client.update_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver)
 
 Arguments:
 
@@ -822,7 +822,7 @@ Returns
 Type annotations for `boto3.client("appsync").update_type` method.
 
 Boto3 documentation:
-[AppSync.Client.update_type](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appsync.html#AppSync.Client.update_type)
+[AppSync.Client.update_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type)
 
 Arguments:
 

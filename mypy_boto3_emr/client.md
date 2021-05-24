@@ -3,7 +3,7 @@
 > [Index](..) > [EMR](.) > EMRClient
 
 Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR)
+[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
 type annotations stubs module
 [mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
 
@@ -77,7 +77,7 @@ def get_emr_client() -> EMRClient:
 ```
 
 Boto3 documentation:
-[EMR.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client)
+[EMR.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client)
 
 ## Exceptions
 
@@ -105,7 +105,7 @@ Exceptions:
 Type annotations for `boto3.client("emr").add_instance_fleet` method.
 
 Boto3 documentation:
-[EMR.Client.add_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.add_instance_fleet)
+[EMR.Client.add_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Returns
 Type annotations for `boto3.client("emr").add_instance_groups` method.
 
 Boto3 documentation:
-[EMR.Client.add_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.add_instance_groups)
+[EMR.Client.add_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups)
 
 Arguments:
 
@@ -139,7 +139,7 @@ Returns
 Type annotations for `boto3.client("emr").add_job_flow_steps` method.
 
 Boto3 documentation:
-[EMR.Client.add_job_flow_steps](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.add_job_flow_steps)
+[EMR.Client.add_job_flow_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps)
 
 Arguments:
 
@@ -155,7 +155,7 @@ Returns
 Type annotations for `boto3.client("emr").add_tags` method.
 
 Boto3 documentation:
-[EMR.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.add_tags)
+[EMR.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("emr").can_paginate` method.
 
 Boto3 documentation:
-[EMR.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.can_paginate)
+[EMR.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.can_paginate)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Returns `bool`.
 Type annotations for `boto3.client("emr").cancel_steps` method.
 
 Boto3 documentation:
-[EMR.Client.cancel_steps](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.cancel_steps)
+[EMR.Client.cancel_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("emr").create_security_configuration`
 method.
 
 Boto3 documentation:
-[EMR.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.create_security_configuration)
+[EMR.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration)
 
 Arguments:
 
@@ -214,7 +214,7 @@ Returns
 Type annotations for `boto3.client("emr").create_studio` method.
 
 Boto3 documentation:
-[EMR.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.create_studio)
+[EMR.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("emr").create_studio_session_mapping`
 method.
 
 Boto3 documentation:
-[EMR.Client.create_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
+[EMR.Client.create_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
 
 Arguments:
 
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("emr").delete_security_configuration`
 method.
 
 Boto3 documentation:
-[EMR.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.delete_security_configuration)
+[EMR.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration)
 
 Arguments:
 
@@ -268,7 +268,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("emr").delete_studio` method.
 
 Boto3 documentation:
-[EMR.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.delete_studio)
+[EMR.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio)
 
 Arguments:
 
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("emr").delete_studio_session_mapping`
 method.
 
 Boto3 documentation:
-[EMR.Client.delete_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
+[EMR.Client.delete_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Arguments:
 Type annotations for `boto3.client("emr").describe_cluster` method.
 
 Boto3 documentation:
-[EMR.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.describe_cluster)
+[EMR.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Returns
 Type annotations for `boto3.client("emr").describe_job_flows` method.
 
 Boto3 documentation:
-[EMR.Client.describe_job_flows](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.describe_job_flows)
+[EMR.Client.describe_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows)
 
 Arguments:
 
@@ -327,7 +327,7 @@ Returns
 Type annotations for `boto3.client("emr").describe_notebook_execution` method.
 
 Boto3 documentation:
-[EMR.Client.describe_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.describe_notebook_execution)
+[EMR.Client.describe_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution)
 
 Arguments:
 
@@ -342,7 +342,7 @@ Type annotations for `boto3.client("emr").describe_security_configuration`
 method.
 
 Boto3 documentation:
-[EMR.Client.describe_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.describe_security_configuration)
+[EMR.Client.describe_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration)
 
 Arguments:
 
@@ -356,7 +356,7 @@ Returns
 Type annotations for `boto3.client("emr").describe_step` method.
 
 Boto3 documentation:
-[EMR.Client.describe_step](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.describe_step)
+[EMR.Client.describe_step](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step)
 
 Arguments:
 
@@ -370,7 +370,7 @@ Returns [DescribeStepOutputTypeDef](./type_defs.md#describestepoutputtypedef).
 Type annotations for `boto3.client("emr").describe_studio` method.
 
 Boto3 documentation:
-[EMR.Client.describe_studio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.describe_studio)
+[EMR.Client.describe_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio)
 
 Arguments:
 
@@ -384,7 +384,7 @@ Returns
 Type annotations for `boto3.client("emr").generate_presigned_url` method.
 
 Boto3 documentation:
-[EMR.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.generate_presigned_url)
+[EMR.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.generate_presigned_url)
 
 Arguments:
 
@@ -401,7 +401,7 @@ Type annotations for
 `boto3.client("emr").get_block_public_access_configuration` method.
 
 Boto3 documentation:
-[EMR.Client.get_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
+[EMR.Client.get_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
 
 Returns
 [GetBlockPublicAccessConfigurationOutputTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputtypedef).
@@ -411,7 +411,7 @@ Returns
 Type annotations for `boto3.client("emr").get_managed_scaling_policy` method.
 
 Boto3 documentation:
-[EMR.Client.get_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
+[EMR.Client.get_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
 
 Arguments:
 
@@ -425,7 +425,7 @@ Returns
 Type annotations for `boto3.client("emr").get_studio_session_mapping` method.
 
 Boto3 documentation:
-[EMR.Client.get_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
+[EMR.Client.get_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
 
 Arguments:
 
@@ -443,7 +443,7 @@ Returns
 Type annotations for `boto3.client("emr").list_bootstrap_actions` method.
 
 Boto3 documentation:
-[EMR.Client.list_bootstrap_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
+[EMR.Client.list_bootstrap_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
 
 Arguments:
 
@@ -458,7 +458,7 @@ Returns
 Type annotations for `boto3.client("emr").list_clusters` method.
 
 Boto3 documentation:
-[EMR.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_clusters)
+[EMR.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters)
 
 Arguments:
 
@@ -474,7 +474,7 @@ Returns [ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef).
 Type annotations for `boto3.client("emr").list_instance_fleets` method.
 
 Boto3 documentation:
-[EMR.Client.list_instance_fleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_instance_fleets)
+[EMR.Client.list_instance_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets)
 
 Arguments:
 
@@ -489,7 +489,7 @@ Returns
 Type annotations for `boto3.client("emr").list_instance_groups` method.
 
 Boto3 documentation:
-[EMR.Client.list_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_instance_groups)
+[EMR.Client.list_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups)
 
 Arguments:
 
@@ -504,7 +504,7 @@ Returns
 Type annotations for `boto3.client("emr").list_instances` method.
 
 Boto3 documentation:
-[EMR.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_instances)
+[EMR.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances)
 
 Arguments:
 
@@ -527,7 +527,7 @@ Returns
 Type annotations for `boto3.client("emr").list_notebook_executions` method.
 
 Boto3 documentation:
-[EMR.Client.list_notebook_executions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_notebook_executions)
+[EMR.Client.list_notebook_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions)
 
 Arguments:
 
@@ -546,7 +546,7 @@ Returns
 Type annotations for `boto3.client("emr").list_security_configurations` method.
 
 Boto3 documentation:
-[EMR.Client.list_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_security_configurations)
+[EMR.Client.list_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations)
 
 Arguments:
 
@@ -560,7 +560,7 @@ Returns
 Type annotations for `boto3.client("emr").list_steps` method.
 
 Boto3 documentation:
-[EMR.Client.list_steps](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_steps)
+[EMR.Client.list_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps)
 
 Arguments:
 
@@ -576,7 +576,7 @@ Returns [ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef).
 Type annotations for `boto3.client("emr").list_studio_session_mappings` method.
 
 Boto3 documentation:
-[EMR.Client.list_studio_session_mappings](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
+[EMR.Client.list_studio_session_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
 
 Arguments:
 
@@ -592,7 +592,7 @@ Returns
 Type annotations for `boto3.client("emr").list_studios` method.
 
 Boto3 documentation:
-[EMR.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.list_studios)
+[EMR.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios)
 
 Arguments:
 
@@ -605,7 +605,7 @@ Returns [ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef).
 Type annotations for `boto3.client("emr").modify_cluster` method.
 
 Boto3 documentation:
-[EMR.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.modify_cluster)
+[EMR.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster)
 
 Arguments:
 
@@ -620,7 +620,7 @@ Returns
 Type annotations for `boto3.client("emr").modify_instance_fleet` method.
 
 Boto3 documentation:
-[EMR.Client.modify_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.modify_instance_fleet)
+[EMR.Client.modify_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet)
 
 Arguments:
 
@@ -634,7 +634,7 @@ Arguments:
 Type annotations for `boto3.client("emr").modify_instance_groups` method.
 
 Boto3 documentation:
-[EMR.Client.modify_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.modify_instance_groups)
+[EMR.Client.modify_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups)
 
 Arguments:
 
@@ -647,7 +647,7 @@ Arguments:
 Type annotations for `boto3.client("emr").put_auto_scaling_policy` method.
 
 Boto3 documentation:
-[EMR.Client.put_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
+[EMR.Client.put_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
 
 Arguments:
 
@@ -666,7 +666,7 @@ Type annotations for
 `boto3.client("emr").put_block_public_access_configuration` method.
 
 Boto3 documentation:
-[EMR.Client.put_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
+[EMR.Client.put_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
 
 Arguments:
 
@@ -681,7 +681,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("emr").put_managed_scaling_policy` method.
 
 Boto3 documentation:
-[EMR.Client.put_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
+[EMR.Client.put_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
 
 Arguments:
 
@@ -697,7 +697,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("emr").remove_auto_scaling_policy` method.
 
 Boto3 documentation:
-[EMR.Client.remove_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
+[EMR.Client.remove_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
 
 Arguments:
 
@@ -712,7 +712,7 @@ Type annotations for `boto3.client("emr").remove_managed_scaling_policy`
 method.
 
 Boto3 documentation:
-[EMR.Client.remove_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
+[EMR.Client.remove_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
 
 Arguments:
 
@@ -725,7 +725,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("emr").remove_tags` method.
 
 Boto3 documentation:
-[EMR.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.remove_tags)
+[EMR.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags)
 
 Arguments:
 
@@ -739,7 +739,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("emr").run_job_flow` method.
 
 Boto3 documentation:
-[EMR.Client.run_job_flow](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.run_job_flow)
+[EMR.Client.run_job_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow)
 
 Arguments:
 
@@ -789,7 +789,7 @@ Returns [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef).
 Type annotations for `boto3.client("emr").set_termination_protection` method.
 
 Boto3 documentation:
-[EMR.Client.set_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.set_termination_protection)
+[EMR.Client.set_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection)
 
 Arguments:
 
@@ -801,7 +801,7 @@ Arguments:
 Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
 
 Boto3 documentation:
-[EMR.Client.set_visible_to_all_users](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
+[EMR.Client.set_visible_to_all_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
 
 Arguments:
 
@@ -813,7 +813,7 @@ Arguments:
 Type annotations for `boto3.client("emr").start_notebook_execution` method.
 
 Boto3 documentation:
-[EMR.Client.start_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.start_notebook_execution)
+[EMR.Client.start_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution)
 
 Arguments:
 
@@ -836,7 +836,7 @@ Returns
 Type annotations for `boto3.client("emr").stop_notebook_execution` method.
 
 Boto3 documentation:
-[EMR.Client.stop_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.stop_notebook_execution)
+[EMR.Client.stop_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution)
 
 Arguments:
 
@@ -847,7 +847,7 @@ Arguments:
 Type annotations for `boto3.client("emr").terminate_job_flows` method.
 
 Boto3 documentation:
-[EMR.Client.terminate_job_flows](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.terminate_job_flows)
+[EMR.Client.terminate_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows)
 
 Arguments:
 
@@ -858,7 +858,7 @@ Arguments:
 Type annotations for `boto3.client("emr").update_studio` method.
 
 Boto3 documentation:
-[EMR.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.update_studio)
+[EMR.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio)
 
 Arguments:
 
@@ -874,7 +874,7 @@ Type annotations for `boto3.client("emr").update_studio_session_mapping`
 method.
 
 Boto3 documentation:
-[EMR.Client.update_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
+[EMR.Client.update_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
 
 Arguments:
 

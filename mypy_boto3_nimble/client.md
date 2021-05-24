@@ -3,7 +3,7 @@
 > [Index](..) > [NimbleStudio](.) > NimbleStudioClient
 
 Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio)
+[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
 [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
@@ -74,7 +74,7 @@ def get_nimble_client() -> NimbleStudioClient:
 ```
 
 Boto3 documentation:
-[NimbleStudio.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client)
+[NimbleStudio.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
 
 ## Exceptions
 
@@ -106,7 +106,7 @@ Exceptions:
 Type annotations for `boto3.client("nimble").accept_eulas` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.accept_eulas](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.accept_eulas)
+[NimbleStudio.Client.accept_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Returns
 Type annotations for `boto3.client("nimble").can_paginate` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.can_paginate)
+[NimbleStudio.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.can_paginate)
 
 Arguments:
 
@@ -135,7 +135,7 @@ Returns `bool`.
 Type annotations for `boto3.client("nimble").create_launch_profile` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.create_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile)
+[NimbleStudio.Client.create_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Returns
 Type annotations for `boto3.client("nimble").create_streaming_image` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.create_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image)
+[NimbleStudio.Client.create_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image)
 
 Arguments:
 
@@ -178,7 +178,7 @@ Returns
 Type annotations for `boto3.client("nimble").create_streaming_session` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.create_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session)
+[NimbleStudio.Client.create_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session)
 
 Arguments:
 
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("nimble").create_streaming_session_stream`
 method.
 
 Boto3 documentation:
-[NimbleStudio.Client.create_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream)
+[NimbleStudio.Client.create_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Returns
 Type annotations for `boto3.client("nimble").create_studio` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.create_studio)
+[NimbleStudio.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio)
 
 Arguments:
 
@@ -237,7 +237,7 @@ Returns
 Type annotations for `boto3.client("nimble").create_studio_component` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.create_studio_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.create_studio_component)
+[NimbleStudio.Client.create_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component)
 
 Arguments:
 
@@ -266,7 +266,7 @@ Returns
 Type annotations for `boto3.client("nimble").delete_launch_profile` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.delete_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile)
+[NimbleStudio.Client.delete_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile)
 
 Arguments:
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("nimble").delete_launch_profile_member`
 method.
 
 Boto3 documentation:
-[NimbleStudio.Client.delete_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member)
+[NimbleStudio.Client.delete_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member)
 
 Arguments:
 
@@ -299,7 +299,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("nimble").delete_streaming_image` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.delete_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image)
+[NimbleStudio.Client.delete_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image)
 
 Arguments:
 
@@ -315,7 +315,7 @@ Returns
 Type annotations for `boto3.client("nimble").delete_streaming_session` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.delete_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session)
+[NimbleStudio.Client.delete_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session)
 
 Arguments:
 
@@ -331,7 +331,7 @@ Returns
 Type annotations for `boto3.client("nimble").delete_studio` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.delete_studio)
+[NimbleStudio.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio)
 
 Arguments:
 
@@ -346,7 +346,7 @@ Returns
 Type annotations for `boto3.client("nimble").delete_studio_component` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.delete_studio_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component)
+[NimbleStudio.Client.delete_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Returns
 Type annotations for `boto3.client("nimble").delete_studio_member` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.delete_studio_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member)
+[NimbleStudio.Client.delete_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member)
 
 Arguments:
 
@@ -377,7 +377,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("nimble").generate_presigned_url` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.generate_presigned_url)
+[NimbleStudio.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.generate_presigned_url)
 
 Arguments:
 
@@ -393,7 +393,7 @@ Returns `str`.
 Type annotations for `boto3.client("nimble").get_eula` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_eula](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_eula)
+[NimbleStudio.Client.get_eula](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula)
 
 Arguments:
 
@@ -406,7 +406,7 @@ Returns [GetEulaResponseTypeDef](./type_defs.md#geteularesponsetypedef).
 Type annotations for `boto3.client("nimble").get_launch_profile` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile)
+[NimbleStudio.Client.get_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile)
 
 Arguments:
 
@@ -422,7 +422,7 @@ Type annotations for `boto3.client("nimble").get_launch_profile_details`
 method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_launch_profile_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details)
+[NimbleStudio.Client.get_launch_profile_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details)
 
 Arguments:
 
@@ -438,7 +438,7 @@ Type annotations for `boto3.client("nimble").get_launch_profile_initialization`
 method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_launch_profile_initialization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization)
+[NimbleStudio.Client.get_launch_profile_initialization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization)
 
 Arguments:
 
@@ -456,7 +456,7 @@ Returns
 Type annotations for `boto3.client("nimble").get_launch_profile_member` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member)
+[NimbleStudio.Client.get_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member)
 
 Arguments:
 
@@ -472,7 +472,7 @@ Returns
 Type annotations for `boto3.client("nimble").get_streaming_image` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image)
+[NimbleStudio.Client.get_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image)
 
 Arguments:
 
@@ -487,7 +487,7 @@ Returns
 Type annotations for `boto3.client("nimble").get_streaming_session` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session)
+[NimbleStudio.Client.get_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session)
 
 Arguments:
 
@@ -503,7 +503,7 @@ Type annotations for `boto3.client("nimble").get_streaming_session_stream`
 method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream)
+[NimbleStudio.Client.get_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream)
 
 Arguments:
 
@@ -519,7 +519,7 @@ Returns
 Type annotations for `boto3.client("nimble").get_studio` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_studio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_studio)
+[NimbleStudio.Client.get_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio)
 
 Arguments:
 
@@ -532,7 +532,7 @@ Returns [GetStudioResponseTypeDef](./type_defs.md#getstudioresponsetypedef).
 Type annotations for `boto3.client("nimble").get_studio_component` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_studio_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_studio_component)
+[NimbleStudio.Client.get_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component)
 
 Arguments:
 
@@ -547,7 +547,7 @@ Returns
 Type annotations for `boto3.client("nimble").get_studio_member` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.get_studio_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.get_studio_member)
+[NimbleStudio.Client.get_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member)
 
 Arguments:
 
@@ -562,7 +562,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_eula_acceptances` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_eula_acceptances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
+[NimbleStudio.Client.list_eula_acceptances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
 
 Arguments:
 
@@ -578,7 +578,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_eulas` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_eulas](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
+[NimbleStudio.Client.list_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
 
 Arguments:
 
@@ -593,7 +593,7 @@ Type annotations for `boto3.client("nimble").list_launch_profile_members`
 method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members)
+[NimbleStudio.Client.list_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members)
 
 Arguments:
 
@@ -610,7 +610,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_launch_profiles` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_launch_profiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles)
+[NimbleStudio.Client.list_launch_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles)
 
 Arguments:
 
@@ -628,7 +628,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_streaming_images` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_streaming_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images)
+[NimbleStudio.Client.list_streaming_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images)
 
 Arguments:
 
@@ -644,7 +644,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_streaming_sessions` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_streaming_sessions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
+[NimbleStudio.Client.list_streaming_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
 
 Arguments:
 
@@ -661,7 +661,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_studio_components` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_studio_components](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
+[NimbleStudio.Client.list_studio_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
 
 Arguments:
 
@@ -679,7 +679,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_studio_members` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_studio_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_studio_members)
+[NimbleStudio.Client.list_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members)
 
 Arguments:
 
@@ -695,7 +695,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_studios` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_studios)
+[NimbleStudio.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios)
 
 Arguments:
 
@@ -709,7 +709,7 @@ Returns
 Type annotations for `boto3.client("nimble").list_tags_for_resource` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource)
+[NimbleStudio.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -724,7 +724,7 @@ Type annotations for `boto3.client("nimble").put_launch_profile_members`
 method.
 
 Boto3 documentation:
-[NimbleStudio.Client.put_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members)
+[NimbleStudio.Client.put_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members)
 
 Arguments:
 
@@ -743,7 +743,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("nimble").put_studio_members` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.put_studio_members](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.put_studio_members)
+[NimbleStudio.Client.put_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members)
 
 Arguments:
 
@@ -762,7 +762,7 @@ Type annotations for
 `boto3.client("nimble").start_studio_sso_configuration_repair` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.start_studio_sso_configuration_repair](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)
+[NimbleStudio.Client.start_studio_sso_configuration_repair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)
 
 Arguments:
 
@@ -777,7 +777,7 @@ Returns
 Type annotations for `boto3.client("nimble").tag_resource` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.tag_resource)
+[NimbleStudio.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource)
 
 Arguments:
 
@@ -791,7 +791,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("nimble").untag_resource` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.untag_resource)
+[NimbleStudio.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource)
 
 Arguments:
 
@@ -805,7 +805,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("nimble").update_launch_profile` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.update_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile)
+[NimbleStudio.Client.update_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile)
 
 Arguments:
 
@@ -828,7 +828,7 @@ Type annotations for `boto3.client("nimble").update_launch_profile_member`
 method.
 
 Boto3 documentation:
-[NimbleStudio.Client.update_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member)
+[NimbleStudio.Client.update_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member)
 
 Arguments:
 
@@ -848,7 +848,7 @@ Returns
 Type annotations for `boto3.client("nimble").update_streaming_image` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.update_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image)
+[NimbleStudio.Client.update_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image)
 
 Arguments:
 
@@ -866,7 +866,7 @@ Returns
 Type annotations for `boto3.client("nimble").update_studio` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.update_studio)
+[NimbleStudio.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio)
 
 Arguments:
 
@@ -884,7 +884,7 @@ Returns
 Type annotations for `boto3.client("nimble").update_studio_component` method.
 
 Boto3 documentation:
-[NimbleStudio.Client.update_studio_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/nimble.html#NimbleStudio.Client.update_studio_component)
+[NimbleStudio.Client.update_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component)
 
 Arguments:
 

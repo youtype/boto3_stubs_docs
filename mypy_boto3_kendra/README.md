@@ -1,9 +1,9 @@
-# Type annotations for boto3 Kendra module
+# Type annotations for boto3 kendra module
 
-> [Index](..) > Kendra
+> [Index](..) > kendra
 
 Auto-generated documentation for
-[Kendra](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/kendra.html#Kendra)
+[kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
 type annotations stubs module
 [mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
@@ -11,21 +11,21 @@ type annotations stubs module
 pip install mypy-boto3-kendra
 ```
 
-- [Type annotations for boto3 Kendra module](#type-annotations-for-boto3-kendra-module)
-  - [KendraClient](#kendraclient)
+- [Type annotations for boto3 kendra module](#type-annotations-for-boto3-kendra-module)
+  - [kendraClient](#kendraclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
-## KendraClient
+## kendraClient
 
-Type annotations for `boto3.client("kendra")` as [KendraClient](./client.md)
+Type annotations for `boto3.client("kendra")` as [kendraClient](./client.md)
 
 Can be used directly:
 
 ```python
-from mypy_boto3_kendra.client import KendraClient
+from mypy_boto3_kendra.client import kendraClient
 ```
 
 ### Methods
@@ -64,7 +64,7 @@ from mypy_boto3_kendra.client import KendraClient
 
 ### Exceptions
 
-KendraClient [exceptions](./client.md#exceptions)
+kendraClient [exceptions](./client.md#exceptions)
 
 - AccessDeniedException
 - ClientError

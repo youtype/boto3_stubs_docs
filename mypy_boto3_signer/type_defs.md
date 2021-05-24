@@ -1,13 +1,13 @@
-# Typed dictionaries for boto3 Signer module
+# Typed dictionaries for boto3 signer module
 
-> [Index](..) > [Signer](.) > Typed dictionaries
+> [Index](..) > [signer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[Signer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/signer.html#Signer)
+[signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
 type annotations stubs module
 [mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
 
-- [Typed dictionaries for boto3 Signer module](#typed-dictionaries-for-boto3-signer-module)
+- [Typed dictionaries for boto3 signer module](#typed-dictionaries-for-boto3-signer-module)
   - [AddProfilePermissionResponseTypeDef](#addprofilepermissionresponsetypedef)
   - [DescribeSigningJobResponseTypeDef](#describesigningjobresponsetypedef)
   - [DestinationTypeDef](#destinationtypedef)

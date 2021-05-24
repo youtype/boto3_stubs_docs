@@ -3,7 +3,7 @@
 > [Index](..) > [CostExplorer](.) > Typed dictionaries
 
 Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer)
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module
 [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
@@ -33,6 +33,7 @@ type annotations stubs module
   - [DescribeCostCategoryDefinitionResponseTypeDef](#describecostcategorydefinitionresponsetypedef)
   - [DimensionValuesTypeDef](#dimensionvaluestypedef)
   - [DimensionValuesWithAttributesTypeDef](#dimensionvalueswithattributestypedef)
+  - [DiskResourceUtilizationTypeDef](#diskresourceutilizationtypedef)
   - [EBSResourceUtilizationTypeDef](#ebsresourceutilizationtypedef)
   - [EC2InstanceDetailsTypeDef](#ec2instancedetailstypedef)
   - [EC2ResourceDetailsTypeDef](#ec2resourcedetailstypedef)
@@ -67,6 +68,7 @@ type annotations stubs module
   - [ListCostCategoryDefinitionsResponseTypeDef](#listcostcategorydefinitionsresponsetypedef)
   - [MetricValueTypeDef](#metricvaluetypedef)
   - [ModifyRecommendationDetailTypeDef](#modifyrecommendationdetailtypedef)
+  - [NetworkResourceUtilizationTypeDef](#networkresourceutilizationtypedef)
   - [ProvideAnomalyFeedbackResponseTypeDef](#provideanomalyfeedbackresponsetypedef)
   - [RDSInstanceDetailsTypeDef](#rdsinstancedetailstypedef)
   - [RedshiftInstanceDetailsTypeDef](#redshiftinstancedetailstypedef)
@@ -460,6 +462,19 @@ Optional fields:
 - `Value`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
 
+## DiskResourceUtilizationTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import DiskResourceUtilizationTypeDef
+```
+
+Optional fields:
+
+- `DiskReadOpsPerSecond`: `str`
+- `DiskWriteOpsPerSecond`: `str`
+- `DiskReadBytesPerSecond`: `str`
+- `DiskWriteBytesPerSecond`: `str`
+
 ## EBSResourceUtilizationTypeDef
 
 ```python
@@ -521,6 +536,10 @@ Optional fields:
 - `MaxStorageUtilizationPercentage`: `str`
 - `EBSResourceUtilization`:
   [EBSResourceUtilizationTypeDef](./type_defs.md#ebsresourceutilizationtypedef)
+- `DiskResourceUtilization`:
+  [DiskResourceUtilizationTypeDef](./type_defs.md#diskresourceutilizationtypedef)
+- `NetworkResourceUtilization`:
+  [NetworkResourceUtilizationTypeDef](./type_defs.md#networkresourceutilizationtypedef)
 
 ## EC2SpecificationTypeDef
 
@@ -958,6 +977,19 @@ Optional fields:
 - `TargetInstances`:
   `List`\[[TargetInstanceTypeDef](./type_defs.md#targetinstancetypedef)\]
 
+## NetworkResourceUtilizationTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import NetworkResourceUtilizationTypeDef
+```
+
+Optional fields:
+
+- `NetworkInBytesPerSecond`: `str`
+- `NetworkOutBytesPerSecond`: `str`
+- `NetworkPacketsInPerSecond`: `str`
+- `NetworkPacketsOutPerSecond`: `str`
+
 ## ProvideAnomalyFeedbackResponseTypeDef
 
 ```python
@@ -1214,6 +1246,8 @@ Optional fields:
   [ModifyRecommendationDetailTypeDef](./type_defs.md#modifyrecommendationdetailtypedef)
 - `TerminateRecommendationDetail`:
   [TerminateRecommendationDetailTypeDef](./type_defs.md#terminaterecommendationdetailtypedef)
+- `FindingReasonCodes`:
+  `List`\[[FindingReasonCodeType](./literals.md#findingreasoncodetype)\]
 
 ## RootCauseTypeDef
 
@@ -1499,6 +1533,8 @@ Optional fields:
   [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
 - `ExpectedResourceUtilization`:
   [ResourceUtilizationTypeDef](./type_defs.md#resourceutilizationtypedef)
+- `PlatformDifferences`:
+  `List`\[[PlatformDifferenceType](./literals.md#platformdifferencetype)\]
 
 ## TerminateRecommendationDetailTypeDef
 

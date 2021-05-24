@@ -3,7 +3,7 @@
 > [Index](..) > [AppConfig](.) > Typed dictionaries
 
 Auto-generated documentation for
-[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/appconfig.html#AppConfig)
+[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
 type annotations stubs module
 [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 

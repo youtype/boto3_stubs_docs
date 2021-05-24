@@ -3,7 +3,7 @@
 > [Index](..) > [SageMaker](.) > Paginators
 
 Auto-generated documentation for
-[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker)
+[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
 [mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
@@ -76,7 +76,7 @@ def get_list_actions_paginator() -> ListActionsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListActions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListActions)
+[SageMaker.Paginator.ListActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListActions)
 
 Arguments for `ListActionsPaginator.paginate` method:
 
@@ -107,7 +107,7 @@ def get_list_algorithms_paginator() -> ListAlgorithmsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListAlgorithms](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListAlgorithms)
+[SageMaker.Paginator.ListAlgorithms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAlgorithms)
 
 Arguments for `ListAlgorithmsPaginator.paginate` method:
 
@@ -137,7 +137,7 @@ def get_list_app_image_configs_paginator() -> ListAppImageConfigsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListAppImageConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListAppImageConfigs)
+[SageMaker.Paginator.ListAppImageConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAppImageConfigs)
 
 Arguments for `ListAppImageConfigsPaginator.paginate` method:
 
@@ -169,7 +169,7 @@ def get_list_apps_paginator() -> ListAppsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListApps](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListApps)
+[SageMaker.Paginator.ListApps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListApps)
 
 Arguments for `ListAppsPaginator.paginate` method:
 
@@ -199,7 +199,7 @@ def get_list_artifacts_paginator() -> ListArtifactsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListArtifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListArtifacts)
+[SageMaker.Paginator.ListArtifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListArtifacts)
 
 Arguments for `ListArtifactsPaginator.paginate` method:
 
@@ -231,7 +231,7 @@ def get_list_associations_paginator() -> ListAssociationsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListAssociations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListAssociations)
+[SageMaker.Paginator.ListAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAssociations)
 
 Arguments for `ListAssociationsPaginator.paginate` method:
 
@@ -266,7 +266,7 @@ def get_list_auto_ml_jobs_paginator() -> ListAutoMLJobsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListAutoMLJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListAutoMLJobs)
+[SageMaker.Paginator.ListAutoMLJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAutoMLJobs)
 
 Arguments for `ListAutoMLJobsPaginator.paginate` method:
 
@@ -299,7 +299,7 @@ def get_list_candidates_for_auto_ml_job_paginator() -> ListCandidatesForAutoMLJo
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListCandidatesForAutoMLJob](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListCandidatesForAutoMLJob)
+[SageMaker.Paginator.ListCandidatesForAutoMLJob](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCandidatesForAutoMLJob)
 
 Arguments for `ListCandidatesForAutoMLJobPaginator.paginate` method:
 
@@ -329,7 +329,7 @@ def get_list_code_repositories_paginator() -> ListCodeRepositoriesPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListCodeRepositories](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListCodeRepositories)
+[SageMaker.Paginator.ListCodeRepositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCodeRepositories)
 
 Arguments for `ListCodeRepositoriesPaginator.paginate` method:
 
@@ -362,7 +362,7 @@ def get_list_compilation_jobs_paginator() -> ListCompilationJobsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListCompilationJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListCompilationJobs)
+[SageMaker.Paginator.ListCompilationJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListCompilationJobs)
 
 Arguments for `ListCompilationJobsPaginator.paginate` method:
 
@@ -397,7 +397,7 @@ def get_list_contexts_paginator() -> ListContextsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListContexts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListContexts)
+[SageMaker.Paginator.ListContexts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListContexts)
 
 Arguments for `ListContextsPaginator.paginate` method:
 
@@ -428,7 +428,7 @@ def get_list_data_quality_job_definitions_paginator() -> ListDataQualityJobDefin
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListDataQualityJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListDataQualityJobDefinitions)
+[SageMaker.Paginator.ListDataQualityJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDataQualityJobDefinitions)
 
 Arguments for `ListDataQualityJobDefinitionsPaginator.paginate` method:
 
@@ -460,7 +460,7 @@ def get_list_device_fleets_paginator() -> ListDeviceFleetsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListDeviceFleets](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListDeviceFleets)
+[SageMaker.Paginator.ListDeviceFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDeviceFleets)
 
 Arguments for `ListDeviceFleetsPaginator.paginate` method:
 
@@ -492,7 +492,7 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListDevices)
+[SageMaker.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDevices)
 
 Arguments for `ListDevicesPaginator.paginate` method:
 
@@ -519,7 +519,7 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListDomains)
+[SageMaker.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListDomains)
 
 Arguments for `ListDomainsPaginator.paginate` method:
 
@@ -544,7 +544,7 @@ def get_list_edge_packaging_jobs_paginator() -> ListEdgePackagingJobsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListEdgePackagingJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListEdgePackagingJobs)
+[SageMaker.Paginator.ListEdgePackagingJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEdgePackagingJobs)
 
 Arguments for `ListEdgePackagingJobsPaginator.paginate` method:
 
@@ -580,7 +580,7 @@ def get_list_endpoint_configs_paginator() -> ListEndpointConfigsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListEndpointConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListEndpointConfigs)
+[SageMaker.Paginator.ListEndpointConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEndpointConfigs)
 
 Arguments for `ListEndpointConfigsPaginator.paginate` method:
 
@@ -611,7 +611,7 @@ def get_list_endpoints_paginator() -> ListEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListEndpoints)
+[SageMaker.Paginator.ListEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListEndpoints)
 
 Arguments for `ListEndpointsPaginator.paginate` method:
 
@@ -644,7 +644,7 @@ def get_list_experiments_paginator() -> ListExperimentsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListExperiments](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListExperiments)
+[SageMaker.Paginator.ListExperiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListExperiments)
 
 Arguments for `ListExperimentsPaginator.paginate` method:
 
@@ -673,7 +673,7 @@ def get_list_feature_groups_paginator() -> ListFeatureGroupsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListFeatureGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListFeatureGroups)
+[SageMaker.Paginator.ListFeatureGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListFeatureGroups)
 
 Arguments for `ListFeatureGroupsPaginator.paginate` method:
 
@@ -708,7 +708,7 @@ def get_list_flow_definitions_paginator() -> ListFlowDefinitionsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListFlowDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListFlowDefinitions)
+[SageMaker.Paginator.ListFlowDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListFlowDefinitions)
 
 Arguments for `ListFlowDefinitionsPaginator.paginate` method:
 
@@ -736,7 +736,7 @@ def get_list_human_task_uis_paginator() -> ListHumanTaskUisPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListHumanTaskUis](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListHumanTaskUis)
+[SageMaker.Paginator.ListHumanTaskUis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListHumanTaskUis)
 
 Arguments for `ListHumanTaskUisPaginator.paginate` method:
 
@@ -764,7 +764,7 @@ def get_list_hyper_parameter_tuning_jobs_paginator() -> ListHyperParameterTuning
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListHyperParameterTuningJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListHyperParameterTuningJobs)
+[SageMaker.Paginator.ListHyperParameterTuningJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListHyperParameterTuningJobs)
 
 Arguments for `ListHyperParameterTuningJobsPaginator.paginate` method:
 
@@ -799,7 +799,7 @@ def get_list_image_versions_paginator() -> ListImageVersionsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListImageVersions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListImageVersions)
+[SageMaker.Paginator.ListImageVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListImageVersions)
 
 Arguments for `ListImageVersionsPaginator.paginate` method:
 
@@ -831,7 +831,7 @@ def get_list_images_paginator() -> ListImagesPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListImages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListImages)
+[SageMaker.Paginator.ListImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListImages)
 
 Arguments for `ListImagesPaginator.paginate` method:
 
@@ -863,7 +863,7 @@ def get_list_labeling_jobs_paginator() -> ListLabelingJobsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListLabelingJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListLabelingJobs)
+[SageMaker.Paginator.ListLabelingJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListLabelingJobs)
 
 Arguments for `ListLabelingJobsPaginator.paginate` method:
 
@@ -896,7 +896,7 @@ def get_list_labeling_jobs_for_workteam_paginator() -> ListLabelingJobsForWorkte
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListLabelingJobsForWorkteam](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListLabelingJobsForWorkteam)
+[SageMaker.Paginator.ListLabelingJobsForWorkteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListLabelingJobsForWorkteam)
 
 Arguments for `ListLabelingJobsForWorkteamPaginator.paginate` method:
 
@@ -928,7 +928,7 @@ def get_list_model_bias_job_definitions_paginator() -> ListModelBiasJobDefinitio
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListModelBiasJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListModelBiasJobDefinitions)
+[SageMaker.Paginator.ListModelBiasJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelBiasJobDefinitions)
 
 Arguments for `ListModelBiasJobDefinitionsPaginator.paginate` method:
 
@@ -960,7 +960,7 @@ def get_list_model_explainability_job_definitions_paginator() -> ListModelExplai
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListModelExplainabilityJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListModelExplainabilityJobDefinitions)
+[SageMaker.Paginator.ListModelExplainabilityJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelExplainabilityJobDefinitions)
 
 Arguments for `ListModelExplainabilityJobDefinitionsPaginator.paginate` method:
 
@@ -992,7 +992,7 @@ def get_list_model_package_groups_paginator() -> ListModelPackageGroupsPaginator
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListModelPackageGroups](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListModelPackageGroups)
+[SageMaker.Paginator.ListModelPackageGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelPackageGroups)
 
 Arguments for `ListModelPackageGroupsPaginator.paginate` method:
 
@@ -1023,7 +1023,7 @@ def get_list_model_packages_paginator() -> ListModelPackagesPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListModelPackages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListModelPackages)
+[SageMaker.Paginator.ListModelPackages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelPackages)
 
 Arguments for `ListModelPackagesPaginator.paginate` method:
 
@@ -1058,7 +1058,7 @@ def get_list_model_quality_job_definitions_paginator() -> ListModelQualityJobDef
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListModelQualityJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListModelQualityJobDefinitions)
+[SageMaker.Paginator.ListModelQualityJobDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelQualityJobDefinitions)
 
 Arguments for `ListModelQualityJobDefinitionsPaginator.paginate` method:
 
@@ -1089,7 +1089,7 @@ def get_list_models_paginator() -> ListModelsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListModels](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListModels)
+[SageMaker.Paginator.ListModels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModels)
 
 Arguments for `ListModelsPaginator.paginate` method:
 
@@ -1119,7 +1119,7 @@ def get_list_monitoring_executions_paginator() -> ListMonitoringExecutionsPagina
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListMonitoringExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringExecutions)
+[SageMaker.Paginator.ListMonitoringExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringExecutions)
 
 Arguments for `ListMonitoringExecutionsPaginator.paginate` method:
 
@@ -1159,7 +1159,7 @@ def get_list_monitoring_schedules_paginator() -> ListMonitoringSchedulesPaginato
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListMonitoringSchedules](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringSchedules)
+[SageMaker.Paginator.ListMonitoringSchedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringSchedules)
 
 Arguments for `ListMonitoringSchedulesPaginator.paginate` method:
 
@@ -1197,7 +1197,7 @@ def get_list_notebook_instance_lifecycle_configs_paginator() -> ListNotebookInst
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListNotebookInstanceLifecycleConfigs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListNotebookInstanceLifecycleConfigs)
+[SageMaker.Paginator.ListNotebookInstanceLifecycleConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListNotebookInstanceLifecycleConfigs)
 
 Arguments for `ListNotebookInstanceLifecycleConfigsPaginator.paginate` method:
 
@@ -1231,7 +1231,7 @@ def get_list_notebook_instances_paginator() -> ListNotebookInstancesPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListNotebookInstances](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListNotebookInstances)
+[SageMaker.Paginator.ListNotebookInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListNotebookInstances)
 
 Arguments for `ListNotebookInstancesPaginator.paginate` method:
 
@@ -1270,7 +1270,7 @@ def get_list_pipeline_execution_steps_paginator() -> ListPipelineExecutionStepsP
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListPipelineExecutionSteps](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineExecutionSteps)
+[SageMaker.Paginator.ListPipelineExecutionSteps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineExecutionSteps)
 
 Arguments for `ListPipelineExecutionStepsPaginator.paginate` method:
 
@@ -1297,7 +1297,7 @@ def get_list_pipeline_executions_paginator() -> ListPipelineExecutionsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListPipelineExecutions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineExecutions)
+[SageMaker.Paginator.ListPipelineExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineExecutions)
 
 Arguments for `ListPipelineExecutionsPaginator.paginate` method:
 
@@ -1328,7 +1328,7 @@ def get_list_pipeline_parameters_for_execution_paginator() -> ListPipelineParame
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListPipelineParametersForExecution](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineParametersForExecution)
+[SageMaker.Paginator.ListPipelineParametersForExecution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelineParametersForExecution)
 
 Arguments for `ListPipelineParametersForExecutionPaginator.paginate` method:
 
@@ -1354,7 +1354,7 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelines)
+[SageMaker.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListPipelines)
 
 Arguments for `ListPipelinesPaginator.paginate` method:
 
@@ -1384,7 +1384,7 @@ def get_list_processing_jobs_paginator() -> ListProcessingJobsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListProcessingJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListProcessingJobs)
+[SageMaker.Paginator.ListProcessingJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListProcessingJobs)
 
 Arguments for `ListProcessingJobsPaginator.paginate` method:
 
@@ -1418,7 +1418,7 @@ def get_list_subscribed_workteams_paginator() -> ListSubscribedWorkteamsPaginato
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListSubscribedWorkteams](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListSubscribedWorkteams)
+[SageMaker.Paginator.ListSubscribedWorkteams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListSubscribedWorkteams)
 
 Arguments for `ListSubscribedWorkteamsPaginator.paginate` method:
 
@@ -1443,7 +1443,7 @@ def get_list_tags_paginator() -> ListTagsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListTags)
+[SageMaker.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTags)
 
 Arguments for `ListTagsPaginator.paginate` method:
 
@@ -1469,7 +1469,7 @@ def get_list_training_jobs_paginator() -> ListTrainingJobsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListTrainingJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListTrainingJobs)
+[SageMaker.Paginator.ListTrainingJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrainingJobs)
 
 Arguments for `ListTrainingJobsPaginator.paginate` method:
 
@@ -1502,7 +1502,7 @@ def get_list_training_jobs_for_hyper_parameter_tuning_job_paginator() -> ListTra
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListTrainingJobsForHyperParameterTuningJob](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListTrainingJobsForHyperParameterTuningJob)
+[SageMaker.Paginator.ListTrainingJobsForHyperParameterTuningJob](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrainingJobsForHyperParameterTuningJob)
 
 Arguments for `ListTrainingJobsForHyperParameterTuningJobPaginator.paginate`
 method:
@@ -1533,7 +1533,7 @@ def get_list_transform_jobs_paginator() -> ListTransformJobsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListTransformJobs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListTransformJobs)
+[SageMaker.Paginator.ListTransformJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTransformJobs)
 
 Arguments for `ListTransformJobsPaginator.paginate` method:
 
@@ -1567,7 +1567,7 @@ def get_list_trial_components_paginator() -> ListTrialComponentsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListTrialComponents](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListTrialComponents)
+[SageMaker.Paginator.ListTrialComponents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrialComponents)
 
 Arguments for `ListTrialComponentsPaginator.paginate` method:
 
@@ -1599,7 +1599,7 @@ def get_list_trials_paginator() -> ListTrialsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListTrials](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListTrials)
+[SageMaker.Paginator.ListTrials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListTrials)
 
 Arguments for `ListTrialsPaginator.paginate` method:
 
@@ -1630,7 +1630,7 @@ def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListUserProfiles](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListUserProfiles)
+[SageMaker.Paginator.ListUserProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListUserProfiles)
 
 Arguments for `ListUserProfilesPaginator.paginate` method:
 
@@ -1659,7 +1659,7 @@ def get_list_workforces_paginator() -> ListWorkforcesPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListWorkforces](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListWorkforces)
+[SageMaker.Paginator.ListWorkforces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListWorkforces)
 
 Arguments for `ListWorkforcesPaginator.paginate` method:
 
@@ -1688,7 +1688,7 @@ def get_list_workteams_paginator() -> ListWorkteamsPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.ListWorkteams](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.ListWorkteams)
+[SageMaker.Paginator.ListWorkteams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListWorkteams)
 
 Arguments for `ListWorkteamsPaginator.paginate` method:
 
@@ -1716,7 +1716,7 @@ def get_search_paginator() -> SearchPaginator:
 ```
 
 Boto3 documentation:
-[SageMaker.Paginator.Search](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sagemaker.html#SageMaker.Paginator.Search)
+[SageMaker.Paginator.Search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.Search)
 
 Arguments for `SearchPaginator.paginate` method:
 

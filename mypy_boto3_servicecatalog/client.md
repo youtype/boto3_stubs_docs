@@ -3,7 +3,7 @@
 > [Index](..) > [ServiceCatalog](.) > ServiceCatalogClient
 
 Auto-generated documentation for
-[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog)
+[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module
 [mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
@@ -116,7 +116,7 @@ def get_servicecatalog_client() -> ServiceCatalogClient:
 ```
 
 Boto3 documentation:
-[ServiceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client)
+[ServiceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
 
 ## Exceptions
 
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("servicecatalog").accept_portfolio_share`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.accept_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share)
+[ServiceCatalog.Client.accept_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share)
 
 Arguments:
 
@@ -167,7 +167,7 @@ Type annotations for
 `boto3.client("servicecatalog").associate_budget_with_resource` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.associate_budget_with_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource)
+[ServiceCatalog.Client.associate_budget_with_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Type annotations for
 `boto3.client("servicecatalog").associate_principal_with_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.associate_principal_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio)
+[ServiceCatalog.Client.associate_principal_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Type annotations for
 `boto3.client("servicecatalog").associate_product_with_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.associate_product_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio)
+[ServiceCatalog.Client.associate_product_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio)
 
 Arguments:
 
@@ -218,7 +218,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact)
+[ServiceCatalog.Client.associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact)
 
 Arguments:
 
@@ -235,7 +235,7 @@ Type annotations for
 `boto3.client("servicecatalog").associate_tag_option_with_resource` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.associate_tag_option_with_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource)
+[ServiceCatalog.Client.associate_tag_option_with_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact)
+[ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact)
+[ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").can_paginate` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.can_paginate)
+[ServiceCatalog.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.can_paginate)
 
 Arguments:
 
@@ -300,7 +300,7 @@ Returns `bool`.
 Type annotations for `boto3.client("servicecatalog").copy_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.copy_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product)
+[ServiceCatalog.Client.copy_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product)
 
 Arguments:
 
@@ -322,7 +322,7 @@ Returns [CopyProductOutputTypeDef](./type_defs.md#copyproductoutputtypedef).
 Type annotations for `boto3.client("servicecatalog").create_constraint` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.create_constraint](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint)
+[ServiceCatalog.Client.create_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint)
 
 Arguments:
 
@@ -342,7 +342,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").create_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.create_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio)
+[ServiceCatalog.Client.create_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio)
 
 Arguments:
 
@@ -362,7 +362,7 @@ Type annotations for `boto3.client("servicecatalog").create_portfolio_share`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.create_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share)
+[ServiceCatalog.Client.create_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share)
 
 Arguments:
 
@@ -381,7 +381,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").create_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.create_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product)
+[ServiceCatalog.Client.create_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product)
 
 Arguments:
 
@@ -409,7 +409,7 @@ Type annotations for
 `boto3.client("servicecatalog").create_provisioned_product_plan` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.create_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan)
+[ServiceCatalog.Client.create_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan)
 
 Arguments:
 
@@ -437,7 +437,7 @@ Type annotations for
 `boto3.client("servicecatalog").create_provisioning_artifact` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.create_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact)
+[ServiceCatalog.Client.create_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact)
 
 Arguments:
 
@@ -457,7 +457,7 @@ Type annotations for `boto3.client("servicecatalog").create_service_action`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.create_service_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action)
+[ServiceCatalog.Client.create_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action)
 
 Arguments:
 
@@ -480,7 +480,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").create_tag_option` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.create_tag_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option)
+[ServiceCatalog.Client.create_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option)
 
 Arguments:
 
@@ -495,7 +495,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").delete_constraint` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.delete_constraint](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint)
+[ServiceCatalog.Client.delete_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("servicecatalog").delete_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.delete_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio)
+[ServiceCatalog.Client.delete_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio)
 
 Arguments:
 
@@ -524,7 +524,7 @@ Type annotations for `boto3.client("servicecatalog").delete_portfolio_share`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.delete_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share)
+[ServiceCatalog.Client.delete_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share)
 
 Arguments:
 
@@ -542,7 +542,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").delete_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.delete_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product)
+[ServiceCatalog.Client.delete_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product)
 
 Arguments:
 
@@ -557,7 +557,7 @@ Type annotations for
 `boto3.client("servicecatalog").delete_provisioned_product_plan` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.delete_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan)
+[ServiceCatalog.Client.delete_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan)
 
 Arguments:
 
@@ -573,7 +573,7 @@ Type annotations for
 `boto3.client("servicecatalog").delete_provisioning_artifact` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.delete_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact)
+[ServiceCatalog.Client.delete_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact)
 
 Arguments:
 
@@ -589,7 +589,7 @@ Type annotations for `boto3.client("servicecatalog").delete_service_action`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.delete_service_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action)
+[ServiceCatalog.Client.delete_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action)
 
 Arguments:
 
@@ -603,7 +603,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("servicecatalog").delete_tag_option` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.delete_tag_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option)
+[ServiceCatalog.Client.delete_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option)
 
 Arguments:
 
@@ -617,7 +617,7 @@ Type annotations for `boto3.client("servicecatalog").describe_constraint`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_constraint](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint)
+[ServiceCatalog.Client.describe_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint)
 
 Arguments:
 
@@ -633,7 +633,7 @@ Type annotations for
 `boto3.client("servicecatalog").describe_copy_product_status` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_copy_product_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status)
+[ServiceCatalog.Client.describe_copy_product_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status)
 
 Arguments:
 
@@ -649,7 +649,7 @@ Type annotations for `boto3.client("servicecatalog").describe_portfolio`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio)
+[ServiceCatalog.Client.describe_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio)
 
 Arguments:
 
@@ -665,7 +665,7 @@ Type annotations for
 `boto3.client("servicecatalog").describe_portfolio_share_status` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_portfolio_share_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status)
+[ServiceCatalog.Client.describe_portfolio_share_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status)
 
 Arguments:
 
@@ -680,7 +680,7 @@ Type annotations for `boto3.client("servicecatalog").describe_portfolio_shares`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares)
+[ServiceCatalog.Client.describe_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares)
 
 Arguments:
 
@@ -699,7 +699,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").describe_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product)
+[ServiceCatalog.Client.describe_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product)
 
 Arguments:
 
@@ -716,7 +716,7 @@ Type annotations for `boto3.client("servicecatalog").describe_product_as_admin`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_product_as_admin](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin)
+[ServiceCatalog.Client.describe_product_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin)
 
 Arguments:
 
@@ -734,7 +734,7 @@ Type annotations for `boto3.client("servicecatalog").describe_product_view`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_product_view](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view)
+[ServiceCatalog.Client.describe_product_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view)
 
 Arguments:
 
@@ -750,7 +750,7 @@ Type annotations for
 `boto3.client("servicecatalog").describe_provisioned_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product)
+[ServiceCatalog.Client.describe_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product)
 
 Arguments:
 
@@ -767,7 +767,7 @@ Type annotations for
 `boto3.client("servicecatalog").describe_provisioned_product_plan` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan)
+[ServiceCatalog.Client.describe_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan)
 
 Arguments:
 
@@ -785,7 +785,7 @@ Type annotations for
 `boto3.client("servicecatalog").describe_provisioning_artifact` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact)
+[ServiceCatalog.Client.describe_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact)
 
 Arguments:
 
@@ -805,7 +805,7 @@ Type annotations for
 `boto3.client("servicecatalog").describe_provisioning_parameters` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters)
+[ServiceCatalog.Client.describe_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters)
 
 Arguments:
 
@@ -825,7 +825,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").describe_record` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_record](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record)
+[ServiceCatalog.Client.describe_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record)
 
 Arguments:
 
@@ -843,7 +843,7 @@ Type annotations for `boto3.client("servicecatalog").describe_service_action`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_service_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action)
+[ServiceCatalog.Client.describe_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action)
 
 Arguments:
 
@@ -860,7 +860,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_service_action_execution_parameters](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters)
+[ServiceCatalog.Client.describe_service_action_execution_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters)
 
 Arguments:
 
@@ -877,7 +877,7 @@ Type annotations for `boto3.client("servicecatalog").describe_tag_option`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.describe_tag_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option)
+[ServiceCatalog.Client.describe_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option)
 
 Arguments:
 
@@ -892,7 +892,7 @@ Type annotations for
 `boto3.client("servicecatalog").disable_aws_organizations_access` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.disable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access)
+[ServiceCatalog.Client.disable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -902,7 +902,7 @@ Type annotations for
 `boto3.client("servicecatalog").disassociate_budget_from_resource` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.disassociate_budget_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource)
+[ServiceCatalog.Client.disassociate_budget_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource)
 
 Arguments:
 
@@ -917,7 +917,7 @@ Type annotations for
 `boto3.client("servicecatalog").disassociate_principal_from_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.disassociate_principal_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio)
+[ServiceCatalog.Client.disassociate_principal_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio)
 
 Arguments:
 
@@ -933,7 +933,7 @@ Type annotations for
 `boto3.client("servicecatalog").disassociate_product_from_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.disassociate_product_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio)
+[ServiceCatalog.Client.disassociate_product_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio)
 
 Arguments:
 
@@ -950,7 +950,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact)
+[ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact)
 
 Arguments:
 
@@ -967,7 +967,7 @@ Type annotations for
 `boto3.client("servicecatalog").disassociate_tag_option_from_resource` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.disassociate_tag_option_from_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource)
+[ServiceCatalog.Client.disassociate_tag_option_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource)
 
 Arguments:
 
@@ -982,7 +982,7 @@ Type annotations for
 `boto3.client("servicecatalog").enable_aws_organizations_access` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.enable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access)
+[ServiceCatalog.Client.enable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access)
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -992,7 +992,7 @@ Type annotations for
 `boto3.client("servicecatalog").execute_provisioned_product_plan` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.execute_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan)
+[ServiceCatalog.Client.execute_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan)
 
 Arguments:
 
@@ -1010,7 +1010,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.execute_provisioned_product_service_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action)
+[ServiceCatalog.Client.execute_provisioned_product_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action)
 
 Arguments:
 
@@ -1029,7 +1029,7 @@ Type annotations for `boto3.client("servicecatalog").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.generate_presigned_url)
+[ServiceCatalog.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.generate_presigned_url)
 
 Arguments:
 
@@ -1046,7 +1046,7 @@ Type annotations for
 `boto3.client("servicecatalog").get_aws_organizations_access_status` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.get_aws_organizations_access_status](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status)
+[ServiceCatalog.Client.get_aws_organizations_access_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status)
 
 Returns
 [GetAWSOrganizationsAccessStatusOutputTypeDef](./type_defs.md#getawsorganizationsaccessstatusoutputtypedef).
@@ -1057,7 +1057,7 @@ Type annotations for
 `boto3.client("servicecatalog").get_provisioned_product_outputs` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.get_provisioned_product_outputs](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs)
+[ServiceCatalog.Client.get_provisioned_product_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs)
 
 Arguments:
 
@@ -1077,7 +1077,7 @@ Type annotations for
 `boto3.client("servicecatalog").import_as_provisioned_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.import_as_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)
+[ServiceCatalog.Client.import_as_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)
 
 Arguments:
 
@@ -1097,7 +1097,7 @@ Type annotations for
 `boto3.client("servicecatalog").list_accepted_portfolio_shares` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_accepted_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares)
+[ServiceCatalog.Client.list_accepted_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares)
 
 Arguments:
 
@@ -1116,7 +1116,7 @@ Type annotations for `boto3.client("servicecatalog").list_budgets_for_resource`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_budgets_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource)
+[ServiceCatalog.Client.list_budgets_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource)
 
 Arguments:
 
@@ -1134,7 +1134,7 @@ Type annotations for
 `boto3.client("servicecatalog").list_constraints_for_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_constraints_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio)
+[ServiceCatalog.Client.list_constraints_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio)
 
 Arguments:
 
@@ -1152,7 +1152,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").list_launch_paths` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_launch_paths](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths)
+[ServiceCatalog.Client.list_launch_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths)
 
 Arguments:
 
@@ -1170,7 +1170,7 @@ Type annotations for
 `boto3.client("servicecatalog").list_organization_portfolio_access` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_organization_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access)
+[ServiceCatalog.Client.list_organization_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access)
 
 Arguments:
 
@@ -1191,7 +1191,7 @@ Type annotations for `boto3.client("servicecatalog").list_portfolio_access`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access)
+[ServiceCatalog.Client.list_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access)
 
 Arguments:
 
@@ -1209,7 +1209,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").list_portfolios` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_portfolios](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios)
+[ServiceCatalog.Client.list_portfolios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios)
 
 Arguments:
 
@@ -1226,7 +1226,7 @@ Type annotations for
 `boto3.client("servicecatalog").list_portfolios_for_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_portfolios_for_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product)
+[ServiceCatalog.Client.list_portfolios_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product)
 
 Arguments:
 
@@ -1244,7 +1244,7 @@ Type annotations for
 `boto3.client("servicecatalog").list_principals_for_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_principals_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio)
+[ServiceCatalog.Client.list_principals_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio)
 
 Arguments:
 
@@ -1262,7 +1262,7 @@ Type annotations for
 `boto3.client("servicecatalog").list_provisioned_product_plans` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_provisioned_product_plans](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans)
+[ServiceCatalog.Client.list_provisioned_product_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans)
 
 Arguments:
 
@@ -1282,7 +1282,7 @@ Type annotations for
 `boto3.client("servicecatalog").list_provisioning_artifacts` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_provisioning_artifacts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts)
+[ServiceCatalog.Client.list_provisioning_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts)
 
 Arguments:
 
@@ -1299,7 +1299,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_provisioning_artifacts_for_service_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action)
+[ServiceCatalog.Client.list_provisioning_artifacts_for_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action)
 
 Arguments:
 
@@ -1317,7 +1317,7 @@ Type annotations for `boto3.client("servicecatalog").list_record_history`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_record_history](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history)
+[ServiceCatalog.Client.list_record_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history)
 
 Arguments:
 
@@ -1338,7 +1338,7 @@ Type annotations for
 `boto3.client("servicecatalog").list_resources_for_tag_option` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_resources_for_tag_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option)
+[ServiceCatalog.Client.list_resources_for_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option)
 
 Arguments:
 
@@ -1356,7 +1356,7 @@ Type annotations for `boto3.client("servicecatalog").list_service_actions`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_service_actions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions)
+[ServiceCatalog.Client.list_service_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions)
 
 Arguments:
 
@@ -1374,7 +1374,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_service_actions_for_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact)
+[ServiceCatalog.Client.list_service_actions_for_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact)
 
 Arguments:
 
@@ -1394,7 +1394,7 @@ Type annotations for
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_stack_instances_for_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product)
+[ServiceCatalog.Client.list_stack_instances_for_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product)
 
 Arguments:
 
@@ -1411,7 +1411,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").list_tag_options` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.list_tag_options](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options)
+[ServiceCatalog.Client.list_tag_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options)
 
 Arguments:
 
@@ -1428,7 +1428,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").provision_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.provision_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product)
+[ServiceCatalog.Client.provision_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product)
 
 Arguments:
 
@@ -1457,7 +1457,7 @@ Type annotations for `boto3.client("servicecatalog").reject_portfolio_share`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.reject_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share)
+[ServiceCatalog.Client.reject_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share)
 
 Arguments:
 
@@ -1474,7 +1474,7 @@ Type annotations for `boto3.client("servicecatalog").scan_provisioned_products`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.scan_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products)
+[ServiceCatalog.Client.scan_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products)
 
 Arguments:
 
@@ -1492,7 +1492,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").search_products` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.search_products](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products)
+[ServiceCatalog.Client.search_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products)
 
 Arguments:
 
@@ -1514,7 +1514,7 @@ Type annotations for `boto3.client("servicecatalog").search_products_as_admin`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.search_products_as_admin](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin)
+[ServiceCatalog.Client.search_products_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin)
 
 Arguments:
 
@@ -1539,7 +1539,7 @@ Type annotations for
 `boto3.client("servicecatalog").search_provisioned_products` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.search_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products)
+[ServiceCatalog.Client.search_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products)
 
 Arguments:
 
@@ -1563,7 +1563,7 @@ Type annotations for
 `boto3.client("servicecatalog").terminate_provisioned_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.terminate_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product)
+[ServiceCatalog.Client.terminate_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product)
 
 Arguments:
 
@@ -1582,7 +1582,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").update_constraint` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_constraint](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint)
+[ServiceCatalog.Client.update_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint)
 
 Arguments:
 
@@ -1599,7 +1599,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").update_portfolio` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_portfolio](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio)
+[ServiceCatalog.Client.update_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio)
 
 Arguments:
 
@@ -1620,7 +1620,7 @@ Type annotations for `boto3.client("servicecatalog").update_portfolio_share`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share)
+[ServiceCatalog.Client.update_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share)
 
 Arguments:
 
@@ -1639,7 +1639,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").update_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product)
+[ServiceCatalog.Client.update_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product)
 
 Arguments:
 
@@ -1664,7 +1664,7 @@ Type annotations for
 `boto3.client("servicecatalog").update_provisioned_product` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product)
+[ServiceCatalog.Client.update_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product)
 
 Arguments:
 
@@ -1693,7 +1693,7 @@ Type annotations for
 `boto3.client("servicecatalog").update_provisioned_product_properties` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_provisioned_product_properties](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties)
+[ServiceCatalog.Client.update_provisioned_product_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties)
 
 Arguments:
 
@@ -1713,7 +1713,7 @@ Type annotations for
 `boto3.client("servicecatalog").update_provisioning_artifact` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact)
+[ServiceCatalog.Client.update_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact)
 
 Arguments:
 
@@ -1735,7 +1735,7 @@ Type annotations for `boto3.client("servicecatalog").update_service_action`
 method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_service_action](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action)
+[ServiceCatalog.Client.update_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action)
 
 Arguments:
 
@@ -1755,7 +1755,7 @@ Returns
 Type annotations for `boto3.client("servicecatalog").update_tag_option` method.
 
 Boto3 documentation:
-[ServiceCatalog.Client.update_tag_option](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option)
+[ServiceCatalog.Client.update_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option)
 
 Arguments:
 

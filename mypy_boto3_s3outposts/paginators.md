@@ -3,7 +3,7 @@
 > [Index](..) > [S3Outposts](.) > Paginators
 
 Auto-generated documentation for
-[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts)
+[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module
 [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
@@ -25,7 +25,7 @@ def get_list_endpoints_paginator() -> ListEndpointsPaginator:
 ```
 
 Boto3 documentation:
-[S3Outposts.Paginator.ListEndpoints](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts.Paginator.ListEndpoints)
+[S3Outposts.Paginator.ListEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListEndpoints)
 
 Arguments for `ListEndpointsPaginator.paginate` method:
 

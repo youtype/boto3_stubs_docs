@@ -1,14 +1,14 @@
-# ImagebuilderClient for boto3 Imagebuilder module
+# imagebuilderClient for boto3 imagebuilder module
 
-> [Index](..) > [Imagebuilder](.) > ImagebuilderClient
+> [Index](..) > [imagebuilder](.) > imagebuilderClient
 
 Auto-generated documentation for
-[Imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder)
+[imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
 type annotations stubs module
 [mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
-- [ImagebuilderClient for boto3 Imagebuilder module](#imagebuilderclient-for-boto3-imagebuilder-module)
-  - [ImagebuilderClient](#imagebuilderclient)
+- [imagebuilderClient for boto3 imagebuilder module](#imagebuilderclient-for-boto3-imagebuilder-module)
+  - [imagebuilderClient](#imagebuilderclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [can_paginate](#can_paginate)
@@ -63,21 +63,21 @@ type annotations stubs module
     - [update_image_pipeline](#update_image_pipeline)
     - [update_infrastructure_configuration](#update_infrastructure_configuration)
 
-## ImagebuilderClient
+## imagebuilderClient
 
 Type annotations for `boto3.client("imagebuilder")`
 
 Can be used directly:
 
 ```python
-from mypy_boto3_imagebuilder.client import ImagebuilderClient
+from mypy_boto3_imagebuilder.client import imagebuilderClient
 
-def get_imagebuilder_client() -> ImagebuilderClient:
+def get_imagebuilder_client() -> imagebuilderClient:
     return boto3.client("imagebuilder")
 ```
 
 Boto3 documentation:
-[Imagebuilder.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client)
+[imagebuilder.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client)
 
 ## Exceptions
 
@@ -119,7 +119,7 @@ Exceptions:
 Type annotations for `boto3.client("imagebuilder").can_paginate` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.can_paginate)
+[imagebuilder.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.can_paginate)
 
 Arguments:
 
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("imagebuilder").cancel_image_creation`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.cancel_image_creation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.cancel_image_creation)
+[imagebuilder.Client.cancel_image_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.cancel_image_creation)
 
 Arguments:
 
@@ -148,7 +148,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").create_component` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.create_component)
+[imagebuilder.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_component)
 
 Arguments:
 
@@ -173,7 +173,7 @@ Type annotations for `boto3.client("imagebuilder").create_container_recipe`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.create_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.create_container_recipe)
+[imagebuilder.Client.create_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_container_recipe)
 
 Arguments:
 
@@ -209,7 +209,7 @@ Type annotations for
 `boto3.client("imagebuilder").create_distribution_configuration` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.create_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.create_distribution_configuration)
+[imagebuilder.Client.create_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_distribution_configuration)
 
 Arguments:
 
@@ -229,7 +229,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").create_image` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.create_image)
+[imagebuilder.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image)
 
 Arguments:
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("imagebuilder").create_image_pipeline`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.create_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_pipeline)
+[imagebuilder.Client.create_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_pipeline)
 
 Arguments:
 
@@ -278,7 +278,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").create_image_recipe` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.create_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.create_image_recipe)
+[imagebuilder.Client.create_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_recipe)
 
 Arguments:
 
@@ -304,7 +304,7 @@ Type annotations for
 `boto3.client("imagebuilder").create_infrastructure_configuration` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.create_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.create_infrastructure_configuration)
+[imagebuilder.Client.create_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_infrastructure_configuration)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").delete_component` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.delete_component)
+[imagebuilder.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_component)
 
 Arguments:
 
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("imagebuilder").delete_container_recipe`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.delete_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.delete_container_recipe)
+[imagebuilder.Client.delete_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_container_recipe)
 
 Arguments:
 
@@ -360,7 +360,7 @@ Type annotations for
 `boto3.client("imagebuilder").delete_distribution_configuration` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.delete_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.delete_distribution_configuration)
+[imagebuilder.Client.delete_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_distribution_configuration)
 
 Arguments:
 
@@ -374,7 +374,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").delete_image` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image)
+[imagebuilder.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image)
 
 Arguments:
 
@@ -389,7 +389,7 @@ Type annotations for `boto3.client("imagebuilder").delete_image_pipeline`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.delete_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_pipeline)
+[imagebuilder.Client.delete_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_pipeline)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").delete_image_recipe` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.delete_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.delete_image_recipe)
+[imagebuilder.Client.delete_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_recipe)
 
 Arguments:
 
@@ -418,7 +418,7 @@ Type annotations for
 `boto3.client("imagebuilder").delete_infrastructure_configuration` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.delete_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.delete_infrastructure_configuration)
+[imagebuilder.Client.delete_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_infrastructure_configuration)
 
 Arguments:
 
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("imagebuilder").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.generate_presigned_url)
+[imagebuilder.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.generate_presigned_url)
 
 Arguments:
 
@@ -449,7 +449,7 @@ Returns `str`.
 Type annotations for `boto3.client("imagebuilder").get_component` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_component)
+[imagebuilder.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component)
 
 Arguments:
 
@@ -464,7 +464,7 @@ Type annotations for `boto3.client("imagebuilder").get_component_policy`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_component_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_component_policy)
+[imagebuilder.Client.get_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component_policy)
 
 Arguments:
 
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("imagebuilder").get_container_recipe`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe)
+[imagebuilder.Client.get_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe)
 
 Arguments:
 
@@ -494,7 +494,7 @@ Type annotations for `boto3.client("imagebuilder").get_container_recipe_policy`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_container_recipe_policy)
+[imagebuilder.Client.get_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe_policy)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Type annotations for
 `boto3.client("imagebuilder").get_distribution_configuration` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_distribution_configuration)
+[imagebuilder.Client.get_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_distribution_configuration)
 
 Arguments:
 
@@ -523,7 +523,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").get_image` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_image](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_image)
+[imagebuilder.Client.get_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image)
 
 Arguments:
 
@@ -536,7 +536,7 @@ Returns [GetImageResponseTypeDef](./type_defs.md#getimageresponsetypedef).
 Type annotations for `boto3.client("imagebuilder").get_image_pipeline` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_pipeline)
+[imagebuilder.Client.get_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_pipeline)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").get_image_policy` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_image_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_policy)
+[imagebuilder.Client.get_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_policy)
 
 Arguments:
 
@@ -564,7 +564,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").get_image_recipe` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe)
+[imagebuilder.Client.get_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe)
 
 Arguments:
 
@@ -579,7 +579,7 @@ Type annotations for `boto3.client("imagebuilder").get_image_recipe_policy`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_image_recipe_policy)
+[imagebuilder.Client.get_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe_policy)
 
 Arguments:
 
@@ -594,7 +594,7 @@ Type annotations for
 `boto3.client("imagebuilder").get_infrastructure_configuration` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.get_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.get_infrastructure_configuration)
+[imagebuilder.Client.get_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_infrastructure_configuration)
 
 Arguments:
 
@@ -608,7 +608,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").import_component` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.import_component](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.import_component)
+[imagebuilder.Client.import_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.import_component)
 
 Arguments:
 
@@ -635,7 +635,7 @@ Type annotations for
 `boto3.client("imagebuilder").list_component_build_versions` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_component_build_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_component_build_versions)
+[imagebuilder.Client.list_component_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_component_build_versions)
 
 Arguments:
 
@@ -651,7 +651,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").list_components` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_components)
+[imagebuilder.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_components)
 
 Arguments:
 
@@ -670,7 +670,7 @@ Type annotations for `boto3.client("imagebuilder").list_container_recipes`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_container_recipes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_container_recipes)
+[imagebuilder.Client.list_container_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_container_recipes)
 
 Arguments:
 
@@ -688,7 +688,7 @@ Type annotations for
 `boto3.client("imagebuilder").list_distribution_configurations` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_distribution_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_distribution_configurations)
+[imagebuilder.Client.list_distribution_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_distribution_configurations)
 
 Arguments:
 
@@ -705,7 +705,7 @@ Type annotations for `boto3.client("imagebuilder").list_image_build_versions`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_image_build_versions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_build_versions)
+[imagebuilder.Client.list_image_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_build_versions)
 
 Arguments:
 
@@ -722,7 +722,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").list_image_packages` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_image_packages](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_packages)
+[imagebuilder.Client.list_image_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_packages)
 
 Arguments:
 
@@ -739,7 +739,7 @@ Type annotations for `boto3.client("imagebuilder").list_image_pipeline_images`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_image_pipeline_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipeline_images)
+[imagebuilder.Client.list_image_pipeline_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipeline_images)
 
 Arguments:
 
@@ -757,7 +757,7 @@ Type annotations for `boto3.client("imagebuilder").list_image_pipelines`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_image_pipelines](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_pipelines)
+[imagebuilder.Client.list_image_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipelines)
 
 Arguments:
 
@@ -773,7 +773,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").list_image_recipes` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_image_recipes](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_image_recipes)
+[imagebuilder.Client.list_image_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_recipes)
 
 Arguments:
 
@@ -790,7 +790,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").list_images` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_images)
+[imagebuilder.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_images)
 
 Arguments:
 
@@ -809,7 +809,7 @@ Type annotations for
 `boto3.client("imagebuilder").list_infrastructure_configurations` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_infrastructure_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_infrastructure_configurations)
+[imagebuilder.Client.list_infrastructure_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_infrastructure_configurations)
 
 Arguments:
 
@@ -826,7 +826,7 @@ Type annotations for `boto3.client("imagebuilder").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.list_tags_for_resource)
+[imagebuilder.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -841,7 +841,7 @@ Type annotations for `boto3.client("imagebuilder").put_component_policy`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.put_component_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.put_component_policy)
+[imagebuilder.Client.put_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_component_policy)
 
 Arguments:
 
@@ -857,7 +857,7 @@ Type annotations for `boto3.client("imagebuilder").put_container_recipe_policy`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.put_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.put_container_recipe_policy)
+[imagebuilder.Client.put_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_container_recipe_policy)
 
 Arguments:
 
@@ -872,7 +872,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").put_image_policy` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.put_image_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_policy)
+[imagebuilder.Client.put_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_policy)
 
 Arguments:
 
@@ -888,7 +888,7 @@ Type annotations for `boto3.client("imagebuilder").put_image_recipe_policy`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.put_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.put_image_recipe_policy)
+[imagebuilder.Client.put_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_recipe_policy)
 
 Arguments:
 
@@ -904,7 +904,7 @@ Type annotations for
 `boto3.client("imagebuilder").start_image_pipeline_execution` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.start_image_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.start_image_pipeline_execution)
+[imagebuilder.Client.start_image_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.start_image_pipeline_execution)
 
 Arguments:
 
@@ -919,7 +919,7 @@ Returns
 Type annotations for `boto3.client("imagebuilder").tag_resource` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.tag_resource)
+[imagebuilder.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.tag_resource)
 
 Arguments:
 
@@ -933,7 +933,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("imagebuilder").untag_resource` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.untag_resource)
+[imagebuilder.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.untag_resource)
 
 Arguments:
 
@@ -948,7 +948,7 @@ Type annotations for
 `boto3.client("imagebuilder").update_distribution_configuration` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.update_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.update_distribution_configuration)
+[imagebuilder.Client.update_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_distribution_configuration)
 
 Arguments:
 
@@ -968,7 +968,7 @@ Type annotations for `boto3.client("imagebuilder").update_image_pipeline`
 method.
 
 Boto3 documentation:
-[Imagebuilder.Client.update_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.update_image_pipeline)
+[imagebuilder.Client.update_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_image_pipeline)
 
 Arguments:
 
@@ -994,7 +994,7 @@ Type annotations for
 `boto3.client("imagebuilder").update_infrastructure_configuration` method.
 
 Boto3 documentation:
-[Imagebuilder.Client.update_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/imagebuilder.html#Imagebuilder.Client.update_infrastructure_configuration)
+[imagebuilder.Client.update_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_infrastructure_configuration)
 
 Arguments:
 

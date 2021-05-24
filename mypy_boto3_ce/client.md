@@ -3,7 +3,7 @@
 > [Index](..) > [CostExplorer](.) > CostExplorerClient
 
 Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer)
+[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module
 [mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
 
@@ -58,7 +58,7 @@ def get_ce_client() -> CostExplorerClient:
 ```
 
 Boto3 documentation:
-[CostExplorer.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client)
+[CostExplorer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client)
 
 ## Exceptions
 
@@ -93,7 +93,7 @@ Exceptions:
 Type annotations for `boto3.client("ce").can_paginate` method.
 
 Boto3 documentation:
-[CostExplorer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.can_paginate)
+[CostExplorer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.can_paginate)
 
 Arguments:
 
@@ -106,7 +106,7 @@ Returns `bool`.
 Type annotations for `boto3.client("ce").create_anomaly_monitor` method.
 
 Boto3 documentation:
-[CostExplorer.Client.create_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor)
+[CostExplorer.Client.create_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor)
 
 Arguments:
 
@@ -121,7 +121,7 @@ Returns
 Type annotations for `boto3.client("ce").create_anomaly_subscription` method.
 
 Boto3 documentation:
-[CostExplorer.Client.create_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription)
+[CostExplorer.Client.create_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription)
 
 Arguments:
 
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("ce").create_cost_category_definition`
 method.
 
 Boto3 documentation:
-[CostExplorer.Client.create_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.create_cost_category_definition)
+[CostExplorer.Client.create_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_cost_category_definition)
 
 Arguments:
 
@@ -159,7 +159,7 @@ Returns
 Type annotations for `boto3.client("ce").delete_anomaly_monitor` method.
 
 Boto3 documentation:
-[CostExplorer.Client.delete_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.delete_anomaly_monitor)
+[CostExplorer.Client.delete_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_monitor)
 
 Arguments:
 
@@ -172,7 +172,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("ce").delete_anomaly_subscription` method.
 
 Boto3 documentation:
-[CostExplorer.Client.delete_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.delete_anomaly_subscription)
+[CostExplorer.Client.delete_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_subscription)
 
 Arguments:
 
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("ce").delete_cost_category_definition`
 method.
 
 Boto3 documentation:
-[CostExplorer.Client.delete_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.delete_cost_category_definition)
+[CostExplorer.Client.delete_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_cost_category_definition)
 
 Arguments:
 
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("ce").describe_cost_category_definition`
 method.
 
 Boto3 documentation:
-[CostExplorer.Client.describe_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition)
+[CostExplorer.Client.describe_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Returns
 Type annotations for `boto3.client("ce").generate_presigned_url` method.
 
 Boto3 documentation:
-[CostExplorer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.generate_presigned_url)
+[CostExplorer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.generate_presigned_url)
 
 Arguments:
 
@@ -232,7 +232,7 @@ Returns `str`.
 Type annotations for `boto3.client("ce").get_anomalies` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_anomalies](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_anomalies)
+[CostExplorer.Client.get_anomalies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomalies)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Returns
 Type annotations for `boto3.client("ce").get_anomaly_monitors` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_anomaly_monitors](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_anomaly_monitors)
+[CostExplorer.Client.get_anomaly_monitors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_monitors)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Returns
 Type annotations for `boto3.client("ce").get_anomaly_subscriptions` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_anomaly_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_anomaly_subscriptions)
+[CostExplorer.Client.get_anomaly_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_subscriptions)
 
 Arguments:
 
@@ -287,7 +287,7 @@ Returns
 Type annotations for `boto3.client("ce").get_cost_and_usage` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_cost_and_usage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage)
+[CostExplorer.Client.get_cost_and_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("ce").get_cost_and_usage_with_resources`
 method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_cost_and_usage_with_resources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage_with_resources)
+[CostExplorer.Client.get_cost_and_usage_with_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage_with_resources)
 
 Arguments:
 
@@ -330,7 +330,7 @@ Returns
 Type annotations for `boto3.client("ce").get_cost_categories` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_cost_categories](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_cost_categories)
+[CostExplorer.Client.get_cost_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_categories)
 
 Arguments:
 
@@ -352,7 +352,7 @@ Returns
 Type annotations for `boto3.client("ce").get_cost_forecast` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_cost_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_cost_forecast)
+[CostExplorer.Client.get_cost_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_forecast)
 
 Arguments:
 
@@ -371,7 +371,7 @@ Returns
 Type annotations for `boto3.client("ce").get_dimension_values` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_dimension_values](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_dimension_values)
+[CostExplorer.Client.get_dimension_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_dimension_values)
 
 Arguments:
 
@@ -394,7 +394,7 @@ Returns
 Type annotations for `boto3.client("ce").get_reservation_coverage` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_reservation_coverage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_reservation_coverage)
+[CostExplorer.Client.get_reservation_coverage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_coverage)
 
 Arguments:
 
@@ -418,7 +418,7 @@ Type annotations for
 `boto3.client("ce").get_reservation_purchase_recommendation` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_reservation_purchase_recommendation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_reservation_purchase_recommendation)
+[CostExplorer.Client.get_reservation_purchase_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_purchase_recommendation)
 
 Arguments:
 
@@ -443,7 +443,7 @@ Returns
 Type annotations for `boto3.client("ce").get_reservation_utilization` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_reservation_utilization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_reservation_utilization)
+[CostExplorer.Client.get_reservation_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_utilization)
 
 Arguments:
 
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("ce").get_rightsizing_recommendation`
 method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_rightsizing_recommendation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_rightsizing_recommendation)
+[CostExplorer.Client.get_rightsizing_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_rightsizing_recommendation)
 
 Arguments:
 
@@ -485,7 +485,7 @@ Returns
 Type annotations for `boto3.client("ce").get_savings_plans_coverage` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_savings_plans_coverage](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_savings_plans_coverage)
+[CostExplorer.Client.get_savings_plans_coverage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_coverage)
 
 Arguments:
 
@@ -509,7 +509,7 @@ Type annotations for
 `boto3.client("ce").get_savings_plans_purchase_recommendation` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_savings_plans_purchase_recommendation](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_savings_plans_purchase_recommendation)
+[CostExplorer.Client.get_savings_plans_purchase_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_purchase_recommendation)
 
 Arguments:
 
@@ -535,7 +535,7 @@ Returns
 Type annotations for `boto3.client("ce").get_savings_plans_utilization` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_savings_plans_utilization](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization)
+[CostExplorer.Client.get_savings_plans_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization)
 
 Arguments:
 
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("ce").get_savings_plans_utilization_details`
 method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_savings_plans_utilization_details](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization_details)
+[CostExplorer.Client.get_savings_plans_utilization_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization_details)
 
 Arguments:
 
@@ -575,7 +575,7 @@ Returns
 Type annotations for `boto3.client("ce").get_tags` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_tags)
+[CostExplorer.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_tags)
 
 Arguments:
 
@@ -596,7 +596,7 @@ Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 Type annotations for `boto3.client("ce").get_usage_forecast` method.
 
 Boto3 documentation:
-[CostExplorer.Client.get_usage_forecast](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.get_usage_forecast)
+[CostExplorer.Client.get_usage_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_usage_forecast)
 
 Arguments:
 
@@ -616,7 +616,7 @@ Type annotations for `boto3.client("ce").list_cost_category_definitions`
 method.
 
 Boto3 documentation:
-[CostExplorer.Client.list_cost_category_definitions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.list_cost_category_definitions)
+[CostExplorer.Client.list_cost_category_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_cost_category_definitions)
 
 Arguments:
 
@@ -632,7 +632,7 @@ Returns
 Type annotations for `boto3.client("ce").provide_anomaly_feedback` method.
 
 Boto3 documentation:
-[CostExplorer.Client.provide_anomaly_feedback](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.provide_anomaly_feedback)
+[CostExplorer.Client.provide_anomaly_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.provide_anomaly_feedback)
 
 Arguments:
 
@@ -648,7 +648,7 @@ Returns
 Type annotations for `boto3.client("ce").update_anomaly_monitor` method.
 
 Boto3 documentation:
-[CostExplorer.Client.update_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.update_anomaly_monitor)
+[CostExplorer.Client.update_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_monitor)
 
 Arguments:
 
@@ -663,7 +663,7 @@ Returns
 Type annotations for `boto3.client("ce").update_anomaly_subscription` method.
 
 Boto3 documentation:
-[CostExplorer.Client.update_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.update_anomaly_subscription)
+[CostExplorer.Client.update_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_subscription)
 
 Arguments:
 
@@ -685,7 +685,7 @@ Type annotations for `boto3.client("ce").update_cost_category_definition`
 method.
 
 Boto3 documentation:
-[CostExplorer.Client.update_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/ce.html#CostExplorer.Client.update_cost_category_definition)
+[CostExplorer.Client.update_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_cost_category_definition)
 
 Arguments:
 

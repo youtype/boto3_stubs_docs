@@ -3,7 +3,7 @@
 > [Index](..) > S3Outposts
 
 Auto-generated documentation for
-[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/s3outposts.html#S3Outposts)
+[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module
 [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 

@@ -3,7 +3,7 @@
 > [Index](..) > [IoT1ClickProjects](.) > IoT1ClickProjectsClient
 
 Auto-generated documentation for
-[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects)
+[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
 type annotations stubs module
 [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
@@ -45,7 +45,7 @@ def get_iot1click-projects_client() -> IoT1ClickProjectsClient:
 ```
 
 Boto3 documentation:
-[IoT1ClickProjects.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client)
+[IoT1ClickProjects.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client)
 
 ## Exceptions
 
@@ -76,7 +76,7 @@ Type annotations for
 `boto3.client("iot1click-projects").associate_device_with_placement` method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.associate_device_with_placement](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.associate_device_with_placement)
+[IoT1ClickProjects.Client.associate_device_with_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.associate_device_with_placement)
 
 Arguments:
 
@@ -92,7 +92,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("iot1click-projects").can_paginate` method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.can_paginate)
+[IoT1ClickProjects.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.can_paginate)
 
 Arguments:
 
@@ -106,7 +106,7 @@ Type annotations for `boto3.client("iot1click-projects").create_placement`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.create_placement](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_placement)
+[IoT1ClickProjects.Client.create_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_placement)
 
 Arguments:
 
@@ -122,7 +122,7 @@ Type annotations for `boto3.client("iot1click-projects").create_project`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_project)
+[IoT1ClickProjects.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_project)
 
 Arguments:
 
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("iot1click-projects").delete_placement`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.delete_placement](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_placement)
+[IoT1ClickProjects.Client.delete_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_placement)
 
 Arguments:
 
@@ -155,7 +155,7 @@ Type annotations for `boto3.client("iot1click-projects").delete_project`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_project)
+[IoT1ClickProjects.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_project)
 
 Arguments:
 
@@ -169,7 +169,7 @@ Type annotations for `boto3.client("iot1click-projects").describe_placement`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.describe_placement](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_placement)
+[IoT1ClickProjects.Client.describe_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_placement)
 
 Arguments:
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("iot1click-projects").describe_project`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_project)
+[IoT1ClickProjects.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_project)
 
 Arguments:
 
@@ -200,7 +200,7 @@ Type annotations for
 `boto3.client("iot1click-projects").disassociate_device_from_placement` method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.disassociate_device_from_placement](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.disassociate_device_from_placement)
+[IoT1ClickProjects.Client.disassociate_device_from_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.disassociate_device_from_placement)
 
 Arguments:
 
@@ -216,7 +216,7 @@ Type annotations for
 `boto3.client("iot1click-projects").generate_presigned_url` method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.generate_presigned_url)
+[IoT1ClickProjects.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.generate_presigned_url)
 
 Arguments:
 
@@ -233,7 +233,7 @@ Type annotations for
 `boto3.client("iot1click-projects").get_devices_in_placement` method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.get_devices_in_placement](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.get_devices_in_placement)
+[IoT1ClickProjects.Client.get_devices_in_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.get_devices_in_placement)
 
 Arguments:
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("iot1click-projects").list_placements`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.list_placements](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_placements)
+[IoT1ClickProjects.Client.list_placements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_placements)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Returns
 Type annotations for `boto3.client("iot1click-projects").list_projects` method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_projects)
+[IoT1ClickProjects.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_projects)
 
 Arguments:
 
@@ -281,7 +281,7 @@ Type annotations for
 `boto3.client("iot1click-projects").list_tags_for_resource` method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_tags_for_resource)
+[IoT1ClickProjects.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Returns
 Type annotations for `boto3.client("iot1click-projects").tag_resource` method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.tag_resource)
+[IoT1ClickProjects.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.tag_resource)
 
 Arguments:
 
@@ -310,7 +310,7 @@ Type annotations for `boto3.client("iot1click-projects").untag_resource`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.untag_resource)
+[IoT1ClickProjects.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.untag_resource)
 
 Arguments:
 
@@ -325,7 +325,7 @@ Type annotations for `boto3.client("iot1click-projects").update_placement`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.update_placement](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_placement)
+[IoT1ClickProjects.Client.update_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_placement)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Type annotations for `boto3.client("iot1click-projects").update_project`
 method.
 
 Boto3 documentation:
-[IoT1ClickProjects.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_project)
+[IoT1ClickProjects.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_project)
 
 Arguments:
 

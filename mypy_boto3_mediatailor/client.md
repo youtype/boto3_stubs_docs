@@ -3,7 +3,7 @@
 > [Index](..) > [MediaTailor](.) > MediaTailorClient
 
 Auto-generated documentation for
-[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor)
+[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module
 [mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
@@ -60,7 +60,7 @@ def get_mediatailor_client() -> MediaTailorClient:
 ```
 
 Boto3 documentation:
-[MediaTailor.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client)
+[MediaTailor.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client)
 
 ## Exceptions
 
@@ -86,7 +86,7 @@ Exceptions:
 Type annotations for `boto3.client("mediatailor").can_paginate` method.
 
 Boto3 documentation:
-[MediaTailor.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.can_paginate)
+[MediaTailor.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.can_paginate)
 
 Arguments:
 
@@ -99,7 +99,7 @@ Returns `bool`.
 Type annotations for `boto3.client("mediatailor").create_channel` method.
 
 Boto3 documentation:
-[MediaTailor.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.create_channel)
+[MediaTailor.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_channel)
 
 Arguments:
 
@@ -119,7 +119,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").create_program` method.
 
 Boto3 documentation:
-[MediaTailor.Client.create_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.create_program)
+[MediaTailor.Client.create_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program)
 
 Arguments:
 
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("mediatailor").create_source_location`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.create_source_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.create_source_location)
+[MediaTailor.Client.create_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location)
 
 Arguments:
 
@@ -163,7 +163,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").create_vod_source` method.
 
 Boto3 documentation:
-[MediaTailor.Client.create_vod_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source)
+[MediaTailor.Client.create_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source)
 
 Arguments:
 
@@ -182,7 +182,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").delete_channel` method.
 
 Boto3 documentation:
-[MediaTailor.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.delete_channel)
+[MediaTailor.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel)
 
 Arguments:
 
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("mediatailor").delete_channel_policy`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.delete_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy)
+[MediaTailor.Client.delete_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy)
 
 Arguments:
 
@@ -210,7 +210,7 @@ Type annotations for
 `boto3.client("mediatailor").delete_playback_configuration` method.
 
 Boto3 documentation:
-[MediaTailor.Client.delete_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration)
+[MediaTailor.Client.delete_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediatailor").delete_program` method.
 
 Boto3 documentation:
-[MediaTailor.Client.delete_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.delete_program)
+[MediaTailor.Client.delete_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("mediatailor").delete_source_location`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.delete_source_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location)
+[MediaTailor.Client.delete_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location)
 
 Arguments:
 
@@ -251,7 +251,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediatailor").delete_vod_source` method.
 
 Boto3 documentation:
-[MediaTailor.Client.delete_vod_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source)
+[MediaTailor.Client.delete_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source)
 
 Arguments:
 
@@ -265,7 +265,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediatailor").describe_channel` method.
 
 Boto3 documentation:
-[MediaTailor.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.describe_channel)
+[MediaTailor.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel)
 
 Arguments:
 
@@ -279,7 +279,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").describe_program` method.
 
 Boto3 documentation:
-[MediaTailor.Client.describe_program](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.describe_program)
+[MediaTailor.Client.describe_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program)
 
 Arguments:
 
@@ -295,7 +295,7 @@ Type annotations for `boto3.client("mediatailor").describe_source_location`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.describe_source_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location)
+[MediaTailor.Client.describe_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location)
 
 Arguments:
 
@@ -309,7 +309,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").describe_vod_source` method.
 
 Boto3 documentation:
-[MediaTailor.Client.describe_vod_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source)
+[MediaTailor.Client.describe_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source)
 
 Arguments:
 
@@ -325,7 +325,7 @@ Type annotations for `boto3.client("mediatailor").generate_presigned_url`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.generate_presigned_url)
+[MediaTailor.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.generate_presigned_url)
 
 Arguments:
 
@@ -341,7 +341,7 @@ Returns `str`.
 Type annotations for `boto3.client("mediatailor").get_channel_policy` method.
 
 Boto3 documentation:
-[MediaTailor.Client.get_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy)
+[MediaTailor.Client.get_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy)
 
 Arguments:
 
@@ -355,7 +355,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").get_channel_schedule` method.
 
 Boto3 documentation:
-[MediaTailor.Client.get_channel_schedule](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule)
+[MediaTailor.Client.get_channel_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule)
 
 Arguments:
 
@@ -373,7 +373,7 @@ Type annotations for `boto3.client("mediatailor").get_playback_configuration`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.get_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration)
+[MediaTailor.Client.get_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration)
 
 Arguments:
 
@@ -387,7 +387,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").list_channels` method.
 
 Boto3 documentation:
-[MediaTailor.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.list_channels)
+[MediaTailor.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels)
 
 Arguments:
 
@@ -403,7 +403,7 @@ Type annotations for `boto3.client("mediatailor").list_playback_configurations`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.list_playback_configurations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations)
+[MediaTailor.Client.list_playback_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations)
 
 Arguments:
 
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("mediatailor").list_source_locations`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.list_source_locations](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations)
+[MediaTailor.Client.list_source_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations)
 
 Arguments:
 
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("mediatailor").list_tags_for_resource`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource)
+[MediaTailor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource)
 
 Arguments:
 
@@ -449,7 +449,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").list_vod_sources` method.
 
 Boto3 documentation:
-[MediaTailor.Client.list_vod_sources](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources)
+[MediaTailor.Client.list_vod_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources)
 
 Arguments:
 
@@ -465,7 +465,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").put_channel_policy` method.
 
 Boto3 documentation:
-[MediaTailor.Client.put_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy)
+[MediaTailor.Client.put_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy)
 
 Arguments:
 
@@ -480,7 +480,7 @@ Type annotations for `boto3.client("mediatailor").put_playback_configuration`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.put_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration)
+[MediaTailor.Client.put_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration)
 
 Arguments:
 
@@ -512,7 +512,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").start_channel` method.
 
 Boto3 documentation:
-[MediaTailor.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.start_channel)
+[MediaTailor.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel)
 
 Arguments:
 
@@ -525,7 +525,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediatailor").stop_channel` method.
 
 Boto3 documentation:
-[MediaTailor.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.stop_channel)
+[MediaTailor.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel)
 
 Arguments:
 
@@ -538,7 +538,7 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("mediatailor").tag_resource` method.
 
 Boto3 documentation:
-[MediaTailor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.tag_resource)
+[MediaTailor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource)
 
 Arguments:
 
@@ -550,7 +550,7 @@ Arguments:
 Type annotations for `boto3.client("mediatailor").untag_resource` method.
 
 Boto3 documentation:
-[MediaTailor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.untag_resource)
+[MediaTailor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource)
 
 Arguments:
 
@@ -562,7 +562,7 @@ Arguments:
 Type annotations for `boto3.client("mediatailor").update_channel` method.
 
 Boto3 documentation:
-[MediaTailor.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.update_channel)
+[MediaTailor.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel)
 
 Arguments:
 
@@ -580,7 +580,7 @@ Type annotations for `boto3.client("mediatailor").update_source_location`
 method.
 
 Boto3 documentation:
-[MediaTailor.Client.update_source_location](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.update_source_location)
+[MediaTailor.Client.update_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location)
 
 Arguments:
 
@@ -601,7 +601,7 @@ Returns
 Type annotations for `boto3.client("mediatailor").update_vod_source` method.
 
 Boto3 documentation:
-[MediaTailor.Client.update_vod_source](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source)
+[MediaTailor.Client.update_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source)
 
 Arguments:
 

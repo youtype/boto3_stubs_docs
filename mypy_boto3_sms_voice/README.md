@@ -1,9 +1,9 @@
-# Type annotations for boto3 SMSVoice module
+# Type annotations for boto3 PinpointSMSVoice module
 
-> [Index](..) > SMSVoice
+> [Index](..) > PinpointSMSVoice
 
 Auto-generated documentation for
-[SMSVoice](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/sms-voice.html#SMSVoice)
+[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice)
 type annotations stubs module
 [mypy_boto3_sms_voice](https://pypi.org/project/mypy-boto3-sms-voice/).
 
@@ -11,22 +11,22 @@ type annotations stubs module
 pip install mypy-boto3-sms-voice
 ```
 
-- [Type annotations for boto3 SMSVoice module](#type-annotations-for-boto3-smsvoice-module)
-  - [SMSVoiceClient](#smsvoiceclient)
+- [Type annotations for boto3 PinpointSMSVoice module](#type-annotations-for-boto3-pinpointsmsvoice-module)
+  - [PinpointSMSVoiceClient](#pinpointsmsvoiceclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
-## SMSVoiceClient
+## PinpointSMSVoiceClient
 
 Type annotations for `boto3.client("sms-voice")` as
-[SMSVoiceClient](./client.md)
+[PinpointSMSVoiceClient](./client.md)
 
 Can be used directly:
 
 ```python
-from mypy_boto3_sms_voice.client import SMSVoiceClient
+from mypy_boto3_sms_voice.client import PinpointSMSVoiceClient
 ```
 
 ### Methods
@@ -44,7 +44,7 @@ from mypy_boto3_sms_voice.client import SMSVoiceClient
 
 ### Exceptions
 
-SMSVoiceClient [exceptions](./client.md#exceptions)
+PinpointSMSVoiceClient [exceptions](./client.md#exceptions)
 
 - AlreadyExistsException
 - BadRequestException

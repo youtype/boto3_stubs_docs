@@ -3,7 +3,7 @@
 > [Index](..) > [ACMPCA](.) > ACMPCAClient
 
 Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA)
+[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
 [mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
@@ -53,7 +53,7 @@ def get_acm-pca_client() -> ACMPCAClient:
 ```
 
 Boto3 documentation:
-[ACMPCA.Client](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client)
+[ACMPCA.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client)
 
 ## Exceptions
 
@@ -97,7 +97,7 @@ Exceptions:
 Type annotations for `boto3.client("acm-pca").can_paginate` method.
 
 Boto3 documentation:
-[ACMPCA.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.can_paginate)
+[ACMPCA.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.can_paginate)
 
 Arguments:
 
@@ -111,7 +111,7 @@ Type annotations for `boto3.client("acm-pca").create_certificate_authority`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.create_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority)
+[ACMPCA.Client.create_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority)
 
 Arguments:
 
@@ -137,7 +137,7 @@ Type annotations for
 `boto3.client("acm-pca").create_certificate_authority_audit_report` method.
 
 Boto3 documentation:
-[ACMPCA.Client.create_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report)
+[ACMPCA.Client.create_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report)
 
 Arguments:
 
@@ -155,7 +155,7 @@ Returns
 Type annotations for `boto3.client("acm-pca").create_permission` method.
 
 Boto3 documentation:
-[ACMPCA.Client.create_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.create_permission)
+[ACMPCA.Client.create_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission)
 
 Arguments:
 
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("acm-pca").delete_certificate_authority`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.delete_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority)
+[ACMPCA.Client.delete_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority)
 
 Arguments:
 
@@ -183,7 +183,7 @@ Arguments:
 Type annotations for `boto3.client("acm-pca").delete_permission` method.
 
 Boto3 documentation:
-[ACMPCA.Client.delete_permission](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.delete_permission)
+[ACMPCA.Client.delete_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission)
 
 Arguments:
 
@@ -196,7 +196,7 @@ Arguments:
 Type annotations for `boto3.client("acm-pca").delete_policy` method.
 
 Boto3 documentation:
-[ACMPCA.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.delete_policy)
+[ACMPCA.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy)
 
 Arguments:
 
@@ -208,7 +208,7 @@ Type annotations for `boto3.client("acm-pca").describe_certificate_authority`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.describe_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority)
+[ACMPCA.Client.describe_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority)
 
 Arguments:
 
@@ -223,7 +223,7 @@ Type annotations for
 `boto3.client("acm-pca").describe_certificate_authority_audit_report` method.
 
 Boto3 documentation:
-[ACMPCA.Client.describe_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report)
+[ACMPCA.Client.describe_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report)
 
 Arguments:
 
@@ -238,7 +238,7 @@ Returns
 Type annotations for `boto3.client("acm-pca").generate_presigned_url` method.
 
 Boto3 documentation:
-[ACMPCA.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.generate_presigned_url)
+[ACMPCA.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.generate_presigned_url)
 
 Arguments:
 
@@ -254,7 +254,7 @@ Returns `str`.
 Type annotations for `boto3.client("acm-pca").get_certificate` method.
 
 Boto3 documentation:
-[ACMPCA.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.get_certificate)
+[ACMPCA.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate)
 
 Arguments:
 
@@ -270,7 +270,7 @@ Type annotations for
 `boto3.client("acm-pca").get_certificate_authority_certificate` method.
 
 Boto3 documentation:
-[ACMPCA.Client.get_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate)
+[ACMPCA.Client.get_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate)
 
 Arguments:
 
@@ -285,7 +285,7 @@ Type annotations for `boto3.client("acm-pca").get_certificate_authority_csr`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.get_certificate_authority_csr](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr)
+[ACMPCA.Client.get_certificate_authority_csr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr)
 
 Arguments:
 
@@ -299,7 +299,7 @@ Returns
 Type annotations for `boto3.client("acm-pca").get_policy` method.
 
 Boto3 documentation:
-[ACMPCA.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.get_policy)
+[ACMPCA.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy)
 
 Arguments:
 
@@ -313,7 +313,7 @@ Type annotations for
 `boto3.client("acm-pca").import_certificate_authority_certificate` method.
 
 Boto3 documentation:
-[ACMPCA.Client.import_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate)
+[ACMPCA.Client.import_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate)
 
 Arguments:
 
@@ -326,7 +326,7 @@ Arguments:
 Type annotations for `boto3.client("acm-pca").issue_certificate` method.
 
 Boto3 documentation:
-[ACMPCA.Client.issue_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate)
+[ACMPCA.Client.issue_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate)
 
 Arguments:
 
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("acm-pca").list_certificate_authorities`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.list_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities)
+[ACMPCA.Client.list_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities)
 
 Arguments:
 
@@ -366,7 +366,7 @@ Returns
 Type annotations for `boto3.client("acm-pca").list_permissions` method.
 
 Boto3 documentation:
-[ACMPCA.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.list_permissions)
+[ACMPCA.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions)
 
 Arguments:
 
@@ -382,7 +382,7 @@ Returns
 Type annotations for `boto3.client("acm-pca").list_tags` method.
 
 Boto3 documentation:
-[ACMPCA.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.list_tags)
+[ACMPCA.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags)
 
 Arguments:
 
@@ -397,7 +397,7 @@ Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 Type annotations for `boto3.client("acm-pca").put_policy` method.
 
 Boto3 documentation:
-[ACMPCA.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.put_policy)
+[ACMPCA.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy)
 
 Arguments:
 
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("acm-pca").restore_certificate_authority`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.restore_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority)
+[ACMPCA.Client.restore_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority)
 
 Arguments:
 
@@ -421,7 +421,7 @@ Arguments:
 Type annotations for `boto3.client("acm-pca").revoke_certificate` method.
 
 Boto3 documentation:
-[ACMPCA.Client.revoke_certificate](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate)
+[ACMPCA.Client.revoke_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate)
 
 Arguments:
 
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("acm-pca").tag_certificate_authority`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.tag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority)
+[ACMPCA.Client.tag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority)
 
 Arguments:
 
@@ -449,7 +449,7 @@ Type annotations for `boto3.client("acm-pca").untag_certificate_authority`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.untag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority)
+[ACMPCA.Client.untag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority)
 
 Arguments:
 
@@ -462,7 +462,7 @@ Type annotations for `boto3.client("acm-pca").update_certificate_authority`
 method.
 
 Boto3 documentation:
-[ACMPCA.Client.update_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority)
+[ACMPCA.Client.update_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority)
 
 Arguments:
 

@@ -3,7 +3,7 @@
 > [Index](..) > [CodeStarconnections](.) > Literals
 
 Auto-generated documentation for
-[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/1.17.78/reference/services/codestar-connections.html#CodeStarconnections)
+[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module
 [mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
