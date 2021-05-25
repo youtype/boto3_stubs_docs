@@ -67,6 +67,7 @@ type annotations stubs module
   - [CreateDomainConfigurationResponseTypeDef](#createdomainconfigurationresponsetypedef)
   - [CreateDynamicThingGroupResponseTypeDef](#createdynamicthinggroupresponsetypedef)
   - [CreateJobResponseTypeDef](#createjobresponsetypedef)
+  - [CreateJobTemplateResponseTypeDef](#createjobtemplateresponsetypedef)
   - [CreateKeysAndCertificateResponseTypeDef](#createkeysandcertificateresponsetypedef)
   - [CreateMitigationActionResponseTypeDef](#createmitigationactionresponsetypedef)
   - [CreateOTAUpdateResponseTypeDef](#createotaupdateresponsetypedef)
@@ -104,6 +105,7 @@ type annotations stubs module
   - [DescribeIndexResponseTypeDef](#describeindexresponsetypedef)
   - [DescribeJobExecutionResponseTypeDef](#describejobexecutionresponsetypedef)
   - [DescribeJobResponseTypeDef](#describejobresponsetypedef)
+  - [DescribeJobTemplateResponseTypeDef](#describejobtemplateresponsetypedef)
   - [DescribeMitigationActionResponseTypeDef](#describemitigationactionresponsetypedef)
   - [DescribeProvisioningTemplateResponseTypeDef](#describeprovisioningtemplateresponsetypedef)
   - [DescribeProvisioningTemplateVersionResponseTypeDef](#describeprovisioningtemplateversionresponsetypedef)
@@ -167,6 +169,7 @@ type annotations stubs module
   - [JobExecutionsRolloutConfigTypeDef](#jobexecutionsrolloutconfigtypedef)
   - [JobProcessDetailsTypeDef](#jobprocessdetailstypedef)
   - [JobSummaryTypeDef](#jobsummarytypedef)
+  - [JobTemplateSummaryTypeDef](#jobtemplatesummarytypedef)
   - [JobTypeDef](#jobtypedef)
   - [KafkaActionTypeDef](#kafkaactiontypedef)
   - [KeyPairTypeDef](#keypairtypedef)
@@ -192,6 +195,7 @@ type annotations stubs module
   - [ListIndicesResponseTypeDef](#listindicesresponsetypedef)
   - [ListJobExecutionsForJobResponseTypeDef](#listjobexecutionsforjobresponsetypedef)
   - [ListJobExecutionsForThingResponseTypeDef](#listjobexecutionsforthingresponsetypedef)
+  - [ListJobTemplatesResponseTypeDef](#listjobtemplatesresponsetypedef)
   - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
   - [ListMitigationActionsResponseTypeDef](#listmitigationactionsresponsetypedef)
   - [ListOTAUpdatesResponseTypeDef](#listotaupdatesresponsetypedef)
@@ -1164,6 +1168,17 @@ Optional fields:
 - `jobId`: `str`
 - `description`: `str`
 
+## CreateJobTemplateResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import CreateJobTemplateResponseTypeDef
+```
+
+Optional fields:
+
+- `jobTemplateArn`: `str`
+- `jobTemplateId`: `str`
+
 ## CreateKeysAndCertificateResponseTypeDef
 
 ```python
@@ -1642,6 +1657,27 @@ Optional fields:
 
 - `documentSource`: `str`
 - `job`: [JobTypeDef](./type_defs.md#jobtypedef)
+
+## DescribeJobTemplateResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import DescribeJobTemplateResponseTypeDef
+```
+
+Optional fields:
+
+- `jobTemplateArn`: `str`
+- `jobTemplateId`: `str`
+- `description`: `str`
+- `documentSource`: `str`
+- `document`: `str`
+- `createdAt`: `datetime`
+- `presignedUrlConfig`:
+  [PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef)
+- `jobExecutionsRolloutConfig`:
+  [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
+- `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
+- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 
 ## DescribeMitigationActionResponseTypeDef
 
@@ -2492,6 +2528,19 @@ Optional fields:
 - `lastUpdatedAt`: `datetime`
 - `completedAt`: `datetime`
 
+## JobTemplateSummaryTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import JobTemplateSummaryTypeDef
+```
+
+Optional fields:
+
+- `jobTemplateArn`: `str`
+- `jobTemplateId`: `str`
+- `description`: `str`
+- `createdAt`: `datetime`
+
 ## JobTypeDef
 
 ```python
@@ -2521,6 +2570,7 @@ Optional fields:
   [JobProcessDetailsTypeDef](./type_defs.md#jobprocessdetailstypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `namespaceId`: `str`
+- `jobTemplateArn`: `str`
 
 ## KafkaActionTypeDef
 
@@ -2809,6 +2859,18 @@ Optional fields:
 
 - `executionSummaries`:
   `List`\[[JobExecutionSummaryForThingTypeDef](./type_defs.md#jobexecutionsummaryforthingtypedef)\]
+- `nextToken`: `str`
+
+## ListJobTemplatesResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import ListJobTemplatesResponseTypeDef
+```
+
+Optional fields:
+
+- `jobTemplates`:
+  `List`\[[JobTemplateSummaryTypeDef](./type_defs.md#jobtemplatesummarytypedef)\]
 - `nextToken`: `str`
 
 ## ListJobsResponseTypeDef

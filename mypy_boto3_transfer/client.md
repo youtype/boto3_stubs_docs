@@ -12,16 +12,20 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [can_paginate](#can_paginate)
+    - [create_access](#create_access)
     - [create_server](#create_server)
     - [create_user](#create_user)
+    - [delete_access](#delete_access)
     - [delete_server](#delete_server)
     - [delete_ssh_public_key](#delete_ssh_public_key)
     - [delete_user](#delete_user)
+    - [describe_access](#describe_access)
     - [describe_security_policy](#describe_security_policy)
     - [describe_server](#describe_server)
     - [describe_user](#describe_user)
     - [generate_presigned_url](#generate_presigned_url)
     - [import_ssh_public_key](#import_ssh_public_key)
+    - [list_accesses](#list_accesses)
     - [list_security_policies](#list_security_policies)
     - [list_servers](#list_servers)
     - [list_tags_for_resource](#list_tags_for_resource)
@@ -31,6 +35,7 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [test_identity_provider](#test_identity_provider)
     - [untag_resource](#untag_resource)
+    - [update_access](#update_access)
     - [update_server](#update_server)
     - [update_user](#update_user)
     - [get_paginator](#get_paginator)
@@ -91,6 +96,29 @@ Arguments:
 
 Returns `bool`.
 
+### create_access
+
+Type annotations for `boto3.client("transfer").create_access` method.
+
+Boto3 documentation:
+[Transfer.Client.create_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_access)
+
+Arguments:
+
+- `Role`: `str` *(required)*
+- `ServerId`: `str` *(required)*
+- `ExternalId`: `str` *(required)*
+- `HomeDirectory`: `str`
+- `HomeDirectoryType`:
+  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
+- `HomeDirectoryMappings`:
+  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+- `Policy`: `str`
+- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
+
+Returns
+[CreateAccessResponseTypeDef](./type_defs.md#createaccessresponsetypedef).
+
 ### create_server
 
 Type annotations for `boto3.client("transfer").create_server` method.
@@ -142,6 +170,18 @@ Arguments:
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
+### delete_access
+
+Type annotations for `boto3.client("transfer").delete_access` method.
+
+Boto3 documentation:
+[Transfer.Client.delete_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_access)
+
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `ExternalId`: `str` *(required)*
+
 ### delete_server
 
 Type annotations for `boto3.client("transfer").delete_server` method.
@@ -177,6 +217,21 @@ Arguments:
 
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*
+
+### describe_access
+
+Type annotations for `boto3.client("transfer").describe_access` method.
+
+Boto3 documentation:
+[Transfer.Client.describe_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_access)
+
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `ExternalId`: `str` *(required)*
+
+Returns
+[DescribeAccessResponseTypeDef](./type_defs.md#describeaccessresponsetypedef).
 
 ### describe_security_policy
 
@@ -253,6 +308,22 @@ Arguments:
 
 Returns
 [ImportSshPublicKeyResponseTypeDef](./type_defs.md#importsshpublickeyresponsetypedef).
+
+### list_accesses
+
+Type annotations for `boto3.client("transfer").list_accesses` method.
+
+Boto3 documentation:
+[Transfer.Client.list_accesses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_accesses)
+
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef).
 
 ### list_security_policies
 
@@ -378,6 +449,29 @@ Arguments:
 
 - `Arn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
+
+### update_access
+
+Type annotations for `boto3.client("transfer").update_access` method.
+
+Boto3 documentation:
+[Transfer.Client.update_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_access)
+
+Arguments:
+
+- `ServerId`: `str` *(required)*
+- `ExternalId`: `str` *(required)*
+- `HomeDirectory`: `str`
+- `HomeDirectoryType`:
+  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
+- `HomeDirectoryMappings`:
+  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+- `Policy`: `str`
+- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
+- `Role`: `str`
+
+Returns
+[UpdateAccessResponseTypeDef](./type_defs.md#updateaccessresponsetypedef).
 
 ### update_server
 

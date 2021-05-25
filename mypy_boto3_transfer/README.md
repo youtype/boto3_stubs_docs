@@ -33,17 +33,21 @@ from mypy_boto3_transfer.client import TransferClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [create_access](./client.md#create_access)
 - [create_server](./client.md#create_server)
 - [create_user](./client.md#create_user)
+- [delete_access](./client.md#delete_access)
 - [delete_server](./client.md#delete_server)
 - [delete_ssh_public_key](./client.md#delete_ssh_public_key)
 - [delete_user](./client.md#delete_user)
+- [describe_access](./client.md#describe_access)
 - [describe_security_policy](./client.md#describe_security_policy)
 - [describe_server](./client.md#describe_server)
 - [describe_user](./client.md#describe_user)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [import_ssh_public_key](./client.md#import_ssh_public_key)
+- [list_accesses](./client.md#list_accesses)
 - [list_security_policies](./client.md#list_security_policies)
 - [list_servers](./client.md#list_servers)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
@@ -53,6 +57,7 @@ from mypy_boto3_transfer.client import TransferClient
 - [tag_resource](./client.md#tag_resource)
 - [test_identity_provider](./client.md#test_identity_provider)
 - [untag_resource](./client.md#untag_resource)
+- [update_access](./client.md#update_access)
 - [update_server](./client.md#update_server)
 - [update_user](./client.md#update_user)
 
@@ -110,14 +115,17 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_transfer.type_defs import CreateServerResponseTypeDef, ...
+from mypy_boto3_transfer.type_defs import CreateAccessResponseTypeDef, ...
 ```
 
+- [CreateAccessResponseTypeDef](./type_defs.md#createaccessresponsetypedef)
 - [CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef)
 - [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef)
+- [DescribeAccessResponseTypeDef](./type_defs.md#describeaccessresponsetypedef)
 - [DescribeSecurityPolicyResponseTypeDef](./type_defs.md#describesecuritypolicyresponsetypedef)
 - [DescribeServerResponseTypeDef](./type_defs.md#describeserverresponsetypedef)
 - [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef)
+- [DescribedAccessTypeDef](./type_defs.md#describedaccesstypedef)
 - [DescribedSecurityPolicyTypeDef](./type_defs.md#describedsecuritypolicytypedef)
 - [DescribedServerTypeDef](./type_defs.md#describedservertypedef)
 - [DescribedUserTypeDef](./type_defs.md#describedusertypedef)
@@ -125,10 +133,12 @@ from mypy_boto3_transfer.type_defs import CreateServerResponseTypeDef, ...
 - [HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)
 - [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - [ImportSshPublicKeyResponseTypeDef](./type_defs.md#importsshpublickeyresponsetypedef)
+- [ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef)
 - [ListSecurityPoliciesResponseTypeDef](./type_defs.md#listsecuritypoliciesresponsetypedef)
 - [ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
+- [ListedAccessTypeDef](./type_defs.md#listedaccesstypedef)
 - [ListedServerTypeDef](./type_defs.md#listedservertypedef)
 - [ListedUserTypeDef](./type_defs.md#listedusertypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -136,5 +146,6 @@ from mypy_boto3_transfer.type_defs import CreateServerResponseTypeDef, ...
 - [SshPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TestIdentityProviderResponseTypeDef](./type_defs.md#testidentityproviderresponsetypedef)
+- [UpdateAccessResponseTypeDef](./type_defs.md#updateaccessresponsetypedef)
 - [UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef)
 - [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef)

@@ -59,6 +59,7 @@ from mypy_boto3_transfer.literals import IdentityProviderTypeType
 Values:
 
 - `API_GATEWAY`
+- `AWS_DIRECTORY_SERVICE`
 - `SERVICE_MANAGED`
 
 ## ListServersPaginatorName

@@ -37,6 +37,7 @@ type annotations stubs module
     - [create_domain_configuration](#create_domain_configuration)
     - [create_dynamic_thing_group](#create_dynamic_thing_group)
     - [create_job](#create_job)
+    - [create_job_template](#create_job_template)
     - [create_keys_and_certificate](#create_keys_and_certificate)
     - [create_mitigation_action](#create_mitigation_action)
     - [create_ota_update](#create_ota_update)
@@ -66,6 +67,7 @@ type annotations stubs module
     - [delete_dynamic_thing_group](#delete_dynamic_thing_group)
     - [delete_job](#delete_job)
     - [delete_job_execution](#delete_job_execution)
+    - [delete_job_template](#delete_job_template)
     - [delete_mitigation_action](#delete_mitigation_action)
     - [delete_ota_update](#delete_ota_update)
     - [delete_policy](#delete_policy)
@@ -103,6 +105,7 @@ type annotations stubs module
     - [describe_index](#describe_index)
     - [describe_job](#describe_job)
     - [describe_job_execution](#describe_job_execution)
+    - [describe_job_template](#describe_job_template)
     - [describe_mitigation_action](#describe_mitigation_action)
     - [describe_provisioning_template](#describe_provisioning_template)
     - [describe_provisioning_template_version](#describe_provisioning_template_version)
@@ -156,6 +159,7 @@ type annotations stubs module
     - [list_indices](#list_indices)
     - [list_job_executions_for_job](#list_job_executions_for_job)
     - [list_job_executions_for_thing](#list_job_executions_for_thing)
+    - [list_job_templates](#list_job_templates)
     - [list_jobs](#list_jobs)
     - [list_mitigation_actions](#list_mitigation_actions)
     - [list_ota_updates](#list_ota_updates)
@@ -272,6 +276,7 @@ Exceptions:
 - `Exceptions.CertificateStateException`
 - `Exceptions.CertificateValidationException`
 - `Exceptions.ClientError`
+- `Exceptions.ConflictException`
 - `Exceptions.ConflictingResourceUpdateException`
 - `Exceptions.DeleteConflictException`
 - `Exceptions.IndexNotReadyException`
@@ -708,8 +713,34 @@ Arguments:
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `namespaceId`: `str`
+- `jobTemplateArn`: `str`
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+
+### create_job_template
+
+Type annotations for `boto3.client("iot").create_job_template` method.
+
+Boto3 documentation:
+[IoT.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job_template)
+
+Arguments:
+
+- `jobTemplateId`: `str` *(required)*
+- `description`: `str` *(required)*
+- `jobArn`: `str`
+- `documentSource`: `str`
+- `document`: `str`
+- `presignedUrlConfig`:
+  [PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef)
+- `jobExecutionsRolloutConfig`:
+  [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
+- `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
+- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
 
 ### create_keys_and_certificate
 
@@ -1186,6 +1217,17 @@ Arguments:
 - `executionNumber`: `int` *(required)*
 - `force`: `bool`
 - `namespaceId`: `str`
+
+### delete_job_template
+
+Type annotations for `boto3.client("iot").delete_job_template` method.
+
+Boto3 documentation:
+[IoT.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_template)
+
+Arguments:
+
+- `jobTemplateId`: `str` *(required)*
 
 ### delete_mitigation_action
 
@@ -1684,6 +1726,20 @@ Arguments:
 
 Returns
 [DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
+
+### describe_job_template
+
+Type annotations for `boto3.client("iot").describe_job_template` method.
+
+Boto3 documentation:
+[IoT.Client.describe_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_template)
+
+Arguments:
+
+- `jobTemplateId`: `str` *(required)*
+
+Returns
+[DescribeJobTemplateResponseTypeDef](./type_defs.md#describejobtemplateresponsetypedef).
 
 ### describe_mitigation_action
 
@@ -2498,6 +2554,21 @@ Arguments:
 
 Returns
 [ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef).
+
+### list_job_templates
+
+Type annotations for `boto3.client("iot").list_job_templates` method.
+
+Boto3 documentation:
+[IoT.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_templates)
+
+Arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef).
 
 ### list_jobs
 

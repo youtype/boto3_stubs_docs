@@ -8,11 +8,14 @@ type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [Typed dictionaries for boto3 Transfer module](#typed-dictionaries-for-boto3-transfer-module)
+  - [CreateAccessResponseTypeDef](#createaccessresponsetypedef)
   - [CreateServerResponseTypeDef](#createserverresponsetypedef)
   - [CreateUserResponseTypeDef](#createuserresponsetypedef)
+  - [DescribeAccessResponseTypeDef](#describeaccessresponsetypedef)
   - [DescribeSecurityPolicyResponseTypeDef](#describesecuritypolicyresponsetypedef)
   - [DescribeServerResponseTypeDef](#describeserverresponsetypedef)
   - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
+  - [DescribedAccessTypeDef](#describedaccesstypedef)
   - [DescribedSecurityPolicyTypeDef](#describedsecuritypolicytypedef)
   - [DescribedServerTypeDef](#describedservertypedef)
   - [DescribedUserTypeDef](#describedusertypedef)
@@ -20,10 +23,12 @@ type annotations stubs module
   - [HomeDirectoryMapEntryTypeDef](#homedirectorymapentrytypedef)
   - [IdentityProviderDetailsTypeDef](#identityproviderdetailstypedef)
   - [ImportSshPublicKeyResponseTypeDef](#importsshpublickeyresponsetypedef)
+  - [ListAccessesResponseTypeDef](#listaccessesresponsetypedef)
   - [ListSecurityPoliciesResponseTypeDef](#listsecuritypoliciesresponsetypedef)
   - [ListServersResponseTypeDef](#listserversresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListUsersResponseTypeDef](#listusersresponsetypedef)
+  - [ListedAccessTypeDef](#listedaccesstypedef)
   - [ListedServerTypeDef](#listedservertypedef)
   - [ListedUserTypeDef](#listedusertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -31,8 +36,20 @@ type annotations stubs module
   - [SshPublicKeyTypeDef](#sshpublickeytypedef)
   - [TagTypeDef](#tagtypedef)
   - [TestIdentityProviderResponseTypeDef](#testidentityproviderresponsetypedef)
+  - [UpdateAccessResponseTypeDef](#updateaccessresponsetypedef)
   - [UpdateServerResponseTypeDef](#updateserverresponsetypedef)
   - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
+
+## CreateAccessResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import CreateAccessResponseTypeDef
+```
+
+Required fields:
+
+- `ServerId`: `str`
+- `ExternalId`: `str`
 
 ## CreateServerResponseTypeDef
 
@@ -54,6 +71,17 @@ Required fields:
 
 - `ServerId`: `str`
 - `UserName`: `str`
+
+## DescribeAccessResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DescribeAccessResponseTypeDef
+```
+
+Required fields:
+
+- `ServerId`: `str`
+- `Access`: [DescribedAccessTypeDef](./type_defs.md#describedaccesstypedef)
 
 ## DescribeSecurityPolicyResponseTypeDef
 
@@ -86,6 +114,24 @@ Required fields:
 
 - `ServerId`: `str`
 - `User`: [DescribedUserTypeDef](./type_defs.md#describedusertypedef)
+
+## DescribedAccessTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DescribedAccessTypeDef
+```
+
+Optional fields:
+
+- `HomeDirectory`: `str`
+- `HomeDirectoryMappings`:
+  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+- `HomeDirectoryType`:
+  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
+- `Policy`: `str`
+- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
+- `Role`: `str`
+- `ExternalId`: `str`
 
 ## DescribedSecurityPolicyTypeDef
 
@@ -195,6 +241,7 @@ Optional fields:
 
 - `Url`: `str`
 - `InvocationRole`: `str`
+- `DirectoryId`: `str`
 
 ## ImportSshPublicKeyResponseTypeDef
 
@@ -207,6 +254,22 @@ Required fields:
 - `ServerId`: `str`
 - `SshPublicKeyId`: `str`
 - `UserName`: `str`
+
+## ListAccessesResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ListAccessesResponseTypeDef
+```
+
+Required fields:
+
+- `ServerId`: `str`
+- `Accesses`:
+  `List`\[[ListedAccessTypeDef](./type_defs.md#listedaccesstypedef)\]
+
+Optional fields:
+
+- `NextToken`: `str`
 
 ## ListSecurityPoliciesResponseTypeDef
 
@@ -263,6 +326,20 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+## ListedAccessTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ListedAccessTypeDef
+```
+
+Optional fields:
+
+- `HomeDirectory`: `str`
+- `HomeDirectoryType`:
+  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
+- `Role`: `str`
+- `ExternalId`: `str`
 
 ## ListedServerTypeDef
 
@@ -369,6 +446,17 @@ Optional fields:
 
 - `Response`: `str`
 - `Message`: `str`
+
+## UpdateAccessResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import UpdateAccessResponseTypeDef
+```
+
+Required fields:
+
+- `ServerId`: `str`
+- `ExternalId`: `str`
 
 ## UpdateServerResponseTypeDef
 

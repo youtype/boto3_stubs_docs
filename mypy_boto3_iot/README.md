@@ -57,6 +57,7 @@ from mypy_boto3_iot.client import IoTClient
 - [create_domain_configuration](./client.md#create_domain_configuration)
 - [create_dynamic_thing_group](./client.md#create_dynamic_thing_group)
 - [create_job](./client.md#create_job)
+- [create_job_template](./client.md#create_job_template)
 - [create_keys_and_certificate](./client.md#create_keys_and_certificate)
 - [create_mitigation_action](./client.md#create_mitigation_action)
 - [create_ota_update](./client.md#create_ota_update)
@@ -86,6 +87,7 @@ from mypy_boto3_iot.client import IoTClient
 - [delete_dynamic_thing_group](./client.md#delete_dynamic_thing_group)
 - [delete_job](./client.md#delete_job)
 - [delete_job_execution](./client.md#delete_job_execution)
+- [delete_job_template](./client.md#delete_job_template)
 - [delete_mitigation_action](./client.md#delete_mitigation_action)
 - [delete_ota_update](./client.md#delete_ota_update)
 - [delete_policy](./client.md#delete_policy)
@@ -123,6 +125,7 @@ from mypy_boto3_iot.client import IoTClient
 - [describe_index](./client.md#describe_index)
 - [describe_job](./client.md#describe_job)
 - [describe_job_execution](./client.md#describe_job_execution)
+- [describe_job_template](./client.md#describe_job_template)
 - [describe_mitigation_action](./client.md#describe_mitigation_action)
 - [describe_provisioning_template](./client.md#describe_provisioning_template)
 - [describe_provisioning_template_version](./client.md#describe_provisioning_template_version)
@@ -177,6 +180,7 @@ from mypy_boto3_iot.client import IoTClient
 - [list_indices](./client.md#list_indices)
 - [list_job_executions_for_job](./client.md#list_job_executions_for_job)
 - [list_job_executions_for_thing](./client.md#list_job_executions_for_thing)
+- [list_job_templates](./client.md#list_job_templates)
 - [list_jobs](./client.md#list_jobs)
 - [list_mitigation_actions](./client.md#list_mitigation_actions)
 - [list_ota_updates](./client.md#list_ota_updates)
@@ -266,6 +270,7 @@ IoTClient [exceptions](./client.md#exceptions)
 - CertificateStateException
 - CertificateValidationException
 - ClientError
+- ConflictException
 - ConflictingResourceUpdateException
 - DeleteConflictException
 - IndexNotReadyException
@@ -550,6 +555,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [CreateDomainConfigurationResponseTypeDef](./type_defs.md#createdomainconfigurationresponsetypedef)
 - [CreateDynamicThingGroupResponseTypeDef](./type_defs.md#createdynamicthinggroupresponsetypedef)
 - [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef)
+- [CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef)
 - [CreateKeysAndCertificateResponseTypeDef](./type_defs.md#createkeysandcertificateresponsetypedef)
 - [CreateMitigationActionResponseTypeDef](./type_defs.md#createmitigationactionresponsetypedef)
 - [CreateOTAUpdateResponseTypeDef](./type_defs.md#createotaupdateresponsetypedef)
@@ -587,6 +593,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef)
 - [DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef)
 - [DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef)
+- [DescribeJobTemplateResponseTypeDef](./type_defs.md#describejobtemplateresponsetypedef)
 - [DescribeMitigationActionResponseTypeDef](./type_defs.md#describemitigationactionresponsetypedef)
 - [DescribeProvisioningTemplateResponseTypeDef](./type_defs.md#describeprovisioningtemplateresponsetypedef)
 - [DescribeProvisioningTemplateVersionResponseTypeDef](./type_defs.md#describeprovisioningtemplateversionresponsetypedef)
@@ -650,6 +657,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - [JobProcessDetailsTypeDef](./type_defs.md#jobprocessdetailstypedef)
 - [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
+- [JobTemplateSummaryTypeDef](./type_defs.md#jobtemplatesummarytypedef)
 - [JobTypeDef](./type_defs.md#jobtypedef)
 - [KafkaActionTypeDef](./type_defs.md#kafkaactiontypedef)
 - [KeyPairTypeDef](./type_defs.md#keypairtypedef)
@@ -675,6 +683,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef)
 - [ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef)
 - [ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef)
+- [ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)
 - [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)
 - [ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef)
 - [ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef)

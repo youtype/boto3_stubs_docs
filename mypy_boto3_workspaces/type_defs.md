@@ -704,6 +704,8 @@ Optional fields:
   [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
 - `DeviceTypeZeroClient`:
   [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
+- `DeviceTypeLinux`:
+  [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
 
 ## WorkspaceBundleTypeDef
 
