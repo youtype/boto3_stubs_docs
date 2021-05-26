@@ -49,6 +49,7 @@ OutpostsClient [exceptions](./client.md#exceptions)
 
 - AccessDeniedException
 - ClientError
+- ConflictException
 - InternalServerException
 - NotFoundException
 - ServiceQuotaExceededException

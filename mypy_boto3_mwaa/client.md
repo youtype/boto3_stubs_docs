@@ -119,6 +119,7 @@ Arguments:
 - `PluginsS3Path`: `str`
 - `RequirementsS3ObjectVersion`: `str`
 - `RequirementsS3Path`: `str`
+- `Schedulers`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `WebserverAccessMode`:
   [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
@@ -282,6 +283,7 @@ Arguments:
 - `PluginsS3Path`: `str`
 - `RequirementsS3ObjectVersion`: `str`
 - `RequirementsS3Path`: `str`
+- `Schedulers`: `int`
 - `SourceBucketArn`: `str`
 - `WebserverAccessMode`:
   [WebserverAccessModeType](./literals.md#webserveraccessmodetype)

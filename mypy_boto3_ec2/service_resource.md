@@ -3077,12 +3077,17 @@ Arguments:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
 - `ToPort`: `int`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
+
+Returns
+[AuthorizeSecurityGroupEgressResultTypeDef](./type_defs.md#authorizesecuritygroupegressresulttypedef).
 
 #### SecurityGroup.authorize_ingress method
 
@@ -3103,6 +3108,11 @@ Arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+Returns
+[AuthorizeSecurityGroupIngressResultTypeDef](./type_defs.md#authorizesecuritygroupingressresulttypedef).
 
 #### SecurityGroup.create_tags method
 
@@ -3166,6 +3176,7 @@ Arguments:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -3195,6 +3206,7 @@ Arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
+- `SecurityGroupRuleIds`: `List`\[`str`\]
 
 Returns
 [RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).

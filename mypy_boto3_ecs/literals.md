@@ -169,6 +169,7 @@ from mypy_boto3_ecs.literals import CompatibilityType
 Values:
 
 - `EC2`
+- `EXTERNAL`
 - `FARGATE`
 
 ## ConnectivityType
@@ -355,6 +356,7 @@ from mypy_boto3_ecs.literals import LaunchTypeType
 Values:
 
 - `EC2`
+- `EXTERNAL`
 - `FARGATE`
 
 ## ListAccountSettingsPaginatorName

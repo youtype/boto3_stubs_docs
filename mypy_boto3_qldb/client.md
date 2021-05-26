@@ -32,6 +32,7 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_ledger](#update_ledger)
+    - [update_ledger_permissions_mode](#update_ledger_permissions_mode)
 
 ## QLDBClient
 
@@ -112,8 +113,8 @@ Boto3 documentation:
 Arguments:
 
 - `Name`: `str` *(required)*
-- `PermissionsMode`: `Literal['ALLOW_ALL']` (see
-  [PermissionsModeType](./literals.md#permissionsmodetype)) *(required)*
+- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
+  *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 - `DeletionProtection`: `bool`
 
@@ -401,3 +402,20 @@ Arguments:
 
 Returns
 [UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef).
+
+### update_ledger_permissions_mode
+
+Type annotations for `boto3.client("qldb").update_ledger_permissions_mode`
+method.
+
+Boto3 documentation:
+[QLDB.Client.update_ledger_permissions_mode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger_permissions_mode)
+
+Arguments:
+
+- `Name`: `str` *(required)*
+- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
+  *(required)*
+
+Returns
+[UpdateLedgerPermissionsModeResponseTypeDef](./type_defs.md#updateledgerpermissionsmoderesponsetypedef).

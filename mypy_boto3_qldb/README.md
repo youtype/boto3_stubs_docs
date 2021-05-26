@@ -51,6 +51,7 @@ from mypy_boto3_qldb.client import QLDBClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 - [update_ledger](./client.md#update_ledger)
+- [update_ledger_permissions_mode](./client.md#update_ledger_permissions_mode)
 
 ### Exceptions
 
@@ -113,5 +114,6 @@ from mypy_boto3_qldb.type_defs import CancelJournalKinesisStreamResponseTypeDef,
 - [S3EncryptionConfigurationTypeDef](./type_defs.md#s3encryptionconfigurationtypedef)
 - [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
 - [StreamJournalToKinesisResponseTypeDef](./type_defs.md#streamjournaltokinesisresponsetypedef)
+- [UpdateLedgerPermissionsModeResponseTypeDef](./type_defs.md#updateledgerpermissionsmoderesponsetypedef)
 - [UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef)
 - [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)

@@ -29,6 +29,7 @@ type annotations stubs module
   - [S3EncryptionConfigurationTypeDef](#s3encryptionconfigurationtypedef)
   - [S3ExportConfigurationTypeDef](#s3exportconfigurationtypedef)
   - [StreamJournalToKinesisResponseTypeDef](#streamjournaltokinesisresponsetypedef)
+  - [UpdateLedgerPermissionsModeResponseTypeDef](#updateledgerpermissionsmoderesponsetypedef)
   - [UpdateLedgerResponseTypeDef](#updateledgerresponsetypedef)
   - [ValueHolderTypeDef](#valueholdertypedef)
 
@@ -54,6 +55,7 @@ Optional fields:
 - `Arn`: `str`
 - `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
+- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
 - `DeletionProtection`: `bool`
 
 ## DescribeJournalKinesisStreamResponseTypeDef
@@ -90,6 +92,7 @@ Optional fields:
 - `Arn`: `str`
 - `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
+- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
 - `DeletionProtection`: `bool`
 
 ## ExportJournalToS3ResponseTypeDef
@@ -304,6 +307,18 @@ from mypy_boto3_qldb.type_defs import StreamJournalToKinesisResponseTypeDef
 Optional fields:
 
 - `StreamId`: `str`
+
+## UpdateLedgerPermissionsModeResponseTypeDef
+
+```python
+from mypy_boto3_qldb.type_defs import UpdateLedgerPermissionsModeResponseTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Arn`: `str`
+- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
 
 ## UpdateLedgerResponseTypeDef
 

@@ -103,6 +103,7 @@ Optional fields:
 - `PluginsS3Path`: `str`
 - `RequirementsS3ObjectVersion`: `str`
 - `RequirementsS3Path`: `str`
+- `Schedulers`: `int`
 - `ServiceRoleArn`: `str`
 - `SourceBucketArn`: `str`
 - `Status`: [EnvironmentStatusType](./literals.md#environmentstatustype)

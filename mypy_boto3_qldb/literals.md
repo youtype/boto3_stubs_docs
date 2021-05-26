@@ -60,6 +60,7 @@ from mypy_boto3_qldb.literals import PermissionsModeType
 Values:
 
 - `ALLOW_ALL`
+- `STANDARD`
 
 ## S3ObjectEncryptionTypeType
 

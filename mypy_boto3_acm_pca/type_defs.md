@@ -182,6 +182,7 @@ Optional fields:
 - `ExpirationInDays`: `int`
 - `CustomCname`: `str`
 - `S3BucketName`: `str`
+- `S3ObjectAcl`: [S3ObjectAclType](./literals.md#s3objectacltype)
 
 ## CsrExtensionsTypeDef
 

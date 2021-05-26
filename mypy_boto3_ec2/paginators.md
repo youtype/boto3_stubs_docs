@@ -64,6 +64,7 @@ type annotations stubs module
   - [DescribeRouteTablesPaginator](#describeroutetablespaginator)
   - [DescribeScheduledInstanceAvailabilityPaginator](#describescheduledinstanceavailabilitypaginator)
   - [DescribeScheduledInstancesPaginator](#describescheduledinstancespaginator)
+  - [DescribeSecurityGroupRulesPaginator](#describesecuritygrouprulespaginator)
   - [DescribeSecurityGroupsPaginator](#describesecuritygroupspaginator)
   - [DescribeSnapshotsPaginator](#describesnapshotspaginator)
   - [DescribeSpotFleetInstancesPaginator](#describespotfleetinstancespaginator)
@@ -1703,6 +1704,34 @@ Arguments for `DescribeScheduledInstancesPaginator.paginate` method:
 
 `DescribeScheduledInstancesPaginator.paginate` returns
 `Iterator`\[[DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef)\].
+
+## DescribeSecurityGroupRulesPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_security_group_rules")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeSecurityGroupRulesPaginator
+
+def get_describe_security_group_rules_paginator() -> DescribeSecurityGroupRulesPaginator:
+    return boto3.client("ec2").get_paginator("describe_security_group_rules")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeSecurityGroupRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeSecurityGroupRules)
+
+Arguments for `DescribeSecurityGroupRulesPaginator.paginate` method:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeSecurityGroupRulesPaginator.paginate` returns
+`Iterator`\[[DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef)\].
 
 ## DescribeSecurityGroupsPaginator
 

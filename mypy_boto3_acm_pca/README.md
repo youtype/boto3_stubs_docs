@@ -144,6 +144,7 @@ from mypy_boto3_acm_pca.literals import AccessMethodTypeType, ...
 - [PolicyQualifierIdType](./literals.md#policyqualifieridtype)
 - [ResourceOwnerType](./literals.md#resourceownertype)
 - [RevocationReasonType](./literals.md#revocationreasontype)
+- [S3ObjectAclType](./literals.md#s3objectacltype)
 - [SigningAlgorithmType](./literals.md#signingalgorithmtype)
 - [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
 

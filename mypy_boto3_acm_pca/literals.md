@@ -27,6 +27,7 @@ type annotations stubs module
   - [PolicyQualifierIdType](#policyqualifieridtype)
   - [ResourceOwnerType](#resourceownertype)
   - [RevocationReasonType](#revocationreasontype)
+  - [S3ObjectAclType](#s3objectacltype)
   - [SigningAlgorithmType](#signingalgorithmtype)
   - [ValidityPeriodTypeType](#validityperiodtypetype)
 
@@ -255,6 +256,17 @@ Values:
 - `PRIVILEGE_WITHDRAWN`
 - `SUPERSEDED`
 - `UNSPECIFIED`
+
+## S3ObjectAclType
+
+```python
+from mypy_boto3_acm_pca.literals import S3ObjectAclType
+```
+
+Values:
+
+- `BUCKET_OWNER_FULL_CONTROL`
+- `PUBLIC_READ`
 
 ## SigningAlgorithmType
 

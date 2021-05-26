@@ -123,6 +123,7 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `SiteArn`: `str`
 
 ## ResponseMetadataTypeDef
 
@@ -151,3 +152,4 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `SiteArn`: `str`

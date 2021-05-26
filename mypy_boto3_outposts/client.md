@@ -56,6 +56,7 @@ Exceptions:
 
 - `Exceptions.AccessDeniedException`
 - `Exceptions.ClientError`
+- `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
 - `Exceptions.NotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
