@@ -120,7 +120,6 @@ type annotations stubs module
   - [DescribeRouteTablesPaginatorName](#describeroutetablespaginatorname)
   - [DescribeScheduledInstanceAvailabilityPaginatorName](#describescheduledinstanceavailabilitypaginatorname)
   - [DescribeScheduledInstancesPaginatorName](#describescheduledinstancespaginatorname)
-  - [DescribeSecurityGroupRulesPaginatorName](#describesecuritygrouprulespaginatorname)
   - [DescribeSecurityGroupsPaginatorName](#describesecuritygroupspaginatorname)
   - [DescribeSnapshotsPaginatorName](#describesnapshotspaginatorname)
   - [DescribeSpotFleetInstancesPaginatorName](#describespotfleetinstancespaginatorname)
@@ -1596,16 +1595,6 @@ from mypy_boto3_ec2.literals import DescribeScheduledInstancesPaginatorName
 Values:
 
 - `describe_scheduled_instances`
-
-## DescribeSecurityGroupRulesPaginatorName
-
-```python
-from mypy_boto3_ec2.literals import DescribeSecurityGroupRulesPaginatorName
-```
-
-Values:
-
-- `describe_security_group_rules`
 
 ## DescribeSecurityGroupsPaginatorName
 
@@ -3835,7 +3824,6 @@ Values:
 - `reserved-instances`
 - `route-table`
 - `security-group`
-- `security-group-rule`
 - `snapshot`
 - `spot-fleet-request`
 - `spot-instances-request`

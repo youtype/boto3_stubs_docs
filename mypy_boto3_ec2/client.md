@@ -257,7 +257,6 @@ type annotations stubs module
     - [describe_scheduled_instance_availability](#describe_scheduled_instance_availability)
     - [describe_scheduled_instances](#describe_scheduled_instances)
     - [describe_security_group_references](#describe_security_group_references)
-    - [describe_security_group_rules](#describe_security_group_rules)
     - [describe_security_groups](#describe_security_groups)
     - [describe_snapshot_attribute](#describe_snapshot_attribute)
     - [describe_snapshots](#describe_snapshots)
@@ -384,7 +383,6 @@ type annotations stubs module
     - [modify_managed_prefix_list](#modify_managed_prefix_list)
     - [modify_network_interface_attribute](#modify_network_interface_attribute)
     - [modify_reserved_instances](#modify_reserved_instances)
-    - [modify_security_group_rules](#modify_security_group_rules)
     - [modify_snapshot_attribute](#modify_snapshot_attribute)
     - [modify_spot_fleet_request](#modify_spot_fleet_request)
     - [modify_subnet_attribute](#modify_subnet_attribute)
@@ -999,17 +997,12 @@ Arguments:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
 - `ToPort`: `int`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
-
-Returns
-[AuthorizeSecurityGroupEgressResultTypeDef](./type_defs.md#authorizesecuritygroupegressresulttypedef).
 
 ### authorize_security_group_ingress
 
@@ -1032,11 +1025,6 @@ Arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
-- `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
-
-Returns
-[AuthorizeSecurityGroupIngressResultTypeDef](./type_defs.md#authorizesecuritygroupingressresulttypedef).
 
 ### bundle_instance
 
@@ -4909,25 +4897,6 @@ Arguments:
 Returns
 [DescribeSecurityGroupReferencesResultTypeDef](./type_defs.md#describesecuritygroupreferencesresulttypedef).
 
-### describe_security_group_rules
-
-Type annotations for `boto3.client("ec2").describe_security_group_rules`
-method.
-
-Boto3 documentation:
-[EC2.Client.describe_security_group_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_group_rules)
-
-Arguments:
-
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
-- `DryRun`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef).
-
 ### describe_security_groups
 
 Type annotations for `boto3.client("ec2").describe_security_groups` method.
@@ -7162,24 +7131,6 @@ Arguments:
 Returns
 [ModifyReservedInstancesResultTypeDef](./type_defs.md#modifyreservedinstancesresulttypedef).
 
-### modify_security_group_rules
-
-Type annotations for `boto3.client("ec2").modify_security_group_rules` method.
-
-Boto3 documentation:
-[EC2.Client.modify_security_group_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_security_group_rules)
-
-Arguments:
-
-- `GroupId`: `str` *(required)*
-- `SecurityGroupRules`:
-  `List`\[[SecurityGroupRuleUpdateTypeDef](./type_defs.md#securitygroupruleupdatetypedef)\]
-  *(required)*
-- `DryRun`: `bool`
-
-Returns
-[ModifySecurityGroupRulesResultTypeDef](./type_defs.md#modifysecuritygrouprulesresulttypedef).
-
 ### modify_snapshot_attribute
 
 Type annotations for `boto3.client("ec2").modify_snapshot_attribute` method.
@@ -8281,7 +8232,6 @@ Arguments:
 - `DryRun`: `bool`
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -8313,7 +8263,6 @@ Arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
-- `SecurityGroupRuleIds`: `List`\[`str`\]
 
 Returns
 [RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).
@@ -8630,13 +8579,12 @@ Boto3 documentation:
 
 Arguments:
 
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  *(required)*
 - `DryRun`: `bool`
 - `GroupId`: `str`
 - `GroupName`: `str`
-- `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `SecurityGroupRuleDescriptions`:
-  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 Returns
 [UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsegressresulttypedef).
@@ -8651,13 +8599,12 @@ Boto3 documentation:
 
 Arguments:
 
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  *(required)*
 - `DryRun`: `bool`
 - `GroupId`: `str`
 - `GroupName`: `str`
-- `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `SecurityGroupRuleDescriptions`:
-  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 Returns
 [UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsingressresulttypedef).
@@ -8795,8 +8742,6 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeScheduledInstanceAvailabilityPaginator](./paginators.md#describescheduledinstanceavailabilitypaginator)
 - `client.get_paginator("describe_scheduled_instances")` ->
   [DescribeScheduledInstancesPaginator](./paginators.md#describescheduledinstancespaginator)
-- `client.get_paginator("describe_security_group_rules")` ->
-  [DescribeSecurityGroupRulesPaginator](./paginators.md#describesecuritygrouprulespaginator)
 - `client.get_paginator("describe_security_groups")` ->
   [DescribeSecurityGroupsPaginator](./paginators.md#describesecuritygroupspaginator)
 - `client.get_paginator("describe_snapshots")` ->
