@@ -224,6 +224,7 @@ from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef, ...
 - [AccessPolicySummaryTypeDef](./type_defs.md#accesspolicysummarytypedef)
 - [AggregatedValueTypeDef](./type_defs.md#aggregatedvaluetypedef)
 - [AggregatesTypeDef](./type_defs.md#aggregatestypedef)
+- [AlarmsTypeDef](./type_defs.md#alarmstypedef)
 - [AssetCompositeModelTypeDef](./type_defs.md#assetcompositemodeltypedef)
 - [AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef)
 - [AssetHierarchyInfoTypeDef](./type_defs.md#assethierarchyinfotypedef)

@@ -110,6 +110,7 @@ type annotations stubs module
   - [TestGridSessionActionTypeDef](#testgridsessionactiontypedef)
   - [TestGridSessionArtifactTypeDef](#testgridsessionartifacttypedef)
   - [TestGridSessionTypeDef](#testgridsessiontypedef)
+  - [TestGridVpcConfigTypeDef](#testgridvpcconfigtypedef)
   - [TestTypeDef](#testtypedef)
   - [TrialMinutesTypeDef](#trialminutestypedef)
   - [UniqueProblemTypeDef](#uniqueproblemtypedef)
@@ -310,7 +311,7 @@ Optional fields:
 from mypy_boto3_devicefarm.type_defs import DeviceFilterTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `attribute`:
   [DeviceFilterAttributeType](./literals.md#devicefilterattributetype)
@@ -1403,6 +1404,8 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `description`: `str`
+- `vpcConfig`:
+  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 - `created`: `datetime`
 
 ## TestGridSessionActionTypeDef
@@ -1447,6 +1450,18 @@ Optional fields:
 - `ended`: `datetime`
 - `billingMinutes`: `float`
 - `seleniumProperties`: `str`
+
+## TestGridVpcConfigTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import TestGridVpcConfigTypeDef
+```
+
+Required fields:
+
+- `securityGroupIds`: `List`\[`str`\]
+- `subnetIds`: `List`\[`str`\]
+- `vpcId`: `str`
 
 ## TestTypeDef
 

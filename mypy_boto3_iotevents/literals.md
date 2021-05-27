@@ -8,13 +8,28 @@ type annotations stubs module
 [mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 - [Literals for boto3 IoTEvents module](#literals-for-boto3-iotevents-module)
+  - [AlarmModelVersionStatusType](#alarmmodelversionstatustype)
   - [AnalysisResultLevelType](#analysisresultleveltype)
   - [AnalysisStatusType](#analysisstatustype)
+  - [ComparisonOperatorType](#comparisonoperatortype)
   - [DetectorModelVersionStatusType](#detectormodelversionstatustype)
   - [EvaluationMethodType](#evaluationmethodtype)
   - [InputStatusType](#inputstatustype)
   - [LoggingLevelType](#loggingleveltype)
   - [PayloadTypeType](#payloadtypetype)
+
+## AlarmModelVersionStatusType
+
+```python
+from mypy_boto3_iotevents.literals import AlarmModelVersionStatusType
+```
+
+Values:
+
+- `ACTIVATING`
+- `ACTIVE`
+- `FAILED`
+- `INACTIVE`
 
 ## AnalysisResultLevelType
 
@@ -39,6 +54,21 @@ Values:
 - `COMPLETE`
 - `FAILED`
 - `RUNNING`
+
+## ComparisonOperatorType
+
+```python
+from mypy_boto3_iotevents.literals import ComparisonOperatorType
+```
+
+Values:
+
+- `EQUAL`
+- `GREATER`
+- `GREATER_OR_EQUAL`
+- `LESS`
+- `LESS_OR_EQUAL`
+- `NOT_EQUAL`
 
 ## DetectorModelVersionStatusType
 

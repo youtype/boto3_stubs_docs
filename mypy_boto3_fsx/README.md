@@ -116,6 +116,7 @@ from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
 - [AutoImportPolicyTypeType](./literals.md#autoimportpolicytypetype)
 - [BackupLifecycleType](./literals.md#backuplifecycletype)
 - [BackupTypeType](./literals.md#backuptypetype)
+- [DataCompressionTypeType](./literals.md#datacompressiontypetype)
 - [DataRepositoryLifecycleType](./literals.md#datarepositorylifecycletype)
 - [DataRepositoryTaskFilterNameType](./literals.md#datarepositorytaskfilternametype)
 - [DataRepositoryTaskLifecycleType](./literals.md#datarepositorytasklifecycletype)

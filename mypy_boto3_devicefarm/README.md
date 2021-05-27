@@ -335,6 +335,7 @@ from mypy_boto3_devicefarm.type_defs import AccountSettingsTypeDef, ...
 - [TestGridSessionActionTypeDef](./type_defs.md#testgridsessionactiontypedef)
 - [TestGridSessionArtifactTypeDef](./type_defs.md#testgridsessionartifacttypedef)
 - [TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef)
+- [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 - [TestTypeDef](./type_defs.md#testtypedef)
 - [TrialMinutesTypeDef](./type_defs.md#trialminutestypedef)
 - [UniqueProblemTypeDef](./type_defs.md#uniqueproblemtypedef)

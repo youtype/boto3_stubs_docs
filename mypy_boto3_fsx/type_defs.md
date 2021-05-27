@@ -247,6 +247,8 @@ Optional fields:
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
 - `DriveCacheType`: [DriveCacheTypeType](./literals.md#drivecachetypetype)
+- `DataCompressionType`:
+  [DataCompressionTypeType](./literals.md#datacompressiontypetype)
 
 ## CreateFileSystemResponseTypeDef
 
@@ -582,6 +584,8 @@ Optional fields:
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
 - `DriveCacheType`: [DriveCacheTypeType](./literals.md#drivecachetypetype)
+- `DataCompressionType`:
+  [DataCompressionTypeType](./literals.md#datacompressiontypetype)
 
 ## PaginatorConfigTypeDef
 
@@ -663,6 +667,8 @@ Optional fields:
 - `AutomaticBackupRetentionDays`: `int`
 - `AutoImportPolicy`:
   [AutoImportPolicyTypeType](./literals.md#autoimportpolicytypetype)
+- `DataCompressionType`:
+  [DataCompressionTypeType](./literals.md#datacompressiontypetype)
 
 ## UpdateFileSystemResponseTypeDef
 

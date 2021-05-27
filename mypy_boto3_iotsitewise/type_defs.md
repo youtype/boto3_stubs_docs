@@ -11,6 +11,7 @@ type annotations stubs module
   - [AccessPolicySummaryTypeDef](#accesspolicysummarytypedef)
   - [AggregatedValueTypeDef](#aggregatedvaluetypedef)
   - [AggregatesTypeDef](#aggregatestypedef)
+  - [AlarmsTypeDef](#alarmstypedef)
   - [AssetCompositeModelTypeDef](#assetcompositemodeltypedef)
   - [AssetErrorDetailsTypeDef](#asseterrordetailstypedef)
   - [AssetHierarchyInfoTypeDef](#assethierarchyinfotypedef)
@@ -164,6 +165,20 @@ Optional fields:
 - `minimum`: `float`
 - `sum`: `float`
 - `standardDeviation`: `float`
+
+## AlarmsTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import AlarmsTypeDef
+```
+
+Required fields:
+
+- `alarmRoleArn`: `str`
+
+Optional fields:
+
+- `notificationLambdaArn`: `str`
 
 ## AssetCompositeModelTypeDef
 
@@ -876,6 +891,8 @@ Optional fields:
   [ImageLocationTypeDef](./type_defs.md#imagelocationtypedef)
 - `roleArn`: `str`
 - `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
+- `notificationSenderEmail`: `str`
+- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
 
 ## DescribeProjectResponseTypeDef
 

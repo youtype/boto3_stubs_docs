@@ -268,6 +268,8 @@ Arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
+- `vpcConfig`:
+  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 
 Returns
 [CreateTestGridProjectResultTypeDef](./type_defs.md#createtestgridprojectresulttypedef).
@@ -1112,8 +1114,8 @@ Boto3 documentation:
 
 Arguments:
 
-- `offeringId`: `str`
-- `quantity`: `int`
+- `offeringId`: `str` *(required)*
+- `quantity`: `int` *(required)*
 - `offeringPromotionId`: `str`
 
 Returns
@@ -1128,8 +1130,8 @@ Boto3 documentation:
 
 Arguments:
 
-- `offeringId`: `str`
-- `quantity`: `int`
+- `offeringId`: `str` *(required)*
+- `quantity`: `int` *(required)*
 
 Returns
 [RenewOfferingResultTypeDef](./type_defs.md#renewofferingresulttypedef).
@@ -1338,6 +1340,8 @@ Arguments:
 - `projectArn`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
+- `vpcConfig`:
+  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 
 Returns
 [UpdateTestGridProjectResultTypeDef](./type_defs.md#updatetestgridprojectresulttypedef).

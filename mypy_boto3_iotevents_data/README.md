@@ -31,11 +31,18 @@ from mypy_boto3_iotevents_data.client import IoTEventsDataClient
 
 ### Methods
 
+- [batch_acknowledge_alarm](./client.md#batch_acknowledge_alarm)
+- [batch_disable_alarm](./client.md#batch_disable_alarm)
+- [batch_enable_alarm](./client.md#batch_enable_alarm)
 - [batch_put_message](./client.md#batch_put_message)
+- [batch_reset_alarm](./client.md#batch_reset_alarm)
+- [batch_snooze_alarm](./client.md#batch_snooze_alarm)
 - [batch_update_detector](./client.md#batch_update_detector)
 - [can_paginate](./client.md#can_paginate)
+- [describe_alarm](./client.md#describe_alarm)
 - [describe_detector](./client.md#describe_detector)
 - [generate_presigned_url](./client.md#generate_presigned_url)
+- [list_alarms](./client.md#list_alarms)
 - [list_detectors](./client.md#list_detectors)
 
 ### Exceptions
@@ -56,10 +63,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotevents_data.literals import ErrorCodeType, ...
+from mypy_boto3_iotevents_data.literals import AlarmStateNameType, ...
 ```
 
+- [AlarmStateNameType](./literals.md#alarmstatenametype)
+- [ComparisonOperatorType](./literals.md#comparisonoperatortype)
+- [CustomerActionNameType](./literals.md#customeractionnametype)
 - [ErrorCodeType](./literals.md#errorcodetype)
+- [EventTypeType](./literals.md#eventtypetype)
+- [TriggerTypeType](./literals.md#triggertypetype)
 
 ## Typed dictionaries
 
@@ -69,23 +81,50 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import BatchPutMessageErrorEntryTypeDef, ...
+from mypy_boto3_iotevents_data.type_defs import AcknowledgeActionConfigurationTypeDef, ...
 ```
 
+- [AcknowledgeActionConfigurationTypeDef](./type_defs.md#acknowledgeactionconfigurationtypedef)
+- [AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)
+- [AlarmStateTypeDef](./type_defs.md#alarmstatetypedef)
+- [AlarmSummaryTypeDef](./type_defs.md#alarmsummarytypedef)
+- [AlarmTypeDef](./type_defs.md#alarmtypedef)
+- [BatchAcknowledgeAlarmResponseTypeDef](./type_defs.md#batchacknowledgealarmresponsetypedef)
+- [BatchAlarmActionErrorEntryTypeDef](./type_defs.md#batchalarmactionerrorentrytypedef)
+- [BatchDisableAlarmResponseTypeDef](./type_defs.md#batchdisablealarmresponsetypedef)
+- [BatchEnableAlarmResponseTypeDef](./type_defs.md#batchenablealarmresponsetypedef)
 - [BatchPutMessageErrorEntryTypeDef](./type_defs.md#batchputmessageerrorentrytypedef)
 - [BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef)
+- [BatchResetAlarmResponseTypeDef](./type_defs.md#batchresetalarmresponsetypedef)
+- [BatchSnoozeAlarmResponseTypeDef](./type_defs.md#batchsnoozealarmresponsetypedef)
 - [BatchUpdateDetectorErrorEntryTypeDef](./type_defs.md#batchupdatedetectorerrorentrytypedef)
 - [BatchUpdateDetectorResponseTypeDef](./type_defs.md#batchupdatedetectorresponsetypedef)
+- [CustomerActionTypeDef](./type_defs.md#customeractiontypedef)
+- [DescribeAlarmResponseTypeDef](./type_defs.md#describealarmresponsetypedef)
 - [DescribeDetectorResponseTypeDef](./type_defs.md#describedetectorresponsetypedef)
 - [DetectorStateDefinitionTypeDef](./type_defs.md#detectorstatedefinitiontypedef)
 - [DetectorStateSummaryTypeDef](./type_defs.md#detectorstatesummarytypedef)
 - [DetectorStateTypeDef](./type_defs.md#detectorstatetypedef)
 - [DetectorSummaryTypeDef](./type_defs.md#detectorsummarytypedef)
 - [DetectorTypeDef](./type_defs.md#detectortypedef)
+- [DisableActionConfigurationTypeDef](./type_defs.md#disableactionconfigurationtypedef)
+- [DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)
+- [EnableActionConfigurationTypeDef](./type_defs.md#enableactionconfigurationtypedef)
+- [EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)
+- [ListAlarmsResponseTypeDef](./type_defs.md#listalarmsresponsetypedef)
 - [ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef)
 - [MessageTypeDef](./type_defs.md#messagetypedef)
+- [ResetActionConfigurationTypeDef](./type_defs.md#resetactionconfigurationtypedef)
+- [ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)
+- [RuleEvaluationTypeDef](./type_defs.md#ruleevaluationtypedef)
+- [SimpleRuleEvaluationTypeDef](./type_defs.md#simpleruleevaluationtypedef)
+- [SnoozeActionConfigurationTypeDef](./type_defs.md#snoozeactionconfigurationtypedef)
+- [SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)
+- [StateChangeConfigurationTypeDef](./type_defs.md#statechangeconfigurationtypedef)
+- [SystemEventTypeDef](./type_defs.md#systemeventtypedef)
 - [TimerDefinitionTypeDef](./type_defs.md#timerdefinitiontypedef)
 - [TimerTypeDef](./type_defs.md#timertypedef)
+- [TimestampValueTypeDef](./type_defs.md#timestampvaluetypedef)
 - [UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)
 - [VariableDefinitionTypeDef](./type_defs.md#variabledefinitiontypedef)
 - [VariableTypeDef](./type_defs.md#variabletypedef)

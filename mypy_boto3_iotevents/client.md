@@ -12,24 +12,31 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [can_paginate](#can_paginate)
+    - [create_alarm_model](#create_alarm_model)
     - [create_detector_model](#create_detector_model)
     - [create_input](#create_input)
+    - [delete_alarm_model](#delete_alarm_model)
     - [delete_detector_model](#delete_detector_model)
     - [delete_input](#delete_input)
+    - [describe_alarm_model](#describe_alarm_model)
     - [describe_detector_model](#describe_detector_model)
     - [describe_detector_model_analysis](#describe_detector_model_analysis)
     - [describe_input](#describe_input)
     - [describe_logging_options](#describe_logging_options)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_detector_model_analysis_results](#get_detector_model_analysis_results)
+    - [list_alarm_model_versions](#list_alarm_model_versions)
+    - [list_alarm_models](#list_alarm_models)
     - [list_detector_model_versions](#list_detector_model_versions)
     - [list_detector_models](#list_detector_models)
+    - [list_input_routings](#list_input_routings)
     - [list_inputs](#list_inputs)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [put_logging_options](#put_logging_options)
     - [start_detector_model_analysis](#start_detector_model_analysis)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_alarm_model](#update_alarm_model)
     - [update_detector_model](#update_detector_model)
     - [update_input](#update_input)
 
@@ -89,6 +96,32 @@ Arguments:
 
 Returns `bool`.
 
+### create_alarm_model
+
+Type annotations for `boto3.client("iotevents").create_alarm_model` method.
+
+Boto3 documentation:
+[IoTEvents.Client.create_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_alarm_model)
+
+Arguments:
+
+- `alarmModelName`: `str` *(required)*
+- `roleArn`: `str` *(required)*
+- `alarmRule`: [AlarmRuleTypeDef](./type_defs.md#alarmruletypedef) *(required)*
+- `alarmModelDescription`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `key`: `str`
+- `severity`: `int`
+- `alarmNotification`:
+  [AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef)
+- `alarmEventActions`:
+  [AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef)
+- `alarmCapabilities`:
+  [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
+
+Returns
+[CreateAlarmModelResponseTypeDef](./type_defs.md#createalarmmodelresponsetypedef).
+
 ### create_detector_model
 
 Type annotations for `boto3.client("iotevents").create_detector_model` method.
@@ -130,6 +163,19 @@ Arguments:
 Returns
 [CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
+### delete_alarm_model
+
+Type annotations for `boto3.client("iotevents").delete_alarm_model` method.
+
+Boto3 documentation:
+[IoTEvents.Client.delete_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_alarm_model)
+
+Arguments:
+
+- `alarmModelName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_detector_model
 
 Type annotations for `boto3.client("iotevents").delete_detector_model` method.
@@ -155,6 +201,21 @@ Arguments:
 - `inputName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### describe_alarm_model
+
+Type annotations for `boto3.client("iotevents").describe_alarm_model` method.
+
+Boto3 documentation:
+[IoTEvents.Client.describe_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_alarm_model)
+
+Arguments:
+
+- `alarmModelName`: `str` *(required)*
+- `alarmModelVersion`: `str`
+
+Returns
+[DescribeAlarmModelResponseTypeDef](./type_defs.md#describealarmmodelresponsetypedef).
 
 ### describe_detector_model
 
@@ -245,6 +306,38 @@ Arguments:
 Returns
 [GetDetectorModelAnalysisResultsResponseTypeDef](./type_defs.md#getdetectormodelanalysisresultsresponsetypedef).
 
+### list_alarm_model_versions
+
+Type annotations for `boto3.client("iotevents").list_alarm_model_versions`
+method.
+
+Boto3 documentation:
+[IoTEvents.Client.list_alarm_model_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_alarm_model_versions)
+
+Arguments:
+
+- `alarmModelName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAlarmModelVersionsResponseTypeDef](./type_defs.md#listalarmmodelversionsresponsetypedef).
+
+### list_alarm_models
+
+Type annotations for `boto3.client("iotevents").list_alarm_models` method.
+
+Boto3 documentation:
+[IoTEvents.Client.list_alarm_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_alarm_models)
+
+Arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListAlarmModelsResponseTypeDef](./type_defs.md#listalarmmodelsresponsetypedef).
+
 ### list_detector_model_versions
 
 Type annotations for `boto3.client("iotevents").list_detector_model_versions`
@@ -276,6 +369,23 @@ Arguments:
 
 Returns
 [ListDetectorModelsResponseTypeDef](./type_defs.md#listdetectormodelsresponsetypedef).
+
+### list_input_routings
+
+Type annotations for `boto3.client("iotevents").list_input_routings` method.
+
+Boto3 documentation:
+[IoTEvents.Client.list_input_routings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_input_routings)
+
+Arguments:
+
+- `inputIdentifier`:
+  [InputIdentifierTypeDef](./type_defs.md#inputidentifiertypedef) *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListInputRoutingsResponseTypeDef](./type_defs.md#listinputroutingsresponsetypedef).
 
 ### list_inputs
 
@@ -361,6 +471,30 @@ Arguments:
 - `tagKeys`: `List`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_alarm_model
+
+Type annotations for `boto3.client("iotevents").update_alarm_model` method.
+
+Boto3 documentation:
+[IoTEvents.Client.update_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_alarm_model)
+
+Arguments:
+
+- `alarmModelName`: `str` *(required)*
+- `roleArn`: `str` *(required)*
+- `alarmRule`: [AlarmRuleTypeDef](./type_defs.md#alarmruletypedef) *(required)*
+- `alarmModelDescription`: `str`
+- `severity`: `int`
+- `alarmNotification`:
+  [AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef)
+- `alarmEventActions`:
+  [AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef)
+- `alarmCapabilities`:
+  [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
+
+Returns
+[UpdateAlarmModelResponseTypeDef](./type_defs.md#updatealarmmodelresponsetypedef).
 
 ### update_detector_model
 

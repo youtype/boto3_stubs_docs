@@ -310,6 +310,8 @@ Arguments:
 - `portalLogoImageFile`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 - `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
+- `notificationSenderEmail`: `str`
+- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
 
 Returns
 [CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef).
@@ -1086,6 +1088,8 @@ Arguments:
 - `portalDescription`: `str`
 - `portalLogoImage`: [ImageTypeDef](./type_defs.md#imagetypedef)
 - `clientToken`: `str`
+- `notificationSenderEmail`: `str`
+- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
 
 Returns
 [UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef).

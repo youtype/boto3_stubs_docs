@@ -13,6 +13,7 @@ type annotations stubs module
   - [AutoImportPolicyTypeType](#autoimportpolicytypetype)
   - [BackupLifecycleType](#backuplifecycletype)
   - [BackupTypeType](#backuptypetype)
+  - [DataCompressionTypeType](#datacompressiontypetype)
   - [DataRepositoryLifecycleType](#datarepositorylifecycletype)
   - [DataRepositoryTaskFilterNameType](#datarepositorytaskfilternametype)
   - [DataRepositoryTaskLifecycleType](#datarepositorytasklifecycletype)
@@ -98,6 +99,17 @@ Values:
 - `AUTOMATIC`
 - `AWS_BACKUP`
 - `USER_INITIATED`
+
+## DataCompressionTypeType
+
+```python
+from mypy_boto3_fsx.literals import DataCompressionTypeType
+```
+
+Values:
+
+- `LZ4`
+- `NONE`
 
 ## DataRepositoryLifecycleType
 

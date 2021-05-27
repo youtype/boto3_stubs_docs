@@ -33,6 +33,7 @@ type annotations stubs module
   - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
   - [CreateFaqResponseTypeDef](#createfaqresponsetypedef)
   - [CreateIndexResponseTypeDef](#createindexresponsetypedef)
+  - [CreateQuerySuggestionsBlockListResponseTypeDef](#createquerysuggestionsblocklistresponsetypedef)
   - [CreateThesaurusResponseTypeDef](#createthesaurusresponsetypedef)
   - [DataSourceConfigurationTypeDef](#datasourceconfigurationtypedef)
   - [DataSourceSummaryTypeDef](#datasourcesummarytypedef)
@@ -45,6 +46,8 @@ type annotations stubs module
   - [DescribeDataSourceResponseTypeDef](#describedatasourceresponsetypedef)
   - [DescribeFaqResponseTypeDef](#describefaqresponsetypedef)
   - [DescribeIndexResponseTypeDef](#describeindexresponsetypedef)
+  - [DescribeQuerySuggestionsBlockListResponseTypeDef](#describequerysuggestionsblocklistresponsetypedef)
+  - [DescribeQuerySuggestionsConfigResponseTypeDef](#describequerysuggestionsconfigresponsetypedef)
   - [DescribeThesaurusResponseTypeDef](#describethesaurusresponsetypedef)
   - [DocumentAttributeTypeDef](#documentattributetypedef)
   - [DocumentAttributeValueCountPairTypeDef](#documentattributevaluecountpairtypedef)
@@ -57,6 +60,7 @@ type annotations stubs module
   - [FacetTypeDef](#facettypedef)
   - [FaqStatisticsTypeDef](#faqstatisticstypedef)
   - [FaqSummaryTypeDef](#faqsummarytypedef)
+  - [GetQuerySuggestionsResponseTypeDef](#getquerysuggestionsresponsetypedef)
   - [GoogleDriveConfigurationTypeDef](#googledriveconfigurationtypedef)
   - [HighlightTypeDef](#highlighttypedef)
   - [IndexConfigurationSummaryTypeDef](#indexconfigurationsummarytypedef)
@@ -67,6 +71,7 @@ type annotations stubs module
   - [ListDataSourcesResponseTypeDef](#listdatasourcesresponsetypedef)
   - [ListFaqsResponseTypeDef](#listfaqsresponsetypedef)
   - [ListIndicesResponseTypeDef](#listindicesresponsetypedef)
+  - [ListQuerySuggestionsBlockListsResponseTypeDef](#listquerysuggestionsblocklistsresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListThesauriResponseTypeDef](#listthesauriresponsetypedef)
   - [OneDriveConfigurationTypeDef](#onedriveconfigurationtypedef)
@@ -74,6 +79,7 @@ type annotations stubs module
   - [PrincipalTypeDef](#principaltypedef)
   - [QueryResultItemTypeDef](#queryresultitemtypedef)
   - [QueryResultTypeDef](#queryresulttypedef)
+  - [QuerySuggestionsBlockListSummaryTypeDef](#querysuggestionsblocklistsummarytypedef)
   - [RelevanceFeedbackTypeDef](#relevancefeedbacktypedef)
   - [RelevanceTypeDef](#relevancetypedef)
   - [S3DataSourceConfigurationTypeDef](#s3datasourceconfigurationtypedef)
@@ -95,6 +101,10 @@ type annotations stubs module
   - [SortingConfigurationTypeDef](#sortingconfigurationtypedef)
   - [SqlConfigurationTypeDef](#sqlconfigurationtypedef)
   - [StartDataSourceSyncJobResponseTypeDef](#startdatasourcesyncjobresponsetypedef)
+  - [SuggestionHighlightTypeDef](#suggestionhighlighttypedef)
+  - [SuggestionTextWithHighlightsTypeDef](#suggestiontextwithhighlightstypedef)
+  - [SuggestionTypeDef](#suggestiontypedef)
+  - [SuggestionValueTypeDef](#suggestionvaluetypedef)
   - [TagTypeDef](#tagtypedef)
   - [TextDocumentStatisticsTypeDef](#textdocumentstatisticstypedef)
   - [TextWithHighlightsTypeDef](#textwithhighlightstypedef)
@@ -434,6 +444,16 @@ Optional fields:
 
 - `Id`: `str`
 
+## CreateQuerySuggestionsBlockListResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CreateQuerySuggestionsBlockListResponseTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+
 ## CreateThesaurusResponseTypeDef
 
 ```python
@@ -493,6 +513,9 @@ from mypy_boto3_kendra.type_defs import DataSourceSyncJobMetricTargetTypeDef
 Required fields:
 
 - `DataSourceId`: `str`
+
+Optional fields:
+
 - `DataSourceSyncJobId`: `str`
 
 ## DataSourceSyncJobMetricsTypeDef
@@ -649,6 +672,47 @@ Optional fields:
   `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+
+## DescribeQuerySuggestionsBlockListResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsBlockListResponseTypeDef
+```
+
+Optional fields:
+
+- `IndexId`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `Status`:
+  [QuerySuggestionsBlockListStatusType](./literals.md#querysuggestionsblockliststatustype)
+- `ErrorMessage`: `str`
+- `CreatedAt`: `datetime`
+- `UpdatedAt`: `datetime`
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+- `ItemCount`: `int`
+- `FileSizeBytes`: `int`
+- `RoleArn`: `str`
+
+## DescribeQuerySuggestionsConfigResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsConfigResponseTypeDef
+```
+
+Optional fields:
+
+- `Mode`: [ModeType](./literals.md#modetype)
+- `Status`:
+  [QuerySuggestionsStatusType](./literals.md#querysuggestionsstatustype)
+- `QueryLogLookBackWindowInDays`: `int`
+- `IncludeQueriesWithoutUserInformation`: `bool`
+- `MinimumNumberOfQueryingUsers`: `int`
+- `MinimumQueryCount`: `int`
+- `LastSuggestionsBuildTime`: `datetime`
+- `LastClearTime`: `datetime`
+- `TotalSuggestionsCount`: `int`
 
 ## DescribeThesaurusResponseTypeDef
 
@@ -817,6 +881,18 @@ Optional fields:
 - `UpdatedAt`: `datetime`
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 
+## GetQuerySuggestionsResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import GetQuerySuggestionsResponseTypeDef
+```
+
+Optional fields:
+
+- `QuerySuggestionsId`: `str`
+- `Suggestions`:
+  `List`\[[SuggestionTypeDef](./type_defs.md#suggestiontypedef)\]
+
 ## GoogleDriveConfigurationTypeDef
 
 ```python
@@ -961,6 +1037,18 @@ Optional fields:
   `List`\[[IndexConfigurationSummaryTypeDef](./type_defs.md#indexconfigurationsummarytypedef)\]
 - `NextToken`: `str`
 
+## ListQuerySuggestionsBlockListsResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListQuerySuggestionsBlockListsResponseTypeDef
+```
+
+Optional fields:
+
+- `BlockListSummaryItems`:
+  `List`\[[QuerySuggestionsBlockListSummaryTypeDef](./type_defs.md#querysuggestionsblocklistsummarytypedef)\]
+- `NextToken`: `str`
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -1064,6 +1152,22 @@ Optional fields:
 - `FacetResults`:
   `List`\[[FacetResultTypeDef](./type_defs.md#facetresulttypedef)\]
 - `TotalNumberOfResults`: `int`
+
+## QuerySuggestionsBlockListSummaryTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import QuerySuggestionsBlockListSummaryTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `Name`: `str`
+- `Status`:
+  [QuerySuggestionsBlockListStatusType](./literals.md#querysuggestionsblockliststatustype)
+- `CreatedAt`: `datetime`
+- `UpdatedAt`: `datetime`
+- `ItemCount`: `int`
 
 ## RelevanceFeedbackTypeDef
 
@@ -1396,6 +1500,51 @@ from mypy_boto3_kendra.type_defs import StartDataSourceSyncJobResponseTypeDef
 Optional fields:
 
 - `ExecutionId`: `str`
+
+## SuggestionHighlightTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SuggestionHighlightTypeDef
+```
+
+Optional fields:
+
+- `BeginOffset`: `int`
+- `EndOffset`: `int`
+
+## SuggestionTextWithHighlightsTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SuggestionTextWithHighlightsTypeDef
+```
+
+Optional fields:
+
+- `Text`: `str`
+- `Highlights`:
+  `List`\[[SuggestionHighlightTypeDef](./type_defs.md#suggestionhighlighttypedef)\]
+
+## SuggestionTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SuggestionTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `Value`: [SuggestionValueTypeDef](./type_defs.md#suggestionvaluetypedef)
+
+## SuggestionValueTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SuggestionValueTypeDef
+```
+
+Optional fields:
+
+- `Text`:
+  [SuggestionTextWithHighlightsTypeDef](./type_defs.md#suggestiontextwithhighlightstypedef)
 
 ## TagTypeDef
 

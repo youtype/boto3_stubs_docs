@@ -11,11 +11,18 @@ type annotations stubs module
   - [IoTEventsDataClient](#ioteventsdataclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [batch_acknowledge_alarm](#batch_acknowledge_alarm)
+    - [batch_disable_alarm](#batch_disable_alarm)
+    - [batch_enable_alarm](#batch_enable_alarm)
     - [batch_put_message](#batch_put_message)
+    - [batch_reset_alarm](#batch_reset_alarm)
+    - [batch_snooze_alarm](#batch_snooze_alarm)
     - [batch_update_detector](#batch_update_detector)
     - [can_paginate](#can_paginate)
+    - [describe_alarm](#describe_alarm)
     - [describe_detector](#describe_detector)
     - [generate_presigned_url](#generate_presigned_url)
+    - [list_alarms](#list_alarms)
     - [list_detectors](#list_detectors)
 
 ## IoTEventsDataClient
@@ -57,6 +64,57 @@ Exceptions:
 
 ## Methods
 
+### batch_acknowledge_alarm
+
+Type annotations for `boto3.client("iotevents-data").batch_acknowledge_alarm`
+method.
+
+Boto3 documentation:
+[IoTEventsData.Client.batch_acknowledge_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_acknowledge_alarm)
+
+Arguments:
+
+- `acknowledgeActionRequests`:
+  `List`\[[AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)\]
+  *(required)*
+
+Returns
+[BatchAcknowledgeAlarmResponseTypeDef](./type_defs.md#batchacknowledgealarmresponsetypedef).
+
+### batch_disable_alarm
+
+Type annotations for `boto3.client("iotevents-data").batch_disable_alarm`
+method.
+
+Boto3 documentation:
+[IoTEventsData.Client.batch_disable_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_disable_alarm)
+
+Arguments:
+
+- `disableActionRequests`:
+  `List`\[[DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)\]
+  *(required)*
+
+Returns
+[BatchDisableAlarmResponseTypeDef](./type_defs.md#batchdisablealarmresponsetypedef).
+
+### batch_enable_alarm
+
+Type annotations for `boto3.client("iotevents-data").batch_enable_alarm`
+method.
+
+Boto3 documentation:
+[IoTEventsData.Client.batch_enable_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_enable_alarm)
+
+Arguments:
+
+- `enableActionRequests`:
+  `List`\[[EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)\]
+  *(required)*
+
+Returns
+[BatchEnableAlarmResponseTypeDef](./type_defs.md#batchenablealarmresponsetypedef).
+
 ### batch_put_message
 
 Type annotations for `boto3.client("iotevents-data").batch_put_message` method.
@@ -71,6 +129,39 @@ Arguments:
 
 Returns
 [BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
+
+### batch_reset_alarm
+
+Type annotations for `boto3.client("iotevents-data").batch_reset_alarm` method.
+
+Boto3 documentation:
+[IoTEventsData.Client.batch_reset_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_reset_alarm)
+
+Arguments:
+
+- `resetActionRequests`:
+  `List`\[[ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)\]
+  *(required)*
+
+Returns
+[BatchResetAlarmResponseTypeDef](./type_defs.md#batchresetalarmresponsetypedef).
+
+### batch_snooze_alarm
+
+Type annotations for `boto3.client("iotevents-data").batch_snooze_alarm`
+method.
+
+Boto3 documentation:
+[IoTEventsData.Client.batch_snooze_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_snooze_alarm)
+
+Arguments:
+
+- `snoozeActionRequests`:
+  `List`\[[SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)\]
+  *(required)*
+
+Returns
+[BatchSnoozeAlarmResponseTypeDef](./type_defs.md#batchsnoozealarmresponsetypedef).
 
 ### batch_update_detector
 
@@ -101,6 +192,21 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+### describe_alarm
+
+Type annotations for `boto3.client("iotevents-data").describe_alarm` method.
+
+Boto3 documentation:
+[IoTEventsData.Client.describe_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_alarm)
+
+Arguments:
+
+- `alarmModelName`: `str` *(required)*
+- `keyValue`: `str`
+
+Returns
+[DescribeAlarmResponseTypeDef](./type_defs.md#describealarmresponsetypedef).
 
 ### describe_detector
 
@@ -133,6 +239,21 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### list_alarms
+
+Type annotations for `boto3.client("iotevents-data").list_alarms` method.
+
+Boto3 documentation:
+[IoTEventsData.Client.list_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_alarms)
+
+Arguments:
+
+- `alarmModelName`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns [ListAlarmsResponseTypeDef](./type_defs.md#listalarmsresponsetypedef).
 
 ### list_detectors
 

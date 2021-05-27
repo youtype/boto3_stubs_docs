@@ -14,23 +14,30 @@ type annotations stubs module
     - [batch_delete_document](#batch_delete_document)
     - [batch_put_document](#batch_put_document)
     - [can_paginate](#can_paginate)
+    - [clear_query_suggestions](#clear_query_suggestions)
     - [create_data_source](#create_data_source)
     - [create_faq](#create_faq)
     - [create_index](#create_index)
+    - [create_query_suggestions_block_list](#create_query_suggestions_block_list)
     - [create_thesaurus](#create_thesaurus)
     - [delete_data_source](#delete_data_source)
     - [delete_faq](#delete_faq)
     - [delete_index](#delete_index)
+    - [delete_query_suggestions_block_list](#delete_query_suggestions_block_list)
     - [delete_thesaurus](#delete_thesaurus)
     - [describe_data_source](#describe_data_source)
     - [describe_faq](#describe_faq)
     - [describe_index](#describe_index)
+    - [describe_query_suggestions_block_list](#describe_query_suggestions_block_list)
+    - [describe_query_suggestions_config](#describe_query_suggestions_config)
     - [describe_thesaurus](#describe_thesaurus)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_query_suggestions](#get_query_suggestions)
     - [list_data_source_sync_jobs](#list_data_source_sync_jobs)
     - [list_data_sources](#list_data_sources)
     - [list_faqs](#list_faqs)
     - [list_indices](#list_indices)
+    - [list_query_suggestions_block_lists](#list_query_suggestions_block_lists)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_thesauri](#list_thesauri)
     - [query](#query)
@@ -41,6 +48,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_data_source](#update_data_source)
     - [update_index](#update_index)
+    - [update_query_suggestions_block_list](#update_query_suggestions_block_list)
+    - [update_query_suggestions_config](#update_query_suggestions_config)
     - [update_thesaurus](#update_thesaurus)
 
 ## kendraClient
@@ -134,6 +143,17 @@ Arguments:
 
 Returns `bool`.
 
+### clear_query_suggestions
+
+Type annotations for `boto3.client("kendra").clear_query_suggestions` method.
+
+Boto3 documentation:
+[kendra.Client.clear_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.clear_query_suggestions)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+
 ### create_data_source
 
 Type annotations for `boto3.client("kendra").create_data_source` method.
@@ -202,6 +222,27 @@ Arguments:
 Returns
 [CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
 
+### create_query_suggestions_block_list
+
+Type annotations for
+`boto3.client("kendra").create_query_suggestions_block_list` method.
+
+Boto3 documentation:
+[kendra.Client.create_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_query_suggestions_block_list)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
+- `RoleArn`: `str` *(required)*
+- `Description`: `str`
+- `ClientToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef).
+
 ### create_thesaurus
 
 Type annotations for `boto3.client("kendra").create_thesaurus` method.
@@ -255,6 +296,19 @@ Boto3 documentation:
 
 Arguments:
 
+- `Id`: `str` *(required)*
+
+### delete_query_suggestions_block_list
+
+Type annotations for
+`boto3.client("kendra").delete_query_suggestions_block_list` method.
+
+Boto3 documentation:
+[kendra.Client.delete_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_query_suggestions_block_list)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
 - `Id`: `str` *(required)*
 
 ### delete_thesaurus
@@ -313,6 +367,37 @@ Arguments:
 Returns
 [DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
 
+### describe_query_suggestions_block_list
+
+Type annotations for
+`boto3.client("kendra").describe_query_suggestions_block_list` method.
+
+Boto3 documentation:
+[kendra.Client.describe_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_block_list)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[DescribeQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponsetypedef).
+
+### describe_query_suggestions_config
+
+Type annotations for `boto3.client("kendra").describe_query_suggestions_config`
+method.
+
+Boto3 documentation:
+[kendra.Client.describe_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_config)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+
+Returns
+[DescribeQuerySuggestionsConfigResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponsetypedef).
+
 ### describe_thesaurus
 
 Type annotations for `boto3.client("kendra").describe_thesaurus` method.
@@ -343,6 +428,22 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### get_query_suggestions
+
+Type annotations for `boto3.client("kendra").get_query_suggestions` method.
+
+Boto3 documentation:
+[kendra.Client.get_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.get_query_suggestions)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `QueryText`: `str` *(required)*
+- `MaxSuggestionsCount`: `int`
+
+Returns
+[GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef).
 
 ### list_data_source_sync_jobs
 
@@ -410,6 +511,23 @@ Arguments:
 
 Returns
 [ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
+
+### list_query_suggestions_block_lists
+
+Type annotations for
+`boto3.client("kendra").list_query_suggestions_block_lists` method.
+
+Boto3 documentation:
+[kendra.Client.list_query_suggestions_block_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_query_suggestions_block_lists)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListQuerySuggestionsBlockListsResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -580,6 +698,40 @@ Arguments:
   `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+
+### update_query_suggestions_block_list
+
+Type annotations for
+`boto3.client("kendra").update_query_suggestions_block_list` method.
+
+Boto3 documentation:
+[kendra.Client.update_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_block_list)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `Id`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+- `RoleArn`: `str`
+
+### update_query_suggestions_config
+
+Type annotations for `boto3.client("kendra").update_query_suggestions_config`
+method.
+
+Boto3 documentation:
+[kendra.Client.update_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_config)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `Mode`: [ModeType](./literals.md#modetype)
+- `QueryLogLookBackWindowInDays`: `int`
+- `IncludeQueriesWithoutUserInformation`: `bool`
+- `MinimumNumberOfQueryingUsers`: `int`
+- `MinimumQueryCount`: `int`
 
 ### update_thesaurus
 

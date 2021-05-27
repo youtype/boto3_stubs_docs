@@ -27,10 +27,13 @@ type annotations stubs module
   - [IndexEditionType](#indexeditiontype)
   - [IndexStatusType](#indexstatustype)
   - [KeyLocationType](#keylocationtype)
+  - [ModeType](#modetype)
   - [OrderType](#ordertype)
   - [PrincipalTypeType](#principaltypetype)
   - [QueryIdentifiersEnclosingOptionType](#queryidentifiersenclosingoptiontype)
   - [QueryResultTypeType](#queryresulttypetype)
+  - [QuerySuggestionsBlockListStatusType](#querysuggestionsblockliststatustype)
+  - [QuerySuggestionsStatusType](#querysuggestionsstatustype)
   - [ReadAccessTypeType](#readaccesstypetype)
   - [RelevanceTypeType](#relevancetypetype)
   - [SalesforceChatterFeedIncludeFilterTypeType](#salesforcechatterfeedincludefiltertypetype)
@@ -310,6 +313,17 @@ Values:
 - `SECRET_MANAGER`
 - `URL`
 
+## ModeType
+
+```python
+from mypy_boto3_kendra.literals import ModeType
+```
+
+Values:
+
+- `ENABLED`
+- `LEARN_ONLY`
+
 ## OrderType
 
 ```python
@@ -354,6 +368,32 @@ Values:
 - `ANSWER`
 - `DOCUMENT`
 - `QUESTION_ANSWER`
+
+## QuerySuggestionsBlockListStatusType
+
+```python
+from mypy_boto3_kendra.literals import QuerySuggestionsBlockListStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `ACTIVE_BUT_UPDATE_FAILED`
+- `CREATING`
+- `DELETING`
+- `FAILED`
+- `UPDATING`
+
+## QuerySuggestionsStatusType
+
+```python
+from mypy_boto3_kendra.literals import QuerySuggestionsStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `UPDATING`
 
 ## ReadAccessTypeType
 
