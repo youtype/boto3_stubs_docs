@@ -9,10 +9,12 @@ type annotations stubs module
 
 - [Paginators for boto3 LocationService module](#paginators-for-boto3-locationservice-module)
   - [GetDevicePositionHistoryPaginator](#getdevicepositionhistorypaginator)
+  - [ListDevicePositionsPaginator](#listdevicepositionspaginator)
   - [ListGeofenceCollectionsPaginator](#listgeofencecollectionspaginator)
   - [ListGeofencesPaginator](#listgeofencespaginator)
   - [ListMapsPaginator](#listmapspaginator)
   - [ListPlaceIndexesPaginator](#listplaceindexespaginator)
+  - [ListRouteCalculatorsPaginator](#listroutecalculatorspaginator)
   - [ListTrackerConsumersPaginator](#listtrackerconsumerspaginator)
   - [ListTrackersPaginator](#listtrackerspaginator)
 
@@ -44,6 +46,32 @@ Arguments for `GetDevicePositionHistoryPaginator.paginate` method:
 
 `GetDevicePositionHistoryPaginator.paginate` returns
 `Iterator`\[[GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef)\].
+
+## ListDevicePositionsPaginator
+
+Type annotations for
+`boto3.client("location").get_paginator("list_device_positions")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_location.paginator import ListDevicePositionsPaginator
+
+def get_list_device_positions_paginator() -> ListDevicePositionsPaginator:
+    return boto3.client("location").get_paginator("list_device_positions")
+```
+
+Boto3 documentation:
+[LocationService.Paginator.ListDevicePositions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListDevicePositions)
+
+Arguments for `ListDevicePositionsPaginator.paginate` method:
+
+- `TrackerName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListDevicePositionsPaginator.paginate` returns
+`Iterator`\[[ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef)\].
 
 ## ListGeofenceCollectionsPaginator
 
@@ -144,6 +172,31 @@ Arguments for `ListPlaceIndexesPaginator.paginate` method:
 
 `ListPlaceIndexesPaginator.paginate` returns
 `Iterator`\[[ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef)\].
+
+## ListRouteCalculatorsPaginator
+
+Type annotations for
+`boto3.client("location").get_paginator("list_route_calculators")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_location.paginator import ListRouteCalculatorsPaginator
+
+def get_list_route_calculators_paginator() -> ListRouteCalculatorsPaginator:
+    return boto3.client("location").get_paginator("list_route_calculators")
+```
+
+Boto3 documentation:
+[LocationService.Paginator.ListRouteCalculators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListRouteCalculators)
+
+Arguments for `ListRouteCalculatorsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListRouteCalculatorsPaginator.paginate` returns
+`Iterator`\[[ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef)\].
 
 ## ListTrackerConsumersPaginator
 

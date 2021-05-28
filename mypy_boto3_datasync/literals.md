@@ -30,6 +30,7 @@ type annotations stubs module
   - [PreserveDeletedFilesType](#preservedeletedfilestype)
   - [PreserveDevicesType](#preservedevicestype)
   - [S3StorageClassType](#s3storageclasstype)
+  - [SmbSecurityDescriptorCopyFlagsType](#smbsecuritydescriptorcopyflagstype)
   - [SmbVersionType](#smbversiontype)
   - [TaskExecutionStatusType](#taskexecutionstatustype)
   - [TaskFilterNameType](#taskfilternametype)
@@ -295,6 +296,18 @@ Values:
 - `OUTPOSTS`
 - `STANDARD`
 - `STANDARD_IA`
+
+## SmbSecurityDescriptorCopyFlagsType
+
+```python
+from mypy_boto3_datasync.literals import SmbSecurityDescriptorCopyFlagsType
+```
+
+Values:
+
+- `NONE`
+- `OWNER_DACL`
+- `OWNER_DACL_SACL`
 
 ## SmbVersionType
 

@@ -445,6 +445,8 @@ Optional fields:
 - `TaskQueueing`: [TaskQueueingType](./literals.md#taskqueueingtype)
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `TransferMode`: [TransferModeType](./literals.md#transfermodetype)
+- `SecurityDescriptorCopyFlags`:
+  [SmbSecurityDescriptorCopyFlagsType](./literals.md#smbsecuritydescriptorcopyflagstype)
 
 ## PaginatorConfigTypeDef
 

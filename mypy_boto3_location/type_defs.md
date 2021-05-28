@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
 
 - [Typed dictionaries for boto3 LocationService module](#typed-dictionaries-for-boto3-locationservice-module)
+  - [BatchDeleteDevicePositionHistoryErrorTypeDef](#batchdeletedevicepositionhistoryerrortypedef)
+  - [BatchDeleteDevicePositionHistoryResponseTypeDef](#batchdeletedevicepositionhistoryresponsetypedef)
   - [BatchDeleteGeofenceErrorTypeDef](#batchdeletegeofenceerrortypedef)
   - [BatchDeleteGeofenceResponseTypeDef](#batchdeletegeofenceresponsetypedef)
   - [BatchEvaluateGeofencesErrorTypeDef](#batchevaluategeofenceserrortypedef)
@@ -21,14 +23,20 @@ type annotations stubs module
   - [BatchPutGeofenceSuccessTypeDef](#batchputgeofencesuccesstypedef)
   - [BatchUpdateDevicePositionErrorTypeDef](#batchupdatedevicepositionerrortypedef)
   - [BatchUpdateDevicePositionResponseTypeDef](#batchupdatedevicepositionresponsetypedef)
+  - [CalculateRouteCarModeOptionsTypeDef](#calculateroutecarmodeoptionstypedef)
+  - [CalculateRouteResponseTypeDef](#calculaterouteresponsetypedef)
+  - [CalculateRouteSummaryTypeDef](#calculateroutesummarytypedef)
+  - [CalculateRouteTruckModeOptionsTypeDef](#calculateroutetruckmodeoptionstypedef)
   - [CreateGeofenceCollectionResponseTypeDef](#creategeofencecollectionresponsetypedef)
   - [CreateMapResponseTypeDef](#createmapresponsetypedef)
   - [CreatePlaceIndexResponseTypeDef](#createplaceindexresponsetypedef)
+  - [CreateRouteCalculatorResponseTypeDef](#createroutecalculatorresponsetypedef)
   - [CreateTrackerResponseTypeDef](#createtrackerresponsetypedef)
   - [DataSourceConfigurationTypeDef](#datasourceconfigurationtypedef)
   - [DescribeGeofenceCollectionResponseTypeDef](#describegeofencecollectionresponsetypedef)
   - [DescribeMapResponseTypeDef](#describemapresponsetypedef)
   - [DescribePlaceIndexResponseTypeDef](#describeplaceindexresponsetypedef)
+  - [DescribeRouteCalculatorResponseTypeDef](#describeroutecalculatorresponsetypedef)
   - [DescribeTrackerResponseTypeDef](#describetrackerresponsetypedef)
   - [DevicePositionTypeDef](#devicepositiontypedef)
   - [DevicePositionUpdateTypeDef](#devicepositionupdatetypedef)
@@ -40,6 +48,10 @@ type annotations stubs module
   - [GetMapSpritesResponseTypeDef](#getmapspritesresponsetypedef)
   - [GetMapStyleDescriptorResponseTypeDef](#getmapstyledescriptorresponsetypedef)
   - [GetMapTileResponseTypeDef](#getmaptileresponsetypedef)
+  - [LegGeometryTypeDef](#leggeometrytypedef)
+  - [LegTypeDef](#legtypedef)
+  - [ListDevicePositionsResponseEntryTypeDef](#listdevicepositionsresponseentrytypedef)
+  - [ListDevicePositionsResponseTypeDef](#listdevicepositionsresponsetypedef)
   - [ListGeofenceCollectionsResponseEntryTypeDef](#listgeofencecollectionsresponseentrytypedef)
   - [ListGeofenceCollectionsResponseTypeDef](#listgeofencecollectionsresponsetypedef)
   - [ListGeofenceResponseEntryTypeDef](#listgeofenceresponseentrytypedef)
@@ -48,6 +60,9 @@ type annotations stubs module
   - [ListMapsResponseTypeDef](#listmapsresponsetypedef)
   - [ListPlaceIndexesResponseEntryTypeDef](#listplaceindexesresponseentrytypedef)
   - [ListPlaceIndexesResponseTypeDef](#listplaceindexesresponsetypedef)
+  - [ListRouteCalculatorsResponseEntryTypeDef](#listroutecalculatorsresponseentrytypedef)
+  - [ListRouteCalculatorsResponseTypeDef](#listroutecalculatorsresponsetypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListTrackerConsumersResponseTypeDef](#listtrackerconsumersresponsetypedef)
   - [ListTrackersResponseEntryTypeDef](#listtrackersresponseentrytypedef)
   - [ListTrackersResponseTypeDef](#listtrackersresponsetypedef)
@@ -62,6 +77,31 @@ type annotations stubs module
   - [SearchPlaceIndexForPositionSummaryTypeDef](#searchplaceindexforpositionsummarytypedef)
   - [SearchPlaceIndexForTextResponseTypeDef](#searchplaceindexfortextresponsetypedef)
   - [SearchPlaceIndexForTextSummaryTypeDef](#searchplaceindexfortextsummarytypedef)
+  - [StepTypeDef](#steptypedef)
+  - [TruckDimensionsTypeDef](#truckdimensionstypedef)
+  - [TruckWeightTypeDef](#truckweighttypedef)
+
+## BatchDeleteDevicePositionHistoryErrorTypeDef
+
+```python
+from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryErrorTypeDef
+```
+
+Required fields:
+
+- `DeviceId`: `str`
+- `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
+
+## BatchDeleteDevicePositionHistoryResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryResponseTypeDef
+```
+
+Required fields:
+
+- `Errors`:
+  `List`\[[BatchDeleteDevicePositionHistoryErrorTypeDef](./type_defs.md#batchdeletedevicepositionhistoryerrortypedef)\]
 
 ## BatchDeleteGeofenceErrorTypeDef
 
@@ -213,6 +253,56 @@ Required fields:
 - `Errors`:
   `List`\[[BatchUpdateDevicePositionErrorTypeDef](./type_defs.md#batchupdatedevicepositionerrortypedef)\]
 
+## CalculateRouteCarModeOptionsTypeDef
+
+```python
+from mypy_boto3_location.type_defs import CalculateRouteCarModeOptionsTypeDef
+```
+
+Optional fields:
+
+- `AvoidFerries`: `bool`
+- `AvoidTolls`: `bool`
+
+## CalculateRouteResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import CalculateRouteResponseTypeDef
+```
+
+Required fields:
+
+- `Legs`: `List`\[[LegTypeDef](./type_defs.md#legtypedef)\]
+- `Summary`:
+  [CalculateRouteSummaryTypeDef](./type_defs.md#calculateroutesummarytypedef)
+
+## CalculateRouteSummaryTypeDef
+
+```python
+from mypy_boto3_location.type_defs import CalculateRouteSummaryTypeDef
+```
+
+Required fields:
+
+- `DataSource`: `str`
+- `Distance`: `float`
+- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
+- `DurationSeconds`: `float`
+- `RouteBBox`: `List`\[`float`\]
+
+## CalculateRouteTruckModeOptionsTypeDef
+
+```python
+from mypy_boto3_location.type_defs import CalculateRouteTruckModeOptionsTypeDef
+```
+
+Optional fields:
+
+- `AvoidFerries`: `bool`
+- `AvoidTolls`: `bool`
+- `Dimensions`: [TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef)
+- `Weight`: [TruckWeightTypeDef](./type_defs.md#truckweighttypedef)
+
 ## CreateGeofenceCollectionResponseTypeDef
 
 ```python
@@ -248,6 +338,18 @@ Required fields:
 - `CreateTime`: `datetime`
 - `IndexArn`: `str`
 - `IndexName`: `str`
+
+## CreateRouteCalculatorResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import CreateRouteCalculatorResponseTypeDef
+```
+
+Required fields:
+
+- `CalculatorArn`: `str`
+- `CalculatorName`: `str`
+- `CreateTime`: `datetime`
 
 ## CreateTrackerResponseTypeDef
 
@@ -288,7 +390,9 @@ Required fields:
 
 Optional fields:
 
+- `KmsKeyId`: `str`
 - `PricingPlanDataSource`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DescribeMapResponseTypeDef
 
@@ -308,6 +412,10 @@ Required fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
+Optional fields:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+
 ## DescribePlaceIndexResponseTypeDef
 
 ```python
@@ -326,6 +434,30 @@ Required fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
+Optional fields:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## DescribeRouteCalculatorResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import DescribeRouteCalculatorResponseTypeDef
+```
+
+Required fields:
+
+- `CalculatorArn`: `str`
+- `CalculatorName`: `str`
+- `CreateTime`: `datetime`
+- `DataSource`: `str`
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `UpdateTime`: `datetime`
+
+Optional fields:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+
 ## DescribeTrackerResponseTypeDef
 
 ```python
@@ -343,7 +475,9 @@ Required fields:
 
 Optional fields:
 
+- `KmsKeyId`: `str`
 - `PricingPlanDataSource`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## DevicePositionTypeDef
 
@@ -472,6 +606,61 @@ Optional fields:
 - `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `ContentType`: `str`
 
+## LegGeometryTypeDef
+
+```python
+from mypy_boto3_location.type_defs import LegGeometryTypeDef
+```
+
+Optional fields:
+
+- `LineString`: `List`\[`List`\[`float`\]\]
+
+## LegTypeDef
+
+```python
+from mypy_boto3_location.type_defs import LegTypeDef
+```
+
+Required fields:
+
+- `Distance`: `float`
+- `DurationSeconds`: `float`
+- `EndPosition`: `List`\[`float`\]
+- `StartPosition`: `List`\[`float`\]
+- `Steps`: `List`\[[StepTypeDef](./type_defs.md#steptypedef)\]
+
+Optional fields:
+
+- `Geometry`: [LegGeometryTypeDef](./type_defs.md#leggeometrytypedef)
+
+## ListDevicePositionsResponseEntryTypeDef
+
+```python
+from mypy_boto3_location.type_defs import ListDevicePositionsResponseEntryTypeDef
+```
+
+Required fields:
+
+- `DeviceId`: `str`
+- `Position`: `List`\[`float`\]
+- `SampleTime`: `datetime`
+
+## ListDevicePositionsResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import ListDevicePositionsResponseTypeDef
+```
+
+Required fields:
+
+- `Entries`:
+  `List`\[[ListDevicePositionsResponseEntryTypeDef](./type_defs.md#listdevicepositionsresponseentrytypedef)\]
+
+Optional fields:
+
+- `NextToken`: `str`
+
 ## ListGeofenceCollectionsResponseEntryTypeDef
 
 ```python
@@ -593,6 +782,46 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+## ListRouteCalculatorsResponseEntryTypeDef
+
+```python
+from mypy_boto3_location.type_defs import ListRouteCalculatorsResponseEntryTypeDef
+```
+
+Required fields:
+
+- `CalculatorName`: `str`
+- `CreateTime`: `datetime`
+- `DataSource`: `str`
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `UpdateTime`: `datetime`
+
+## ListRouteCalculatorsResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import ListRouteCalculatorsResponseTypeDef
+```
+
+Required fields:
+
+- `Entries`:
+  `List`\[[ListRouteCalculatorsResponseEntryTypeDef](./type_defs.md#listroutecalculatorsresponseentrytypedef)\]
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Optional fields:
+
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ListTrackerConsumersResponseTypeDef
 
@@ -786,3 +1015,44 @@ Optional fields:
 - `FilterCountries`: `List`\[`str`\]
 - `MaxResults`: `int`
 - `ResultBBox`: `List`\[`float`\]
+
+## StepTypeDef
+
+```python
+from mypy_boto3_location.type_defs import StepTypeDef
+```
+
+Required fields:
+
+- `Distance`: `float`
+- `DurationSeconds`: `float`
+- `EndPosition`: `List`\[`float`\]
+- `StartPosition`: `List`\[`float`\]
+
+Optional fields:
+
+- `GeometryOffset`: `int`
+
+## TruckDimensionsTypeDef
+
+```python
+from mypy_boto3_location.type_defs import TruckDimensionsTypeDef
+```
+
+Optional fields:
+
+- `Height`: `float`
+- `Length`: `float`
+- `Unit`: [DimensionUnitType](./literals.md#dimensionunittype)
+- `Width`: `float`
+
+## TruckWeightTypeDef
+
+```python
+from mypy_boto3_location.type_defs import TruckWeightTypeDef
+```
+
+Optional fields:
+
+- `Total`: `float`
+- `Unit`: [VehicleWeightUnitType](./literals.md#vehicleweightunittype)

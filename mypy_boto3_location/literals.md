@@ -9,15 +9,21 @@ type annotations stubs module
 
 - [Literals for boto3 LocationService module](#literals-for-boto3-locationservice-module)
   - [BatchItemErrorCodeType](#batchitemerrorcodetype)
+  - [DimensionUnitType](#dimensionunittype)
+  - [DistanceUnitType](#distanceunittype)
   - [GetDevicePositionHistoryPaginatorName](#getdevicepositionhistorypaginatorname)
   - [IntendedUseType](#intendedusetype)
+  - [ListDevicePositionsPaginatorName](#listdevicepositionspaginatorname)
   - [ListGeofenceCollectionsPaginatorName](#listgeofencecollectionspaginatorname)
   - [ListGeofencesPaginatorName](#listgeofencespaginatorname)
   - [ListMapsPaginatorName](#listmapspaginatorname)
   - [ListPlaceIndexesPaginatorName](#listplaceindexespaginatorname)
+  - [ListRouteCalculatorsPaginatorName](#listroutecalculatorspaginatorname)
   - [ListTrackerConsumersPaginatorName](#listtrackerconsumerspaginatorname)
   - [ListTrackersPaginatorName](#listtrackerspaginatorname)
   - [PricingPlanType](#pricingplantype)
+  - [TravelModeType](#travelmodetype)
+  - [VehicleWeightUnitType](#vehicleweightunittype)
 
 ## BatchItemErrorCodeType
 
@@ -33,6 +39,28 @@ Values:
 - `ResourceNotFoundError`
 - `ThrottlingError`
 - `ValidationError`
+
+## DimensionUnitType
+
+```python
+from mypy_boto3_location.literals import DimensionUnitType
+```
+
+Values:
+
+- `Feet`
+- `Meters`
+
+## DistanceUnitType
+
+```python
+from mypy_boto3_location.literals import DistanceUnitType
+```
+
+Values:
+
+- `Kilometers`
+- `Miles`
 
 ## GetDevicePositionHistoryPaginatorName
 
@@ -54,6 +82,16 @@ Values:
 
 - `SingleUse`
 - `Storage`
+
+## ListDevicePositionsPaginatorName
+
+```python
+from mypy_boto3_location.literals import ListDevicePositionsPaginatorName
+```
+
+Values:
+
+- `list_device_positions`
 
 ## ListGeofenceCollectionsPaginatorName
 
@@ -95,6 +133,16 @@ Values:
 
 - `list_place_indexes`
 
+## ListRouteCalculatorsPaginatorName
+
+```python
+from mypy_boto3_location.literals import ListRouteCalculatorsPaginatorName
+```
+
+Values:
+
+- `list_route_calculators`
+
 ## ListTrackerConsumersPaginatorName
 
 ```python
@@ -126,3 +174,26 @@ Values:
 - `MobileAssetManagement`
 - `MobileAssetTracking`
 - `RequestBasedUsage`
+
+## TravelModeType
+
+```python
+from mypy_boto3_location.literals import TravelModeType
+```
+
+Values:
+
+- `Car`
+- `Truck`
+- `Walking`
+
+## VehicleWeightUnitType
+
+```python
+from mypy_boto3_location.literals import VehicleWeightUnitType
+```
+
+Values:
+
+- `Kilograms`
+- `Pounds`

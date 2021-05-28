@@ -128,6 +128,7 @@ from mypy_boto3_datasync.literals import AgentStatusType, ...
 - [PreserveDeletedFilesType](./literals.md#preservedeletedfilestype)
 - [PreserveDevicesType](./literals.md#preservedevicestype)
 - [S3StorageClassType](./literals.md#s3storageclasstype)
+- [SmbSecurityDescriptorCopyFlagsType](./literals.md#smbsecuritydescriptorcopyflagstype)
 - [SmbVersionType](./literals.md#smbversiontype)
 - [TaskExecutionStatusType](./literals.md#taskexecutionstatustype)
 - [TaskFilterNameType](./literals.md#taskfilternametype)

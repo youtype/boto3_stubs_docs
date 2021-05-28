@@ -33,23 +33,28 @@ from mypy_boto3_location.client import LocationServiceClient
 ### Methods
 
 - [associate_tracker_consumer](./client.md#associate_tracker_consumer)
+- [batch_delete_device_position_history](./client.md#batch_delete_device_position_history)
 - [batch_delete_geofence](./client.md#batch_delete_geofence)
 - [batch_evaluate_geofences](./client.md#batch_evaluate_geofences)
 - [batch_get_device_position](./client.md#batch_get_device_position)
 - [batch_put_geofence](./client.md#batch_put_geofence)
 - [batch_update_device_position](./client.md#batch_update_device_position)
+- [calculate_route](./client.md#calculate_route)
 - [can_paginate](./client.md#can_paginate)
 - [create_geofence_collection](./client.md#create_geofence_collection)
 - [create_map](./client.md#create_map)
 - [create_place_index](./client.md#create_place_index)
+- [create_route_calculator](./client.md#create_route_calculator)
 - [create_tracker](./client.md#create_tracker)
 - [delete_geofence_collection](./client.md#delete_geofence_collection)
 - [delete_map](./client.md#delete_map)
 - [delete_place_index](./client.md#delete_place_index)
+- [delete_route_calculator](./client.md#delete_route_calculator)
 - [delete_tracker](./client.md#delete_tracker)
 - [describe_geofence_collection](./client.md#describe_geofence_collection)
 - [describe_map](./client.md#describe_map)
 - [describe_place_index](./client.md#describe_place_index)
+- [describe_route_calculator](./client.md#describe_route_calculator)
 - [describe_tracker](./client.md#describe_tracker)
 - [disassociate_tracker_consumer](./client.md#disassociate_tracker_consumer)
 - [generate_presigned_url](./client.md#generate_presigned_url)
@@ -61,15 +66,20 @@ from mypy_boto3_location.client import LocationServiceClient
 - [get_map_style_descriptor](./client.md#get_map_style_descriptor)
 - [get_map_tile](./client.md#get_map_tile)
 - [get_paginator](./client.md#get_paginator)
+- [list_device_positions](./client.md#list_device_positions)
 - [list_geofence_collections](./client.md#list_geofence_collections)
 - [list_geofences](./client.md#list_geofences)
 - [list_maps](./client.md#list_maps)
 - [list_place_indexes](./client.md#list_place_indexes)
+- [list_route_calculators](./client.md#list_route_calculators)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [list_tracker_consumers](./client.md#list_tracker_consumers)
 - [list_trackers](./client.md#list_trackers)
 - [put_geofence](./client.md#put_geofence)
 - [search_place_index_for_position](./client.md#search_place_index_for_position)
 - [search_place_index_for_text](./client.md#search_place_index_for_text)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 
 ### Exceptions
 
@@ -95,10 +105,12 @@ from mypy_boto3_location.paginators import GetDevicePositionHistoryPaginator, ..
 ```
 
 - [GetDevicePositionHistoryPaginator](./paginators.md#getdevicepositionhistorypaginator)
+- [ListDevicePositionsPaginator](./paginators.md#listdevicepositionspaginator)
 - [ListGeofenceCollectionsPaginator](./paginators.md#listgeofencecollectionspaginator)
 - [ListGeofencesPaginator](./paginators.md#listgeofencespaginator)
 - [ListMapsPaginator](./paginators.md#listmapspaginator)
 - [ListPlaceIndexesPaginator](./paginators.md#listplaceindexespaginator)
+- [ListRouteCalculatorsPaginator](./paginators.md#listroutecalculatorspaginator)
 - [ListTrackerConsumersPaginator](./paginators.md#listtrackerconsumerspaginator)
 - [ListTrackersPaginator](./paginators.md#listtrackerspaginator)
 
@@ -113,15 +125,21 @@ from mypy_boto3_location.literals import BatchItemErrorCodeType, ...
 ```
 
 - [BatchItemErrorCodeType](./literals.md#batchitemerrorcodetype)
+- [DimensionUnitType](./literals.md#dimensionunittype)
+- [DistanceUnitType](./literals.md#distanceunittype)
 - [GetDevicePositionHistoryPaginatorName](./literals.md#getdevicepositionhistorypaginatorname)
 - [IntendedUseType](./literals.md#intendedusetype)
+- [ListDevicePositionsPaginatorName](./literals.md#listdevicepositionspaginatorname)
 - [ListGeofenceCollectionsPaginatorName](./literals.md#listgeofencecollectionspaginatorname)
 - [ListGeofencesPaginatorName](./literals.md#listgeofencespaginatorname)
 - [ListMapsPaginatorName](./literals.md#listmapspaginatorname)
 - [ListPlaceIndexesPaginatorName](./literals.md#listplaceindexespaginatorname)
+- [ListRouteCalculatorsPaginatorName](./literals.md#listroutecalculatorspaginatorname)
 - [ListTrackerConsumersPaginatorName](./literals.md#listtrackerconsumerspaginatorname)
 - [ListTrackersPaginatorName](./literals.md#listtrackerspaginatorname)
 - [PricingPlanType](./literals.md#pricingplantype)
+- [TravelModeType](./literals.md#travelmodetype)
+- [VehicleWeightUnitType](./literals.md#vehicleweightunittype)
 
 ## Typed dictionaries
 
@@ -131,9 +149,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_location.type_defs import BatchDeleteGeofenceErrorTypeDef, ...
+from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryErrorTypeDef, ...
 ```
 
+- [BatchDeleteDevicePositionHistoryErrorTypeDef](./type_defs.md#batchdeletedevicepositionhistoryerrortypedef)
+- [BatchDeleteDevicePositionHistoryResponseTypeDef](./type_defs.md#batchdeletedevicepositionhistoryresponsetypedef)
 - [BatchDeleteGeofenceErrorTypeDef](./type_defs.md#batchdeletegeofenceerrortypedef)
 - [BatchDeleteGeofenceResponseTypeDef](./type_defs.md#batchdeletegeofenceresponsetypedef)
 - [BatchEvaluateGeofencesErrorTypeDef](./type_defs.md#batchevaluategeofenceserrortypedef)
@@ -147,14 +167,20 @@ from mypy_boto3_location.type_defs import BatchDeleteGeofenceErrorTypeDef, ...
 - [BatchPutGeofenceSuccessTypeDef](./type_defs.md#batchputgeofencesuccesstypedef)
 - [BatchUpdateDevicePositionErrorTypeDef](./type_defs.md#batchupdatedevicepositionerrortypedef)
 - [BatchUpdateDevicePositionResponseTypeDef](./type_defs.md#batchupdatedevicepositionresponsetypedef)
+- [CalculateRouteCarModeOptionsTypeDef](./type_defs.md#calculateroutecarmodeoptionstypedef)
+- [CalculateRouteResponseTypeDef](./type_defs.md#calculaterouteresponsetypedef)
+- [CalculateRouteSummaryTypeDef](./type_defs.md#calculateroutesummarytypedef)
+- [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
 - [CreateGeofenceCollectionResponseTypeDef](./type_defs.md#creategeofencecollectionresponsetypedef)
 - [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef)
 - [CreatePlaceIndexResponseTypeDef](./type_defs.md#createplaceindexresponsetypedef)
+- [CreateRouteCalculatorResponseTypeDef](./type_defs.md#createroutecalculatorresponsetypedef)
 - [CreateTrackerResponseTypeDef](./type_defs.md#createtrackerresponsetypedef)
 - [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - [DescribeGeofenceCollectionResponseTypeDef](./type_defs.md#describegeofencecollectionresponsetypedef)
 - [DescribeMapResponseTypeDef](./type_defs.md#describemapresponsetypedef)
 - [DescribePlaceIndexResponseTypeDef](./type_defs.md#describeplaceindexresponsetypedef)
+- [DescribeRouteCalculatorResponseTypeDef](./type_defs.md#describeroutecalculatorresponsetypedef)
 - [DescribeTrackerResponseTypeDef](./type_defs.md#describetrackerresponsetypedef)
 - [DevicePositionTypeDef](./type_defs.md#devicepositiontypedef)
 - [DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)
@@ -166,6 +192,10 @@ from mypy_boto3_location.type_defs import BatchDeleteGeofenceErrorTypeDef, ...
 - [GetMapSpritesResponseTypeDef](./type_defs.md#getmapspritesresponsetypedef)
 - [GetMapStyleDescriptorResponseTypeDef](./type_defs.md#getmapstyledescriptorresponsetypedef)
 - [GetMapTileResponseTypeDef](./type_defs.md#getmaptileresponsetypedef)
+- [LegGeometryTypeDef](./type_defs.md#leggeometrytypedef)
+- [LegTypeDef](./type_defs.md#legtypedef)
+- [ListDevicePositionsResponseEntryTypeDef](./type_defs.md#listdevicepositionsresponseentrytypedef)
+- [ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef)
 - [ListGeofenceCollectionsResponseEntryTypeDef](./type_defs.md#listgeofencecollectionsresponseentrytypedef)
 - [ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef)
 - [ListGeofenceResponseEntryTypeDef](./type_defs.md#listgeofenceresponseentrytypedef)
@@ -174,6 +204,9 @@ from mypy_boto3_location.type_defs import BatchDeleteGeofenceErrorTypeDef, ...
 - [ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef)
 - [ListPlaceIndexesResponseEntryTypeDef](./type_defs.md#listplaceindexesresponseentrytypedef)
 - [ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef)
+- [ListRouteCalculatorsResponseEntryTypeDef](./type_defs.md#listroutecalculatorsresponseentrytypedef)
+- [ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef)
 - [ListTrackersResponseEntryTypeDef](./type_defs.md#listtrackersresponseentrytypedef)
 - [ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef)
@@ -188,3 +221,6 @@ from mypy_boto3_location.type_defs import BatchDeleteGeofenceErrorTypeDef, ...
 - [SearchPlaceIndexForPositionSummaryTypeDef](./type_defs.md#searchplaceindexforpositionsummarytypedef)
 - [SearchPlaceIndexForTextResponseTypeDef](./type_defs.md#searchplaceindexfortextresponsetypedef)
 - [SearchPlaceIndexForTextSummaryTypeDef](./type_defs.md#searchplaceindexfortextsummarytypedef)
+- [StepTypeDef](./type_defs.md#steptypedef)
+- [TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef)
+- [TruckWeightTypeDef](./type_defs.md#truckweighttypedef)
