@@ -17,19 +17,24 @@ type annotations stubs module
     - [confirm_subscription](#confirm_subscription)
     - [create_platform_application](#create_platform_application)
     - [create_platform_endpoint](#create_platform_endpoint)
+    - [create_sms_sandbox_phone_number](#create_sms_sandbox_phone_number)
     - [create_topic](#create_topic)
     - [delete_endpoint](#delete_endpoint)
     - [delete_platform_application](#delete_platform_application)
+    - [delete_sms_sandbox_phone_number](#delete_sms_sandbox_phone_number)
     - [delete_topic](#delete_topic)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_endpoint_attributes](#get_endpoint_attributes)
     - [get_platform_application_attributes](#get_platform_application_attributes)
     - [get_sms_attributes](#get_sms_attributes)
+    - [get_sms_sandbox_account_status](#get_sms_sandbox_account_status)
     - [get_subscription_attributes](#get_subscription_attributes)
     - [get_topic_attributes](#get_topic_attributes)
     - [list_endpoints_by_platform_application](#list_endpoints_by_platform_application)
+    - [list_origination_numbers](#list_origination_numbers)
     - [list_phone_numbers_opted_out](#list_phone_numbers_opted_out)
     - [list_platform_applications](#list_platform_applications)
+    - [list_sms_sandbox_phone_numbers](#list_sms_sandbox_phone_numbers)
     - [list_subscriptions](#list_subscriptions)
     - [list_subscriptions_by_topic](#list_subscriptions_by_topic)
     - [list_tags_for_resource](#list_tags_for_resource)
@@ -46,6 +51,7 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [unsubscribe](#unsubscribe)
     - [untag_resource](#untag_resource)
+    - [verify_sms_sandbox_phone_number](#verify_sms_sandbox_phone_number)
     - [get_paginator](#get_paginator)
 
 ## SNSClient
@@ -94,6 +100,7 @@ Exceptions:
 - `Exceptions.KMSOptInRequired`
 - `Exceptions.KMSThrottlingException`
 - `Exceptions.NotFoundException`
+- `Exceptions.OptedOutException`
 - `Exceptions.PlatformApplicationDisabledException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.StaleTagException`
@@ -102,6 +109,9 @@ Exceptions:
 - `Exceptions.TagPolicyException`
 - `Exceptions.ThrottledException`
 - `Exceptions.TopicLimitExceededException`
+- `Exceptions.UserErrorException`
+- `Exceptions.ValidationException`
+- `Exceptions.VerificationException`
 
 ## Methods
 
@@ -196,6 +206,22 @@ Arguments:
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
+### create_sms_sandbox_phone_number
+
+Type annotations for `boto3.client("sns").create_sms_sandbox_phone_number`
+method.
+
+Boto3 documentation:
+[SNS.Client.create_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_sms_sandbox_phone_number)
+
+Arguments:
+
+- `PhoneNumber`: `str` *(required)*
+- `LanguageCode`:
+  [LanguageCodeStringType](./literals.md#languagecodestringtype)
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### create_topic
 
 Type annotations for `boto3.client("sns").create_topic` method.
@@ -233,6 +259,20 @@ Boto3 documentation:
 Arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
+
+### delete_sms_sandbox_phone_number
+
+Type annotations for `boto3.client("sns").delete_sms_sandbox_phone_number`
+method.
+
+Boto3 documentation:
+[SNS.Client.delete_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_sms_sandbox_phone_number)
+
+Arguments:
+
+- `PhoneNumber`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_topic
 
@@ -304,6 +344,17 @@ Arguments:
 Returns
 [GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef).
 
+### get_sms_sandbox_account_status
+
+Type annotations for `boto3.client("sns").get_sms_sandbox_account_status`
+method.
+
+Boto3 documentation:
+[SNS.Client.get_sms_sandbox_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_sandbox_account_status)
+
+Returns
+[GetSMSSandboxAccountStatusResultTypeDef](./type_defs.md#getsmssandboxaccountstatusresulttypedef).
+
 ### get_subscription_attributes
 
 Type annotations for `boto3.client("sns").get_subscription_attributes` method.
@@ -348,6 +399,21 @@ Arguments:
 Returns
 [ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef).
 
+### list_origination_numbers
+
+Type annotations for `boto3.client("sns").list_origination_numbers` method.
+
+Boto3 documentation:
+[SNS.Client.list_origination_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_origination_numbers)
+
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef).
+
 ### list_phone_numbers_opted_out
 
 Type annotations for `boto3.client("sns").list_phone_numbers_opted_out` method.
@@ -375,6 +441,22 @@ Arguments:
 
 Returns
 [ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef).
+
+### list_sms_sandbox_phone_numbers
+
+Type annotations for `boto3.client("sns").list_sms_sandbox_phone_numbers`
+method.
+
+Boto3 documentation:
+[SNS.Client.list_sms_sandbox_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_sms_sandbox_phone_numbers)
+
+Arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef).
 
 ### list_subscriptions
 
@@ -599,16 +681,35 @@ Arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### verify_sms_sandbox_phone_number
+
+Type annotations for `boto3.client("sns").verify_sms_sandbox_phone_number`
+method.
+
+Boto3 documentation:
+[SNS.Client.verify_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.verify_sms_sandbox_phone_number)
+
+Arguments:
+
+- `PhoneNumber`: `str` *(required)*
+- `OneTimePassword`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### get_paginator
 
 Type annotations for `boto3.client("sns").get_paginator` method with overloads.
 
 - `client.get_paginator("list_endpoints_by_platform_application")` ->
   [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
+- `client.get_paginator("list_origination_numbers")` ->
+  [ListOriginationNumbersPaginator](./paginators.md#listoriginationnumberspaginator)
 - `client.get_paginator("list_phone_numbers_opted_out")` ->
   [ListPhoneNumbersOptedOutPaginator](./paginators.md#listphonenumbersoptedoutpaginator)
 - `client.get_paginator("list_platform_applications")` ->
   [ListPlatformApplicationsPaginator](./paginators.md#listplatformapplicationspaginator)
+- `client.get_paginator("list_sms_sandbox_phone_numbers")` ->
+  [ListSMSSandboxPhoneNumbersPaginator](./paginators.md#listsmssandboxphonenumberspaginator)
 - `client.get_paginator("list_subscriptions")` ->
   [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
 - `client.get_paginator("list_subscriptions_by_topic")` ->

@@ -2650,6 +2650,7 @@ Optional fields:
 
 - `NetworkInterface`:
   [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
+- `ClientToken`: `str`
 
 ## CreatePlacementGroupResultTypeDef
 

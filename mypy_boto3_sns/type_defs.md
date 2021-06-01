@@ -17,19 +17,24 @@ type annotations stubs module
   - [GetEndpointAttributesResponseTypeDef](#getendpointattributesresponsetypedef)
   - [GetPlatformApplicationAttributesResponseTypeDef](#getplatformapplicationattributesresponsetypedef)
   - [GetSMSAttributesResponseTypeDef](#getsmsattributesresponsetypedef)
+  - [GetSMSSandboxAccountStatusResultTypeDef](#getsmssandboxaccountstatusresulttypedef)
   - [GetSubscriptionAttributesResponseTypeDef](#getsubscriptionattributesresponsetypedef)
   - [GetTopicAttributesResponseTypeDef](#gettopicattributesresponsetypedef)
   - [ListEndpointsByPlatformApplicationResponseTypeDef](#listendpointsbyplatformapplicationresponsetypedef)
+  - [ListOriginationNumbersResultTypeDef](#listoriginationnumbersresulttypedef)
   - [ListPhoneNumbersOptedOutResponseTypeDef](#listphonenumbersoptedoutresponsetypedef)
   - [ListPlatformApplicationsResponseTypeDef](#listplatformapplicationsresponsetypedef)
+  - [ListSMSSandboxPhoneNumbersResultTypeDef](#listsmssandboxphonenumbersresulttypedef)
   - [ListSubscriptionsByTopicResponseTypeDef](#listsubscriptionsbytopicresponsetypedef)
   - [ListSubscriptionsResponseTypeDef](#listsubscriptionsresponsetypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListTopicsResponseTypeDef](#listtopicsresponsetypedef)
   - [MessageAttributeValueTypeDef](#messageattributevaluetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PhoneNumberInformationTypeDef](#phonenumberinformationtypedef)
   - [PlatformApplicationTypeDef](#platformapplicationtypedef)
   - [PublishResponseTypeDef](#publishresponsetypedef)
+  - [SMSSandboxPhoneNumberTypeDef](#smssandboxphonenumbertypedef)
   - [SubscribeResponseTypeDef](#subscriberesponsetypedef)
   - [SubscriptionTypeDef](#subscriptiontypedef)
   - [TagTypeDef](#tagtypedef)
@@ -126,6 +131,16 @@ Optional fields:
 
 - `attributes`: `Dict`\[`str`, `str`\]
 
+## GetSMSSandboxAccountStatusResultTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import GetSMSSandboxAccountStatusResultTypeDef
+```
+
+Required fields:
+
+- `IsInSandbox`: `bool`
+
 ## GetSubscriptionAttributesResponseTypeDef
 
 ```python
@@ -157,6 +172,18 @@ Optional fields:
 - `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 - `NextToken`: `str`
 
+## ListOriginationNumbersResultTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import ListOriginationNumbersResultTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `PhoneNumbers`:
+  `List`\[[PhoneNumberInformationTypeDef](./type_defs.md#phonenumberinformationtypedef)\]
+
 ## ListPhoneNumbersOptedOutResponseTypeDef
 
 ```python
@@ -178,6 +205,21 @@ Optional fields:
 
 - `PlatformApplications`:
   `List`\[[PlatformApplicationTypeDef](./type_defs.md#platformapplicationtypedef)\]
+- `NextToken`: `str`
+
+## ListSMSSandboxPhoneNumbersResultTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import ListSMSSandboxPhoneNumbersResultTypeDef
+```
+
+Required fields:
+
+- `PhoneNumbers`:
+  `List`\[[SMSSandboxPhoneNumberTypeDef](./type_defs.md#smssandboxphonenumbertypedef)\]
+
+Optional fields:
+
 - `NextToken`: `str`
 
 ## ListSubscriptionsByTopicResponseTypeDef
@@ -252,6 +294,22 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## PhoneNumberInformationTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import PhoneNumberInformationTypeDef
+```
+
+Optional fields:
+
+- `CreatedAt`: `datetime`
+- `PhoneNumber`: `str`
+- `Status`: `str`
+- `Iso2CountryCode`: `str`
+- `RouteType`: [RouteTypeType](./literals.md#routetypetype)
+- `NumberCapabilities`:
+  `List`\[[NumberCapabilityType](./literals.md#numbercapabilitytype)\]
+
 ## PlatformApplicationTypeDef
 
 ```python
@@ -273,6 +331,18 @@ Optional fields:
 
 - `MessageId`: `str`
 - `SequenceNumber`: `str`
+
+## SMSSandboxPhoneNumberTypeDef
+
+```python
+from mypy_boto3_sns.type_defs import SMSSandboxPhoneNumberTypeDef
+```
+
+Optional fields:
+
+- `PhoneNumber`: `str`
+- `Status`:
+  [SMSSandboxPhoneNumberVerificationStatusType](./literals.md#smssandboxphonenumberverificationstatustype)
 
 ## SubscribeResponseTypeDef
 

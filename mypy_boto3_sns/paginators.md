@@ -9,8 +9,10 @@ type annotations stubs module
 
 - [Paginators for boto3 SNS module](#paginators-for-boto3-sns-module)
   - [ListEndpointsByPlatformApplicationPaginator](#listendpointsbyplatformapplicationpaginator)
+  - [ListOriginationNumbersPaginator](#listoriginationnumberspaginator)
   - [ListPhoneNumbersOptedOutPaginator](#listphonenumbersoptedoutpaginator)
   - [ListPlatformApplicationsPaginator](#listplatformapplicationspaginator)
+  - [ListSMSSandboxPhoneNumbersPaginator](#listsmssandboxphonenumberspaginator)
   - [ListSubscriptionsPaginator](#listsubscriptionspaginator)
   - [ListSubscriptionsByTopicPaginator](#listsubscriptionsbytopicpaginator)
   - [ListTopicsPaginator](#listtopicspaginator)
@@ -40,6 +42,31 @@ Arguments for `ListEndpointsByPlatformApplicationPaginator.paginate` method:
 
 `ListEndpointsByPlatformApplicationPaginator.paginate` returns
 `Iterator`\[[ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef)\].
+
+## ListOriginationNumbersPaginator
+
+Type annotations for
+`boto3.client("sns").get_paginator("list_origination_numbers")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sns.paginator import ListOriginationNumbersPaginator
+
+def get_list_origination_numbers_paginator() -> ListOriginationNumbersPaginator:
+    return boto3.client("sns").get_paginator("list_origination_numbers")
+```
+
+Boto3 documentation:
+[SNS.Paginator.ListOriginationNumbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListOriginationNumbers)
+
+Arguments for `ListOriginationNumbersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListOriginationNumbersPaginator.paginate` returns
+`Iterator`\[[ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef)\].
 
 ## ListPhoneNumbersOptedOutPaginator
 
@@ -90,6 +117,31 @@ Arguments for `ListPlatformApplicationsPaginator.paginate` method:
 
 `ListPlatformApplicationsPaginator.paginate` returns
 `Iterator`\[[ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef)\].
+
+## ListSMSSandboxPhoneNumbersPaginator
+
+Type annotations for
+`boto3.client("sns").get_paginator("list_sms_sandbox_phone_numbers")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sns.paginator import ListSMSSandboxPhoneNumbersPaginator
+
+def get_list_sms_sandbox_phone_numbers_paginator() -> ListSMSSandboxPhoneNumbersPaginator:
+    return boto3.client("sns").get_paginator("list_sms_sandbox_phone_numbers")
+```
+
+Boto3 documentation:
+[SNS.Paginator.ListSMSSandboxPhoneNumbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSMSSandboxPhoneNumbers)
+
+Arguments for `ListSMSSandboxPhoneNumbersPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListSMSSandboxPhoneNumbersPaginator.paginate` returns
+`Iterator`\[[ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef)\].
 
 ## ListSubscriptionsPaginator
 

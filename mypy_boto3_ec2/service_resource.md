@@ -953,6 +953,7 @@ Arguments:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype))
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
 
 Returns [NetworkInterface](#networkinterface).
 
@@ -3537,6 +3538,7 @@ Arguments:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype))
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
 
 Returns [NetworkInterface](#networkinterface).
 

@@ -74,6 +74,7 @@ Values:
 
 - `ALL`
 - `HEALTHY`
+- `HEALTHY_OR_ELSE_ALL`
 - `UNHEALTHY`
 
 ## HealthStatusType

@@ -37,7 +37,9 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_destination](#get_destination)
     - [get_device_profile](#get_device_profile)
+    - [get_log_levels_by_resource_types](#get_log_levels_by_resource_types)
     - [get_partner_account](#get_partner_account)
+    - [get_resource_log_level](#get_resource_log_level)
     - [get_service_endpoint](#get_service_endpoint)
     - [get_service_profile](#get_service_profile)
     - [get_wireless_device](#get_wireless_device)
@@ -56,11 +58,15 @@ type annotations stubs module
     - [list_wireless_devices](#list_wireless_devices)
     - [list_wireless_gateway_task_definitions](#list_wireless_gateway_task_definitions)
     - [list_wireless_gateways](#list_wireless_gateways)
+    - [put_resource_log_level](#put_resource_log_level)
+    - [reset_all_resource_log_levels](#reset_all_resource_log_levels)
+    - [reset_resource_log_level](#reset_resource_log_level)
     - [send_data_to_wireless_device](#send_data_to_wireless_device)
     - [tag_resource](#tag_resource)
     - [test_wireless_device](#test_wireless_device)
     - [untag_resource](#untag_resource)
     - [update_destination](#update_destination)
+    - [update_log_levels_by_resource_types](#update_log_levels_by_resource_types)
     - [update_partner_account](#update_partner_account)
     - [update_wireless_device](#update_wireless_device)
     - [update_wireless_gateway](#update_wireless_gateway)
@@ -525,6 +531,17 @@ Arguments:
 Returns
 [GetDeviceProfileResponseTypeDef](./type_defs.md#getdeviceprofileresponsetypedef).
 
+### get_log_levels_by_resource_types
+
+Type annotations for
+`boto3.client("iotwireless").get_log_levels_by_resource_types` method.
+
+Boto3 documentation:
+[IoTWireless.Client.get_log_levels_by_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_log_levels_by_resource_types)
+
+Returns
+[GetLogLevelsByResourceTypesResponseTypeDef](./type_defs.md#getloglevelsbyresourcetypesresponsetypedef).
+
 ### get_partner_account
 
 Type annotations for `boto3.client("iotwireless").get_partner_account` method.
@@ -540,6 +557,22 @@ Arguments:
 
 Returns
 [GetPartnerAccountResponseTypeDef](./type_defs.md#getpartneraccountresponsetypedef).
+
+### get_resource_log_level
+
+Type annotations for `boto3.client("iotwireless").get_resource_log_level`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.get_resource_log_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_resource_log_level)
+
+Arguments:
+
+- `ResourceIdentifier`: `str` *(required)*
+- `ResourceType`: `str` *(required)*
+
+Returns
+[GetResourceLogLevelResponseTypeDef](./type_defs.md#getresourceloglevelresponsetypedef).
 
 ### get_service_endpoint
 
@@ -826,6 +859,47 @@ Arguments:
 Returns
 [ListWirelessGatewaysResponseTypeDef](./type_defs.md#listwirelessgatewaysresponsetypedef).
 
+### put_resource_log_level
+
+Type annotations for `boto3.client("iotwireless").put_resource_log_level`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.put_resource_log_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.put_resource_log_level)
+
+Arguments:
+
+- `ResourceIdentifier`: `str` *(required)*
+- `ResourceType`: `str` *(required)*
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype) *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### reset_all_resource_log_levels
+
+Type annotations for
+`boto3.client("iotwireless").reset_all_resource_log_levels` method.
+
+Boto3 documentation:
+[IoTWireless.Client.reset_all_resource_log_levels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.reset_all_resource_log_levels)
+
+Returns `Dict`\[`str`, `Any`\].
+
+### reset_resource_log_level
+
+Type annotations for `boto3.client("iotwireless").reset_resource_log_level`
+method.
+
+Boto3 documentation:
+[IoTWireless.Client.reset_resource_log_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.reset_resource_log_level)
+
+Arguments:
+
+- `ResourceIdentifier`: `str` *(required)*
+- `ResourceType`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### send_data_to_wireless_device
 
 Type annotations for `boto3.client("iotwireless").send_data_to_wireless_device`
@@ -901,6 +975,24 @@ Arguments:
 - `Expression`: `str`
 - `Description`: `str`
 - `RoleArn`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_log_levels_by_resource_types
+
+Type annotations for
+`boto3.client("iotwireless").update_log_levels_by_resource_types` method.
+
+Boto3 documentation:
+[IoTWireless.Client.update_log_levels_by_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_log_levels_by_resource_types)
+
+Arguments:
+
+- `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
+- `WirelessDeviceLogOptions`:
+  `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
+- `WirelessGatewayLogOptions`:
+  `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

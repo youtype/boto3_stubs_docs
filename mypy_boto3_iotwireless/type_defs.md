@@ -24,7 +24,9 @@ type annotations stubs module
   - [DeviceProfileTypeDef](#deviceprofiletypedef)
   - [GetDestinationResponseTypeDef](#getdestinationresponsetypedef)
   - [GetDeviceProfileResponseTypeDef](#getdeviceprofileresponsetypedef)
+  - [GetLogLevelsByResourceTypesResponseTypeDef](#getloglevelsbyresourcetypesresponsetypedef)
   - [GetPartnerAccountResponseTypeDef](#getpartneraccountresponsetypedef)
+  - [GetResourceLogLevelResponseTypeDef](#getresourceloglevelresponsetypedef)
   - [GetServiceEndpointResponseTypeDef](#getserviceendpointresponsetypedef)
   - [GetServiceProfileResponseTypeDef](#getserviceprofileresponsetypedef)
   - [GetWirelessDeviceResponseTypeDef](#getwirelessdeviceresponsetypedef)
@@ -74,7 +76,11 @@ type annotations stubs module
   - [TestWirelessDeviceResponseTypeDef](#testwirelessdeviceresponsetypedef)
   - [UpdateWirelessGatewayTaskCreateTypeDef](#updatewirelessgatewaytaskcreatetypedef)
   - [UpdateWirelessGatewayTaskEntryTypeDef](#updatewirelessgatewaytaskentrytypedef)
+  - [WirelessDeviceEventLogOptionTypeDef](#wirelessdeviceeventlogoptiontypedef)
+  - [WirelessDeviceLogOptionTypeDef](#wirelessdevicelogoptiontypedef)
   - [WirelessDeviceStatisticsTypeDef](#wirelessdevicestatisticstypedef)
+  - [WirelessGatewayEventLogOptionTypeDef](#wirelessgatewayeventlogoptiontypedef)
+  - [WirelessGatewayLogOptionTypeDef](#wirelessgatewaylogoptiontypedef)
   - [WirelessGatewayStatisticsTypeDef](#wirelessgatewaystatisticstypedef)
   - [WirelessMetadataTypeDef](#wirelessmetadatatypedef)
 
@@ -269,6 +275,20 @@ Optional fields:
 - `LoRaWAN`:
   [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
 
+## GetLogLevelsByResourceTypesResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetLogLevelsByResourceTypesResponseTypeDef
+```
+
+Optional fields:
+
+- `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
+- `WirelessGatewayLogOptions`:
+  `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
+- `WirelessDeviceLogOptions`:
+  `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
+
 ## GetPartnerAccountResponseTypeDef
 
 ```python
@@ -280,6 +300,16 @@ Optional fields:
 - `Sidewalk`:
   [SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)
 - `AccountLinked`: `bool`
+
+## GetResourceLogLevelResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetResourceLogLevelResponseTypeDef
+```
+
+Optional fields:
+
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
 
 ## GetServiceEndpointResponseTypeDef
 
@@ -922,6 +952,33 @@ Optional fields:
   [LoRaWANUpdateGatewayTaskEntryTypeDef](./type_defs.md#lorawanupdategatewaytaskentrytypedef)
 - `Arn`: `str`
 
+## WirelessDeviceEventLogOptionTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import WirelessDeviceEventLogOptionTypeDef
+```
+
+Required fields:
+
+- `Event`: [WirelessDeviceEventType](./literals.md#wirelessdeviceeventtype)
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+## WirelessDeviceLogOptionTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import WirelessDeviceLogOptionTypeDef
+```
+
+Required fields:
+
+- `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+Optional fields:
+
+- `Events`:
+  `List`\[[WirelessDeviceEventLogOptionTypeDef](./type_defs.md#wirelessdeviceeventlogoptiontypedef)\]
+
 ## WirelessDeviceStatisticsTypeDef
 
 ```python
@@ -940,6 +997,34 @@ Optional fields:
   [LoRaWANListDeviceTypeDef](./type_defs.md#lorawanlistdevicetypedef)
 - `Sidewalk`:
   [SidewalkListDeviceTypeDef](./type_defs.md#sidewalklistdevicetypedef)
+
+## WirelessGatewayEventLogOptionTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import WirelessGatewayEventLogOptionTypeDef
+```
+
+Required fields:
+
+- `Event`: [WirelessGatewayEventType](./literals.md#wirelessgatewayeventtype)
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+## WirelessGatewayLogOptionTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import WirelessGatewayLogOptionTypeDef
+```
+
+Required fields:
+
+- `Type`: `Literal['LoRaWAN']` (see
+  [WirelessGatewayTypeType](./literals.md#wirelessgatewaytypetype))
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+Optional fields:
+
+- `Events`:
+  `List`\[[WirelessGatewayEventLogOptionTypeDef](./type_defs.md#wirelessgatewayeventlogoptiontypedef)\]
 
 ## WirelessGatewayStatisticsTypeDef
 

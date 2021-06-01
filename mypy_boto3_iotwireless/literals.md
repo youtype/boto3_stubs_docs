@@ -13,15 +13,19 @@ type annotations stubs module
   - [DeviceStateType](#devicestatetype)
   - [EventType](#eventtype)
   - [ExpressionTypeType](#expressiontypetype)
+  - [LogLevelType](#logleveltype)
   - [MessageTypeType](#messagetypetype)
   - [PartnerTypeType](#partnertypetype)
   - [SigningAlgType](#signingalgtype)
+  - [WirelessDeviceEventType](#wirelessdeviceeventtype)
   - [WirelessDeviceIdTypeType](#wirelessdeviceidtypetype)
   - [WirelessDeviceTypeType](#wirelessdevicetypetype)
+  - [WirelessGatewayEventType](#wirelessgatewayeventtype)
   - [WirelessGatewayIdTypeType](#wirelessgatewayidtypetype)
   - [WirelessGatewayServiceTypeType](#wirelessgatewayservicetypetype)
   - [WirelessGatewayTaskDefinitionTypeType](#wirelessgatewaytaskdefinitiontypetype)
   - [WirelessGatewayTaskStatusType](#wirelessgatewaytaskstatustype)
+  - [WirelessGatewayTypeType](#wirelessgatewaytypetype)
 
 ## BatteryLevelType
 
@@ -84,6 +88,18 @@ Values:
 - `MqttTopic`
 - `RuleName`
 
+## LogLevelType
+
+```python
+from mypy_boto3_iotwireless.literals import LogLevelType
+```
+
+Values:
+
+- `DISABLED`
+- `ERROR`
+- `INFO`
+
 ## MessageTypeType
 
 ```python
@@ -118,6 +134,20 @@ Values:
 - `Ed25519`
 - `P256r1`
 
+## WirelessDeviceEventType
+
+```python
+from mypy_boto3_iotwireless.literals import WirelessDeviceEventType
+```
+
+Values:
+
+- `Downlink_Data`
+- `Join`
+- `Registration`
+- `Rejoin`
+- `Uplink_Data`
+
 ## WirelessDeviceIdTypeType
 
 ```python
@@ -140,6 +170,17 @@ Values:
 
 - `LoRaWAN`
 - `Sidewalk`
+
+## WirelessGatewayEventType
+
+```python
+from mypy_boto3_iotwireless.literals import WirelessGatewayEventType
+```
+
+Values:
+
+- `Certificate`
+- `CUPS_Request`
 
 ## WirelessGatewayIdTypeType
 
@@ -188,3 +229,13 @@ Values:
 - `IN_PROGRESS`
 - `PENDING`
 - `SECOND_RETRY`
+
+## WirelessGatewayTypeType
+
+```python
+from mypy_boto3_iotwireless.literals import WirelessGatewayTypeType
+```
+
+Values:
+
+- `LoRaWAN`

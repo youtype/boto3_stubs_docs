@@ -40,20 +40,25 @@ from mypy_boto3_sns.client import SNSClient
 - [confirm_subscription](./client.md#confirm_subscription)
 - [create_platform_application](./client.md#create_platform_application)
 - [create_platform_endpoint](./client.md#create_platform_endpoint)
+- [create_sms_sandbox_phone_number](./client.md#create_sms_sandbox_phone_number)
 - [create_topic](./client.md#create_topic)
 - [delete_endpoint](./client.md#delete_endpoint)
 - [delete_platform_application](./client.md#delete_platform_application)
+- [delete_sms_sandbox_phone_number](./client.md#delete_sms_sandbox_phone_number)
 - [delete_topic](./client.md#delete_topic)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_endpoint_attributes](./client.md#get_endpoint_attributes)
 - [get_paginator](./client.md#get_paginator)
 - [get_platform_application_attributes](./client.md#get_platform_application_attributes)
 - [get_sms_attributes](./client.md#get_sms_attributes)
+- [get_sms_sandbox_account_status](./client.md#get_sms_sandbox_account_status)
 - [get_subscription_attributes](./client.md#get_subscription_attributes)
 - [get_topic_attributes](./client.md#get_topic_attributes)
 - [list_endpoints_by_platform_application](./client.md#list_endpoints_by_platform_application)
+- [list_origination_numbers](./client.md#list_origination_numbers)
 - [list_phone_numbers_opted_out](./client.md#list_phone_numbers_opted_out)
 - [list_platform_applications](./client.md#list_platform_applications)
+- [list_sms_sandbox_phone_numbers](./client.md#list_sms_sandbox_phone_numbers)
 - [list_subscriptions](./client.md#list_subscriptions)
 - [list_subscriptions_by_topic](./client.md#list_subscriptions_by_topic)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
@@ -70,6 +75,7 @@ from mypy_boto3_sns.client import SNSClient
 - [tag_resource](./client.md#tag_resource)
 - [unsubscribe](./client.md#unsubscribe)
 - [untag_resource](./client.md#untag_resource)
+- [verify_sms_sandbox_phone_number](./client.md#verify_sms_sandbox_phone_number)
 
 ### Exceptions
 
@@ -91,6 +97,7 @@ SNSClient [exceptions](./client.md#exceptions)
 - KMSOptInRequired
 - KMSThrottlingException
 - NotFoundException
+- OptedOutException
 - PlatformApplicationDisabledException
 - ResourceNotFoundException
 - StaleTagException
@@ -99,6 +106,9 @@ SNSClient [exceptions](./client.md#exceptions)
 - TagPolicyException
 - ThrottledException
 - TopicLimitExceededException
+- UserErrorException
+- ValidationException
+- VerificationException
 
 ## SNSServiceResource
 
@@ -152,8 +162,10 @@ from mypy_boto3_sns.paginators import ListEndpointsByPlatformApplicationPaginato
 ```
 
 - [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
+- [ListOriginationNumbersPaginator](./paginators.md#listoriginationnumberspaginator)
 - [ListPhoneNumbersOptedOutPaginator](./paginators.md#listphonenumbersoptedoutpaginator)
 - [ListPlatformApplicationsPaginator](./paginators.md#listplatformapplicationspaginator)
+- [ListSMSSandboxPhoneNumbersPaginator](./paginators.md#listsmssandboxphonenumberspaginator)
 - [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
 - [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
 - [ListTopicsPaginator](./paginators.md#listtopicspaginator)
@@ -165,15 +177,21 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sns.literals import ListEndpointsByPlatformApplicationPaginatorName, ...
+from mypy_boto3_sns.literals import LanguageCodeStringType, ...
 ```
 
+- [LanguageCodeStringType](./literals.md#languagecodestringtype)
 - [ListEndpointsByPlatformApplicationPaginatorName](./literals.md#listendpointsbyplatformapplicationpaginatorname)
+- [ListOriginationNumbersPaginatorName](./literals.md#listoriginationnumberspaginatorname)
 - [ListPhoneNumbersOptedOutPaginatorName](./literals.md#listphonenumbersoptedoutpaginatorname)
 - [ListPlatformApplicationsPaginatorName](./literals.md#listplatformapplicationspaginatorname)
+- [ListSMSSandboxPhoneNumbersPaginatorName](./literals.md#listsmssandboxphonenumberspaginatorname)
 - [ListSubscriptionsByTopicPaginatorName](./literals.md#listsubscriptionsbytopicpaginatorname)
 - [ListSubscriptionsPaginatorName](./literals.md#listsubscriptionspaginatorname)
 - [ListTopicsPaginatorName](./literals.md#listtopicspaginatorname)
+- [NumberCapabilityType](./literals.md#numbercapabilitytype)
+- [RouteTypeType](./literals.md#routetypetype)
+- [SMSSandboxPhoneNumberVerificationStatusType](./literals.md#smssandboxphonenumberverificationstatustype)
 
 ## Typed dictionaries
 
@@ -195,19 +213,24 @@ from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutResponseTypeDef
 - [GetEndpointAttributesResponseTypeDef](./type_defs.md#getendpointattributesresponsetypedef)
 - [GetPlatformApplicationAttributesResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponsetypedef)
 - [GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef)
+- [GetSMSSandboxAccountStatusResultTypeDef](./type_defs.md#getsmssandboxaccountstatusresulttypedef)
 - [GetSubscriptionAttributesResponseTypeDef](./type_defs.md#getsubscriptionattributesresponsetypedef)
 - [GetTopicAttributesResponseTypeDef](./type_defs.md#gettopicattributesresponsetypedef)
 - [ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef)
+- [ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef)
 - [ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef)
 - [ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef)
+- [ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef)
 - [ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef)
 - [ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef)
 - [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [PhoneNumberInformationTypeDef](./type_defs.md#phonenumberinformationtypedef)
 - [PlatformApplicationTypeDef](./type_defs.md#platformapplicationtypedef)
 - [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef)
+- [SMSSandboxPhoneNumberTypeDef](./type_defs.md#smssandboxphonenumbertypedef)
 - [SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef)
 - [SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)

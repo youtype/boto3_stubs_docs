@@ -1813,6 +1813,7 @@ Arguments:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype))
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
 
 Returns
 [CreateNetworkInterfaceResultTypeDef](./type_defs.md#createnetworkinterfaceresulttypedef).
