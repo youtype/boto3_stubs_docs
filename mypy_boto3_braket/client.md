@@ -58,6 +58,7 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.ConflictException`
 - `Exceptions.DeviceOfflineException`
+- `Exceptions.DeviceRetiredException`
 - `Exceptions.InternalServiceException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`

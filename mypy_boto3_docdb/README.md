@@ -44,12 +44,14 @@ from mypy_boto3_docdb.client import DocDBClient
 - [create_db_instance](./client.md#create_db_instance)
 - [create_db_subnet_group](./client.md#create_db_subnet_group)
 - [create_event_subscription](./client.md#create_event_subscription)
+- [create_global_cluster](./client.md#create_global_cluster)
 - [delete_db_cluster](./client.md#delete_db_cluster)
 - [delete_db_cluster_parameter_group](./client.md#delete_db_cluster_parameter_group)
 - [delete_db_cluster_snapshot](./client.md#delete_db_cluster_snapshot)
 - [delete_db_instance](./client.md#delete_db_instance)
 - [delete_db_subnet_group](./client.md#delete_db_subnet_group)
 - [delete_event_subscription](./client.md#delete_event_subscription)
+- [delete_global_cluster](./client.md#delete_global_cluster)
 - [describe_certificates](./client.md#describe_certificates)
 - [describe_db_cluster_parameter_groups](./client.md#describe_db_cluster_parameter_groups)
 - [describe_db_cluster_parameters](./client.md#describe_db_cluster_parameters)
@@ -63,6 +65,7 @@ from mypy_boto3_docdb.client import DocDBClient
 - [describe_event_categories](./client.md#describe_event_categories)
 - [describe_event_subscriptions](./client.md#describe_event_subscriptions)
 - [describe_events](./client.md#describe_events)
+- [describe_global_clusters](./client.md#describe_global_clusters)
 - [describe_orderable_db_instance_options](./client.md#describe_orderable_db_instance_options)
 - [describe_pending_maintenance_actions](./client.md#describe_pending_maintenance_actions)
 - [failover_db_cluster](./client.md#failover_db_cluster)
@@ -76,7 +79,9 @@ from mypy_boto3_docdb.client import DocDBClient
 - [modify_db_instance](./client.md#modify_db_instance)
 - [modify_db_subnet_group](./client.md#modify_db_subnet_group)
 - [modify_event_subscription](./client.md#modify_event_subscription)
+- [modify_global_cluster](./client.md#modify_global_cluster)
 - [reboot_db_instance](./client.md#reboot_db_instance)
+- [remove_from_global_cluster](./client.md#remove_from_global_cluster)
 - [remove_source_identifier_from_subscription](./client.md#remove_source_identifier_from_subscription)
 - [remove_tags_from_resource](./client.md#remove_tags_from_resource)
 - [reset_db_cluster_parameter_group](./client.md#reset_db_cluster_parameter_group)
@@ -113,6 +118,9 @@ DocDBClient [exceptions](./client.md#exceptions)
 - DBSubnetQuotaExceededFault
 - DBUpgradeDependencyFailureFault
 - EventSubscriptionQuotaExceededFault
+- GlobalClusterAlreadyExistsFault
+- GlobalClusterNotFoundFault
+- GlobalClusterQuotaExceededFault
 - InstanceQuotaExceededFault
 - InsufficientDBClusterCapacityFault
 - InsufficientDBInstanceCapacityFault
@@ -126,6 +134,7 @@ DocDBClient [exceptions](./client.md#exceptions)
 - InvalidDBSubnetGroupStateFault
 - InvalidDBSubnetStateFault
 - InvalidEventSubscriptionStateFault
+- InvalidGlobalClusterStateFault
 - InvalidRestoreFault
 - InvalidSubnet
 - InvalidVPCNetworkStateFault
@@ -165,6 +174,7 @@ from mypy_boto3_docdb.paginators import DescribeCertificatesPaginator, ...
 - [DescribeDBSubnetGroupsPaginator](./paginators.md#describedbsubnetgroupspaginator)
 - [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
 - [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- [DescribeGlobalClustersPaginator](./paginators.md#describeglobalclusterspaginator)
 - [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
 
@@ -205,6 +215,7 @@ from mypy_boto3_docdb.literals import ApplyMethodType, ...
 - [DescribeDBSubnetGroupsPaginatorName](./literals.md#describedbsubnetgroupspaginatorname)
 - [DescribeEventSubscriptionsPaginatorName](./literals.md#describeeventsubscriptionspaginatorname)
 - [DescribeEventsPaginatorName](./literals.md#describeeventspaginatorname)
+- [DescribeGlobalClustersPaginatorName](./literals.md#describeglobalclusterspaginatorname)
 - [DescribeOrderableDBInstanceOptionsPaginatorName](./literals.md#describeorderabledbinstanceoptionspaginatorname)
 - [DescribePendingMaintenanceActionsPaginatorName](./literals.md#describependingmaintenanceactionspaginatorname)
 - [SourceTypeType](./literals.md#sourcetypetype)
@@ -234,6 +245,7 @@ from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionResultTy
 - [CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef)
 - [CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef)
 - [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef)
+- [CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef)
 - [DBClusterMemberTypeDef](./type_defs.md#dbclustermembertypedef)
 - [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef)
 - [DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef)
@@ -257,6 +269,7 @@ from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionResultTy
 - [DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef)
 - [DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef)
 - [DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef)
+- [DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef)
 - [DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef)
 - [DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
@@ -269,11 +282,15 @@ from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionResultTy
 - [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)
 - [FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
+- [GlobalClusterMemberTypeDef](./type_defs.md#globalclustermembertypedef)
+- [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
+- [GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef)
 - [ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef)
 - [ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef)
 - [ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef)
 - [ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef)
 - [ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef)
+- [ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef)
 - [OrderableDBInstanceOptionTypeDef](./type_defs.md#orderabledbinstanceoptiontypedef)
 - [OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -283,6 +300,7 @@ from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionResultTy
 - [PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef)
 - [PendingModifiedValuesTypeDef](./type_defs.md#pendingmodifiedvaluestypedef)
 - [RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef)
+- [RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef)
 - [RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef)
 - [ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)
 - [RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef)

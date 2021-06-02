@@ -502,6 +502,7 @@ Optional fields:
 - `DeleteOnTermination`: `bool`
 - `Iops`: `int`
 - `Encrypted`: `bool`
+- `Throughput`: `int`
 
 ## EnabledMetricTypeDef
 

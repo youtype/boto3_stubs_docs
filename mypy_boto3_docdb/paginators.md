@@ -18,6 +18,7 @@ type annotations stubs module
   - [DescribeDBSubnetGroupsPaginator](#describedbsubnetgroupspaginator)
   - [DescribeEventSubscriptionsPaginator](#describeeventsubscriptionspaginator)
   - [DescribeEventsPaginator](#describeeventspaginator)
+  - [DescribeGlobalClustersPaginator](#describeglobalclusterspaginator)
   - [DescribeOrderableDBInstanceOptionsPaginator](#describeorderabledbinstanceoptionspaginator)
   - [DescribePendingMaintenanceActionsPaginator](#describependingmaintenanceactionspaginator)
 
@@ -304,6 +305,33 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 
 `DescribeEventsPaginator.paginate` returns
 `Iterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
+
+## DescribeGlobalClustersPaginator
+
+Type annotations for
+`boto3.client("docdb").get_paginator("describe_global_clusters")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_docdb.paginator import DescribeGlobalClustersPaginator
+
+def get_describe_global_clusters_paginator() -> DescribeGlobalClustersPaginator:
+    return boto3.client("docdb").get_paginator("describe_global_clusters")
+```
+
+Boto3 documentation:
+[DocDB.Paginator.DescribeGlobalClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Paginator.DescribeGlobalClusters)
+
+Arguments for `DescribeGlobalClustersPaginator.paginate` method:
+
+- `GlobalClusterIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeGlobalClustersPaginator.paginate` returns
+`Iterator`\[[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef)\].
 
 ## DescribeOrderableDBInstanceOptionsPaginator
 

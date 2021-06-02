@@ -37,6 +37,7 @@ Values:
 
 - `OFFLINE`
 - `ONLINE`
+- `RETIRED`
 
 ## DeviceTypeType
 

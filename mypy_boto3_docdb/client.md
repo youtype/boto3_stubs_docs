@@ -23,12 +23,14 @@ type annotations stubs module
     - [create_db_instance](#create_db_instance)
     - [create_db_subnet_group](#create_db_subnet_group)
     - [create_event_subscription](#create_event_subscription)
+    - [create_global_cluster](#create_global_cluster)
     - [delete_db_cluster](#delete_db_cluster)
     - [delete_db_cluster_parameter_group](#delete_db_cluster_parameter_group)
     - [delete_db_cluster_snapshot](#delete_db_cluster_snapshot)
     - [delete_db_instance](#delete_db_instance)
     - [delete_db_subnet_group](#delete_db_subnet_group)
     - [delete_event_subscription](#delete_event_subscription)
+    - [delete_global_cluster](#delete_global_cluster)
     - [describe_certificates](#describe_certificates)
     - [describe_db_cluster_parameter_groups](#describe_db_cluster_parameter_groups)
     - [describe_db_cluster_parameters](#describe_db_cluster_parameters)
@@ -42,6 +44,7 @@ type annotations stubs module
     - [describe_event_categories](#describe_event_categories)
     - [describe_event_subscriptions](#describe_event_subscriptions)
     - [describe_events](#describe_events)
+    - [describe_global_clusters](#describe_global_clusters)
     - [describe_orderable_db_instance_options](#describe_orderable_db_instance_options)
     - [describe_pending_maintenance_actions](#describe_pending_maintenance_actions)
     - [failover_db_cluster](#failover_db_cluster)
@@ -53,7 +56,9 @@ type annotations stubs module
     - [modify_db_instance](#modify_db_instance)
     - [modify_db_subnet_group](#modify_db_subnet_group)
     - [modify_event_subscription](#modify_event_subscription)
+    - [modify_global_cluster](#modify_global_cluster)
     - [reboot_db_instance](#reboot_db_instance)
+    - [remove_from_global_cluster](#remove_from_global_cluster)
     - [remove_source_identifier_from_subscription](#remove_source_identifier_from_subscription)
     - [remove_tags_from_resource](#remove_tags_from_resource)
     - [reset_db_cluster_parameter_group](#reset_db_cluster_parameter_group)
@@ -118,6 +123,9 @@ Exceptions:
 - `Exceptions.DBSubnetQuotaExceededFault`
 - `Exceptions.DBUpgradeDependencyFailureFault`
 - `Exceptions.EventSubscriptionQuotaExceededFault`
+- `Exceptions.GlobalClusterAlreadyExistsFault`
+- `Exceptions.GlobalClusterNotFoundFault`
+- `Exceptions.GlobalClusterQuotaExceededFault`
 - `Exceptions.InstanceQuotaExceededFault`
 - `Exceptions.InsufficientDBClusterCapacityFault`
 - `Exceptions.InsufficientDBInstanceCapacityFault`
@@ -131,6 +139,7 @@ Exceptions:
 - `Exceptions.InvalidDBSubnetGroupStateFault`
 - `Exceptions.InvalidDBSubnetStateFault`
 - `Exceptions.InvalidEventSubscriptionStateFault`
+- `Exceptions.InvalidGlobalClusterStateFault`
 - `Exceptions.InvalidRestoreFault`
 - `Exceptions.InvalidSubnet`
 - `Exceptions.InvalidVPCNetworkStateFault`
@@ -258,8 +267,6 @@ Arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `Engine`: `str` *(required)*
-- `MasterUsername`: `str` *(required)*
-- `MasterUserPassword`: `str` *(required)*
 - `AvailabilityZones`: `List`\[`str`\]
 - `BackupRetentionPeriod`: `int`
 - `DBClusterParameterGroupName`: `str`
@@ -267,6 +274,8 @@ Arguments:
 - `DBSubnetGroupName`: `str`
 - `EngineVersion`: `str`
 - `Port`: `int`
+- `MasterUsername`: `str`
+- `MasterUserPassword`: `str`
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -275,6 +284,7 @@ Arguments:
 - `PreSignedUrl`: `str`
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `DeletionProtection`: `bool`
+- `GlobalClusterIdentifier`: `str`
 - `SourceRegion`: `str`
 
 Returns
@@ -373,6 +383,26 @@ Arguments:
 Returns
 [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
 
+### create_global_cluster
+
+Type annotations for `boto3.client("docdb").create_global_cluster` method.
+
+Boto3 documentation:
+[DocDB.Client.create_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_global_cluster)
+
+Arguments:
+
+- `GlobalClusterIdentifier`: `str` *(required)*
+- `SourceDBClusterIdentifier`: `str`
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `DeletionProtection`: `bool`
+- `DatabaseName`: `str`
+- `StorageEncrypted`: `bool`
+
+Returns
+[CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef).
+
 ### delete_db_cluster
 
 Type annotations for `boto3.client("docdb").delete_db_cluster` method.
@@ -453,6 +483,20 @@ Arguments:
 
 Returns
 [DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
+
+### delete_global_cluster
+
+Type annotations for `boto3.client("docdb").delete_global_cluster` method.
+
+Boto3 documentation:
+[DocDB.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_global_cluster)
+
+Arguments:
+
+- `GlobalClusterIdentifier`: `str` *(required)*
+
+Returns
+[DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef).
 
 ### describe_certificates
 
@@ -688,6 +732,23 @@ Arguments:
 
 Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
+### describe_global_clusters
+
+Type annotations for `boto3.client("docdb").describe_global_clusters` method.
+
+Boto3 documentation:
+[DocDB.Client.describe_global_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_global_clusters)
+
+Arguments:
+
+- `GlobalClusterIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+Returns
+[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef).
+
 ### describe_orderable_db_instance_options
 
 Type annotations for
@@ -890,6 +951,22 @@ Arguments:
 Returns
 [ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
+### modify_global_cluster
+
+Type annotations for `boto3.client("docdb").modify_global_cluster` method.
+
+Boto3 documentation:
+[DocDB.Client.modify_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_global_cluster)
+
+Arguments:
+
+- `GlobalClusterIdentifier`: `str` *(required)*
+- `NewGlobalClusterIdentifier`: `str`
+- `DeletionProtection`: `bool`
+
+Returns
+[ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef).
+
 ### reboot_db_instance
 
 Type annotations for `boto3.client("docdb").reboot_db_instance` method.
@@ -904,6 +981,21 @@ Arguments:
 
 Returns
 [RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
+
+### remove_from_global_cluster
+
+Type annotations for `boto3.client("docdb").remove_from_global_cluster` method.
+
+Boto3 documentation:
+[DocDB.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_from_global_cluster)
+
+Arguments:
+
+- `GlobalClusterIdentifier`: `str` *(required)*
+- `DbClusterIdentifier`: `str` *(required)*
+
+Returns
+[RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef).
 
 ### remove_source_identifier_from_subscription
 
@@ -1054,6 +1146,8 @@ overloads.
   [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
 - `client.get_paginator("describe_events")` ->
   [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_global_clusters")` ->
+  [DescribeGlobalClustersPaginator](./paginators.md#describeglobalclusterspaginator)
 - `client.get_paginator("describe_orderable_db_instance_options")` ->
   [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - `client.get_paginator("describe_pending_maintenance_actions")` ->

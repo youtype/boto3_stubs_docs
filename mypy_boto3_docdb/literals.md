@@ -21,6 +21,7 @@ type annotations stubs module
   - [DescribeDBSubnetGroupsPaginatorName](#describedbsubnetgroupspaginatorname)
   - [DescribeEventSubscriptionsPaginatorName](#describeeventsubscriptionspaginatorname)
   - [DescribeEventsPaginatorName](#describeeventspaginatorname)
+  - [DescribeGlobalClustersPaginatorName](#describeglobalclusterspaginatorname)
   - [DescribeOrderableDBInstanceOptionsPaginatorName](#describeorderabledbinstanceoptionspaginatorname)
   - [DescribePendingMaintenanceActionsPaginatorName](#describependingmaintenanceactionspaginatorname)
   - [SourceTypeType](#sourcetypetype)
@@ -155,6 +156,16 @@ from mypy_boto3_docdb.literals import DescribeEventsPaginatorName
 Values:
 
 - `describe_events`
+
+## DescribeGlobalClustersPaginatorName
+
+```python
+from mypy_boto3_docdb.literals import DescribeGlobalClustersPaginatorName
+```
+
+Values:
+
+- `describe_global_clusters`
 
 ## DescribeOrderableDBInstanceOptionsPaginatorName
 

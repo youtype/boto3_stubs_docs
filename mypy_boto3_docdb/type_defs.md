@@ -22,6 +22,7 @@ type annotations stubs module
   - [CreateDBInstanceResultTypeDef](#createdbinstanceresulttypedef)
   - [CreateDBSubnetGroupResultTypeDef](#createdbsubnetgroupresulttypedef)
   - [CreateEventSubscriptionResultTypeDef](#createeventsubscriptionresulttypedef)
+  - [CreateGlobalClusterResultTypeDef](#createglobalclusterresulttypedef)
   - [DBClusterMemberTypeDef](#dbclustermembertypedef)
   - [DBClusterMessageTypeDef](#dbclustermessagetypedef)
   - [DBClusterParameterGroupDetailsTypeDef](#dbclusterparametergroupdetailstypedef)
@@ -45,6 +46,7 @@ type annotations stubs module
   - [DeleteDBClusterSnapshotResultTypeDef](#deletedbclustersnapshotresulttypedef)
   - [DeleteDBInstanceResultTypeDef](#deletedbinstanceresulttypedef)
   - [DeleteEventSubscriptionResultTypeDef](#deleteeventsubscriptionresulttypedef)
+  - [DeleteGlobalClusterResultTypeDef](#deleteglobalclusterresulttypedef)
   - [DescribeDBClusterSnapshotAttributesResultTypeDef](#describedbclustersnapshotattributesresulttypedef)
   - [DescribeEngineDefaultClusterParametersResultTypeDef](#describeenginedefaultclusterparametersresulttypedef)
   - [EndpointTypeDef](#endpointtypedef)
@@ -57,11 +59,15 @@ type annotations stubs module
   - [EventsMessageTypeDef](#eventsmessagetypedef)
   - [FailoverDBClusterResultTypeDef](#failoverdbclusterresulttypedef)
   - [FilterTypeDef](#filtertypedef)
+  - [GlobalClusterMemberTypeDef](#globalclustermembertypedef)
+  - [GlobalClusterTypeDef](#globalclustertypedef)
+  - [GlobalClustersMessageTypeDef](#globalclustersmessagetypedef)
   - [ModifyDBClusterResultTypeDef](#modifydbclusterresulttypedef)
   - [ModifyDBClusterSnapshotAttributeResultTypeDef](#modifydbclustersnapshotattributeresulttypedef)
   - [ModifyDBInstanceResultTypeDef](#modifydbinstanceresulttypedef)
   - [ModifyDBSubnetGroupResultTypeDef](#modifydbsubnetgroupresulttypedef)
   - [ModifyEventSubscriptionResultTypeDef](#modifyeventsubscriptionresulttypedef)
+  - [ModifyGlobalClusterResultTypeDef](#modifyglobalclusterresulttypedef)
   - [OrderableDBInstanceOptionTypeDef](#orderabledbinstanceoptiontypedef)
   - [OrderableDBInstanceOptionsMessageTypeDef](#orderabledbinstanceoptionsmessagetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -71,6 +77,7 @@ type annotations stubs module
   - [PendingMaintenanceActionsMessageTypeDef](#pendingmaintenanceactionsmessagetypedef)
   - [PendingModifiedValuesTypeDef](#pendingmodifiedvaluestypedef)
   - [RebootDBInstanceResultTypeDef](#rebootdbinstanceresulttypedef)
+  - [RemoveFromGlobalClusterResultTypeDef](#removefromglobalclusterresulttypedef)
   - [RemoveSourceIdentifierFromSubscriptionResultTypeDef](#removesourceidentifierfromsubscriptionresulttypedef)
   - [ResourcePendingMaintenanceActionsTypeDef](#resourcependingmaintenanceactionstypedef)
   - [RestoreDBClusterFromSnapshotResultTypeDef](#restoredbclusterfromsnapshotresulttypedef)
@@ -238,6 +245,16 @@ Optional fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+
+## CreateGlobalClusterResultTypeDef
+
+```python
+from mypy_boto3_docdb.type_defs import CreateGlobalClusterResultTypeDef
+```
+
+Optional fields:
+
+- `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
 
 ## DBClusterMemberTypeDef
 
@@ -407,6 +424,8 @@ Optional fields:
 - `MasterUsername`: `str`
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
+- `ReplicationSourceIdentifier`: `str`
+- `ReadReplicaIdentifiers`: `List`\[`str`\]
 - `DBClusterMembers`:
   `List`\[[DBClusterMemberTypeDef](./type_defs.md#dbclustermembertypedef)\]
 - `VpcSecurityGroups`:
@@ -584,6 +603,16 @@ Optional fields:
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 
+## DeleteGlobalClusterResultTypeDef
+
+```python
+from mypy_boto3_docdb.type_defs import DeleteGlobalClusterResultTypeDef
+```
+
+Optional fields:
+
+- `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
+
 ## DescribeDBClusterSnapshotAttributesResultTypeDef
 
 ```python
@@ -730,6 +759,50 @@ Required fields:
 - `Name`: `str`
 - `Values`: `List`\[`str`\]
 
+## GlobalClusterMemberTypeDef
+
+```python
+from mypy_boto3_docdb.type_defs import GlobalClusterMemberTypeDef
+```
+
+Optional fields:
+
+- `DBClusterArn`: `str`
+- `Readers`: `List`\[`str`\]
+- `IsWriter`: `bool`
+
+## GlobalClusterTypeDef
+
+```python
+from mypy_boto3_docdb.type_defs import GlobalClusterTypeDef
+```
+
+Optional fields:
+
+- `GlobalClusterIdentifier`: `str`
+- `GlobalClusterResourceId`: `str`
+- `GlobalClusterArn`: `str`
+- `Status`: `str`
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `DatabaseName`: `str`
+- `StorageEncrypted`: `bool`
+- `DeletionProtection`: `bool`
+- `GlobalClusterMembers`:
+  `List`\[[GlobalClusterMemberTypeDef](./type_defs.md#globalclustermembertypedef)\]
+
+## GlobalClustersMessageTypeDef
+
+```python
+from mypy_boto3_docdb.type_defs import GlobalClustersMessageTypeDef
+```
+
+Optional fields:
+
+- `Marker`: `str`
+- `GlobalClusters`:
+  `List`\[[GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)\]
+
 ## ModifyDBClusterResultTypeDef
 
 ```python
@@ -781,6 +854,16 @@ Optional fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+
+## ModifyGlobalClusterResultTypeDef
+
+```python
+from mypy_boto3_docdb.type_defs import ModifyGlobalClusterResultTypeDef
+```
+
+Optional fields:
+
+- `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
 
 ## OrderableDBInstanceOptionTypeDef
 
@@ -912,6 +995,16 @@ from mypy_boto3_docdb.type_defs import RebootDBInstanceResultTypeDef
 Optional fields:
 
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+
+## RemoveFromGlobalClusterResultTypeDef
+
+```python
+from mypy_boto3_docdb.type_defs import RemoveFromGlobalClusterResultTypeDef
+```
+
+Optional fields:
+
+- `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
 
 ## RemoveSourceIdentifierFromSubscriptionResultTypeDef
 

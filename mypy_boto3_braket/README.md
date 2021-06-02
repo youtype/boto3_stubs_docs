@@ -52,6 +52,7 @@ BraketClient [exceptions](./client.md#exceptions)
 - ClientError
 - ConflictException
 - DeviceOfflineException
+- DeviceRetiredException
 - InternalServiceException
 - ResourceNotFoundException
 - ServiceQuotaExceededException
