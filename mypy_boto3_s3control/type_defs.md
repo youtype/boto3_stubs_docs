@@ -987,6 +987,7 @@ Optional fields:
   [S3ObjectLockLegalHoldStatusType](./literals.md#s3objectlocklegalholdstatustype)
 - `ObjectLockMode`: [S3ObjectLockModeType](./literals.md#s3objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `datetime`
+- `BucketKeyEnabled`: `bool`
 
 ## S3GrantTypeDef
 

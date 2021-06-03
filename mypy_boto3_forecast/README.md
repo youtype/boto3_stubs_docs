@@ -113,6 +113,7 @@ from mypy_boto3_forecast.literals import AttributeTypeType, ...
 ```
 
 - [AttributeTypeType](./literals.md#attributetypetype)
+- [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
 - [DatasetTypeType](./literals.md#datasettypetype)
 - [DomainType](./literals.md#domaintype)
 - [EvaluationTypeType](./literals.md#evaluationtypetype)

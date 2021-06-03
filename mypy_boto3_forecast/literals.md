@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Literals for boto3 ForecastService module](#literals-for-boto3-forecastservice-module)
   - [AttributeTypeType](#attributetypetype)
+  - [AutoMLOverrideStrategyType](#automloverridestrategytype)
   - [DatasetTypeType](#datasettypetype)
   - [DomainType](#domaintype)
   - [EvaluationTypeType](#evaluationtypetype)
@@ -36,6 +37,16 @@ Values:
 - `integer`
 - `string`
 - `timestamp`
+
+## AutoMLOverrideStrategyType
+
+```python
+from mypy_boto3_forecast.literals import AutoMLOverrideStrategyType
+```
+
+Values:
+
+- `LatencyOptimized`
 
 ## DatasetTypeType
 

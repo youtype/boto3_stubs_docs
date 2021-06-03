@@ -373,6 +373,7 @@ from mypy_boto3_s3.literals import InventoryOptionalFieldType
 
 Values:
 
+- `BucketKeyStatus`
 - `EncryptionStatus`
 - `ETag`
 - `IntelligentTieringAccessTier`

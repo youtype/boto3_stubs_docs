@@ -359,6 +359,8 @@ Optional fields:
 - `ForecastHorizon`: `int`
 - `ForecastTypes`: `List`\[`str`\]
 - `PerformAutoML`: `bool`
+- `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
+  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
 - `PerformHPO`: `bool`
 - `TrainingParameters`: `Dict`\[`str`, `str`\]
 - `EvaluationParameters`:
@@ -530,6 +532,8 @@ Optional fields:
 
 - `PredictorEvaluationResults`:
   `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
+- `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
+  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
 
 ## HyperParameterTuningJobConfigTypeDef
 
