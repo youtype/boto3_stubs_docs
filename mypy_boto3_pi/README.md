@@ -33,6 +33,7 @@ from mypy_boto3_pi.client import PIClient
 - [can_paginate](./client.md#can_paginate)
 - [describe_dimension_keys](./client.md#describe_dimension_keys)
 - [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_dimension_key_details](./client.md#get_dimension_key_details)
 - [get_resource_metrics](./client.md#get_resource_metrics)
 
 ### Exceptions
@@ -51,9 +52,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_pi.literals import ServiceTypeType, ...
+from mypy_boto3_pi.literals import DetailStatusType, ...
 ```
 
+- [DetailStatusType](./literals.md#detailstatustype)
 - [ServiceTypeType](./literals.md#servicetypetype)
 
 ## Typed dictionaries
@@ -71,6 +73,8 @@ from mypy_boto3_pi.type_defs import DataPointTypeDef, ...
 - [DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef)
 - [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
 - [DimensionKeyDescriptionTypeDef](./type_defs.md#dimensionkeydescriptiontypedef)
+- [DimensionKeyDetailTypeDef](./type_defs.md#dimensionkeydetailtypedef)
+- [GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef)
 - [GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef)
 - [MetricKeyDataPointsTypeDef](./type_defs.md#metrickeydatapointstypedef)
 - [MetricQueryTypeDef](./type_defs.md#metricquerytypedef)

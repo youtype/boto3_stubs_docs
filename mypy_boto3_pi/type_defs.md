@@ -12,6 +12,8 @@ type annotations stubs module
   - [DescribeDimensionKeysResponseTypeDef](#describedimensionkeysresponsetypedef)
   - [DimensionGroupTypeDef](#dimensiongrouptypedef)
   - [DimensionKeyDescriptionTypeDef](#dimensionkeydescriptiontypedef)
+  - [DimensionKeyDetailTypeDef](#dimensionkeydetailtypedef)
+  - [GetDimensionKeyDetailsResponseTypeDef](#getdimensionkeydetailsresponsetypedef)
   - [GetResourceMetricsResponseTypeDef](#getresourcemetricsresponsetypedef)
   - [MetricKeyDataPointsTypeDef](#metrickeydatapointstypedef)
   - [MetricQueryTypeDef](#metricquerytypedef)
@@ -71,6 +73,29 @@ Optional fields:
 - `Dimensions`: `Dict`\[`str`, `str`\]
 - `Total`: `float`
 - `Partitions`: `List`\[`float`\]
+
+## DimensionKeyDetailTypeDef
+
+```python
+from mypy_boto3_pi.type_defs import DimensionKeyDetailTypeDef
+```
+
+Optional fields:
+
+- `Value`: `str`
+- `Dimension`: `str`
+- `Status`: [DetailStatusType](./literals.md#detailstatustype)
+
+## GetDimensionKeyDetailsResponseTypeDef
+
+```python
+from mypy_boto3_pi.type_defs import GetDimensionKeyDetailsResponseTypeDef
+```
+
+Optional fields:
+
+- `Dimensions`:
+  `List`\[[DimensionKeyDetailTypeDef](./type_defs.md#dimensionkeydetailtypedef)\]
 
 ## GetResourceMetricsResponseTypeDef
 

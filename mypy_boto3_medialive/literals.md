@@ -1224,6 +1224,7 @@ from mypy_boto3_medialive.literals import H264AdaptiveQuantizationType
 
 Values:
 
+- `AUTO`
 - `HIGH`
 - `HIGHER`
 - `LOW`
@@ -1481,6 +1482,7 @@ from mypy_boto3_medialive.literals import H265AdaptiveQuantizationType
 
 Values:
 
+- `AUTO`
 - `HIGH`
 - `HIGHER`
 - `LOW`

@@ -8,7 +8,20 @@ type annotations stubs module
 [mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
 
 - [Literals for boto3 PI module](#literals-for-boto3-pi-module)
+  - [DetailStatusType](#detailstatustype)
   - [ServiceTypeType](#servicetypetype)
+
+## DetailStatusType
+
+```python
+from mypy_boto3_pi.literals import DetailStatusType
+```
+
+Values:
+
+- `AVAILABLE`
+- `PROCESSING`
+- `UNAVAILABLE`
 
 ## ServiceTypeType
 

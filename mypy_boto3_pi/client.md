@@ -14,6 +14,7 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [describe_dimension_keys](#describe_dimension_keys)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_dimension_key_details](#get_dimension_key_details)
     - [get_resource_metrics](#get_resource_metrics)
 
 ## PIClient
@@ -107,6 +108,25 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### get_dimension_key_details
+
+Type annotations for `boto3.client("pi").get_dimension_key_details` method.
+
+Boto3 documentation:
+[PI.Client.get_dimension_key_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_dimension_key_details)
+
+Arguments:
+
+- `ServiceType`: `Literal['RDS']` (see
+  [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
+- `Identifier`: `str` *(required)*
+- `Group`: `str` *(required)*
+- `GroupIdentifier`: `str` *(required)*
+- `RequestedDimensions`: `List`\[`str`\]
+
+Returns
+[GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef).
 
 ### get_resource_metrics
 
