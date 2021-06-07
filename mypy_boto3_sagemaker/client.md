@@ -208,6 +208,8 @@ type annotations stubs module
     - [register_devices](#register_devices)
     - [render_ui_template](#render_ui_template)
     - [search](#search)
+    - [send_pipeline_execution_step_failure](#send_pipeline_execution_step_failure)
+    - [send_pipeline_execution_step_success](#send_pipeline_execution_step_success)
     - [start_monitoring_schedule](#start_monitoring_schedule)
     - [start_notebook_instance](#start_notebook_instance)
     - [start_pipeline_execution](#start_pipeline_execution)
@@ -3874,6 +3876,41 @@ Arguments:
 - `MaxResults`: `int`
 
 Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
+
+### send_pipeline_execution_step_failure
+
+Type annotations for
+`boto3.client("sagemaker").send_pipeline_execution_step_failure` method.
+
+Boto3 documentation:
+[SageMaker.Client.send_pipeline_execution_step_failure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.send_pipeline_execution_step_failure)
+
+Arguments:
+
+- `CallbackToken`: `str` *(required)*
+- `FailureReason`: `str`
+- `ClientRequestToken`: `str`
+
+Returns
+[SendPipelineExecutionStepFailureResponseTypeDef](./type_defs.md#sendpipelineexecutionstepfailureresponsetypedef).
+
+### send_pipeline_execution_step_success
+
+Type annotations for
+`boto3.client("sagemaker").send_pipeline_execution_step_success` method.
+
+Boto3 documentation:
+[SageMaker.Client.send_pipeline_execution_step_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.send_pipeline_execution_step_success)
+
+Arguments:
+
+- `CallbackToken`: `str` *(required)*
+- `OutputParameters`:
+  `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
+- `ClientRequestToken`: `str`
+
+Returns
+[SendPipelineExecutionStepSuccessResponseTypeDef](./type_defs.md#sendpipelineexecutionstepsuccessresponsetypedef).
 
 ### start_monitoring_schedule
 

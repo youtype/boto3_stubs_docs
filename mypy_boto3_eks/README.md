@@ -225,6 +225,7 @@ from mypy_boto3_eks.type_defs import AddonHealthTypeDef, ...
 - [NodegroupResourcesTypeDef](./type_defs.md#nodegroupresourcestypedef)
 - [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
 - [NodegroupTypeDef](./type_defs.md#nodegrouptypedef)
+- [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
 - [OIDCTypeDef](./type_defs.md#oidctypedef)
 - [OidcIdentityProviderConfigRequestTypeDef](./type_defs.md#oidcidentityproviderconfigrequesttypedef)
 - [OidcIdentityProviderConfigTypeDef](./type_defs.md#oidcidentityproviderconfigtypedef)

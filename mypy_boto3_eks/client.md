@@ -238,6 +238,8 @@ Arguments:
 - `clientRequestToken`: `str`
 - `launchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
+- `updateConfig`:
+  [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
 - `capacityType`: [CapacityTypesType](./literals.md#capacitytypestype)
 - `version`: `str`
 - `releaseVersion`: `str`
@@ -660,6 +662,8 @@ Arguments:
   [UpdateTaintsPayloadTypeDef](./type_defs.md#updatetaintspayloadtypedef)
 - `scalingConfig`:
   [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
+- `updateConfig`:
+  [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
 - `clientRequestToken`: `str`
 
 Returns

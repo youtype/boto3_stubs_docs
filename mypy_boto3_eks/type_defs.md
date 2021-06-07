@@ -59,6 +59,7 @@ type annotations stubs module
   - [NodegroupResourcesTypeDef](#nodegroupresourcestypedef)
   - [NodegroupScalingConfigTypeDef](#nodegroupscalingconfigtypedef)
   - [NodegroupTypeDef](#nodegrouptypedef)
+  - [NodegroupUpdateConfigTypeDef](#nodegroupupdateconfigtypedef)
   - [OIDCTypeDef](#oidctypedef)
   - [OidcIdentityProviderConfigRequestTypeDef](#oidcidentityproviderconfigrequesttypedef)
   - [OidcIdentityProviderConfigTypeDef](#oidcidentityproviderconfigtypedef)
@@ -685,9 +686,22 @@ Optional fields:
   [NodegroupResourcesTypeDef](./type_defs.md#nodegroupresourcestypedef)
 - `diskSize`: `int`
 - `health`: [NodegroupHealthTypeDef](./type_defs.md#nodegrouphealthtypedef)
+- `updateConfig`:
+  [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
 - `launchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
+
+## NodegroupUpdateConfigTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import NodegroupUpdateConfigTypeDef
+```
+
+Optional fields:
+
+- `maxUnavailable`: `int`
+- `maxUnavailablePercentage`: `int`
 
 ## OIDCTypeDef
 

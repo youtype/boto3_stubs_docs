@@ -375,6 +375,8 @@ Values:
 - `LaunchTemplateName`
 - `LaunchTemplateVersion`
 - `MaxSize`
+- `MaxUnavailable`
+- `MaxUnavailablePercentage`
 - `MinSize`
 - `PlatformVersion`
 - `PublicAccessCidrs`

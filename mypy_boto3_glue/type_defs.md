@@ -3068,6 +3068,7 @@ Optional fields:
 - `Path`: `str`
 - `Exclusions`: `List`\[`str`\]
 - `ConnectionName`: `str`
+- `SampleSize`: `int`
 
 ## ScheduleTypeDef
 

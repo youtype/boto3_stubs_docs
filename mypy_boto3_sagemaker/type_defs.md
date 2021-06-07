@@ -48,6 +48,7 @@ type annotations stubs module
   - [BiasTypeDef](#biastypedef)
   - [BlueGreenUpdatePolicyTypeDef](#bluegreenupdatepolicytypedef)
   - [CacheHitResultTypeDef](#cachehitresulttypedef)
+  - [CallbackStepMetadataTypeDef](#callbackstepmetadatatypedef)
   - [CandidateArtifactLocationsTypeDef](#candidateartifactlocationstypedef)
   - [CandidatePropertiesTypeDef](#candidatepropertiestypedef)
   - [CapacitySizeTypeDef](#capacitysizetypedef)
@@ -380,6 +381,7 @@ type annotations stubs module
   - [OnlineStoreSecurityConfigTypeDef](#onlinestoresecurityconfigtypedef)
   - [OutputConfigTypeDef](#outputconfigtypedef)
   - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
+  - [OutputParameterTypeDef](#outputparametertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterRangeTypeDef](#parameterrangetypedef)
   - [ParameterRangesTypeDef](#parameterrangestypedef)
@@ -390,6 +392,7 @@ type annotations stubs module
   - [PipelineExecutionStepTypeDef](#pipelineexecutionsteptypedef)
   - [PipelineExecutionSummaryTypeDef](#pipelineexecutionsummarytypedef)
   - [PipelineExecutionTypeDef](#pipelineexecutiontypedef)
+  - [PipelineExperimentConfigTypeDef](#pipelineexperimentconfigtypedef)
   - [PipelineSummaryTypeDef](#pipelinesummarytypedef)
   - [PipelineTypeDef](#pipelinetypedef)
   - [ProcessingClusterConfigTypeDef](#processingclusterconfigtypedef)
@@ -437,6 +440,8 @@ type annotations stubs module
   - [SearchRecordTypeDef](#searchrecordtypedef)
   - [SearchResponseTypeDef](#searchresponsetypedef)
   - [SecondaryStatusTransitionTypeDef](#secondarystatustransitiontypedef)
+  - [SendPipelineExecutionStepFailureResponseTypeDef](#sendpipelineexecutionstepfailureresponsetypedef)
+  - [SendPipelineExecutionStepSuccessResponseTypeDef](#sendpipelineexecutionstepsuccessresponsetypedef)
   - [ServiceCatalogProvisionedProductDetailsTypeDef](#servicecatalogprovisionedproductdetailstypedef)
   - [ServiceCatalogProvisioningDetailsTypeDef](#servicecatalogprovisioningdetailstypedef)
   - [SharingSettingsTypeDef](#sharingsettingstypedef)
@@ -1076,6 +1081,19 @@ from mypy_boto3_sagemaker.type_defs import CacheHitResultTypeDef
 Optional fields:
 
 - `SourcePipelineExecutionArn`: `str`
+
+## CallbackStepMetadataTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import CallbackStepMetadataTypeDef
+```
+
+Optional fields:
+
+- `CallbackToken`: `str`
+- `SqsQueueUrl`: `str`
+- `OutputParameters`:
+  `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
 
 ## CandidateArtifactLocationsTypeDef
 
@@ -2985,6 +3003,9 @@ Optional fields:
 - `PipelineExecutionStatus`:
   [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
 - `PipelineExecutionDescription`: `str`
+- `PipelineExperimentConfig`:
+  [PipelineExperimentConfigTypeDef](./type_defs.md#pipelineexperimentconfigtypedef)
+- `FailureReason`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
@@ -6211,6 +6232,17 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+## OutputParameterTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import OutputParameterTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Value`: `str`
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -6304,6 +6336,8 @@ Optional fields:
   [RegisterModelStepMetadataTypeDef](./type_defs.md#registermodelstepmetadatatypedef)
 - `Condition`:
   [ConditionStepMetadataTypeDef](./type_defs.md#conditionstepmetadatatypedef)
+- `Callback`:
+  [CallbackStepMetadataTypeDef](./type_defs.md#callbackstepmetadatatypedef)
 
 ## PipelineExecutionStepTypeDef
 
@@ -6352,12 +6386,26 @@ Optional fields:
 - `PipelineExecutionStatus`:
   [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
 - `PipelineExecutionDescription`: `str`
+- `PipelineExperimentConfig`:
+  [PipelineExperimentConfigTypeDef](./type_defs.md#pipelineexperimentconfigtypedef)
+- `FailureReason`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `LastModifiedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `PipelineParameters`:
   `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+
+## PipelineExperimentConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import PipelineExperimentConfigTypeDef
+```
+
+Optional fields:
+
+- `ExperimentName`: `str`
+- `TrialName`: `str`
 
 ## PipelineSummaryTypeDef
 
@@ -7063,6 +7111,26 @@ Optional fields:
 
 - `EndTime`: `datetime`
 - `StatusMessage`: `str`
+
+## SendPipelineExecutionStepFailureResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import SendPipelineExecutionStepFailureResponseTypeDef
+```
+
+Optional fields:
+
+- `PipelineExecutionArn`: `str`
+
+## SendPipelineExecutionStepSuccessResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import SendPipelineExecutionStepSuccessResponseTypeDef
+```
+
+Optional fields:
+
+- `PipelineExecutionArn`: `str`
 
 ## ServiceCatalogProvisionedProductDetailsTypeDef
 
