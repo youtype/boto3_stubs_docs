@@ -54,6 +54,8 @@ type annotations stubs module
   - [UpdateFileSystemLustreConfigurationTypeDef](#updatefilesystemlustreconfigurationtypedef)
   - [UpdateFileSystemResponseTypeDef](#updatefilesystemresponsetypedef)
   - [UpdateFileSystemWindowsConfigurationTypeDef](#updatefilesystemwindowsconfigurationtypedef)
+  - [WindowsAuditLogConfigurationTypeDef](#windowsauditlogconfigurationtypedef)
+  - [WindowsAuditLogCreateConfigurationTypeDef](#windowsauditlogcreateconfigurationtypedef)
   - [WindowsFileSystemConfigurationTypeDef](#windowsfilesystemconfigurationtypedef)
 
 ## ActiveDirectoryBackupAttributesTypeDef
@@ -283,6 +285,8 @@ Optional fields:
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
 - `Aliases`: `List`\[`str`\]
+- `AuditLogConfiguration`:
+  [WindowsAuditLogCreateConfigurationTypeDef](./type_defs.md#windowsauditlogcreateconfigurationtypedef)
 
 ## DataRepositoryConfigurationTypeDef
 
@@ -694,6 +698,42 @@ Optional fields:
 - `ThroughputCapacity`: `int`
 - `SelfManagedActiveDirectoryConfiguration`:
   [SelfManagedActiveDirectoryConfigurationUpdatesTypeDef](./type_defs.md#selfmanagedactivedirectoryconfigurationupdatestypedef)
+- `AuditLogConfiguration`:
+  [WindowsAuditLogCreateConfigurationTypeDef](./type_defs.md#windowsauditlogcreateconfigurationtypedef)
+
+## WindowsAuditLogConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import WindowsAuditLogConfigurationTypeDef
+```
+
+Required fields:
+
+- `FileAccessAuditLogLevel`:
+  [WindowsAccessAuditLogLevelType](./literals.md#windowsaccessauditlogleveltype)
+- `FileShareAccessAuditLogLevel`:
+  [WindowsAccessAuditLogLevelType](./literals.md#windowsaccessauditlogleveltype)
+
+Optional fields:
+
+- `AuditLogDestination`: `str`
+
+## WindowsAuditLogCreateConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import WindowsAuditLogCreateConfigurationTypeDef
+```
+
+Required fields:
+
+- `FileAccessAuditLogLevel`:
+  [WindowsAccessAuditLogLevelType](./literals.md#windowsaccessauditlogleveltype)
+- `FileShareAccessAuditLogLevel`:
+  [WindowsAccessAuditLogLevelType](./literals.md#windowsaccessauditlogleveltype)
+
+Optional fields:
+
+- `AuditLogDestination`: `str`
 
 ## WindowsFileSystemConfigurationTypeDef
 
@@ -719,3 +759,5 @@ Optional fields:
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
 - `Aliases`: `List`\[[AliasTypeDef](./type_defs.md#aliastypedef)\]
+- `AuditLogConfiguration`:
+  [WindowsAuditLogConfigurationTypeDef](./type_defs.md#windowsauditlogconfigurationtypedef)

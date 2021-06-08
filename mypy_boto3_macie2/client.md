@@ -929,6 +929,7 @@ Arguments:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 - `name`: `str`
 - `position`: `int`
+- `clientToken`: `str`
 
 Returns
 [UpdateFindingsFilterResponseTypeDef](./type_defs.md#updatefindingsfilterresponsetypedef).

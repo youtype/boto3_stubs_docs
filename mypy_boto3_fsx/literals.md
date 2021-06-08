@@ -31,6 +31,7 @@ type annotations stubs module
   - [ReportScopeType](#reportscopetype)
   - [StatusType](#statustype)
   - [StorageTypeType](#storagetypetype)
+  - [WindowsAccessAuditLogLevelType](#windowsaccessauditlogleveltype)
   - [WindowsDeploymentTypeType](#windowsdeploymenttypetype)
 
 ## AdministrativeActionTypeType
@@ -307,6 +308,19 @@ Values:
 
 - `HDD`
 - `SSD`
+
+## WindowsAccessAuditLogLevelType
+
+```python
+from mypy_boto3_fsx.literals import WindowsAccessAuditLogLevelType
+```
+
+Values:
+
+- `DISABLED`
+- `FAILURE_ONLY`
+- `SUCCESS_AND_FAILURE`
+- `SUCCESS_ONLY`
 
 ## WindowsDeploymentTypeType
 

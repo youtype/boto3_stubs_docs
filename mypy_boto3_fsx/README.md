@@ -134,6 +134,7 @@ from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
 - [ReportScopeType](./literals.md#reportscopetype)
 - [StatusType](./literals.md#statustype)
 - [StorageTypeType](./literals.md#storagetypetype)
+- [WindowsAccessAuditLogLevelType](./literals.md#windowsaccessauditlogleveltype)
 - [WindowsDeploymentTypeType](./literals.md#windowsdeploymenttypetype)
 
 ## Typed dictionaries
@@ -193,4 +194,6 @@ from mypy_boto3_fsx.type_defs import ActiveDirectoryBackupAttributesTypeDef, ...
 - [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
 - [UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef)
 - [UpdateFileSystemWindowsConfigurationTypeDef](./type_defs.md#updatefilesystemwindowsconfigurationtypedef)
+- [WindowsAuditLogConfigurationTypeDef](./type_defs.md#windowsauditlogconfigurationtypedef)
+- [WindowsAuditLogCreateConfigurationTypeDef](./type_defs.md#windowsauditlogcreateconfigurationtypedef)
 - [WindowsFileSystemConfigurationTypeDef](./type_defs.md#windowsfilesystemconfigurationtypedef)

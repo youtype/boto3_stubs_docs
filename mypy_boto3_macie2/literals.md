@@ -477,12 +477,10 @@ from mypy_boto3_macie2.literals import ScopeFilterKeyType
 
 Values:
 
-- `BUCKET_CREATION_DATE`
 - `OBJECT_EXTENSION`
 - `OBJECT_KEY`
 - `OBJECT_LAST_MODIFIED_DATE`
 - `OBJECT_SIZE`
-- `TAG`
 
 ## SearchResourcesComparatorType
 
