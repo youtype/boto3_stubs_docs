@@ -20,6 +20,7 @@ type annotations stubs module
   - [DataSourceTypeType](#datasourcetypetype)
   - [DatabaseEngineTypeType](#databaseenginetypetype)
   - [DocumentAttributeValueTypeType](#documentattributevaluetypetype)
+  - [DocumentStatusType](#documentstatustype)
   - [ErrorCodeType](#errorcodetype)
   - [FaqFileFormatType](#faqfileformattype)
   - [FaqStatusType](#faqstatustype)
@@ -227,6 +228,21 @@ Values:
 - `LONG_VALUE`
 - `STRING_LIST_VALUE`
 - `STRING_VALUE`
+
+## DocumentStatusType
+
+```python
+from mypy_boto3_kendra.literals import DocumentStatusType
+```
+
+Values:
+
+- `FAILED`
+- `INDEXED`
+- `NOT_FOUND`
+- `PROCESSING`
+- `UPDATE_FAILED`
+- `UPDATED`
 
 ## ErrorCodeType
 

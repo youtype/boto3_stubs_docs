@@ -15,6 +15,8 @@ type annotations stubs module
   - [AttributeFilterTypeDef](#attributefiltertypedef)
   - [BatchDeleteDocumentResponseFailedDocumentTypeDef](#batchdeletedocumentresponsefaileddocumenttypedef)
   - [BatchDeleteDocumentResponseTypeDef](#batchdeletedocumentresponsetypedef)
+  - [BatchGetDocumentStatusResponseErrorTypeDef](#batchgetdocumentstatusresponseerrortypedef)
+  - [BatchGetDocumentStatusResponseTypeDef](#batchgetdocumentstatusresponsetypedef)
   - [BatchPutDocumentResponseFailedDocumentTypeDef](#batchputdocumentresponsefaileddocumenttypedef)
   - [BatchPutDocumentResponseTypeDef](#batchputdocumentresponsetypedef)
   - [CapacityUnitsConfigurationTypeDef](#capacityunitsconfigurationtypedef)
@@ -52,6 +54,7 @@ type annotations stubs module
   - [DocumentAttributeTypeDef](#documentattributetypedef)
   - [DocumentAttributeValueCountPairTypeDef](#documentattributevaluecountpairtypedef)
   - [DocumentAttributeValueTypeDef](#documentattributevaluetypedef)
+  - [DocumentInfoTypeDef](#documentinfotypedef)
   - [DocumentMetadataConfigurationTypeDef](#documentmetadataconfigurationtypedef)
   - [DocumentRelevanceConfigurationTypeDef](#documentrelevanceconfigurationtypedef)
   - [DocumentTypeDef](#documenttypedef)
@@ -101,6 +104,7 @@ type annotations stubs module
   - [SortingConfigurationTypeDef](#sortingconfigurationtypedef)
   - [SqlConfigurationTypeDef](#sqlconfigurationtypedef)
   - [StartDataSourceSyncJobResponseTypeDef](#startdatasourcesyncjobresponsetypedef)
+  - [StatusTypeDef](#statustypedef)
   - [SuggestionHighlightTypeDef](#suggestionhighlighttypedef)
   - [SuggestionTextWithHighlightsTypeDef](#suggestiontextwithhighlightstypedef)
   - [SuggestionTypeDef](#suggestiontypedef)
@@ -208,6 +212,30 @@ Optional fields:
 
 - `FailedDocuments`:
   `List`\[[BatchDeleteDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchdeletedocumentresponsefaileddocumenttypedef)\]
+
+## BatchGetDocumentStatusResponseErrorTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import BatchGetDocumentStatusResponseErrorTypeDef
+```
+
+Optional fields:
+
+- `DocumentId`: `str`
+- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
+- `ErrorMessage`: `str`
+
+## BatchGetDocumentStatusResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import BatchGetDocumentStatusResponseTypeDef
+```
+
+Optional fields:
+
+- `Errors`:
+  `List`\[[BatchGetDocumentStatusResponseErrorTypeDef](./type_defs.md#batchgetdocumentstatusresponseerrortypedef)\]
+- `DocumentStatusList`: `List`\[[StatusTypeDef](./type_defs.md#statustypedef)\]
 
 ## BatchPutDocumentResponseFailedDocumentTypeDef
 
@@ -772,6 +800,21 @@ Optional fields:
 - `StringListValue`: `List`\[`str`\]
 - `LongValue`: `int`
 - `DateValue`: `datetime`
+
+## DocumentInfoTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DocumentInfoTypeDef
+```
+
+Required fields:
+
+- `DocumentId`: `str`
+
+Optional fields:
+
+- `Attributes`:
+  `List`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
 
 ## DocumentMetadataConfigurationTypeDef
 
@@ -1500,6 +1543,19 @@ from mypy_boto3_kendra.type_defs import StartDataSourceSyncJobResponseTypeDef
 Optional fields:
 
 - `ExecutionId`: `str`
+
+## StatusTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import StatusTypeDef
+```
+
+Optional fields:
+
+- `DocumentId`: `str`
+- `DocumentStatus`: [DocumentStatusType](./literals.md#documentstatustype)
+- `FailureCode`: `str`
+- `FailureReason`: `str`
 
 ## SuggestionHighlightTypeDef
 

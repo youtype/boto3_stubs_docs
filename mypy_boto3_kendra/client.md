@@ -12,6 +12,7 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [batch_delete_document](#batch_delete_document)
+    - [batch_get_document_status](#batch_get_document_status)
     - [batch_put_document](#batch_put_document)
     - [can_paginate](#can_paginate)
     - [clear_query_suggestions](#clear_query_suggestions)
@@ -112,6 +113,23 @@ Arguments:
 
 Returns
 [BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef).
+
+### batch_get_document_status
+
+Type annotations for `boto3.client("kendra").batch_get_document_status` method.
+
+Boto3 documentation:
+[kendra.Client.batch_get_document_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_get_document_status)
+
+Arguments:
+
+- `IndexId`: `str` *(required)*
+- `DocumentInfoList`:
+  `List`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
+  *(required)*
+
+Returns
+[BatchGetDocumentStatusResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponsetypedef).
 
 ### batch_put_document
 
