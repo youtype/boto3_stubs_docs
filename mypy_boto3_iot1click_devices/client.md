@@ -183,7 +183,7 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.invoke_device_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 - `DeviceMethod`: [DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef)
@@ -200,7 +200,7 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 - `FromTimeStamp`: `datetime` *(required)*
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("iot1click-devices").list_devices` method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceType`: `str`
 - `MaxResults`: `int`

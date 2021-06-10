@@ -281,7 +281,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.create_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_address_book)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
@@ -299,7 +299,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.create_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_business_report_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
   *(required)*
@@ -325,7 +325,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.create_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_conference_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConferenceProviderName`: `str` *(required)*
 - `ConferenceProviderType`:
@@ -348,7 +348,7 @@ Type annotations for `boto3.client("alexaforbusiness").create_contact` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirstName`: `str` *(required)*
 - `DisplayName`: `str`
@@ -372,7 +372,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.create_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_gateway_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
@@ -390,7 +390,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_network_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkProfileName`: `str` *(required)*
 - `Ssid`: `str` *(required)*
@@ -416,7 +416,7 @@ Type annotations for `boto3.client("alexaforbusiness").create_profile` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProfileName`: `str` *(required)*
 - `Timezone`: `str` *(required)*
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("alexaforbusiness").create_room` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_room)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoomName`: `str` *(required)*
 - `Description`: `str`
@@ -465,7 +465,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.create_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_skill_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `SkillGroupName`: `str` *(required)*
 - `Description`: `str`
@@ -482,7 +482,7 @@ Type annotations for `boto3.client("alexaforbusiness").create_user` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `FirstName`: `str`
@@ -639,7 +639,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.delete_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room_skill_parameter)
 
-Arguments:
+Keyword-only arguments:
 
 - `SkillId`: `str` *(required)*
 - `ParameterKey`: `str` *(required)*
@@ -950,7 +950,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.get_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room_skill_parameter)
 
-Arguments:
+Keyword-only arguments:
 
 - `SkillId`: `str` *(required)*
 - `ParameterKey`: `str` *(required)*
@@ -1013,7 +1013,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_device_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceArn`: `str` *(required)*
 - `EventType`: [DeviceEventTypeType](./literals.md#deviceeventtypetype)
@@ -1046,7 +1046,7 @@ Type annotations for `boto3.client("alexaforbusiness").list_gateways` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayGroupArn`: `str`
 - `NextToken`: `str`
@@ -1062,7 +1062,7 @@ Type annotations for `boto3.client("alexaforbusiness").list_skills` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.list_skills](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills)
 
-Arguments:
+Keyword-only arguments:
 
 - `SkillGroupArn`: `str`
 - `EnablementType`:
@@ -1097,7 +1097,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.list_skills_store_skills_by_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_skills_by_category)
 
-Arguments:
+Keyword-only arguments:
 
 - `CategoryId`: `int` *(required)*
 - `NextToken`: `str`
@@ -1114,7 +1114,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.list_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_smart_home_appliances)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoomArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1130,7 +1130,7 @@ Type annotations for `boto3.client("alexaforbusiness").list_tags` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `NextToken`: `str`
@@ -1162,7 +1162,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.put_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_invitation_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationName`: `str` *(required)*
 - `ContactEmail`: `str`
@@ -1178,7 +1178,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.put_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_room_skill_parameter)
 
-Arguments:
+Keyword-only arguments:
 
 - `SkillId`: `str` *(required)*
 - `RoomSkillParameter`:
@@ -1196,7 +1196,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.put_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_skill_authorization)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthorizationResult`: `Dict`\[`str`, `str`\] *(required)*
 - `SkillId`: `str` *(required)*
@@ -1212,7 +1212,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.register_avs_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.register_avs_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientId`: `str` *(required)*
 - `UserCode`: `str` *(required)*
@@ -1276,7 +1276,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.search_address_books](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_address_books)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
@@ -1293,7 +1293,7 @@ Type annotations for `boto3.client("alexaforbusiness").search_contacts` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.search_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_contacts)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
@@ -1310,7 +1310,7 @@ Type annotations for `boto3.client("alexaforbusiness").search_devices` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1328,7 +1328,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.search_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_network_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1345,7 +1345,7 @@ Type annotations for `boto3.client("alexaforbusiness").search_profiles` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1362,7 +1362,7 @@ Type annotations for `boto3.client("alexaforbusiness").search_rooms` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.search_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_rooms)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1380,7 +1380,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.search_skill_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_skill_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1397,7 +1397,7 @@ Type annotations for `boto3.client("alexaforbusiness").search_users` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.search_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1415,7 +1415,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.send_announcement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_announcement)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoomFilters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
   *(required)*
@@ -1447,7 +1447,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.start_device_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_device_sync)
 
-Arguments:
+Keyword-only arguments:
 
 - `Features`: `List`\[[FeatureType](./literals.md#featuretype)\] *(required)*
 - `RoomArn`: `str`
@@ -1505,7 +1505,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.update_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_address_book)
 
-Arguments:
+Keyword-only arguments:
 
 - `AddressBookArn`: `str` *(required)*
 - `Name`: `str`
@@ -1521,7 +1521,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.update_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_business_report_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScheduleArn`: `str` *(required)*
 - `S3BucketName`: `str`
@@ -1541,7 +1541,7 @@ Type annotations for
 Boto3 documentation:
 [AlexaForBusiness.Client.update_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_conference_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConferenceProviderArn`: `str` *(required)*
 - `ConferenceProviderType`:
@@ -1561,7 +1561,7 @@ Type annotations for `boto3.client("alexaforbusiness").update_contact` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactArn`: `str` *(required)*
 - `DisplayName`: `str`
@@ -1596,7 +1596,7 @@ Type annotations for `boto3.client("alexaforbusiness").update_gateway` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayArn`: `str` *(required)*
 - `Name`: `str`
@@ -1613,7 +1613,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.update_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayGroupArn`: `str` *(required)*
 - `Name`: `str`
@@ -1629,7 +1629,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_network_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkProfileArn`: `str` *(required)*
 - `NetworkProfileName`: `str`
@@ -1648,7 +1648,7 @@ Type annotations for `boto3.client("alexaforbusiness").update_profile` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProfileArn`: `str`
 - `ProfileName`: `str`
@@ -1675,7 +1675,7 @@ Type annotations for `boto3.client("alexaforbusiness").update_room` method.
 Boto3 documentation:
 [AlexaForBusiness.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_room)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoomArn`: `str`
 - `RoomName`: `str`
@@ -1693,7 +1693,7 @@ method.
 Boto3 documentation:
 [AlexaForBusiness.Client.update_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_skill_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `SkillGroupArn`: `str`
 - `SkillGroupName`: `str`

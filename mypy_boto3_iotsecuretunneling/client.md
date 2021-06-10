@@ -138,7 +138,7 @@ Type annotations for `boto3.client("iotsecuretunneling").list_tunnels` method.
 Boto3 documentation:
 [IoTSecureTunneling.Client.list_tunnels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str`
 - `maxResults`: `int`
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("iotsecuretunneling").open_tunnel` method.
 Boto3 documentation:
 [IoTSecureTunneling.Client.open_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel)
 
-Arguments:
+Keyword-only arguments:
 
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]

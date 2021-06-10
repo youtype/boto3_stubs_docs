@@ -100,7 +100,7 @@ Type annotations for `boto3.client("eks").associate_encryption_config` method.
 Boto3 documentation:
 [EKS.Client.associate_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_encryption_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `encryptionConfig`:
@@ -119,7 +119,7 @@ method.
 Boto3 documentation:
 [EKS.Client.associate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_identity_provider_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `oidc`:
@@ -151,7 +151,7 @@ Type annotations for `boto3.client("eks").create_addon` method.
 Boto3 documentation:
 [EKS.Client.create_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_addon)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `addonName`: `str` *(required)*
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("eks").create_cluster` method.
 Boto3 documentation:
 [EKS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `roleArn`: `str` *(required)*
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("eks").create_fargate_profile` method.
 Boto3 documentation:
 [EKS.Client.create_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_fargate_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `fargateProfileName`: `str` *(required)*
 - `clusterName`: `str` *(required)*
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("eks").create_nodegroup` method.
 Boto3 documentation:
 [EKS.Client.create_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_nodegroup)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*
@@ -328,7 +328,7 @@ Type annotations for `boto3.client("eks").describe_addon_versions` method.
 Boto3 documentation:
 [EKS.Client.describe_addon_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `kubernetesVersion`: `str`
 - `maxResults`: `int`
@@ -407,7 +407,7 @@ Type annotations for `boto3.client("eks").describe_update` method.
 Boto3 documentation:
 [EKS.Client.describe_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_update)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `updateId`: `str` *(required)*
@@ -425,7 +425,7 @@ Type annotations for
 Boto3 documentation:
 [EKS.Client.disassociate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.disassociate_identity_provider_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `identityProviderConfig`:
@@ -459,7 +459,7 @@ Type annotations for `boto3.client("eks").list_addons` method.
 Boto3 documentation:
 [EKS.Client.list_addons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_addons)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `maxResults`: `int`
@@ -489,7 +489,7 @@ Type annotations for `boto3.client("eks").list_fargate_profiles` method.
 Boto3 documentation:
 [EKS.Client.list_fargate_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_fargate_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `maxResults`: `int`
@@ -506,7 +506,7 @@ method.
 Boto3 documentation:
 [EKS.Client.list_identity_provider_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_identity_provider_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `maxResults`: `int`
@@ -522,7 +522,7 @@ Type annotations for `boto3.client("eks").list_nodegroups` method.
 Boto3 documentation:
 [EKS.Client.list_nodegroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_nodegroups)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `maxResults`: `int`
@@ -552,7 +552,7 @@ Type annotations for `boto3.client("eks").list_updates` method.
 Boto3 documentation:
 [EKS.Client.list_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_updates)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `nodegroupName`: `str`
@@ -598,7 +598,7 @@ Type annotations for `boto3.client("eks").update_addon` method.
 Boto3 documentation:
 [EKS.Client.update_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_addon)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `addonName`: `str` *(required)*
@@ -618,7 +618,7 @@ Type annotations for `boto3.client("eks").update_cluster_config` method.
 Boto3 documentation:
 [EKS.Client.update_cluster_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `resourcesVpcConfig`:
@@ -636,7 +636,7 @@ Type annotations for `boto3.client("eks").update_cluster_version` method.
 Boto3 documentation:
 [EKS.Client.update_cluster_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
@@ -652,7 +652,7 @@ Type annotations for `boto3.client("eks").update_nodegroup_config` method.
 Boto3 documentation:
 [EKS.Client.update_nodegroup_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*
@@ -676,7 +676,7 @@ Type annotations for `boto3.client("eks").update_nodegroup_version` method.
 Boto3 documentation:
 [EKS.Client.update_nodegroup_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*

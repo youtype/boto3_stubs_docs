@@ -110,7 +110,7 @@ Type annotations for `boto3.client("qldb").create_ledger` method.
 Boto3 documentation:
 [QLDB.Client.create_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.create_ledger)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
@@ -184,7 +184,7 @@ Type annotations for `boto3.client("qldb").export_journal_to_s3` method.
 Boto3 documentation:
 [QLDB.Client.export_journal_to_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.export_journal_to_s3)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InclusiveStartTime`: `datetime` *(required)*
@@ -220,7 +220,7 @@ Type annotations for `boto3.client("qldb").get_block` method.
 Boto3 documentation:
 [QLDB.Client.get_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `BlockAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("qldb").get_revision` method.
 Boto3 documentation:
 [QLDB.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `BlockAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
@@ -268,7 +268,7 @@ Type annotations for
 Boto3 documentation:
 [QLDB.Client.list_journal_kinesis_streams_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_kinesis_streams_for_ledger)
 
-Arguments:
+Keyword-only arguments:
 
 - `LedgerName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -300,7 +300,7 @@ method.
 Boto3 documentation:
 [QLDB.Client.list_journal_s3_exports_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports_for_ledger)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `MaxResults`: `int`
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("qldb").stream_journal_to_kinesis` method.
 Boto3 documentation:
 [QLDB.Client.stream_journal_to_kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.stream_journal_to_kinesis)
 
-Arguments:
+Keyword-only arguments:
 
 - `LedgerName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*

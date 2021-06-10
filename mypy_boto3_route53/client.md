@@ -200,7 +200,7 @@ method.
 Boto3 documentation:
 [Route53.Client.associate_vpc_with_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.associate_vpc_with_hosted_zone)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
@@ -246,7 +246,7 @@ Type annotations for `boto3.client("route53").change_tags_for_resource` method.
 Boto3 documentation:
 [Route53.Client.change_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
   *(required)*
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("route53").create_hosted_zone` method.
 Boto3 documentation:
 [Route53.Client.create_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_hosted_zone)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `CallerReference`: `str` *(required)*
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("route53").create_key_signing_key` method.
 Boto3 documentation:
 [Route53.Client.create_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_key_signing_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `CallerReference`: `str` *(required)*
 - `HostedZoneId`: `str` *(required)*
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("route53").create_traffic_policy` method.
 Boto3 documentation:
 [Route53.Client.create_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Document`: `str` *(required)*
@@ -366,7 +366,7 @@ method.
 Boto3 documentation:
 [Route53.Client.create_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -385,7 +385,7 @@ method.
 Boto3 documentation:
 [Route53.Client.create_traffic_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Document`: `str` *(required)*
@@ -562,7 +562,7 @@ Type annotations for
 Boto3 documentation:
 [Route53.Client.disassociate_vpc_from_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disassociate_vpc_from_hosted_zone)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
@@ -660,7 +660,7 @@ Type annotations for `boto3.client("route53").get_geo_location` method.
 Boto3 documentation:
 [Route53.Client.get_geo_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_geo_location)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContinentCode`: `str`
 - `CountryCode`: `str`
@@ -857,7 +857,7 @@ Type annotations for `boto3.client("route53").list_geo_locations` method.
 Boto3 documentation:
 [Route53.Client.list_geo_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_geo_locations)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartContinentCode`: `str`
 - `StartCountryCode`: `str`
@@ -889,7 +889,7 @@ Type annotations for `boto3.client("route53").list_hosted_zones` method.
 Boto3 documentation:
 [Route53.Client.list_hosted_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -906,7 +906,7 @@ method.
 Boto3 documentation:
 [Route53.Client.list_hosted_zones_by_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `DNSName`: `str`
 - `HostedZoneId`: `str`
@@ -922,7 +922,7 @@ Type annotations for `boto3.client("route53").list_hosted_zones_by_vpc` method.
 Boto3 documentation:
 [Route53.Client.list_hosted_zones_by_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_vpc)
 
-Arguments:
+Keyword-only arguments:
 
 - `VPCId`: `str` *(required)*
 - `VPCRegion`: [VPCRegionType](./literals.md#vpcregiontype) *(required)*
@@ -940,7 +940,7 @@ method.
 Boto3 documentation:
 [Route53.Client.list_query_logging_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_query_logging_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str`
 - `NextToken`: `str`
@@ -957,7 +957,7 @@ method.
 Boto3 documentation:
 [Route53.Client.list_resource_record_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_resource_record_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `StartRecordName`: `str`
@@ -1039,7 +1039,7 @@ method.
 Boto3 documentation:
 [Route53.Client.list_traffic_policy_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneIdMarker`: `str`
 - `TrafficPolicyInstanceNameMarker`: `str`
@@ -1057,7 +1057,7 @@ Type annotations for
 Boto3 documentation:
 [Route53.Client.list_traffic_policy_instances_by_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_hosted_zone)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `TrafficPolicyInstanceNameMarker`: `str`
@@ -1075,7 +1075,7 @@ Type annotations for
 Boto3 documentation:
 [Route53.Client.list_traffic_policy_instances_by_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficPolicyId`: `str` *(required)*
 - `TrafficPolicyVersion`: `int` *(required)*
@@ -1095,7 +1095,7 @@ method.
 Boto3 documentation:
 [Route53.Client.list_traffic_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `TrafficPolicyVersionMarker`: `str`
@@ -1112,7 +1112,7 @@ Type annotations for
 Boto3 documentation:
 [Route53.Client.list_vpc_association_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_vpc_association_authorizations)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1128,7 +1128,7 @@ Type annotations for `boto3.client("route53").test_dns_answer` method.
 Boto3 documentation:
 [Route53.Client.test_dns_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.test_dns_answer)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `RecordName`: `str` *(required)*
@@ -1147,7 +1147,7 @@ Type annotations for `boto3.client("route53").update_health_check` method.
 Boto3 documentation:
 [Route53.Client.update_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_health_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `HealthCheckId`: `str` *(required)*
 - `HealthCheckVersion`: `int`
@@ -1198,7 +1198,7 @@ method.
 Boto3 documentation:
 [Route53.Client.update_traffic_policy_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_comment)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Version`: `int` *(required)*
@@ -1215,7 +1215,7 @@ method.
 Boto3 documentation:
 [Route53.Client.update_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `TTL`: `int` *(required)*

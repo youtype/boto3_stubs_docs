@@ -139,7 +139,7 @@ Type annotations for `boto3.client("rekognition").compare_faces` method.
 Boto3 documentation:
 [Rekognition.Client.compare_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceImage`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `TargetImage`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
@@ -186,7 +186,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.create_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectArn`: `str` *(required)*
 - `VersionName`: `str` *(required)*
@@ -210,7 +210,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.create_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor)
 
-Arguments:
+Keyword-only arguments:
 
 - `Input`:
   [StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef)
@@ -322,7 +322,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.describe_project_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectArn`: `str` *(required)*
 - `VersionNames`: `List`\[`str`\]
@@ -369,7 +369,7 @@ Type annotations for `boto3.client("rekognition").detect_custom_labels` method.
 Boto3 documentation:
 [Rekognition.Client.detect_custom_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectVersionArn`: `str` *(required)*
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("rekognition").detect_labels` method.
 Boto3 documentation:
 [Rekognition.Client.detect_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels)
 
-Arguments:
+Keyword-only arguments:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `MaxLabels`: `int`
@@ -418,7 +418,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.detect_moderation_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels)
 
-Arguments:
+Keyword-only arguments:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `MinConfidence`: `float`
@@ -499,7 +499,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.get_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -518,7 +518,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.get_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -536,7 +536,7 @@ Type annotations for `boto3.client("rekognition").get_face_detection` method.
 Boto3 documentation:
 [Rekognition.Client.get_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -552,7 +552,7 @@ Type annotations for `boto3.client("rekognition").get_face_search` method.
 Boto3 documentation:
 [Rekognition.Client.get_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -569,7 +569,7 @@ Type annotations for `boto3.client("rekognition").get_label_detection` method.
 Boto3 documentation:
 [Rekognition.Client.get_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -586,7 +586,7 @@ Type annotations for `boto3.client("rekognition").get_person_tracking` method.
 Boto3 documentation:
 [Rekognition.Client.get_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -604,7 +604,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.get_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -620,7 +620,7 @@ Type annotations for `boto3.client("rekognition").get_text_detection` method.
 Boto3 documentation:
 [Rekognition.Client.get_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -636,7 +636,7 @@ Type annotations for `boto3.client("rekognition").index_faces` method.
 Boto3 documentation:
 [Rekognition.Client.index_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
@@ -669,7 +669,7 @@ Type annotations for `boto3.client("rekognition").list_faces` method.
 Boto3 documentation:
 [Rekognition.Client.list_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 - `NextToken`: `str`
@@ -730,7 +730,7 @@ Type annotations for `boto3.client("rekognition").search_faces` method.
 Boto3 documentation:
 [Rekognition.Client.search_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 - `FaceId`: `str` *(required)*
@@ -748,7 +748,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.search_faces_by_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
@@ -767,7 +767,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.start_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition)
 
-Arguments:
+Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
@@ -786,7 +786,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.start_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation)
 
-Arguments:
+Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `MinConfidence`: `float`
@@ -805,7 +805,7 @@ Type annotations for `boto3.client("rekognition").start_face_detection` method.
 Boto3 documentation:
 [Rekognition.Client.start_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
@@ -824,7 +824,7 @@ Type annotations for `boto3.client("rekognition").start_face_search` method.
 Boto3 documentation:
 [Rekognition.Client.start_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search)
 
-Arguments:
+Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `CollectionId`: `str` *(required)*
@@ -845,7 +845,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.start_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
@@ -865,7 +865,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.start_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking)
 
-Arguments:
+Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`
@@ -900,7 +900,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.start_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `SegmentTypes`: `List`\[[SegmentTypeType](./literals.md#segmenttypetype)\]
@@ -936,7 +936,7 @@ Type annotations for `boto3.client("rekognition").start_text_detection` method.
 Boto3 documentation:
 [Rekognition.Client.start_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
 - `ClientRequestToken`: `str`

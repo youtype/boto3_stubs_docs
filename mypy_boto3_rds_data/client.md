@@ -67,7 +67,7 @@ Type annotations for `boto3.client("rds-data").batch_execute_statement` method.
 Boto3 documentation:
 [RDSDataService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `secretArn`: `str` *(required)*
@@ -88,7 +88,7 @@ Type annotations for `boto3.client("rds-data").begin_transaction` method.
 Boto3 documentation:
 [RDSDataService.Client.begin_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `secretArn`: `str` *(required)*
@@ -118,7 +118,7 @@ Type annotations for `boto3.client("rds-data").commit_transaction` method.
 Boto3 documentation:
 [RDSDataService.Client.commit_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `secretArn`: `str` *(required)*
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("rds-data").execute_sql` method.
 Boto3 documentation:
 [RDSDataService.Client.execute_sql](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql)
 
-Arguments:
+Keyword-only arguments:
 
 - `awsSecretStoreArn`: `str` *(required)*
 - `dbClusterOrInstanceArn`: `str` *(required)*
@@ -151,7 +151,7 @@ Type annotations for `boto3.client("rds-data").execute_statement` method.
 Boto3 documentation:
 [RDSDataService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `secretArn`: `str` *(required)*
@@ -192,7 +192,7 @@ Type annotations for `boto3.client("rds-data").rollback_transaction` method.
 Boto3 documentation:
 [RDSDataService.Client.rollback_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `secretArn`: `str` *(required)*

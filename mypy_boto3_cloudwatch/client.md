@@ -131,7 +131,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_anomaly_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `Namespace`: `str` *(required)*
 - `MetricName`: `str` *(required)*
@@ -188,7 +188,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Client.describe_alarm_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarm_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmName`: `str`
 - `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("cloudwatch").describe_alarms` method.
 Boto3 documentation:
 [CloudWatch.Client.describe_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmNames`: `List`\[`str`\]
 - `AlarmNamePrefix`: `str`
@@ -232,7 +232,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Client.describe_alarms_for_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms_for_metric)
 
-Arguments:
+Keyword-only arguments:
 
 - `MetricName`: `str` *(required)*
 - `Namespace`: `str` *(required)*
@@ -253,7 +253,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Client.describe_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_anomaly_detectors)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -368,7 +368,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Client.get_insight_rule_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_insight_rule_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleName`: `str` *(required)*
 - `StartTime`: `datetime` *(required)*
@@ -388,7 +388,7 @@ Type annotations for `boto3.client("cloudwatch").get_metric_data` method.
 Boto3 documentation:
 [CloudWatch.Client.get_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `MetricDataQueries`:
   `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("cloudwatch").get_metric_statistics` method.
 Boto3 documentation:
 [CloudWatch.Client.get_metric_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_statistics)
 
-Arguments:
+Keyword-only arguments:
 
 - `Namespace`: `str` *(required)*
 - `MetricName`: `str` *(required)*
@@ -492,7 +492,7 @@ Type annotations for `boto3.client("cloudwatch").list_metrics` method.
 Boto3 documentation:
 [CloudWatch.Client.list_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `Namespace`: `str`
 - `MetricName`: `str`
@@ -526,7 +526,7 @@ Type annotations for `boto3.client("cloudwatch").put_anomaly_detector` method.
 Boto3 documentation:
 [CloudWatch.Client.put_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_anomaly_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `Namespace`: `str` *(required)*
 - `MetricName`: `str` *(required)*
@@ -544,7 +544,7 @@ Type annotations for `boto3.client("cloudwatch").put_composite_alarm` method.
 Boto3 documentation:
 [CloudWatch.Client.put_composite_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_composite_alarm)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmName`: `str` *(required)*
 - `AlarmRule`: `str` *(required)*
@@ -576,7 +576,7 @@ Type annotations for `boto3.client("cloudwatch").put_insight_rule` method.
 Boto3 documentation:
 [CloudWatch.Client.put_insight_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_insight_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleName`: `str` *(required)*
 - `RuleDefinition`: `str` *(required)*
@@ -592,7 +592,7 @@ Type annotations for `boto3.client("cloudwatch").put_metric_alarm` method.
 Boto3 documentation:
 [CloudWatch.Client.put_metric_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_alarm)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmName`: `str` *(required)*
 - `EvaluationPeriods`: `int` *(required)*
@@ -640,7 +640,7 @@ Type annotations for `boto3.client("cloudwatch").put_metric_stream` method.
 Boto3 documentation:
 [CloudWatch.Client.put_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `FirehoseArn`: `str` *(required)*
@@ -664,7 +664,7 @@ Type annotations for `boto3.client("cloudwatch").set_alarm_state` method.
 Boto3 documentation:
 [CloudWatch.Client.set_alarm_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.set_alarm_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmName`: `str` *(required)*
 - `StateValue`: [StateValueType](./literals.md#statevaluetype) *(required)*

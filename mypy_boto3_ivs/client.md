@@ -133,7 +133,7 @@ Type annotations for `boto3.client("ivs").create_channel` method.
 Boto3 documentation:
 [IVS.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
@@ -153,7 +153,7 @@ method.
 Boto3 documentation:
 [IVS.Client.create_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_recording_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `destinationConfiguration`:
   [DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("ivs").import_playback_key_pair` method.
 Boto3 documentation:
 [IVS.Client.import_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.import_playback_key_pair)
 
-Arguments:
+Keyword-only arguments:
 
 - `publicKeyMaterial`: `str` *(required)*
 - `name`: `str`
@@ -333,7 +333,7 @@ Type annotations for `boto3.client("ivs").list_channels` method.
 Boto3 documentation:
 [IVS.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `filterByName`: `str`
 - `filterByRecordingConfigurationArn`: `str`
@@ -381,7 +381,7 @@ Type annotations for `boto3.client("ivs").list_stream_keys` method.
 Boto3 documentation:
 [IVS.Client.list_stream_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -412,7 +412,7 @@ Type annotations for `boto3.client("ivs").list_tags_for_resource` method.
 Boto3 documentation:
 [IVS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -481,7 +481,7 @@ Type annotations for `boto3.client("ivs").update_channel` method.
 Boto3 documentation:
 [IVS.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.update_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `name`: `str`

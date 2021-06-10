@@ -155,7 +155,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.allow_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.allow_custom_routing_traffic)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 - `EndpointId`: `str` *(required)*
@@ -184,7 +184,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.create_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_accelerator)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
@@ -205,7 +205,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.create_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_accelerator)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
@@ -227,7 +227,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.create_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `EndpointGroupRegion`: `str` *(required)*
@@ -247,7 +247,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.create_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
@@ -265,7 +265,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.create_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `EndpointGroupRegion`: `str` *(required)*
@@ -293,7 +293,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
@@ -386,7 +386,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.deny_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deny_custom_routing_traffic)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 - `EndpointId`: `str` *(required)*
@@ -604,7 +604,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_endpoint_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -621,7 +621,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_listeners)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -638,7 +638,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_port_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `EndpointGroupArn`: `str`
@@ -657,7 +657,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointId`: `str` *(required)*
 - `DestinationAddress`: `str` *(required)*
@@ -675,7 +675,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.list_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_endpoint_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -691,7 +691,7 @@ Type annotations for `boto3.client("globalaccelerator").list_listeners` method.
 Boto3 documentation:
 [GlobalAccelerator.Client.list_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_listeners)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -782,7 +782,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.update_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `Name`: `str`
@@ -801,7 +801,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.update_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `FlowLogsEnabled`: `bool`
@@ -819,7 +819,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.update_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `Name`: `str`
@@ -839,7 +839,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.update_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 - `FlowLogsEnabled`: `bool`
@@ -874,7 +874,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.update_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 - `EndpointConfigurations`:
@@ -900,7 +900,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.update_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]

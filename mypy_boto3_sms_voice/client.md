@@ -97,7 +97,7 @@ Type annotations for
 Boto3 documentation:
 [PinpointSMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.create_configuration_set_event_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `EventDestination`:
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("sms-voice").send_voice_message` method.
 Boto3 documentation:
 [PinpointSMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.send_voice_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `CallerId`: `str`
 - `ConfigurationSetName`: `str`
@@ -209,7 +209,7 @@ Type annotations for
 Boto3 documentation:
 [PinpointSMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.update_configuration_set_event_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `EventDestinationName`: `str` *(required)*

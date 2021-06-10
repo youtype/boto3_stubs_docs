@@ -191,7 +191,7 @@ Type annotations for `boto3.client("discovery").describe_agents` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_agents)
 
-Arguments:
+Keyword-only arguments:
 
 - `agentIds`: `List`\[`str`\]
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -224,7 +224,7 @@ method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_continuous_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_continuous_exports)
 
-Arguments:
+Keyword-only arguments:
 
 - `exportIds`: `List`\[`str`\]
 - `maxResults`: `int`
@@ -241,7 +241,7 @@ method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_export_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `exportIds`: `List`\[`str`\]
 - `maxResults`: `int`
@@ -257,7 +257,7 @@ Type annotations for `boto3.client("discovery").describe_export_tasks` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `exportIds`: `List`\[`str`\]
 - `filters`:
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("discovery").describe_import_tasks` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_import_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_import_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`:
   `List`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
@@ -292,7 +292,7 @@ Type annotations for `boto3.client("discovery").describe_tags` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `maxResults`: `int`
@@ -360,7 +360,7 @@ Type annotations for `boto3.client("discovery").list_configurations` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `configurationType`:
   [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
@@ -381,7 +381,7 @@ Type annotations for `boto3.client("discovery").list_server_neighbors` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.list_server_neighbors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_server_neighbors)
 
-Arguments:
+Keyword-only arguments:
 
 - `configurationId`: `str` *(required)*
 - `portInformationNeeded`: `bool`
@@ -425,7 +425,7 @@ Type annotations for `boto3.client("discovery").start_export_task` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_export_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `exportDataFormat`:
   `List`\[[ExportDataFormatType](./literals.md#exportdataformattype)\]
@@ -444,7 +444,7 @@ Type annotations for `boto3.client("discovery").start_import_task` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.start_import_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `importUrl`: `str` *(required)*
@@ -489,7 +489,7 @@ Type annotations for `boto3.client("discovery").update_application` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.update_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `configurationId`: `str` *(required)*
 - `name`: `str`

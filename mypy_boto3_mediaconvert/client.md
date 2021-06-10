@@ -127,7 +127,7 @@ Type annotations for `boto3.client("mediaconvert").create_job` method.
 Boto3 documentation:
 [MediaConvert.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Role`: `str` *(required)*
 - `Settings`: [JobSettingsTypeDef](./type_defs.md#jobsettingstypedef)
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("mediaconvert").create_job_template` method.
 Boto3 documentation:
 [MediaConvert.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Settings`:
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("mediaconvert").create_preset` method.
 Boto3 documentation:
 [MediaConvert.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_preset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("mediaconvert").create_queue` method.
 Boto3 documentation:
 [MediaConvert.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("mediaconvert").describe_endpoints` method.
 Boto3 documentation:
 [MediaConvert.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `Mode`: [DescribeEndpointsModeType](./literals.md#describeendpointsmodetype)
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("mediaconvert").list_job_templates` method.
 Boto3 documentation:
 [MediaConvert.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `Category`: `str`
 - `ListBy`: [JobTemplateListByType](./literals.md#jobtemplatelistbytype)
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("mediaconvert").list_jobs` method.
 Boto3 documentation:
 [MediaConvert.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -399,7 +399,7 @@ Type annotations for `boto3.client("mediaconvert").list_presets` method.
 Boto3 documentation:
 [MediaConvert.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_presets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Category`: `str`
 - `ListBy`: [PresetListByType](./literals.md#presetlistbytype)
@@ -417,7 +417,7 @@ Type annotations for `boto3.client("mediaconvert").list_queues` method.
 Boto3 documentation:
 [MediaConvert.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListBy`: [QueueListByType](./literals.md#queuelistbytype)
 - `MaxResults`: `int`
@@ -476,7 +476,7 @@ Type annotations for `boto3.client("mediaconvert").update_job_template` method.
 Boto3 documentation:
 [MediaConvert.Client.update_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `AccelerationSettings`:
@@ -502,7 +502,7 @@ Type annotations for `boto3.client("mediaconvert").update_preset` method.
 Boto3 documentation:
 [MediaConvert.Client.update_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_preset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Category`: `str`
@@ -519,7 +519,7 @@ Type annotations for `boto3.client("mediaconvert").update_queue` method.
 Boto3 documentation:
 [MediaConvert.Client.update_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`

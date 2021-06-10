@@ -96,7 +96,7 @@ Type annotations for `boto3.client("translate").create_parallel_data` method.
 Boto3 documentation:
 [Translate.Client.create_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.create_parallel_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ParallelDataConfig`:
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("translate").import_terminology` method.
 Boto3 documentation:
 [Translate.Client.import_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `MergeStrategy`: `Literal['OVERWRITE']` (see
@@ -254,7 +254,7 @@ method.
 Boto3 documentation:
 [Translate.Client.list_text_translation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_text_translation_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [TextTranslationJobFilterTypeDef](./type_defs.md#texttranslationjobfiltertypedef)
@@ -272,7 +272,7 @@ method.
 Boto3 documentation:
 [Translate.Client.start_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.start_text_translation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("translate").translate_text` method.
 Boto3 documentation:
 [Translate.Client.translate_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.translate_text)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 - `SourceLanguageCode`: `str` *(required)*
@@ -329,7 +329,7 @@ Type annotations for `boto3.client("translate").update_parallel_data` method.
 Boto3 documentation:
 [Translate.Client.update_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.update_parallel_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ParallelDataConfig`:

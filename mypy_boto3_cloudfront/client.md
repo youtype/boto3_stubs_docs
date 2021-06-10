@@ -374,7 +374,7 @@ Type annotations for `boto3.client("cloudfront").create_function` method.
 Boto3 documentation:
 [CloudFront.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `FunctionConfig`:
@@ -474,7 +474,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.create_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
   *(required)*
@@ -1033,7 +1033,7 @@ Type annotations for `boto3.client("cloudfront").list_cache_policies` method.
 Boto3 documentation:
 [CloudFront.Client.list_cache_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [CachePolicyTypeType](./literals.md#cachepolicytypetype)
 - `Marker`: `str`
@@ -1081,7 +1081,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_cache_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
 
-Arguments:
+Keyword-only arguments:
 
 - `CachePolicyId`: `str` *(required)*
 - `Marker`: `str`
@@ -1098,7 +1098,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyGroupId`: `str` *(required)*
 - `Marker`: `str`
@@ -1116,7 +1116,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_origin_request_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
 
-Arguments:
+Keyword-only arguments:
 
 - `OriginRequestPolicyId`: `str` *(required)*
 - `Marker`: `str`
@@ -1133,7 +1133,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1151,7 +1151,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_web_acl_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 - `Marker`: `str`
@@ -1199,7 +1199,7 @@ Type annotations for `boto3.client("cloudfront").list_functions` method.
 Boto3 documentation:
 [CloudFront.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_functions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1215,7 +1215,7 @@ Type annotations for `boto3.client("cloudfront").list_invalidations` method.
 Boto3 documentation:
 [CloudFront.Client.list_invalidations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_invalidations)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionId`: `str` *(required)*
 - `Marker`: `str`
@@ -1247,7 +1247,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_origin_request_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`:
   [OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype)
@@ -1353,7 +1353,7 @@ Type annotations for `boto3.client("cloudfront").test_function` method.
 Boto3 documentation:
 [CloudFront.Client.test_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.test_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `IfMatch`: `str` *(required)*
@@ -1381,7 +1381,7 @@ Type annotations for `boto3.client("cloudfront").update_cache_policy` method.
 Boto3 documentation:
 [CloudFront.Client.update_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `CachePolicyConfig`:
   [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
@@ -1400,7 +1400,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.update_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `CloudFrontOriginAccessIdentityConfig`:
   [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
@@ -1418,7 +1418,7 @@ Type annotations for `boto3.client("cloudfront").update_distribution` method.
 Boto3 documentation:
 [CloudFront.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionConfig`:
   [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
@@ -1437,7 +1437,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.update_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FieldLevelEncryptionConfig`:
   [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
@@ -1456,7 +1456,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.update_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `FieldLevelEncryptionProfileConfig`:
   [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
@@ -1474,7 +1474,7 @@ Type annotations for `boto3.client("cloudfront").update_function` method.
 Boto3 documentation:
 [CloudFront.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `IfMatch`: `str` *(required)*
@@ -1492,7 +1492,7 @@ Type annotations for `boto3.client("cloudfront").update_key_group` method.
 Boto3 documentation:
 [CloudFront.Client.update_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_key_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyGroupConfig`:
   [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) *(required)*
@@ -1510,7 +1510,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.update_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `OriginRequestPolicyConfig`:
   [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
@@ -1528,7 +1528,7 @@ Type annotations for `boto3.client("cloudfront").update_public_key` method.
 Boto3 documentation:
 [CloudFront.Client.update_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `PublicKeyConfig`:
   [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) *(required)*
@@ -1546,7 +1546,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.update_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
 - `Fields`: `List`\[`str`\]
@@ -1565,7 +1565,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.update_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamingDistributionConfig`:
   [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)

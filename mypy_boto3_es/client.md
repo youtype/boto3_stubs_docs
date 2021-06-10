@@ -177,7 +177,7 @@ Type annotations for `boto3.client("es").create_elasticsearch_domain` method.
 Boto3 documentation:
 [ElasticsearchService.Client.create_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_elasticsearch_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ElasticsearchVersion`: `str`
@@ -216,7 +216,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.create_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_outbound_cross_cluster_search_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceDomainInfo`:
   [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
@@ -236,7 +236,7 @@ Type annotations for `boto3.client("es").create_package` method.
 Boto3 documentation:
 [ElasticsearchService.Client.create_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_package)
 
-Arguments:
+Keyword-only arguments:
 
 - `PackageName`: `str` *(required)*
 - `PackageType`: `Literal['TXT-DICTIONARY']` (see
@@ -321,7 +321,7 @@ Type annotations for `boto3.client("es").describe_domain_auto_tunes` method.
 Boto3 documentation:
 [ElasticsearchService.Client.describe_domain_auto_tunes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_auto_tunes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -382,7 +382,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.describe_elasticsearch_instance_type_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_instance_type_limits)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceType`:
   [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
@@ -401,7 +401,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
@@ -418,7 +418,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
@@ -434,7 +434,7 @@ Type annotations for `boto3.client("es").describe_packages` method.
 Boto3 documentation:
 [ElasticsearchService.Client.describe_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_packages)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
@@ -452,7 +452,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservedElasticsearchInstanceOfferingId`: `str`
 - `MaxResults`: `int`
@@ -469,7 +469,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.describe_reserved_elasticsearch_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservedElasticsearchInstanceId`: `str`
 - `MaxResults`: `int`
@@ -531,7 +531,7 @@ Type annotations for `boto3.client("es").get_package_version_history` method.
 Boto3 documentation:
 [ElasticsearchService.Client.get_package_version_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_package_version_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `PackageID`: `str` *(required)*
 - `MaxResults`: `int`
@@ -547,7 +547,7 @@ Type annotations for `boto3.client("es").get_upgrade_history` method.
 Boto3 documentation:
 [ElasticsearchService.Client.get_upgrade_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -587,7 +587,7 @@ Type annotations for `boto3.client("es").list_domains_for_package` method.
 Boto3 documentation:
 [ElasticsearchService.Client.list_domains_for_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domains_for_package)
 
-Arguments:
+Keyword-only arguments:
 
 - `PackageID`: `str` *(required)*
 - `MaxResults`: `int`
@@ -604,7 +604,7 @@ method.
 Boto3 documentation:
 [ElasticsearchService.Client.list_elasticsearch_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_instance_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticsearchVersion`: `str` *(required)*
 - `DomainName`: `str`
@@ -636,7 +636,7 @@ Type annotations for `boto3.client("es").list_packages_for_domain` method.
 Boto3 documentation:
 [ElasticsearchService.Client.list_packages_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_packages_for_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -666,7 +666,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservedElasticsearchInstanceOfferingId`: `str` *(required)*
 - `ReservationName`: `str` *(required)*
@@ -725,7 +725,7 @@ method.
 Boto3 documentation:
 [ElasticsearchService.Client.update_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_elasticsearch_domain_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ElasticsearchClusterConfig`:
@@ -761,7 +761,7 @@ Type annotations for `boto3.client("es").update_package` method.
 Boto3 documentation:
 [ElasticsearchService.Client.update_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_package)
 
-Arguments:
+Keyword-only arguments:
 
 - `PackageID`: `str` *(required)*
 - `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
@@ -779,7 +779,7 @@ Type annotations for `boto3.client("es").upgrade_elasticsearch_domain` method.
 Boto3 documentation:
 [ElasticsearchService.Client.upgrade_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.upgrade_elasticsearch_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `TargetVersion`: `str` *(required)*

@@ -86,7 +86,7 @@ Type annotations for `boto3.client("fis").create_experiment_template` method.
 Boto3 documentation:
 [FIS.Client.create_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.create_experiment_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str` *(required)*
 - `description`: `str` *(required)*
@@ -241,7 +241,7 @@ Type annotations for `boto3.client("fis").start_experiment` method.
 Boto3 documentation:
 [FIS.Client.start_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.start_experiment)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str` *(required)*
 - `experimentTemplateId`: `str` *(required)*
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("fis").update_experiment_template` method.
 Boto3 documentation:
 [FIS.Client.update_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.update_experiment_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `description`: `str`

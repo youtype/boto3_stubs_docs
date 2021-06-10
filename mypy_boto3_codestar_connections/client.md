@@ -87,7 +87,7 @@ method.
 Boto3 documentation:
 [CodeStarconnections.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionName`: `str` *(required)*
 - `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
@@ -104,7 +104,7 @@ Type annotations for `boto3.client("codestar-connections").create_host` method.
 Boto3 documentation:
 [CodeStarconnections.Client.create_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
@@ -196,7 +196,7 @@ method.
 Boto3 documentation:
 [CodeStarconnections.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProviderTypeFilter`: [ProviderTypeType](./literals.md#providertypetype)
 - `HostArnFilter`: `str`
@@ -272,7 +272,7 @@ Type annotations for `boto3.client("codestar-connections").update_host` method.
 Boto3 documentation:
 [CodeStarconnections.Client.update_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostArn`: `str` *(required)*
 - `ProviderEndpoint`: `str`

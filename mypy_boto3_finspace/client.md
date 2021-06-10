@@ -84,7 +84,7 @@ Type annotations for `boto3.client("finspace").create_environment` method.
 Boto3 documentation:
 [finspace.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.create_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -204,7 +204,7 @@ Type annotations for `boto3.client("finspace").update_environment` method.
 Boto3 documentation:
 [finspace.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.update_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 - `name`: `str`

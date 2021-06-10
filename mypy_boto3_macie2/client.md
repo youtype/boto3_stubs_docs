@@ -119,7 +119,7 @@ Type annotations for `boto3.client("macie2").accept_invitation` method.
 Boto3 documentation:
 [Macie2.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.accept_invitation)
 
-Arguments:
+Keyword-only arguments:
 
 - `invitationId`: `str` *(required)*
 - `administratorAccountId`: `str`
@@ -162,7 +162,7 @@ Type annotations for `boto3.client("macie2").create_classification_job` method.
 Boto3 documentation:
 [Macie2.Client.create_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_classification_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str` *(required)*
 - `jobType`: [JobTypeType](./literals.md#jobtypetype) *(required)*
@@ -188,7 +188,7 @@ method.
 Boto3 documentation:
 [Macie2.Client.create_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str`
 - `description`: `str`
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("macie2").create_findings_filter` method.
 Boto3 documentation:
 [Macie2.Client.create_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_findings_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
   *(required)*
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("macie2").create_invitations` method.
 Boto3 documentation:
 [Macie2.Client.create_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_invitations)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountIds`: `List`\[`str`\] *(required)*
 - `disableEmailNotification`: `bool`
@@ -344,7 +344,7 @@ Type annotations for `boto3.client("macie2").describe_buckets` method.
 Boto3 documentation:
 [Macie2.Client.describe_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_buckets)
 
-Arguments:
+Keyword-only arguments:
 
 - `criteria`: `Dict`\[`str`,
   [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
@@ -445,7 +445,7 @@ Type annotations for `boto3.client("macie2").enable_macie` method.
 Boto3 documentation:
 [Macie2.Client.enable_macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_macie)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str`
 - `findingPublishingFrequency`:
@@ -542,7 +542,7 @@ Type annotations for `boto3.client("macie2").get_finding_statistics` method.
 Boto3 documentation:
 [Macie2.Client.get_finding_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_finding_statistics)
 
-Arguments:
+Keyword-only arguments:
 
 - `groupBy`: [GroupByType](./literals.md#groupbytype) *(required)*
 - `findingCriteria`:
@@ -644,7 +644,7 @@ Type annotations for `boto3.client("macie2").get_usage_statistics` method.
 Boto3 documentation:
 [Macie2.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_statistics)
 
-Arguments:
+Keyword-only arguments:
 
 - `filterBy`:
   `List`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
@@ -678,7 +678,7 @@ Type annotations for `boto3.client("macie2").list_classification_jobs` method.
 Boto3 documentation:
 [Macie2.Client.list_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_classification_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `filterCriteria`:
   [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
@@ -713,7 +713,7 @@ Type annotations for `boto3.client("macie2").list_findings` method.
 Boto3 documentation:
 [Macie2.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `findingCriteria`:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
@@ -761,7 +761,7 @@ Type annotations for `boto3.client("macie2").list_members` method.
 Boto3 documentation:
 [Macie2.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -840,7 +840,7 @@ Type annotations for `boto3.client("macie2").search_resources` method.
 Boto3 documentation:
 [Macie2.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.search_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `bucketCriteria`:
   [SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef)
@@ -874,7 +874,7 @@ method.
 Boto3 documentation:
 [Macie2.Client.test_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `regex`: `str` *(required)*
 - `sampleText`: `str` *(required)*
@@ -920,7 +920,7 @@ Type annotations for `boto3.client("macie2").update_findings_filter` method.
 Boto3 documentation:
 [Macie2.Client.update_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_findings_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)

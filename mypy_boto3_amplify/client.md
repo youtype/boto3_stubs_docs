@@ -113,7 +113,7 @@ Type annotations for `boto3.client("amplify").create_app` method.
 Boto3 documentation:
 [Amplify.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -147,7 +147,7 @@ method.
 Boto3 documentation:
 [Amplify.Client.create_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_backend_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `environmentName`: `str` *(required)*
@@ -164,7 +164,7 @@ Type annotations for `boto3.client("amplify").create_branch` method.
 Boto3 documentation:
 [Amplify.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_branch)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -194,7 +194,7 @@ Type annotations for `boto3.client("amplify").create_deployment` method.
 Boto3 documentation:
 [Amplify.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -211,7 +211,7 @@ method.
 Boto3 documentation:
 [Amplify.Client.create_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_domain_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `domainName`: `str` *(required)*
@@ -232,7 +232,7 @@ Type annotations for `boto3.client("amplify").create_webhook` method.
 Boto3 documentation:
 [Amplify.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_webhook)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("amplify").delete_job` method.
 Boto3 documentation:
 [Amplify.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -336,7 +336,7 @@ Type annotations for `boto3.client("amplify").generate_access_logs` method.
 Boto3 documentation:
 [Amplify.Client.generate_access_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_access_logs)
 
-Arguments:
+Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `appId`: `str` *(required)*
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("amplify").get_job` method.
 Boto3 documentation:
 [Amplify.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -482,7 +482,7 @@ Type annotations for `boto3.client("amplify").list_artifacts` method.
 Boto3 documentation:
 [Amplify.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_artifacts)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -501,7 +501,7 @@ method.
 Boto3 documentation:
 [Amplify.Client.list_backend_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_backend_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `environmentName`: `str`
@@ -518,7 +518,7 @@ Type annotations for `boto3.client("amplify").list_branches` method.
 Boto3 documentation:
 [Amplify.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_branches)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `nextToken`: `str`
@@ -533,7 +533,7 @@ Type annotations for `boto3.client("amplify").list_domain_associations` method.
 Boto3 documentation:
 [Amplify.Client.list_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_domain_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `nextToken`: `str`
@@ -549,7 +549,7 @@ Type annotations for `boto3.client("amplify").list_jobs` method.
 Boto3 documentation:
 [Amplify.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -579,7 +579,7 @@ Type annotations for `boto3.client("amplify").list_webhooks` method.
 Boto3 documentation:
 [Amplify.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_webhooks)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `nextToken`: `str`
@@ -594,7 +594,7 @@ Type annotations for `boto3.client("amplify").start_deployment` method.
 Boto3 documentation:
 [Amplify.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -611,7 +611,7 @@ Type annotations for `boto3.client("amplify").start_job` method.
 Boto3 documentation:
 [Amplify.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -631,7 +631,7 @@ Type annotations for `boto3.client("amplify").stop_job` method.
 Boto3 documentation:
 [Amplify.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.stop_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -674,7 +674,7 @@ Type annotations for `boto3.client("amplify").update_app` method.
 Boto3 documentation:
 [Amplify.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `name`: `str`
@@ -707,7 +707,7 @@ Type annotations for `boto3.client("amplify").update_branch` method.
 Boto3 documentation:
 [Amplify.Client.update_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_branch)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -737,7 +737,7 @@ method.
 Boto3 documentation:
 [Amplify.Client.update_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_domain_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `domainName`: `str` *(required)*
@@ -758,7 +758,7 @@ Type annotations for `boto3.client("amplify").update_webhook` method.
 Boto3 documentation:
 [Amplify.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_webhook)
 
-Arguments:
+Keyword-only arguments:
 
 - `webhookId`: `str` *(required)*
 - `branchName`: `str`

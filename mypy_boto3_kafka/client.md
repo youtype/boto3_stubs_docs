@@ -139,7 +139,7 @@ Type annotations for `boto3.client("kafka").create_cluster` method.
 Boto3 documentation:
 [Kafka.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerNodeGroupInfo`:
   [BrokerNodeGroupInfoTypeDef](./type_defs.md#brokernodegroupinfotypedef)
@@ -170,7 +170,7 @@ Type annotations for `boto3.client("kafka").create_configuration` method.
 Boto3 documentation:
 [Kafka.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.create_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -319,7 +319,7 @@ Type annotations for `boto3.client("kafka").list_cluster_operations` method.
 Boto3 documentation:
 [Kafka.Client.list_cluster_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_cluster_operations)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -335,7 +335,7 @@ Type annotations for `boto3.client("kafka").list_clusters` method.
 Boto3 documentation:
 [Kafka.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterNameFilter`: `str`
 - `MaxResults`: `int`
@@ -352,7 +352,7 @@ method.
 Boto3 documentation:
 [Kafka.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configuration_revisions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("kafka").list_nodes` method.
 Boto3 documentation:
 [Kafka.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_nodes)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -413,7 +413,7 @@ Type annotations for `boto3.client("kafka").list_scram_secrets` method.
 Boto3 documentation:
 [Kafka.Client.list_scram_secrets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_scram_secrets)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -482,7 +482,7 @@ Type annotations for `boto3.client("kafka").update_broker_count` method.
 Boto3 documentation:
 [Kafka.Client.update_broker_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_count)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
@@ -498,7 +498,7 @@ Type annotations for `boto3.client("kafka").update_broker_storage` method.
 Boto3 documentation:
 [Kafka.Client.update_broker_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_storage)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
@@ -516,7 +516,7 @@ Type annotations for `boto3.client("kafka").update_broker_type` method.
 Boto3 documentation:
 [Kafka.Client.update_broker_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_broker_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
@@ -533,7 +533,7 @@ method.
 Boto3 documentation:
 [Kafka.Client.update_cluster_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `ConfigurationInfo`:
@@ -552,7 +552,7 @@ method.
 Boto3 documentation:
 [Kafka.Client.update_cluster_kafka_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_cluster_kafka_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("kafka").update_configuration` method.
 Boto3 documentation:
 [Kafka.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -586,7 +586,7 @@ Type annotations for `boto3.client("kafka").update_monitoring` method.
 Boto3 documentation:
 [Kafka.Client.update_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_monitoring)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*

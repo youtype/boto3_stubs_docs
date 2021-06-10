@@ -122,7 +122,7 @@ Type annotations for `boto3.client("sns").add_permission` method.
 Boto3 documentation:
 [SNS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.add_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 - `Label`: `str` *(required)*
@@ -164,7 +164,7 @@ Type annotations for `boto3.client("sns").confirm_subscription` method.
 Boto3 documentation:
 [SNS.Client.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.confirm_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 - `Token`: `str` *(required)*
@@ -180,7 +180,7 @@ Type annotations for `boto3.client("sns").create_platform_application` method.
 Boto3 documentation:
 [SNS.Client.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Platform`: `str` *(required)*
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("sns").create_platform_endpoint` method.
 Boto3 documentation:
 [SNS.Client.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
 - `Token`: `str` *(required)*
@@ -229,7 +229,7 @@ Type annotations for `boto3.client("sns").create_topic` method.
 Boto3 documentation:
 [SNS.Client.create_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_topic)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Attributes`: `Dict`\[`str`, `str`\]
@@ -534,7 +534,7 @@ Type annotations for `boto3.client("sns").publish` method.
 Boto3 documentation:
 [SNS.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish)
 
-Arguments:
+Keyword-only arguments:
 
 - `Message`: `str` *(required)*
 - `TopicArn`: `str`
@@ -606,7 +606,7 @@ Type annotations for `boto3.client("sns").set_subscription_attributes` method.
 Boto3 documentation:
 [SNS.Client.set_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_subscription_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionArn`: `str` *(required)*
 - `AttributeName`: `str` *(required)*
@@ -619,7 +619,7 @@ Type annotations for `boto3.client("sns").set_topic_attributes` method.
 Boto3 documentation:
 [SNS.Client.set_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_topic_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 - `AttributeName`: `str` *(required)*
@@ -632,7 +632,7 @@ Type annotations for `boto3.client("sns").subscribe` method.
 Boto3 documentation:
 [SNS.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.subscribe)
 
-Arguments:
+Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 - `Protocol`: `str` *(required)*

@@ -522,7 +522,7 @@ Type annotations for `boto3.resource("glacier").upload_part` method.
 Boto3 documentation:
 [Glacier.MultipartUpload.upload_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.upload_part)
 
-Arguments:
+Keyword-only arguments:
 
 - `checksum`: `str`
 - `range`: `str`
@@ -923,7 +923,7 @@ Type annotations for `boto3.resource("glacier").upload_archive` method.
 Boto3 documentation:
 [Glacier.Vault.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.upload_archive)
 
-Arguments:
+Keyword-only arguments:
 
 - `archiveDescription`: `str`
 - `checksum`: `str`

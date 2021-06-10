@@ -121,7 +121,7 @@ Type annotations for `boto3.client("timestream-query").query` method.
 Boto3 documentation:
 [TimestreamQuery.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryString`: `str` *(required)*
 - `ClientToken`: `str`

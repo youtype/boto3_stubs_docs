@@ -184,7 +184,7 @@ Type annotations for `boto3.client("emr").cancel_steps` method.
 Boto3 documentation:
 [EMR.Client.cancel_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `StepIds`: `List`\[`str`\] *(required)*
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("emr").create_studio` method.
 Boto3 documentation:
 [EMR.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `AuthMode`: [AuthModeType](./literals.md#authmodetype) *(required)*
@@ -240,7 +240,7 @@ method.
 Boto3 documentation:
 [EMR.Client.create_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
@@ -282,7 +282,7 @@ method.
 Boto3 documentation:
 [EMR.Client.delete_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
@@ -311,7 +311,7 @@ Type annotations for `boto3.client("emr").describe_job_flows` method.
 Boto3 documentation:
 [EMR.Client.describe_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
@@ -427,7 +427,7 @@ Type annotations for `boto3.client("emr").get_studio_session_mapping` method.
 Boto3 documentation:
 [EMR.Client.get_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("emr").list_clusters` method.
 Boto3 documentation:
 [EMR.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("emr").list_instances` method.
 Boto3 documentation:
 [EMR.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str`
@@ -529,7 +529,7 @@ Type annotations for `boto3.client("emr").list_notebook_executions` method.
 Boto3 documentation:
 [EMR.Client.list_notebook_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `EditorId`: `str`
 - `Status`:
@@ -562,7 +562,7 @@ Type annotations for `boto3.client("emr").list_steps` method.
 Boto3 documentation:
 [EMR.Client.list_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `StepStates`: `List`\[[StepStateType](./literals.md#stepstatetype)\]
@@ -578,7 +578,7 @@ Type annotations for `boto3.client("emr").list_studio_session_mappings` method.
 Boto3 documentation:
 [EMR.Client.list_studio_session_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
 
-Arguments:
+Keyword-only arguments:
 
 - `StudioId`: `str`
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
@@ -649,7 +649,7 @@ Type annotations for `boto3.client("emr").put_auto_scaling_policy` method.
 Boto3 documentation:
 [EMR.Client.put_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str` *(required)*
@@ -741,7 +741,7 @@ Type annotations for `boto3.client("emr").run_job_flow` method.
 Boto3 documentation:
 [EMR.Client.run_job_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Instances`:
@@ -815,7 +815,7 @@ Type annotations for `boto3.client("emr").start_notebook_execution` method.
 Boto3 documentation:
 [EMR.Client.start_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `EditorId`: `str` *(required)*
 - `RelativePath`: `str` *(required)*
@@ -860,7 +860,7 @@ Type annotations for `boto3.client("emr").update_studio` method.
 Boto3 documentation:
 [EMR.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio)
 
-Arguments:
+Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 - `Name`: `str`
@@ -876,7 +876,7 @@ method.
 Boto3 documentation:
 [EMR.Client.update_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)

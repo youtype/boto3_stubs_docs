@@ -91,7 +91,7 @@ Type annotations for `boto3.client("personalize-events").put_events` method.
 Boto3 documentation:
 [PersonalizeEvents.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `trackingId`: `str` *(required)*
 - `sessionId`: `str` *(required)*

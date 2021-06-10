@@ -116,7 +116,7 @@ Type annotations for `boto3.client("guardduty").accept_invitation` method.
 Boto3 documentation:
 [GuardDuty.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `MasterId`: `str` *(required)*
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("guardduty").create_detector` method.
 Boto3 documentation:
 [GuardDuty.Client.create_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `Enable`: `bool` *(required)*
 - `ClientToken`: `str`
@@ -178,7 +178,7 @@ Type annotations for `boto3.client("guardduty").create_filter` method.
 Boto3 documentation:
 [GuardDuty.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -200,7 +200,7 @@ Type annotations for `boto3.client("guardduty").create_ip_set` method.
 Boto3 documentation:
 [GuardDuty.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -238,7 +238,7 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.create_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `DestinationType`: `Literal['S3']` (see
@@ -273,7 +273,7 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.create_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("guardduty").get_findings` method.
 Boto3 documentation:
 [GuardDuty.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingIds`: `List`\[`str`\] *(required)*
@@ -557,7 +557,7 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.get_findings_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingStatisticTypes`: `List`\[`Literal['COUNT_BY_SEVERITY']` (see
@@ -658,7 +658,7 @@ Type annotations for `boto3.client("guardduty").get_usage_statistics` method.
 Boto3 documentation:
 [GuardDuty.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `UsageStatisticType`:
@@ -679,7 +679,7 @@ Type annotations for `boto3.client("guardduty").invite_members` method.
 Boto3 documentation:
 [GuardDuty.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
@@ -711,7 +711,7 @@ Type annotations for `boto3.client("guardduty").list_filters` method.
 Boto3 documentation:
 [GuardDuty.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -727,7 +727,7 @@ Type annotations for `boto3.client("guardduty").list_findings` method.
 Boto3 documentation:
 [GuardDuty.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingCriteria`:
@@ -761,7 +761,7 @@ Type annotations for `boto3.client("guardduty").list_ip_sets` method.
 Boto3 documentation:
 [GuardDuty.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -776,7 +776,7 @@ Type annotations for `boto3.client("guardduty").list_members` method.
 Boto3 documentation:
 [GuardDuty.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -810,7 +810,7 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.list_publishing_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -840,7 +840,7 @@ Type annotations for `boto3.client("guardduty").list_threat_intel_sets` method.
 Boto3 documentation:
 [GuardDuty.Client.list_threat_intel_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -930,7 +930,7 @@ Type annotations for `boto3.client("guardduty").update_detector` method.
 Boto3 documentation:
 [GuardDuty.Client.update_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `Enable`: `bool`
@@ -948,7 +948,7 @@ Type annotations for `boto3.client("guardduty").update_filter` method.
 Boto3 documentation:
 [GuardDuty.Client.update_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FilterName`: `str` *(required)*
@@ -969,7 +969,7 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.update_findings_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FindingIds`: `List`\[`str`\] *(required)*
@@ -985,7 +985,7 @@ Type annotations for `boto3.client("guardduty").update_ip_set` method.
 Boto3 documentation:
 [GuardDuty.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `IpSetId`: `str` *(required)*
@@ -1003,7 +1003,7 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.update_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
@@ -1021,7 +1021,7 @@ Type annotations for
 Boto3 documentation:
 [GuardDuty.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AutoEnable`: `bool` *(required)*
@@ -1038,7 +1038,7 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.update_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `DestinationId`: `str` *(required)*
@@ -1055,7 +1055,7 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.update_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `ThreatIntelSetId`: `str` *(required)*

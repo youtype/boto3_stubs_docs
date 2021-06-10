@@ -96,7 +96,7 @@ method.
 Boto3 documentation:
 [Support.Client.add_communication_to_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_communication_to_case)
 
-Arguments:
+Keyword-only arguments:
 
 - `communicationBody`: `str` *(required)*
 - `caseId`: `str`
@@ -126,7 +126,7 @@ Type annotations for `boto3.client("support").create_case` method.
 Boto3 documentation:
 [Support.Client.create_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.create_case)
 
-Arguments:
+Keyword-only arguments:
 
 - `subject`: `str` *(required)*
 - `communicationBody`: `str` *(required)*
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("support").describe_cases` method.
 Boto3 documentation:
 [Support.Client.describe_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_cases)
 
-Arguments:
+Keyword-only arguments:
 
 - `caseIdList`: `List`\[`str`\]
 - `displayId`: `str`
@@ -183,7 +183,7 @@ Type annotations for `boto3.client("support").describe_communications` method.
 Boto3 documentation:
 [Support.Client.describe_communications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_communications)
 
-Arguments:
+Keyword-only arguments:
 
 - `caseId`: `str` *(required)*
 - `beforeTime`: `str`

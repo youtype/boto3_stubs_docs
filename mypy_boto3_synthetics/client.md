@@ -85,7 +85,7 @@ Type annotations for `boto3.client("synthetics").create_canary` method.
 Boto3 documentation:
 [Synthetics.Client.create_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.create_canary)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Code`: [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("synthetics").get_canary_runs` method.
 Boto3 documentation:
 [Synthetics.Client.get_canary_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `NextToken`: `str`
@@ -288,7 +288,7 @@ Type annotations for `boto3.client("synthetics").update_canary` method.
 Boto3 documentation:
 [Synthetics.Client.update_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.update_canary)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Code`: [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)

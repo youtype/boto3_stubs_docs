@@ -150,7 +150,7 @@ Type annotations for `boto3.client("imagebuilder").create_component` method.
 Boto3 documentation:
 [imagebuilder.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
@@ -175,7 +175,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.create_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_container_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `containerType`: `Literal['DOCKER']` (see
   [ContainerTypeType](./literals.md#containertypetype)) *(required)*
@@ -211,7 +211,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.create_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_distribution_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `distributions`:
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("imagebuilder").create_image` method.
 Boto3 documentation:
 [imagebuilder.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `infrastructureConfigurationArn`: `str` *(required)*
 - `clientToken`: `str` *(required)*
@@ -254,7 +254,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.create_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `infrastructureConfigurationArn`: `str` *(required)*
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("imagebuilder").create_image_recipe` method.
 Boto3 documentation:
 [imagebuilder.Client.create_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
@@ -306,7 +306,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.create_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_infrastructure_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `instanceProfileName`: `str` *(required)*
@@ -610,7 +610,7 @@ Type annotations for `boto3.client("imagebuilder").import_component` method.
 Boto3 documentation:
 [imagebuilder.Client.import_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.import_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
@@ -637,7 +637,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.list_component_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_component_build_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `componentVersionArn`: `str` *(required)*
 - `maxResults`: `int`
@@ -653,7 +653,7 @@ Type annotations for `boto3.client("imagebuilder").list_components` method.
 Boto3 documentation:
 [imagebuilder.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_components)
 
-Arguments:
+Keyword-only arguments:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -672,7 +672,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.list_container_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_container_recipes)
 
-Arguments:
+Keyword-only arguments:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -690,7 +690,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.list_distribution_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_distribution_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
@@ -707,7 +707,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.list_image_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_build_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageVersionArn`: `str` *(required)*
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -724,7 +724,7 @@ Type annotations for `boto3.client("imagebuilder").list_image_packages` method.
 Boto3 documentation:
 [imagebuilder.Client.list_image_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_packages)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageBuildVersionArn`: `str` *(required)*
 - `maxResults`: `int`
@@ -741,7 +741,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.list_image_pipeline_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipeline_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -759,7 +759,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.list_image_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipelines)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
@@ -775,7 +775,7 @@ Type annotations for `boto3.client("imagebuilder").list_image_recipes` method.
 Boto3 documentation:
 [imagebuilder.Client.list_image_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_recipes)
 
-Arguments:
+Keyword-only arguments:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -792,7 +792,7 @@ Type annotations for `boto3.client("imagebuilder").list_images` method.
 Boto3 documentation:
 [imagebuilder.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -811,7 +811,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.list_infrastructure_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_infrastructure_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
@@ -950,7 +950,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.update_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_distribution_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `distributionConfigurationArn`: `str` *(required)*
 - `distributions`:
@@ -970,7 +970,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.update_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_image_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
 - `infrastructureConfigurationArn`: `str` *(required)*
@@ -996,7 +996,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.update_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_infrastructure_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `infrastructureConfigurationArn`: `str` *(required)*
 - `instanceProfileName`: `str` *(required)*

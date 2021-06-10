@@ -94,7 +94,7 @@ method.
 Boto3 documentation:
 [ConnectContactLens.Client.list_realtime_contact_analysis_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactId`: `str` *(required)*

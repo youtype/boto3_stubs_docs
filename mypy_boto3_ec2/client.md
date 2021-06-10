@@ -507,7 +507,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.accept_reserved_instances_exchange_quote](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_reserved_instances_exchange_quote)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservedInstanceIds`: `List`\[`str`\] *(required)*
 - `DryRun`: `bool`
@@ -526,7 +526,7 @@ method.
 Boto3 documentation:
 [EC2.Client.accept_transit_gateway_multicast_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_multicast_domain_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
@@ -576,7 +576,7 @@ method.
 Boto3 documentation:
 [EC2.Client.accept_vpc_endpoint_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_vpc_endpoint_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `VpcEndpointIds`: `List`\[`str`\] *(required)*
@@ -623,7 +623,7 @@ Type annotations for `boto3.client("ec2").allocate_address` method.
 Boto3 documentation:
 [EC2.Client.allocate_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_address)
 
-Arguments:
+Keyword-only arguments:
 
 - `Domain`: [DomainTypeType](./literals.md#domaintypetype)
 - `Address`: `str`
@@ -644,7 +644,7 @@ Type annotations for `boto3.client("ec2").allocate_hosts` method.
 Boto3 documentation:
 [EC2.Client.allocate_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_hosts)
 
-Arguments:
+Keyword-only arguments:
 
 - `AvailabilityZone`: `str` *(required)*
 - `Quantity`: `int` *(required)*
@@ -668,7 +668,7 @@ method.
 Boto3 documentation:
 [EC2.Client.apply_security_groups_to_client_vpn_target_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.apply_security_groups_to_client_vpn_target_network)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -685,7 +685,7 @@ Type annotations for `boto3.client("ec2").assign_ipv6_addresses` method.
 Boto3 documentation:
 [EC2.Client.assign_ipv6_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_ipv6_addresses)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `Ipv6AddressCount`: `int`
@@ -701,7 +701,7 @@ Type annotations for `boto3.client("ec2").assign_private_ip_addresses` method.
 Boto3 documentation:
 [EC2.Client.assign_private_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_private_ip_addresses)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `AllowReassignment`: `bool`
@@ -718,7 +718,7 @@ Type annotations for `boto3.client("ec2").associate_address` method.
 Boto3 documentation:
 [EC2.Client.associate_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_address)
 
-Arguments:
+Keyword-only arguments:
 
 - `AllocationId`: `str`
 - `InstanceId`: `str`
@@ -739,7 +739,7 @@ method.
 Boto3 documentation:
 [EC2.Client.associate_client_vpn_target_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_client_vpn_target_network)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `SubnetId`: `str` *(required)*
@@ -756,7 +756,7 @@ Type annotations for `boto3.client("ec2").associate_dhcp_options` method.
 Boto3 documentation:
 [EC2.Client.associate_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_dhcp_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `DhcpOptionsId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -770,7 +770,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.associate_enclave_certificate_iam_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_enclave_certificate_iam_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str`
 - `RoleArn`: `str`
@@ -804,7 +804,7 @@ Type annotations for `boto3.client("ec2").associate_route_table` method.
 Boto3 documentation:
 [EC2.Client.associate_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_route_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `RouteTableId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -837,7 +837,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.associate_transit_gateway_multicast_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_transit_gateway_multicast_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
@@ -855,7 +855,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.associate_transit_gateway_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_transit_gateway_route_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `TransitGatewayAttachmentId`: `str` *(required)*
@@ -871,7 +871,7 @@ Type annotations for `boto3.client("ec2").associate_vpc_cidr_block` method.
 Boto3 documentation:
 [EC2.Client.associate_vpc_cidr_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_vpc_cidr_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `AmazonProvidedIpv6CidrBlock`: `bool`
@@ -890,7 +890,7 @@ Type annotations for `boto3.client("ec2").attach_classic_link_vpc` method.
 Boto3 documentation:
 [EC2.Client.attach_classic_link_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_classic_link_vpc)
 
-Arguments:
+Keyword-only arguments:
 
 - `Groups`: `List`\[`str`\] *(required)*
 - `InstanceId`: `str` *(required)*
@@ -907,7 +907,7 @@ Type annotations for `boto3.client("ec2").attach_internet_gateway` method.
 Boto3 documentation:
 [EC2.Client.attach_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_internet_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `InternetGatewayId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -920,7 +920,7 @@ Type annotations for `boto3.client("ec2").attach_network_interface` method.
 Boto3 documentation:
 [EC2.Client.attach_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_network_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceIndex`: `int` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -938,7 +938,7 @@ Type annotations for `boto3.client("ec2").attach_volume` method.
 Boto3 documentation:
 [EC2.Client.attach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `Device`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -954,7 +954,7 @@ Type annotations for `boto3.client("ec2").attach_vpn_gateway` method.
 Boto3 documentation:
 [EC2.Client.attach_vpn_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_vpn_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `VpnGatewayId`: `str` *(required)*
@@ -970,7 +970,7 @@ Type annotations for `boto3.client("ec2").authorize_client_vpn_ingress` method.
 Boto3 documentation:
 [EC2.Client.authorize_client_vpn_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_client_vpn_ingress)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `TargetNetworkCidr`: `str` *(required)*
@@ -991,7 +991,7 @@ method.
 Boto3 documentation:
 [EC2.Client.authorize_security_group_egress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_security_group_egress)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1012,7 +1012,7 @@ method.
 Boto3 documentation:
 [EC2.Client.authorize_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_security_group_ingress)
 
-Arguments:
+Keyword-only arguments:
 
 - `CidrIp`: `str`
 - `FromPort`: `int`
@@ -1033,7 +1033,7 @@ Type annotations for `boto3.client("ec2").bundle_instance` method.
 Boto3 documentation:
 [EC2.Client.bundle_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.bundle_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Storage`: [StorageTypeDef](./type_defs.md#storagetypedef) *(required)*
@@ -1092,7 +1092,7 @@ Type annotations for `boto3.client("ec2").cancel_conversion_task` method.
 Boto3 documentation:
 [EC2.Client.cancel_conversion_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_conversion_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConversionTaskId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1116,7 +1116,7 @@ Type annotations for `boto3.client("ec2").cancel_import_task` method.
 Boto3 documentation:
 [EC2.Client.cancel_import_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_import_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `CancelReason`: `str`
 - `DryRun`: `bool`
@@ -1147,7 +1147,7 @@ Type annotations for `boto3.client("ec2").cancel_spot_fleet_requests` method.
 Boto3 documentation:
 [EC2.Client.cancel_spot_fleet_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_spot_fleet_requests)
 
-Arguments:
+Keyword-only arguments:
 
 - `SpotFleetRequestIds`: `List`\[`str`\] *(required)*
 - `TerminateInstances`: `bool` *(required)*
@@ -1179,7 +1179,7 @@ Type annotations for `boto3.client("ec2").confirm_product_instance` method.
 Boto3 documentation:
 [EC2.Client.confirm_product_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.confirm_product_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ProductCode`: `str` *(required)*
@@ -1195,7 +1195,7 @@ Type annotations for `boto3.client("ec2").copy_fpga_image` method.
 Boto3 documentation:
 [EC2.Client.copy_fpga_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_fpga_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceFpgaImageId`: `str` *(required)*
 - `SourceRegion`: `str` *(required)*
@@ -1214,7 +1214,7 @@ Type annotations for `boto3.client("ec2").copy_image` method.
 Boto3 documentation:
 [EC2.Client.copy_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SourceImageId`: `str` *(required)*
@@ -1235,7 +1235,7 @@ Type annotations for `boto3.client("ec2").copy_snapshot` method.
 Boto3 documentation:
 [EC2.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceRegion`: `str` *(required)*
 - `SourceSnapshotId`: `str` *(required)*
@@ -1258,7 +1258,7 @@ Type annotations for `boto3.client("ec2").create_capacity_reservation` method.
 Boto3 documentation:
 [EC2.Client.create_capacity_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_capacity_reservation)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceType`: `str` *(required)*
 - `InstancePlatform`:
@@ -1291,7 +1291,7 @@ Type annotations for `boto3.client("ec2").create_carrier_gateway` method.
 Boto3 documentation:
 [EC2.Client.create_carrier_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_carrier_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `TagSpecifications`:
@@ -1309,7 +1309,7 @@ Type annotations for `boto3.client("ec2").create_client_vpn_endpoint` method.
 Boto3 documentation:
 [EC2.Client.create_client_vpn_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_client_vpn_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientCidrBlock`: `str` *(required)*
 - `ServerCertificateArn`: `str` *(required)*
@@ -1346,7 +1346,7 @@ Type annotations for `boto3.client("ec2").create_client_vpn_route` method.
 Boto3 documentation:
 [EC2.Client.create_client_vpn_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_client_vpn_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `DestinationCidrBlock`: `str` *(required)*
@@ -1365,7 +1365,7 @@ Type annotations for `boto3.client("ec2").create_customer_gateway` method.
 Boto3 documentation:
 [EC2.Client.create_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_customer_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `BgpAsn`: `int` *(required)*
 - `Type`: `Literal['ipsec.1']` (see
@@ -1416,7 +1416,7 @@ Type annotations for `boto3.client("ec2").create_dhcp_options` method.
 Boto3 documentation:
 [EC2.Client.create_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_dhcp_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `DhcpConfigurations`:
   `List`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
@@ -1436,7 +1436,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_egress_only_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_egress_only_internet_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `ClientToken`: `str`
@@ -1454,7 +1454,7 @@ Type annotations for `boto3.client("ec2").create_fleet` method.
 Boto3 documentation:
 [EC2.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `LaunchTemplateConfigs`:
   `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
@@ -1487,7 +1487,7 @@ Type annotations for `boto3.client("ec2").create_flow_logs` method.
 Boto3 documentation:
 [EC2.Client.create_flow_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_flow_logs)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceIds`: `List`\[`str`\] *(required)*
 - `ResourceType`:
@@ -1516,7 +1516,7 @@ Type annotations for `boto3.client("ec2").create_fpga_image` method.
 Boto3 documentation:
 [EC2.Client.create_fpga_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_fpga_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputStorageLocation`:
   [StorageLocationTypeDef](./type_defs.md#storagelocationtypedef) *(required)*
@@ -1539,7 +1539,7 @@ Type annotations for `boto3.client("ec2").create_image` method.
 Boto3 documentation:
 [EC2.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -1560,7 +1560,7 @@ Type annotations for `boto3.client("ec2").create_instance_export_task` method.
 Boto3 documentation:
 [EC2.Client.create_instance_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_instance_export_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExportToS3Task`:
   [ExportToS3TaskSpecificationTypeDef](./type_defs.md#exporttos3taskspecificationtypedef)
@@ -1598,7 +1598,7 @@ Type annotations for `boto3.client("ec2").create_key_pair` method.
 Boto3 documentation:
 [EC2.Client.create_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_key_pair)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyName`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1614,7 +1614,7 @@ Type annotations for `boto3.client("ec2").create_launch_template` method.
 Boto3 documentation:
 [EC2.Client.create_launch_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `LaunchTemplateName`: `str` *(required)*
 - `LaunchTemplateData`:
@@ -1637,7 +1637,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_launch_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `LaunchTemplateData`:
   [RequestLaunchTemplateDataTypeDef](./type_defs.md#requestlaunchtemplatedatatypedef)
@@ -1659,7 +1659,7 @@ Type annotations for `boto3.client("ec2").create_local_gateway_route` method.
 Boto3 documentation:
 [EC2.Client.create_local_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `DestinationCidrBlock`: `str` *(required)*
 - `LocalGatewayRouteTableId`: `str` *(required)*
@@ -1677,7 +1677,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.create_local_gateway_route_table_vpc_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route_table_vpc_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocalGatewayRouteTableId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -1695,7 +1695,7 @@ Type annotations for `boto3.client("ec2").create_managed_prefix_list` method.
 Boto3 documentation:
 [EC2.Client.create_managed_prefix_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_managed_prefix_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `PrefixListName`: `str` *(required)*
 - `MaxEntries`: `int` *(required)*
@@ -1717,7 +1717,7 @@ Type annotations for `boto3.client("ec2").create_nat_gateway` method.
 Boto3 documentation:
 [EC2.Client.create_nat_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_nat_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetId`: `str` *(required)*
 - `AllocationId`: `str` *(required)*
@@ -1736,7 +1736,7 @@ Type annotations for `boto3.client("ec2").create_network_acl` method.
 Boto3 documentation:
 [EC2.Client.create_network_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1753,7 +1753,7 @@ Type annotations for `boto3.client("ec2").create_network_acl_entry` method.
 Boto3 documentation:
 [EC2.Client.create_network_acl_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_acl_entry)
 
-Arguments:
+Keyword-only arguments:
 
 - `Egress`: `bool` *(required)*
 - `NetworkAclId`: `str` *(required)*
@@ -1773,7 +1773,7 @@ Type annotations for `boto3.client("ec2").create_network_insights_path` method.
 Boto3 documentation:
 [EC2.Client.create_network_insights_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_insights_path)
 
-Arguments:
+Keyword-only arguments:
 
 - `Source`: `str` *(required)*
 - `Destination`: `str` *(required)*
@@ -1796,7 +1796,7 @@ Type annotations for `boto3.client("ec2").create_network_interface` method.
 Boto3 documentation:
 [EC2.Client.create_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetId`: `str` *(required)*
 - `Description`: `str`
@@ -1826,7 +1826,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_network_interface_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_interface_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `Permission`:
@@ -1846,7 +1846,7 @@ Type annotations for `boto3.client("ec2").create_placement_group` method.
 Boto3 documentation:
 [EC2.Client.create_placement_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_placement_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `GroupName`: `str`
@@ -1866,7 +1866,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_replace_root_volume_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_replace_root_volume_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `SnapshotId`: `str`
@@ -1886,7 +1886,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_reserved_instances_listing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_reserved_instances_listing)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientToken`: `str` *(required)*
 - `InstanceCount`: `int` *(required)*
@@ -1905,7 +1905,7 @@ Type annotations for `boto3.client("ec2").create_restore_image_task` method.
 Boto3 documentation:
 [EC2.Client.create_restore_image_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_restore_image_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ObjectKey`: `str` *(required)*
@@ -1924,7 +1924,7 @@ Type annotations for `boto3.client("ec2").create_route` method.
 Boto3 documentation:
 [EC2.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `RouteTableId`: `str` *(required)*
 - `DestinationCidrBlock`: `str`
@@ -1951,7 +1951,7 @@ Type annotations for `boto3.client("ec2").create_route_table` method.
 Boto3 documentation:
 [EC2.Client.create_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_route_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1968,7 +1968,7 @@ Type annotations for `boto3.client("ec2").create_security_group` method.
 Boto3 documentation:
 [EC2.Client.create_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_security_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Description`: `str` *(required)*
 - `GroupName`: `str` *(required)*
@@ -1987,7 +1987,7 @@ Type annotations for `boto3.client("ec2").create_snapshot` method.
 Boto3 documentation:
 [EC2.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 - `Description`: `str`
@@ -2005,7 +2005,7 @@ Type annotations for `boto3.client("ec2").create_snapshots` method.
 Boto3 documentation:
 [EC2.Client.create_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshots)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceSpecification`:
   [InstanceSpecificationTypeDef](./type_defs.md#instancespecificationtypedef)
@@ -2029,7 +2029,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_spot_datafeed_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_spot_datafeed_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `DryRun`: `bool`
@@ -2045,7 +2045,7 @@ Type annotations for `boto3.client("ec2").create_store_image_task` method.
 Boto3 documentation:
 [EC2.Client.create_store_image_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_store_image_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -2063,7 +2063,7 @@ Type annotations for `boto3.client("ec2").create_subnet` method.
 Boto3 documentation:
 [EC2.Client.create_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_subnet)
 
-Arguments:
+Keyword-only arguments:
 
 - `CidrBlock`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -2084,7 +2084,7 @@ Type annotations for `boto3.client("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resources`: `List`\[`Any`\] *(required)*
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
@@ -2098,7 +2098,7 @@ Type annotations for `boto3.client("ec2").create_traffic_mirror_filter` method.
 Boto3 documentation:
 [EC2.Client.create_traffic_mirror_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `Description`: `str`
 - `TagSpecifications`:
@@ -2117,7 +2117,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_traffic_mirror_filter_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_filter_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficMirrorFilterId`: `str` *(required)*
 - `TrafficDirection`:
@@ -2148,7 +2148,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_traffic_mirror_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `TrafficMirrorTargetId`: `str` *(required)*
@@ -2172,7 +2172,7 @@ Type annotations for `boto3.client("ec2").create_traffic_mirror_target` method.
 Boto3 documentation:
 [EC2.Client.create_traffic_mirror_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str`
 - `NetworkLoadBalancerArn`: `str`
@@ -2192,7 +2192,7 @@ Type annotations for `boto3.client("ec2").create_transit_gateway` method.
 Boto3 documentation:
 [EC2.Client.create_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `Description`: `str`
 - `Options`:
@@ -2212,7 +2212,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_connect)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransportTransitGatewayAttachmentId`: `str` *(required)*
 - `Options`:
@@ -2233,7 +2233,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_connect_peer)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `PeerAddress`: `str` *(required)*
@@ -2256,7 +2256,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_multicast_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_multicast_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayId`: `str` *(required)*
 - `Options`:
@@ -2276,7 +2276,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_peering_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_peering_attachment)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayId`: `str` *(required)*
 - `PeerTransitGatewayId`: `str` *(required)*
@@ -2297,7 +2297,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_prefix_list_reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_prefix_list_reference)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `PrefixListId`: `str` *(required)*
@@ -2315,7 +2315,7 @@ Type annotations for `boto3.client("ec2").create_transit_gateway_route` method.
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `DestinationCidrBlock`: `str` *(required)*
 - `TransitGatewayRouteTableId`: `str` *(required)*
@@ -2334,7 +2334,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_route_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayId`: `str` *(required)*
 - `TagSpecifications`:
@@ -2352,7 +2352,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_vpc_attachment)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -2373,7 +2373,7 @@ Type annotations for `boto3.client("ec2").create_volume` method.
 Boto3 documentation:
 [EC2.Client.create_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `AvailabilityZone`: `str` *(required)*
 - `Encrypted`: `bool`
@@ -2398,7 +2398,7 @@ Type annotations for `boto3.client("ec2").create_vpc` method.
 Boto3 documentation:
 [EC2.Client.create_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc)
 
-Arguments:
+Keyword-only arguments:
 
 - `CidrBlock`: `str` *(required)*
 - `AmazonProvidedIpv6CidrBlock`: `bool`
@@ -2419,7 +2419,7 @@ Type annotations for `boto3.client("ec2").create_vpc_endpoint` method.
 Boto3 documentation:
 [EC2.Client.create_vpc_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `ServiceName`: `str` *(required)*
@@ -2445,7 +2445,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.create_vpc_endpoint_connection_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_connection_notification)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionNotificationArn`: `str` *(required)*
 - `ConnectionEvents`: `List`\[`str`\] *(required)*
@@ -2465,7 +2465,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.create_vpc_endpoint_service_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_service_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `AcceptanceRequired`: `bool`
@@ -2487,7 +2487,7 @@ method.
 Boto3 documentation:
 [EC2.Client.create_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_peering_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `PeerOwnerId`: `str`
@@ -2507,7 +2507,7 @@ Type annotations for `boto3.client("ec2").create_vpn_connection` method.
 Boto3 documentation:
 [EC2.Client.create_vpn_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CustomerGatewayId`: `str` *(required)*
 - `Type`: `str` *(required)*
@@ -2541,7 +2541,7 @@ Type annotations for `boto3.client("ec2").create_vpn_gateway` method.
 Boto3 documentation:
 [EC2.Client.create_vpn_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: `Literal['ipsec.1']` (see
   [GatewayTypeType](./literals.md#gatewaytypetype)) *(required)*
@@ -2591,7 +2591,7 @@ Type annotations for `boto3.client("ec2").delete_client_vpn_route` method.
 Boto3 documentation:
 [EC2.Client.delete_client_vpn_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_client_vpn_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `DestinationCidrBlock`: `str` *(required)*
@@ -2648,7 +2648,7 @@ Type annotations for `boto3.client("ec2").delete_fleets` method.
 Boto3 documentation:
 [EC2.Client.delete_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_fleets)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetIds`: `List`\[`str`\] *(required)*
 - `TerminateInstances`: `bool` *(required)*
@@ -2705,7 +2705,7 @@ Type annotations for `boto3.client("ec2").delete_key_pair` method.
 Boto3 documentation:
 [EC2.Client.delete_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_key_pair)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyName`: `str`
 - `KeyPairId`: `str`
@@ -2718,7 +2718,7 @@ Type annotations for `boto3.client("ec2").delete_launch_template` method.
 Boto3 documentation:
 [EC2.Client.delete_launch_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_launch_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `LaunchTemplateId`: `str`
@@ -2735,7 +2735,7 @@ method.
 Boto3 documentation:
 [EC2.Client.delete_launch_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_launch_template_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Versions`: `List`\[`str`\] *(required)*
 - `DryRun`: `bool`
@@ -2752,7 +2752,7 @@ Type annotations for `boto3.client("ec2").delete_local_gateway_route` method.
 Boto3 documentation:
 [EC2.Client.delete_local_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `DestinationCidrBlock`: `str` *(required)*
 - `LocalGatewayRouteTableId`: `str` *(required)*
@@ -2826,7 +2826,7 @@ Type annotations for `boto3.client("ec2").delete_network_acl_entry` method.
 Boto3 documentation:
 [EC2.Client.delete_network_acl_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_acl_entry)
 
-Arguments:
+Keyword-only arguments:
 
 - `Egress`: `bool` *(required)*
 - `NetworkAclId`: `str` *(required)*
@@ -2884,7 +2884,7 @@ method.
 Boto3 documentation:
 [EC2.Client.delete_network_interface_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_interface_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfacePermissionId`: `str` *(required)*
 - `Force`: `bool`
@@ -2928,7 +2928,7 @@ Type annotations for `boto3.client("ec2").delete_route` method.
 Boto3 documentation:
 [EC2.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `RouteTableId`: `str` *(required)*
 - `DestinationCidrBlock`: `str`
@@ -2955,7 +2955,7 @@ Type annotations for `boto3.client("ec2").delete_security_group` method.
 Boto3 documentation:
 [EC2.Client.delete_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_security_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupId`: `str`
 - `GroupName`: `str`
@@ -3004,7 +3004,7 @@ Type annotations for `boto3.client("ec2").delete_tags` method.
 Boto3 documentation:
 [EC2.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resources`: `List`\[`Any`\] *(required)*
 - `DryRun`: `bool`
@@ -3159,7 +3159,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_prefix_list_reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_prefix_list_reference)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `PrefixListId`: `str` *(required)*
@@ -3175,7 +3175,7 @@ Type annotations for `boto3.client("ec2").delete_transit_gateway_route` method.
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `DestinationCidrBlock`: `str` *(required)*
@@ -3392,7 +3392,7 @@ method.
 Boto3 documentation:
 [EC2.Client.deregister_transit_gateway_multicast_group_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_transit_gateway_multicast_group_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
@@ -3411,7 +3411,7 @@ method.
 Boto3 documentation:
 [EC2.Client.deregister_transit_gateway_multicast_group_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_transit_gateway_multicast_group_sources)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
@@ -3444,7 +3444,7 @@ Type annotations for `boto3.client("ec2").describe_addresses` method.
 Boto3 documentation:
 [EC2.Client.describe_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_addresses)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PublicIps`: `List`\[`str`\]
@@ -3461,7 +3461,7 @@ Type annotations for `boto3.client("ec2").describe_addresses_attribute` method.
 Boto3 documentation:
 [EC2.Client.describe_addresses_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_addresses_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `AllocationIds`: `List`\[`str`\]
 - `Attribute`: `Literal['domain-name']` (see
@@ -3494,7 +3494,7 @@ Type annotations for `boto3.client("ec2").describe_availability_zones` method.
 Boto3 documentation:
 [EC2.Client.describe_availability_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_availability_zones)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ZoneNames`: `List`\[`str`\]
@@ -3512,7 +3512,7 @@ Type annotations for `boto3.client("ec2").describe_bundle_tasks` method.
 Boto3 documentation:
 [EC2.Client.describe_bundle_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_bundle_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `BundleIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3528,7 +3528,7 @@ Type annotations for `boto3.client("ec2").describe_byoip_cidrs` method.
 Boto3 documentation:
 [EC2.Client.describe_byoip_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_byoip_cidrs)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int` *(required)*
 - `DryRun`: `bool`
@@ -3545,7 +3545,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_capacity_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_capacity_reservations)
 
-Arguments:
+Keyword-only arguments:
 
 - `CapacityReservationIds`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -3563,7 +3563,7 @@ Type annotations for `boto3.client("ec2").describe_carrier_gateways` method.
 Boto3 documentation:
 [EC2.Client.describe_carrier_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_carrier_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `CarrierGatewayIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3582,7 +3582,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_classic_link_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_classic_link_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -3601,7 +3601,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_authorization_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_authorization_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -3620,7 +3620,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3639,7 +3639,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointIds`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -3657,7 +3657,7 @@ Type annotations for `boto3.client("ec2").describe_client_vpn_routes` method.
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_routes)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3676,7 +3676,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_target_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_target_networks)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `AssociationIds`: `List`\[`str`\]
@@ -3695,7 +3695,7 @@ Type annotations for `boto3.client("ec2").describe_coip_pools` method.
 Boto3 documentation:
 [EC2.Client.describe_coip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_coip_pools)
 
-Arguments:
+Keyword-only arguments:
 
 - `PoolIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3728,7 +3728,7 @@ Type annotations for `boto3.client("ec2").describe_customer_gateways` method.
 Boto3 documentation:
 [EC2.Client.describe_customer_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_customer_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `CustomerGatewayIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3744,7 +3744,7 @@ Type annotations for `boto3.client("ec2").describe_dhcp_options` method.
 Boto3 documentation:
 [EC2.Client.describe_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_dhcp_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `DhcpOptionsIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3763,7 +3763,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_egress_only_internet_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_egress_only_internet_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `EgressOnlyInternetGatewayIds`: `List`\[`str`\]
@@ -3781,7 +3781,7 @@ Type annotations for `boto3.client("ec2").describe_elastic_gpus` method.
 Boto3 documentation:
 [EC2.Client.describe_elastic_gpus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_elastic_gpus)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticGpuIds`: `List`\[`str`\]
 - `DryRun`: `bool`
@@ -3799,7 +3799,7 @@ Type annotations for `boto3.client("ec2").describe_export_image_tasks` method.
 Boto3 documentation:
 [EC2.Client.describe_export_image_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_export_image_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3833,7 +3833,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_fast_snapshot_restores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fast_snapshot_restores)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
@@ -3850,7 +3850,7 @@ Type annotations for `boto3.client("ec2").describe_fleet_history` method.
 Boto3 documentation:
 [EC2.Client.describe_fleet_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleet_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `StartTime`: `datetime` *(required)*
@@ -3869,7 +3869,7 @@ Type annotations for `boto3.client("ec2").describe_fleet_instances` method.
 Boto3 documentation:
 [EC2.Client.describe_fleet_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleet_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -3887,7 +3887,7 @@ Type annotations for `boto3.client("ec2").describe_fleets` method.
 Boto3 documentation:
 [EC2.Client.describe_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleets)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `MaxResults`: `int`
@@ -3905,7 +3905,7 @@ Type annotations for `boto3.client("ec2").describe_flow_logs` method.
 Boto3 documentation:
 [EC2.Client.describe_flow_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_flow_logs)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3924,7 +3924,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_fpga_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fpga_image_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `FpgaImageId`: `str` *(required)*
 - `Attribute`:
@@ -3942,7 +3942,7 @@ Type annotations for `boto3.client("ec2").describe_fpga_images` method.
 Boto3 documentation:
 [EC2.Client.describe_fpga_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fpga_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `FpgaImageIds`: `List`\[`str`\]
@@ -3962,7 +3962,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_host_reservation_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_host_reservation_offerings)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxDuration`: `int`
@@ -3981,7 +3981,7 @@ Type annotations for `boto3.client("ec2").describe_host_reservations` method.
 Boto3 documentation:
 [EC2.Client.describe_host_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_host_reservations)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `HostReservationIdSet`: `List`\[`str`\]
@@ -3998,7 +3998,7 @@ Type annotations for `boto3.client("ec2").describe_hosts` method.
 Boto3 documentation:
 [EC2.Client.describe_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_hosts)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `HostIds`: `List`\[`str`\]
@@ -4016,7 +4016,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_iam_instance_profile_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_iam_instance_profile_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4062,7 +4062,7 @@ Type annotations for `boto3.client("ec2").describe_image_attribute` method.
 Boto3 documentation:
 [EC2.Client.describe_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_image_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`: [ImageAttributeNameType](./literals.md#imageattributenametype)
   *(required)*
@@ -4078,7 +4078,7 @@ Type annotations for `boto3.client("ec2").describe_images` method.
 Boto3 documentation:
 [EC2.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExecutableUsers`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4096,7 +4096,7 @@ Type annotations for `boto3.client("ec2").describe_import_image_tasks` method.
 Boto3 documentation:
 [EC2.Client.describe_import_image_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_import_image_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4115,7 +4115,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_import_snapshot_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_import_snapshot_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4133,7 +4133,7 @@ Type annotations for `boto3.client("ec2").describe_instance_attribute` method.
 Boto3 documentation:
 [EC2.Client.describe_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
@@ -4151,7 +4151,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_instance_credit_specifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_credit_specifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4184,7 +4184,7 @@ Type annotations for `boto3.client("ec2").describe_instance_status` method.
 Boto3 documentation:
 [EC2.Client.describe_instance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
@@ -4204,7 +4204,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_instance_type_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_type_offerings)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `LocationType`: [LocationTypeType](./literals.md#locationtypetype)
@@ -4222,7 +4222,7 @@ Type annotations for `boto3.client("ec2").describe_instance_types` method.
 Boto3 documentation:
 [EC2.Client.describe_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
@@ -4240,7 +4240,7 @@ Type annotations for `boto3.client("ec2").describe_instances` method.
 Boto3 documentation:
 [EC2.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `InstanceIds`: `List`\[`str`\]
@@ -4258,7 +4258,7 @@ Type annotations for `boto3.client("ec2").describe_internet_gateways` method.
 Boto3 documentation:
 [EC2.Client.describe_internet_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_internet_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -4276,7 +4276,7 @@ Type annotations for `boto3.client("ec2").describe_ipv6_pools` method.
 Boto3 documentation:
 [EC2.Client.describe_ipv6_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipv6_pools)
 
-Arguments:
+Keyword-only arguments:
 
 - `PoolIds`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -4294,7 +4294,7 @@ Type annotations for `boto3.client("ec2").describe_key_pairs` method.
 Boto3 documentation:
 [EC2.Client.describe_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_key_pairs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `KeyNames`: `List`\[`str`\]
@@ -4312,7 +4312,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_launch_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_launch_template_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `LaunchTemplateId`: `str`
@@ -4334,7 +4334,7 @@ Type annotations for `boto3.client("ec2").describe_launch_templates` method.
 Boto3 documentation:
 [EC2.Client.describe_launch_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_launch_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `LaunchTemplateIds`: `List`\[`str`\]
@@ -4355,7 +4355,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_route_table_virtual_interface_group_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_table_virtual_interface_group_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4375,7 +4375,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_route_table_vpc_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_table_vpc_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocalGatewayRouteTableVpcAssociationIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4394,7 +4394,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_route_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocalGatewayRouteTableIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4413,7 +4413,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_virtual_interface_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_virtual_interface_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocalGatewayVirtualInterfaceGroupIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4432,7 +4432,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_virtual_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_virtual_interfaces)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocalGatewayVirtualInterfaceIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4450,7 +4450,7 @@ Type annotations for `boto3.client("ec2").describe_local_gateways` method.
 Boto3 documentation:
 [EC2.Client.describe_local_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocalGatewayIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4469,7 +4469,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_managed_prefix_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_managed_prefix_lists)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4487,7 +4487,7 @@ Type annotations for `boto3.client("ec2").describe_moving_addresses` method.
 Boto3 documentation:
 [EC2.Client.describe_moving_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_moving_addresses)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -4505,7 +4505,7 @@ Type annotations for `boto3.client("ec2").describe_nat_gateways` method.
 Boto3 documentation:
 [EC2.Client.describe_nat_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_nat_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4523,7 +4523,7 @@ Type annotations for `boto3.client("ec2").describe_network_acls` method.
 Boto3 documentation:
 [EC2.Client.describe_network_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_acls)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -4542,7 +4542,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_network_insights_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_analyses)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInsightsAnalysisIds`: `List`\[`str`\]
 - `NetworkInsightsPathId`: `str`
@@ -4564,7 +4564,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_network_insights_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_paths)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInsightsPathIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4583,7 +4583,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_network_interface_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interface_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `Attribute`:
@@ -4601,7 +4601,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_network_interface_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interface_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfacePermissionIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4618,7 +4618,7 @@ Type annotations for `boto3.client("ec2").describe_network_interfaces` method.
 Boto3 documentation:
 [EC2.Client.describe_network_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interfaces)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -4636,7 +4636,7 @@ Type annotations for `boto3.client("ec2").describe_placement_groups` method.
 Boto3 documentation:
 [EC2.Client.describe_placement_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_placement_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -4653,7 +4653,7 @@ Type annotations for `boto3.client("ec2").describe_prefix_lists` method.
 Boto3 documentation:
 [EC2.Client.describe_prefix_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_prefix_lists)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4671,7 +4671,7 @@ Type annotations for `boto3.client("ec2").describe_principal_id_format` method.
 Boto3 documentation:
 [EC2.Client.describe_principal_id_format](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_principal_id_format)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Resources`: `List`\[`str`\]
@@ -4688,7 +4688,7 @@ Type annotations for `boto3.client("ec2").describe_public_ipv4_pools` method.
 Boto3 documentation:
 [EC2.Client.describe_public_ipv4_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_public_ipv4_pools)
 
-Arguments:
+Keyword-only arguments:
 
 - `PoolIds`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -4705,7 +4705,7 @@ Type annotations for `boto3.client("ec2").describe_regions` method.
 Boto3 documentation:
 [EC2.Client.describe_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_regions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `RegionNames`: `List`\[`str`\]
@@ -4723,7 +4723,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_replace_root_volume_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_replace_root_volume_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplaceRootVolumeTaskIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4741,7 +4741,7 @@ Type annotations for `boto3.client("ec2").describe_reserved_instances` method.
 Boto3 documentation:
 [EC2.Client.describe_reserved_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
@@ -4761,7 +4761,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_reserved_instances_listings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_listings)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ReservedInstancesId`: `str`
@@ -4778,7 +4778,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_reserved_instances_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_modifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ReservedInstancesModificationIds`: `List`\[`str`\]
@@ -4795,7 +4795,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_reserved_instances_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_offerings)
 
-Arguments:
+Keyword-only arguments:
 
 - `AvailabilityZone`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4825,7 +4825,7 @@ Type annotations for `boto3.client("ec2").describe_route_tables` method.
 Boto3 documentation:
 [EC2.Client.describe_route_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_route_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -4844,7 +4844,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_scheduled_instance_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_scheduled_instance_availability)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirstSlotStartTimeRange`:
   [SlotDateTimeRangeRequestTypeDef](./type_defs.md#slotdatetimerangerequesttypedef)
@@ -4869,7 +4869,7 @@ Type annotations for `boto3.client("ec2").describe_scheduled_instances` method.
 Boto3 documentation:
 [EC2.Client.describe_scheduled_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_scheduled_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -4905,7 +4905,7 @@ Type annotations for `boto3.client("ec2").describe_security_groups` method.
 Boto3 documentation:
 [EC2.Client.describe_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `GroupIds`: `List`\[`str`\]
@@ -4924,7 +4924,7 @@ Type annotations for `boto3.client("ec2").describe_snapshot_attribute` method.
 Boto3 documentation:
 [EC2.Client.describe_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshot_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
@@ -4942,7 +4942,7 @@ Type annotations for `boto3.client("ec2").describe_snapshots` method.
 Boto3 documentation:
 [EC2.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshots)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
@@ -4978,7 +4978,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_spot_fleet_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `SpotFleetRequestId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -4996,7 +4996,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_spot_fleet_request_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_request_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `SpotFleetRequestId`: `str` *(required)*
 - `StartTime`: `datetime` *(required)*
@@ -5015,7 +5015,7 @@ Type annotations for `boto3.client("ec2").describe_spot_fleet_requests` method.
 Boto3 documentation:
 [EC2.Client.describe_spot_fleet_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_requests)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `MaxResults`: `int`
@@ -5033,7 +5033,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_spot_instance_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_instance_requests)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -5051,7 +5051,7 @@ Type annotations for `boto3.client("ec2").describe_spot_price_history` method.
 Boto3 documentation:
 [EC2.Client.describe_spot_price_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_price_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `AvailabilityZone`: `str`
@@ -5074,7 +5074,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_stale_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_stale_security_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -5091,7 +5091,7 @@ Type annotations for `boto3.client("ec2").describe_store_image_tasks` method.
 Boto3 documentation:
 [EC2.Client.describe_store_image_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_store_image_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageIds`: `List`\[`str`\]
 - `DryRun`: `bool`
@@ -5109,7 +5109,7 @@ Type annotations for `boto3.client("ec2").describe_subnets` method.
 Boto3 documentation:
 [EC2.Client.describe_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_subnets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SubnetIds`: `List`\[`str`\]
@@ -5127,7 +5127,7 @@ Type annotations for `boto3.client("ec2").describe_tags` method.
 Boto3 documentation:
 [EC2.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5144,7 +5144,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_traffic_mirror_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_filters)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficMirrorFilterIds`: `List`\[`str`\]
 - `DryRun`: `bool`
@@ -5163,7 +5163,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_traffic_mirror_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_sessions)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficMirrorSessionIds`: `List`\[`str`\]
 - `DryRun`: `bool`
@@ -5182,7 +5182,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_traffic_mirror_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficMirrorTargetIds`: `List`\[`str`\]
 - `DryRun`: `bool`
@@ -5201,7 +5201,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_attachments)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayAttachmentIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5220,7 +5220,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_connect_peers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_connect_peers)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayConnectPeerIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5239,7 +5239,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_connects)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayAttachmentIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5258,7 +5258,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_multicast_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_multicast_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5277,7 +5277,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_peering_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_peering_attachments)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayAttachmentIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5296,7 +5296,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_route_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_route_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5315,7 +5315,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_vpc_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_vpc_attachments)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayAttachmentIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5333,7 +5333,7 @@ Type annotations for `boto3.client("ec2").describe_transit_gateways` method.
 Boto3 documentation:
 [EC2.Client.describe_transit_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5351,7 +5351,7 @@ Type annotations for `boto3.client("ec2").describe_volume_attribute` method.
 Boto3 documentation:
 [EC2.Client.describe_volume_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volume_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`: [VolumeAttributeNameType](./literals.md#volumeattributenametype)
   *(required)*
@@ -5368,7 +5368,7 @@ Type annotations for `boto3.client("ec2").describe_volume_status` method.
 Boto3 documentation:
 [EC2.Client.describe_volume_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volume_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
@@ -5386,7 +5386,7 @@ Type annotations for `boto3.client("ec2").describe_volumes` method.
 Boto3 documentation:
 [EC2.Client.describe_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volumes)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VolumeIds`: `List`\[`str`\]
@@ -5405,7 +5405,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_volumes_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volumes_modifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `VolumeIds`: `List`\[`str`\]
@@ -5423,7 +5423,7 @@ Type annotations for `boto3.client("ec2").describe_vpc_attribute` method.
 Boto3 documentation:
 [EC2.Client.describe_vpc_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`: [VpcAttributeNameType](./literals.md#vpcattributenametype)
   *(required)*
@@ -5440,7 +5440,7 @@ Type annotations for `boto3.client("ec2").describe_vpc_classic_link` method.
 Boto3 documentation:
 [EC2.Client.describe_vpc_classic_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -5457,7 +5457,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_vpc_classic_link_dns_support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link_dns_support)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -5474,7 +5474,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_connection_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_connection_notifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `ConnectionNotificationId`: `str`
@@ -5493,7 +5493,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5511,7 +5511,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_service_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_service_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `ServiceIds`: `List`\[`str`\]
@@ -5530,7 +5530,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_service_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_service_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -5549,7 +5549,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `ServiceNames`: `List`\[`str`\]
@@ -5567,7 +5567,7 @@ Type annotations for `boto3.client("ec2").describe_vpc_endpoints` method.
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `VpcEndpointIds`: `List`\[`str`\]
@@ -5586,7 +5586,7 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_vpc_peering_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_peering_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
@@ -5604,7 +5604,7 @@ Type annotations for `boto3.client("ec2").describe_vpcs` method.
 Boto3 documentation:
 [EC2.Client.describe_vpcs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpcs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VpcIds`: `List`\[`str`\]
@@ -5621,7 +5621,7 @@ Type annotations for `boto3.client("ec2").describe_vpn_connections` method.
 Boto3 documentation:
 [EC2.Client.describe_vpn_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpn_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VpnConnectionIds`: `List`\[`str`\]
@@ -5637,7 +5637,7 @@ Type annotations for `boto3.client("ec2").describe_vpn_gateways` method.
 Boto3 documentation:
 [EC2.Client.describe_vpn_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpn_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `VpnGatewayIds`: `List`\[`str`\]
@@ -5653,7 +5653,7 @@ Type annotations for `boto3.client("ec2").detach_classic_link_vpc` method.
 Boto3 documentation:
 [EC2.Client.detach_classic_link_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_classic_link_vpc)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -5669,7 +5669,7 @@ Type annotations for `boto3.client("ec2").detach_internet_gateway` method.
 Boto3 documentation:
 [EC2.Client.detach_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_internet_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `InternetGatewayId`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -5682,7 +5682,7 @@ Type annotations for `boto3.client("ec2").detach_network_interface` method.
 Boto3 documentation:
 [EC2.Client.detach_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_network_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -5695,7 +5695,7 @@ Type annotations for `boto3.client("ec2").detach_volume` method.
 Boto3 documentation:
 [EC2.Client.detach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 - `Device`: `str`
@@ -5712,7 +5712,7 @@ Type annotations for `boto3.client("ec2").detach_vpn_gateway` method.
 Boto3 documentation:
 [EC2.Client.detach_vpn_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_vpn_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `VpnGatewayId`: `str` *(required)*
@@ -5741,7 +5741,7 @@ method.
 Boto3 documentation:
 [EC2.Client.disable_fast_snapshot_restores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_fast_snapshot_restores)
 
-Arguments:
+Keyword-only arguments:
 
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
 - `SourceSnapshotIds`: `List`\[`str`\] *(required)*
@@ -5773,7 +5773,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.disable_transit_gateway_route_table_propagation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_transit_gateway_route_table_propagation)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `TransitGatewayAttachmentId`: `str` *(required)*
@@ -5790,7 +5790,7 @@ method.
 Boto3 documentation:
 [EC2.Client.disable_vgw_route_propagation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vgw_route_propagation)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayId`: `str` *(required)*
 - `RouteTableId`: `str` *(required)*
@@ -5833,7 +5833,7 @@ Type annotations for `boto3.client("ec2").disassociate_address` method.
 Boto3 documentation:
 [EC2.Client.disassociate_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_address)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str`
 - `PublicIp`: `str`
@@ -5847,7 +5847,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.disassociate_client_vpn_target_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_client_vpn_target_network)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `AssociationId`: `str` *(required)*
@@ -5864,7 +5864,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.disassociate_enclave_certificate_iam_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_enclave_certificate_iam_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str`
 - `RoleArn`: `str`
@@ -5923,7 +5923,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.disassociate_transit_gateway_multicast_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_transit_gateway_multicast_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
@@ -5941,7 +5941,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.disassociate_transit_gateway_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_transit_gateway_route_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `TransitGatewayAttachmentId`: `str` *(required)*
@@ -5987,7 +5987,7 @@ method.
 Boto3 documentation:
 [EC2.Client.enable_fast_snapshot_restores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_fast_snapshot_restores)
 
-Arguments:
+Keyword-only arguments:
 
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
 - `SourceSnapshotIds`: `List`\[`str`\] *(required)*
@@ -6018,7 +6018,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.enable_transit_gateway_route_table_propagation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_transit_gateway_route_table_propagation)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `TransitGatewayAttachmentId`: `str` *(required)*
@@ -6034,7 +6034,7 @@ Type annotations for `boto3.client("ec2").enable_vgw_route_propagation` method.
 Boto3 documentation:
 [EC2.Client.enable_vgw_route_propagation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vgw_route_propagation)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayId`: `str` *(required)*
 - `RouteTableId`: `str` *(required)*
@@ -6122,7 +6122,7 @@ Type annotations for `boto3.client("ec2").export_image` method.
 Boto3 documentation:
 [EC2.Client.export_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `DiskImageFormat`: [DiskImageFormatType](./literals.md#diskimageformattype)
   *(required)*
@@ -6147,7 +6147,7 @@ method.
 Boto3 documentation:
 [EC2.Client.export_transit_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_transit_gateway_routes)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `S3Bucket`: `str` *(required)*
@@ -6197,7 +6197,7 @@ method.
 Boto3 documentation:
 [EC2.Client.get_associated_ipv6_pool_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_associated_ipv6_pool_cidrs)
 
-Arguments:
+Keyword-only arguments:
 
 - `PoolId`: `str` *(required)*
 - `NextToken`: `str`
@@ -6215,7 +6215,7 @@ method.
 Boto3 documentation:
 [EC2.Client.get_capacity_reservation_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_capacity_reservation_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `CapacityReservationId`: `str` *(required)*
 - `NextToken`: `str`
@@ -6232,7 +6232,7 @@ Type annotations for `boto3.client("ec2").get_coip_pool_usage` method.
 Boto3 documentation:
 [EC2.Client.get_coip_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_coip_pool_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `PoolId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -6250,7 +6250,7 @@ Type annotations for `boto3.client("ec2").get_console_output` method.
 Boto3 documentation:
 [EC2.Client.get_console_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_console_output)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -6266,7 +6266,7 @@ Type annotations for `boto3.client("ec2").get_console_screenshot` method.
 Boto3 documentation:
 [EC2.Client.get_console_screenshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_console_screenshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -6330,7 +6330,7 @@ method.
 Boto3 documentation:
 [EC2.Client.get_flow_logs_integration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_flow_logs_integration_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowLogId`: `str` *(required)*
 - `ConfigDeliveryS3DestinationArn`: `str` *(required)*
@@ -6350,7 +6350,7 @@ method.
 Boto3 documentation:
 [EC2.Client.get_groups_for_capacity_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_groups_for_capacity_reservation)
 
-Arguments:
+Keyword-only arguments:
 
 - `CapacityReservationId`: `str` *(required)*
 - `NextToken`: `str`
@@ -6399,7 +6399,7 @@ method.
 Boto3 documentation:
 [EC2.Client.get_managed_prefix_list_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_managed_prefix_list_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `PrefixListId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -6417,7 +6417,7 @@ method.
 Boto3 documentation:
 [EC2.Client.get_managed_prefix_list_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_managed_prefix_list_entries)
 
-Arguments:
+Keyword-only arguments:
 
 - `PrefixListId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -6451,7 +6451,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_reserved_instances_exchange_quote](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_reserved_instances_exchange_quote)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservedInstanceIds`: `List`\[`str`\] *(required)*
 - `DryRun`: `bool`
@@ -6484,7 +6484,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_attachment_propagations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_attachment_propagations)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -6503,7 +6503,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_multicast_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_multicast_domain_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -6522,7 +6522,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_prefix_list_references](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_prefix_list_references)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -6541,7 +6541,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_route_table_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_route_table_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -6560,7 +6560,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_route_table_propagations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_route_table_propagations)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -6580,7 +6580,7 @@ method.
 Boto3 documentation:
 [EC2.Client.import_client_vpn_client_certificate_revocation_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_client_vpn_client_certificate_revocation_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `CertificateRevocationList`: `str` *(required)*
@@ -6596,7 +6596,7 @@ Type annotations for `boto3.client("ec2").import_image` method.
 Boto3 documentation:
 [EC2.Client.import_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `Architecture`: `str`
 - `ClientData`: [ClientDataTypeDef](./type_defs.md#clientdatatypedef)
@@ -6625,7 +6625,7 @@ Type annotations for `boto3.client("ec2").import_instance` method.
 Boto3 documentation:
 [EC2.Client.import_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `Platform`: `Literal['Windows']` (see
   [PlatformValuesType](./literals.md#platformvaluestype)) *(required)*
@@ -6645,7 +6645,7 @@ Type annotations for `boto3.client("ec2").import_key_pair` method.
 Boto3 documentation:
 [EC2.Client.import_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_key_pair)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyName`: `str` *(required)*
 - `PublicKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -6663,7 +6663,7 @@ Type annotations for `boto3.client("ec2").import_snapshot` method.
 Boto3 documentation:
 [EC2.Client.import_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientData`: [ClientDataTypeDef](./type_defs.md#clientdatatypedef)
 - `ClientToken`: `str`
@@ -6687,7 +6687,7 @@ Type annotations for `boto3.client("ec2").import_volume` method.
 Boto3 documentation:
 [EC2.Client.import_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `AvailabilityZone`: `str` *(required)*
 - `Image`: [DiskImageDetailTypeDef](./type_defs.md#diskimagedetailtypedef)
@@ -6706,7 +6706,7 @@ Type annotations for `boto3.client("ec2").modify_address_attribute` method.
 Boto3 documentation:
 [EC2.Client.modify_address_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_address_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `AllocationId`: `str` *(required)*
 - `DomainName`: `str`
@@ -6723,7 +6723,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_availability_zone_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_availability_zone_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `OptInStatus`:
@@ -6741,7 +6741,7 @@ Type annotations for `boto3.client("ec2").modify_capacity_reservation` method.
 Boto3 documentation:
 [EC2.Client.modify_capacity_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_capacity_reservation)
 
-Arguments:
+Keyword-only arguments:
 
 - `CapacityReservationId`: `str` *(required)*
 - `InstanceCount`: `int`
@@ -6760,7 +6760,7 @@ Type annotations for `boto3.client("ec2").modify_client_vpn_endpoint` method.
 Boto3 documentation:
 [EC2.Client.modify_client_vpn_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_client_vpn_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `ServerCertificateArn`: `str`
@@ -6790,7 +6790,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_default_credit_specification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_default_credit_specification)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceFamily`:
   [UnlimitedSupportedInstanceFamilyType](./literals.md#unlimitedsupportedinstancefamilytype)
@@ -6824,7 +6824,7 @@ Type annotations for `boto3.client("ec2").modify_fleet` method.
 Boto3 documentation:
 [EC2.Client.modify_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -6844,7 +6844,7 @@ Type annotations for `boto3.client("ec2").modify_fpga_image_attribute` method.
 Boto3 documentation:
 [EC2.Client.modify_fpga_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_fpga_image_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `FpgaImageId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -6869,7 +6869,7 @@ Type annotations for `boto3.client("ec2").modify_hosts` method.
 Boto3 documentation:
 [EC2.Client.modify_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_hosts)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostIds`: `List`\[`str`\] *(required)*
 - `AutoPlacement`: [AutoPlacementType](./literals.md#autoplacementtype)
@@ -6898,7 +6898,7 @@ Type annotations for `boto3.client("ec2").modify_identity_id_format` method.
 Boto3 documentation:
 [EC2.Client.modify_identity_id_format](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_identity_id_format)
 
-Arguments:
+Keyword-only arguments:
 
 - `PrincipalArn`: `str` *(required)*
 - `Resource`: `str` *(required)*
@@ -6911,7 +6911,7 @@ Type annotations for `boto3.client("ec2").modify_image_attribute` method.
 Boto3 documentation:
 [EC2.Client.modify_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_image_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageId`: `str` *(required)*
 - `Attribute`: `str`
@@ -6932,7 +6932,7 @@ Type annotations for `boto3.client("ec2").modify_instance_attribute` method.
 Boto3 documentation:
 [EC2.Client.modify_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `SourceDestCheck`:
@@ -6968,7 +6968,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.modify_instance_capacity_reservation_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_capacity_reservation_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `CapacityReservationSpecification`:
@@ -6987,7 +6987,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_instance_credit_specification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_credit_specification)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceCreditSpecifications`:
   `List`\[[InstanceCreditSpecificationRequestTypeDef](./type_defs.md#instancecreditspecificationrequesttypedef)\]
@@ -7006,7 +7006,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_instance_event_start_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_event_start_time)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `InstanceEventId`: `str` *(required)*
@@ -7024,7 +7024,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_instance_metadata_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_metadata_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `HttpTokens`: [HttpTokensStateType](./literals.md#httptokensstatetype)
@@ -7043,7 +7043,7 @@ Type annotations for `boto3.client("ec2").modify_instance_placement` method.
 Boto3 documentation:
 [EC2.Client.modify_instance_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Affinity`: [AffinityType](./literals.md#affinitytype)
@@ -7063,7 +7063,7 @@ Type annotations for `boto3.client("ec2").modify_launch_template` method.
 Boto3 documentation:
 [EC2.Client.modify_launch_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_launch_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `ClientToken`: `str`
@@ -7081,7 +7081,7 @@ Type annotations for `boto3.client("ec2").modify_managed_prefix_list` method.
 Boto3 documentation:
 [EC2.Client.modify_managed_prefix_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_managed_prefix_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `PrefixListId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -7103,7 +7103,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_network_interface_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_network_interface_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `Attachment`:
@@ -7121,7 +7121,7 @@ Type annotations for `boto3.client("ec2").modify_reserved_instances` method.
 Boto3 documentation:
 [EC2.Client.modify_reserved_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_reserved_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservedInstancesIds`: `List`\[`str`\] *(required)*
 - `TargetConfigurations`:
@@ -7139,7 +7139,7 @@ Type annotations for `boto3.client("ec2").modify_snapshot_attribute` method.
 Boto3 documentation:
 [EC2.Client.modify_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_snapshot_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 - `Attribute`:
@@ -7158,7 +7158,7 @@ Type annotations for `boto3.client("ec2").modify_spot_fleet_request` method.
 Boto3 documentation:
 [EC2.Client.modify_spot_fleet_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_spot_fleet_request)
 
-Arguments:
+Keyword-only arguments:
 
 - `SpotFleetRequestId`: `str` *(required)*
 - `ExcessCapacityTerminationPolicy`:
@@ -7178,7 +7178,7 @@ Type annotations for `boto3.client("ec2").modify_subnet_attribute` method.
 Boto3 documentation:
 [EC2.Client.modify_subnet_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_subnet_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetId`: `str` *(required)*
 - `AssignIpv6AddressOnCreation`:
@@ -7197,7 +7197,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.modify_traffic_mirror_filter_network_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_filter_network_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficMirrorFilterId`: `str` *(required)*
 - `AddNetworkServices`: `List`\[`Literal['amazon-dns']` (see
@@ -7217,7 +7217,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_traffic_mirror_filter_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_filter_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficMirrorFilterRuleId`: `str` *(required)*
 - `TrafficDirection`:
@@ -7248,7 +7248,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_traffic_mirror_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficMirrorSessionId`: `str` *(required)*
 - `TrafficMirrorTargetId`: `str`
@@ -7271,7 +7271,7 @@ Type annotations for `boto3.client("ec2").modify_transit_gateway` method.
 Boto3 documentation:
 [EC2.Client.modify_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayId`: `str` *(required)*
 - `Description`: `str`
@@ -7290,7 +7290,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.modify_transit_gateway_prefix_list_reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway_prefix_list_reference)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `PrefixListId`: `str` *(required)*
@@ -7309,7 +7309,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.modify_transit_gateway_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway_vpc_attachment)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `AddSubnetIds`: `List`\[`str`\]
@@ -7328,7 +7328,7 @@ Type annotations for `boto3.client("ec2").modify_volume` method.
 Boto3 documentation:
 [EC2.Client.modify_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -7347,7 +7347,7 @@ Type annotations for `boto3.client("ec2").modify_volume_attribute` method.
 Boto3 documentation:
 [EC2.Client.modify_volume_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_volume_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 - `AutoEnableIO`:
@@ -7361,7 +7361,7 @@ Type annotations for `boto3.client("ec2").modify_vpc_attribute` method.
 Boto3 documentation:
 [EC2.Client.modify_vpc_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `EnableDnsHostnames`:
@@ -7376,7 +7376,7 @@ Type annotations for `boto3.client("ec2").modify_vpc_endpoint` method.
 Boto3 documentation:
 [EC2.Client.modify_vpc_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcEndpointId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -7401,7 +7401,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.modify_vpc_endpoint_connection_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_connection_notification)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionNotificationId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -7419,7 +7419,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.modify_vpc_endpoint_service_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -7442,7 +7442,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.modify_vpc_endpoint_service_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -7460,7 +7460,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.modify_vpc_peering_connection_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_peering_connection_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcPeeringConnectionId`: `str` *(required)*
 - `AccepterPeeringConnectionOptions`:
@@ -7479,7 +7479,7 @@ Type annotations for `boto3.client("ec2").modify_vpc_tenancy` method.
 Boto3 documentation:
 [EC2.Client.modify_vpc_tenancy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_tenancy)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `InstanceTenancy`: `Literal['default']` (see
@@ -7496,7 +7496,7 @@ Type annotations for `boto3.client("ec2").modify_vpn_connection` method.
 Boto3 documentation:
 [EC2.Client.modify_vpn_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpnConnectionId`: `str` *(required)*
 - `TransitGatewayId`: `str`
@@ -7515,7 +7515,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_vpn_connection_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_connection_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpnConnectionId`: `str` *(required)*
 - `LocalIpv4NetworkCidr`: `str`
@@ -7535,7 +7535,7 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_vpn_tunnel_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_tunnel_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpnConnectionId`: `str` *(required)*
 - `VpnTunnelOutsideIpAddress`: `str` *(required)*
@@ -7551,7 +7551,7 @@ Type annotations for `boto3.client("ec2").modify_vpn_tunnel_options` method.
 Boto3 documentation:
 [EC2.Client.modify_vpn_tunnel_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_tunnel_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpnConnectionId`: `str` *(required)*
 - `VpnTunnelOutsideIpAddress`: `str` *(required)*
@@ -7600,7 +7600,7 @@ Type annotations for `boto3.client("ec2").provision_byoip_cidr` method.
 Boto3 documentation:
 [EC2.Client.provision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.provision_byoip_cidr)
 
-Arguments:
+Keyword-only arguments:
 
 - `Cidr`: `str` *(required)*
 - `CidrAuthorizationContext`:
@@ -7621,7 +7621,7 @@ Type annotations for `boto3.client("ec2").purchase_host_reservation` method.
 Boto3 documentation:
 [EC2.Client.purchase_host_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_host_reservation)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostIdSet`: `List`\[`str`\] *(required)*
 - `OfferingId`: `str` *(required)*
@@ -7643,7 +7643,7 @@ method.
 Boto3 documentation:
 [EC2.Client.purchase_reserved_instances_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_reserved_instances_offering)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceCount`: `int` *(required)*
 - `ReservedInstancesOfferingId`: `str` *(required)*
@@ -7662,7 +7662,7 @@ Type annotations for `boto3.client("ec2").purchase_scheduled_instances` method.
 Boto3 documentation:
 [EC2.Client.purchase_scheduled_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_scheduled_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `PurchaseRequests`:
   `List`\[[PurchaseRequestTypeDef](./type_defs.md#purchaserequesttypedef)\]
@@ -7692,7 +7692,7 @@ Type annotations for `boto3.client("ec2").register_image` method.
 Boto3 documentation:
 [EC2.Client.register_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ImageLocation`: `str`
@@ -7739,7 +7739,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.register_transit_gateway_multicast_group_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_transit_gateway_multicast_group_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
@@ -7757,7 +7757,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.register_transit_gateway_multicast_group_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_transit_gateway_multicast_group_sources)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
@@ -7776,7 +7776,7 @@ method.
 Boto3 documentation:
 [EC2.Client.reject_transit_gateway_multicast_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_multicast_domain_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
@@ -7826,7 +7826,7 @@ method.
 Boto3 documentation:
 [EC2.Client.reject_vpc_endpoint_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_vpc_endpoint_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `VpcEndpointIds`: `List`\[`str`\] *(required)*
@@ -7858,7 +7858,7 @@ Type annotations for `boto3.client("ec2").release_address` method.
 Boto3 documentation:
 [EC2.Client.release_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.release_address)
 
-Arguments:
+Keyword-only arguments:
 
 - `AllocationId`: `str`
 - `PublicIp`: `str`
@@ -7904,7 +7904,7 @@ method.
 Boto3 documentation:
 [EC2.Client.replace_network_acl_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_network_acl_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `NetworkAclId`: `str` *(required)*
@@ -7920,7 +7920,7 @@ Type annotations for `boto3.client("ec2").replace_network_acl_entry` method.
 Boto3 documentation:
 [EC2.Client.replace_network_acl_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_network_acl_entry)
 
-Arguments:
+Keyword-only arguments:
 
 - `Egress`: `bool` *(required)*
 - `NetworkAclId`: `str` *(required)*
@@ -7940,7 +7940,7 @@ Type annotations for `boto3.client("ec2").replace_route` method.
 Boto3 documentation:
 [EC2.Client.replace_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `RouteTableId`: `str` *(required)*
 - `DestinationCidrBlock`: `str`
@@ -7967,7 +7967,7 @@ method.
 Boto3 documentation:
 [EC2.Client.replace_route_table_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_route_table_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `RouteTableId`: `str` *(required)*
@@ -7984,7 +7984,7 @@ method.
 Boto3 documentation:
 [EC2.Client.replace_transit_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_transit_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `DestinationCidrBlock`: `str` *(required)*
 - `TransitGatewayRouteTableId`: `str` *(required)*
@@ -8002,7 +8002,7 @@ Type annotations for `boto3.client("ec2").report_instance_status` method.
 Boto3 documentation:
 [EC2.Client.report_instance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.report_instance_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `Instances`: `List`\[`str`\] *(required)*
 - `ReasonCodes`:
@@ -8039,7 +8039,7 @@ Type annotations for `boto3.client("ec2").request_spot_instances` method.
 Boto3 documentation:
 [EC2.Client.request_spot_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.request_spot_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `AvailabilityZoneGroup`: `str`
 - `BlockDurationMinutes`: `int`
@@ -8068,7 +8068,7 @@ Type annotations for `boto3.client("ec2").reset_address_attribute` method.
 Boto3 documentation:
 [EC2.Client.reset_address_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_address_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `AllocationId`: `str` *(required)*
 - `Attribute`: `Literal['domain-name']` (see
@@ -8100,7 +8100,7 @@ Type annotations for `boto3.client("ec2").reset_fpga_image_attribute` method.
 Boto3 documentation:
 [EC2.Client.reset_fpga_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_fpga_image_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `FpgaImageId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -8117,7 +8117,7 @@ Type annotations for `boto3.client("ec2").reset_image_attribute` method.
 Boto3 documentation:
 [EC2.Client.reset_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_image_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`: `Literal['launchPermission']` (see
   [ResetImageAttributeNameType](./literals.md#resetimageattributenametype))
@@ -8132,7 +8132,7 @@ Type annotations for `boto3.client("ec2").reset_instance_attribute` method.
 Boto3 documentation:
 [EC2.Client.reset_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_instance_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
@@ -8148,7 +8148,7 @@ method.
 Boto3 documentation:
 [EC2.Client.reset_network_interface_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_network_interface_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -8161,7 +8161,7 @@ Type annotations for `boto3.client("ec2").reset_snapshot_attribute` method.
 Boto3 documentation:
 [EC2.Client.reset_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_snapshot_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
@@ -8192,7 +8192,7 @@ method.
 Boto3 documentation:
 [EC2.Client.restore_managed_prefix_list_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_managed_prefix_list_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `PrefixListId`: `str` *(required)*
 - `PreviousVersion`: `int` *(required)*
@@ -8209,7 +8209,7 @@ Type annotations for `boto3.client("ec2").revoke_client_vpn_ingress` method.
 Boto3 documentation:
 [EC2.Client.revoke_client_vpn_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_client_vpn_ingress)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `TargetNetworkCidr`: `str` *(required)*
@@ -8227,7 +8227,7 @@ Type annotations for `boto3.client("ec2").revoke_security_group_egress` method.
 Boto3 documentation:
 [EC2.Client.revoke_security_group_egress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_security_group_egress)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -8251,7 +8251,7 @@ method.
 Boto3 documentation:
 [EC2.Client.revoke_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_security_group_ingress)
 
-Arguments:
+Keyword-only arguments:
 
 - `CidrIp`: `str`
 - `FromPort`: `int`
@@ -8275,7 +8275,7 @@ Type annotations for `boto3.client("ec2").run_instances` method.
 Boto3 documentation:
 [EC2.Client.run_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxCount`: `int` *(required)*
 - `MinCount`: `int` *(required)*
@@ -8342,7 +8342,7 @@ Type annotations for `boto3.client("ec2").run_scheduled_instances` method.
 Boto3 documentation:
 [EC2.Client.run_scheduled_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_scheduled_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `LaunchSpecification`:
   [ScheduledInstancesLaunchSpecificationTypeDef](./type_defs.md#scheduledinstanceslaunchspecificationtypedef)
@@ -8362,7 +8362,7 @@ Type annotations for `boto3.client("ec2").search_local_gateway_routes` method.
 Boto3 documentation:
 [EC2.Client.search_local_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_local_gateway_routes)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocalGatewayRouteTableId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -8382,7 +8382,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.search_transit_gateway_multicast_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_transit_gateway_multicast_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -8401,7 +8401,7 @@ method.
 Boto3 documentation:
 [EC2.Client.search_transit_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_transit_gateway_routes)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -8431,7 +8431,7 @@ Type annotations for `boto3.client("ec2").start_instances` method.
 Boto3 documentation:
 [EC2.Client.start_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceIds`: `List`\[`str`\] *(required)*
 - `AdditionalInfo`: `str`
@@ -8448,7 +8448,7 @@ method.
 Boto3 documentation:
 [EC2.Client.start_network_insights_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_network_insights_analysis)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkInsightsPathId`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
@@ -8484,7 +8484,7 @@ Type annotations for `boto3.client("ec2").stop_instances` method.
 Boto3 documentation:
 [EC2.Client.stop_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.stop_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceIds`: `List`\[`str`\] *(required)*
 - `Hibernate`: `bool`
@@ -8502,7 +8502,7 @@ method.
 Boto3 documentation:
 [EC2.Client.terminate_client_vpn_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.terminate_client_vpn_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `ConnectionId`: `str`
@@ -8578,7 +8578,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.update_security_group_rule_descriptions_egress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.update_security_group_rule_descriptions_egress)
 
-Arguments:
+Keyword-only arguments:
 
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
@@ -8598,7 +8598,7 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.update_security_group_rule_descriptions_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.update_security_group_rule_descriptions_ingress)
 
-Arguments:
+Keyword-only arguments:
 
 - `IpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]

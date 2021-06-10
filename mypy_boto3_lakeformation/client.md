@@ -88,7 +88,7 @@ method.
 Boto3 documentation:
 [LakeFormation.Client.add_lf_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.add_lf_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
 - `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("lakeformation").create_lf_tag` method.
 Boto3 documentation:
 [LakeFormation.Client.create_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_lf_tag)
 
-Arguments:
+Keyword-only arguments:
 
 - `TagKey`: `str` *(required)*
 - `TagValues`: `List`\[`str`\] *(required)*
@@ -244,7 +244,7 @@ Type annotations for
 Boto3 documentation:
 [LakeFormation.Client.get_effective_permissions_for_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `CatalogId`: `str`
@@ -276,7 +276,7 @@ method.
 Boto3 documentation:
 [LakeFormation.Client.get_resource_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_resource_lf_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
 - `CatalogId`: `str`
@@ -292,7 +292,7 @@ Type annotations for `boto3.client("lakeformation").grant_permissions` method.
 Boto3 documentation:
 [LakeFormation.Client.grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
@@ -313,7 +313,7 @@ Type annotations for `boto3.client("lakeformation").list_lf_tags` method.
 Boto3 documentation:
 [LakeFormation.Client.list_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_lf_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogId`: `str`
 - `ResourceShareType`:
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("lakeformation").list_permissions` method.
 Boto3 documentation:
 [LakeFormation.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogId`: `str`
 - `Principal`:
@@ -351,7 +351,7 @@ Type annotations for `boto3.client("lakeformation").list_resources` method.
 Boto3 documentation:
 [LakeFormation.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `FilterConditionList`:
   `List`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
@@ -385,7 +385,7 @@ Type annotations for `boto3.client("lakeformation").register_resource` method.
 Boto3 documentation:
 [LakeFormation.Client.register_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `UseServiceLinkedRole`: `bool`
@@ -401,7 +401,7 @@ Type annotations for
 Boto3 documentation:
 [LakeFormation.Client.remove_lf_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.remove_lf_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
 - `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
@@ -418,7 +418,7 @@ Type annotations for `boto3.client("lakeformation").revoke_permissions` method.
 Boto3 documentation:
 [LakeFormation.Client.revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
@@ -440,7 +440,7 @@ Type annotations for
 Boto3 documentation:
 [LakeFormation.Client.search_databases_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_databases_by_lf_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
   *(required)*
@@ -459,7 +459,7 @@ method.
 Boto3 documentation:
 [LakeFormation.Client.search_tables_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_tables_by_lf_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
   *(required)*
@@ -477,7 +477,7 @@ Type annotations for `boto3.client("lakeformation").update_lf_tag` method.
 Boto3 documentation:
 [LakeFormation.Client.update_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_lf_tag)
 
-Arguments:
+Keyword-only arguments:
 
 - `TagKey`: `str` *(required)*
 - `CatalogId`: `str`

@@ -150,7 +150,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.add_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerName`: `str` *(required)*
 - `VersionNumber`: `int` *(required)*
@@ -170,7 +170,7 @@ Type annotations for `boto3.client("lambda").add_permission` method.
 Boto3 documentation:
 [Lambda.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `StatementId`: `str` *(required)*
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("lambda").create_alias` method.
 Boto3 documentation:
 [Lambda.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -224,7 +224,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.create_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `AllowedPublishers`:
   [AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef)
@@ -244,7 +244,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.create_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `EventSourceArn`: `str`
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("lambda").create_function` method.
 Boto3 documentation:
 [Lambda.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Role`: `str` *(required)*
@@ -649,7 +649,7 @@ Type annotations for `boto3.client("lambda").invoke` method.
 Boto3 documentation:
 [Lambda.Client.invoke](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `InvocationType`: [InvocationTypeType](./literals.md#invocationtypetype)
@@ -682,7 +682,7 @@ Type annotations for `boto3.client("lambda").list_aliases` method.
 Boto3 documentation:
 [Lambda.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `FunctionVersion`: `str`
@@ -715,7 +715,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.list_event_source_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings)
 
-Arguments:
+Keyword-only arguments:
 
 - `EventSourceArn`: `str`
 - `FunctionName`: `str`
@@ -733,7 +733,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.list_function_event_invoke_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Marker`: `str`
@@ -749,7 +749,7 @@ Type annotations for `boto3.client("lambda").list_functions` method.
 Boto3 documentation:
 [Lambda.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions)
 
-Arguments:
+Keyword-only arguments:
 
 - `MasterRegion`: `str`
 - `FunctionVersion`: `Literal['ALL']` (see
@@ -768,7 +768,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.list_functions_by_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeSigningConfigArn`: `str` *(required)*
 - `Marker`: `str`
@@ -784,7 +784,7 @@ Type annotations for `boto3.client("lambda").list_layer_versions` method.
 Boto3 documentation:
 [Lambda.Client.list_layer_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerName`: `str` *(required)*
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
@@ -801,7 +801,7 @@ Type annotations for `boto3.client("lambda").list_layers` method.
 Boto3 documentation:
 [Lambda.Client.list_layers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers)
 
-Arguments:
+Keyword-only arguments:
 
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
@@ -817,7 +817,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.list_provisioned_concurrency_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Marker`: `str`
@@ -846,7 +846,7 @@ Type annotations for `boto3.client("lambda").list_versions_by_function` method.
 Boto3 documentation:
 [Lambda.Client.list_versions_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Marker`: `str`
@@ -862,7 +862,7 @@ Type annotations for `boto3.client("lambda").publish_layer_version` method.
 Boto3 documentation:
 [Lambda.Client.publish_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerName`: `str` *(required)*
 - `Content`:
@@ -882,7 +882,7 @@ Type annotations for `boto3.client("lambda").publish_version` method.
 Boto3 documentation:
 [Lambda.Client.publish_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `CodeSha256`: `str`
@@ -930,7 +930,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.put_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
@@ -950,7 +950,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.put_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str` *(required)*
@@ -967,7 +967,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.remove_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerName`: `str` *(required)*
 - `VersionNumber`: `int` *(required)*
@@ -981,7 +981,7 @@ Type annotations for `boto3.client("lambda").remove_permission` method.
 Boto3 documentation:
 [Lambda.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `StatementId`: `str` *(required)*
@@ -1019,7 +1019,7 @@ Type annotations for `boto3.client("lambda").update_alias` method.
 Boto3 documentation:
 [Lambda.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -1039,7 +1039,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.update_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeSigningConfigArn`: `str` *(required)*
 - `Description`: `str`
@@ -1059,7 +1059,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.update_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `UUID`: `str` *(required)*
 - `FunctionName`: `str`
@@ -1088,7 +1088,7 @@ Type annotations for `boto3.client("lambda").update_function_code` method.
 Boto3 documentation:
 [Lambda.Client.update_function_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
@@ -1111,7 +1111,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.update_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Role`: `str`
@@ -1143,7 +1143,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.update_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`

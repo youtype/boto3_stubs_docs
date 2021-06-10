@@ -99,7 +99,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkManager.Client.associate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `CustomerGatewayArn`: `str` *(required)*
 - `GlobalNetworkId`: `str` *(required)*
@@ -116,7 +116,7 @@ Type annotations for `boto3.client("networkmanager").associate_link` method.
 Boto3 documentation:
 [NetworkManager.Client.associate_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `DeviceId`: `str` *(required)*
@@ -133,7 +133,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkManager.Client.associate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `TransitGatewayConnectPeerArn`: `str` *(required)*
@@ -163,7 +163,7 @@ Type annotations for `boto3.client("networkmanager").create_connection` method.
 Boto3 documentation:
 [NetworkManager.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `DeviceId`: `str` *(required)*
@@ -183,7 +183,7 @@ Type annotations for `boto3.client("networkmanager").create_device` method.
 Boto3 documentation:
 [NetworkManager.Client.create_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `AWSLocation`: [AWSLocationTypeDef](./type_defs.md#awslocationtypedef)
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("networkmanager").create_link` method.
 Boto3 documentation:
 [NetworkManager.Client.create_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `Bandwidth`: [BandwidthTypeDef](./type_defs.md#bandwidthtypedef) *(required)*
@@ -241,7 +241,7 @@ Type annotations for `boto3.client("networkmanager").create_site` method.
 Boto3 documentation:
 [NetworkManager.Client.create_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `Description`: `str`
@@ -347,7 +347,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.describe_global_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkIds`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -379,7 +379,7 @@ Type annotations for `boto3.client("networkmanager").disassociate_link` method.
 Boto3 documentation:
 [NetworkManager.Client.disassociate_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `DeviceId`: `str` *(required)*
@@ -429,7 +429,7 @@ Type annotations for `boto3.client("networkmanager").get_connections` method.
 Boto3 documentation:
 [NetworkManager.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `ConnectionIds`: `List`\[`str`\]
@@ -448,7 +448,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkManager.Client.get_customer_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `CustomerGatewayArns`: `List`\[`str`\]
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("networkmanager").get_devices` method.
 Boto3 documentation:
 [NetworkManager.Client.get_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `DeviceIds`: `List`\[`str`\]
@@ -483,7 +483,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.get_link_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `DeviceId`: `str`
@@ -501,7 +501,7 @@ Type annotations for `boto3.client("networkmanager").get_links` method.
 Boto3 documentation:
 [NetworkManager.Client.get_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_links)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `LinkIds`: `List`\[`str`\]
@@ -520,7 +520,7 @@ Type annotations for `boto3.client("networkmanager").get_sites` method.
 Boto3 documentation:
 [NetworkManager.Client.get_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_sites)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `SiteIds`: `List`\[`str`\]
@@ -538,7 +538,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.get_transit_gateway_connect_peer_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `TransitGatewayConnectPeerArns`: `List`\[`str`\]
@@ -556,7 +556,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkManager.Client.get_transit_gateway_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `TransitGatewayArns`: `List`\[`str`\]
@@ -632,7 +632,7 @@ Type annotations for `boto3.client("networkmanager").update_connection` method.
 Boto3 documentation:
 [NetworkManager.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `ConnectionId`: `str` *(required)*
@@ -650,7 +650,7 @@ Type annotations for `boto3.client("networkmanager").update_device` method.
 Boto3 documentation:
 [NetworkManager.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `DeviceId`: `str` *(required)*
@@ -689,7 +689,7 @@ Type annotations for `boto3.client("networkmanager").update_link` method.
 Boto3 documentation:
 [NetworkManager.Client.update_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `LinkId`: `str` *(required)*
@@ -707,7 +707,7 @@ Type annotations for `boto3.client("networkmanager").update_site` method.
 Boto3 documentation:
 [NetworkManager.Client.update_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_site)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `SiteId`: `str` *(required)*

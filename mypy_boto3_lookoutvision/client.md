@@ -95,7 +95,7 @@ Type annotations for `boto3.client("lookoutvision").create_dataset` method.
 Boto3 documentation:
 [LookoutforVision.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `DatasetType`: `str` *(required)*
@@ -112,7 +112,7 @@ Type annotations for `boto3.client("lookoutvision").create_model` method.
 Boto3 documentation:
 [LookoutforVision.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("lookoutvision").delete_dataset` method.
 Boto3 documentation:
 [LookoutforVision.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `DatasetType`: `str` *(required)*
@@ -162,7 +162,7 @@ Type annotations for `boto3.client("lookoutvision").delete_model` method.
 Boto3 documentation:
 [LookoutforVision.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ModelVersion`: `str` *(required)*
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("lookoutvision").detect_anomalies` method.
 Boto3 documentation:
 [LookoutforVision.Client.detect_anomalies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ModelVersion`: `str` *(required)*
@@ -272,7 +272,7 @@ method.
 Boto3 documentation:
 [LookoutforVision.Client.list_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `DatasetType`: `str` *(required)*
@@ -294,7 +294,7 @@ Type annotations for `boto3.client("lookoutvision").list_models` method.
 Boto3 documentation:
 [LookoutforVision.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `NextToken`: `str`
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("lookoutvision").start_model` method.
 Boto3 documentation:
 [LookoutforVision.Client.start_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ModelVersion`: `str` *(required)*
@@ -355,7 +355,7 @@ Type annotations for `boto3.client("lookoutvision").stop_model` method.
 Boto3 documentation:
 [LookoutforVision.Client.stop_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ModelVersion`: `str` *(required)*
@@ -399,7 +399,7 @@ method.
 Boto3 documentation:
 [LookoutforVision.Client.update_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `DatasetType`: `str` *(required)*

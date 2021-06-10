@@ -365,7 +365,7 @@ Type annotations for `boto3.client("codedeploy").create_application` method.
 Boto3 documentation:
 [CodeDeploy.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
@@ -381,7 +381,7 @@ Type annotations for `boto3.client("codedeploy").create_deployment` method.
 Boto3 documentation:
 [CodeDeploy.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `deploymentGroupName`: `str`
@@ -408,7 +408,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.create_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentConfigName`: `str` *(required)*
 - `minimumHealthyHosts`:
@@ -428,7 +428,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.create_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.create_deployment_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `deploymentGroupName`: `str` *(required)*
@@ -688,7 +688,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.list_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_application_revisions)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `sortBy`:
@@ -756,7 +756,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.list_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 - `nextToken`: `str`
@@ -776,7 +776,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.list_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str`
 - `nextToken`: `str`
@@ -794,7 +794,7 @@ Type annotations for `boto3.client("codedeploy").list_deployments` method.
 Boto3 documentation:
 [CodeDeploy.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str`
 - `deploymentGroupName`: `str`
@@ -830,7 +830,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.list_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_on_premises_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `registrationStatus`:
   [RegistrationStatusType](./literals.md#registrationstatustype)
@@ -864,7 +864,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.put_lifecycle_event_hook_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.put_lifecycle_event_hook_execution_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str`
 - `lifecycleEventHookExecutionId`: `str`
@@ -881,7 +881,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.register_application_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
@@ -896,7 +896,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.register_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_on_premises_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 - `iamSessionArn`: `str`
@@ -990,7 +990,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.update_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_deployment_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `currentDeploymentGroupName`: `str` *(required)*

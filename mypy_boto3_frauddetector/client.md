@@ -178,7 +178,7 @@ Type annotations for
 Boto3 documentation:
 [FraudDetector.Client.create_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_batch_prediction_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `inputPath`: `str` *(required)*
@@ -199,7 +199,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.create_detector_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_detector_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
@@ -221,7 +221,7 @@ Type annotations for `boto3.client("frauddetector").create_model` method.
 Boto3 documentation:
 [FraudDetector.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -240,7 +240,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.create_model_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_model_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -265,7 +265,7 @@ Type annotations for `boto3.client("frauddetector").create_rule` method.
 Boto3 documentation:
 [FraudDetector.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ruleId`: `str` *(required)*
 - `detectorId`: `str` *(required)*
@@ -285,7 +285,7 @@ Type annotations for `boto3.client("frauddetector").create_variable` method.
 Boto3 documentation:
 [FraudDetector.Client.create_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_variable)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `dataType`: [DataTypeType](./literals.md#datatypetype) *(required)*
@@ -429,7 +429,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.delete_model_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_model_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -484,7 +484,7 @@ Type annotations for `boto3.client("frauddetector").describe_detector` method.
 Boto3 documentation:
 [FraudDetector.Client.describe_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.describe_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `nextToken`: `str`
@@ -501,7 +501,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.describe_model_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.describe_model_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str`
 - `modelVersionNumber`: `str`
@@ -538,7 +538,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.get_batch_prediction_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_batch_prediction_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str`
 - `maxResults`: `int`
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("frauddetector").get_detectors` method.
 Boto3 documentation:
 [FraudDetector.Client.get_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_detectors)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str`
 - `nextToken`: `str`
@@ -585,7 +585,7 @@ Type annotations for `boto3.client("frauddetector").get_entity_types` method.
 Boto3 documentation:
 [FraudDetector.Client.get_entity_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_entity_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `nextToken`: `str`
@@ -602,7 +602,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.get_event_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_event_prediction)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `eventId`: `str` *(required)*
@@ -625,7 +625,7 @@ Type annotations for `boto3.client("frauddetector").get_event_types` method.
 Boto3 documentation:
 [FraudDetector.Client.get_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_event_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `nextToken`: `str`
@@ -642,7 +642,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.get_external_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_external_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelEndpoint`: `str`
 - `nextToken`: `str`
@@ -669,7 +669,7 @@ Type annotations for `boto3.client("frauddetector").get_labels` method.
 Boto3 documentation:
 [FraudDetector.Client.get_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_labels)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `nextToken`: `str`
@@ -684,7 +684,7 @@ Type annotations for `boto3.client("frauddetector").get_model_version` method.
 Boto3 documentation:
 [FraudDetector.Client.get_model_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_model_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -701,7 +701,7 @@ Type annotations for `boto3.client("frauddetector").get_models` method.
 Boto3 documentation:
 [FraudDetector.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str`
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -718,7 +718,7 @@ Type annotations for `boto3.client("frauddetector").get_outcomes` method.
 Boto3 documentation:
 [FraudDetector.Client.get_outcomes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_outcomes)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `nextToken`: `str`
@@ -733,7 +733,7 @@ Type annotations for `boto3.client("frauddetector").get_rules` method.
 Boto3 documentation:
 [FraudDetector.Client.get_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `ruleId`: `str`
@@ -750,7 +750,7 @@ Type annotations for `boto3.client("frauddetector").get_variables` method.
 Boto3 documentation:
 [FraudDetector.Client.get_variables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_variables)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `nextToken`: `str`
@@ -766,7 +766,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
 - `nextToken`: `str`
@@ -782,7 +782,7 @@ Type annotations for `boto3.client("frauddetector").put_detector` method.
 Boto3 documentation:
 [FraudDetector.Client.put_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `eventTypeName`: `str` *(required)*
@@ -798,7 +798,7 @@ Type annotations for `boto3.client("frauddetector").put_entity_type` method.
 Boto3 documentation:
 [FraudDetector.Client.put_entity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_entity_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -813,7 +813,7 @@ Type annotations for `boto3.client("frauddetector").put_event_type` method.
 Boto3 documentation:
 [FraudDetector.Client.put_event_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_event_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `eventVariables`: `List`\[`str`\] *(required)*
@@ -831,7 +831,7 @@ Type annotations for `boto3.client("frauddetector").put_external_model` method.
 Boto3 documentation:
 [FraudDetector.Client.put_external_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_external_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelEndpoint`: `str` *(required)*
 - `modelSource`: `Literal['SAGEMAKER']` (see
@@ -870,7 +870,7 @@ Type annotations for `boto3.client("frauddetector").put_label` method.
 Boto3 documentation:
 [FraudDetector.Client.put_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_label)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -885,7 +885,7 @@ Type annotations for `boto3.client("frauddetector").put_outcome` method.
 Boto3 documentation:
 [FraudDetector.Client.put_outcome](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_outcome)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -929,7 +929,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.update_detector_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `detectorVersionId`: `str` *(required)*
@@ -951,7 +951,7 @@ Type annotations for
 Boto3 documentation:
 [FraudDetector.Client.update_detector_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `detectorVersionId`: `str` *(required)*
@@ -967,7 +967,7 @@ Type annotations for
 Boto3 documentation:
 [FraudDetector.Client.update_detector_version_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `detectorVersionId`: `str` *(required)*
@@ -984,7 +984,7 @@ Type annotations for `boto3.client("frauddetector").update_model` method.
 Boto3 documentation:
 [FraudDetector.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -1001,7 +1001,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.update_model_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_model_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -1022,7 +1022,7 @@ Type annotations for
 Boto3 documentation:
 [FraudDetector.Client.update_model_version_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_model_version_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -1056,7 +1056,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.update_rule_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_rule_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef) *(required)*
 - `expression`: `str` *(required)*
@@ -1076,7 +1076,7 @@ Type annotations for `boto3.client("frauddetector").update_variable` method.
 Boto3 documentation:
 [FraudDetector.Client.update_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_variable)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `defaultValue`: `str`

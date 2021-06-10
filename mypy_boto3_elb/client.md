@@ -184,7 +184,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -200,7 +200,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("elb").create_load_balancer` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("elb").create_load_balancer_policy` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.create_load_balancer_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -404,7 +404,7 @@ Type annotations for `boto3.client("elb").describe_load_balancers` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancers)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerNames`: `List`\[`str`\]
 - `Marker`: `str`
@@ -548,7 +548,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `LoadBalancerPort`: `int` *(required)*
@@ -564,7 +564,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `InstancePort`: `int` *(required)*
@@ -580,7 +580,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `LoadBalancerPort`: `int` *(required)*

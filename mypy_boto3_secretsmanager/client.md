@@ -118,7 +118,7 @@ Type annotations for `boto3.client("secretsmanager").create_secret` method.
 Boto3 documentation:
 [SecretsManager.Client.create_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.create_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("secretsmanager").delete_secret` method.
 Boto3 documentation:
 [SecretsManager.Client.delete_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `RecoveryWindowInDays`: `int`
@@ -204,7 +204,7 @@ method.
 Boto3 documentation:
 [SecretsManager.Client.get_random_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_random_password)
 
-Arguments:
+Keyword-only arguments:
 
 - `PasswordLength`: `int`
 - `ExcludeCharacters`: `str`
@@ -240,7 +240,7 @@ Type annotations for `boto3.client("secretsmanager").get_secret_value` method.
 Boto3 documentation:
 [SecretsManager.Client.get_secret_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_secret_value)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `VersionId`: `str`
@@ -257,7 +257,7 @@ method.
 Boto3 documentation:
 [SecretsManager.Client.list_secret_version_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secret_version_ids)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -274,7 +274,7 @@ Type annotations for `boto3.client("secretsmanager").list_secrets` method.
 Boto3 documentation:
 [SecretsManager.Client.list_secrets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -292,7 +292,7 @@ method.
 Boto3 documentation:
 [SecretsManager.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `ResourcePolicy`: `str` *(required)*
@@ -308,7 +308,7 @@ Type annotations for `boto3.client("secretsmanager").put_secret_value` method.
 Boto3 documentation:
 [SecretsManager.Client.put_secret_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.put_secret_value)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -343,7 +343,7 @@ Type annotations for
 Boto3 documentation:
 [SecretsManager.Client.replicate_secret_to_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.replicate_secret_to_regions)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `AddReplicaRegions`:
@@ -375,7 +375,7 @@ Type annotations for `boto3.client("secretsmanager").rotate_secret` method.
 Boto3 documentation:
 [SecretsManager.Client.rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.rotate_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("secretsmanager").update_secret` method.
 Boto3 documentation:
 [SecretsManager.Client.update_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -452,7 +452,7 @@ Type annotations for
 Boto3 documentation:
 [SecretsManager.Client.update_secret_version_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.update_secret_version_stage)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `VersionStage`: `str` *(required)*

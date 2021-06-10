@@ -100,7 +100,7 @@ Type annotations for `boto3.client("transcribe").create_language_model` method.
 Boto3 documentation:
 [TranscribeService.Client.create_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_language_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
   *(required)*
@@ -121,7 +121,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.create_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_medical_vocabulary)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("transcribe").create_vocabulary` method.
 Boto3 documentation:
 [TranscribeService.Client.create_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -157,7 +157,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.create_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyFilterName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("transcribe").list_language_models` method.
 Boto3 documentation:
 [TranscribeService.Client.list_language_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_language_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `StatusEquals`: [ModelStatusType](./literals.md#modelstatustype)
 - `NameContains`: `str`
@@ -367,7 +367,7 @@ Type annotations for
 Boto3 documentation:
 [TranscribeService.Client.list_medical_transcription_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_transcription_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`:
   [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
@@ -386,7 +386,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.list_medical_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_vocabularies)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -404,7 +404,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.list_transcription_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_transcription_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`:
   [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
@@ -422,7 +422,7 @@ Type annotations for `boto3.client("transcribe").list_vocabularies` method.
 Boto3 documentation:
 [TranscribeService.Client.list_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabularies)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -440,7 +440,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.list_vocabulary_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabulary_filters)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -457,7 +457,7 @@ Type annotations for
 Boto3 documentation:
 [TranscribeService.Client.start_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_medical_transcription_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `MedicalTranscriptionJobName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -487,7 +487,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.start_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `TranscriptionJobName`: `str` *(required)*
 - `Media`: [MediaTypeDef](./type_defs.md#mediatypedef) *(required)*
@@ -518,7 +518,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.update_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_medical_vocabulary)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -535,7 +535,7 @@ Type annotations for `boto3.client("transcribe").update_vocabulary` method.
 Boto3 documentation:
 [TranscribeService.Client.update_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -554,7 +554,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.update_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyFilterName`: `str` *(required)*
 - `Words`: `List`\[`str`\]

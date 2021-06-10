@@ -107,7 +107,7 @@ Type annotations for `boto3.client("appconfig").create_application` method.
 Boto3 documentation:
 [AppConfig.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
@@ -123,7 +123,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.create_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_configuration_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -144,7 +144,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.create_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_deployment_strategy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DeploymentDurationInMinutes`: `int` *(required)*
@@ -164,7 +164,7 @@ Type annotations for `boto3.client("appconfig").create_environment` method.
 Boto3 documentation:
 [AppConfig.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -182,7 +182,7 @@ Type annotations for
 Boto3 documentation:
 [AppConfig.Client.create_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_hosted_configuration_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
@@ -250,7 +250,7 @@ Type annotations for
 Boto3 documentation:
 [AppConfig.Client.delete_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_hosted_configuration_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
@@ -292,7 +292,7 @@ Type annotations for `boto3.client("appconfig").get_configuration` method.
 Boto3 documentation:
 [AppConfig.Client.get_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Application`: `str` *(required)*
 - `Environment`: `str` *(required)*
@@ -325,7 +325,7 @@ Type annotations for `boto3.client("appconfig").get_deployment` method.
 Boto3 documentation:
 [AppConfig.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
@@ -369,7 +369,7 @@ Type annotations for
 Boto3 documentation:
 [AppConfig.Client.get_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_hosted_configuration_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
@@ -400,7 +400,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.list_configuration_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_configuration_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("appconfig").list_deployments` method.
 Boto3 documentation:
 [AppConfig.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployments)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("appconfig").list_environments` method.
 Boto3 documentation:
 [AppConfig.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -464,7 +464,7 @@ Type annotations for
 Boto3 documentation:
 [AppConfig.Client.list_hosted_configuration_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_hosted_configuration_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
@@ -494,7 +494,7 @@ Type annotations for `boto3.client("appconfig").start_deployment` method.
 Boto3 documentation:
 [AppConfig.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.start_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
@@ -513,7 +513,7 @@ Type annotations for `boto3.client("appconfig").stop_deployment` method.
 Boto3 documentation:
 [AppConfig.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.stop_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
@@ -552,7 +552,7 @@ Type annotations for `boto3.client("appconfig").update_application` method.
 Boto3 documentation:
 [AppConfig.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `Name`: `str`
@@ -568,7 +568,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.update_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_configuration_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
@@ -588,7 +588,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.update_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_deployment_strategy)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeploymentStrategyId`: `str` *(required)*
 - `Description`: `str`
@@ -606,7 +606,7 @@ Type annotations for `boto3.client("appconfig").update_environment` method.
 Boto3 documentation:
 [AppConfig.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
@@ -623,7 +623,7 @@ Type annotations for `boto3.client("appconfig").validate_configuration` method.
 Boto3 documentation:
 [AppConfig.Client.validate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.validate_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*

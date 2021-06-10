@@ -138,7 +138,7 @@ Type annotations for `boto3.resource("cloudformation").create_stack` method.
 Boto3 documentation:
 [CloudFormation.ServiceResource.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.create_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `TemplateBody`: `str`
@@ -334,7 +334,7 @@ Type annotations for `boto3.resource("cloudformation").delete` method.
 Boto3 documentation:
 [CloudFormation.Stack.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `RetainResources`: `List`\[`str`\]
 - `RoleARN`: `str`
@@ -371,7 +371,7 @@ Type annotations for `boto3.resource("cloudformation").update` method.
 Boto3 documentation:
 [CloudFormation.Stack.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`

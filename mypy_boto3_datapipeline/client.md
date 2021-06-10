@@ -80,7 +80,7 @@ Type annotations for `boto3.client("datapipeline").activate_pipeline` method.
 Boto3 documentation:
 [DataPipeline.Client.activate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `parameterValues`:
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("datapipeline").create_pipeline` method.
 Boto3 documentation:
 [DataPipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `uniqueId`: `str` *(required)*
@@ -165,7 +165,7 @@ Type annotations for `boto3.client("datapipeline").describe_objects` method.
 Boto3 documentation:
 [DataPipeline.Client.describe_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_objects)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `objectIds`: `List`\[`str`\] *(required)*
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("datapipeline").evaluate_expression` method.
 Boto3 documentation:
 [DataPipeline.Client.evaluate_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `objectId`: `str` *(required)*
@@ -259,7 +259,7 @@ Type annotations for `boto3.client("datapipeline").poll_for_task` method.
 Boto3 documentation:
 [DataPipeline.Client.poll_for_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `workerGroup`: `str` *(required)*
 - `hostname`: `str`
@@ -276,7 +276,7 @@ method.
 Boto3 documentation:
 [DataPipeline.Client.put_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `pipelineObjects`:
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("datapipeline").query_objects` method.
 Boto3 documentation:
 [DataPipeline.Client.query_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.query_objects)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `sphere`: `str` *(required)*
@@ -345,7 +345,7 @@ Type annotations for
 Boto3 documentation:
 [DataPipeline.Client.report_task_runner_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskrunnerId`: `str` *(required)*
 - `workerGroup`: `str`
@@ -361,7 +361,7 @@ Type annotations for `boto3.client("datapipeline").set_status` method.
 Boto3 documentation:
 [DataPipeline.Client.set_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `objectIds`: `List`\[`str`\] *(required)*
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("datapipeline").set_task_status` method.
 Boto3 documentation:
 [DataPipeline.Client.set_task_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_task_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
 - `taskStatus`: [TaskStatusType](./literals.md#taskstatustype) *(required)*
@@ -392,7 +392,7 @@ Type annotations for
 Boto3 documentation:
 [DataPipeline.Client.validate_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `pipelineObjects`:

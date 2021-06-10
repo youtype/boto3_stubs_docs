@@ -91,7 +91,7 @@ Type annotations for `boto3.client("ssm-contacts").accept_page` method.
 Boto3 documentation:
 [SSMContacts.Client.accept_page](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.accept_page)
 
-Arguments:
+Keyword-only arguments:
 
 - `PageId`: `str` *(required)*
 - `AcceptType`: [AcceptTypeType](./literals.md#accepttypetype) *(required)*
@@ -136,7 +136,7 @@ Type annotations for `boto3.client("ssm-contacts").create_contact` method.
 Boto3 documentation:
 [SSMContacts.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.create_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `Alias`: `str` *(required)*
 - `Type`: [ContactTypeType](./literals.md#contacttypetype) *(required)*
@@ -156,7 +156,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.create_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.create_contact_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -304,7 +304,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.list_contact_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_contact_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 - `NextToken`: `str`
@@ -320,7 +320,7 @@ Type annotations for `boto3.client("ssm-contacts").list_contacts` method.
 Boto3 documentation:
 [SSMContacts.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_contacts)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -336,7 +336,7 @@ Type annotations for `boto3.client("ssm-contacts").list_engagements` method.
 Boto3 documentation:
 [SSMContacts.Client.list_engagements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_engagements)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -353,7 +353,7 @@ Type annotations for `boto3.client("ssm-contacts").list_page_receipts` method.
 Boto3 documentation:
 [SSMContacts.Client.list_page_receipts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_page_receipts)
 
-Arguments:
+Keyword-only arguments:
 
 - `PageId`: `str` *(required)*
 - `NextToken`: `str`
@@ -370,7 +370,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.list_pages_by_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_pages_by_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 - `NextToken`: `str`
@@ -387,7 +387,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.list_pages_by_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_pages_by_engagement)
 
-Arguments:
+Keyword-only arguments:
 
 - `EngagementId`: `str` *(required)*
 - `NextToken`: `str`
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("ssm-contacts").start_engagement` method.
 Boto3 documentation:
 [SSMContacts.Client.start_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.start_engagement)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 - `Sender`: `str` *(required)*
@@ -509,7 +509,7 @@ Type annotations for `boto3.client("ssm-contacts").update_contact` method.
 Boto3 documentation:
 [SSMContacts.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.update_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 - `DisplayName`: `str`
@@ -525,7 +525,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.update_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.update_contact_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactChannelId`: `str` *(required)*
 - `Name`: `str`

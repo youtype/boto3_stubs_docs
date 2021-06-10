@@ -113,7 +113,7 @@ Type annotations for `boto3.client("detective").create_members` method.
 Boto3 documentation:
 [Detective.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 - `Accounts`: `List`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
@@ -228,7 +228,7 @@ Type annotations for `boto3.client("detective").list_members` method.
 Boto3 documentation:
 [Detective.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 - `NextToken`: `str`

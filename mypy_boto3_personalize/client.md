@@ -123,7 +123,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.create_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobName`: `str` *(required)*
 - `solutionVersionArn`: `str` *(required)*
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("personalize").create_campaign` method.
 Boto3 documentation:
 [Personalize.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `solutionVersionArn`: `str` *(required)*
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("personalize").create_dataset` method.
 Boto3 documentation:
 [Personalize.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `schemaArn`: `str` *(required)*
@@ -185,7 +185,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.create_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobName`: `str` *(required)*
 - `datasetArn`: `str` *(required)*
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("personalize").create_dataset_group` method.
 Boto3 documentation:
 [Personalize.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `roleArn`: `str`
@@ -222,7 +222,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobName`: `str` *(required)*
 - `datasetArn`: `str` *(required)*
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("personalize").create_filter` method.
 Boto3 documentation:
 [Personalize.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `datasetGroupArn`: `str` *(required)*
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("personalize").create_solution` method.
 Boto3 documentation:
 [Personalize.Client.create_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `datasetGroupArn`: `str` *(required)*
@@ -635,7 +635,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.list_batch_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionVersionArn`: `str`
 - `nextToken`: `str`
@@ -651,7 +651,7 @@ Type annotations for `boto3.client("personalize").list_campaigns` method.
 Boto3 documentation:
 [Personalize.Client.list_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionArn`: `str`
 - `nextToken`: `str`
@@ -668,7 +668,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.list_dataset_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetArn`: `str`
 - `nextToken`: `str`
@@ -700,7 +700,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetArn`: `str`
 - `nextToken`: `str`
@@ -716,7 +716,7 @@ Type annotations for `boto3.client("personalize").list_datasets` method.
 Boto3 documentation:
 [Personalize.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
@@ -732,7 +732,7 @@ Type annotations for `boto3.client("personalize").list_event_trackers` method.
 Boto3 documentation:
 [Personalize.Client.list_event_trackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
@@ -748,7 +748,7 @@ Type annotations for `boto3.client("personalize").list_filters` method.
 Boto3 documentation:
 [Personalize.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
@@ -764,7 +764,7 @@ Type annotations for `boto3.client("personalize").list_recipes` method.
 Boto3 documentation:
 [Personalize.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes)
 
-Arguments:
+Keyword-only arguments:
 
 - `recipeProvider`: `Literal['SERVICE']` (see
   [RecipeProviderType](./literals.md#recipeprovidertype))
@@ -797,7 +797,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.list_solution_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionArn`: `str`
 - `nextToken`: `str`
@@ -813,7 +813,7 @@ Type annotations for `boto3.client("personalize").list_solutions` method.
 Boto3 documentation:
 [Personalize.Client.list_solutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
@@ -841,7 +841,7 @@ Type annotations for `boto3.client("personalize").update_campaign` method.
 Boto3 documentation:
 [Personalize.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
 - `solutionVersionArn`: `str`

@@ -222,7 +222,7 @@ Type annotations for `boto3.client("location").calculate_route` method.
 Boto3 documentation:
 [LocationService.Client.calculate_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.calculate_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `CalculatorName`: `str` *(required)*
 - `DeparturePosition`: `List`\[`float`\] *(required)*
@@ -262,7 +262,7 @@ method.
 Boto3 documentation:
 [LocationService.Client.create_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_geofence_collection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionName`: `str` *(required)*
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("location").create_map` method.
 Boto3 documentation:
 [LocationService.Client.create_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_map)
 
-Arguments:
+Keyword-only arguments:
 
 - `Configuration`:
   [MapConfigurationTypeDef](./type_defs.md#mapconfigurationtypedef)
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("location").create_place_index` method.
 Boto3 documentation:
 [LocationService.Client.create_place_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_place_index)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSource`: `str` *(required)*
 - `IndexName`: `str` *(required)*
@@ -320,7 +320,7 @@ Type annotations for `boto3.client("location").create_route_calculator` method.
 Boto3 documentation:
 [LocationService.Client.create_route_calculator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_route_calculator)
 
-Arguments:
+Keyword-only arguments:
 
 - `CalculatorName`: `str` *(required)*
 - `DataSource`: `str` *(required)*
@@ -338,7 +338,7 @@ Type annotations for `boto3.client("location").create_tracker` method.
 Boto3 documentation:
 [LocationService.Client.create_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_tracker)
 
-Arguments:
+Keyword-only arguments:
 
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
 - `TrackerName`: `str` *(required)*
@@ -542,7 +542,7 @@ method.
 Boto3 documentation:
 [LocationService.Client.get_device_position_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 - `TrackerName`: `str` *(required)*
@@ -575,7 +575,7 @@ Type annotations for `boto3.client("location").get_map_glyphs` method.
 Boto3 documentation:
 [LocationService.Client.get_map_glyphs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_glyphs)
 
-Arguments:
+Keyword-only arguments:
 
 - `FontStack`: `str` *(required)*
 - `FontUnicodeRange`: `str` *(required)*
@@ -621,7 +621,7 @@ Type annotations for `boto3.client("location").get_map_tile` method.
 Boto3 documentation:
 [LocationService.Client.get_map_tile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_tile)
 
-Arguments:
+Keyword-only arguments:
 
 - `MapName`: `str` *(required)*
 - `X`: `str` *(required)*
@@ -637,7 +637,7 @@ Type annotations for `boto3.client("location").list_device_positions` method.
 Boto3 documentation:
 [LocationService.Client.list_device_positions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_device_positions)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrackerName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -742,7 +742,7 @@ Type annotations for `boto3.client("location").list_tracker_consumers` method.
 Boto3 documentation:
 [LocationService.Client.list_tracker_consumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_tracker_consumers)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrackerName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -773,7 +773,7 @@ Type annotations for `boto3.client("location").put_geofence` method.
 Boto3 documentation:
 [LocationService.Client.put_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.put_geofence)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionName`: `str` *(required)*
 - `GeofenceId`: `str` *(required)*
@@ -791,7 +791,7 @@ method.
 Boto3 documentation:
 [LocationService.Client.search_place_index_for_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_position)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexName`: `str` *(required)*
 - `Position`: `List`\[`float`\] *(required)*
@@ -808,7 +808,7 @@ method.
 Boto3 documentation:
 [LocationService.Client.search_place_index_for_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_text)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexName`: `str` *(required)*
 - `Text`: `str` *(required)*

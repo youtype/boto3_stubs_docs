@@ -81,7 +81,7 @@ Type annotations for `boto3.client("lexv2-runtime").delete_session` method.
 Boto3 documentation:
 [LexRuntimeV2.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.delete_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `botAliasId`: `str` *(required)*
@@ -115,7 +115,7 @@ Type annotations for `boto3.client("lexv2-runtime").get_session` method.
 Boto3 documentation:
 [LexRuntimeV2.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.get_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `botAliasId`: `str` *(required)*
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("lexv2-runtime").put_session` method.
 Boto3 documentation:
 [LexRuntimeV2.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.put_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `botAliasId`: `str` *(required)*
@@ -152,7 +152,7 @@ Type annotations for `boto3.client("lexv2-runtime").recognize_text` method.
 Boto3 documentation:
 [LexRuntimeV2.Client.recognize_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_text)
 
-Arguments:
+Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `botAliasId`: `str` *(required)*
@@ -173,7 +173,7 @@ method.
 Boto3 documentation:
 [LexRuntimeV2.Client.recognize_utterance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_utterance)
 
-Arguments:
+Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `botAliasId`: `str` *(required)*

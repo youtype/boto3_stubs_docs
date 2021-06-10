@@ -185,7 +185,7 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.associate_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_instance_storage_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ResourceType`:
@@ -231,7 +231,7 @@ method.
 Boto3 documentation:
 [Connect.Client.associate_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_queue_quick_connects)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -245,7 +245,7 @@ method.
 Boto3 documentation:
 [Connect.Client.associate_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_routing_profile_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
@@ -288,7 +288,7 @@ Type annotations for `boto3.client("connect").create_contact_flow` method.
 Boto3 documentation:
 [Connect.Client.create_contact_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("connect").create_instance` method.
 Boto3 documentation:
 [Connect.Client.create_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityManagementType`:
   [DirectoryTypeType](./literals.md#directorytypetype) *(required)*
@@ -328,7 +328,7 @@ method.
 Boto3 documentation:
 [Connect.Client.create_integration_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_integration_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `IntegrationType`: `Literal['EVENT']` (see
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("connect").create_queue` method.
 Boto3 documentation:
 [Connect.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("connect").create_quick_connect` method.
 Boto3 documentation:
 [Connect.Client.create_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_quick_connect)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -391,7 +391,7 @@ Type annotations for `boto3.client("connect").create_routing_profile` method.
 Boto3 documentation:
 [Connect.Client.create_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_routing_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -414,7 +414,7 @@ Type annotations for `boto3.client("connect").create_use_case` method.
 Boto3 documentation:
 [Connect.Client.create_use_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_use_case)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `IntegrationAssociationId`: `str` *(required)*
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("connect").create_user` method.
 Boto3 documentation:
 [Connect.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `Username`: `str` *(required)*
 - `PhoneConfig`:
@@ -457,7 +457,7 @@ method.
 Boto3 documentation:
 [Connect.Client.create_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user_hierarchy_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -509,7 +509,7 @@ Type annotations for `boto3.client("connect").delete_use_case` method.
 Boto3 documentation:
 [Connect.Client.delete_use_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_use_case)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `IntegrationAssociationId`: `str` *(required)*
@@ -611,7 +611,7 @@ method.
 Boto3 documentation:
 [Connect.Client.describe_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_storage_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `AssociationId`: `str` *(required)*
@@ -734,7 +734,7 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.disassociate_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_instance_storage_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `AssociationId`: `str` *(required)*
@@ -762,7 +762,7 @@ Type annotations for `boto3.client("connect").disassociate_lex_bot` method.
 Boto3 documentation:
 [Connect.Client.disassociate_lex_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lex_bot)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `BotName`: `str` *(required)*
@@ -776,7 +776,7 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.disassociate_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_queue_quick_connects)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -790,7 +790,7 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.disassociate_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_routing_profile_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
@@ -849,7 +849,7 @@ Type annotations for `boto3.client("connect").get_current_metric_data` method.
 Boto3 documentation:
 [Connect.Client.get_current_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_current_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
@@ -884,7 +884,7 @@ Type annotations for `boto3.client("connect").get_metric_data` method.
 Boto3 documentation:
 [Connect.Client.get_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `StartTime`: `datetime` *(required)*
@@ -907,7 +907,7 @@ Type annotations for `boto3.client("connect").list_approved_origins` method.
 Boto3 documentation:
 [Connect.Client.list_approved_origins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_approved_origins)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -923,7 +923,7 @@ Type annotations for `boto3.client("connect").list_contact_flows` method.
 Boto3 documentation:
 [Connect.Client.list_contact_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flows)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowTypes`:
@@ -941,7 +941,7 @@ Type annotations for `boto3.client("connect").list_hours_of_operations` method.
 Boto3 documentation:
 [Connect.Client.list_hours_of_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_hours_of_operations)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -957,7 +957,7 @@ Type annotations for `boto3.client("connect").list_instance_attributes` method.
 Boto3 documentation:
 [Connect.Client.list_instance_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -974,7 +974,7 @@ method.
 Boto3 documentation:
 [Connect.Client.list_instance_storage_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_storage_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ResourceType`:
@@ -1009,7 +1009,7 @@ method.
 Boto3 documentation:
 [Connect.Client.list_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_integration_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1025,7 +1025,7 @@ Type annotations for `boto3.client("connect").list_lambda_functions` method.
 Boto3 documentation:
 [Connect.Client.list_lambda_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lambda_functions)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1041,7 +1041,7 @@ Type annotations for `boto3.client("connect").list_lex_bots` method.
 Boto3 documentation:
 [Connect.Client.list_lex_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lex_bots)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1057,7 +1057,7 @@ Type annotations for `boto3.client("connect").list_phone_numbers` method.
 Boto3 documentation:
 [Connect.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_phone_numbers)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `PhoneNumberTypes`:
@@ -1077,7 +1077,7 @@ Type annotations for `boto3.client("connect").list_prompts` method.
 Boto3 documentation:
 [Connect.Client.list_prompts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_prompts)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1094,7 +1094,7 @@ method.
 Boto3 documentation:
 [Connect.Client.list_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queue_quick_connects)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -1111,7 +1111,7 @@ Type annotations for `boto3.client("connect").list_queues` method.
 Boto3 documentation:
 [Connect.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueTypes`: `List`\[[QueueTypeType](./literals.md#queuetypetype)\]
@@ -1127,7 +1127,7 @@ Type annotations for `boto3.client("connect").list_quick_connects` method.
 Boto3 documentation:
 [Connect.Client.list_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_quick_connects)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1146,7 +1146,7 @@ method.
 Boto3 documentation:
 [Connect.Client.list_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profile_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
@@ -1163,7 +1163,7 @@ Type annotations for `boto3.client("connect").list_routing_profiles` method.
 Boto3 documentation:
 [Connect.Client.list_routing_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1179,7 +1179,7 @@ Type annotations for `boto3.client("connect").list_security_keys` method.
 Boto3 documentation:
 [Connect.Client.list_security_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1195,7 +1195,7 @@ Type annotations for `boto3.client("connect").list_security_profiles` method.
 Boto3 documentation:
 [Connect.Client.list_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1225,7 +1225,7 @@ Type annotations for `boto3.client("connect").list_use_cases` method.
 Boto3 documentation:
 [Connect.Client.list_use_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_use_cases)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `IntegrationAssociationId`: `str` *(required)*
@@ -1243,7 +1243,7 @@ method.
 Boto3 documentation:
 [Connect.Client.list_user_hierarchy_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_user_hierarchy_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1259,7 +1259,7 @@ Type annotations for `boto3.client("connect").list_users` method.
 Boto3 documentation:
 [Connect.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1274,7 +1274,7 @@ Type annotations for `boto3.client("connect").resume_contact_recording` method.
 Boto3 documentation:
 [Connect.Client.resume_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.resume_contact_recording)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactId`: `str` *(required)*
@@ -1289,7 +1289,7 @@ Type annotations for `boto3.client("connect").start_chat_contact` method.
 Boto3 documentation:
 [Connect.Client.start_chat_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_chat_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowId`: `str` *(required)*
@@ -1310,7 +1310,7 @@ Type annotations for `boto3.client("connect").start_contact_recording` method.
 Boto3 documentation:
 [Connect.Client.start_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_recording)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactId`: `str` *(required)*
@@ -1329,7 +1329,7 @@ method.
 Boto3 documentation:
 [Connect.Client.start_outbound_voice_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_outbound_voice_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `DestinationPhoneNumber`: `str` *(required)*
 - `ContactFlowId`: `str` *(required)*
@@ -1349,7 +1349,7 @@ Type annotations for `boto3.client("connect").start_task_contact` method.
 Boto3 documentation:
 [Connect.Client.start_task_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_task_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowId`: `str` *(required)*
@@ -1385,7 +1385,7 @@ Type annotations for `boto3.client("connect").stop_contact_recording` method.
 Boto3 documentation:
 [Connect.Client.stop_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_recording)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactId`: `str` *(required)*
@@ -1401,7 +1401,7 @@ method.
 Boto3 documentation:
 [Connect.Client.suspend_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.suspend_contact_recording)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactId`: `str` *(required)*
@@ -1441,7 +1441,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_contact_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `InitialContactId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -1457,7 +1457,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_contact_flow_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowId`: `str` *(required)*
@@ -1470,7 +1470,7 @@ Type annotations for `boto3.client("connect").update_contact_flow_name` method.
 Boto3 documentation:
 [Connect.Client.update_contact_flow_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowId`: `str` *(required)*
@@ -1485,7 +1485,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `AttributeType`:
@@ -1501,7 +1501,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_storage_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `AssociationId`: `str` *(required)*
@@ -1520,7 +1520,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_queue_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_hours_of_operation)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -1534,7 +1534,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_queue_max_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_max_contacts)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -1547,7 +1547,7 @@ Type annotations for `boto3.client("connect").update_queue_name` method.
 Boto3 documentation:
 [Connect.Client.update_queue_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -1562,7 +1562,7 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.update_queue_outbound_caller_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_outbound_caller_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -1577,7 +1577,7 @@ Type annotations for `boto3.client("connect").update_queue_status` method.
 Boto3 documentation:
 [Connect.Client.update_queue_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -1591,7 +1591,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_quick_connect_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QuickConnectId`: `str` *(required)*
@@ -1607,7 +1607,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_quick_connect_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QuickConnectId`: `str` *(required)*
@@ -1622,7 +1622,7 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.update_routing_profile_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_concurrency)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
@@ -1638,7 +1638,7 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.update_routing_profile_default_outbound_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_default_outbound_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
@@ -1652,7 +1652,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_routing_profile_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
@@ -1667,7 +1667,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
@@ -1682,7 +1682,7 @@ Type annotations for `boto3.client("connect").update_user_hierarchy` method.
 Boto3 documentation:
 [Connect.Client.update_user_hierarchy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -1696,7 +1696,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_user_hierarchy_group_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_group_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `HierarchyGroupId`: `str` *(required)*
@@ -1725,7 +1725,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_user_identity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_identity_info)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityInfo`:
   [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
@@ -1740,7 +1740,7 @@ Type annotations for `boto3.client("connect").update_user_phone_config` method.
 Boto3 documentation:
 [Connect.Client.update_user_phone_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_phone_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `PhoneConfig`:
   [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) *(required)*
@@ -1755,7 +1755,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_user_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_routing_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoutingProfileId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -1769,7 +1769,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_user_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_security_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecurityProfileIds`: `List`\[`str`\] *(required)*
 - `UserId`: `str` *(required)*

@@ -204,7 +204,7 @@ Type annotations for `boto3.client("codebuild").create_project` method.
 Boto3 documentation:
 [CodeBuild.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
@@ -248,7 +248,7 @@ Type annotations for `boto3.client("codebuild").create_report_group` method.
 Boto3 documentation:
 [CodeBuild.Client.create_report_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_report_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `type`: [ReportTypeType](./literals.md#reporttypetype) *(required)*
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("codebuild").create_webhook` method.
 Boto3 documentation:
 [CodeBuild.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.create_webhook)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `branchFilter`: `str`
@@ -381,7 +381,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.describe_code_coverages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.describe_code_coverages)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -402,7 +402,7 @@ Type annotations for `boto3.client("codebuild").describe_test_cases` method.
 Boto3 documentation:
 [CodeBuild.Client.describe_test_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.describe_test_cases)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("codebuild").get_report_group_trend` method.
 Boto3 documentation:
 [CodeBuild.Client.get_report_group_trend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.get_report_group_trend)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportGroupArn`: `str` *(required)*
 - `trendField`:
@@ -468,7 +468,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.import_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.import_source_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `token`: `str` *(required)*
 - `serverType`: [ServerTypeType](./literals.md#servertypetype) *(required)*
@@ -500,7 +500,7 @@ Type annotations for `boto3.client("codebuild").list_build_batches` method.
 Boto3 documentation:
 [CodeBuild.Client.list_build_batches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_build_batches)
 
-Arguments:
+Keyword-only arguments:
 
 - `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
 - `maxResults`: `int`
@@ -518,7 +518,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.list_build_batches_for_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_build_batches_for_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str`
 - `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
@@ -551,7 +551,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.list_builds_for_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_builds_for_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
@@ -578,7 +578,7 @@ Type annotations for `boto3.client("codebuild").list_projects` method.
 Boto3 documentation:
 [CodeBuild.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `sortBy`: [ProjectSortByTypeType](./literals.md#projectsortbytypetype)
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
@@ -593,7 +593,7 @@ Type annotations for `boto3.client("codebuild").list_report_groups` method.
 Boto3 documentation:
 [CodeBuild.Client.list_report_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_report_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `sortBy`:
@@ -611,7 +611,7 @@ Type annotations for `boto3.client("codebuild").list_reports` method.
 Boto3 documentation:
 [CodeBuild.Client.list_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_reports)
 
-Arguments:
+Keyword-only arguments:
 
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
@@ -628,7 +628,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.list_reports_for_report_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_reports_for_report_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportGroupArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -646,7 +646,7 @@ Type annotations for `boto3.client("codebuild").list_shared_projects` method.
 Boto3 documentation:
 [CodeBuild.Client.list_shared_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_shared_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `sortBy`:
   [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
@@ -665,7 +665,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.list_shared_report_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_shared_report_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `sortBy`:
@@ -723,7 +723,7 @@ Type annotations for `boto3.client("codebuild").retry_build_batch` method.
 Boto3 documentation:
 [CodeBuild.Client.retry_build_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.retry_build_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str`
 - `idempotencyToken`: `str`
@@ -739,7 +739,7 @@ Type annotations for `boto3.client("codebuild").start_build` method.
 Boto3 documentation:
 [CodeBuild.Client.start_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.start_build)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `secondarySourcesOverride`:
@@ -792,7 +792,7 @@ Type annotations for `boto3.client("codebuild").start_build_batch` method.
 Boto3 documentation:
 [CodeBuild.Client.start_build_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.start_build_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `secondarySourcesOverride`:
@@ -873,7 +873,7 @@ Type annotations for `boto3.client("codebuild").update_project` method.
 Boto3 documentation:
 [CodeBuild.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -914,7 +914,7 @@ Type annotations for `boto3.client("codebuild").update_report_group` method.
 Boto3 documentation:
 [CodeBuild.Client.update_report_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_report_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `exportConfig`:
@@ -931,7 +931,7 @@ Type annotations for `boto3.client("codebuild").update_webhook` method.
 Boto3 documentation:
 [CodeBuild.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.update_webhook)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `branchFilter`: `str`

@@ -82,7 +82,7 @@ Type annotations for `boto3.client("healthlake").create_fhir_datastore` method.
 Boto3 documentation:
 [HealthLake.Client.create_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.create_fhir_datastore)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatastoreTypeVersion`: `Literal['R4']` (see
   [FHIRVersionType](./literals.md#fhirversiontype)) *(required)*
@@ -179,7 +179,7 @@ Type annotations for `boto3.client("healthlake").list_fhir_datastores` method.
 Boto3 documentation:
 [HealthLake.Client.list_fhir_datastores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_datastores)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`: [DatastoreFilterTypeDef](./type_defs.md#datastorefiltertypedef)
 - `NextToken`: `str`
@@ -195,7 +195,7 @@ Type annotations for `boto3.client("healthlake").start_fhir_export_job` method.
 Boto3 documentation:
 [HealthLake.Client.start_fhir_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `OutputDataConfig`:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("healthlake").start_fhir_import_job` method.
 Boto3 documentation:
 [HealthLake.Client.start_fhir_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*

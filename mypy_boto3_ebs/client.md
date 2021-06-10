@@ -82,7 +82,7 @@ Type annotations for `boto3.client("ebs").complete_snapshot` method.
 Boto3 documentation:
 [EBS.Client.complete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 - `ChangedBlocksCount`: `int` *(required)*
@@ -118,7 +118,7 @@ Type annotations for `boto3.client("ebs").get_snapshot_block` method.
 Boto3 documentation:
 [EBS.Client.get_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 - `BlockIndex`: `int` *(required)*
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("ebs").list_changed_blocks` method.
 Boto3 documentation:
 [EBS.Client.list_changed_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecondSnapshotId`: `str` *(required)*
 - `FirstSnapshotId`: `str`
@@ -152,7 +152,7 @@ Type annotations for `boto3.client("ebs").list_snapshot_blocks` method.
 Boto3 documentation:
 [EBS.Client.list_snapshot_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 - `NextToken`: `str`
@@ -169,7 +169,7 @@ Type annotations for `boto3.client("ebs").put_snapshot_block` method.
 Boto3 documentation:
 [EBS.Client.put_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 - `BlockIndex`: `int` *(required)*
@@ -190,7 +190,7 @@ Type annotations for `boto3.client("ebs").start_snapshot` method.
 Boto3 documentation:
 [EBS.Client.start_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeSize`: `int` *(required)*
 - `ParentSnapshotId`: `str`

@@ -77,7 +77,7 @@ Type annotations for `boto3.client("pricing").describe_services` method.
 Boto3 documentation:
 [Pricing.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.describe_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str`
 - `FormatVersion`: `str`
@@ -110,7 +110,7 @@ Type annotations for `boto3.client("pricing").get_attribute_values` method.
 Boto3 documentation:
 [Pricing.Client.get_attribute_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_attribute_values)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `AttributeName`: `str` *(required)*
@@ -127,7 +127,7 @@ Type annotations for `boto3.client("pricing").get_products` method.
 Boto3 documentation:
 [Pricing.Client.get_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_products)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]

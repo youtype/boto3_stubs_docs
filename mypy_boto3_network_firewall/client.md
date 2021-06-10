@@ -98,7 +98,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkFirewall.Client.associate_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallPolicyArn`: `str` *(required)*
 - `UpdateToken`: `str`
@@ -116,7 +116,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.associate_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_subnets)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetMappings`:
   `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
@@ -148,7 +148,7 @@ Type annotations for `boto3.client("network-firewall").create_firewall` method.
 Boto3 documentation:
 [NetworkFirewall.Client.create_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallName`: `str` *(required)*
 - `FirewallPolicyArn`: `str` *(required)*
@@ -173,7 +173,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.create_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_firewall_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallPolicyName`: `str` *(required)*
 - `FirewallPolicy`:
@@ -193,7 +193,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.create_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleGroupName`: `str` *(required)*
 - `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype) *(required)*
@@ -260,7 +260,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleGroupName`: `str`
 - `RuleGroupArn`: `str`
@@ -340,7 +340,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.describe_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleGroupName`: `str`
 - `RuleGroupArn`: `str`
@@ -357,7 +357,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.disassociate_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.disassociate_subnets)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetIds`: `List`\[`str`\] *(required)*
 - `UpdateToken`: `str`
@@ -407,7 +407,7 @@ Type annotations for `boto3.client("network-firewall").list_firewalls` method.
 Boto3 documentation:
 [NetworkFirewall.Client.list_firewalls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewalls)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `VpcIds`: `List`\[`str`\]
@@ -440,7 +440,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -500,7 +500,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkFirewall.Client.update_firewall_delete_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_delete_protection)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeleteProtection`: `bool` *(required)*
 - `UpdateToken`: `str`
@@ -518,7 +518,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkFirewall.Client.update_firewall_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_description)
 
-Arguments:
+Keyword-only arguments:
 
 - `UpdateToken`: `str`
 - `FirewallArn`: `str`
@@ -536,7 +536,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.update_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `UpdateToken`: `str` *(required)*
 - `FirewallPolicy`:
@@ -558,7 +558,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.update_firewall_policy_change_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_firewall_policy_change_protection)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallPolicyChangeProtection`: `bool` *(required)*
 - `UpdateToken`: `str`
@@ -576,7 +576,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkFirewall.Client.update_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
@@ -594,7 +594,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `UpdateToken`: `str` *(required)*
 - `RuleGroupArn`: `str`
@@ -616,7 +616,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkFirewall.Client.update_subnet_change_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.update_subnet_change_protection)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetChangeProtection`: `bool` *(required)*
 - `UpdateToken`: `str`

@@ -90,7 +90,7 @@ Type annotations for
 Boto3 documentation:
 [PersonalizeRuntime.Client.get_personalized_ranking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking)
 
-Arguments:
+Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
 - `inputList`: `List`\[`str`\] *(required)*
@@ -110,7 +110,7 @@ method.
 Boto3 documentation:
 [PersonalizeRuntime.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
 - `itemId`: `str`

@@ -107,7 +107,7 @@ Type annotations for `boto3.client("elastictranscoder").create_job` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineId`: `str` *(required)*
 - `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
@@ -130,7 +130,7 @@ method.
 Boto3 documentation:
 [ElasticTranscoder.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InputBucket`: `str` *(required)*
@@ -153,7 +153,7 @@ Type annotations for `boto3.client("elastictranscoder").create_preset` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Container`: `str` *(required)*
@@ -217,7 +217,7 @@ method.
 Boto3 documentation:
 [ElasticTranscoder.Client.list_jobs_by_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineId`: `str` *(required)*
 - `Ascending`: `str`
@@ -234,7 +234,7 @@ method.
 Boto3 documentation:
 [ElasticTranscoder.Client.list_jobs_by_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`: `str` *(required)*
 - `Ascending`: `str`
@@ -320,7 +320,7 @@ Type annotations for `boto3.client("elastictranscoder").test_role` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.test_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `Role`: `str` *(required)*
 - `InputBucket`: `str` *(required)*
@@ -337,7 +337,7 @@ method.
 Boto3 documentation:
 [ElasticTranscoder.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Name`: `str`

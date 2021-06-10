@@ -193,7 +193,7 @@ Type annotations for `boto3.client("acm").import_certificate` method.
 Boto3 documentation:
 [ACM.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `PrivateKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("acm").list_certificates` method.
 Boto3 documentation:
 [ACM.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateStatuses`:
   `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("acm").request_certificate` method.
 Boto3 documentation:
 [ACM.Client.request_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ValidationMethod`:
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("acm").resend_validation_email` method.
 Boto3 documentation:
 [ACM.Client.resend_validation_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 - `Domain`: `str` *(required)*

@@ -124,7 +124,7 @@ Type annotations for `boto3.client("meteringmarketplace").meter_usage` method.
 Boto3 documentation:
 [MarketplaceMetering.Client.meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductCode`: `str` *(required)*
 - `Timestamp`: `datetime` *(required)*
@@ -144,7 +144,7 @@ method.
 Boto3 documentation:
 [MarketplaceMetering.Client.register_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductCode`: `str` *(required)*
 - `PublicKeyVersion`: `int` *(required)*

@@ -90,7 +90,7 @@ Type annotations for `boto3.client("cloudsearchdomain").search` method.
 Boto3 documentation:
 [CloudSearchDomain.Client.search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search)
 
-Arguments:
+Keyword-only arguments:
 
 - `query`: `str` *(required)*
 - `cursor`: `str`
@@ -116,7 +116,7 @@ Type annotations for `boto3.client("cloudsearchdomain").suggest` method.
 Boto3 documentation:
 [CloudSearchDomain.Client.suggest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest)
 
-Arguments:
+Keyword-only arguments:
 
 - `query`: `str` *(required)*
 - `suggester`: `str` *(required)*

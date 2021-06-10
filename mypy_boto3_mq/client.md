@@ -97,7 +97,7 @@ Type annotations for `boto3.client("mq").create_broker` method.
 Boto3 documentation:
 [MQ.Client.create_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_broker)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("mq").create_configuration` method.
 Boto3 documentation:
 [MQ.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
@@ -165,7 +165,7 @@ Type annotations for `boto3.client("mq").create_user` method.
 Boto3 documentation:
 [MQ.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -236,7 +236,7 @@ Type annotations for `boto3.client("mq").describe_broker_engine_types` method.
 Boto3 documentation:
 [MQ.Client.describe_broker_engine_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_engine_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `EngineType`: `str`
 - `MaxResults`: `int`
@@ -253,7 +253,7 @@ method.
 Boto3 documentation:
 [MQ.Client.describe_broker_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_instance_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `EngineType`: `str`
 - `HostInstanceType`: `str`
@@ -347,7 +347,7 @@ Type annotations for `boto3.client("mq").list_configuration_revisions` method.
 Boto3 documentation:
 [MQ.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configuration_revisions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -391,7 +391,7 @@ Type annotations for `boto3.client("mq").list_users` method.
 Boto3 documentation:
 [MQ.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("mq").update_broker` method.
 Boto3 documentation:
 [MQ.Client.update_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_broker)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 - `AuthenticationStrategy`:
@@ -444,7 +444,7 @@ Type annotations for `boto3.client("mq").update_configuration` method.
 Boto3 documentation:
 [MQ.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationId`: `str` *(required)*
 - `Data`: `str`
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("mq").update_user` method.
 Boto3 documentation:
 [MQ.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 - `Username`: `str` *(required)*

@@ -83,7 +83,7 @@ Type annotations for `boto3.client("mgh").associate_created_artifact` method.
 Boto3 documentation:
 [MigrationHub.Client.associate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -101,7 +101,7 @@ method.
 Boto3 documentation:
 [MigrationHub.Client.associate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -192,7 +192,7 @@ method.
 Boto3 documentation:
 [MigrationHub.Client.disassociate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -209,7 +209,7 @@ method.
 Boto3 documentation:
 [MigrationHub.Client.disassociate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -241,7 +241,7 @@ Type annotations for `boto3.client("mgh").import_migration_task` method.
 Boto3 documentation:
 [MigrationHub.Client.import_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -256,7 +256,7 @@ Type annotations for `boto3.client("mgh").list_application_states` method.
 Boto3 documentation:
 [MigrationHub.Client.list_application_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationIds`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -272,7 +272,7 @@ Type annotations for `boto3.client("mgh").list_created_artifacts` method.
 Boto3 documentation:
 [MigrationHub.Client.list_created_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("mgh").list_discovered_resources` method.
 Boto3 documentation:
 [MigrationHub.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -306,7 +306,7 @@ Type annotations for `boto3.client("mgh").list_migration_tasks` method.
 Boto3 documentation:
 [MigrationHub.Client.list_migration_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -337,7 +337,7 @@ Type annotations for `boto3.client("mgh").notify_application_state` method.
 Boto3 documentation:
 [MigrationHub.Client.notify_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `Status`: [ApplicationStatusType](./literals.md#applicationstatustype)
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("mgh").notify_migration_task_state` method.
 Boto3 documentation:
 [MigrationHub.Client.notify_migration_task_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -372,7 +372,7 @@ Type annotations for `boto3.client("mgh").put_resource_attributes` method.
 Boto3 documentation:
 [MigrationHub.Client.put_resource_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*

@@ -145,7 +145,7 @@ Type annotations for `boto3.client("logs").create_export_task` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.create_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `fromTime`: `int` *(required)*
@@ -165,7 +165,7 @@ Type annotations for `boto3.client("logs").create_log_group` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.create_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `kmsKeyId`: `str`
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("logs").describe_destinations` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations)
 
-Arguments:
+Keyword-only arguments:
 
 - `DestinationNamePrefix`: `str`
 - `nextToken`: `str`
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("logs").describe_export_tasks` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskId`: `str`
 - `statusCode`:
@@ -318,7 +318,7 @@ Type annotations for `boto3.client("logs").describe_log_groups` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_log_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupNamePrefix`: `str`
 - `nextToken`: `str`
@@ -334,7 +334,7 @@ Type annotations for `boto3.client("logs").describe_log_streams` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_log_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `logStreamNamePrefix`: `str`
@@ -353,7 +353,7 @@ Type annotations for `boto3.client("logs").describe_metric_filters` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_metric_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str`
 - `filterNamePrefix`: `str`
@@ -372,7 +372,7 @@ Type annotations for `boto3.client("logs").describe_queries` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str`
 - `status`: [QueryStatusType](./literals.md#querystatustype)
@@ -389,7 +389,7 @@ Type annotations for `boto3.client("logs").describe_query_definitions` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_query_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `queryDefinitionNamePrefix`: `str`
 - `maxResults`: `int`
@@ -421,7 +421,7 @@ method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_subscription_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `filterNamePrefix`: `str`
@@ -449,7 +449,7 @@ Type annotations for `boto3.client("logs").filter_log_events` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.filter_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `logStreamNames`: `List`\[`str`\]
@@ -487,7 +487,7 @@ Type annotations for `boto3.client("logs").get_log_events` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.get_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
@@ -564,7 +564,7 @@ Type annotations for `boto3.client("logs").put_destination` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.put_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `destinationName`: `str` *(required)*
 - `targetArn`: `str` *(required)*
@@ -592,7 +592,7 @@ Type annotations for `boto3.client("logs").put_log_events` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.put_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_log_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
@@ -611,7 +611,7 @@ Type annotations for `boto3.client("logs").put_metric_filter` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.put_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `filterName`: `str` *(required)*
@@ -627,7 +627,7 @@ Type annotations for `boto3.client("logs").put_query_definition` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.put_query_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `queryString`: `str` *(required)*
@@ -671,7 +671,7 @@ Type annotations for `boto3.client("logs").put_subscription_filter` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.put_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `filterName`: `str` *(required)*
@@ -687,7 +687,7 @@ Type annotations for `boto3.client("logs").start_query` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.start_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.start_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `startTime`: `int` *(required)*
 - `endTime`: `int` *(required)*

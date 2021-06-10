@@ -183,7 +183,7 @@ Type annotations for `boto3.client("neptune").add_role_to_db_cluster` method.
 Boto3 documentation:
 [Neptune.Client.add_role_to_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.add_role_to_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
@@ -225,7 +225,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.apply_pending_maintenance_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceIdentifier`: `str` *(required)*
 - `ApplyAction`: `str` *(required)*
@@ -255,7 +255,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.copy_db_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceDBClusterParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBClusterParameterGroupIdentifier`: `str` *(required)*
@@ -272,7 +272,7 @@ Type annotations for `boto3.client("neptune").copy_db_cluster_snapshot` method.
 Boto3 documentation:
 [Neptune.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.copy_db_cluster_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceDBClusterSnapshotIdentifier`: `str` *(required)*
 - `TargetDBClusterSnapshotIdentifier`: `str` *(required)*
@@ -292,7 +292,7 @@ Type annotations for `boto3.client("neptune").copy_db_parameter_group` method.
 Boto3 documentation:
 [Neptune.Client.copy_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.copy_db_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceDBParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBParameterGroupIdentifier`: `str` *(required)*
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("neptune").create_db_cluster` method.
 Boto3 documentation:
 [Neptune.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.create_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `Engine`: `str` *(required)*
@@ -349,7 +349,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.create_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.create_db_cluster_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `DBClusterEndpointIdentifier`: `str` *(required)*
@@ -369,7 +369,7 @@ Type annotations for
 Boto3 documentation:
 [Neptune.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.create_db_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `DBParameterGroupFamily`: `str` *(required)*
@@ -387,7 +387,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.create_db_cluster_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 - `DBClusterIdentifier`: `str` *(required)*
@@ -403,7 +403,7 @@ Type annotations for `boto3.client("neptune").create_db_instance` method.
 Boto3 documentation:
 [Neptune.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.create_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 - `DBInstanceClass`: `str` *(required)*
@@ -460,7 +460,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.create_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.create_db_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `DBParameterGroupFamily`: `str` *(required)*
@@ -477,7 +477,7 @@ Type annotations for `boto3.client("neptune").create_db_subnet_group` method.
 Boto3 documentation:
 [Neptune.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.create_db_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
 - `DBSubnetGroupDescription`: `str` *(required)*
@@ -495,7 +495,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.create_event_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str` *(required)*
@@ -515,7 +515,7 @@ Type annotations for `boto3.client("neptune").delete_db_cluster` method.
 Boto3 documentation:
 [Neptune.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.delete_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `SkipFinalSnapshot`: `bool`
@@ -573,7 +573,7 @@ Type annotations for `boto3.client("neptune").delete_db_instance` method.
 Boto3 documentation:
 [Neptune.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.delete_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 - `SkipFinalSnapshot`: `bool`
@@ -628,7 +628,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.describe_db_cluster_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_cluster_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointIdentifier`: `str`
@@ -647,7 +647,7 @@ Type annotations for
 Boto3 documentation:
 [Neptune.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_cluster_parameter_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -665,7 +665,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_cluster_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `Source`: `str`
@@ -699,7 +699,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_cluster_snapshots)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
@@ -720,7 +720,7 @@ Type annotations for `boto3.client("neptune").describe_db_clusters` method.
 Boto3 documentation:
 [Neptune.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -737,7 +737,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_engine_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Engine`: `str`
 - `EngineVersion`: `str`
@@ -759,7 +759,7 @@ Type annotations for `boto3.client("neptune").describe_db_instances` method.
 Boto3 documentation:
 [Neptune.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -776,7 +776,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.describe_db_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_parameter_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBParameterGroupName`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -793,7 +793,7 @@ Type annotations for `boto3.client("neptune").describe_db_parameters` method.
 Boto3 documentation:
 [Neptune.Client.describe_db_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `Source`: `str`
@@ -812,7 +812,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_db_subnet_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -830,7 +830,7 @@ Type annotations for
 Boto3 documentation:
 [Neptune.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_engine_default_cluster_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBParameterGroupFamily`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -848,7 +848,7 @@ Type annotations for
 Boto3 documentation:
 [Neptune.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_engine_default_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBParameterGroupFamily`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -882,7 +882,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_event_subscriptions)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -899,7 +899,7 @@ Type annotations for `boto3.client("neptune").describe_events` method.
 Boto3 documentation:
 [Neptune.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceIdentifier`: `str`
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
@@ -921,7 +921,7 @@ Type annotations for
 Boto3 documentation:
 [Neptune.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_orderable_db_instance_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `Engine`: `str` *(required)*
 - `EngineVersion`: `str`
@@ -943,7 +943,7 @@ Type annotations for
 Boto3 documentation:
 [Neptune.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.describe_pending_maintenance_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceIdentifier`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -1020,7 +1020,7 @@ Type annotations for `boto3.client("neptune").modify_db_cluster` method.
 Boto3 documentation:
 [Neptune.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.modify_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `NewDBClusterIdentifier`: `str`
@@ -1051,7 +1051,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.modify_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.modify_db_cluster_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterEndpointIdentifier`: `str` *(required)*
 - `EndpointType`: `str`
@@ -1086,7 +1086,7 @@ Type annotations for
 Boto3 documentation:
 [Neptune.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.modify_db_cluster_snapshot_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 - `AttributeName`: `str` *(required)*
@@ -1103,7 +1103,7 @@ Type annotations for `boto3.client("neptune").modify_db_instance` method.
 Boto3 documentation:
 [Neptune.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.modify_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 - `AllocatedStorage`: `int`
@@ -1171,7 +1171,7 @@ Type annotations for `boto3.client("neptune").modify_db_subnet_group` method.
 Boto3 documentation:
 [Neptune.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.modify_db_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
@@ -1188,7 +1188,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.modify_event_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str`
@@ -1237,7 +1237,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.remove_role_from_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.remove_role_from_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
@@ -1280,7 +1280,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.reset_db_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
@@ -1296,7 +1296,7 @@ Type annotations for `boto3.client("neptune").reset_db_parameter_group` method.
 Boto3 documentation:
 [Neptune.Client.reset_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.reset_db_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
@@ -1313,7 +1313,7 @@ method.
 Boto3 documentation:
 [Neptune.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.restore_db_cluster_from_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `SnapshotIdentifier`: `str` *(required)*
@@ -1344,7 +1344,7 @@ Type annotations for
 Boto3 documentation:
 [Neptune.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client.restore_db_cluster_to_point_in_time)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `SourceDBClusterIdentifier`: `str` *(required)*

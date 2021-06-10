@@ -90,7 +90,7 @@ Type annotations for `boto3.client("cloud9").create_environment_ec2` method.
 Boto3 documentation:
 [Cloud9.Client.create_environment_ec2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `instanceType`: `str` *(required)*
@@ -114,7 +114,7 @@ method.
 Boto3 documentation:
 [Cloud9.Client.create_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 - `userArn`: `str` *(required)*
@@ -160,7 +160,7 @@ method.
 Boto3 documentation:
 [Cloud9.Client.describe_environment_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships)
 
-Arguments:
+Keyword-only arguments:
 
 - `userArn`: `str`
 - `environmentId`: `str`
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("cloud9").update_environment` method.
 Boto3 documentation:
 [Cloud9.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 - `name`: `str`
@@ -296,7 +296,7 @@ method.
 Boto3 documentation:
 [Cloud9.Client.update_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 - `userArn`: `str` *(required)*

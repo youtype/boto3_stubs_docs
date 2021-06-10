@@ -93,7 +93,7 @@ method.
 Boto3 documentation:
 [MarketplaceEntitlementService.Client.get_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.get_entitlements)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductCode`: `str` *(required)*
 - `Filter`:

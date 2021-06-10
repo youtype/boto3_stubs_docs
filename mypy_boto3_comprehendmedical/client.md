@@ -246,7 +246,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.list_entities_detection_v2_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_entities_detection_v2_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
@@ -264,7 +264,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.list_icd10_cm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_icd10_cm_inference_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
@@ -282,7 +282,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.list_phi_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_phi_detection_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
@@ -300,7 +300,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.list_rx_norm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_rx_norm_inference_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
@@ -318,7 +318,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.start_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_entities_detection_v2_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -343,7 +343,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.start_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_icd10_cm_inference_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -368,7 +368,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.start_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_phi_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -393,7 +393,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.start_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_rx_norm_inference_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*

@@ -612,7 +612,7 @@ method.
 Boto3 documentation:
 [IAM.ServiceResource.create_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_account_password_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `MinimumPasswordLength`: `int`
 - `RequireSymbols`: `bool`
@@ -647,7 +647,7 @@ Type annotations for `boto3.resource("iam").create_instance_profile` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Path`: `str`
@@ -662,7 +662,7 @@ Type annotations for `boto3.resource("iam").create_policy` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
@@ -679,7 +679,7 @@ Type annotations for `boto3.resource("iam").create_role` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `AssumeRolePolicyDocument`: `str` *(required)*
@@ -698,7 +698,7 @@ Type annotations for `boto3.resource("iam").create_saml_provider` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_saml_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -713,7 +713,7 @@ Type annotations for `boto3.resource("iam").create_server_certificate` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_server_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 - `CertificateBody`: `str` *(required)*
@@ -745,7 +745,7 @@ Type annotations for `boto3.resource("iam").create_user` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `Path`: `str`
@@ -761,7 +761,7 @@ Type annotations for `boto3.resource("iam").create_virtual_mfa_device` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_virtual_mfa_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `VirtualMFADeviceName`: `str` *(required)*
 - `Path`: `str`
@@ -985,7 +985,7 @@ Type annotations for `boto3.resource("iam").update` method.
 Boto3 documentation:
 [IAM.AccountPasswordPolicy.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `MinimumPasswordLength`: `int`
 - `RequireSymbols`: `bool`
@@ -2755,7 +2755,7 @@ Type annotations for `boto3.resource("iam").create` method.
 Boto3 documentation:
 [IAM.User.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create)
 
-Arguments:
+Keyword-only arguments:
 
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
@@ -2825,7 +2825,7 @@ Type annotations for `boto3.resource("iam").enable_mfa` method.
 Boto3 documentation:
 [IAM.User.enable_mfa](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.enable_mfa)
 
-Arguments:
+Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
 - `AuthenticationCode1`: `str` *(required)*

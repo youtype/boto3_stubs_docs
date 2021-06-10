@@ -77,7 +77,7 @@ Type annotations for `boto3.client("dynamodbstreams").describe_stream` method.
 Boto3 documentation:
 [DynamoDBStreams.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamArn`: `str` *(required)*
 - `Limit`: `int`
@@ -125,7 +125,7 @@ method.
 Boto3 documentation:
 [DynamoDBStreams.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamArn`: `str` *(required)*
 - `ShardId`: `str` *(required)*
@@ -143,7 +143,7 @@ Type annotations for `boto3.client("dynamodbstreams").list_streams` method.
 Boto3 documentation:
 [DynamoDBStreams.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str`
 - `Limit`: `int`

@@ -98,7 +98,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.associate_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.associate_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `resourceType`: `Literal['CFN_STACK']` (see
@@ -130,7 +130,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.create_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `clientToken`: `str` *(required)*
@@ -148,7 +148,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.create_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.create_attribute_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `attributes`: `str` *(required)*
@@ -214,7 +214,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.disassociate_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.disassociate_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `resourceType`: `Literal['CFN_STACK']` (see
@@ -296,7 +296,7 @@ method.
 Boto3 documentation:
 [AppRegistry.Client.list_associated_attribute_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_attribute_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `nextToken`: `str`
@@ -313,7 +313,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.list_associated_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `nextToken`: `str`
@@ -408,7 +408,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.update_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `name`: `str`
@@ -425,7 +425,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.update_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.update_attribute_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `attributeGroup`: `str` *(required)*
 - `name`: `str`

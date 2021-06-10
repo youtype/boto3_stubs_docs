@@ -78,7 +78,7 @@ Type annotations for
 Boto3 documentation:
 [MigrationHubConfig.Client.create_home_region_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `HomeRegion`: `str` *(required)*
 - `Target`: [TargetTypeDef](./type_defs.md#targettypedef) *(required)*
@@ -95,7 +95,7 @@ Type annotations for
 Boto3 documentation:
 [MigrationHubConfig.Client.describe_home_region_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
 
-Arguments:
+Keyword-only arguments:
 
 - `ControlId`: `str`
 - `HomeRegion`: `str`

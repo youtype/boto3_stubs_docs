@@ -124,7 +124,7 @@ Type annotations for `boto3.client("identitystore").list_groups` method.
 Boto3 documentation:
 [IdentityStore.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityStoreId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("identitystore").list_users` method.
 Boto3 documentation:
 [IdentityStore.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityStoreId`: `str` *(required)*
 - `MaxResults`: `int`

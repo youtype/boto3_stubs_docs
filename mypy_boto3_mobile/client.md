@@ -86,7 +86,7 @@ Type annotations for `boto3.client("mobile").create_project` method.
 Boto3 documentation:
 [Mobile.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `region`: `str`
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("mobile").export_bundle` method.
 Boto3 documentation:
 [Mobile.Client.export_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle)
 
-Arguments:
+Keyword-only arguments:
 
 - `bundleId`: `str` *(required)*
 - `projectId`: `str`

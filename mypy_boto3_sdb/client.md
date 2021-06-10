@@ -135,7 +135,7 @@ Type annotations for `boto3.client("sdb").delete_attributes` method.
 Boto3 documentation:
 [SimpleDB.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ItemName`: `str` *(required)*
@@ -190,7 +190,7 @@ Type annotations for `boto3.client("sdb").get_attributes` method.
 Boto3 documentation:
 [SimpleDB.Client.get_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.get_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ItemName`: `str` *(required)*
@@ -221,7 +221,7 @@ Type annotations for `boto3.client("sdb").put_attributes` method.
 Boto3 documentation:
 [SimpleDB.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.put_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ItemName`: `str` *(required)*
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("sdb").select` method.
 Boto3 documentation:
 [SimpleDB.Client.select](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.select)
 
-Arguments:
+Keyword-only arguments:
 
 - `SelectExpression`: `str` *(required)*
 - `NextToken`: `str`

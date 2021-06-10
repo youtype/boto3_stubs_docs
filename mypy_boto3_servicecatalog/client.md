@@ -152,7 +152,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.accept_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -184,7 +184,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.associate_principal_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `PrincipalARN`: `str` *(required)*
@@ -202,7 +202,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.associate_product_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `PortfolioId`: `str` *(required)*
@@ -220,7 +220,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `ProvisioningArtifactId`: `str` *(required)*
@@ -302,7 +302,7 @@ Type annotations for `boto3.client("servicecatalog").copy_product` method.
 Boto3 documentation:
 [ServiceCatalog.Client.copy_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceProductArn`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
@@ -324,7 +324,7 @@ Type annotations for `boto3.client("servicecatalog").create_constraint` method.
 Boto3 documentation:
 [ServiceCatalog.Client.create_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `ProductId`: `str` *(required)*
@@ -344,7 +344,7 @@ Type annotations for `boto3.client("servicecatalog").create_portfolio` method.
 Boto3 documentation:
 [ServiceCatalog.Client.create_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio)
 
-Arguments:
+Keyword-only arguments:
 
 - `DisplayName`: `str` *(required)*
 - `ProviderName`: `str` *(required)*
@@ -364,7 +364,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.create_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -383,7 +383,7 @@ Type annotations for `boto3.client("servicecatalog").create_product` method.
 Boto3 documentation:
 [ServiceCatalog.Client.create_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Owner`: `str` *(required)*
@@ -411,7 +411,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.create_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlanName`: `str` *(required)*
 - `PlanType`: `Literal['CLOUDFORMATION']` (see
@@ -439,7 +439,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.create_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `Parameters`:
@@ -459,7 +459,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.create_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DefinitionType`: `Literal['SSM_AUTOMATION']` (see
@@ -526,7 +526,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.delete_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -559,7 +559,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.delete_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlanId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -575,7 +575,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.delete_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `ProvisioningArtifactId`: `str` *(required)*
@@ -682,7 +682,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `Type`:
@@ -701,7 +701,7 @@ Type annotations for `boto3.client("servicecatalog").describe_product` method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `Id`: `str`
@@ -718,7 +718,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_product_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `Id`: `str`
@@ -752,7 +752,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.describe_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `Id`: `str`
@@ -769,7 +769,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.describe_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlanId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -787,7 +787,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.describe_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `ProvisioningArtifactId`: `str`
@@ -807,7 +807,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.describe_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `ProductId`: `str`
@@ -827,7 +827,7 @@ Type annotations for `boto3.client("servicecatalog").describe_record` method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -862,7 +862,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_service_action_execution_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProvisionedProductId`: `str` *(required)*
 - `ServiceActionId`: `str` *(required)*
@@ -919,7 +919,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.disassociate_principal_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `PrincipalARN`: `str` *(required)*
@@ -935,7 +935,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.disassociate_product_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `PortfolioId`: `str` *(required)*
@@ -952,7 +952,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `ProvisioningArtifactId`: `str` *(required)*
@@ -994,7 +994,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.execute_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlanId`: `str` *(required)*
 - `IdempotencyToken`: `str` *(required)*
@@ -1012,7 +1012,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.execute_provisioned_product_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProvisionedProductId`: `str` *(required)*
 - `ServiceActionId`: `str` *(required)*
@@ -1059,7 +1059,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.get_provisioned_product_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `ProvisionedProductId`: `str`
@@ -1079,7 +1079,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.import_as_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `ProvisioningArtifactId`: `str` *(required)*
@@ -1099,7 +1099,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.list_accepted_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `PageToken`: `str`
@@ -1118,7 +1118,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_budgets_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1136,7 +1136,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.list_constraints_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1154,7 +1154,7 @@ Type annotations for `boto3.client("servicecatalog").list_launch_paths` method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_launch_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1172,7 +1172,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.list_organization_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `OrganizationNodeType`:
@@ -1193,7 +1193,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1211,7 +1211,7 @@ Type annotations for `boto3.client("servicecatalog").list_portfolios` method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_portfolios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `PageToken`: `str`
@@ -1228,7 +1228,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.list_portfolios_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1246,7 +1246,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.list_principals_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1264,7 +1264,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.list_provisioned_product_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `ProvisionProductId`: `str`
@@ -1301,7 +1301,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_provisioning_artifacts_for_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceActionId`: `str` *(required)*
 - `PageSize`: `int`
@@ -1319,7 +1319,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_record_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
@@ -1340,7 +1340,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.list_resources_for_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option)
 
-Arguments:
+Keyword-only arguments:
 
 - `TagOptionId`: `str` *(required)*
 - `ResourceType`: `str`
@@ -1358,7 +1358,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_service_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `PageSize`: `int`
@@ -1376,7 +1376,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_service_actions_for_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `ProvisioningArtifactId`: `str` *(required)*
@@ -1396,7 +1396,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_stack_instances_for_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProvisionedProductId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1413,7 +1413,7 @@ Type annotations for `boto3.client("servicecatalog").list_tag_options` method.
 Boto3 documentation:
 [ServiceCatalog.Client.list_tag_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   [ListTagOptionsFiltersTypeDef](./type_defs.md#listtagoptionsfilterstypedef)
@@ -1430,7 +1430,7 @@ Type annotations for `boto3.client("servicecatalog").provision_product` method.
 Boto3 documentation:
 [ServiceCatalog.Client.provision_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProvisionedProductName`: `str` *(required)*
 - `ProvisionToken`: `str` *(required)*
@@ -1459,7 +1459,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.reject_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1476,7 +1476,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.scan_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
@@ -1494,7 +1494,7 @@ Type annotations for `boto3.client("servicecatalog").search_products` method.
 Boto3 documentation:
 [ServiceCatalog.Client.search_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `Filters`:
@@ -1516,7 +1516,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.search_products_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `PortfolioId`: `str`
@@ -1541,7 +1541,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.search_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
@@ -1565,7 +1565,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.terminate_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `TerminateToken`: `str` *(required)*
 - `ProvisionedProductName`: `str`
@@ -1584,7 +1584,7 @@ Type annotations for `boto3.client("servicecatalog").update_constraint` method.
 Boto3 documentation:
 [ServiceCatalog.Client.update_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1601,7 +1601,7 @@ Type annotations for `boto3.client("servicecatalog").update_portfolio` method.
 Boto3 documentation:
 [ServiceCatalog.Client.update_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1622,7 +1622,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.update_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `PortfolioId`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1641,7 +1641,7 @@ Type annotations for `boto3.client("servicecatalog").update_product` method.
 Boto3 documentation:
 [ServiceCatalog.Client.update_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1666,7 +1666,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.update_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `UpdateToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
@@ -1695,7 +1695,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.update_provisioned_product_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProvisionedProductId`: `str` *(required)*
 - `ProvisionedProductProperties`:
@@ -1715,7 +1715,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.update_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `ProvisioningArtifactId`: `str` *(required)*
@@ -1737,7 +1737,7 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.update_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Name`: `str`
@@ -1757,7 +1757,7 @@ Type annotations for `boto3.client("servicecatalog").update_tag_option` method.
 Boto3 documentation:
 [ServiceCatalog.Client.update_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Value`: `str`

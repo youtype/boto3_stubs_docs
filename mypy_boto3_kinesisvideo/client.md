@@ -102,7 +102,7 @@ method.
 Boto3 documentation:
 [KinesisVideo.Client.create_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_signaling_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `ChannelType`: `Literal['SINGLE_MASTER']` (see
@@ -121,7 +121,7 @@ Type annotations for `boto3.client("kinesisvideo").create_stream` method.
 Boto3 documentation:
 [KinesisVideo.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `DeviceName`: `str`
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("kinesisvideo").get_data_endpoint` method.
 Boto3 documentation:
 [KinesisVideo.Client.get_data_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_data_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `APIName`: [APINameType](./literals.md#apinametype) *(required)*
 - `StreamName`: `str`
@@ -250,7 +250,7 @@ method.
 Boto3 documentation:
 [KinesisVideo.Client.list_signaling_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_signaling_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("kinesisvideo").list_streams` method.
 Boto3 documentation:
 [KinesisVideo.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -300,7 +300,7 @@ method.
 Boto3 documentation:
 [KinesisVideo.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `StreamARN`: `str`
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("kinesisvideo").tag_stream` method.
 Boto3 documentation:
 [KinesisVideo.Client.tag_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 - `StreamARN`: `str`
@@ -359,7 +359,7 @@ Type annotations for `boto3.client("kinesisvideo").untag_stream` method.
 Boto3 documentation:
 [KinesisVideo.Client.untag_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `TagKeyList`: `List`\[`str`\] *(required)*
 - `StreamARN`: `str`
@@ -375,7 +375,7 @@ method.
 Boto3 documentation:
 [KinesisVideo.Client.update_data_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_data_retention)
 
-Arguments:
+Keyword-only arguments:
 
 - `CurrentVersion`: `str` *(required)*
 - `Operation`:
@@ -395,7 +395,7 @@ method.
 Boto3 documentation:
 [KinesisVideo.Client.update_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_signaling_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelARN`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("kinesisvideo").update_stream` method.
 Boto3 documentation:
 [KinesisVideo.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `CurrentVersion`: `str` *(required)*
 - `StreamName`: `str`

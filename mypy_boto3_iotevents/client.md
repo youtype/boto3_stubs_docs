@@ -103,7 +103,7 @@ Type annotations for `boto3.client("iotevents").create_alarm_model` method.
 Boto3 documentation:
 [IoTEvents.Client.create_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_alarm_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `alarmModelName`: `str` *(required)*
 - `roleArn`: `str` *(required)*
@@ -129,7 +129,7 @@ Type annotations for `boto3.client("iotevents").create_detector_model` method.
 Boto3 documentation:
 [IoTEvents.Client.create_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_detector_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorModelName`: `str` *(required)*
 - `detectorModelDefinition`:
@@ -152,7 +152,7 @@ Type annotations for `boto3.client("iotevents").create_input` method.
 Boto3 documentation:
 [IoTEvents.Client.create_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_input)
 
-Arguments:
+Keyword-only arguments:
 
 - `inputName`: `str` *(required)*
 - `inputDefinition`:
@@ -297,7 +297,7 @@ Type annotations for
 Boto3 documentation:
 [IoTEvents.Client.get_detector_model_analysis_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.get_detector_model_analysis_results)
 
-Arguments:
+Keyword-only arguments:
 
 - `analysisId`: `str` *(required)*
 - `nextToken`: `str`
@@ -314,7 +314,7 @@ method.
 Boto3 documentation:
 [IoTEvents.Client.list_alarm_model_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_alarm_model_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `alarmModelName`: `str` *(required)*
 - `nextToken`: `str`
@@ -346,7 +346,7 @@ method.
 Boto3 documentation:
 [IoTEvents.Client.list_detector_model_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_model_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorModelName`: `str` *(required)*
 - `nextToken`: `str`
@@ -377,7 +377,7 @@ Type annotations for `boto3.client("iotevents").list_input_routings` method.
 Boto3 documentation:
 [IoTEvents.Client.list_input_routings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_input_routings)
 
-Arguments:
+Keyword-only arguments:
 
 - `inputIdentifier`:
   [InputIdentifierTypeDef](./type_defs.md#inputidentifiertypedef) *(required)*
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("iotevents").update_alarm_model` method.
 Boto3 documentation:
 [IoTEvents.Client.update_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_alarm_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `alarmModelName`: `str` *(required)*
 - `roleArn`: `str` *(required)*
@@ -503,7 +503,7 @@ Type annotations for `boto3.client("iotevents").update_detector_model` method.
 Boto3 documentation:
 [IoTEvents.Client.update_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_detector_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorModelName`: `str` *(required)*
 - `detectorModelDefinition`:
@@ -524,7 +524,7 @@ Type annotations for `boto3.client("iotevents").update_input` method.
 Boto3 documentation:
 [IoTEvents.Client.update_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_input)
 
-Arguments:
+Keyword-only arguments:
 
 - `inputName`: `str` *(required)*
 - `inputDefinition`:

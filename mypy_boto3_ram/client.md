@@ -117,7 +117,7 @@ Type annotations for `boto3.client("ram").associate_resource_share` method.
 Boto3 documentation:
 [RAM.Client.associate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
 - `resourceArns`: `List`\[`str`\]
@@ -135,7 +135,7 @@ method.
 Boto3 documentation:
 [RAM.Client.associate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
 - `permissionArn`: `str` *(required)*
@@ -165,7 +165,7 @@ Type annotations for `boto3.client("ram").create_resource_share` method.
 Boto3 documentation:
 [RAM.Client.create_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.create_resource_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `resourceArns`: `List`\[`str`\]
@@ -200,7 +200,7 @@ Type annotations for `boto3.client("ram").disassociate_resource_share` method.
 Boto3 documentation:
 [RAM.Client.disassociate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
 - `resourceArns`: `List`\[`str`\]
@@ -218,7 +218,7 @@ Type annotations for
 Boto3 documentation:
 [RAM.Client.disassociate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
 - `permissionArn`: `str` *(required)*
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("ram").get_resource_policies` method.
 Boto3 documentation:
 [RAM.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArns`: `List`\[`str`\] *(required)*
 - `principal`: `str`
@@ -294,7 +294,7 @@ method.
 Boto3 documentation:
 [RAM.Client.get_resource_share_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `associationType`:
   [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
@@ -318,7 +318,7 @@ method.
 Boto3 documentation:
 [RAM.Client.get_resource_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_invitations)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceShareInvitationArns`: `List`\[`str`\]
 - `resourceShareArns`: `List`\[`str`\]
@@ -335,7 +335,7 @@ Type annotations for `boto3.client("ram").get_resource_shares` method.
 Boto3 documentation:
 [RAM.Client.get_resource_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_shares)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
@@ -358,7 +358,7 @@ method.
 Boto3 documentation:
 [RAM.Client.list_pending_invitation_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_pending_invitation_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceShareInvitationArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("ram").list_permissions` method.
 Boto3 documentation:
 [RAM.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceType`: `str`
 - `nextToken`: `str`
@@ -390,7 +390,7 @@ Type annotations for `boto3.client("ram").list_principals` method.
 Boto3 documentation:
 [RAM.Client.list_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_principals)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
@@ -412,7 +412,7 @@ method.
 Boto3 documentation:
 [RAM.Client.list_resource_share_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_share_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("ram").list_resources` method.
 Boto3 documentation:
 [RAM.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
@@ -523,7 +523,7 @@ Type annotations for `boto3.client("ram").update_resource_share` method.
 Boto3 documentation:
 [RAM.Client.update_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.update_resource_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
 - `name`: `str`

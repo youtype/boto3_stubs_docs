@@ -92,7 +92,7 @@ Type annotations for `boto3.client("sqs").add_permission` method.
 Boto3 documentation:
 [SQS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.add_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Label`: `str` *(required)*
@@ -119,7 +119,7 @@ Type annotations for `boto3.client("sqs").change_message_visibility` method.
 Boto3 documentation:
 [SQS.Client.change_message_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `ReceiptHandle`: `str` *(required)*
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("sqs").create_queue` method.
 Boto3 documentation:
 [SQS.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.create_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueName`: `str` *(required)*
 - `Attributes`:
@@ -254,7 +254,7 @@ method.
 Boto3 documentation:
 [SQS.Client.list_dead_letter_source_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_dead_letter_source_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `NextToken`: `str`
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("sqs").list_queues` method.
 Boto3 documentation:
 [SQS.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueNamePrefix`: `str`
 - `NextToken`: `str`
@@ -310,7 +310,7 @@ Type annotations for `boto3.client("sqs").receive_message` method.
 Boto3 documentation:
 [SQS.Client.receive_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.receive_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `AttributeNames`:
@@ -343,7 +343,7 @@ Type annotations for `boto3.client("sqs").send_message` method.
 Boto3 documentation:
 [SQS.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `MessageBody`: `str` *(required)*

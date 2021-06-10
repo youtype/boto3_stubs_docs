@@ -121,7 +121,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.associate_aws_account_with_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_aws_account_with_partner_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `Sidewalk`:
   [SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef)
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("iotwireless").create_destination` method.
 Boto3 documentation:
 [IoTWireless.Client.create_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
@@ -221,7 +221,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.create_device_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_device_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 - `LoRaWAN`:
@@ -240,7 +240,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.create_service_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_service_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 - `LoRaWAN`:
@@ -259,7 +259,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.create_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
   *(required)*
@@ -281,7 +281,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.create_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoRaWAN`: [LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef)
   *(required)*
@@ -317,7 +317,7 @@ Type annotations for
 Boto3 documentation:
 [IoTWireless.Client.create_wireless_gateway_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoCreateTasks`: `bool` *(required)*
 - `Name`: `str`
@@ -812,7 +812,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.list_wireless_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -833,7 +833,7 @@ Type annotations for
 Boto3 documentation:
 [IoTWireless.Client.list_wireless_gateway_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateway_task_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -867,7 +867,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.put_resource_log_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.put_resource_log_level)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceIdentifier`: `str` *(required)*
 - `ResourceType`: `str` *(required)*
@@ -908,7 +908,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.send_data_to_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.send_data_to_wireless_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `TransmitMode`: `int` *(required)*
@@ -968,7 +968,7 @@ Type annotations for `boto3.client("iotwireless").update_destination` method.
 Boto3 documentation:
 [IoTWireless.Client.update_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
@@ -986,7 +986,7 @@ Type annotations for
 Boto3 documentation:
 [IoTWireless.Client.update_log_levels_by_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_log_levels_by_resource_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `WirelessDeviceLogOptions`:
@@ -1004,7 +1004,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.update_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_partner_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `Sidewalk`:
   [SidewalkUpdateAccountTypeDef](./type_defs.md#sidewalkupdateaccounttypedef)
@@ -1023,7 +1023,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.update_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `DestinationName`: `str`
@@ -1042,7 +1042,7 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.update_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Name`: `str`

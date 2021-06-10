@@ -83,7 +83,7 @@ Type annotations for `boto3.client("sso-oidc").create_token` method.
 Boto3 documentation:
 [SSOOIDC.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.create_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientId`: `str` *(required)*
 - `clientSecret`: `str` *(required)*
@@ -120,7 +120,7 @@ Type annotations for `boto3.client("sso-oidc").register_client` method.
 Boto3 documentation:
 [SSOOIDC.Client.register_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.register_client)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientName`: `str` *(required)*
 - `clientType`: `str` *(required)*
@@ -137,7 +137,7 @@ method.
 Boto3 documentation:
 [SSOOIDC.Client.start_device_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientId`: `str` *(required)*
 - `clientSecret`: `str` *(required)*

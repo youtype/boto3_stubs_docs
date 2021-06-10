@@ -123,7 +123,7 @@ method.
 Boto3 documentation:
 [WorkDocs.Client.abort_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -152,7 +152,7 @@ method.
 Boto3 documentation:
 [WorkDocs.Client.add_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Principals`:
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("workdocs").create_comment` method.
 Boto3 documentation:
 [WorkDocs.Client.create_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_comment)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("workdocs").create_custom_metadata` method.
 Boto3 documentation:
 [WorkDocs.Client.create_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `CustomMetadata`: `Dict`\[`str`, `str`\] *(required)*
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("workdocs").create_folder` method.
 Boto3 documentation:
 [WorkDocs.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParentFolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -239,7 +239,7 @@ Type annotations for `boto3.client("workdocs").create_labels` method.
 Boto3 documentation:
 [WorkDocs.Client.create_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_labels)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Labels`: `List`\[`str`\] *(required)*
@@ -255,7 +255,7 @@ Type annotations for
 Boto3 documentation:
 [WorkDocs.Client.create_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `Endpoint`: `str` *(required)*
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("workdocs").create_user` method.
 Boto3 documentation:
 [WorkDocs.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `Username`: `str` *(required)*
 - `GivenName`: `str` *(required)*
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("workdocs").delete_comment` method.
 Boto3 documentation:
 [WorkDocs.Client.delete_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_comment)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("workdocs").delete_custom_metadata` method.
 Boto3 documentation:
 [WorkDocs.Client.delete_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -376,7 +376,7 @@ Type annotations for `boto3.client("workdocs").delete_labels` method.
 Boto3 documentation:
 [WorkDocs.Client.delete_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_labels)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -417,7 +417,7 @@ Type annotations for `boto3.client("workdocs").describe_activities` method.
 Boto3 documentation:
 [WorkDocs.Client.describe_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_activities)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationToken`: `str`
 - `StartTime`: `datetime`
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("workdocs").describe_comments` method.
 Boto3 documentation:
 [WorkDocs.Client.describe_comments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_comments)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -459,7 +459,7 @@ method.
 Boto3 documentation:
 [WorkDocs.Client.describe_document_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -479,7 +479,7 @@ method.
 Boto3 documentation:
 [WorkDocs.Client.describe_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents)
 
-Arguments:
+Keyword-only arguments:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -500,7 +500,7 @@ Type annotations for `boto3.client("workdocs").describe_groups` method.
 Boto3 documentation:
 [WorkDocs.Client.describe_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `SearchQuery`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -519,7 +519,7 @@ Type annotations for
 Boto3 documentation:
 [WorkDocs.Client.describe_notification_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `Marker`: `str`
@@ -536,7 +536,7 @@ method.
 Boto3 documentation:
 [WorkDocs.Client.describe_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("workdocs").describe_root_folders` method.
 Boto3 documentation:
 [WorkDocs.Client.describe_root_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationToken`: `str` *(required)*
 - `Limit`: `int`
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("workdocs").describe_users` method.
 Boto3 documentation:
 [WorkDocs.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationToken`: `str`
 - `OrganizationId`: `str`
@@ -623,7 +623,7 @@ Type annotations for `boto3.client("workdocs").get_document` method.
 Boto3 documentation:
 [WorkDocs.Client.get_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -639,7 +639,7 @@ Type annotations for `boto3.client("workdocs").get_document_path` method.
 Boto3 documentation:
 [WorkDocs.Client.get_document_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_path)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -657,7 +657,7 @@ Type annotations for `boto3.client("workdocs").get_document_version` method.
 Boto3 documentation:
 [WorkDocs.Client.get_document_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -675,7 +675,7 @@ Type annotations for `boto3.client("workdocs").get_folder` method.
 Boto3 documentation:
 [WorkDocs.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -690,7 +690,7 @@ Type annotations for `boto3.client("workdocs").get_folder_path` method.
 Boto3 documentation:
 [WorkDocs.Client.get_folder_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder_path)
 
-Arguments:
+Keyword-only arguments:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -708,7 +708,7 @@ Type annotations for `boto3.client("workdocs").get_resources` method.
 Boto3 documentation:
 [WorkDocs.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationToken`: `str`
 - `UserId`: `str`
@@ -728,7 +728,7 @@ Type annotations for
 Boto3 documentation:
 [WorkDocs.Client.initiate_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParentFolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -763,7 +763,7 @@ method.
 Boto3 documentation:
 [WorkDocs.Client.remove_resource_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `PrincipalId`: `str` *(required)*
@@ -777,7 +777,7 @@ Type annotations for `boto3.client("workdocs").update_document` method.
 Boto3 documentation:
 [WorkDocs.Client.update_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -792,7 +792,7 @@ Type annotations for `boto3.client("workdocs").update_document_version` method.
 Boto3 documentation:
 [WorkDocs.Client.update_document_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -807,7 +807,7 @@ Type annotations for `boto3.client("workdocs").update_folder` method.
 Boto3 documentation:
 [WorkDocs.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -822,7 +822,7 @@ Type annotations for `boto3.client("workdocs").update_user` method.
 Boto3 documentation:
 [WorkDocs.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `AuthenticationToken`: `str`

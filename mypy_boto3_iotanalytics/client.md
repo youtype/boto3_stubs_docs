@@ -141,7 +141,7 @@ Type annotations for `boto3.client("iotanalytics").create_channel` method.
 Boto3 documentation:
 [IoTAnalytics.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
 - `channelStorage`:
@@ -160,7 +160,7 @@ Type annotations for `boto3.client("iotanalytics").create_dataset` method.
 Boto3 documentation:
 [IoTAnalytics.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 - `actions`:
@@ -204,7 +204,7 @@ Type annotations for `boto3.client("iotanalytics").create_datastore` method.
 Boto3 documentation:
 [IoTAnalytics.Client.create_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_datastore)
 
-Arguments:
+Keyword-only arguments:
 
 - `datastoreName`: `str` *(required)*
 - `datastoreStorage`:
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("iotanalytics").create_pipeline` method.
 Boto3 documentation:
 [IoTAnalytics.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `pipelineActivities`:
@@ -417,7 +417,7 @@ method.
 Boto3 documentation:
 [IoTAnalytics.Client.list_dataset_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_dataset_contents)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 - `nextToken`: `str`
@@ -525,7 +525,7 @@ Type annotations for `boto3.client("iotanalytics").sample_channel_data` method.
 Boto3 documentation:
 [IoTAnalytics.Client.sample_channel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.sample_channel_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
 - `maxMessages`: `int`
@@ -543,7 +543,7 @@ method.
 Boto3 documentation:
 [IoTAnalytics.Client.start_pipeline_reprocessing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.start_pipeline_reprocessing)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `startTime`: `datetime`
@@ -589,7 +589,7 @@ Type annotations for `boto3.client("iotanalytics").update_channel` method.
 Boto3 documentation:
 [IoTAnalytics.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.update_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
 - `channelStorage`:
@@ -604,7 +604,7 @@ Type annotations for `boto3.client("iotanalytics").update_dataset` method.
 Boto3 documentation:
 [IoTAnalytics.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.update_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 - `actions`:
@@ -628,7 +628,7 @@ Type annotations for `boto3.client("iotanalytics").update_datastore` method.
 Boto3 documentation:
 [IoTAnalytics.Client.update_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.update_datastore)
 
-Arguments:
+Keyword-only arguments:
 
 - `datastoreName`: `str` *(required)*
 - `retentionPeriod`:

@@ -137,7 +137,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.apply_environment_managed_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ActionId`: `str` *(required)*
 - `EnvironmentName`: `str`
@@ -196,7 +196,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.compose_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str`
 - `GroupName`: `str`
@@ -213,7 +213,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `Description`: `str`
@@ -232,7 +232,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `VersionLabel`: `str` *(required)*
@@ -257,7 +257,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.create_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `TemplateName`: `str` *(required)*
@@ -282,7 +282,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `EnvironmentName`: `str`
@@ -312,7 +312,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.create_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlatformName`: `str` *(required)*
 - `PlatformVersion`: `str` *(required)*
@@ -358,7 +358,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.delete_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `VersionLabel`: `str` *(required)*
@@ -424,7 +424,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str`
 - `VersionLabels`: `List`\[`str`\]
@@ -457,7 +457,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str`
 - `TemplateName`: `str`
@@ -478,7 +478,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `TemplateName`: `str`
@@ -495,7 +495,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environment_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health)
 
-Arguments:
+Keyword-only arguments:
 
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
@@ -514,7 +514,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environment_managed_action_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
@@ -532,7 +532,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environment_managed_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
@@ -565,7 +565,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
@@ -586,7 +586,7 @@ Type annotations for `boto3.client("elasticbeanstalk").describe_events` method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
@@ -612,7 +612,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.describe_instances_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health)
 
-Arguments:
+Keyword-only arguments:
 
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
@@ -687,7 +687,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.list_platform_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[SearchFilterTypeDef](./type_defs.md#searchfiltertypedef)\]
@@ -705,7 +705,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.list_platform_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
@@ -751,7 +751,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.request_environment_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info)
 
-Arguments:
+Keyword-only arguments:
 
 - `InfoType`: [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
   *(required)*
@@ -779,7 +779,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.retrieve_environment_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info)
 
-Arguments:
+Keyword-only arguments:
 
 - `InfoType`: [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
   *(required)*
@@ -797,7 +797,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.swap_environment_cnames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceEnvironmentId`: `str`
 - `SourceEnvironmentName`: `str`
@@ -812,7 +812,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.terminate_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
@@ -865,7 +865,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.update_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `VersionLabel`: `str` *(required)*
@@ -882,7 +882,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.update_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `TemplateName`: `str` *(required)*
@@ -903,7 +903,7 @@ method.
 Boto3 documentation:
 [ElasticBeanstalk.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str`
 - `EnvironmentId`: `str`
@@ -931,7 +931,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.update_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagsToAdd`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -945,7 +945,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticBeanstalk.Client.validate_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `OptionSettings`:

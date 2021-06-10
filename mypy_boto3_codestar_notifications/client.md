@@ -92,7 +92,7 @@ Type annotations for
 Boto3 documentation:
 [CodeStarNotifications.Client.create_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.create_notification_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `EventTypeIds`: `List`\[`str`\] *(required)*
@@ -178,7 +178,7 @@ method.
 Boto3 documentation:
 [CodeStarNotifications.Client.list_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_event_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
@@ -196,7 +196,7 @@ Type annotations for
 Boto3 documentation:
 [CodeStarNotifications.Client.list_notification_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_notification_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
@@ -229,7 +229,7 @@ method.
 Boto3 documentation:
 [CodeStarNotifications.Client.list_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("codestar-notifications").subscribe` method.
 Boto3 documentation:
 [CodeStarNotifications.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.subscribe)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Target`: [TargetTypeDef](./type_defs.md#targettypedef) *(required)*
@@ -306,7 +306,7 @@ Type annotations for
 Boto3 documentation:
 [CodeStarNotifications.Client.update_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.update_notification_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Name`: `str`

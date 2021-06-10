@@ -103,7 +103,7 @@ Type annotations for `boto3.resource("sqs").create_queue` method.
 Boto3 documentation:
 [SQS.ServiceResource.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.create_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueName`: `str` *(required)*
 - `Attributes`:
@@ -268,7 +268,7 @@ Type annotations for `boto3.resource("sqs").add_permission` method.
 Boto3 documentation:
 [SQS.Queue.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.add_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 - `AWSAccountIds`: `List`\[`str`\] *(required)*
@@ -344,7 +344,7 @@ Type annotations for `boto3.resource("sqs").receive_messages` method.
 Boto3 documentation:
 [SQS.Queue.receive_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.receive_messages)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttributeNames`:
   `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
@@ -381,7 +381,7 @@ Type annotations for `boto3.resource("sqs").send_message` method.
 Boto3 documentation:
 [SQS.Queue.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.send_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `MessageBody`: `str` *(required)*
 - `DelaySeconds`: `int`

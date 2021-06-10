@@ -91,7 +91,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.add_profile_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.add_profile_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProfileId`: `str` *(required)*
 - `KeyName`: `str` *(required)*
@@ -121,7 +121,7 @@ Type annotations for `boto3.client("customer-profiles").create_domain` method.
 Boto3 documentation:
 [CustomerProfiles.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DefaultExpirationDays`: `int` *(required)*
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("customer-profiles").create_profile` method.
 Boto3 documentation:
 [CustomerProfiles.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AccountNumber`: `str`
@@ -221,7 +221,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.delete_profile_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProfileId`: `str` *(required)*
 - `KeyName`: `str` *(required)*
@@ -239,7 +239,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.delete_profile_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProfileId`: `str` *(required)*
 - `ProfileObjectUniqueKey`: `str` *(required)*
@@ -318,7 +318,7 @@ Type annotations for `boto3.client("customer-profiles").get_matches` method.
 Boto3 documentation:
 [CustomerProfiles.Client.get_matches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_matches)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `NextToken`: `str`
@@ -365,7 +365,7 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.list_account_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_account_integrations)
 
-Arguments:
+Keyword-only arguments:
 
 - `Uri`: `str` *(required)*
 - `NextToken`: `str`
@@ -397,7 +397,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.list_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_integrations)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `NextToken`: `str`
@@ -430,7 +430,7 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.list_profile_object_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `NextToken`: `str`
@@ -447,7 +447,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.list_profile_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_objects)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ObjectTypeName`: `str` *(required)*
@@ -480,7 +480,7 @@ Type annotations for `boto3.client("customer-profiles").merge_profiles` method.
 Boto3 documentation:
 [CustomerProfiles.Client.merge_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.merge_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `MainProfileId`: `str` *(required)*
@@ -499,7 +499,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ObjectTypeName`: `str` *(required)*
@@ -519,7 +519,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.put_profile_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `ObjectTypeName`: `str` *(required)*
 - `Object`: `str` *(required)*
@@ -536,7 +536,7 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.put_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ObjectTypeName`: `str` *(required)*
@@ -562,7 +562,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.search_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `KeyName`: `str` *(required)*
@@ -608,7 +608,7 @@ Type annotations for `boto3.client("customer-profiles").update_domain` method.
 Boto3 documentation:
 [CustomerProfiles.Client.update_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DefaultExpirationDays`: `int`
@@ -627,7 +627,7 @@ Type annotations for `boto3.client("customer-profiles").update_profile` method.
 Boto3 documentation:
 [CustomerProfiles.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ProfileId`: `str` *(required)*

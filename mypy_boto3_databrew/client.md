@@ -130,7 +130,7 @@ Type annotations for `boto3.client("databrew").create_dataset` method.
 Boto3 documentation:
 [GlueDataBrew.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("databrew").create_profile_job` method.
 Boto3 documentation:
 [GlueDataBrew.Client.create_profile_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_profile_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("databrew").create_project` method.
 Boto3 documentation:
 [GlueDataBrew.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -194,7 +194,7 @@ Type annotations for `boto3.client("databrew").create_recipe` method.
 Boto3 documentation:
 [GlueDataBrew.Client.create_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
@@ -212,7 +212,7 @@ Type annotations for `boto3.client("databrew").create_recipe_job` method.
 Boto3 documentation:
 [GlueDataBrew.Client.create_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
@@ -240,7 +240,7 @@ Type annotations for `boto3.client("databrew").create_schedule` method.
 Boto3 documentation:
 [GlueDataBrew.Client.create_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `CronExpression`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -444,7 +444,7 @@ Type annotations for `boto3.client("databrew").list_job_runs` method.
 Boto3 documentation:
 [GlueDataBrew.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_job_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `MaxResults`: `int`
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("databrew").list_jobs` method.
 Boto3 documentation:
 [GlueDataBrew.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str`
 - `MaxResults`: `int`
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("databrew").list_recipe_versions` method.
 Boto3 documentation:
 [GlueDataBrew.Client.list_recipe_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipe_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `MaxResults`: `int`
@@ -507,7 +507,7 @@ Type annotations for `boto3.client("databrew").list_recipes` method.
 Boto3 documentation:
 [GlueDataBrew.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipes)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -523,7 +523,7 @@ Type annotations for `boto3.client("databrew").list_schedules` method.
 Boto3 documentation:
 [GlueDataBrew.Client.list_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_schedules)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobName`: `str`
 - `MaxResults`: `int`
@@ -569,7 +569,7 @@ method.
 Boto3 documentation:
 [GlueDataBrew.Client.send_project_session_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.send_project_session_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Preview`: `bool`
@@ -659,7 +659,7 @@ Type annotations for `boto3.client("databrew").update_dataset` method.
 Boto3 documentation:
 [GlueDataBrew.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
@@ -677,7 +677,7 @@ Type annotations for `boto3.client("databrew").update_profile_job` method.
 Boto3 documentation:
 [GlueDataBrew.Client.update_profile_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_profile_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
@@ -701,7 +701,7 @@ Type annotations for `boto3.client("databrew").update_project` method.
 Boto3 documentation:
 [GlueDataBrew.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -717,7 +717,7 @@ Type annotations for `boto3.client("databrew").update_recipe` method.
 Boto3 documentation:
 [GlueDataBrew.Client.update_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
@@ -733,7 +733,7 @@ Type annotations for `boto3.client("databrew").update_recipe_job` method.
 Boto3 documentation:
 [GlueDataBrew.Client.update_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
@@ -756,7 +756,7 @@ Type annotations for `boto3.client("databrew").update_schedule` method.
 Boto3 documentation:
 [GlueDataBrew.Client.update_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `CronExpression`: `str` *(required)*
 - `Name`: `str` *(required)*

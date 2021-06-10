@@ -74,7 +74,7 @@ Type annotations for `boto3.client("pi").describe_dimension_keys` method.
 Boto3 documentation:
 [PI.Client.describe_dimension_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceType`: `Literal['RDS']` (see
   [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
@@ -116,7 +116,7 @@ Type annotations for `boto3.client("pi").get_dimension_key_details` method.
 Boto3 documentation:
 [PI.Client.get_dimension_key_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_dimension_key_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceType`: `Literal['RDS']` (see
   [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
@@ -135,7 +135,7 @@ Type annotations for `boto3.client("pi").get_resource_metrics` method.
 Boto3 documentation:
 [PI.Client.get_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceType`: `Literal['RDS']` (see
   [ServiceTypeType](./literals.md#servicetypetype)) *(required)*

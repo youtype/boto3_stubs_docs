@@ -104,7 +104,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.create_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolName`: `str` *(required)*
 - `AllowUnauthenticatedIdentities`: `bool` *(required)*
@@ -200,7 +200,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoIdentity.Client.get_credentials_for_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
 - `Logins`: `Dict`\[`str`, `str`\]
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("cognito-identity").get_id` method.
 Boto3 documentation:
 [CognitoIdentity.Client.get_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `AccountId`: `str`
@@ -264,7 +264,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.get_open_id_token_for_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `Logins`: `Dict`\[`str`, `str`\] *(required)*
@@ -298,7 +298,7 @@ Type annotations for `boto3.client("cognito-identity").list_identities` method.
 Boto3 documentation:
 [CognitoIdentity.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `MaxResults`: `int` *(required)*
@@ -347,7 +347,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoIdentity.Client.lookup_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `IdentityId`: `str`
@@ -366,7 +366,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoIdentity.Client.merge_developer_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceUserIdentifier`: `str` *(required)*
 - `DestinationUserIdentifier`: `str` *(required)*
@@ -384,7 +384,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.set_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `Roles`: `Dict`\[`str`, `str`\] *(required)*
@@ -399,7 +399,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoIdentity.Client.set_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `IdentityProviderName`: `str` *(required)*
@@ -431,7 +431,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoIdentity.Client.unlink_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
 - `IdentityPoolId`: `str` *(required)*
@@ -445,7 +445,7 @@ Type annotations for `boto3.client("cognito-identity").unlink_identity` method.
 Boto3 documentation:
 [CognitoIdentity.Client.unlink_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
 - `Logins`: `Dict`\[`str`, `str`\] *(required)*
@@ -473,7 +473,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.update_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `IdentityPoolName`: `str` *(required)*

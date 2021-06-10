@@ -138,7 +138,7 @@ Type annotations for `boto3.client("amp").list_workspaces` method.
 Boto3 documentation:
 [PrometheusService.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces)
 
-Arguments:
+Keyword-only arguments:
 
 - `alias`: `str`
 - `maxResults`: `int`
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("amp").update_workspace_alias` method.
 Boto3 documentation:
 [PrometheusService.Client.update_workspace_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `workspaceId`: `str` *(required)*
 - `alias`: `str`

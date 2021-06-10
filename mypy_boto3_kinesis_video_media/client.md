@@ -92,7 +92,7 @@ Type annotations for `boto3.client("kinesis-video-media").get_media` method.
 Boto3 documentation:
 [KinesisVideoMedia.Client.get_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartSelector`: [StartSelectorTypeDef](./type_defs.md#startselectortypedef)
   *(required)*

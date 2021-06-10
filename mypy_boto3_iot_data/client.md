@@ -130,7 +130,7 @@ method.
 Boto3 documentation:
 [IoTDataPlane.Client.list_named_shadows_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 - `nextToken`: `str`
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("iot-data").publish` method.
 Boto3 documentation:
 [IoTDataPlane.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish)
 
-Arguments:
+Keyword-only arguments:
 
 - `topic`: `str` *(required)*
 - `qos`: `int`
@@ -159,7 +159,7 @@ Type annotations for `boto3.client("iot-data").update_thing_shadow` method.
 Boto3 documentation:
 [IoTDataPlane.Client.update_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 - `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*

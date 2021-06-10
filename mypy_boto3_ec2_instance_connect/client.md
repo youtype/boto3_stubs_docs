@@ -99,7 +99,7 @@ method.
 Boto3 documentation:
 [EC2InstanceConnect.Client.send_serial_console_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_serial_console_ssh_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `SSHPublicKey`: `str` *(required)*
@@ -116,7 +116,7 @@ method.
 Boto3 documentation:
 [EC2InstanceConnect.Client.send_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_ssh_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `InstanceOSUser`: `str` *(required)*

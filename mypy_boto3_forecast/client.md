@@ -110,7 +110,7 @@ Type annotations for `boto3.client("forecast").create_dataset` method.
 Boto3 documentation:
 [ForecastService.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 - `Domain`: [DomainType](./literals.md#domaintype) *(required)*
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("forecast").create_dataset_group` method.
 Boto3 documentation:
 [ForecastService.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetGroupName`: `str` *(required)*
 - `Domain`: [DomainType](./literals.md#domaintype) *(required)*
@@ -149,7 +149,7 @@ method.
 Boto3 documentation:
 [ForecastService.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetImportJobName`: `str` *(required)*
 - `DatasetArn`: `str` *(required)*
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("forecast").create_forecast` method.
 Boto3 documentation:
 [ForecastService.Client.create_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast)
 
-Arguments:
+Keyword-only arguments:
 
 - `ForecastName`: `str` *(required)*
 - `PredictorArn`: `str` *(required)*
@@ -189,7 +189,7 @@ method.
 Boto3 documentation:
 [ForecastService.Client.create_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ForecastExportJobName`: `str` *(required)*
 - `ForecastArn`: `str` *(required)*
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("forecast").create_predictor` method.
 Boto3 documentation:
 [ForecastService.Client.create_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor)
 
-Arguments:
+Keyword-only arguments:
 
 - `PredictorName`: `str` *(required)*
 - `ForecastHorizon`: `int` *(required)*
@@ -242,7 +242,7 @@ Type annotations for
 Boto3 documentation:
 [ForecastService.Client.create_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor_backtest_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `PredictorBacktestExportJobName`: `str` *(required)*
 - `PredictorArn`: `str` *(required)*
@@ -498,7 +498,7 @@ method.
 Boto3 documentation:
 [ForecastService.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_import_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -530,7 +530,7 @@ method.
 Boto3 documentation:
 [ForecastService.Client.list_forecast_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecast_export_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -546,7 +546,7 @@ Type annotations for `boto3.client("forecast").list_forecasts` method.
 Boto3 documentation:
 [ForecastService.Client.list_forecasts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecasts)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -563,7 +563,7 @@ Type annotations for
 Boto3 documentation:
 [ForecastService.Client.list_predictor_backtest_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictor_backtest_export_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -579,7 +579,7 @@ Type annotations for `boto3.client("forecast").list_predictors` method.
 Boto3 documentation:
 [ForecastService.Client.list_predictors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictors)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`

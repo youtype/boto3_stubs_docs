@@ -92,7 +92,7 @@ Type annotations for `boto3.client("timestream-write").create_database` method.
 Boto3 documentation:
 [TimestreamWrite.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `KmsKeyId`: `str`
@@ -108,7 +108,7 @@ Type annotations for `boto3.client("timestream-write").create_table` method.
 Boto3 documentation:
 [TimestreamWrite.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("timestream-write").list_tables` method.
 Boto3 documentation:
 [TimestreamWrite.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str`
 - `NextToken`: `str`
@@ -295,7 +295,7 @@ Type annotations for `boto3.client("timestream-write").update_table` method.
 Boto3 documentation:
 [TimestreamWrite.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -313,7 +313,7 @@ Type annotations for `boto3.client("timestream-write").write_records` method.
 Boto3 documentation:
 [TimestreamWrite.Client.write_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*

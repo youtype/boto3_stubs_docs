@@ -94,7 +94,7 @@ Type annotations for `boto3.client("mediapackage").configure_logs` method.
 Boto3 documentation:
 [MediaPackage.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.configure_logs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `EgressAccessLogs`:
@@ -112,7 +112,7 @@ Type annotations for `boto3.client("mediapackage").create_channel` method.
 Boto3 documentation:
 [MediaPackage.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Description`: `str`
@@ -128,7 +128,7 @@ Type annotations for `boto3.client("mediapackage").create_harvest_job` method.
 Boto3 documentation:
 [MediaPackage.Client.create_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_harvest_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndTime`: `str` *(required)*
 - `Id`: `str` *(required)*
@@ -148,7 +148,7 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.create_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_origin_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 - `Id`: `str` *(required)*
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("mediapackage").list_harvest_jobs` method.
 Boto3 documentation:
 [MediaPackage.Client.list_harvest_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_harvest_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `IncludeChannelId`: `str`
 - `IncludeStatus`: `str`
@@ -297,7 +297,7 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.list_origin_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_origin_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelId`: `str`
 - `MaxResults`: `int`
@@ -399,7 +399,7 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.update_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_origin_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)

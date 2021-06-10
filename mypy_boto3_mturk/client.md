@@ -112,7 +112,7 @@ Type annotations for `boto3.client("mturk").approve_assignment` method.
 Boto3 documentation:
 [MTurk.Client.approve_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.approve_assignment)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssignmentId`: `str` *(required)*
 - `RequesterFeedback`: `str`
@@ -128,7 +128,7 @@ Type annotations for
 Boto3 documentation:
 [MTurk.Client.associate_qualification_with_worker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.associate_qualification_with_worker)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationTypeId`: `str` *(required)*
 - `WorkerId`: `str` *(required)*
@@ -158,7 +158,7 @@ Type annotations for
 Boto3 documentation:
 [MTurk.Client.create_additional_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_additional_assignments_for_hit)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 - `NumberOfAdditionalAssignments`: `int` *(required)*
@@ -173,7 +173,7 @@ Type annotations for `boto3.client("mturk").create_hit` method.
 Boto3 documentation:
 [MTurk.Client.create_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit)
 
-Arguments:
+Keyword-only arguments:
 
 - `LifetimeInSeconds`: `int` *(required)*
 - `AssignmentDurationInSeconds`: `int` *(required)*
@@ -204,7 +204,7 @@ Type annotations for `boto3.client("mturk").create_hit_type` method.
 Boto3 documentation:
 [MTurk.Client.create_hit_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssignmentDurationInSeconds`: `int` *(required)*
 - `Reward`: `str` *(required)*
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("mturk").create_hit_with_hit_type` method.
 Boto3 documentation:
 [MTurk.Client.create_hit_with_hit_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_hit_with_hit_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITTypeId`: `str` *(required)*
 - `LifetimeInSeconds`: `int` *(required)*
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("mturk").create_qualification_type` method.
 Boto3 documentation:
 [MTurk.Client.create_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_qualification_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str` *(required)*
@@ -330,7 +330,7 @@ Type annotations for
 Boto3 documentation:
 [MTurk.Client.disassociate_qualification_from_worker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.disassociate_qualification_from_worker)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkerId`: `str` *(required)*
 - `QualificationTypeId`: `str` *(required)*
@@ -442,7 +442,7 @@ Type annotations for `boto3.client("mturk").list_assignments_for_hit` method.
 Boto3 documentation:
 [MTurk.Client.list_assignments_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_assignments_for_hit)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 - `NextToken`: `str`
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("mturk").list_bonus_payments` method.
 Boto3 documentation:
 [MTurk.Client.list_bonus_payments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_bonus_payments)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str`
 - `AssignmentId`: `str`
@@ -492,7 +492,7 @@ method.
 Boto3 documentation:
 [MTurk.Client.list_hits_for_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits_for_qualification_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationTypeId`: `str` *(required)*
 - `NextToken`: `str`
@@ -509,7 +509,7 @@ method.
 Boto3 documentation:
 [MTurk.Client.list_qualification_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_requests)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationTypeId`: `str`
 - `NextToken`: `str`
@@ -525,7 +525,7 @@ Type annotations for `boto3.client("mturk").list_qualification_types` method.
 Boto3 documentation:
 [MTurk.Client.list_qualification_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_qualification_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `MustBeRequestable`: `bool` *(required)*
 - `Query`: `str`
@@ -544,7 +544,7 @@ method.
 Boto3 documentation:
 [MTurk.Client.list_review_policy_results_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_review_policy_results_for_hit)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 - `PolicyLevels`:
@@ -564,7 +564,7 @@ Type annotations for `boto3.client("mturk").list_reviewable_hits` method.
 Boto3 documentation:
 [MTurk.Client.list_reviewable_hits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_reviewable_hits)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITTypeId`: `str`
 - `Status`: [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
@@ -597,7 +597,7 @@ Type annotations for
 Boto3 documentation:
 [MTurk.Client.list_workers_with_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_workers_with_qualification_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationTypeId`: `str` *(required)*
 - `Status`: [QualificationStatusType](./literals.md#qualificationstatustype)
@@ -614,7 +614,7 @@ Type annotations for `boto3.client("mturk").notify_workers` method.
 Boto3 documentation:
 [MTurk.Client.notify_workers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.notify_workers)
 
-Arguments:
+Keyword-only arguments:
 
 - `Subject`: `str` *(required)*
 - `MessageText`: `str` *(required)*
@@ -659,7 +659,7 @@ Type annotations for `boto3.client("mturk").send_bonus` method.
 Boto3 documentation:
 [MTurk.Client.send_bonus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_bonus)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkerId`: `str` *(required)*
 - `BonusAmount`: `str` *(required)*
@@ -736,7 +736,7 @@ method.
 Boto3 documentation:
 [MTurk.Client.update_notification_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_notification_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITTypeId`: `str` *(required)*
 - `Notification`:
@@ -752,7 +752,7 @@ Type annotations for `boto3.client("mturk").update_qualification_type` method.
 Boto3 documentation:
 [MTurk.Client.update_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_qualification_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationTypeId`: `str` *(required)*
 - `Description`: `str`

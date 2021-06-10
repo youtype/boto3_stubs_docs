@@ -93,7 +93,7 @@ Type annotations for `boto3.client("machinelearning").add_tags` method.
 Boto3 documentation:
 [MachineLearning.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.add_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `ResourceId`: `str` *(required)*
@@ -124,7 +124,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.create_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction)
 
-Arguments:
+Keyword-only arguments:
 
 - `BatchPredictionId`: `str` *(required)*
 - `MLModelId`: `str` *(required)*
@@ -143,7 +143,7 @@ Type annotations for
 Boto3 documentation:
 [MachineLearning.Client.create_data_source_from_rds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSourceId`: `str` *(required)*
 - `RDSData`: [RDSDataSpecTypeDef](./type_defs.md#rdsdataspectypedef)
@@ -163,7 +163,7 @@ Type annotations for
 Boto3 documentation:
 [MachineLearning.Client.create_data_source_from_redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSourceId`: `str` *(required)*
 - `DataSpec`: [RedshiftDataSpecTypeDef](./type_defs.md#redshiftdataspectypedef)
@@ -183,7 +183,7 @@ Type annotations for
 Boto3 documentation:
 [MachineLearning.Client.create_data_source_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSourceId`: `str` *(required)*
 - `DataSpec`: [S3DataSpecTypeDef](./type_defs.md#s3dataspectypedef)
@@ -202,7 +202,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.create_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation)
 
-Arguments:
+Keyword-only arguments:
 
 - `EvaluationId`: `str` *(required)*
 - `MLModelId`: `str` *(required)*
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("machinelearning").create_ml_model` method.
 Boto3 documentation:
 [MachineLearning.Client.create_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 - `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype) *(required)*
@@ -328,7 +328,7 @@ Type annotations for `boto3.client("machinelearning").delete_tags` method.
 Boto3 documentation:
 [MachineLearning.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `TagKeys`: `List`\[`str`\] *(required)*
 - `ResourceId`: `str` *(required)*
@@ -346,7 +346,7 @@ Type annotations for
 Boto3 documentation:
 [MachineLearning.Client.describe_batch_predictions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions)
 
-Arguments:
+Keyword-only arguments:
 
 - `FilterVariable`:
   [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
@@ -372,7 +372,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.describe_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources)
 
-Arguments:
+Keyword-only arguments:
 
 - `FilterVariable`:
   [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
@@ -398,7 +398,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.describe_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations)
 
-Arguments:
+Keyword-only arguments:
 
 - `FilterVariable`:
   [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
@@ -424,7 +424,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.describe_ml_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `FilterVariable`:
   [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("machinelearning").predict` method.
 Boto3 documentation:
 [MachineLearning.Client.predict](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.predict)
 
-Arguments:
+Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 - `Record`: `Dict`\[`str`, `str`\] *(required)*
@@ -603,7 +603,7 @@ Type annotations for `boto3.client("machinelearning").update_ml_model` method.
 Boto3 documentation:
 [MachineLearning.Client.update_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 - `MLModelName`: `str`

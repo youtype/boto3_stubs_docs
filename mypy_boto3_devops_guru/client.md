@@ -262,7 +262,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.list_anomalies_for_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_anomalies_for_insight)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightId`: `str` *(required)*
 - `StartTimeRange`:
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("devops-guru").list_events` method.
 Boto3 documentation:
 [DevOpsGuru.Client.list_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   [ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef)
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("devops-guru").list_insights` method.
 Boto3 documentation:
 [DevOpsGuru.Client.list_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_insights)
 
-Arguments:
+Keyword-only arguments:
 
 - `StatusFilter`:
   [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("devops-guru").list_recommendations` method.
 Boto3 documentation:
 [DevOpsGuru.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightId`: `str` *(required)*
 - `NextToken`: `str`
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("devops-guru").search_insights` method.
 Boto3 documentation:
 [DevOpsGuru.Client.search_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.search_insights)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartTimeRange`:
   [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) *(required)*

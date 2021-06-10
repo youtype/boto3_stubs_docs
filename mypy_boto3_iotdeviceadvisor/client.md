@@ -196,7 +196,7 @@ Type annotations for `boto3.client("iotdeviceadvisor").list_suite_runs` method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.list_suite_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionVersion`: `str`
@@ -228,7 +228,7 @@ Type annotations for `boto3.client("iotdeviceadvisor").start_suite_run` method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.start_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.start_suite_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionId`: `str` *(required)*
 - `suiteDefinitionVersion`: `str`

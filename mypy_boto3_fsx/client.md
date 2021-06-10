@@ -102,7 +102,7 @@ method.
 Boto3 documentation:
 [FSx.Client.associate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.associate_file_system_aliases)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `Aliases`: `List`\[`str`\] *(required)*
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("fsx").copy_backup` method.
 Boto3 documentation:
 [FSx.Client.copy_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.copy_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceBackupId`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -163,7 +163,7 @@ Type annotations for `boto3.client("fsx").create_backup` method.
 Boto3 documentation:
 [FSx.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -179,7 +179,7 @@ Type annotations for `boto3.client("fsx").create_data_repository_task` method.
 Boto3 documentation:
 [FSx.Client.create_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: `Literal['EXPORT_TO_REPOSITORY']` (see
   [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype))
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("fsx").create_file_system` method.
 Boto3 documentation:
 [FSx.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
   *(required)*
@@ -228,7 +228,7 @@ method.
 Boto3 documentation:
 [FSx.Client.create_file_system_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system_from_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("fsx").delete_file_system` method.
 Boto3 documentation:
 [FSx.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_system)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("fsx").describe_backups` method.
 Boto3 documentation:
 [FSx.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_backups)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -304,7 +304,7 @@ method.
 Boto3 documentation:
 [FSx.Client.describe_data_repository_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskIds`: `List`\[`str`\]
 - `Filters`:
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("fsx").describe_file_system_aliases` method.
 Boto3 documentation:
 [FSx.Client.describe_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_system_aliases)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("fsx").describe_file_systems` method.
 Boto3 documentation:
 [FSx.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_systems)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemIds`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -356,7 +356,7 @@ method.
 Boto3 documentation:
 [FSx.Client.disassociate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `Aliases`: `List`\[`str`\] *(required)*
@@ -388,7 +388,7 @@ Type annotations for `boto3.client("fsx").list_tags_for_resource` method.
 Boto3 documentation:
 [FSx.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `MaxResults`: `int`
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("fsx").update_file_system` method.
 Boto3 documentation:
 [FSx.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_system)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `ClientRequestToken`: `str`

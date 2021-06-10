@@ -75,7 +75,7 @@ Type annotations for `boto3.client("textract").analyze_document` method.
 Boto3 documentation:
 [Textract.Client.analyze_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
 - `FeatureTypes`: `List`\[[FeatureTypeType](./literals.md#featuretypetype)\]
@@ -136,7 +136,7 @@ Type annotations for `boto3.client("textract").get_document_analysis` method.
 Boto3 documentation:
 [Textract.Client.get_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_analysis)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -153,7 +153,7 @@ method.
 Boto3 documentation:
 [Textract.Client.get_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_text_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -169,7 +169,7 @@ Type annotations for `boto3.client("textract").start_document_analysis` method.
 Boto3 documentation:
 [Textract.Client.start_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_analysis)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentLocation`:
   [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
@@ -194,7 +194,7 @@ method.
 Boto3 documentation:
 [Textract.Client.start_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_text_detection)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentLocation`:
   [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)

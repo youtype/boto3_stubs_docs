@@ -111,7 +111,7 @@ Type annotations for `boto3.client("groundstation").create_config` method.
 Boto3 documentation:
 [GroundStation.Client.create_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `configData`: [ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef)
   *(required)*
@@ -146,7 +146,7 @@ method.
 Boto3 documentation:
 [GroundStation.Client.create_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_mission_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `dataflowEdges`: `List`\[`List`\[`str`\]\] *(required)*
 - `minimumViableContactDurationSeconds`: `int` *(required)*
@@ -333,7 +333,7 @@ Type annotations for `boto3.client("groundstation").list_contacts` method.
 Boto3 documentation:
 [GroundStation.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_contacts)
 
-Arguments:
+Keyword-only arguments:
 
 - `endTime`: `datetime` *(required)*
 - `startTime`: `datetime` *(required)*
@@ -372,7 +372,7 @@ method.
 Boto3 documentation:
 [GroundStation.Client.list_ground_stations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ground_stations)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -434,7 +434,7 @@ Type annotations for `boto3.client("groundstation").reserve_contact` method.
 Boto3 documentation:
 [GroundStation.Client.reserve_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.reserve_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `endTime`: `datetime` *(required)*
 - `groundStation`: `str` *(required)*
@@ -480,7 +480,7 @@ Type annotations for `boto3.client("groundstation").update_config` method.
 Boto3 documentation:
 [GroundStation.Client.update_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `configData`: [ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef)
   *(required)*
@@ -500,7 +500,7 @@ method.
 Boto3 documentation:
 [GroundStation.Client.update_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_mission_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `missionProfileId`: `str` *(required)*
 - `contactPostPassDurationSeconds`: `int`

@@ -148,7 +148,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.acknowledge_third_party_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `nonce`: `str` *(required)*
@@ -178,7 +178,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.create_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `category`: [ActionCategoryType](./literals.md#actioncategorytype)
   *(required)*
@@ -222,7 +222,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.delete_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `category`: [ActionCategoryType](./literals.md#actioncategorytype)
   *(required)*
@@ -275,7 +275,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.disable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -291,7 +291,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.enable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("codepipeline").get_action_type` method.
 Boto3 documentation:
 [CodePipeline.Client.get_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `category`: [ActionCategoryType](./literals.md#actioncategorytype)
   *(required)*
@@ -415,7 +415,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.list_action_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `filter`:
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("codepipeline").list_action_types` method.
 Boto3 documentation:
 [CodePipeline.Client.list_action_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `actionOwnerFilter`: [ActionOwnerType](./literals.md#actionownertype)
 - `nextToken`: `str`
@@ -450,7 +450,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `maxResults`: `int`
@@ -482,7 +482,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -512,7 +512,7 @@ Type annotations for `boto3.client("codepipeline").poll_for_jobs` method.
 Boto3 documentation:
 [CodePipeline.Client.poll_for_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
   *(required)*
@@ -545,7 +545,7 @@ Type annotations for `boto3.client("codepipeline").put_action_revision` method.
 Boto3 documentation:
 [CodePipeline.Client.put_action_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -563,7 +563,7 @@ Type annotations for `boto3.client("codepipeline").put_approval_result` method.
 Boto3 documentation:
 [CodePipeline.Client.put_approval_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -597,7 +597,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.put_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `currentRevision`:
@@ -615,7 +615,7 @@ Type annotations for
 Boto3 documentation:
 [CodePipeline.Client.put_third_party_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `clientToken`: `str` *(required)*
@@ -630,7 +630,7 @@ Type annotations for
 Boto3 documentation:
 [CodePipeline.Client.put_third_party_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `clientToken`: `str` *(required)*
@@ -678,7 +678,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.retry_stage_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -713,7 +713,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.stop_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `pipelineExecutionId`: `str` *(required)*

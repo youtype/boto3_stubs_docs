@@ -169,7 +169,7 @@ Type annotations for `boto3.client("dynamodb").batch_write_item` method.
 Boto3 documentation:
 [DynamoDB.Client.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_write_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `RequestItems`: `Dict`\[`str`,
   `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
@@ -232,7 +232,7 @@ Type annotations for `boto3.client("dynamodb").create_table` method.
 Boto3 documentation:
 [DynamoDB.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttributeDefinitions`:
   `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("dynamodb").delete_item` method.
 Boto3 documentation:
 [DynamoDB.Client.delete_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
@@ -519,7 +519,7 @@ Type annotations for `boto3.client("dynamodb").execute_statement` method.
 Boto3 documentation:
 [DynamoDB.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `Statement`: `str` *(required)*
 - `Parameters`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
@@ -556,7 +556,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.export_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.export_table_to_point_in_time)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableArn`: `str` *(required)*
 - `S3Bucket`: `str` *(required)*
@@ -594,7 +594,7 @@ Type annotations for `boto3.client("dynamodb").get_item` method.
 Boto3 documentation:
 [DynamoDB.Client.get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.get_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
@@ -617,7 +617,7 @@ Type annotations for `boto3.client("dynamodb").list_backups` method.
 Boto3 documentation:
 [DynamoDB.Client.list_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_backups)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str`
 - `Limit`: `int`
@@ -636,7 +636,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.list_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_contributor_insights)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str`
 - `NextToken`: `str`
@@ -652,7 +652,7 @@ Type annotations for `boto3.client("dynamodb").list_exports` method.
 Boto3 documentation:
 [DynamoDB.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_exports)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableArn`: `str`
 - `MaxResults`: `int`
@@ -667,7 +667,7 @@ Type annotations for `boto3.client("dynamodb").list_global_tables` method.
 Boto3 documentation:
 [DynamoDB.Client.list_global_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_global_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExclusiveStartGlobalTableName`: `str`
 - `Limit`: `int`
@@ -712,7 +712,7 @@ Type annotations for `boto3.client("dynamodb").put_item` method.
 Boto3 documentation:
 [DynamoDB.Client.put_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.put_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
@@ -744,7 +744,7 @@ Type annotations for `boto3.client("dynamodb").query` method.
 Boto3 documentation:
 [DynamoDB.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.query)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `IndexName`: `str`
@@ -784,7 +784,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.restore_table_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_from_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetTableName`: `str` *(required)*
 - `BackupArn`: `str` *(required)*
@@ -809,7 +809,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.restore_table_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.restore_table_to_point_in_time)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetTableName`: `str` *(required)*
 - `SourceTableArn`: `str`
@@ -836,7 +836,7 @@ Type annotations for `boto3.client("dynamodb").scan` method.
 Boto3 documentation:
 [DynamoDB.Client.scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.scan)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `IndexName`: `str`
@@ -903,7 +903,7 @@ Type annotations for `boto3.client("dynamodb").transact_write_items` method.
 Boto3 documentation:
 [DynamoDB.Client.transact_write_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_write_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransactItems`:
   `List`\[[TransactWriteItemTypeDef](./type_defs.md#transactwriteitemtypedef)\]
@@ -955,7 +955,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.update_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_contributor_insights)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `ContributorInsightsAction`:
@@ -991,7 +991,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.update_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalTableName`: `str` *(required)*
 - `GlobalTableBillingMode`: [BillingModeType](./literals.md#billingmodetype)
@@ -1013,7 +1013,7 @@ Type annotations for `boto3.client("dynamodb").update_item` method.
 Boto3 documentation:
 [DynamoDB.Client.update_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
@@ -1048,7 +1048,7 @@ Type annotations for `boto3.client("dynamodb").update_table` method.
 Boto3 documentation:
 [DynamoDB.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `AttributeDefinitions`:
@@ -1075,7 +1075,7 @@ Type annotations for
 Boto3 documentation:
 [DynamoDB.Client.update_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_table_replica_auto_scaling)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `GlobalSecondaryIndexUpdates`:

@@ -288,7 +288,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.get_domain_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_suggestions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `SuggestionCount`: `int` *(required)*
@@ -334,7 +334,7 @@ Type annotations for `boto3.client("route53domains").list_operations` method.
 Boto3 documentation:
 [Route53Domains.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_operations)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubmittedSince`: `datetime`
 - `Marker`: `str`
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("route53domains").register_domain` method.
 Boto3 documentation:
 [Route53Domains.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.register_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DurationInYears`: `int` *(required)*
@@ -407,7 +407,7 @@ Type annotations for `boto3.client("route53domains").renew_domain` method.
 Boto3 documentation:
 [Route53Domains.Client.renew_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.renew_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `CurrentExpiryYear`: `int` *(required)*
@@ -453,7 +453,7 @@ Type annotations for `boto3.client("route53domains").transfer_domain` method.
 Boto3 documentation:
 [Route53Domains.Client.transfer_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DurationInYears`: `int` *(required)*
@@ -499,7 +499,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.update_domain_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
@@ -518,7 +518,7 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.update_domain_contact_privacy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact_privacy)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AdminPrivacy`: `bool`
@@ -536,7 +536,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.update_domain_nameservers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_nameservers)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Nameservers`:
@@ -568,7 +568,7 @@ Type annotations for `boto3.client("route53domains").view_billing` method.
 Boto3 documentation:
 [Route53Domains.Client.view_billing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.view_billing)
 
-Arguments:
+Keyword-only arguments:
 
 - `Start`: `datetime`
 - `End`: `datetime`

@@ -96,7 +96,7 @@ Type annotations for
 Boto3 documentation:
 [KinesisVideoSignalingChannels.Client.get_ice_server_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelARN`: `str` *(required)*
 - `ClientId`: `str`
@@ -114,7 +114,7 @@ Type annotations for
 Boto3 documentation:
 [KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelARN`: `str` *(required)*
 - `SenderClientId`: `str` *(required)*

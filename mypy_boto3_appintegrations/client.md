@@ -85,7 +85,7 @@ method.
 Boto3 documentation:
 [AppIntegrationsService.Client.create_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
@@ -152,7 +152,7 @@ Type annotations for
 Boto3 documentation:
 [AppIntegrationsService.Client.list_event_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `EventIntegrationName`: `str` *(required)*
 - `NextToken`: `str`

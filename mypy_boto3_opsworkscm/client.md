@@ -82,7 +82,7 @@ Type annotations for `boto3.client("opsworkscm").associate_node` method.
 Boto3 documentation:
 [OpsWorksCM.Client.associate_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.associate_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `NodeName`: `str` *(required)*
@@ -113,7 +113,7 @@ Type annotations for `boto3.client("opsworkscm").create_backup` method.
 Boto3 documentation:
 [OpsWorksCM.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `Description`: `str`
@@ -129,7 +129,7 @@ Type annotations for `boto3.client("opsworkscm").create_server` method.
 Boto3 documentation:
 [OpsWorksCM.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `Engine`: `str` *(required)*
 - `ServerName`: `str` *(required)*
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("opsworkscm").describe_backups` method.
 Boto3 documentation:
 [OpsWorksCM.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_backups)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupId`: `str`
 - `ServerName`: `str`
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("opsworkscm").describe_events` method.
 Boto3 documentation:
 [OpsWorksCM.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `NextToken`: `str`
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("opsworkscm").describe_servers` method.
 Boto3 documentation:
 [OpsWorksCM.Client.describe_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_servers)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str`
 - `NextToken`: `str`
@@ -266,7 +266,7 @@ Type annotations for `boto3.client("opsworkscm").disassociate_node` method.
 Boto3 documentation:
 [OpsWorksCM.Client.disassociate_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.disassociate_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `NodeName`: `str` *(required)*
@@ -284,7 +284,7 @@ Type annotations for
 Boto3 documentation:
 [OpsWorksCM.Client.export_server_engine_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.export_server_engine_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExportAttributeName`: `str` *(required)*
 - `ServerName`: `str` *(required)*
@@ -319,7 +319,7 @@ method.
 Boto3 documentation:
 [OpsWorksCM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -335,7 +335,7 @@ Type annotations for `boto3.client("opsworkscm").restore_server` method.
 Boto3 documentation:
 [OpsWorksCM.Client.restore_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.restore_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 - `ServerName`: `str` *(required)*
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("opsworkscm").update_server` method.
 Boto3 documentation:
 [OpsWorksCM.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `DisableAutomatedBackup`: `bool`
@@ -415,7 +415,7 @@ Type annotations for
 Boto3 documentation:
 [OpsWorksCM.Client.update_server_engine_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server_engine_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `AttributeName`: `str` *(required)*

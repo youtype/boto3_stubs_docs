@@ -182,7 +182,7 @@ method.
 Boto3 documentation:
 [SNS.ServiceResource.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_platform_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Platform`: `str` *(required)*
@@ -197,7 +197,7 @@ Type annotations for `boto3.resource("sns").create_topic` method.
 Boto3 documentation:
 [SNS.ServiceResource.create_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_topic)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Attributes`: `Dict`\[`str`, `str`\]
@@ -268,7 +268,7 @@ Type annotations for `boto3.resource("sns").create_platform_endpoint` method.
 Boto3 documentation:
 [SNS.PlatformApplication.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.create_platform_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `Token`: `str` *(required)*
 - `CustomUserData`: `str`
@@ -370,7 +370,7 @@ Type annotations for `boto3.resource("sns").publish` method.
 Boto3 documentation:
 [SNS.PlatformEndpoint.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.publish)
 
-Arguments:
+Keyword-only arguments:
 
 - `Message`: `str` *(required)*
 - `TopicArn`: `str`
@@ -521,7 +521,7 @@ Type annotations for `boto3.resource("sns").add_permission` method.
 Boto3 documentation:
 [SNS.Topic.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.add_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 - `AWSAccountId`: `List`\[`str`\] *(required)*
@@ -571,7 +571,7 @@ Type annotations for `boto3.resource("sns").publish` method.
 Boto3 documentation:
 [SNS.Topic.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.publish)
 
-Arguments:
+Keyword-only arguments:
 
 - `Message`: `str` *(required)*
 - `TargetArn`: `str`
@@ -622,7 +622,7 @@ Type annotations for `boto3.resource("sns").subscribe` method.
 Boto3 documentation:
 [SNS.Topic.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscribe)
 
-Arguments:
+Keyword-only arguments:
 
 - `Protocol`: `str` *(required)*
 - `Endpoint`: `str`

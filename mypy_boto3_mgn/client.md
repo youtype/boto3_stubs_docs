@@ -119,7 +119,7 @@ Type annotations for
 Boto3 documentation:
 [mgn.Client.create_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_replication_configuration_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `associateDefaultSecurityGroup`: `bool` *(required)*
 - `bandwidthThrottling`: `int` *(required)*
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("mgn").describe_job_log_items` method.
 Boto3 documentation:
 [mgn.Client.describe_job_log_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_job_log_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobID`: `str` *(required)*
 - `maxResults`: `int`
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("mgn").describe_jobs` method.
 Boto3 documentation:
 [mgn.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`:
   [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
@@ -226,7 +226,7 @@ Type annotations for
 Boto3 documentation:
 [mgn.Client.describe_replication_configuration_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `replicationConfigurationTemplateIDs`: `List`\[`str`\] *(required)*
 - `maxResults`: `int`
@@ -242,7 +242,7 @@ Type annotations for `boto3.client("mgn").describe_source_servers` method.
 Boto3 documentation:
 [mgn.Client.describe_source_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_source_servers)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`:
   [DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef)
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("mgn").update_launch_configuration` method.
 Boto3 documentation:
 [mgn.Client.update_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 - `copyPrivateIp`: `bool`
@@ -471,7 +471,7 @@ method.
 Boto3 documentation:
 [mgn.Client.update_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 - `associateDefaultSecurityGroup`: `bool`
@@ -504,7 +504,7 @@ Type annotations for
 Boto3 documentation:
 [mgn.Client.update_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `replicationConfigurationTemplateID`: `str` *(required)*
 - `arn`: `str`

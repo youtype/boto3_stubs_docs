@@ -79,7 +79,7 @@ Type annotations for
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.delete_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.delete_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `FeatureGroupName`: `str` *(required)*
 - `RecordIdentifierValueAsString`: `str` *(required)*
@@ -110,7 +110,7 @@ Type annotations for
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.get_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.get_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `FeatureGroupName`: `str` *(required)*
 - `RecordIdentifierValueAsString`: `str` *(required)*

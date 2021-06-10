@@ -119,7 +119,7 @@ Type annotations for `boto3.client("datasync").create_agent` method.
 Boto3 documentation:
 [DataSync.Client.create_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent)
 
-Arguments:
+Keyword-only arguments:
 
 - `ActivationKey`: `str` *(required)*
 - `AgentName`: `str`
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("datasync").create_location_efs` method.
 Boto3 documentation:
 [DataSync.Client.create_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs)
 
-Arguments:
+Keyword-only arguments:
 
 - `EfsFilesystemArn`: `str` *(required)*
 - `Ec2Config`: [Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef) *(required)*
@@ -156,7 +156,7 @@ method.
 Boto3 documentation:
 [DataSync.Client.create_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows)
 
-Arguments:
+Keyword-only arguments:
 
 - `FsxFilesystemArn`: `str` *(required)*
 - `SecurityGroupArns`: `List`\[`str`\] *(required)*
@@ -176,7 +176,7 @@ Type annotations for `boto3.client("datasync").create_location_nfs` method.
 Boto3 documentation:
 [DataSync.Client.create_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Subdirectory`: `str` *(required)*
 - `ServerHostname`: `str` *(required)*
@@ -197,7 +197,7 @@ method.
 Boto3 documentation:
 [DataSync.Client.create_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerHostname`: `str` *(required)*
 - `BucketName`: `str` *(required)*
@@ -220,7 +220,7 @@ Type annotations for `boto3.client("datasync").create_location_s3` method.
 Boto3 documentation:
 [DataSync.Client.create_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3)
 
-Arguments:
+Keyword-only arguments:
 
 - `S3BucketArn`: `str` *(required)*
 - `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef) *(required)*
@@ -239,7 +239,7 @@ Type annotations for `boto3.client("datasync").create_location_smb` method.
 Boto3 documentation:
 [DataSync.Client.create_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb)
 
-Arguments:
+Keyword-only arguments:
 
 - `Subdirectory`: `str` *(required)*
 - `ServerHostname`: `str` *(required)*
@@ -261,7 +261,7 @@ Type annotations for `boto3.client("datasync").create_task` method.
 Boto3 documentation:
 [DataSync.Client.create_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceLocationArn`: `str` *(required)*
 - `DestinationLocationArn`: `str` *(required)*
@@ -478,7 +478,7 @@ Type annotations for `boto3.client("datasync").list_locations` method.
 Boto3 documentation:
 [DataSync.Client.list_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -495,7 +495,7 @@ Type annotations for `boto3.client("datasync").list_tags_for_resource` method.
 Boto3 documentation:
 [DataSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -511,7 +511,7 @@ Type annotations for `boto3.client("datasync").list_task_executions` method.
 Boto3 documentation:
 [DataSync.Client.list_task_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskArn`: `str`
 - `MaxResults`: `int`
@@ -527,7 +527,7 @@ Type annotations for `boto3.client("datasync").list_tasks` method.
 Boto3 documentation:
 [DataSync.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -542,7 +542,7 @@ Type annotations for `boto3.client("datasync").start_task_execution` method.
 Boto3 documentation:
 [DataSync.Client.start_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskArn`: `str` *(required)*
 - `OverrideOptions`: [OptionsTypeDef](./type_defs.md#optionstypedef)
@@ -601,7 +601,7 @@ Type annotations for `boto3.client("datasync").update_location_nfs` method.
 Boto3 documentation:
 [DataSync.Client.update_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 - `Subdirectory`: `str`
@@ -619,7 +619,7 @@ method.
 Boto3 documentation:
 [DataSync.Client.update_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 - `ServerPort`: `int`
@@ -639,7 +639,7 @@ Type annotations for `boto3.client("datasync").update_location_smb` method.
 Boto3 documentation:
 [DataSync.Client.update_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 - `Subdirectory`: `str`
@@ -659,7 +659,7 @@ Type annotations for `boto3.client("datasync").update_task` method.
 Boto3 documentation:
 [DataSync.Client.update_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskArn`: `str` *(required)*
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)

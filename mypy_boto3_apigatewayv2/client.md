@@ -146,7 +146,7 @@ Type annotations for `boto3.client("apigatewayv2").create_api` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ProtocolType`: [ProtocolTypeType](./literals.md#protocoltypetype)
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("apigatewayv2").create_api_mapping` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_api_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("apigatewayv2").create_authorizer` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_authorizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("apigatewayv2").create_deployment` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `Description`: `str`
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("apigatewayv2").create_domain_name` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_domain_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DomainNameConfigurations`:
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("apigatewayv2").create_integration` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
@@ -285,7 +285,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_integration_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `IntegrationId`: `str` *(required)*
@@ -306,7 +306,7 @@ Type annotations for `boto3.client("apigatewayv2").create_model` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -324,7 +324,7 @@ Type annotations for `boto3.client("apigatewayv2").create_route` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteKey`: `str` *(required)*
@@ -351,7 +351,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_route_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_route_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("apigatewayv2").create_stage` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_stage)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `StageName`: `str` *(required)*
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("apigatewayv2").create_vpc_link` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_vpc_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
@@ -511,7 +511,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_integration_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `IntegrationId`: `str` *(required)*
@@ -549,7 +549,7 @@ Type annotations for
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_route_request_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_request_parameter)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RequestParameterKey`: `str` *(required)*
@@ -563,7 +563,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_route_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
@@ -577,7 +577,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_route_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteKey`: `str` *(required)*
@@ -615,7 +615,7 @@ Type annotations for `boto3.client("apigatewayv2").export_api` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.export_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.export_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `OutputType`: [JSONYAMLType](./literals.md#jsonyamltype) *(required)*
@@ -679,7 +679,7 @@ Type annotations for `boto3.client("apigatewayv2").get_api_mappings` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_api_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api_mappings)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `MaxResults`: `str`
@@ -724,7 +724,7 @@ Type annotations for `boto3.client("apigatewayv2").get_authorizers` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_authorizers)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `MaxResults`: `str`
@@ -755,7 +755,7 @@ Type annotations for `boto3.client("apigatewayv2").get_deployments` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_deployments)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `MaxResults`: `str`
@@ -816,7 +816,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `IntegrationId`: `str` *(required)*
@@ -833,7 +833,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_integration_responses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration_responses)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `IntegrationId`: `str` *(required)*
@@ -850,7 +850,7 @@ Type annotations for `boto3.client("apigatewayv2").get_integrations` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integrations)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `MaxResults`: `str`
@@ -895,7 +895,7 @@ Type annotations for `boto3.client("apigatewayv2").get_models` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `MaxResults`: `str`
@@ -924,7 +924,7 @@ Type annotations for `boto3.client("apigatewayv2").get_route_response` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_route_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
@@ -940,7 +940,7 @@ Type annotations for `boto3.client("apigatewayv2").get_route_responses` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_route_responses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route_responses)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
@@ -957,7 +957,7 @@ Type annotations for `boto3.client("apigatewayv2").get_routes` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_routes)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `MaxResults`: `str`
@@ -986,7 +986,7 @@ Type annotations for `boto3.client("apigatewayv2").get_stages` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.get_stages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_stages)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `MaxResults`: `str`
@@ -1042,7 +1042,7 @@ Type annotations for `boto3.client("apigatewayv2").import_api` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.import_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.import_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `Body`: `str` *(required)*
 - `Basepath`: `str`
@@ -1057,7 +1057,7 @@ Type annotations for `boto3.client("apigatewayv2").reimport_api` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.reimport_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.reimport_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `Body`: `str` *(required)*
@@ -1113,7 +1113,7 @@ Type annotations for `boto3.client("apigatewayv2").update_api` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `ApiKeySelectionExpression`: `str`
@@ -1137,7 +1137,7 @@ Type annotations for `boto3.client("apigatewayv2").update_api_mapping` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_api_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `ApiMappingId`: `str` *(required)*
@@ -1155,7 +1155,7 @@ Type annotations for `boto3.client("apigatewayv2").update_authorizer` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_authorizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `AuthorizerId`: `str` *(required)*
@@ -1181,7 +1181,7 @@ Type annotations for `boto3.client("apigatewayv2").update_deployment` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `DeploymentId`: `str` *(required)*
@@ -1197,7 +1197,7 @@ Type annotations for `boto3.client("apigatewayv2").update_domain_name` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_domain_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DomainNameConfigurations`:
@@ -1215,7 +1215,7 @@ Type annotations for `boto3.client("apigatewayv2").update_integration` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `IntegrationId`: `str` *(required)*
@@ -1250,7 +1250,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_integration_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `IntegrationId`: `str` *(required)*
@@ -1272,7 +1272,7 @@ Type annotations for `boto3.client("apigatewayv2").update_model` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `ModelId`: `str` *(required)*
@@ -1291,7 +1291,7 @@ Type annotations for `boto3.client("apigatewayv2").update_route` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
@@ -1319,7 +1319,7 @@ method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_route_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_route_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
@@ -1340,7 +1340,7 @@ Type annotations for `boto3.client("apigatewayv2").update_stage` method.
 Boto3 documentation:
 [ApiGatewayV2.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_stage)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `StageName`: `str` *(required)*

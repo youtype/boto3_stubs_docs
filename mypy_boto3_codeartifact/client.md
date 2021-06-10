@@ -98,7 +98,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.associate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.associate_external_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -129,7 +129,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.copy_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.copy_package_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `sourceRepository`: `str` *(required)*
@@ -153,7 +153,7 @@ Type annotations for `boto3.client("codeartifact").create_domain` method.
 Boto3 documentation:
 [CodeArtifact.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `encryptionKey`: `str`
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("codeartifact").create_repository` method.
 Boto3 documentation:
 [CodeArtifact.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.create_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -203,7 +203,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.delete_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain_permissions_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `domainOwner`: `str`
@@ -220,7 +220,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.delete_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -242,7 +242,7 @@ Type annotations for `boto3.client("codeartifact").delete_repository` method.
 Boto3 documentation:
 [CodeArtifact.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -259,7 +259,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.delete_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_repository_permissions_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -292,7 +292,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.describe_package_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("codeartifact").describe_repository` method.
 Boto3 documentation:
 [CodeArtifact.Client.describe_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -329,7 +329,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.disassociate_external_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.disassociate_external_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -347,7 +347,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.dispose_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.dispose_package_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -388,7 +388,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_authorization_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `domainOwner`: `str`
@@ -421,7 +421,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.get_package_version_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_asset)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -444,7 +444,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.get_package_version_readme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_package_version_readme)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -465,7 +465,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.get_repository_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -483,7 +483,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.get_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_repository_permissions_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -514,7 +514,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.list_package_version_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -537,7 +537,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.list_package_version_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_version_dependencies)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -559,7 +559,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.list_package_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_package_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -583,7 +583,7 @@ Type annotations for `boto3.client("codeartifact").list_packages` method.
 Boto3 documentation:
 [CodeArtifact.Client.list_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_packages)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -603,7 +603,7 @@ Type annotations for `boto3.client("codeartifact").list_repositories` method.
 Boto3 documentation:
 [CodeArtifact.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryPrefix`: `str`
 - `maxResults`: `int`
@@ -620,7 +620,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.list_repositories_in_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_repositories_in_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `domainOwner`: `str`
@@ -655,7 +655,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.put_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_domain_permissions_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `policyDocument`: `str` *(required)*
@@ -673,7 +673,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.put_repository_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_repository_permissions_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -720,7 +720,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.update_package_versions_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_package_versions_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*
@@ -746,7 +746,7 @@ Type annotations for `boto3.client("codeartifact").update_repository` method.
 Boto3 documentation:
 [CodeArtifact.Client.update_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.update_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `repository`: `str` *(required)*

@@ -109,7 +109,7 @@ Type annotations for `boto3.client("dataexchange").create_data_set` method.
 Boto3 documentation:
 [DataExchange.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_data_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssetType`: `Literal['S3_SNAPSHOT']` (see
   [AssetTypeType](./literals.md#assettypetype)) *(required)*
@@ -142,7 +142,7 @@ Type annotations for `boto3.client("dataexchange").create_revision` method.
 Boto3 documentation:
 [DataExchange.Client.create_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 - `Comment`: `str`
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("dataexchange").delete_asset` method.
 Boto3 documentation:
 [DataExchange.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_asset)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssetId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
@@ -211,7 +211,7 @@ Type annotations for `boto3.client("dataexchange").get_asset` method.
 Boto3 documentation:
 [DataExchange.Client.get_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_asset)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssetId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
@@ -268,7 +268,7 @@ method.
 Boto3 documentation:
 [DataExchange.Client.list_data_set_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("dataexchange").list_data_sets` method.
 Boto3 documentation:
 [DataExchange.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("dataexchange").list_jobs` method.
 Boto3 documentation:
 [DataExchange.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str`
 - `MaxResults`: `int`
@@ -317,7 +317,7 @@ method.
 Boto3 documentation:
 [DataExchange.Client.list_revision_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*
@@ -386,7 +386,7 @@ Type annotations for `boto3.client("dataexchange").update_asset` method.
 Boto3 documentation:
 [DataExchange.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_asset)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssetId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
@@ -403,7 +403,7 @@ Type annotations for `boto3.client("dataexchange").update_data_set` method.
 Boto3 documentation:
 [DataExchange.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_data_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 - `Description`: `str`
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("dataexchange").update_revision` method.
 Boto3 documentation:
 [DataExchange.Client.update_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*

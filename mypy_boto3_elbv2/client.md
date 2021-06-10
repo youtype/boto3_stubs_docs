@@ -172,7 +172,7 @@ Type annotations for `boto3.client("elbv2").create_listener` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 - `DefaultActions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
@@ -195,7 +195,7 @@ Type annotations for `boto3.client("elbv2").create_load_balancer` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Subnets`: `List`\[`str`\]
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("elbv2").create_rule` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `Conditions`:
@@ -239,7 +239,7 @@ Type annotations for `boto3.client("elbv2").create_target_group` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.create_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_target_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
@@ -352,7 +352,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listener_certificates)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `Marker`: `str`
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("elbv2").describe_listeners` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listeners)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str`
 - `ListenerArns`: `List`\[`str`\]
@@ -400,7 +400,7 @@ Type annotations for `boto3.client("elbv2").describe_load_balancers` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancers)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArns`: `List`\[`str`\]
 - `Names`: `List`\[`str`\]
@@ -417,7 +417,7 @@ Type annotations for `boto3.client("elbv2").describe_rules` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str`
 - `RuleArns`: `List`\[`str`\]
@@ -434,7 +434,7 @@ Type annotations for `boto3.client("elbv2").describe_ssl_policies` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_ssl_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_ssl_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `Names`: `List`\[`str`\]
 - `Marker`: `str`
@@ -478,7 +478,7 @@ Type annotations for `boto3.client("elbv2").describe_target_groups` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str`
 - `TargetGroupArns`: `List`\[`str`\]
@@ -528,7 +528,7 @@ Type annotations for `boto3.client("elbv2").modify_listener` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `Port`: `int`
@@ -567,7 +567,7 @@ Type annotations for `boto3.client("elbv2").modify_rule` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleArn`: `str` *(required)*
 - `Conditions`:
@@ -583,7 +583,7 @@ Type annotations for `boto3.client("elbv2").modify_target_group` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `HealthCheckProtocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
@@ -718,7 +718,7 @@ Type annotations for `boto3.client("elbv2").set_subnets` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.set_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_subnets)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 - `Subnets`: `List`\[`str`\]

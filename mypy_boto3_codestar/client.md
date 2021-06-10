@@ -87,7 +87,7 @@ Type annotations for `boto3.client("codestar").associate_team_member` method.
 Boto3 documentation:
 [CodeStar.Client.associate_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.associate_team_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `userArn`: `str` *(required)*
@@ -118,7 +118,7 @@ Type annotations for `boto3.client("codestar").create_project` method.
 Boto3 documentation:
 [CodeStar.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `id`: `str` *(required)*
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("codestar").create_user_profile` method.
 Boto3 documentation:
 [CodeStar.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_user_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `userArn`: `str` *(required)*
 - `displayName`: `str` *(required)*
@@ -155,7 +155,7 @@ Type annotations for `boto3.client("codestar").delete_project` method.
 Boto3 documentation:
 [CodeStar.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `clientRequestToken`: `str`
@@ -258,7 +258,7 @@ Type annotations for `boto3.client("codestar").list_resources` method.
 Boto3 documentation:
 [CodeStar.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `nextToken`: `str`
@@ -274,7 +274,7 @@ Type annotations for `boto3.client("codestar").list_tags_for_project` method.
 Boto3 documentation:
 [CodeStar.Client.list_tags_for_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_tags_for_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `nextToken`: `str`
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("codestar").list_team_members` method.
 Boto3 documentation:
 [CodeStar.Client.list_team_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_team_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `nextToken`: `str`
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("codestar").update_project` method.
 Boto3 documentation:
 [CodeStar.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `name`: `str`
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("codestar").update_team_member` method.
 Boto3 documentation:
 [CodeStar.Client.update_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_team_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `userArn`: `str` *(required)*
@@ -381,7 +381,7 @@ Type annotations for `boto3.client("codestar").update_user_profile` method.
 Boto3 documentation:
 [CodeStar.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_user_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `userArn`: `str` *(required)*
 - `displayName`: `str`

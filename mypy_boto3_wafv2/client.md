@@ -152,7 +152,7 @@ Type annotations for `boto3.client("wafv2").create_ip_set` method.
 Boto3 documentation:
 [WAFV2.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("wafv2").create_regex_pattern_set` method.
 Boto3 documentation:
 [WAFV2.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("wafv2").create_rule_group` method.
 Boto3 documentation:
 [WAFV2.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("wafv2").create_web_acl` method.
 Boto3 documentation:
 [WAFV2.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -256,7 +256,7 @@ Type annotations for `boto3.client("wafv2").delete_ip_set` method.
 Boto3 documentation:
 [WAFV2.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("wafv2").delete_regex_pattern_set` method.
 Boto3 documentation:
 [WAFV2.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("wafv2").delete_rule_group` method.
 Boto3 documentation:
 [WAFV2.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -331,7 +331,7 @@ Type annotations for `boto3.client("wafv2").delete_web_acl` method.
 Boto3 documentation:
 [WAFV2.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -348,7 +348,7 @@ method.
 Boto3 documentation:
 [WAFV2.Client.describe_managed_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `VendorName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("wafv2").get_ip_set` method.
 Boto3 documentation:
 [WAFV2.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -437,7 +437,7 @@ Type annotations for
 Boto3 documentation:
 [WAFV2.Client.get_rate_based_statement_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `WebACLName`: `str` *(required)*
@@ -454,7 +454,7 @@ Type annotations for `boto3.client("wafv2").get_regex_pattern_set` method.
 Boto3 documentation:
 [WAFV2.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -470,7 +470,7 @@ Type annotations for `boto3.client("wafv2").get_rule_group` method.
 Boto3 documentation:
 [WAFV2.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -486,7 +486,7 @@ Type annotations for `boto3.client("wafv2").get_sampled_requests` method.
 Boto3 documentation:
 [WAFV2.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebAclArn`: `str` *(required)*
 - `RuleMetricName`: `str` *(required)*
@@ -505,7 +505,7 @@ Type annotations for `boto3.client("wafv2").get_web_acl` method.
 Boto3 documentation:
 [WAFV2.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -535,7 +535,7 @@ method.
 Boto3 documentation:
 [WAFV2.Client.list_available_managed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `NextMarker`: `str`
@@ -551,7 +551,7 @@ Type annotations for `boto3.client("wafv2").list_ip_sets` method.
 Boto3 documentation:
 [WAFV2.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_ip_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `NextMarker`: `str`
@@ -567,7 +567,7 @@ method.
 Boto3 documentation:
 [WAFV2.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `NextMarker`: `str`
@@ -583,7 +583,7 @@ Type annotations for `boto3.client("wafv2").list_regex_pattern_sets` method.
 Boto3 documentation:
 [WAFV2.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `NextMarker`: `str`
@@ -614,7 +614,7 @@ Type annotations for `boto3.client("wafv2").list_rule_groups` method.
 Boto3 documentation:
 [WAFV2.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_rule_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `NextMarker`: `str`
@@ -630,7 +630,7 @@ Type annotations for `boto3.client("wafv2").list_tags_for_resource` method.
 Boto3 documentation:
 [WAFV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `NextMarker`: `str`
@@ -646,7 +646,7 @@ Type annotations for `boto3.client("wafv2").list_web_acls` method.
 Boto3 documentation:
 [WAFV2.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_web_acls)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `NextMarker`: `str`
@@ -720,7 +720,7 @@ Type annotations for `boto3.client("wafv2").update_ip_set` method.
 Boto3 documentation:
 [WAFV2.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -739,7 +739,7 @@ Type annotations for `boto3.client("wafv2").update_regex_pattern_set` method.
 Boto3 documentation:
 [WAFV2.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -759,7 +759,7 @@ Type annotations for `boto3.client("wafv2").update_rule_group` method.
 Boto3 documentation:
 [WAFV2.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -783,7 +783,7 @@ Type annotations for `boto3.client("wafv2").update_web_acl` method.
 Boto3 documentation:
 [WAFV2.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*

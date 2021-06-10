@@ -120,7 +120,7 @@ Type annotations for `boto3.client("cloudhsm").create_hsm` method.
 Boto3 documentation:
 [CloudHSM.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetId`: `str` *(required)*
 - `SshKey`: `str` *(required)*
@@ -256,7 +256,7 @@ Type annotations for `boto3.client("cloudhsm").get_config` method.
 Boto3 documentation:
 [CloudHSM.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientArn`: `str` *(required)*
 - `ClientVersion`: [ClientVersionType](./literals.md#clientversiontype)
@@ -336,7 +336,7 @@ Type annotations for `boto3.client("cloudhsm").modify_hapg` method.
 Boto3 documentation:
 [CloudHSM.Client.modify_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg)
 
-Arguments:
+Keyword-only arguments:
 
 - `HapgArn`: `str` *(required)*
 - `Label`: `str`
@@ -351,7 +351,7 @@ Type annotations for `boto3.client("cloudhsm").modify_hsm` method.
 Boto3 documentation:
 [CloudHSM.Client.modify_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm)
 
-Arguments:
+Keyword-only arguments:
 
 - `HsmArn`: `str` *(required)*
 - `SubnetId`: `str`

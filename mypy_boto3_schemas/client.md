@@ -111,7 +111,7 @@ Type annotations for `boto3.client("schemas").create_discoverer` method.
 Boto3 documentation:
 [Schemas.Client.create_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_discoverer)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceArn`: `str` *(required)*
 - `Description`: `str`
@@ -127,7 +127,7 @@ Type annotations for `boto3.client("schemas").create_registry` method.
 Boto3 documentation:
 [Schemas.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_registry)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `Description`: `str`
@@ -143,7 +143,7 @@ Type annotations for `boto3.client("schemas").create_schema` method.
 Boto3 documentation:
 [Schemas.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `Content`: `str` *(required)*
 - `RegistryName`: `str` *(required)*
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("schemas").delete_schema_version` method.
 Boto3 documentation:
 [Schemas.Client.delete_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
@@ -220,7 +220,7 @@ Type annotations for `boto3.client("schemas").describe_code_binding` method.
 Boto3 documentation:
 [Schemas.Client.describe_code_binding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_code_binding)
 
-Arguments:
+Keyword-only arguments:
 
 - `Language`: `str` *(required)*
 - `RegistryName`: `str` *(required)*
@@ -265,7 +265,7 @@ Type annotations for `boto3.client("schemas").describe_schema` method.
 Boto3 documentation:
 [Schemas.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("schemas").export_schema` method.
 Boto3 documentation:
 [Schemas.Client.export_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.export_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("schemas").get_code_binding_source` method.
 Boto3 documentation:
 [Schemas.Client.get_code_binding_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_code_binding_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Language`: `str` *(required)*
 - `RegistryName`: `str` *(required)*
@@ -360,7 +360,7 @@ Type annotations for `boto3.client("schemas").list_discoverers` method.
 Boto3 documentation:
 [Schemas.Client.list_discoverers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_discoverers)
 
-Arguments:
+Keyword-only arguments:
 
 - `DiscovererIdPrefix`: `str`
 - `Limit`: `int`
@@ -377,7 +377,7 @@ Type annotations for `boto3.client("schemas").list_registries` method.
 Boto3 documentation:
 [Schemas.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_registries)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -394,7 +394,7 @@ Type annotations for `boto3.client("schemas").list_schema_versions` method.
 Boto3 documentation:
 [Schemas.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schema_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("schemas").list_schemas` method.
 Boto3 documentation:
 [Schemas.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schemas)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `Limit`: `int`
@@ -442,7 +442,7 @@ Type annotations for `boto3.client("schemas").put_code_binding` method.
 Boto3 documentation:
 [Schemas.Client.put_code_binding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_code_binding)
 
-Arguments:
+Keyword-only arguments:
 
 - `Language`: `str` *(required)*
 - `RegistryName`: `str` *(required)*
@@ -459,7 +459,7 @@ Type annotations for `boto3.client("schemas").put_resource_policy` method.
 Boto3 documentation:
 [Schemas.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Policy`: `str` *(required)*
 - `RegistryName`: `str`
@@ -475,7 +475,7 @@ Type annotations for `boto3.client("schemas").search_schemas` method.
 Boto3 documentation:
 [Schemas.Client.search_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.search_schemas)
 
-Arguments:
+Keyword-only arguments:
 
 - `Keywords`: `str` *(required)*
 - `RegistryName`: `str` *(required)*
@@ -574,7 +574,7 @@ Type annotations for `boto3.client("schemas").update_schema` method.
 Boto3 documentation:
 [Schemas.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*

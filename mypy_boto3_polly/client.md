@@ -112,7 +112,7 @@ Type annotations for `boto3.client("polly").describe_voices` method.
 Boto3 documentation:
 [Polly.Client.describe_voices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices)
 
-Arguments:
+Keyword-only arguments:
 
 - `Engine`: [EngineType](./literals.md#enginetype)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -186,7 +186,7 @@ method.
 Boto3 documentation:
 [Polly.Client.list_speech_synthesis_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -217,7 +217,7 @@ method.
 Boto3 documentation:
 [Polly.Client.start_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
   *(required)*
@@ -244,7 +244,7 @@ Type annotations for `boto3.client("polly").synthesize_speech` method.
 Boto3 documentation:
 [Polly.Client.synthesize_speech](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech)
 
-Arguments:
+Keyword-only arguments:
 
 - `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
   *(required)*

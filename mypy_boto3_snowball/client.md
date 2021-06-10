@@ -145,7 +145,7 @@ Type annotations for `boto3.client("snowball").create_cluster` method.
 Boto3 documentation:
 [Snowball.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobType`: [JobTypeType](./literals.md#jobtypetype) *(required)*
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("snowball").create_job` method.
 Boto3 documentation:
 [Snowball.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobType`: [JobTypeType](./literals.md#jobtypetype)
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
@@ -202,7 +202,7 @@ method.
 Boto3 documentation:
 [Snowball.Client.create_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_long_term_pricing)
 
-Arguments:
+Keyword-only arguments:
 
 - `LongTermPricingType`:
   [LongTermPricingTypeType](./literals.md#longtermpricingtypetype) *(required)*
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("snowball").list_cluster_jobs` method.
 Boto3 documentation:
 [Snowball.Client.list_cluster_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("snowball").update_cluster` method.
 Boto3 documentation:
 [Snowball.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `RoleARN`: `str`
@@ -468,7 +468,7 @@ Type annotations for `boto3.client("snowball").update_job` method.
 Boto3 documentation:
 [Snowball.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `RoleARN`: `str`
@@ -507,7 +507,7 @@ method.
 Boto3 documentation:
 [Snowball.Client.update_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_long_term_pricing)
 
-Arguments:
+Keyword-only arguments:
 
 - `LongTermPricingId`: `str` *(required)*
 - `ReplacementJob`: `str`

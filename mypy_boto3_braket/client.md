@@ -102,7 +102,7 @@ Type annotations for `boto3.client("braket").create_quantum_task` method.
 Boto3 documentation:
 [Braket.Client.create_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.create_quantum_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `action`: `str` *(required)*
 - `clientToken`: `str` *(required)*
@@ -180,7 +180,7 @@ Type annotations for `boto3.client("braket").search_devices` method.
 Boto3 documentation:
 [Braket.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`:
   `List`\[[SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)\]
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("braket").search_quantum_tasks` method.
 Boto3 documentation:
 [Braket.Client.search_quantum_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_quantum_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`:
   `List`\[[SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)\]

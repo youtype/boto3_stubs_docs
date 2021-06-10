@@ -193,7 +193,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.batch_update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `FindingIdentifiers`:
   `List`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("securityhub").create_action_target` method.
 Boto3 documentation:
 [SecurityHub.Client.create_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str` *(required)*
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("securityhub").create_insight` method.
 Boto3 documentation:
 [SecurityHub.Client.create_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Filters`:
@@ -354,7 +354,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.describe_action_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `ActionTargetArns`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("securityhub").describe_products` method.
 Boto3 documentation:
 [SecurityHub.Client.describe_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -427,7 +427,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.describe_standards_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls)
 
-Arguments:
+Keyword-only arguments:
 
 - `StandardsSubscriptionArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -585,7 +585,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.get_enabled_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards)
 
-Arguments:
+Keyword-only arguments:
 
 - `StandardsSubscriptionArns`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -601,7 +601,7 @@ Type annotations for `boto3.client("securityhub").get_findings` method.
 Boto3 documentation:
 [SecurityHub.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
@@ -634,7 +634,7 @@ Type annotations for `boto3.client("securityhub").get_insights` method.
 Boto3 documentation:
 [SecurityHub.Client.get_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightArns`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -729,7 +729,7 @@ Type annotations for `boto3.client("securityhub").list_members` method.
 Boto3 documentation:
 [SecurityHub.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `OnlyAssociated`: `bool`
 - `MaxResults`: `int`
@@ -804,7 +804,7 @@ Type annotations for `boto3.client("securityhub").update_action_target` method.
 Boto3 documentation:
 [SecurityHub.Client.update_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `ActionTargetArn`: `str` *(required)*
 - `Name`: `str`
@@ -819,7 +819,7 @@ Type annotations for `boto3.client("securityhub").update_findings` method.
 Boto3 documentation:
 [SecurityHub.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
@@ -836,7 +836,7 @@ Type annotations for `boto3.client("securityhub").update_insight` method.
 Boto3 documentation:
 [SecurityHub.Client.update_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightArn`: `str` *(required)*
 - `Name`: `str`
@@ -882,7 +882,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.update_standards_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `StandardsControlArn`: `str` *(required)*
 - `ControlStatus`: [ControlStatusType](./literals.md#controlstatustype)

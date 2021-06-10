@@ -84,7 +84,7 @@ Type annotations for `boto3.client("outposts").create_outpost` method.
 Boto3 documentation:
 [Outposts.Client.create_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_outpost)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SiteId`: `str` *(required)*
@@ -159,7 +159,7 @@ method.
 Boto3 documentation:
 [Outposts.Client.get_outpost_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `OutpostId`: `str` *(required)*
 - `NextToken`: `str`

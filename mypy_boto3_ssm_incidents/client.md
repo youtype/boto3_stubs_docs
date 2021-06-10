@@ -125,7 +125,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.create_response_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.create_response_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `incidentTemplate`:
   [IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef)
@@ -149,7 +149,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.create_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.create_timeline_event)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str` *(required)*
 - `eventData`: `str` *(required)*
@@ -287,7 +287,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_resource_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `maxResults`: `int`
@@ -333,7 +333,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.list_incident_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_incident_records)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("ssm-incidents").list_related_items` method.
 Boto3 documentation:
 [SSMIncidents.Client.list_related_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_related_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `incidentRecordArn`: `str` *(required)*
 - `maxResults`: `int`
@@ -413,7 +413,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.list_timeline_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_timeline_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `incidentRecordArn`: `str` *(required)*
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -449,7 +449,7 @@ Type annotations for `boto3.client("ssm-incidents").start_incident` method.
 Boto3 documentation:
 [SSMIncidents.Client.start_incident](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.start_incident)
 
-Arguments:
+Keyword-only arguments:
 
 - `responsePlanArn`: `str` *(required)*
 - `clientToken`: `str`
@@ -499,7 +499,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.update_deletion_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_deletion_protection)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `deletionProtected`: `bool` *(required)*
@@ -515,7 +515,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.update_incident_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_incident_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
@@ -537,7 +537,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.update_related_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_related_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `incidentRecordArn`: `str` *(required)*
 - `relatedItemsUpdate`:
@@ -555,7 +555,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.update_replication_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_replication_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `actions`:
   `List`\[[UpdateReplicationSetActionTypeDef](./type_defs.md#updatereplicationsetactiontypedef)\]
@@ -573,7 +573,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.update_response_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_response_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
@@ -598,7 +598,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.update_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.update_timeline_event)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str` *(required)*
 - `eventId`: `str` *(required)*

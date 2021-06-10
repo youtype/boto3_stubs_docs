@@ -447,7 +447,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_aggregate_compliance_by_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
@@ -467,7 +467,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_aggregate_compliance_by_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
@@ -502,7 +502,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_compliance_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\]
 - `ComplianceTypes`:
@@ -520,7 +520,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_compliance_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`: `str`
 - `ResourceId`: `str`
@@ -540,7 +540,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_config_rule_evaluation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -573,7 +573,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_configuration_aggregator_sources_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `UpdateStatus`:
@@ -592,7 +592,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_configuration_aggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorNames`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -639,7 +639,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_conformance_pack_compliance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConformancePackName`: `str` *(required)*
 - `Filters`:
@@ -658,7 +658,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_conformance_pack_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConformancePackNames`: `List`\[`str`\]
 - `Limit`: `int`
@@ -675,7 +675,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_packs)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConformancePackNames`: `List`\[`str`\]
 - `Limit`: `int`
@@ -722,7 +722,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_organization_config_rule_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConfigRuleNames`: `List`\[`str`\]
 - `Limit`: `int`
@@ -739,7 +739,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_organization_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConfigRuleNames`: `List`\[`str`\]
 - `Limit`: `int`
@@ -757,7 +757,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_organization_conformance_pack_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConformancePackNames`: `List`\[`str`\]
 - `Limit`: `int`
@@ -774,7 +774,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_organization_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConformancePackNames`: `List`\[`str`\]
 - `Limit`: `int`
@@ -822,7 +822,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
@@ -841,7 +841,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_remediation_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
@@ -893,7 +893,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `ConfigRuleName`: `str` *(required)*
@@ -914,7 +914,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_config_rule_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
@@ -936,7 +936,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
@@ -957,7 +957,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `Filters`:
@@ -996,7 +996,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ComplianceTypes`:
@@ -1015,7 +1015,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_compliance_details_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
@@ -1060,7 +1060,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_conformance_pack_compliance_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConformancePackName`: `str` *(required)*
 - `Filters`:
@@ -1079,7 +1079,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConformancePackNames`: `List`\[`str`\] *(required)*
 - `Limit`: `int`
@@ -1096,7 +1096,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.get_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceTypes`: `List`\[`str`\]
 - `limit`: `int`
@@ -1113,7 +1113,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_organization_config_rule_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConfigRuleName`: `str` *(required)*
 - `Filters`:
@@ -1133,7 +1133,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.get_organization_conformance_pack_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConformancePackName`: `str` *(required)*
 - `Filters`:
@@ -1152,7 +1152,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.get_resource_config_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_config_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
@@ -1189,7 +1189,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.list_aggregate_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
@@ -1208,7 +1208,7 @@ Type annotations for `boto3.client("config").list_discovered_resources` method.
 Boto3 documentation:
 [ConfigService.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_discovered_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
@@ -1243,7 +1243,7 @@ Type annotations for `boto3.client("config").list_tags_for_resource` method.
 Boto3 documentation:
 [ConfigService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Limit`: `int`
@@ -1260,7 +1260,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.put_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_aggregation_authorization)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthorizedAccountId`: `str` *(required)*
 - `AuthorizedAwsRegion`: `str` *(required)*
@@ -1290,7 +1290,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.put_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_aggregator)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `AccountAggregationSources`:
@@ -1323,7 +1323,7 @@ Type annotations for `boto3.client("config").put_conformance_pack` method.
 Boto3 documentation:
 [ConfigService.Client.put_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConformancePackName`: `str` *(required)*
 - `TemplateS3Uri`: `str`
@@ -1355,7 +1355,7 @@ Type annotations for `boto3.client("config").put_evaluations` method.
 Boto3 documentation:
 [ConfigService.Client.put_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_evaluations)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResultToken`: `str` *(required)*
 - `Evaluations`:
@@ -1389,7 +1389,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.put_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConfigRuleName`: `str` *(required)*
 - `OrganizationManagedRuleMetadata`:
@@ -1409,7 +1409,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.put_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConformancePackName`: `str` *(required)*
 - `TemplateS3Uri`: `str`
@@ -1448,7 +1448,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.put_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_exceptions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
@@ -1467,7 +1467,7 @@ Type annotations for `boto3.client("config").put_resource_config` method.
 Boto3 documentation:
 [ConfigService.Client.put_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_resource_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`: `str` *(required)*
 - `SchemaVersionId`: `str` *(required)*
@@ -1515,7 +1515,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.select_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Expression`: `str` *(required)*
 - `ConfigurationAggregatorName`: `str` *(required)*
@@ -1533,7 +1533,7 @@ Type annotations for `boto3.client("config").select_resource_config` method.
 Boto3 documentation:
 [ConfigService.Client.select_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Expression`: `str` *(required)*
 - `Limit`: `int`

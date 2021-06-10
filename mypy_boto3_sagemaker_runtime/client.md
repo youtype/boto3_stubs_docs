@@ -91,7 +91,7 @@ method.
 Boto3 documentation:
 [SageMakerRuntime.Client.invoke_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*

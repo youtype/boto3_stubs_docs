@@ -117,7 +117,7 @@ Type annotations for `boto3.client("appmesh").create_gateway_route` method.
 Boto3 documentation:
 [AppMesh.Client.create_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `gatewayRouteName`: `str` *(required)*
 - `meshName`: `str` *(required)*
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("appmesh").create_mesh` method.
 Boto3 documentation:
 [AppMesh.Client.create_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_mesh)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `clientToken`: `str`
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("appmesh").create_route` method.
 Boto3 documentation:
 [AppMesh.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `routeName`: `str` *(required)*
@@ -173,7 +173,7 @@ Type annotations for `boto3.client("appmesh").create_virtual_gateway` method.
 Boto3 documentation:
 [AppMesh.Client.create_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("appmesh").create_virtual_node` method.
 Boto3 documentation:
 [AppMesh.Client.create_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
@@ -213,7 +213,7 @@ Type annotations for `boto3.client("appmesh").create_virtual_router` method.
 Boto3 documentation:
 [AppMesh.Client.create_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_router)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("appmesh").create_virtual_service` method.
 Boto3 documentation:
 [AppMesh.Client.create_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
@@ -253,7 +253,7 @@ Type annotations for `boto3.client("appmesh").delete_gateway_route` method.
 Boto3 documentation:
 [AppMesh.Client.delete_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `gatewayRouteName`: `str` *(required)*
 - `meshName`: `str` *(required)*
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("appmesh").delete_route` method.
 Boto3 documentation:
 [AppMesh.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `routeName`: `str` *(required)*
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("appmesh").delete_virtual_gateway` method.
 Boto3 documentation:
 [AppMesh.Client.delete_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualGatewayName`: `str` *(required)*
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("appmesh").delete_virtual_node` method.
 Boto3 documentation:
 [AppMesh.Client.delete_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualNodeName`: `str` *(required)*
@@ -331,7 +331,7 @@ Type annotations for `boto3.client("appmesh").delete_virtual_router` method.
 Boto3 documentation:
 [AppMesh.Client.delete_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualRouterName`: `str` *(required)*
@@ -347,7 +347,7 @@ Type annotations for `boto3.client("appmesh").delete_virtual_service` method.
 Boto3 documentation:
 [AppMesh.Client.delete_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualServiceName`: `str` *(required)*
@@ -363,7 +363,7 @@ Type annotations for `boto3.client("appmesh").describe_gateway_route` method.
 Boto3 documentation:
 [AppMesh.Client.describe_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `gatewayRouteName`: `str` *(required)*
 - `meshName`: `str` *(required)*
@@ -394,7 +394,7 @@ Type annotations for `boto3.client("appmesh").describe_route` method.
 Boto3 documentation:
 [AppMesh.Client.describe_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `routeName`: `str` *(required)*
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("appmesh").describe_virtual_gateway` method.
 Boto3 documentation:
 [AppMesh.Client.describe_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualGatewayName`: `str` *(required)*
@@ -427,7 +427,7 @@ Type annotations for `boto3.client("appmesh").describe_virtual_node` method.
 Boto3 documentation:
 [AppMesh.Client.describe_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualNodeName`: `str` *(required)*
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("appmesh").describe_virtual_router` method.
 Boto3 documentation:
 [AppMesh.Client.describe_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualRouterName`: `str` *(required)*
@@ -459,7 +459,7 @@ Type annotations for `boto3.client("appmesh").describe_virtual_service` method.
 Boto3 documentation:
 [AppMesh.Client.describe_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualServiceName`: `str` *(required)*
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("appmesh").list_gateway_routes` method.
 Boto3 documentation:
 [AppMesh.Client.list_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualGatewayName`: `str` *(required)*
@@ -523,7 +523,7 @@ Type annotations for `boto3.client("appmesh").list_routes` method.
 Boto3 documentation:
 [AppMesh.Client.list_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_routes)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `virtualRouterName`: `str` *(required)*
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("appmesh").list_tags_for_resource` method.
 Boto3 documentation:
 [AppMesh.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `limit`: `int`
@@ -556,7 +556,7 @@ Type annotations for `boto3.client("appmesh").list_virtual_gateways` method.
 Boto3 documentation:
 [AppMesh.Client.list_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `limit`: `int`
@@ -573,7 +573,7 @@ Type annotations for `boto3.client("appmesh").list_virtual_nodes` method.
 Boto3 documentation:
 [AppMesh.Client.list_virtual_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `limit`: `int`
@@ -590,7 +590,7 @@ Type annotations for `boto3.client("appmesh").list_virtual_routers` method.
 Boto3 documentation:
 [AppMesh.Client.list_virtual_routers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `limit`: `int`
@@ -607,7 +607,7 @@ Type annotations for `boto3.client("appmesh").list_virtual_services` method.
 Boto3 documentation:
 [AppMesh.Client.list_virtual_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `limit`: `int`
@@ -652,7 +652,7 @@ Type annotations for `boto3.client("appmesh").update_gateway_route` method.
 Boto3 documentation:
 [AppMesh.Client.update_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_gateway_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `gatewayRouteName`: `str` *(required)*
 - `meshName`: `str` *(required)*
@@ -672,7 +672,7 @@ Type annotations for `boto3.client("appmesh").update_mesh` method.
 Boto3 documentation:
 [AppMesh.Client.update_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_mesh)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `clientToken`: `str`
@@ -687,7 +687,7 @@ Type annotations for `boto3.client("appmesh").update_route` method.
 Boto3 documentation:
 [AppMesh.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_route)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `routeName`: `str` *(required)*
@@ -705,7 +705,7 @@ Type annotations for `boto3.client("appmesh").update_virtual_gateway` method.
 Boto3 documentation:
 [AppMesh.Client.update_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
@@ -724,7 +724,7 @@ Type annotations for `boto3.client("appmesh").update_virtual_node` method.
 Boto3 documentation:
 [AppMesh.Client.update_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
@@ -743,7 +743,7 @@ Type annotations for `boto3.client("appmesh").update_virtual_router` method.
 Boto3 documentation:
 [AppMesh.Client.update_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_router)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
@@ -762,7 +762,7 @@ Type annotations for `boto3.client("appmesh").update_virtual_service` method.
 Boto3 documentation:
 [AppMesh.Client.update_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)

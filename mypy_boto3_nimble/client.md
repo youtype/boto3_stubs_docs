@@ -108,7 +108,7 @@ Type annotations for `boto3.client("nimble").accept_eulas` method.
 Boto3 documentation:
 [NimbleStudio.Client.accept_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
@@ -137,7 +137,7 @@ Type annotations for `boto3.client("nimble").create_launch_profile` method.
 Boto3 documentation:
 [NimbleStudio.Client.create_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `ec2SubnetIds`: `List`\[`str`\] *(required)*
 - `launchProfileProtocolVersions`: `List`\[`str`\] *(required)*
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("nimble").create_streaming_image` method.
 Boto3 documentation:
 [NimbleStudio.Client.create_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `ec2ImageId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -180,7 +180,7 @@ Type annotations for `boto3.client("nimble").create_streaming_session` method.
 Boto3 documentation:
 [NimbleStudio.Client.create_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
@@ -201,7 +201,7 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.create_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `sessionId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("nimble").create_studio` method.
 Boto3 documentation:
 [NimbleStudio.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio)
 
-Arguments:
+Keyword-only arguments:
 
 - `adminRoleArn`: `str` *(required)*
 - `displayName`: `str` *(required)*
@@ -239,7 +239,7 @@ Type annotations for `boto3.client("nimble").create_studio_component` method.
 Boto3 documentation:
 [NimbleStudio.Client.create_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("nimble").delete_launch_profile` method.
 Boto3 documentation:
 [NimbleStudio.Client.delete_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -285,7 +285,7 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.delete_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `principalId`: `str` *(required)*
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("nimble").delete_streaming_image` method.
 Boto3 documentation:
 [NimbleStudio.Client.delete_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `streamingImageId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("nimble").delete_streaming_session` method.
 Boto3 documentation:
 [NimbleStudio.Client.delete_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `sessionId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -348,7 +348,7 @@ Type annotations for `boto3.client("nimble").delete_studio_component` method.
 Boto3 documentation:
 [NimbleStudio.Client.delete_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioComponentId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("nimble").delete_studio_member` method.
 Boto3 documentation:
 [NimbleStudio.Client.delete_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `principalId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -440,7 +440,7 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_initialization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `launchProfileProtocolVersions`: `List`\[`str`\] *(required)*
@@ -458,7 +458,7 @@ Type annotations for `boto3.client("nimble").get_launch_profile_member` method.
 Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `principalId`: `str` *(required)*
@@ -505,7 +505,7 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.get_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `sessionId`: `str` *(required)*
 - `streamId`: `str` *(required)*
@@ -564,7 +564,7 @@ Type annotations for `boto3.client("nimble").list_eula_acceptances` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_eula_acceptances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `eulaIds`: `List`\[`str`\]
@@ -595,7 +595,7 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.list_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -612,7 +612,7 @@ Type annotations for `boto3.client("nimble").list_launch_profiles` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_launch_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `maxResults`: `int`
@@ -630,7 +630,7 @@ Type annotations for `boto3.client("nimble").list_streaming_images` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_streaming_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `nextToken`: `str`
@@ -646,7 +646,7 @@ Type annotations for `boto3.client("nimble").list_streaming_sessions` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_streaming_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `createdBy`: `str`
@@ -663,7 +663,7 @@ Type annotations for `boto3.client("nimble").list_studio_components` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_studio_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `maxResults`: `int`
@@ -681,7 +681,7 @@ Type annotations for `boto3.client("nimble").list_studio_members` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `maxResults`: `int`
@@ -726,7 +726,7 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.put_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `identityStoreId`: `str` *(required)*
 - `launchProfileId`: `str` *(required)*
@@ -745,7 +745,7 @@ Type annotations for `boto3.client("nimble").put_studio_members` method.
 Boto3 documentation:
 [NimbleStudio.Client.put_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `identityStoreId`: `str` *(required)*
 - `members`:
@@ -807,7 +807,7 @@ Type annotations for `boto3.client("nimble").update_launch_profile` method.
 Boto3 documentation:
 [NimbleStudio.Client.update_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -830,7 +830,7 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.update_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `persona`: `Literal['USER']` (see
@@ -850,7 +850,7 @@ Type annotations for `boto3.client("nimble").update_streaming_image` method.
 Boto3 documentation:
 [NimbleStudio.Client.update_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `streamingImageId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -868,7 +868,7 @@ Type annotations for `boto3.client("nimble").update_studio` method.
 Boto3 documentation:
 [NimbleStudio.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `adminRoleArn`: `str`
@@ -886,7 +886,7 @@ Type annotations for `boto3.client("nimble").update_studio_component` method.
 Boto3 documentation:
 [NimbleStudio.Client.update_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioComponentId`: `str` *(required)*
 - `studioId`: `str` *(required)*

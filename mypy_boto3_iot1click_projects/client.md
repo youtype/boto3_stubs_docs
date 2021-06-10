@@ -78,7 +78,7 @@ Type annotations for
 Boto3 documentation:
 [IoT1ClickProjects.Client.associate_device_with_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.associate_device_with_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `placementName`: `str` *(required)*
@@ -108,7 +108,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.create_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `placementName`: `str` *(required)*
 - `projectName`: `str` *(required)*
@@ -124,7 +124,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `description`: `str`
@@ -202,7 +202,7 @@ Type annotations for
 Boto3 documentation:
 [IoT1ClickProjects.Client.disassociate_device_from_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.disassociate_device_from_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `placementName`: `str` *(required)*
@@ -251,7 +251,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.list_placements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_placements)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `nextToken`: `str`
@@ -327,7 +327,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.update_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `placementName`: `str` *(required)*
 - `projectName`: `str` *(required)*
@@ -343,7 +343,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `description`: `str`

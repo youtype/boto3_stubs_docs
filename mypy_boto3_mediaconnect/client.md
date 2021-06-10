@@ -179,7 +179,7 @@ Type annotations for `boto3.client("mediaconnect").create_flow` method.
 Boto3 documentation:
 [MediaConnect.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `AvailabilityZone`: `str`
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("mediaconnect").purchase_offering` method.
 Boto3 documentation:
 [MediaConnect.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
 
-Arguments:
+Keyword-only arguments:
 
 - `OfferingArn`: `str` *(required)*
 - `ReservationName`: `str` *(required)*
@@ -531,7 +531,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.update_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
 
-Arguments:
+Keyword-only arguments:
 
 - `EntitlementArn`: `str` *(required)*
 - `FlowArn`: `str` *(required)*
@@ -553,7 +553,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.update_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_media_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `MediaStreamName`: `str` *(required)*
@@ -574,7 +574,7 @@ Type annotations for `boto3.client("mediaconnect").update_flow_output` method.
 Boto3 documentation:
 [MediaConnect.Client.update_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `OutputArn`: `str` *(required)*
@@ -605,7 +605,7 @@ Type annotations for `boto3.client("mediaconnect").update_flow_source` method.
 Boto3 documentation:
 [MediaConnect.Client.update_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `SourceArn`: `str` *(required)*

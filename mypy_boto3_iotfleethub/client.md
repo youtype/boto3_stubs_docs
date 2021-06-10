@@ -83,7 +83,7 @@ Type annotations for `boto3.client("iotfleethub").create_application` method.
 Boto3 documentation:
 [IoTFleetHub.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.create_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `roleArn`: `str` *(required)*
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("iotfleethub").update_application` method.
 Boto3 documentation:
 [IoTFleetHub.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.update_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationId`: `str` *(required)*
 - `applicationName`: `str`

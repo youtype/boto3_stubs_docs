@@ -148,7 +148,7 @@ method.
 Boto3 documentation:
 [MarketplaceCatalog.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_change_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
 - `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -167,7 +167,7 @@ method.
 Boto3 documentation:
 [MarketplaceCatalog.Client.list_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
 - `EntityType`: `str` *(required)*
@@ -187,7 +187,7 @@ method.
 Boto3 documentation:
 [MarketplaceCatalog.Client.start_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
 - `ChangeSet`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]

@@ -116,7 +116,7 @@ Type annotations for `boto3.client("xray").create_group` method.
 Boto3 documentation:
 [XRay.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `FilterExpression`: `str`
@@ -244,7 +244,7 @@ Type annotations for `boto3.client("xray").get_insight_events` method.
 Boto3 documentation:
 [XRay.Client.get_insight_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("xray").get_insight_impact_graph` method.
 Boto3 documentation:
 [XRay.Client.get_insight_impact_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_impact_graph)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightId`: `str` *(required)*
 - `StartTime`: `datetime` *(required)*
@@ -277,7 +277,7 @@ Type annotations for `boto3.client("xray").get_insight_summaries` method.
 Boto3 documentation:
 [XRay.Client.get_insight_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_summaries)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
@@ -342,7 +342,7 @@ Type annotations for `boto3.client("xray").get_service_graph` method.
 Boto3 documentation:
 [XRay.Client.get_service_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_service_graph)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
@@ -361,7 +361,7 @@ method.
 Boto3 documentation:
 [XRay.Client.get_time_series_service_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_time_series_service_statistics)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
@@ -397,7 +397,7 @@ Type annotations for `boto3.client("xray").get_trace_summaries` method.
 Boto3 documentation:
 [XRay.Client.get_trace_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_summaries)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("xray").put_telemetry_records` method.
 Boto3 documentation:
 [XRay.Client.put_telemetry_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_telemetry_records)
 
-Arguments:
+Keyword-only arguments:
 
 - `TelemetryRecords`:
   `List`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
@@ -508,7 +508,7 @@ Type annotations for `boto3.client("xray").update_group` method.
 Boto3 documentation:
 [XRay.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `GroupARN`: `str`

@@ -128,7 +128,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.batch_associate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `evidenceFolderId`: `str` *(required)*
@@ -180,7 +180,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.batch_disassociate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `evidenceFolderId`: `str` *(required)*
@@ -198,7 +198,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.batch_import_evidence_to_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
@@ -230,7 +230,7 @@ Type annotations for `boto3.client("auditmanager").create_assessment` method.
 Boto3 documentation:
 [AuditManager.Client.create_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `assessmentReportsDestination`:
@@ -253,7 +253,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.create_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `controlSets`:
@@ -274,7 +274,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.create_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `assessmentId`: `str` *(required)*
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("auditmanager").create_control` method.
 Boto3 documentation:
 [AuditManager.Client.create_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `controlMappingSources`:
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("auditmanager").get_change_logs` method.
 Boto3 documentation:
 [AuditManager.Client.get_change_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_change_logs)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str`
@@ -525,7 +525,7 @@ Type annotations for `boto3.client("auditmanager").get_evidence` method.
 Boto3 documentation:
 [AuditManager.Client.get_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
@@ -543,7 +543,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.get_evidence_by_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
@@ -561,7 +561,7 @@ Type annotations for `boto3.client("auditmanager").get_evidence_folder` method.
 Boto3 documentation:
 [AuditManager.Client.get_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
@@ -578,7 +578,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.get_evidence_folders_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `nextToken`: `str`
@@ -596,7 +596,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.get_evidence_folders_by_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
@@ -652,7 +652,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.list_assessment_frameworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks)
 
-Arguments:
+Keyword-only arguments:
 
 - `frameworkType`: [FrameworkTypeType](./literals.md#frameworktypetype)
   *(required)*
@@ -700,7 +700,7 @@ Type annotations for `boto3.client("auditmanager").list_controls` method.
 Boto3 documentation:
 [AuditManager.Client.list_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_controls)
 
-Arguments:
+Keyword-only arguments:
 
 - `controlType`: [ControlTypeType](./literals.md#controltypetype) *(required)*
 - `nextToken`: `str`
@@ -717,7 +717,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.list_keywords_for_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `source`: [SourceTypeType](./literals.md#sourcetypetype) *(required)*
 - `nextToken`: `str`
@@ -821,7 +821,7 @@ Type annotations for `boto3.client("auditmanager").update_assessment` method.
 Boto3 documentation:
 [AuditManager.Client.update_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef) *(required)*
@@ -842,7 +842,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.update_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
@@ -861,7 +861,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.update_assessment_control_set_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `controlSetId`: `str` *(required)*
@@ -880,7 +880,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.update_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework)
 
-Arguments:
+Keyword-only arguments:
 
 - `frameworkId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -917,7 +917,7 @@ Type annotations for `boto3.client("auditmanager").update_control` method.
 Boto3 documentation:
 [AuditManager.Client.update_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `controlId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -939,7 +939,7 @@ Type annotations for `boto3.client("auditmanager").update_settings` method.
 Boto3 documentation:
 [AuditManager.Client.update_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `snsTopic`: `str`
 - `defaultAssessmentReportsDestination`:

@@ -101,7 +101,7 @@ Type annotations for `boto3.client("mediatailor").create_channel` method.
 Boto3 documentation:
 [MediaTailor.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Outputs`:
@@ -121,7 +121,7 @@ Type annotations for `boto3.client("mediatailor").create_program` method.
 Boto3 documentation:
 [MediaTailor.Client.create_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `ProgramName`: `str` *(required)*
@@ -143,7 +143,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.create_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location)
 
-Arguments:
+Keyword-only arguments:
 
 - `HttpConfiguration`:
   [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
@@ -165,7 +165,7 @@ Type annotations for `boto3.client("mediatailor").create_vod_source` method.
 Boto3 documentation:
 [MediaTailor.Client.create_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `HttpPackageConfigurations`:
   `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
@@ -357,7 +357,7 @@ Type annotations for `boto3.client("mediatailor").get_channel_schedule` method.
 Boto3 documentation:
 [MediaTailor.Client.get_channel_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `DurationMinutes`: `str`
@@ -451,7 +451,7 @@ Type annotations for `boto3.client("mediatailor").list_vod_sources` method.
 Boto3 documentation:
 [MediaTailor.Client.list_vod_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceLocationName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -482,7 +482,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.put_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AdDecisionServerUrl`: `str`
 - `AvailSuppression`:
@@ -582,7 +582,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.update_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location)
 
-Arguments:
+Keyword-only arguments:
 
 - `HttpConfiguration`:
   [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
@@ -603,7 +603,7 @@ Type annotations for `boto3.client("mediatailor").update_vod_source` method.
 Boto3 documentation:
 [MediaTailor.Client.update_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `HttpPackageConfigurations`:
   `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]

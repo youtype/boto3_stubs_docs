@@ -100,7 +100,7 @@ Type annotations for `boto3.client("budgets").create_budget` method.
 Boto3 documentation:
 [Budgets.Client.create_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef) *(required)*
@@ -116,7 +116,7 @@ Type annotations for `boto3.client("budgets").create_budget_action` method.
 Boto3 documentation:
 [Budgets.Client.create_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -143,7 +143,7 @@ Type annotations for `boto3.client("budgets").create_notification` method.
 Boto3 documentation:
 [Budgets.Client.create_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("budgets").create_subscriber` method.
 Boto3 documentation:
 [Budgets.Client.create_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("budgets").delete_budget_action` method.
 Boto3 documentation:
 [Budgets.Client.delete_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("budgets").delete_notification` method.
 Boto3 documentation:
 [Budgets.Client.delete_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("budgets").delete_subscriber` method.
 Boto3 documentation:
 [Budgets.Client.delete_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -258,7 +258,7 @@ Type annotations for `boto3.client("budgets").describe_budget_action` method.
 Boto3 documentation:
 [Budgets.Client.describe_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -275,7 +275,7 @@ method.
 Boto3 documentation:
 [Budgets.Client.describe_budget_action_histories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -295,7 +295,7 @@ Type annotations for
 Boto3 documentation:
 [Budgets.Client.describe_budget_actions_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -312,7 +312,7 @@ Type annotations for
 Boto3 documentation:
 [Budgets.Client.describe_budget_actions_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -330,7 +330,7 @@ Type annotations for
 Boto3 documentation:
 [Budgets.Client.describe_budget_performance_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -348,7 +348,7 @@ Type annotations for `boto3.client("budgets").describe_budgets` method.
 Boto3 documentation:
 [Budgets.Client.describe_budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -365,7 +365,7 @@ Type annotations for
 Boto3 documentation:
 [Budgets.Client.describe_notifications_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -383,7 +383,7 @@ Type annotations for
 Boto3 documentation:
 [Budgets.Client.describe_subscribers_for_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -402,7 +402,7 @@ Type annotations for `boto3.client("budgets").execute_budget_action` method.
 Boto3 documentation:
 [Budgets.Client.execute_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -450,7 +450,7 @@ Type annotations for `boto3.client("budgets").update_budget_action` method.
 Boto3 documentation:
 [Budgets.Client.update_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -475,7 +475,7 @@ Type annotations for `boto3.client("budgets").update_notification` method.
 Boto3 documentation:
 [Budgets.Client.update_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -493,7 +493,7 @@ Type annotations for `boto3.client("budgets").update_subscriber` method.
 Boto3 documentation:
 [Budgets.Client.update_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*

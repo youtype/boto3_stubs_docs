@@ -204,7 +204,7 @@ Type annotations for `boto3.client("organizations").create_account` method.
 Boto3 documentation:
 [Organizations.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `Email`: `str` *(required)*
 - `AccountName`: `str` *(required)*
@@ -224,7 +224,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.create_gov_cloud_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `Email`: `str` *(required)*
 - `AccountName`: `str` *(required)*
@@ -260,7 +260,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.create_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParentId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("organizations").create_policy` method.
 Boto3 documentation:
 [Organizations.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Content`: `str` *(required)*
 - `Description`: `str` *(required)*
@@ -548,7 +548,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.invite_account_to_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `Target`: [HandshakePartyTypeDef](./type_defs.md#handshakepartytypedef)
   *(required)*
@@ -588,7 +588,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.list_accounts_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParentId`: `str` *(required)*
 - `NextToken`: `str`
@@ -621,7 +621,7 @@ Type annotations for `boto3.client("organizations").list_children` method.
 Boto3 documentation:
 [Organizations.Client.list_children](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParentId`: `str` *(required)*
 - `ChildType`: [ChildTypeType](./literals.md#childtypetype) *(required)*
@@ -639,7 +639,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.list_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `States`:
   `List`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
@@ -657,7 +657,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.list_delegated_administrators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServicePrincipal`: `str`
 - `NextToken`: `str`
@@ -674,7 +674,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.list_delegated_services_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `NextToken`: `str`
@@ -691,7 +691,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.list_handshakes_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`: [HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef)
 - `NextToken`: `str`
@@ -708,7 +708,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.list_handshakes_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`: [HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef)
 - `NextToken`: `str`
@@ -725,7 +725,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.list_organizational_units_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParentId`: `str` *(required)*
 - `NextToken`: `str`
@@ -741,7 +741,7 @@ Type annotations for `boto3.client("organizations").list_parents` method.
 Boto3 documentation:
 [Organizations.Client.list_parents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChildId`: `str` *(required)*
 - `NextToken`: `str`
@@ -757,7 +757,7 @@ Type annotations for `boto3.client("organizations").list_policies` method.
 Boto3 documentation:
 [Organizations.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 - `NextToken`: `str`
@@ -774,7 +774,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.list_policies_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetId`: `str` *(required)*
 - `Filter`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
@@ -822,7 +822,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `NextToken`: `str`
@@ -838,7 +838,7 @@ Type annotations for `boto3.client("organizations").move_account` method.
 Boto3 documentation:
 [Organizations.Client.move_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `SourceParentId`: `str` *(required)*
@@ -916,7 +916,7 @@ Type annotations for `boto3.client("organizations").update_policy` method.
 Boto3 documentation:
 [Organizations.Client.update_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `Name`: `str`

@@ -95,7 +95,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.attach_managed_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -124,7 +124,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.create_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `TargetId`: `str` *(required)*
@@ -163,7 +163,7 @@ Type annotations for `boto3.client("sso-admin").create_permission_set` method.
 Boto3 documentation:
 [SSOAdmin.Client.create_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InstanceArn`: `str` *(required)*
@@ -183,7 +183,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.delete_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `TargetId`: `str` *(required)*
@@ -329,7 +329,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.detach_managed_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -377,7 +377,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.list_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -396,7 +396,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.list_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -415,7 +415,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.list_account_assignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `AccountId`: `str` *(required)*
@@ -435,7 +435,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.list_accounts_for_provisioned_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -470,7 +470,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.list_managed_policies_in_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -488,7 +488,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.list_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("sso-admin").list_permission_sets` method.
 Boto3 documentation:
 [SSOAdmin.Client.list_permission_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -523,7 +523,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.list_permission_sets_provisioned_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `AccountId`: `str` *(required)*
@@ -542,7 +542,7 @@ Type annotations for `boto3.client("sso-admin").list_tags_for_resource` method.
 Boto3 documentation:
 [SSOAdmin.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
@@ -559,7 +559,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.provision_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -578,7 +578,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.put_inline_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -593,7 +593,7 @@ Type annotations for `boto3.client("sso-admin").tag_resource` method.
 Boto3 documentation:
 [SSOAdmin.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
@@ -608,7 +608,7 @@ Type annotations for `boto3.client("sso-admin").untag_resource` method.
 Boto3 documentation:
 [SSOAdmin.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
@@ -641,7 +641,7 @@ Type annotations for `boto3.client("sso-admin").update_permission_set` method.
 Boto3 documentation:
 [SSOAdmin.Client.update_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*

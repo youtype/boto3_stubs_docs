@@ -118,7 +118,7 @@ Type annotations for `boto3.client("wellarchitected").create_milestone` method.
 Boto3 documentation:
 [WellArchitected.Client.create_milestone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `MilestoneName`: `str` *(required)*
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("wellarchitected").create_workload` method.
 Boto3 documentation:
 [WellArchitected.Client.create_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadName`: `str` *(required)*
 - `Description`: `str` *(required)*
@@ -164,7 +164,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.create_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `SharedWith`: `str` *(required)*
@@ -195,7 +195,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.delete_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `ShareId`: `str` *(required)*
 - `WorkloadId`: `str` *(required)*
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("wellarchitected").get_answer` method.
 Boto3 documentation:
 [WellArchitected.Client.get_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_answer)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
@@ -254,7 +254,7 @@ Type annotations for `boto3.client("wellarchitected").get_lens_review` method.
 Boto3 documentation:
 [WellArchitected.Client.get_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
@@ -271,7 +271,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.get_lens_review_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("wellarchitected").list_answers` method.
 Boto3 documentation:
 [WellArchitected.Client.list_answers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_answers)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
@@ -349,7 +349,7 @@ Type annotations for
 Boto3 documentation:
 [WellArchitected.Client.list_lens_review_improvements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
@@ -369,7 +369,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.list_lens_reviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `MilestoneNumber`: `int`
@@ -400,7 +400,7 @@ Type annotations for `boto3.client("wellarchitected").list_milestones` method.
 Boto3 documentation:
 [WellArchitected.Client.list_milestones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `NextToken`: `str`
@@ -417,7 +417,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str`
 - `NextToken`: `str`
@@ -434,7 +434,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.list_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadNamePrefix`: `str`
 - `NextToken`: `str`
@@ -466,7 +466,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.list_workload_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `SharedWithPrefix`: `str`
@@ -483,7 +483,7 @@ Type annotations for `boto3.client("wellarchitected").list_workloads` method.
 Boto3 documentation:
 [WellArchitected.Client.list_workloads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadNamePrefix`: `str`
 - `NextToken`: `str`
@@ -527,7 +527,7 @@ Type annotations for `boto3.client("wellarchitected").update_answer` method.
 Boto3 documentation:
 [WellArchitected.Client.update_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_answer)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
@@ -546,7 +546,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.update_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*
@@ -581,7 +581,7 @@ Type annotations for `boto3.client("wellarchitected").update_workload` method.
 Boto3 documentation:
 [WellArchitected.Client.update_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `WorkloadName`: `str`
@@ -612,7 +612,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.update_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `ShareId`: `str` *(required)*
 - `WorkloadId`: `str` *(required)*
@@ -630,7 +630,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.upgrade_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAlias`: `str` *(required)*

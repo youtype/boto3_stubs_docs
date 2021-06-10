@@ -380,7 +380,7 @@ Type annotations for `boto3.client("iam").create_instance_profile` method.
 Boto3 documentation:
 [IAM.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Path`: `str`
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("iam").create_login_profile` method.
 Boto3 documentation:
 [IAM.Client.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_login_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `Password`: `str` *(required)*
@@ -413,7 +413,7 @@ method.
 Boto3 documentation:
 [IAM.Client.create_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `Url`: `str` *(required)*
 - `ThumbprintList`: `List`\[`str`\] *(required)*
@@ -430,7 +430,7 @@ Type annotations for `boto3.client("iam").create_policy` method.
 Boto3 documentation:
 [IAM.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("iam").create_policy_version` method.
 Boto3 documentation:
 [IAM.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
@@ -464,7 +464,7 @@ Type annotations for `boto3.client("iam").create_role` method.
 Boto3 documentation:
 [IAM.Client.create_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `AssumeRolePolicyDocument`: `str` *(required)*
@@ -483,7 +483,7 @@ Type annotations for `boto3.client("iam").create_saml_provider` method.
 Boto3 documentation:
 [IAM.Client.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_saml_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("iam").create_service_linked_role` method.
 Boto3 documentation:
 [IAM.Client.create_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_linked_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `AWSServiceName`: `str` *(required)*
 - `Description`: `str`
@@ -531,7 +531,7 @@ Type annotations for `boto3.client("iam").create_user` method.
 Boto3 documentation:
 [IAM.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `Path`: `str`
@@ -547,7 +547,7 @@ Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
 Boto3 documentation:
 [IAM.Client.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_virtual_mfa_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `VirtualMFADeviceName`: `str` *(required)*
 - `Path`: `str`
@@ -876,7 +876,7 @@ Type annotations for `boto3.client("iam").enable_mfa_device` method.
 Boto3 documentation:
 [IAM.Client.enable_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.enable_mfa_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `SerialNumber`: `str` *(required)*
@@ -964,7 +964,7 @@ method.
 Boto3 documentation:
 [IAM.Client.get_account_authorization_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_authorization_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
 - `MaxItems`: `int`
@@ -1041,7 +1041,7 @@ Type annotations for `boto3.client("iam").get_group` method.
 Boto3 documentation:
 [IAM.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `Marker`: `str`
@@ -1114,7 +1114,7 @@ method.
 Boto3 documentation:
 [IAM.Client.get_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxItems`: `int`
@@ -1216,7 +1216,7 @@ method.
 Boto3 documentation:
 [IAM.Client.get_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `MaxItems`: `int`
@@ -1233,7 +1233,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.get_service_last_accessed_details_with_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `ServiceNamespace`: `str` *(required)*
@@ -1265,7 +1265,7 @@ Type annotations for `boto3.client("iam").get_ssh_public_key` method.
 Boto3 documentation:
 [IAM.Client.get_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_ssh_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `SSHPublicKeyId`: `str` *(required)*
@@ -1309,7 +1309,7 @@ Type annotations for `boto3.client("iam").list_access_keys` method.
 Boto3 documentation:
 [IAM.Client.list_access_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_access_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str`
 - `Marker`: `str`
@@ -1340,7 +1340,7 @@ Type annotations for `boto3.client("iam").list_attached_group_policies` method.
 Boto3 documentation:
 [IAM.Client.list_attached_group_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_group_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `PathPrefix`: `str`
@@ -1357,7 +1357,7 @@ Type annotations for `boto3.client("iam").list_attached_role_policies` method.
 Boto3 documentation:
 [IAM.Client.list_attached_role_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_role_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PathPrefix`: `str`
@@ -1374,7 +1374,7 @@ Type annotations for `boto3.client("iam").list_attached_user_policies` method.
 Boto3 documentation:
 [IAM.Client.list_attached_user_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_user_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `PathPrefix`: `str`
@@ -1391,7 +1391,7 @@ Type annotations for `boto3.client("iam").list_entities_for_policy` method.
 Boto3 documentation:
 [IAM.Client.list_entities_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_entities_for_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `EntityFilter`: [EntityTypeType](./literals.md#entitytypetype)
@@ -1410,7 +1410,7 @@ Type annotations for `boto3.client("iam").list_group_policies` method.
 Boto3 documentation:
 [IAM.Client.list_group_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_group_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `Marker`: `str`
@@ -1426,7 +1426,7 @@ Type annotations for `boto3.client("iam").list_groups` method.
 Boto3 documentation:
 [IAM.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `PathPrefix`: `str`
 - `Marker`: `str`
@@ -1441,7 +1441,7 @@ Type annotations for `boto3.client("iam").list_groups_for_user` method.
 Boto3 documentation:
 [IAM.Client.list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups_for_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `Marker`: `str`
@@ -1457,7 +1457,7 @@ Type annotations for `boto3.client("iam").list_instance_profile_tags` method.
 Boto3 documentation:
 [IAM.Client.list_instance_profile_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profile_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Marker`: `str`
@@ -1473,7 +1473,7 @@ Type annotations for `boto3.client("iam").list_instance_profiles` method.
 Boto3 documentation:
 [IAM.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `PathPrefix`: `str`
 - `Marker`: `str`
@@ -1490,7 +1490,7 @@ method.
 Boto3 documentation:
 [IAM.Client.list_instance_profiles_for_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `Marker`: `str`
@@ -1506,7 +1506,7 @@ Type annotations for `boto3.client("iam").list_mfa_device_tags` method.
 Boto3 documentation:
 [IAM.Client.list_mfa_device_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_device_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
 - `Marker`: `str`
@@ -1522,7 +1522,7 @@ Type annotations for `boto3.client("iam").list_mfa_devices` method.
 Boto3 documentation:
 [IAM.Client.list_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str`
 - `Marker`: `str`
@@ -1539,7 +1539,7 @@ method.
 Boto3 documentation:
 [IAM.Client.list_open_id_connect_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `Marker`: `str`
@@ -1566,7 +1566,7 @@ Type annotations for `boto3.client("iam").list_policies` method.
 Boto3 documentation:
 [IAM.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [policyScopeTypeType](./literals.md#policyscopetypetype)
 - `OnlyAttached`: `bool`
@@ -1586,7 +1586,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.list_policies_granting_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies_granting_service_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `ServiceNamespaces`: `List`\[`str`\] *(required)*
@@ -1602,7 +1602,7 @@ Type annotations for `boto3.client("iam").list_policy_tags` method.
 Boto3 documentation:
 [IAM.Client.list_policy_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `Marker`: `str`
@@ -1618,7 +1618,7 @@ Type annotations for `boto3.client("iam").list_policy_versions` method.
 Boto3 documentation:
 [IAM.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `Marker`: `str`
@@ -1634,7 +1634,7 @@ Type annotations for `boto3.client("iam").list_role_policies` method.
 Boto3 documentation:
 [IAM.Client.list_role_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `Marker`: `str`
@@ -1650,7 +1650,7 @@ Type annotations for `boto3.client("iam").list_role_tags` method.
 Boto3 documentation:
 [IAM.Client.list_role_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `Marker`: `str`
@@ -1666,7 +1666,7 @@ Type annotations for `boto3.client("iam").list_roles` method.
 Boto3 documentation:
 [IAM.Client.list_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_roles)
 
-Arguments:
+Keyword-only arguments:
 
 - `PathPrefix`: `str`
 - `Marker`: `str`
@@ -1681,7 +1681,7 @@ Type annotations for `boto3.client("iam").list_saml_provider_tags` method.
 Boto3 documentation:
 [IAM.Client.list_saml_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_provider_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
 - `Marker`: `str`
@@ -1707,7 +1707,7 @@ Type annotations for `boto3.client("iam").list_server_certificate_tags` method.
 Boto3 documentation:
 [IAM.Client.list_server_certificate_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificate_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 - `Marker`: `str`
@@ -1723,7 +1723,7 @@ Type annotations for `boto3.client("iam").list_server_certificates` method.
 Boto3 documentation:
 [IAM.Client.list_server_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificates)
 
-Arguments:
+Keyword-only arguments:
 
 - `PathPrefix`: `str`
 - `Marker`: `str`
@@ -1755,7 +1755,7 @@ Type annotations for `boto3.client("iam").list_signing_certificates` method.
 Boto3 documentation:
 [IAM.Client.list_signing_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_signing_certificates)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str`
 - `Marker`: `str`
@@ -1771,7 +1771,7 @@ Type annotations for `boto3.client("iam").list_ssh_public_keys` method.
 Boto3 documentation:
 [IAM.Client.list_ssh_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_ssh_public_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str`
 - `Marker`: `str`
@@ -1787,7 +1787,7 @@ Type annotations for `boto3.client("iam").list_user_policies` method.
 Boto3 documentation:
 [IAM.Client.list_user_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `Marker`: `str`
@@ -1803,7 +1803,7 @@ Type annotations for `boto3.client("iam").list_user_tags` method.
 Boto3 documentation:
 [IAM.Client.list_user_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `Marker`: `str`
@@ -1819,7 +1819,7 @@ Type annotations for `boto3.client("iam").list_users` method.
 Boto3 documentation:
 [IAM.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `PathPrefix`: `str`
 - `Marker`: `str`
@@ -1834,7 +1834,7 @@ Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
 Boto3 documentation:
 [IAM.Client.list_virtual_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssignmentStatus`:
   [assignmentStatusTypeType](./literals.md#assignmentstatustypetype)
@@ -1851,7 +1851,7 @@ Type annotations for `boto3.client("iam").put_group_policy` method.
 Boto3 documentation:
 [IAM.Client.put_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_group_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -1877,7 +1877,7 @@ Type annotations for `boto3.client("iam").put_role_policy` method.
 Boto3 documentation:
 [IAM.Client.put_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -1903,7 +1903,7 @@ Type annotations for `boto3.client("iam").put_user_policy` method.
 Boto3 documentation:
 [IAM.Client.put_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -1970,7 +1970,7 @@ Type annotations for `boto3.client("iam").resync_mfa_device` method.
 Boto3 documentation:
 [IAM.Client.resync_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.resync_mfa_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `SerialNumber`: `str` *(required)*
@@ -2010,7 +2010,7 @@ Type annotations for `boto3.client("iam").simulate_custom_policy` method.
 Boto3 documentation:
 [IAM.Client.simulate_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_custom_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyInputList`: `List`\[`str`\] *(required)*
 - `ActionNames`: `List`\[`str`\] *(required)*
@@ -2035,7 +2035,7 @@ Type annotations for `boto3.client("iam").simulate_principal_policy` method.
 Boto3 documentation:
 [IAM.Client.simulate_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_principal_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicySourceArn`: `str` *(required)*
 - `ActionNames`: `List`\[`str`\] *(required)*
@@ -2254,7 +2254,7 @@ Type annotations for `boto3.client("iam").update_access_key` method.
 Boto3 documentation:
 [IAM.Client.update_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_access_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessKeyId`: `str` *(required)*
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
@@ -2268,7 +2268,7 @@ method.
 Boto3 documentation:
 [IAM.Client.update_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_account_password_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `MinimumPasswordLength`: `int`
 - `RequireSymbols`: `bool`
@@ -2299,7 +2299,7 @@ Type annotations for `boto3.client("iam").update_group` method.
 Boto3 documentation:
 [IAM.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `NewPath`: `str`
@@ -2312,7 +2312,7 @@ Type annotations for `boto3.client("iam").update_login_profile` method.
 Boto3 documentation:
 [IAM.Client.update_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_login_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `Password`: `str`
@@ -2338,7 +2338,7 @@ Type annotations for `boto3.client("iam").update_role` method.
 Boto3 documentation:
 [IAM.Client.update_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `Description`: `str`
@@ -2383,7 +2383,7 @@ Type annotations for `boto3.client("iam").update_server_certificate` method.
 Boto3 documentation:
 [IAM.Client.update_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_server_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 - `NewPath`: `str`
@@ -2397,7 +2397,7 @@ method.
 Boto3 documentation:
 [IAM.Client.update_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_service_specific_credential)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceSpecificCredentialId`: `str` *(required)*
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
@@ -2410,7 +2410,7 @@ Type annotations for `boto3.client("iam").update_signing_certificate` method.
 Boto3 documentation:
 [IAM.Client.update_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_signing_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateId`: `str` *(required)*
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
@@ -2423,7 +2423,7 @@ Type annotations for `boto3.client("iam").update_ssh_public_key` method.
 Boto3 documentation:
 [IAM.Client.update_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_ssh_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `SSHPublicKeyId`: `str` *(required)*
@@ -2436,7 +2436,7 @@ Type annotations for `boto3.client("iam").update_user` method.
 Boto3 documentation:
 [IAM.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `NewPath`: `str`
@@ -2449,7 +2449,7 @@ Type annotations for `boto3.client("iam").upload_server_certificate` method.
 Boto3 documentation:
 [IAM.Client.upload_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_server_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 - `CertificateBody`: `str` *(required)*

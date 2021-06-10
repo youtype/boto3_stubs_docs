@@ -171,7 +171,7 @@ Type annotations for `boto3.client("shield").create_protection` method.
 Boto3 documentation:
 [Shield.Client.create_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
@@ -187,7 +187,7 @@ Type annotations for `boto3.client("shield").create_protection_group` method.
 Boto3 documentation:
 [Shield.Client.create_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionGroupId`: `str` *(required)*
 - `Aggregation`:
@@ -422,7 +422,7 @@ Type annotations for `boto3.client("shield").list_attacks` method.
 Boto3 documentation:
 [Shield.Client.list_attacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_attacks)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArns`: `List`\[`str`\]
 - `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
@@ -471,7 +471,7 @@ Type annotations for
 Boto3 documentation:
 [Shield.Client.list_resources_in_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_resources_in_protection_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionGroupId`: `str` *(required)*
 - `NextToken`: `str`
@@ -544,7 +544,7 @@ Type annotations for `boto3.client("shield").update_protection_group` method.
 Boto3 documentation:
 [Shield.Client.update_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_protection_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionGroupId`: `str` *(required)*
 - `Aggregation`:

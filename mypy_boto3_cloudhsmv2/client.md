@@ -90,7 +90,7 @@ Type annotations for `boto3.client("cloudhsmv2").copy_backup_to_region` method.
 Boto3 documentation:
 [CloudHSMV2.Client.copy_backup_to_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region)
 
-Arguments:
+Keyword-only arguments:
 
 - `DestinationRegion`: `str` *(required)*
 - `BackupId`: `str` *(required)*
@@ -106,7 +106,7 @@ Type annotations for `boto3.client("cloudhsmv2").create_cluster` method.
 Boto3 documentation:
 [CloudHSMV2.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `HsmType`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
@@ -125,7 +125,7 @@ Type annotations for `boto3.client("cloudhsmv2").create_hsm` method.
 Boto3 documentation:
 [CloudHSMV2.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `AvailabilityZone`: `str` *(required)*
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("cloudhsmv2").delete_hsm` method.
 Boto3 documentation:
 [CloudHSMV2.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `HsmId`: `str`
@@ -184,7 +184,7 @@ Type annotations for `boto3.client("cloudhsmv2").describe_backups` method.
 Boto3 documentation:
 [CloudHSMV2.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("cloudhsmv2").describe_clusters` method.
 Boto3 documentation:
 [CloudHSMV2.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `NextToken`: `str`
@@ -234,7 +234,7 @@ Type annotations for `boto3.client("cloudhsmv2").initialize_cluster` method.
 Boto3 documentation:
 [CloudHSMV2.Client.initialize_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `SignedCert`: `str` *(required)*
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("cloudhsmv2").list_tags` method.
 Boto3 documentation:
 [CloudHSMV2.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `NextToken`: `str`

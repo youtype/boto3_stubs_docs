@@ -103,7 +103,7 @@ Type annotations for `boto3.client("transfer").create_access` method.
 Boto3 documentation:
 [Transfer.Client.create_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `Role`: `str` *(required)*
 - `ServerId`: `str` *(required)*
@@ -126,7 +126,7 @@ Type annotations for `boto3.client("transfer").create_server` method.
 Boto3 documentation:
 [Transfer.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `Certificate`: `str`
 - `Domain`: [DomainType](./literals.md#domaintype)
@@ -153,7 +153,7 @@ Type annotations for `boto3.client("transfer").create_user` method.
 Boto3 documentation:
 [Transfer.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `Role`: `str` *(required)*
 - `ServerId`: `str` *(required)*
@@ -200,7 +200,7 @@ Type annotations for `boto3.client("transfer").delete_ssh_public_key` method.
 Boto3 documentation:
 [Transfer.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `SshPublicKeyId`: `str` *(required)*
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("transfer").import_ssh_public_key` method.
 Boto3 documentation:
 [Transfer.Client.import_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `SshPublicKeyBody`: `str` *(required)*
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("transfer").list_accesses` method.
 Boto3 documentation:
 [Transfer.Client.list_accesses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_accesses)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -362,7 +362,7 @@ Type annotations for `boto3.client("transfer").list_tags_for_resource` method.
 Boto3 documentation:
 [Transfer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("transfer").list_users` method.
 Boto3 documentation:
 [Transfer.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -427,7 +427,7 @@ Type annotations for `boto3.client("transfer").test_identity_provider` method.
 Boto3 documentation:
 [Transfer.Client.test_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*
@@ -457,7 +457,7 @@ Type annotations for `boto3.client("transfer").update_access` method.
 Boto3 documentation:
 [Transfer.Client.update_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `ExternalId`: `str` *(required)*
@@ -480,7 +480,7 @@ Type annotations for `boto3.client("transfer").update_server` method.
 Boto3 documentation:
 [Transfer.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `Certificate`: `str`
@@ -504,7 +504,7 @@ Type annotations for `boto3.client("transfer").update_user` method.
 Boto3 documentation:
 [Transfer.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*

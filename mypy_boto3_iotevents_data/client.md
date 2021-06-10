@@ -247,7 +247,7 @@ Type annotations for `boto3.client("iotevents-data").list_alarms` method.
 Boto3 documentation:
 [IoTEventsData.Client.list_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_alarms)
 
-Arguments:
+Keyword-only arguments:
 
 - `alarmModelName`: `str` *(required)*
 - `nextToken`: `str`
@@ -262,7 +262,7 @@ Type annotations for `boto3.client("iotevents-data").list_detectors` method.
 Boto3 documentation:
 [IoTEventsData.Client.list_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_detectors)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorModelName`: `str` *(required)*
 - `stateName`: `str`

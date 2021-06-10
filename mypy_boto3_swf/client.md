@@ -117,7 +117,7 @@ method.
 Boto3 documentation:
 [SWF.Client.count_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_closed_workflow_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
@@ -143,7 +143,7 @@ method.
 Boto3 documentation:
 [SWF.Client.count_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_open_workflow_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
@@ -307,7 +307,7 @@ method.
 Boto3 documentation:
 [SWF.Client.get_workflow_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.get_workflow_execution_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `execution`:
@@ -326,7 +326,7 @@ Type annotations for `boto3.client("swf").list_activity_types` method.
 Boto3 documentation:
 [SWF.Client.list_activity_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_activity_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `registrationStatus`:
@@ -346,7 +346,7 @@ method.
 Boto3 documentation:
 [SWF.Client.list_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_closed_workflow_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("swf").list_domains` method.
 Boto3 documentation:
 [SWF.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `registrationStatus`:
   [RegistrationStatusType](./literals.md#registrationstatustype) *(required)*
@@ -392,7 +392,7 @@ method.
 Boto3 documentation:
 [SWF.Client.list_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_open_workflow_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `startTimeFilter`:
@@ -431,7 +431,7 @@ Type annotations for `boto3.client("swf").list_workflow_types` method.
 Boto3 documentation:
 [SWF.Client.list_workflow_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_workflow_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `registrationStatus`:
@@ -450,7 +450,7 @@ Type annotations for `boto3.client("swf").poll_for_activity_task` method.
 Boto3 documentation:
 [SWF.Client.poll_for_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_activity_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("swf").poll_for_decision_task` method.
 Boto3 documentation:
 [SWF.Client.poll_for_decision_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_decision_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
@@ -498,7 +498,7 @@ Type annotations for `boto3.client("swf").register_activity_type` method.
 Boto3 documentation:
 [SWF.Client.register_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_activity_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -518,7 +518,7 @@ Type annotations for `boto3.client("swf").register_domain` method.
 Boto3 documentation:
 [SWF.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `workflowExecutionRetentionPeriodInDays`: `str` *(required)*
@@ -532,7 +532,7 @@ Type annotations for `boto3.client("swf").register_workflow_type` method.
 Boto3 documentation:
 [SWF.Client.register_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_workflow_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -553,7 +553,7 @@ method.
 Boto3 documentation:
 [SWF.Client.request_cancel_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `workflowId`: `str` *(required)*
@@ -592,7 +592,7 @@ Type annotations for `boto3.client("swf").respond_activity_task_failed` method.
 Boto3 documentation:
 [SWF.Client.respond_activity_task_failed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_failed)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
 - `reason`: `str`
@@ -606,7 +606,7 @@ method.
 Boto3 documentation:
 [SWF.Client.respond_decision_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_decision_task_completed)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
 - `decisions`: `List`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
@@ -619,7 +619,7 @@ Type annotations for `boto3.client("swf").signal_workflow_execution` method.
 Boto3 documentation:
 [SWF.Client.signal_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.signal_workflow_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `workflowId`: `str` *(required)*
@@ -634,7 +634,7 @@ Type annotations for `boto3.client("swf").start_workflow_execution` method.
 Boto3 documentation:
 [SWF.Client.start_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.start_workflow_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `workflowId`: `str` *(required)*
@@ -671,7 +671,7 @@ Type annotations for `boto3.client("swf").terminate_workflow_execution` method.
 Boto3 documentation:
 [SWF.Client.terminate_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.terminate_workflow_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `workflowId`: `str` *(required)*

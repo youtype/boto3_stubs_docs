@@ -116,7 +116,7 @@ Type annotations for `boto3.client("dax").create_cluster` method.
 Boto3 documentation:
 [DAX.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `NodeType`: `str` *(required)*
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("dax").create_subnet_group` method.
 Boto3 documentation:
 [DAX.Client.create_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetGroupName`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
@@ -174,7 +174,7 @@ Type annotations for `boto3.client("dax").decrease_replication_factor` method.
 Boto3 documentation:
 [DAX.Client.decrease_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.decrease_replication_factor)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `NewReplicationFactor`: `int` *(required)*
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("dax").describe_clusters` method.
 Boto3 documentation:
 [DAX.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterNames`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("dax").describe_events` method.
 Boto3 documentation:
 [DAX.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceName`: `str`
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("dax").describe_parameter_groups` method.
 Boto3 documentation:
 [DAX.Client.describe_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameter_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParameterGroupNames`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("dax").describe_parameters` method.
 Boto3 documentation:
 [DAX.Client.describe_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `Source`: `str`
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("dax").describe_subnet_groups` method.
 Boto3 documentation:
 [DAX.Client.describe_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_subnet_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetGroupNames`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("dax").increase_replication_factor` method.
 Boto3 documentation:
 [DAX.Client.increase_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.increase_replication_factor)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `NewReplicationFactor`: `int` *(required)*
@@ -423,7 +423,7 @@ Type annotations for `boto3.client("dax").update_cluster` method.
 Boto3 documentation:
 [DAX.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `Description`: `str`
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("dax").update_subnet_group` method.
 Boto3 documentation:
 [DAX.Client.update_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetGroupName`: `str` *(required)*
 - `Description`: `str`

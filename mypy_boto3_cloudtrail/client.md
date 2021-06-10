@@ -145,7 +145,7 @@ Type annotations for `boto3.client("cloudtrail").create_trail` method.
 Boto3 documentation:
 [CloudTrail.Client.create_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `S3BucketName`: `str` *(required)*
@@ -270,7 +270,7 @@ Type annotations for `boto3.client("cloudtrail").list_public_keys` method.
 Boto3 documentation:
 [CloudTrail.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
@@ -313,7 +313,7 @@ Type annotations for `boto3.client("cloudtrail").lookup_events` method.
 Boto3 documentation:
 [CloudTrail.Client.lookup_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `LookupAttributes`:
   `List`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
@@ -334,7 +334,7 @@ Type annotations for `boto3.client("cloudtrail").put_event_selectors` method.
 Boto3 documentation:
 [CloudTrail.Client.put_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrailName`: `str` *(required)*
 - `EventSelectors`:
@@ -409,7 +409,7 @@ Type annotations for `boto3.client("cloudtrail").update_trail` method.
 Boto3 documentation:
 [CloudTrail.Client.update_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `S3BucketName`: `str`

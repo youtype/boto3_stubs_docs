@@ -107,7 +107,7 @@ method.
 Boto3 documentation:
 [ElasticInference.Client.describe_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators)
 
-Arguments:
+Keyword-only arguments:
 
 - `acceleratorIds`: `List`\[`str`\]
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]

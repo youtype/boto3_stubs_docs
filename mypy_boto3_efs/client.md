@@ -124,7 +124,7 @@ Type annotations for `boto3.client("efs").create_access_point` method.
 Boto3 documentation:
 [EFS.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientToken`: `str` *(required)*
 - `FileSystemId`: `str` *(required)*
@@ -142,7 +142,7 @@ Type annotations for `boto3.client("efs").create_file_system` method.
 Boto3 documentation:
 [EFS.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationToken`: `str` *(required)*
 - `PerformanceMode`: [PerformanceModeType](./literals.md#performancemodetype)
@@ -164,7 +164,7 @@ Type annotations for `boto3.client("efs").create_mount_target` method.
 Boto3 documentation:
 [EFS.Client.create_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `SubnetId`: `str` *(required)*
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("efs").describe_access_points` method.
 Boto3 documentation:
 [EFS.Client.describe_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("efs").describe_file_systems` method.
 Boto3 documentation:
 [EFS.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxItems`: `int`
 - `Marker`: `str`
@@ -356,7 +356,7 @@ Type annotations for `boto3.client("efs").describe_mount_targets` method.
 Boto3 documentation:
 [EFS.Client.describe_mount_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxItems`: `int`
 - `Marker`: `str`
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("efs").describe_tags` method.
 Boto3 documentation:
 [EFS.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `MaxItems`: `int`
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("efs").list_tags_for_resource` method.
 Boto3 documentation:
 [EFS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("efs").put_file_system_policy` method.
 Boto3 documentation:
 [EFS.Client.put_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -523,7 +523,7 @@ Type annotations for `boto3.client("efs").update_file_system` method.
 Boto3 documentation:
 [EFS.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `ThroughputMode`: [ThroughputModeType](./literals.md#throughputmodetype)

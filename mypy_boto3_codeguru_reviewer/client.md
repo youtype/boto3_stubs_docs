@@ -78,7 +78,7 @@ method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.associate_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.associate_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `Repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
   *(required)*
@@ -110,7 +110,7 @@ method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.create_code_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.create_code_review)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RepositoryAssociationArn`: `str` *(required)*
@@ -144,7 +144,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruReviewer.Client.describe_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_recommendation_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 - `RecommendationId`: `str` *(required)*
@@ -208,7 +208,7 @@ method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_code_reviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_code_reviews)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 - `ProviderTypes`: `List`\[[ProviderTypeType](./literals.md#providertypetype)\]
@@ -228,7 +228,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendation_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -247,7 +247,7 @@ method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -264,7 +264,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_repository_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_repository_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProviderTypes`: `List`\[[ProviderTypeType](./literals.md#providertypetype)\]
 - `States`:
@@ -300,7 +300,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruReviewer.Client.put_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.put_recommendation_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 - `RecommendationId`: `str` *(required)*

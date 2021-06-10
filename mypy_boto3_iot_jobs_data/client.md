@@ -80,7 +80,7 @@ method.
 Boto3 documentation:
 [IoTJobsDataPlane.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `thingName`: `str` *(required)*
@@ -130,7 +130,7 @@ Type annotations for
 Boto3 documentation:
 [IoTJobsDataPlane.Client.start_next_pending_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 - `statusDetails`: `Dict`\[`str`, `str`\]
@@ -147,7 +147,7 @@ method.
 Boto3 documentation:
 [IoTJobsDataPlane.Client.update_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `thingName`: `str` *(required)*

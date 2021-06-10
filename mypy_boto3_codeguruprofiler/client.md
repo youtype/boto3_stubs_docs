@@ -103,7 +103,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruProfiler.Client.batch_get_frame_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 - `endTime`: `datetime`
@@ -137,7 +137,7 @@ Type annotations for `boto3.client("codeguruprofiler").configure_agent` method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.configure_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent)
 
-Arguments:
+Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 - `fleetInstanceId`: `str`
@@ -155,7 +155,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.create_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str` *(required)*
 - `profilingGroupName`: `str` *(required)*
@@ -221,7 +221,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruProfiler.Client.get_findings_report_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `dailyReportsOnly`: `bool`
 - `maxResults`: `int`
@@ -265,7 +265,7 @@ Type annotations for `boto3.client("codeguruprofiler").get_profile` method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 - `accept`: `str`
@@ -284,7 +284,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `endTime`: `datetime` *(required)*
 - `profilingGroupName`: `str` *(required)*
@@ -302,7 +302,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.list_findings_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports)
 
-Arguments:
+Keyword-only arguments:
 
 - `endTime`: `datetime` *(required)*
 - `profilingGroupName`: `str` *(required)*
@@ -322,7 +322,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.list_profile_times](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times)
 
-Arguments:
+Keyword-only arguments:
 
 - `endTime`: `datetime` *(required)*
 - `period`: [AggregationPeriodType](./literals.md#aggregationperiodtype)
@@ -344,7 +344,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.list_profiling_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `includeDescription`: `bool`
 - `maxResults`: `int`
@@ -376,7 +376,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.post_agent_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `agentProfile`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `contentType`: `str` *(required)*
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("codeguruprofiler").put_permission` method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `actionGroup`: `Literal['agentPermissions']` (see
   [ActionGroupType](./literals.md#actiongrouptype)) *(required)*
@@ -427,7 +427,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `actionGroup`: `Literal['agentPermissions']` (see
   [ActionGroupType](./literals.md#actiongrouptype)) *(required)*
@@ -444,7 +444,7 @@ Type annotations for `boto3.client("codeguruprofiler").submit_feedback` method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `anomalyInstanceId`: `str` *(required)*
 - `profilingGroupName`: `str` *(required)*

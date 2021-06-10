@@ -91,7 +91,7 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.describe_recommendation_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobIds`: `List`\[`str`\]
 - `filters`: `List`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
@@ -110,7 +110,7 @@ method.
 Boto3 documentation:
 [ComputeOptimizer.Client.export_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
@@ -134,7 +134,7 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.export_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ebs_volume_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
@@ -158,7 +158,7 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.export_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
@@ -183,7 +183,7 @@ method.
 Boto3 documentation:
 [ComputeOptimizer.Client.export_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_lambda_function_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
@@ -226,7 +226,7 @@ method.
 Boto3 documentation:
 [ComputeOptimizer.Client.get_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountIds`: `List`\[`str`\]
 - `autoScalingGroupArns`: `List`\[`str`\]
@@ -245,7 +245,7 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.get_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `volumeArns`: `List`\[`str`\]
 - `nextToken`: `str`
@@ -264,7 +264,7 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.get_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceArns`: `List`\[`str`\]
 - `nextToken`: `str`
@@ -284,7 +284,7 @@ method.
 Boto3 documentation:
 [ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceArn`: `str` *(required)*
 - `stat`: [MetricStatisticType](./literals.md#metricstatistictype) *(required)*
@@ -314,7 +314,7 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.get_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations)
 
-Arguments:
+Keyword-only arguments:
 
 - `functionArns`: `List`\[`str`\]
 - `accountIds`: `List`\[`str`\]
@@ -334,7 +334,7 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.get_recommendation_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountIds`: `List`\[`str`\]
 - `nextToken`: `str`

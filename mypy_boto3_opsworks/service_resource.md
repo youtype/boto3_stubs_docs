@@ -118,7 +118,7 @@ Type annotations for `boto3.resource("opsworks").create_stack` method.
 Boto3 documentation:
 [OpsWorks.ServiceResource.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.create_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Region`: `str` *(required)*
@@ -315,7 +315,7 @@ Type annotations for `boto3.resource("opsworks").create_layer` method.
 Boto3 documentation:
 [OpsWorks.Stack.create_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.create_layer)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [LayerTypeType](./literals.md#layertypetype) *(required)*
 - `Name`: `str` *(required)*

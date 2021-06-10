@@ -136,7 +136,7 @@ Type annotations for `boto3.client("athena").create_data_catalog` method.
 Boto3 documentation:
 [Athena.Client.create_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_data_catalog)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype) *(required)*
@@ -153,7 +153,7 @@ Type annotations for `boto3.client("athena").create_named_query` method.
 Boto3 documentation:
 [Athena.Client.create_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_named_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Database`: `str` *(required)*
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("athena").create_prepared_statement` method.
 Boto3 documentation:
 [Athena.Client.create_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_prepared_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `StatementName`: `str` *(required)*
 - `WorkGroup`: `str` *(required)*
@@ -188,7 +188,7 @@ Type annotations for `boto3.client("athena").create_work_group` method.
 Boto3 documentation:
 [Athena.Client.create_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_work_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Configuration`:
@@ -346,7 +346,7 @@ Type annotations for `boto3.client("athena").get_query_results` method.
 Boto3 documentation:
 [Athena.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_results)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryExecutionId`: `str` *(required)*
 - `NextToken`: `str`
@@ -362,7 +362,7 @@ Type annotations for `boto3.client("athena").get_table_metadata` method.
 Boto3 documentation:
 [Athena.Client.get_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_table_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogName`: `str` *(required)*
 - `DatabaseName`: `str` *(required)*
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("athena").list_databases` method.
 Boto3 documentation:
 [Athena.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_databases)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogName`: `str` *(required)*
 - `NextToken`: `str`
@@ -437,7 +437,7 @@ Type annotations for `boto3.client("athena").list_named_queries` method.
 Boto3 documentation:
 [Athena.Client.list_named_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_named_queries)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -453,7 +453,7 @@ Type annotations for `boto3.client("athena").list_prepared_statements` method.
 Boto3 documentation:
 [Athena.Client.list_prepared_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_prepared_statements)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkGroup`: `str` *(required)*
 - `NextToken`: `str`
@@ -469,7 +469,7 @@ Type annotations for `boto3.client("athena").list_query_executions` method.
 Boto3 documentation:
 [Athena.Client.list_query_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_query_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("athena").list_table_metadata` method.
 Boto3 documentation:
 [Athena.Client.list_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_table_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogName`: `str` *(required)*
 - `DatabaseName`: `str` *(required)*
@@ -503,7 +503,7 @@ Type annotations for `boto3.client("athena").list_tags_for_resource` method.
 Boto3 documentation:
 [Athena.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `NextToken`: `str`
@@ -534,7 +534,7 @@ Type annotations for `boto3.client("athena").start_query_execution` method.
 Boto3 documentation:
 [Athena.Client.start_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_query_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryString`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -595,7 +595,7 @@ Type annotations for `boto3.client("athena").update_data_catalog` method.
 Boto3 documentation:
 [Athena.Client.update_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_data_catalog)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype) *(required)*
@@ -611,7 +611,7 @@ Type annotations for `boto3.client("athena").update_prepared_statement` method.
 Boto3 documentation:
 [Athena.Client.update_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_prepared_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `StatementName`: `str` *(required)*
 - `WorkGroup`: `str` *(required)*
@@ -627,7 +627,7 @@ Type annotations for `boto3.client("athena").update_work_group` method.
 Boto3 documentation:
 [Athena.Client.update_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_work_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkGroup`: `str` *(required)*
 - `Description`: `str`

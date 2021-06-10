@@ -238,7 +238,7 @@ Type annotations for
 Boto3 documentation:
 [SES.Client.create_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_custom_verification_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `FromEmailAddress`: `str` *(required)*
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("ses").create_receipt_rule` method.
 Boto3 documentation:
 [SES.Client.create_receipt_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.create_receipt_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleSetName`: `str` *(required)*
 - `Rule`: [ReceiptRuleTypeDef](./type_defs.md#receiptruletypedef) *(required)*
@@ -691,7 +691,7 @@ Type annotations for `boto3.client("ses").list_identities` method.
 Boto3 documentation:
 [SES.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.list_identities)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `NextToken`: `str`
@@ -787,7 +787,7 @@ Type annotations for `boto3.client("ses").put_identity_policy` method.
 Boto3 documentation:
 [SES.Client.put_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.put_identity_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Identity`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -816,7 +816,7 @@ Type annotations for `boto3.client("ses").send_bounce` method.
 Boto3 documentation:
 [SES.Client.send_bounce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bounce)
 
-Arguments:
+Keyword-only arguments:
 
 - `OriginalMessageId`: `str` *(required)*
 - `BounceSender`: `str` *(required)*
@@ -836,7 +836,7 @@ Type annotations for `boto3.client("ses").send_bulk_templated_email` method.
 Boto3 documentation:
 [SES.Client.send_bulk_templated_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_bulk_templated_email)
 
-Arguments:
+Keyword-only arguments:
 
 - `Source`: `str` *(required)*
 - `Template`: `str` *(required)*
@@ -864,7 +864,7 @@ method.
 Boto3 documentation:
 [SES.Client.send_custom_verification_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_custom_verification_email)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailAddress`: `str` *(required)*
 - `TemplateName`: `str` *(required)*
@@ -880,7 +880,7 @@ Type annotations for `boto3.client("ses").send_email` method.
 Boto3 documentation:
 [SES.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_email)
 
-Arguments:
+Keyword-only arguments:
 
 - `Source`: `str` *(required)*
 - `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
@@ -902,7 +902,7 @@ Type annotations for `boto3.client("ses").send_raw_email` method.
 Boto3 documentation:
 [SES.Client.send_raw_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_raw_email)
 
-Arguments:
+Keyword-only arguments:
 
 - `RawMessage`: [RawMessageTypeDef](./type_defs.md#rawmessagetypedef)
   *(required)*
@@ -924,7 +924,7 @@ Type annotations for `boto3.client("ses").send_templated_email` method.
 Boto3 documentation:
 [SES.Client.send_templated_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.send_templated_email)
 
-Arguments:
+Keyword-only arguments:
 
 - `Source`: `str` *(required)*
 - `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
@@ -992,7 +992,7 @@ Type annotations for
 Boto3 documentation:
 [SES.Client.set_identity_headers_in_notifications_enabled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_headers_in_notifications_enabled)
 
-Arguments:
+Keyword-only arguments:
 
 - `Identity`: `str` *(required)*
 - `NotificationType`:
@@ -1009,7 +1009,7 @@ method.
 Boto3 documentation:
 [SES.Client.set_identity_mail_from_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_mail_from_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `Identity`: `str` *(required)*
 - `MailFromDomain`: `str`
@@ -1026,7 +1026,7 @@ method.
 Boto3 documentation:
 [SES.Client.set_identity_notification_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_identity_notification_topic)
 
-Arguments:
+Keyword-only arguments:
 
 - `Identity`: `str` *(required)*
 - `NotificationType`:
@@ -1042,7 +1042,7 @@ Type annotations for `boto3.client("ses").set_receipt_rule_position` method.
 Boto3 documentation:
 [SES.Client.set_receipt_rule_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.set_receipt_rule_position)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleSetName`: `str` *(required)*
 - `RuleName`: `str` *(required)*
@@ -1145,7 +1145,7 @@ Type annotations for
 Boto3 documentation:
 [SES.Client.update_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.update_custom_verification_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `FromEmailAddress`: `str`

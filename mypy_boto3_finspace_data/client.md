@@ -76,7 +76,7 @@ Type annotations for `boto3.client("finspace-data").create_changeset` method.
 Boto3 documentation:
 [FinSpaceData.Client.create_changeset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_changeset)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetId`: `str` *(required)*
 - `changeType`: [ChangeTypeType](./literals.md#changetypetype) *(required)*

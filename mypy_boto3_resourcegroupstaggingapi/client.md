@@ -113,7 +113,7 @@ Type annotations for
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetIdFilters`: `List`\[`str`\]
 - `RegionFilters`: `List`\[`str`\]
@@ -135,7 +135,7 @@ method.
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `PaginationToken`: `str`
 - `TagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]

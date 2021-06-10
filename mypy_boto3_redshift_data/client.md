@@ -111,7 +111,7 @@ Type annotations for `boto3.client("redshift-data").describe_table` method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("redshift-data").execute_statement` method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 - `Sql`: `str` *(required)*
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("redshift-data").list_databases` method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str`
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("redshift-data").list_schemas` method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
@@ -226,7 +226,7 @@ Type annotations for `boto3.client("redshift-data").list_statements` method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.list_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -244,7 +244,7 @@ Type annotations for `boto3.client("redshift-data").list_tables` method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*

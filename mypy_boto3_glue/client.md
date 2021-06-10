@@ -237,7 +237,7 @@ Type annotations for `boto3.client("glue").batch_create_partition` method.
 Boto3 documentation:
 [Glue.Client.batch_create_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_create_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("glue").batch_delete_partition` method.
 Boto3 documentation:
 [Glue.Client.batch_delete_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("glue").batch_delete_table` method.
 Boto3 documentation:
 [Glue.Client.batch_delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TablesToDelete`: `List`\[`str`\] *(required)*
@@ -306,7 +306,7 @@ Type annotations for `boto3.client("glue").batch_delete_table_version` method.
 Boto3 documentation:
 [Glue.Client.batch_delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("glue").batch_get_partition` method.
 Boto3 documentation:
 [Glue.Client.batch_get_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -428,7 +428,7 @@ Type annotations for `boto3.client("glue").batch_update_partition` method.
 Boto3 documentation:
 [Glue.Client.batch_update_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_update_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -492,7 +492,7 @@ Type annotations for `boto3.client("glue").create_classifier` method.
 Boto3 documentation:
 [Glue.Client.create_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_classifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `GrokClassifier`:
   [CreateGrokClassifierRequestTypeDef](./type_defs.md#creategrokclassifierrequesttypedef)
@@ -527,7 +527,7 @@ Type annotations for `boto3.client("glue").create_crawler` method.
 Boto3 documentation:
 [Glue.Client.create_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_crawler)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Role`: `str` *(required)*
@@ -571,7 +571,7 @@ Type annotations for `boto3.client("glue").create_dev_endpoint` method.
 Boto3 documentation:
 [Glue.Client.create_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_dev_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
@@ -599,7 +599,7 @@ Type annotations for `boto3.client("glue").create_job` method.
 Boto3 documentation:
 [Glue.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Role`: `str` *(required)*
@@ -633,7 +633,7 @@ Type annotations for `boto3.client("glue").create_ml_transform` method.
 Boto3 documentation:
 [Glue.Client.create_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_ml_transform)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InputRecordTables`:
@@ -663,7 +663,7 @@ Type annotations for `boto3.client("glue").create_partition` method.
 Boto3 documentation:
 [Glue.Client.create_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -680,7 +680,7 @@ Type annotations for `boto3.client("glue").create_partition_index` method.
 Boto3 documentation:
 [Glue.Client.create_partition_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition_index)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -697,7 +697,7 @@ Type annotations for `boto3.client("glue").create_registry` method.
 Boto3 documentation:
 [Glue.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_registry)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `Description`: `str`
@@ -713,7 +713,7 @@ Type annotations for `boto3.client("glue").create_schema` method.
 Boto3 documentation:
 [Glue.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaName`: `str` *(required)*
 - `DataFormat`: `Literal['AVRO']` (see
@@ -734,7 +734,7 @@ Type annotations for `boto3.client("glue").create_script` method.
 Boto3 documentation:
 [Glue.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_script)
 
-Arguments:
+Keyword-only arguments:
 
 - `DagNodes`: `List`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
 - `DagEdges`: `List`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
@@ -768,7 +768,7 @@ Type annotations for `boto3.client("glue").create_table` method.
 Boto3 documentation:
 [Glue.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableInput`: [TableInputTypeDef](./type_defs.md#tableinputtypedef)
@@ -786,7 +786,7 @@ Type annotations for `boto3.client("glue").create_trigger` method.
 Boto3 documentation:
 [Glue.Client.create_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_trigger)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Type`: [TriggerTypeType](./literals.md#triggertypetype) *(required)*
@@ -810,7 +810,7 @@ method.
 Boto3 documentation:
 [Glue.Client.create_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_user_defined_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `FunctionInput`:
@@ -827,7 +827,7 @@ Type annotations for `boto3.client("glue").create_workflow` method.
 Boto3 documentation:
 [Glue.Client.create_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_workflow)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
@@ -859,7 +859,7 @@ Type annotations for
 Boto3 documentation:
 [Glue.Client.delete_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -877,7 +877,7 @@ method.
 Boto3 documentation:
 [Glue.Client.delete_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -974,7 +974,7 @@ Type annotations for `boto3.client("glue").delete_partition` method.
 Boto3 documentation:
 [Glue.Client.delete_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -990,7 +990,7 @@ Type annotations for `boto3.client("glue").delete_partition_index` method.
 Boto3 documentation:
 [Glue.Client.delete_partition_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition_index)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1078,7 +1078,7 @@ Type annotations for `boto3.client("glue").delete_table` method.
 Boto3 documentation:
 [Glue.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -1093,7 +1093,7 @@ Type annotations for `boto3.client("glue").delete_table_version` method.
 Boto3 documentation:
 [Glue.Client.delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1124,7 +1124,7 @@ method.
 Boto3 documentation:
 [Glue.Client.delete_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_user_defined_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `FunctionName`: `str` *(required)*
@@ -1213,7 +1213,7 @@ method.
 Boto3 documentation:
 [Glue.Client.get_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1232,7 +1232,7 @@ method.
 Boto3 documentation:
 [Glue.Client.get_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1249,7 +1249,7 @@ Type annotations for `boto3.client("glue").get_connection` method.
 Boto3 documentation:
 [Glue.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `CatalogId`: `str`
@@ -1265,7 +1265,7 @@ Type annotations for `boto3.client("glue").get_connections` method.
 Boto3 documentation:
 [Glue.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogId`: `str`
 - `Filter`:
@@ -1297,7 +1297,7 @@ Type annotations for `boto3.client("glue").get_crawler_metrics` method.
 Boto3 documentation:
 [Glue.Client.get_crawler_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `CrawlerNameList`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -1358,7 +1358,7 @@ Type annotations for `boto3.client("glue").get_databases` method.
 Boto3 documentation:
 [Glue.Client.get_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_databases)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogId`: `str`
 - `NextToken`: `str`
@@ -1447,7 +1447,7 @@ Type annotations for `boto3.client("glue").get_job_run` method.
 Boto3 documentation:
 [Glue.Client.get_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 - `RunId`: `str` *(required)*
@@ -1462,7 +1462,7 @@ Type annotations for `boto3.client("glue").get_job_runs` method.
 Boto3 documentation:
 [Glue.Client.get_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 - `NextToken`: `str`
@@ -1491,7 +1491,7 @@ Type annotations for `boto3.client("glue").get_mapping` method.
 Boto3 documentation:
 [Glue.Client.get_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
   *(required)*
@@ -1522,7 +1522,7 @@ Type annotations for `boto3.client("glue").get_ml_task_runs` method.
 Boto3 documentation:
 [Glue.Client.get_ml_task_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransformId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1556,7 +1556,7 @@ Type annotations for `boto3.client("glue").get_ml_transforms` method.
 Boto3 documentation:
 [Glue.Client.get_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transforms)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1575,7 +1575,7 @@ Type annotations for `boto3.client("glue").get_partition` method.
 Boto3 documentation:
 [Glue.Client.get_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1592,7 +1592,7 @@ Type annotations for `boto3.client("glue").get_partition_indexes` method.
 Boto3 documentation:
 [Glue.Client.get_partition_indexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition_indexes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1609,7 +1609,7 @@ Type annotations for `boto3.client("glue").get_partitions` method.
 Boto3 documentation:
 [Glue.Client.get_partitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1630,7 +1630,7 @@ Type annotations for `boto3.client("glue").get_plan` method.
 Boto3 documentation:
 [Glue.Client.get_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `Mapping`:
   `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
@@ -1723,7 +1723,7 @@ Type annotations for `boto3.client("glue").get_schema_version` method.
 Boto3 documentation:
 [Glue.Client.get_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaVersionId`: `str`
@@ -1740,7 +1740,7 @@ Type annotations for `boto3.client("glue").get_schema_versions_diff` method.
 Boto3 documentation:
 [Glue.Client.get_schema_versions_diff](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_versions_diff)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `FirstSchemaVersionNumber`:
@@ -1791,7 +1791,7 @@ Type annotations for `boto3.client("glue").get_table` method.
 Boto3 documentation:
 [Glue.Client.get_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -1806,7 +1806,7 @@ Type annotations for `boto3.client("glue").get_table_version` method.
 Boto3 documentation:
 [Glue.Client.get_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1823,7 +1823,7 @@ Type annotations for `boto3.client("glue").get_table_versions` method.
 Boto3 documentation:
 [Glue.Client.get_table_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -1841,7 +1841,7 @@ Type annotations for `boto3.client("glue").get_tables` method.
 Boto3 documentation:
 [Glue.Client.get_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `CatalogId`: `str`
@@ -1884,7 +1884,7 @@ Type annotations for `boto3.client("glue").get_triggers` method.
 Boto3 documentation:
 [Glue.Client.get_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_triggers)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `DependentJobName`: `str`
@@ -1900,7 +1900,7 @@ Type annotations for `boto3.client("glue").get_user_defined_function` method.
 Boto3 documentation:
 [Glue.Client.get_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `FunctionName`: `str` *(required)*
@@ -1916,7 +1916,7 @@ Type annotations for `boto3.client("glue").get_user_defined_functions` method.
 Boto3 documentation:
 [Glue.Client.get_user_defined_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_functions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Pattern`: `str` *(required)*
 - `CatalogId`: `str`
@@ -1949,7 +1949,7 @@ Type annotations for `boto3.client("glue").get_workflow_run` method.
 Boto3 documentation:
 [Glue.Client.get_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
@@ -1980,7 +1980,7 @@ Type annotations for `boto3.client("glue").get_workflow_runs` method.
 Boto3 documentation:
 [Glue.Client.get_workflow_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `IncludeGraph`: `bool`
@@ -2010,7 +2010,7 @@ Type annotations for `boto3.client("glue").list_crawlers` method.
 Boto3 documentation:
 [Glue.Client.list_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawlers)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -2026,7 +2026,7 @@ Type annotations for `boto3.client("glue").list_dev_endpoints` method.
 Boto3 documentation:
 [Glue.Client.list_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_dev_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2042,7 +2042,7 @@ Type annotations for `boto3.client("glue").list_jobs` method.
 Boto3 documentation:
 [Glue.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2057,7 +2057,7 @@ Type annotations for `boto3.client("glue").list_ml_transforms` method.
 Boto3 documentation:
 [Glue.Client.list_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_ml_transforms)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2092,7 +2092,7 @@ Type annotations for `boto3.client("glue").list_schema_versions` method.
 Boto3 documentation:
 [Glue.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schema_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `MaxResults`: `int`
@@ -2108,7 +2108,7 @@ Type annotations for `boto3.client("glue").list_schemas` method.
 Boto3 documentation:
 [Glue.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schemas)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 - `MaxResults`: `int`
@@ -2124,7 +2124,7 @@ Type annotations for `boto3.client("glue").list_triggers` method.
 Boto3 documentation:
 [Glue.Client.list_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_triggers)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `DependentJobName`: `str`
@@ -2173,7 +2173,7 @@ Type annotations for `boto3.client("glue").put_resource_policy` method.
 Boto3 documentation:
 [Glue.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyInJson`: `str` *(required)*
 - `ResourceArn`: `str`
@@ -2193,7 +2193,7 @@ Type annotations for `boto3.client("glue").put_schema_version_metadata` method.
 Boto3 documentation:
 [Glue.Client.put_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_schema_version_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `MetadataKeyValue`:
   [MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)
@@ -2213,7 +2213,7 @@ Type annotations for `boto3.client("glue").put_workflow_run_properties` method.
 Boto3 documentation:
 [Glue.Client.put_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_workflow_run_properties)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
@@ -2229,7 +2229,7 @@ method.
 Boto3 documentation:
 [Glue.Client.query_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.query_schema_version_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
 - `SchemaVersionNumber`:
@@ -2266,7 +2266,7 @@ method.
 Boto3 documentation:
 [Glue.Client.remove_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.remove_schema_version_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `MetadataKeyValue`:
   [MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)
@@ -2301,7 +2301,7 @@ Type annotations for `boto3.client("glue").resume_workflow_run` method.
 Boto3 documentation:
 [Glue.Client.resume_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.resume_workflow_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
@@ -2317,7 +2317,7 @@ Type annotations for `boto3.client("glue").search_tables` method.
 Boto3 documentation:
 [Glue.Client.search_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.search_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogId`: `str`
 - `NextToken`: `str`
@@ -2383,7 +2383,7 @@ method.
 Boto3 documentation:
 [Glue.Client.start_import_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_import_labels_task_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransformId`: `str` *(required)*
 - `InputS3Path`: `str` *(required)*
@@ -2399,7 +2399,7 @@ Type annotations for `boto3.client("glue").start_job_run` method.
 Boto3 documentation:
 [Glue.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_job_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 - `JobRunId`: `str`
@@ -2564,7 +2564,7 @@ Type annotations for `boto3.client("glue").update_classifier` method.
 Boto3 documentation:
 [Glue.Client.update_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_classifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `GrokClassifier`:
   [UpdateGrokClassifierRequestTypeDef](./type_defs.md#updategrokclassifierrequesttypedef)
@@ -2585,7 +2585,7 @@ Type annotations for
 Boto3 documentation:
 [Glue.Client.update_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -2606,7 +2606,7 @@ method.
 Boto3 documentation:
 [Glue.Client.update_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -2625,7 +2625,7 @@ Type annotations for `boto3.client("glue").update_connection` method.
 Boto3 documentation:
 [Glue.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ConnectionInput`:
@@ -2641,7 +2641,7 @@ Type annotations for `boto3.client("glue").update_crawler` method.
 Boto3 documentation:
 [Glue.Client.update_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Role`: `str`
@@ -2682,7 +2682,7 @@ Type annotations for `boto3.client("glue").update_database` method.
 Boto3 documentation:
 [Glue.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DatabaseInput`: [DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef)
@@ -2698,7 +2698,7 @@ Type annotations for `boto3.client("glue").update_dev_endpoint` method.
 Boto3 documentation:
 [Glue.Client.update_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_dev_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `PublicKey`: `str`
@@ -2733,7 +2733,7 @@ Type annotations for `boto3.client("glue").update_ml_transform` method.
 Boto3 documentation:
 [Glue.Client.update_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_ml_transform)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransformId`: `str` *(required)*
 - `Name`: `str`
@@ -2758,7 +2758,7 @@ Type annotations for `boto3.client("glue").update_partition` method.
 Boto3 documentation:
 [Glue.Client.update_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_partition)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -2792,7 +2792,7 @@ Type annotations for `boto3.client("glue").update_schema` method.
 Boto3 documentation:
 [Glue.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
 - `SchemaVersionNumber`:
@@ -2810,7 +2810,7 @@ Type annotations for `boto3.client("glue").update_table` method.
 Boto3 documentation:
 [Glue.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableInput`: [TableInputTypeDef](./type_defs.md#tableinputtypedef)
@@ -2844,7 +2844,7 @@ method.
 Boto3 documentation:
 [Glue.Client.update_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_user_defined_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `FunctionName`: `str` *(required)*
@@ -2862,7 +2862,7 @@ Type annotations for `boto3.client("glue").update_workflow` method.
 Boto3 documentation:
 [Glue.Client.update_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_workflow)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`

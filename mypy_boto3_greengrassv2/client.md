@@ -111,7 +111,7 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.create_component_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_component_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `lambdaFunction`:
@@ -128,7 +128,7 @@ Type annotations for `boto3.client("greengrassv2").create_deployment` method.
 Boto3 documentation:
 [GreengrassV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `targetArn`: `str` *(required)*
 - `deploymentName`: `str`
@@ -264,7 +264,7 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.list_component_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_component_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `maxResults`: `int`
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("greengrassv2").list_components` method.
 Boto3 documentation:
 [GreengrassV2.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_components)
 
-Arguments:
+Keyword-only arguments:
 
 - `scope`:
   [ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype)
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("greengrassv2").list_core_devices` method.
 Boto3 documentation:
 [GreengrassV2.Client.list_core_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_core_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingGroupArn`: `str`
 - `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("greengrassv2").list_deployments` method.
 Boto3 documentation:
 [GreengrassV2.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_deployments)
 
-Arguments:
+Keyword-only arguments:
 
 - `targetArn`: `str`
 - `historyFilter`:
@@ -333,7 +333,7 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.list_effective_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_effective_deployments)
 
-Arguments:
+Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
 - `maxResults`: `int`
@@ -350,7 +350,7 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.list_installed_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_installed_components)
 
-Arguments:
+Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
 - `maxResults`: `int`

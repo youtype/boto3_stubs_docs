@@ -98,7 +98,7 @@ Type annotations for `boto3.client("glacier").abort_multipart_upload` method.
 Boto3 documentation:
 [Glacier.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.abort_multipart_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("glacier").add_tags_to_vault` method.
 Boto3 documentation:
 [Glacier.Client.add_tags_to_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.add_tags_to_vault)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -150,7 +150,7 @@ method.
 Boto3 documentation:
 [Glacier.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.complete_multipart_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("glacier").complete_vault_lock` method.
 Boto3 documentation:
 [Glacier.Client.complete_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.complete_vault_lock)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -195,7 +195,7 @@ Type annotations for `boto3.client("glacier").delete_archive` method.
 Boto3 documentation:
 [Glacier.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.delete_archive)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -246,7 +246,7 @@ Type annotations for `boto3.client("glacier").describe_job` method.
 Boto3 documentation:
 [Glacier.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.describe_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -308,7 +308,7 @@ Type annotations for `boto3.client("glacier").get_job_output` method.
 Boto3 documentation:
 [Glacier.Client.get_job_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.get_job_output)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("glacier").initiate_job` method.
 Boto3 documentation:
 [Glacier.Client.initiate_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -384,7 +384,7 @@ method.
 Boto3 documentation:
 [Glacier.Client.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_multipart_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("glacier").initiate_vault_lock` method.
 Boto3 documentation:
 [Glacier.Client.initiate_vault_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.initiate_vault_lock)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -417,7 +417,7 @@ Type annotations for `boto3.client("glacier").list_jobs` method.
 Boto3 documentation:
 [Glacier.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("glacier").list_multipart_uploads` method.
 Boto3 documentation:
 [Glacier.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_multipart_uploads)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -452,7 +452,7 @@ Type annotations for `boto3.client("glacier").list_parts` method.
 Boto3 documentation:
 [Glacier.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_parts)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("glacier").list_vaults` method.
 Boto3 documentation:
 [Glacier.Client.list_vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.list_vaults)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `marker`: `str`
@@ -529,7 +529,7 @@ Type annotations for `boto3.client("glacier").remove_tags_from_vault` method.
 Boto3 documentation:
 [Glacier.Client.remove_tags_from_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.remove_tags_from_vault)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -556,7 +556,7 @@ Type annotations for `boto3.client("glacier").set_vault_access_policy` method.
 Boto3 documentation:
 [Glacier.Client.set_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_vault_access_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -569,7 +569,7 @@ Type annotations for `boto3.client("glacier").set_vault_notifications` method.
 Boto3 documentation:
 [Glacier.Client.set_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.set_vault_notifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -583,7 +583,7 @@ Type annotations for `boto3.client("glacier").upload_archive` method.
 Boto3 documentation:
 [Glacier.Client.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.upload_archive)
 
-Arguments:
+Keyword-only arguments:
 
 - `vaultName`: `str` *(required)*
 - `accountId`: `str` *(required)*
@@ -601,7 +601,7 @@ Type annotations for `boto3.client("glacier").upload_multipart_part` method.
 Boto3 documentation:
 [Glacier.Client.upload_multipart_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.upload_multipart_part)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*

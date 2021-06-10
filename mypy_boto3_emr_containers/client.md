@@ -103,7 +103,7 @@ method.
 Boto3 documentation:
 [EMRContainers.Client.create_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `virtualClusterId`: `str` *(required)*
@@ -127,7 +127,7 @@ method.
 Boto3 documentation:
 [EMRContainers.Client.create_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `containerProvider`:
@@ -240,7 +240,7 @@ Type annotations for `boto3.client("emr-containers").list_job_runs` method.
 Boto3 documentation:
 [EMRContainers.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualClusterId`: `str` *(required)*
 - `createdBefore`: `datetime`
@@ -261,7 +261,7 @@ method.
 Boto3 documentation:
 [EMRContainers.Client.list_managed_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualClusterId`: `str` *(required)*
 - `createdBefore`: `datetime`
@@ -297,7 +297,7 @@ method.
 Boto3 documentation:
 [EMRContainers.Client.list_virtual_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `containerProviderId`: `str`
 - `containerProviderType`: `Literal['EKS']` (see
@@ -319,7 +319,7 @@ Type annotations for `boto3.client("emr-containers").start_job_run` method.
 Boto3 documentation:
 [EMRContainers.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualClusterId`: `str` *(required)*
 - `clientToken`: `str` *(required)*

@@ -167,7 +167,7 @@ Type annotations for `boto3.client("macie").list_s3_resources` method.
 Boto3 documentation:
 [Macie.Client.list_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_s3_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `memberAccountId`: `str`
 - `nextToken`: `str`

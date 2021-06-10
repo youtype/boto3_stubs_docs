@@ -259,7 +259,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.create_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_document_classifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentClassifierName`: `str` *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
@@ -288,7 +288,7 @@ Type annotations for `boto3.client("comprehend").create_endpoint` method.
 Boto3 documentation:
 [Comprehend.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `ModelArn`: `str` *(required)*
@@ -308,7 +308,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.create_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_entity_recognizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `RecognizerName`: `str` *(required)*
 - `DataAccessRoleArn`: `str` *(required)*
@@ -553,7 +553,7 @@ Type annotations for `boto3.client("comprehend").detect_entities` method.
 Boto3 documentation:
 [Comprehend.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -651,7 +651,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.list_document_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classification_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [DocumentClassificationJobFilterTypeDef](./type_defs.md#documentclassificationjobfiltertypedef)
@@ -669,7 +669,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.list_document_classifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classifiers)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [DocumentClassifierFilterTypeDef](./type_defs.md#documentclassifierfiltertypedef)
@@ -687,7 +687,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.list_dominant_language_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_dominant_language_detection_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [DominantLanguageDetectionJobFilterTypeDef](./type_defs.md#dominantlanguagedetectionjobfiltertypedef)
@@ -704,7 +704,7 @@ Type annotations for `boto3.client("comprehend").list_endpoints` method.
 Boto3 documentation:
 [Comprehend.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`: [EndpointFilterTypeDef](./type_defs.md#endpointfiltertypedef)
 - `NextToken`: `str`
@@ -721,7 +721,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.list_entities_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entities_detection_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [EntitiesDetectionJobFilterTypeDef](./type_defs.md#entitiesdetectionjobfiltertypedef)
@@ -739,7 +739,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.list_entity_recognizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entity_recognizers)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [EntityRecognizerFilterTypeDef](./type_defs.md#entityrecognizerfiltertypedef)
@@ -757,7 +757,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.list_events_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_events_detection_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [EventsDetectionJobFilterTypeDef](./type_defs.md#eventsdetectionjobfiltertypedef)
@@ -775,7 +775,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.list_key_phrases_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_key_phrases_detection_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [KeyPhrasesDetectionJobFilterTypeDef](./type_defs.md#keyphrasesdetectionjobfiltertypedef)
@@ -793,7 +793,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.list_pii_entities_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_pii_entities_detection_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [PiiEntitiesDetectionJobFilterTypeDef](./type_defs.md#piientitiesdetectionjobfiltertypedef)
@@ -811,7 +811,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.list_sentiment_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_sentiment_detection_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [SentimentDetectionJobFilterTypeDef](./type_defs.md#sentimentdetectionjobfiltertypedef)
@@ -844,7 +844,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.list_topics_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_topics_detection_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filter`:
   [TopicsDetectionJobFilterTypeDef](./type_defs.md#topicsdetectionjobfiltertypedef)
@@ -862,7 +862,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.start_document_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_document_classification_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentClassifierArn`: `str` *(required)*
 - `InputDataConfig`:
@@ -887,7 +887,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.start_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_dominant_language_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -911,7 +911,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.start_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_entities_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -938,7 +938,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.start_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_events_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -963,7 +963,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.start_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_key_phrases_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -989,7 +989,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.start_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_pii_entities_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -1018,7 +1018,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.start_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_sentiment_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
@@ -1044,7 +1044,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.start_topics_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_topics_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*

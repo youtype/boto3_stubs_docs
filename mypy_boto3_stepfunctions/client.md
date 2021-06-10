@@ -132,7 +132,7 @@ method.
 Boto3 documentation:
 [SFN.Client.create_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `definition`: `str` *(required)*
@@ -272,7 +272,7 @@ method.
 Boto3 documentation:
 [SFN.Client.get_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `executionArn`: `str` *(required)*
 - `maxResults`: `int`
@@ -305,7 +305,7 @@ Type annotations for `boto3.client("stepfunctions").list_executions` method.
 Boto3 documentation:
 [SFN.Client.list_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `stateMachineArn`: `str` *(required)*
 - `statusFilter`: [ExecutionStatusType](./literals.md#executionstatustype)
@@ -353,7 +353,7 @@ Type annotations for `boto3.client("stepfunctions").send_task_failure` method.
 Boto3 documentation:
 [SFN.Client.send_task_failure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
 - `error`: `str`
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("stepfunctions").start_execution` method.
 Boto3 documentation:
 [SFN.Client.start_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `stateMachineArn`: `str` *(required)*
 - `name`: `str`
@@ -414,7 +414,7 @@ method.
 Boto3 documentation:
 [SFN.Client.start_sync_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `stateMachineArn`: `str` *(required)*
 - `name`: `str`
@@ -431,7 +431,7 @@ Type annotations for `boto3.client("stepfunctions").stop_execution` method.
 Boto3 documentation:
 [SFN.Client.stop_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `executionArn`: `str` *(required)*
 - `error`: `str`
@@ -476,7 +476,7 @@ method.
 Boto3 documentation:
 [SFN.Client.update_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine)
 
-Arguments:
+Keyword-only arguments:
 
 - `stateMachineArn`: `str` *(required)*
 - `definition`: `str`

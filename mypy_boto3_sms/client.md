@@ -116,7 +116,7 @@ Type annotations for `boto3.client("sms").create_app` method.
 Boto3 documentation:
 [SMS.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `description`: `str`
@@ -135,7 +135,7 @@ Type annotations for `boto3.client("sms").create_replication_job` method.
 Boto3 documentation:
 [SMS.Client.create_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_replication_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `serverId`: `str` *(required)*
 - `seedReplicationTime`: `datetime` *(required)*
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("sms").delete_app` method.
 Boto3 documentation:
 [SMS.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str`
 - `forceStopAppReplication`: `bool`
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("sms").get_replication_jobs` method.
 Boto3 documentation:
 [SMS.Client.get_replication_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `replicationJobId`: `str`
 - `nextToken`: `str`
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("sms").get_replication_runs` method.
 Boto3 documentation:
 [SMS.Client.get_replication_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `replicationJobId`: `str` *(required)*
 - `nextToken`: `str`
@@ -414,7 +414,7 @@ Type annotations for `boto3.client("sms").get_servers` method.
 Boto3 documentation:
 [SMS.Client.get_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_servers)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("sms").list_apps` method.
 Boto3 documentation:
 [SMS.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.list_apps)
 
-Arguments:
+Keyword-only arguments:
 
 - `appIds`: `List`\[`str`\]
 - `nextToken`: `str`
@@ -495,7 +495,7 @@ Type annotations for `boto3.client("sms").put_app_launch_configuration` method.
 Boto3 documentation:
 [SMS.Client.put_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_launch_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str`
 - `roleName`: `str`
@@ -529,7 +529,7 @@ method.
 Boto3 documentation:
 [SMS.Client.put_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_validation_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `appValidationConfigurations`:
@@ -616,7 +616,7 @@ Type annotations for `boto3.client("sms").update_app` method.
 Boto3 documentation:
 [SMS.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `appId`: `str`
 - `name`: `str`
@@ -635,7 +635,7 @@ Type annotations for `boto3.client("sms").update_replication_job` method.
 Boto3 documentation:
 [SMS.Client.update_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_replication_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `replicationJobId`: `str` *(required)*
 - `frequency`: `int`

@@ -823,6 +823,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
   service
 
+- [mypy-boto3-proton](./mypy_boto3_proton) for
+  [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
+  service
+
 - [mypy-boto3-qldb](./mypy_boto3_qldb) for
   [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
   service

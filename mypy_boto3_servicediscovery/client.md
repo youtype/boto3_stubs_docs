@@ -107,7 +107,7 @@ method.
 Boto3 documentation:
 [ServiceDiscovery.Client.create_http_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `CreatorRequestId`: `str`
@@ -125,7 +125,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceDiscovery.Client.create_private_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Vpc`: `str` *(required)*
@@ -144,7 +144,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceDiscovery.Client.create_public_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `CreatorRequestId`: `str`
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("servicediscovery").create_service` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `NamespaceId`: `str`
@@ -231,7 +231,7 @@ method.
 Boto3 documentation:
 [ServiceDiscovery.Client.discover_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `NamespaceName`: `str` *(required)*
 - `ServiceName`: `str` *(required)*
@@ -284,7 +284,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceDiscovery.Client.get_instances_health_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `Instances`: `List`\[`str`\]
@@ -342,7 +342,7 @@ Type annotations for `boto3.client("servicediscovery").list_instances` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -358,7 +358,7 @@ Type annotations for `boto3.client("servicediscovery").list_namespaces` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -375,7 +375,7 @@ Type annotations for `boto3.client("servicediscovery").list_operations` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("servicediscovery").list_services` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -425,7 +425,7 @@ method.
 Boto3 documentation:
 [ServiceDiscovery.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -471,7 +471,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceDiscovery.Client.update_instance_custom_health_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*

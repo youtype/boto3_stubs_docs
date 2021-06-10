@@ -386,7 +386,7 @@ Type annotations for `boto3.resource("s3").create_bucket` method.
 Boto3 documentation:
 [S3.ServiceResource.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.create_bucket)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
@@ -635,7 +635,7 @@ Type annotations for `boto3.resource("s3").create` method.
 Boto3 documentation:
 [S3.Bucket.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.create)
 
-Arguments:
+Keyword-only arguments:
 
 - `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
 - `CreateBucketConfiguration`:
@@ -667,7 +667,7 @@ Type annotations for `boto3.resource("s3").delete_objects` method.
 Boto3 documentation:
 [S3.Bucket.delete_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete_objects)
 
-Arguments:
+Keyword-only arguments:
 
 - `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef) *(required)*
 - `MFA`: `str`
@@ -732,7 +732,7 @@ Type annotations for `boto3.resource("s3").put_object` method.
 Boto3 documentation:
 [S3.Bucket.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.put_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `Key`: `str` *(required)*
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
@@ -871,7 +871,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketAcl.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
 - `AccessControlPolicy`:
@@ -1334,7 +1334,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketPolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `Policy`: `str` *(required)*
 - `ConfirmRemoveSelfBucketAccess`: `bool`
@@ -1534,7 +1534,7 @@ Type annotations for `boto3.resource("s3").enable` method.
 Boto3 documentation:
 [S3.BucketVersioning.enable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.enable)
 
-Arguments:
+Keyword-only arguments:
 
 - `VersioningConfiguration`:
   [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
@@ -1565,7 +1565,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketVersioning.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `VersioningConfiguration`:
   [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
@@ -1587,7 +1587,7 @@ Type annotations for `boto3.resource("s3").suspend` method.
 Boto3 documentation:
 [S3.BucketVersioning.suspend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.suspend)
 
-Arguments:
+Keyword-only arguments:
 
 - `VersioningConfiguration`:
   [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
@@ -1776,7 +1776,7 @@ Type annotations for `boto3.resource("s3").complete` method.
 Boto3 documentation:
 [S3.MultipartUpload.complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.complete)
 
-Arguments:
+Keyword-only arguments:
 
 - `MultipartUpload`:
   [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
@@ -1839,7 +1839,7 @@ Type annotations for `boto3.resource("s3").copy_from` method.
 Boto3 documentation:
 [S3.MultipartUploadPart.copy_from](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.copy_from)
 
-Arguments:
+Keyword-only arguments:
 
 - `CopySource`: `str` *(required)*
 - `CopySourceIfMatch`: `str`
@@ -1877,7 +1877,7 @@ Type annotations for `boto3.resource("s3").upload` method.
 Boto3 documentation:
 [S3.MultipartUploadPart.upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
 - `ContentLength`: `int`
@@ -2011,7 +2011,7 @@ Type annotations for `boto3.resource("s3").copy_from` method.
 Boto3 documentation:
 [S3.Object.copy_from](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy_from)
 
-Arguments:
+Keyword-only arguments:
 
 - `CopySource`: `str` *(required)*
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
@@ -2066,7 +2066,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.Object.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `MFA`: `str`
 - `VersionId`: `str`
@@ -2112,7 +2112,7 @@ Type annotations for `boto3.resource("s3").get` method.
 Boto3 documentation:
 [S3.Object.get](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get)
 
-Arguments:
+Keyword-only arguments:
 
 - `IfMatch`: `str`
 - `IfModifiedSince`: `datetime`
@@ -2152,7 +2152,7 @@ Type annotations for `boto3.resource("s3").initiate_multipart_upload` method.
 Boto3 documentation:
 [S3.Object.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.initiate_multipart_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `CacheControl`: `str`
@@ -2201,7 +2201,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.Object.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
@@ -2253,7 +2253,7 @@ Type annotations for `boto3.resource("s3").restore_object` method.
 Boto3 documentation:
 [S3.Object.restore_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.restore_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `VersionId`: `str`
 - `RestoreRequest`:
@@ -2365,7 +2365,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.ObjectAcl.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `AccessControlPolicy`:
@@ -2477,7 +2477,7 @@ Type annotations for `boto3.resource("s3").copy_from` method.
 Boto3 documentation:
 [S3.ObjectSummary.copy_from](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.copy_from)
 
-Arguments:
+Keyword-only arguments:
 
 - `CopySource`: `str` *(required)*
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
@@ -2532,7 +2532,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.ObjectSummary.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `MFA`: `str`
 - `VersionId`: `str`
@@ -2550,7 +2550,7 @@ Type annotations for `boto3.resource("s3").get` method.
 Boto3 documentation:
 [S3.ObjectSummary.get](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get)
 
-Arguments:
+Keyword-only arguments:
 
 - `IfMatch`: `str`
 - `IfModifiedSince`: `datetime`
@@ -2590,7 +2590,7 @@ Type annotations for `boto3.resource("s3").initiate_multipart_upload` method.
 Boto3 documentation:
 [S3.ObjectSummary.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.initiate_multipart_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `CacheControl`: `str`
@@ -2639,7 +2639,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.ObjectSummary.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
@@ -2684,7 +2684,7 @@ Type annotations for `boto3.resource("s3").restore_object` method.
 Boto3 documentation:
 [S3.ObjectSummary.restore_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.restore_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `VersionId`: `str`
 - `RestoreRequest`:
@@ -2758,7 +2758,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.ObjectVersion.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `MFA`: `str`
 - `RequestPayer`: `Literal['requester']` (see
@@ -2775,7 +2775,7 @@ Type annotations for `boto3.resource("s3").get` method.
 Boto3 documentation:
 [S3.ObjectVersion.get](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get)
 
-Arguments:
+Keyword-only arguments:
 
 - `IfMatch`: `str`
 - `IfModifiedSince`: `datetime`
@@ -2814,7 +2814,7 @@ Type annotations for `boto3.resource("s3").head` method.
 Boto3 documentation:
 [S3.ObjectVersion.head](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.head)
 
-Arguments:
+Keyword-only arguments:
 
 - `IfMatch`: `str`
 - `IfModifiedSince`: `datetime`

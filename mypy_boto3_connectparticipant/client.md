@@ -83,7 +83,7 @@ Type annotations for
 Boto3 documentation:
 [ConnectParticipant.Client.complete_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttachmentIds`: `List`\[`str`\] *(required)*
 - `ClientToken`: `str` *(required)*
@@ -164,7 +164,7 @@ method.
 Boto3 documentation:
 [ConnectParticipant.Client.get_transcript](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionToken`: `str` *(required)*
 - `ContactId`: `str`
@@ -184,7 +184,7 @@ Type annotations for `boto3.client("connectparticipant").send_event` method.
 Boto3 documentation:
 [ConnectParticipant.Client.send_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContentType`: `str` *(required)*
 - `ConnectionToken`: `str` *(required)*
@@ -200,7 +200,7 @@ Type annotations for `boto3.client("connectparticipant").send_message` method.
 Boto3 documentation:
 [ConnectParticipant.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContentType`: `str` *(required)*
 - `Content`: `str` *(required)*
@@ -218,7 +218,7 @@ Type annotations for
 Boto3 documentation:
 [ConnectParticipant.Client.start_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContentType`: `str` *(required)*
 - `AttachmentSizeInBytes`: `int` *(required)*

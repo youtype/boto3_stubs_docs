@@ -181,7 +181,7 @@ Type annotations for `boto3.client("workspaces").copy_workspace_image` method.
 Boto3 documentation:
 [WorkSpaces.Client.copy_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SourceImageId`: `str` *(required)*
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("workspaces").create_ip_group` method.
 Boto3 documentation:
 [WorkSpaces.Client.create_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `GroupDesc`: `str`
@@ -247,7 +247,7 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.create_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
 
-Arguments:
+Keyword-only arguments:
 
 - `BundleName`: `str` *(required)*
 - `BundleDescription`: `str` *(required)*
@@ -409,7 +409,7 @@ Type annotations for
 Boto3 documentation:
 [WorkSpaces.Client.describe_connection_alias_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AliasId`: `str` *(required)*
 - `NextToken`: `str`
@@ -426,7 +426,7 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.describe_connection_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
 
-Arguments:
+Keyword-only arguments:
 
 - `AliasIds`: `List`\[`str`\]
 - `ResourceId`: `str`
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("workspaces").describe_ip_groups` method.
 Boto3 documentation:
 [WorkSpaces.Client.describe_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupIds`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -473,7 +473,7 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
 
-Arguments:
+Keyword-only arguments:
 
 - `BundleIds`: `List`\[`str`\]
 - `Owner`: `str`
@@ -490,7 +490,7 @@ Type annotations for
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryIds`: `List`\[`str`\]
 - `Limit`: `int`
@@ -507,7 +507,7 @@ Type annotations for
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageId`: `str` *(required)*
 - `NextToken`: `str`
@@ -524,7 +524,7 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageIds`: `List`\[`str`\]
 - `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
@@ -556,7 +556,7 @@ Type annotations for `boto3.client("workspaces").describe_workspaces` method.
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkspaceIds`: `List`\[`str`\]
 - `DirectoryId`: `str`
@@ -638,7 +638,7 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.import_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `Ec2ImageId`: `str` *(required)*
 - `IngestionProcess`:
@@ -660,7 +660,7 @@ Type annotations for
 Boto3 documentation:
 [WorkSpaces.Client.list_available_management_cidr_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
 
-Arguments:
+Keyword-only arguments:
 
 - `ManagementCidrRangeConstraint`: `str` *(required)*
 - `MaxResults`: `int`
@@ -841,7 +841,7 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.register_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `EnableWorkDocs`: `bool` *(required)*
@@ -983,7 +983,7 @@ Type annotations for
 Boto3 documentation:
 [WorkSpaces.Client.update_workspace_image_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageId`: `str` *(required)*
 - `AllowCopyImage`: `bool` *(required)*

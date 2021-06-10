@@ -104,7 +104,7 @@ Type annotations for `boto3.client("sagemaker-edge").send_heartbeat` method.
 Boto3 documentation:
 [SagemakerEdgeManager.Client.send_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.send_heartbeat)
 
-Arguments:
+Keyword-only arguments:
 
 - `AgentVersion`: `str` *(required)*
 - `DeviceName`: `str` *(required)*

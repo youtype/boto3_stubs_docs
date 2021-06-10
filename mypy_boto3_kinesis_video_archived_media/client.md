@@ -103,7 +103,7 @@ method.
 Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.get_clip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_clip)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClipFragmentSelector`:
   [ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef)
@@ -122,7 +122,7 @@ method.
 Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`
@@ -148,7 +148,7 @@ method.
 Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`
@@ -175,7 +175,7 @@ method.
 Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.get_media_for_fragment_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_media_for_fragment_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `Fragments`: `List`\[`str`\] *(required)*
 - `StreamName`: `str`
@@ -192,7 +192,7 @@ Type annotations for
 Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.list_fragments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.list_fragments)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`

@@ -97,7 +97,7 @@ Type annotations for `boto3.client("lookoutequipment").create_dataset` method.
 Boto3 documentation:
 [LookoutEquipment.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 - `DatasetSchema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
@@ -117,7 +117,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.create_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_inference_scheduler)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 - `InferenceSchedulerName`: `str` *(required)*
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("lookoutequipment").create_model` method.
 Boto3 documentation:
 [LookoutEquipment.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 - `DatasetName`: `str` *(required)*
@@ -284,7 +284,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.list_data_ingestion_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_data_ingestion_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str`
 - `NextToken`: `str`
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("lookoutequipment").list_datasets` method.
 Boto3 documentation:
 [LookoutEquipment.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_datasets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -318,7 +318,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.list_inference_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 - `NextToken`: `str`
@@ -339,7 +339,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.list_inference_schedulers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_schedulers)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -356,7 +356,7 @@ Type annotations for `boto3.client("lookoutequipment").list_models` method.
 Boto3 documentation:
 [LookoutEquipment.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -389,7 +389,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.start_data_ingestion_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_data_ingestion_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 - `IngestionInputConfiguration`:
@@ -467,7 +467,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.update_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_inference_scheduler)
 
-Arguments:
+Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 - `DataDelayOffsetInMinutes`: `int`

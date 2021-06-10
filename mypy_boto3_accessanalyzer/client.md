@@ -92,7 +92,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.apply_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.apply_archive_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `ruleName`: `str` *(required)*
@@ -133,7 +133,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.create_access_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_access_preview)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `configurations`: `Dict`\[`str`,
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("accessanalyzer").create_analyzer` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.create_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_analyzer)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 - `type`: [TypeType](./literals.md#typetype) *(required)*
@@ -170,7 +170,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.create_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_archive_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 - `filter`: `Dict`\[`str`,
@@ -198,7 +198,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.delete_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_archive_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 - `ruleName`: `str` *(required)*
@@ -304,7 +304,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.get_generated_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_generated_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `includeResourcePlaceholders`: `bool`
@@ -321,7 +321,7 @@ Type annotations for
 Boto3 documentation:
 [AccessAnalyzer.Client.list_access_preview_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_preview_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `accessPreviewId`: `str` *(required)*
 - `analyzerArn`: `str` *(required)*
@@ -341,7 +341,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.list_access_previews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_previews)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `maxResults`: `int`
@@ -358,7 +358,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.list_analyzed_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzed_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `maxResults`: `int`
@@ -375,7 +375,7 @@ Type annotations for `boto3.client("accessanalyzer").list_analyzers` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.list_analyzers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzers)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -392,7 +392,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.list_archive_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_archive_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 - `maxResults`: `int`
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("accessanalyzer").list_findings` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `filter`: `Dict`\[`str`,
@@ -428,7 +428,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.list_policy_generations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_policy_generations)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -460,7 +460,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.start_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_policy_generation)
 
-Arguments:
+Keyword-only arguments:
 
 - `policyGenerationDetails`:
   [PolicyGenerationDetailsTypeDef](./type_defs.md#policygenerationdetailstypedef)
@@ -521,7 +521,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.update_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_archive_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 - `filter`: `Dict`\[`str`,
@@ -536,7 +536,7 @@ Type annotations for `boto3.client("accessanalyzer").update_findings` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `status`: [FindingStatusUpdateType](./literals.md#findingstatusupdatetype)
@@ -552,7 +552,7 @@ Type annotations for `boto3.client("accessanalyzer").validate_policy` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.validate_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.validate_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `policyDocument`: `str` *(required)*
 - `policyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*

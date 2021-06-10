@@ -269,7 +269,7 @@ method.
 Boto3 documentation:
 [CloudSearch.Client.describe_analysis_schemes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AnalysisSchemeNames`: `List`\[`str`\]
@@ -331,7 +331,7 @@ Type annotations for `boto3.client("cloudsearch").describe_expressions` method.
 Boto3 documentation:
 [CloudSearch.Client.describe_expressions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ExpressionNames`: `List`\[`str`\]
@@ -348,7 +348,7 @@ method.
 Boto3 documentation:
 [CloudSearch.Client.describe_index_fields](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `FieldNames`: `List`\[`str`\]
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("cloudsearch").describe_suggesters` method.
 Boto3 documentation:
 [CloudSearch.Client.describe_suggesters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `SuggesterNames`: `List`\[`str`\]

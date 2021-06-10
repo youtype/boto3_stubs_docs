@@ -105,7 +105,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `OpsCenterEnabled`: `bool`
@@ -124,7 +124,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
@@ -140,7 +140,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.create_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `PatternSetName`: `str` *(required)*
@@ -188,7 +188,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.delete_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `PatternSetName`: `str` *(required)*
@@ -252,7 +252,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.describe_component_configuration_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
@@ -269,7 +269,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.describe_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `PatternSetName`: `str` *(required)*
@@ -364,7 +364,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_components)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -381,7 +381,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.list_configuration_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str`
 - `StartTime`: `datetime`
@@ -402,7 +402,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.list_log_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `MaxResults`: `int`
@@ -419,7 +419,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.list_log_patterns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `PatternSetName`: `str`
@@ -437,7 +437,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.list_problems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_problems)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str`
 - `StartTime`: `datetime`
@@ -501,7 +501,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `OpsCenterEnabled`: `bool`
@@ -520,7 +520,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.update_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
@@ -537,7 +537,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.update_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
@@ -555,7 +555,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.update_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `PatternSetName`: `str` *(required)*

@@ -98,7 +98,7 @@ Type annotations for `boto3.client("mwaa").create_environment` method.
 Boto3 documentation:
 [MWAA.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `DagS3Path`: `str` *(required)*
 - `ExecutionRoleArn`: `str` *(required)*
@@ -265,7 +265,7 @@ Type annotations for `boto3.client("mwaa").update_environment` method.
 Boto3 documentation:
 [MWAA.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.update_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]

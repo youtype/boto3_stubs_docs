@@ -125,7 +125,7 @@ Type annotations for `boto3.client("iotsitewise").associate_assets` method.
 Boto3 documentation:
 [IoTSiteWise.Client.associate_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetId`: `str` *(required)*
 - `hierarchyId`: `str` *(required)*
@@ -140,7 +140,7 @@ Type annotations for
 Boto3 documentation:
 [IoTSiteWise.Client.batch_associate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_associate_project_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `assetIds`: `List`\[`str`\] *(required)*
@@ -157,7 +157,7 @@ Type annotations for
 Boto3 documentation:
 [IoTSiteWise.Client.batch_disassociate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_disassociate_project_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `assetIds`: `List`\[`str`\] *(required)*
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("iotsitewise").create_access_policy` method.
 Boto3 documentation:
 [IoTSiteWise.Client.create_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
   *(required)*
@@ -224,7 +224,7 @@ Type annotations for `boto3.client("iotsitewise").create_asset` method.
 Boto3 documentation:
 [IoTSiteWise.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetName`: `str` *(required)*
 - `assetModelId`: `str` *(required)*
@@ -241,7 +241,7 @@ Type annotations for `boto3.client("iotsitewise").create_asset_model` method.
 Boto3 documentation:
 [IoTSiteWise.Client.create_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetModelName`: `str` *(required)*
 - `assetModelDescription`: `str`
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("iotsitewise").create_dashboard` method.
 Boto3 documentation:
 [IoTSiteWise.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_dashboard)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `dashboardName`: `str` *(required)*
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("iotsitewise").create_gateway` method.
 Boto3 documentation:
 [IoTSiteWise.Client.create_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `gatewayName`: `str` *(required)*
 - `gatewayPlatform`:
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("iotsitewise").create_portal` method.
 Boto3 documentation:
 [IoTSiteWise.Client.create_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_portal)
 
-Arguments:
+Keyword-only arguments:
 
 - `portalName`: `str` *(required)*
 - `portalContactEmail`: `str` *(required)*
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("iotsitewise").create_project` method.
 Boto3 documentation:
 [IoTSiteWise.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `portalId`: `str` *(required)*
 - `projectName`: `str` *(required)*
@@ -592,7 +592,7 @@ Type annotations for `boto3.client("iotsitewise").disassociate_assets` method.
 Boto3 documentation:
 [IoTSiteWise.Client.disassociate_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetId`: `str` *(required)*
 - `hierarchyId`: `str` *(required)*
@@ -624,7 +624,7 @@ Type annotations for
 Boto3 documentation:
 [IoTSiteWise.Client.get_asset_property_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_aggregates)
 
-Arguments:
+Keyword-only arguments:
 
 - `aggregateTypes`:
   `List`\[[AggregateTypeType](./literals.md#aggregatetypetype)\] *(required)*
@@ -650,7 +650,7 @@ method.
 Boto3 documentation:
 [IoTSiteWise.Client.get_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetId`: `str`
 - `propertyId`: `str`
@@ -667,7 +667,7 @@ Type annotations for
 Boto3 documentation:
 [IoTSiteWise.Client.get_asset_property_value_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetId`: `str`
 - `propertyId`: `str`
@@ -690,7 +690,7 @@ Type annotations for
 Boto3 documentation:
 [IoTSiteWise.Client.get_interpolated_asset_property_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_interpolated_asset_property_values)
 
-Arguments:
+Keyword-only arguments:
 
 - `startTimeInSeconds`: `int` *(required)*
 - `endTimeInSeconds`: `int` *(required)*
@@ -715,7 +715,7 @@ Type annotations for `boto3.client("iotsitewise").list_access_policies` method.
 Boto3 documentation:
 [IoTSiteWise.Client.list_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `identityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `identityId`: `str`
@@ -751,7 +751,7 @@ method.
 Boto3 documentation:
 [IoTSiteWise.Client.list_asset_relationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_relationships)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetId`: `str` *(required)*
 - `traversalType`: `Literal['PATH_TO_ROOT']` (see
@@ -769,7 +769,7 @@ Type annotations for `boto3.client("iotsitewise").list_assets` method.
 Boto3 documentation:
 [IoTSiteWise.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -786,7 +786,7 @@ method.
 Boto3 documentation:
 [IoTSiteWise.Client.list_associated_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_associated_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetId`: `str` *(required)*
 - `hierarchyId`: `str`
@@ -805,7 +805,7 @@ Type annotations for `boto3.client("iotsitewise").list_dashboards` method.
 Boto3 documentation:
 [IoTSiteWise.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_dashboards)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `nextToken`: `str`
@@ -851,7 +851,7 @@ Type annotations for `boto3.client("iotsitewise").list_project_assets` method.
 Boto3 documentation:
 [IoTSiteWise.Client.list_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_project_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `nextToken`: `str`
@@ -867,7 +867,7 @@ Type annotations for `boto3.client("iotsitewise").list_projects` method.
 Boto3 documentation:
 [IoTSiteWise.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `portalId`: `str` *(required)*
 - `nextToken`: `str`
@@ -957,7 +957,7 @@ Type annotations for `boto3.client("iotsitewise").update_access_policy` method.
 Boto3 documentation:
 [IoTSiteWise.Client.update_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_access_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `accessPolicyId`: `str` *(required)*
 - `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
@@ -977,7 +977,7 @@ Type annotations for `boto3.client("iotsitewise").update_asset` method.
 Boto3 documentation:
 [IoTSiteWise.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetId`: `str` *(required)*
 - `assetName`: `str` *(required)*
@@ -993,7 +993,7 @@ Type annotations for `boto3.client("iotsitewise").update_asset_model` method.
 Boto3 documentation:
 [IoTSiteWise.Client.update_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetModelId`: `str` *(required)*
 - `assetModelName`: `str` *(required)*
@@ -1017,7 +1017,7 @@ method.
 Boto3 documentation:
 [IoTSiteWise.Client.update_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_property)
 
-Arguments:
+Keyword-only arguments:
 
 - `assetId`: `str` *(required)*
 - `propertyId`: `str` *(required)*
@@ -1033,7 +1033,7 @@ Type annotations for `boto3.client("iotsitewise").update_dashboard` method.
 Boto3 documentation:
 [IoTSiteWise.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_dashboard)
 
-Arguments:
+Keyword-only arguments:
 
 - `dashboardId`: `str` *(required)*
 - `dashboardName`: `str` *(required)*
@@ -1063,7 +1063,7 @@ Type annotations for
 Boto3 documentation:
 [IoTSiteWise.Client.update_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway_capability_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `gatewayId`: `str` *(required)*
 - `capabilityNamespace`: `str` *(required)*
@@ -1079,7 +1079,7 @@ Type annotations for `boto3.client("iotsitewise").update_portal` method.
 Boto3 documentation:
 [IoTSiteWise.Client.update_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_portal)
 
-Arguments:
+Keyword-only arguments:
 
 - `portalId`: `str` *(required)*
 - `portalName`: `str` *(required)*
@@ -1101,7 +1101,7 @@ Type annotations for `boto3.client("iotsitewise").update_project` method.
 Boto3 documentation:
 [IoTSiteWise.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `projectName`: `str` *(required)*

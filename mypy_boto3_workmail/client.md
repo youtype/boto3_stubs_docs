@@ -131,7 +131,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.associate_delegate_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
@@ -147,7 +147,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.associate_member_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_member_to_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `GroupId`: `str` *(required)*
@@ -176,7 +176,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.cancel_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientToken`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("workmail").create_alias` method.
 Boto3 documentation:
 [WorkMail.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
@@ -222,7 +222,7 @@ Type annotations for
 Boto3 documentation:
 [WorkMail.Client.create_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("workmail").create_organization` method.
 Boto3 documentation:
 [WorkMail.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `Alias`: `str` *(required)*
 - `DirectoryId`: `str`
@@ -269,7 +269,7 @@ Type annotations for `boto3.client("workmail").create_resource` method.
 Boto3 documentation:
 [WorkMail.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -285,7 +285,7 @@ Type annotations for `boto3.client("workmail").create_user` method.
 Boto3 documentation:
 [WorkMail.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("workmail").delete_alias` method.
 Boto3 documentation:
 [WorkMail.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
@@ -346,7 +346,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.delete_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
@@ -376,7 +376,7 @@ Type annotations for `boto3.client("workmail").delete_organization` method.
 Boto3 documentation:
 [WorkMail.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `DeleteDirectory`: `bool` *(required)*
@@ -525,7 +525,7 @@ Type annotations for
 Boto3 documentation:
 [WorkMail.Client.disassociate_delegate_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
@@ -541,7 +541,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.disassociate_member_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `GroupId`: `str` *(required)*
@@ -573,7 +573,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.get_access_control_effect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `IpAddress`: `str` *(required)*
@@ -621,7 +621,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.get_mobile_device_access_effect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `DeviceType`: `str`
@@ -654,7 +654,7 @@ Type annotations for `boto3.client("workmail").list_aliases` method.
 Boto3 documentation:
 [WorkMail.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_aliases)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
@@ -671,7 +671,7 @@ Type annotations for `boto3.client("workmail").list_group_members` method.
 Boto3 documentation:
 [WorkMail.Client.list_group_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_group_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `GroupId`: `str` *(required)*
@@ -688,7 +688,7 @@ Type annotations for `boto3.client("workmail").list_groups` method.
 Boto3 documentation:
 [WorkMail.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `NextToken`: `str`
@@ -704,7 +704,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.list_mailbox_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `NextToken`: `str`
@@ -721,7 +721,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.list_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
@@ -768,7 +768,7 @@ Type annotations for `boto3.client("workmail").list_resource_delegates` method.
 Boto3 documentation:
 [WorkMail.Client.list_resource_delegates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resource_delegates)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
@@ -785,7 +785,7 @@ Type annotations for `boto3.client("workmail").list_resources` method.
 Boto3 documentation:
 [WorkMail.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `NextToken`: `str`
@@ -815,7 +815,7 @@ Type annotations for `boto3.client("workmail").list_users` method.
 Boto3 documentation:
 [WorkMail.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `NextToken`: `str`
@@ -830,7 +830,7 @@ Type annotations for `boto3.client("workmail").put_access_control_rule` method.
 Boto3 documentation:
 [WorkMail.Client.put_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_access_control_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Effect`:
@@ -854,7 +854,7 @@ Type annotations for `boto3.client("workmail").put_mailbox_permissions` method.
 Boto3 documentation:
 [WorkMail.Client.put_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
@@ -871,7 +871,7 @@ Type annotations for `boto3.client("workmail").put_retention_policy` method.
 Boto3 documentation:
 [WorkMail.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_retention_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -890,7 +890,7 @@ Type annotations for `boto3.client("workmail").register_to_work_mail` method.
 Boto3 documentation:
 [WorkMail.Client.register_to_work_mail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
@@ -905,7 +905,7 @@ Type annotations for `boto3.client("workmail").reset_password` method.
 Boto3 documentation:
 [WorkMail.Client.reset_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.reset_password)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -921,7 +921,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.start_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientToken`: `str` *(required)*
 - `OrganizationId`: `str` *(required)*
@@ -970,7 +970,7 @@ Type annotations for `boto3.client("workmail").update_mailbox_quota` method.
 Boto3 documentation:
 [WorkMail.Client.update_mailbox_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -986,7 +986,7 @@ Type annotations for
 Boto3 documentation:
 [WorkMail.Client.update_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `MobileDeviceAccessRuleId`: `str` *(required)*
@@ -1014,7 +1014,7 @@ method.
 Boto3 documentation:
 [WorkMail.Client.update_primary_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_primary_email_address)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `EntityId`: `str` *(required)*
@@ -1029,7 +1029,7 @@ Type annotations for `boto3.client("workmail").update_resource` method.
 Boto3 documentation:
 [WorkMail.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationId`: `str` *(required)*
 - `ResourceId`: `str` *(required)*

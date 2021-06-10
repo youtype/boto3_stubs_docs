@@ -103,7 +103,7 @@ Type annotations for
 Boto3 documentation:
 [ECRPublic.Client.batch_check_layer_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.batch_check_layer_availability)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `layerDigests`: `List`\[`str`\] *(required)*
@@ -119,7 +119,7 @@ Type annotations for `boto3.client("ecr-public").batch_delete_image` method.
 Boto3 documentation:
 [ECRPublic.Client.batch_delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.batch_delete_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `imageIds`:
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("ecr-public").complete_layer_upload` method.
 Boto3 documentation:
 [ECRPublic.Client.complete_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.complete_layer_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `uploadId`: `str` *(required)*
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("ecr-public").create_repository` method.
 Boto3 documentation:
 [ECRPublic.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.create_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `catalogData`:
@@ -184,7 +184,7 @@ Type annotations for `boto3.client("ecr-public").delete_repository` method.
 Boto3 documentation:
 [ECRPublic.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.delete_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("ecr-public").describe_image_tags` method.
 Boto3 documentation:
 [ECRPublic.Client.describe_image_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_image_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("ecr-public").describe_images` method.
 Boto3 documentation:
 [ECRPublic.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("ecr-public").describe_repositories` method.
 Boto3 documentation:
 [ECRPublic.Client.describe_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_repositories)
 
-Arguments:
+Keyword-only arguments:
 
 - `registryId`: `str`
 - `repositoryNames`: `List`\[`str`\]
@@ -384,7 +384,7 @@ Type annotations for `boto3.client("ecr-public").put_image` method.
 Boto3 documentation:
 [ECRPublic.Client.put_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `imageManifest`: `str` *(required)*
@@ -418,7 +418,7 @@ method.
 Boto3 documentation:
 [ECRPublic.Client.put_repository_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_repository_catalog_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `catalogData`:
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("ecr-public").set_repository_policy` method.
 Boto3 documentation:
 [ECRPublic.Client.set_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.set_repository_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `policyText`: `str` *(required)*
@@ -481,7 +481,7 @@ Type annotations for `boto3.client("ecr-public").upload_layer_part` method.
 Boto3 documentation:
 [ECRPublic.Client.upload_layer_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.upload_layer_part)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `uploadId`: `str` *(required)*

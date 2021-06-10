@@ -101,7 +101,7 @@ Type annotations for `boto3.client("managedblockchain").create_member` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientRequestToken`: `str` *(required)*
 - `InvitationId`: `str` *(required)*
@@ -119,7 +119,7 @@ Type annotations for `boto3.client("managedblockchain").create_network` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.create_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_network)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientRequestToken`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("managedblockchain").create_node` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.create_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientRequestToken`: `str` *(required)*
 - `NetworkId`: `str` *(required)*
@@ -165,7 +165,7 @@ method.
 Boto3 documentation:
 [ManagedBlockchain.Client.create_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_proposal)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientRequestToken`: `str` *(required)*
 - `NetworkId`: `str` *(required)*
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("managedblockchain").delete_node` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.delete_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `NodeId`: `str` *(required)*
@@ -258,7 +258,7 @@ Type annotations for `boto3.client("managedblockchain").get_node` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.get_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `NodeId`: `str` *(required)*
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("managedblockchain").list_members` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `Name`: `str`
@@ -321,7 +321,7 @@ Type annotations for `boto3.client("managedblockchain").list_networks` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.list_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 - `Framework`: [FrameworkType](./literals.md#frameworktype)
@@ -338,7 +338,7 @@ Type annotations for `boto3.client("managedblockchain").list_nodes` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_nodes)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str`
@@ -356,7 +356,7 @@ method.
 Boto3 documentation:
 [ManagedBlockchain.Client.list_proposal_votes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposal_votes)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `ProposalId`: `str` *(required)*
@@ -373,7 +373,7 @@ Type annotations for `boto3.client("managedblockchain").list_proposals` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.list_proposals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposals)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("managedblockchain").update_member` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.update_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
@@ -462,7 +462,7 @@ Type annotations for `boto3.client("managedblockchain").update_node` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.update_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `NodeId`: `str` *(required)*
@@ -480,7 +480,7 @@ method.
 Boto3 documentation:
 [ManagedBlockchain.Client.vote_on_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.vote_on_proposal)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `ProposalId`: `str` *(required)*

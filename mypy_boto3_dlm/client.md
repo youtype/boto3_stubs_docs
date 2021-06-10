@@ -80,7 +80,7 @@ Type annotations for `boto3.client("dlm").create_lifecycle_policy` method.
 Boto3 documentation:
 [DLM.Client.create_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.create_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExecutionRoleArn`: `str` *(required)*
 - `Description`: `str` *(required)*
@@ -130,7 +130,7 @@ Type annotations for `boto3.client("dlm").get_lifecycle_policies` method.
 Boto3 documentation:
 [DLM.Client.get_lifecycle_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyIds`: `List`\[`str`\]
 - `State`:
@@ -206,7 +206,7 @@ Type annotations for `boto3.client("dlm").update_lifecycle_policy` method.
 Boto3 documentation:
 [DLM.Client.update_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.update_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `ExecutionRoleArn`: `str`

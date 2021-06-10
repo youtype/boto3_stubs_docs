@@ -190,7 +190,7 @@ Type annotations for `boto3.resource("cloudwatch").describe_history` method.
 Boto3 documentation:
 [CloudWatch.Alarm.describe_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.describe_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
@@ -248,7 +248,7 @@ Type annotations for `boto3.resource("cloudwatch").set_state` method.
 Boto3 documentation:
 [CloudWatch.Alarm.set_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.set_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `StateValue`: [StateValueType](./literals.md#statevaluetype) *(required)*
 - `StateReason`: `str` *(required)*
@@ -319,7 +319,7 @@ Type annotations for `boto3.resource("cloudwatch").get_statistics` method.
 Boto3 documentation:
 [CloudWatch.Metric.get_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_statistics)
 
-Arguments:
+Keyword-only arguments:
 
 - `StartTime`: `datetime` *(required)*
 - `EndTime`: `datetime` *(required)*
@@ -346,7 +346,7 @@ Type annotations for `boto3.resource("cloudwatch").put_alarm` method.
 Boto3 documentation:
 [CloudWatch.Metric.put_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_alarm)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmName`: `str` *(required)*
 - `EvaluationPeriods`: `int` *(required)*

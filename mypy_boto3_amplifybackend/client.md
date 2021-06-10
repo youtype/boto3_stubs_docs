@@ -97,7 +97,7 @@ Type annotations for `boto3.client("amplifybackend").clone_backend` method.
 Boto3 documentation:
 [AmplifyBackend.Client.clone_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -113,7 +113,7 @@ Type annotations for `boto3.client("amplifybackend").create_backend` method.
 Boto3 documentation:
 [AmplifyBackend.Client.create_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `AppName`: `str` *(required)*
@@ -132,7 +132,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.create_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -152,7 +152,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.create_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -217,7 +217,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.delete_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -236,7 +236,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.delete_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -268,7 +268,7 @@ Type annotations for
 Boto3 documentation:
 [AmplifyBackend.Client.generate_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("amplifybackend").get_backend_api` method.
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -334,7 +334,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("amplifybackend").get_backend_auth` method.
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -366,7 +366,7 @@ Type annotations for `boto3.client("amplifybackend").get_backend_job` method.
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("amplifybackend").list_backend_jobs` method.
 Boto3 documentation:
 [AmplifyBackend.Client.list_backend_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -448,7 +448,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.update_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -467,7 +467,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.update_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -504,7 +504,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.update_backend_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*

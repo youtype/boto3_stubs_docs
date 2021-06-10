@@ -93,7 +93,7 @@ Type annotations for `boto3.client("sso").get_role_credentials` method.
 Boto3 documentation:
 [SSO.Client.get_role_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `roleName`: `str` *(required)*
 - `accountId`: `str` *(required)*
@@ -109,7 +109,7 @@ Type annotations for `boto3.client("sso").list_account_roles` method.
 Boto3 documentation:
 [SSO.Client.list_account_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles)
 
-Arguments:
+Keyword-only arguments:
 
 - `accessToken`: `str` *(required)*
 - `accountId`: `str` *(required)*
@@ -126,7 +126,7 @@ Type annotations for `boto3.client("sso").list_accounts` method.
 Boto3 documentation:
 [SSO.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts)
 
-Arguments:
+Keyword-only arguments:
 
 - `accessToken`: `str` *(required)*
 - `nextToken`: `str`

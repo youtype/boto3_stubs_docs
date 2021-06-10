@@ -86,7 +86,7 @@ Type annotations for
 Boto3 documentation:
 [Health.Client.describe_affected_accounts_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `eventArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -103,7 +103,7 @@ method.
 Boto3 documentation:
 [Health.Client.describe_affected_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `filter`: [EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)
   *(required)*
@@ -122,7 +122,7 @@ Type annotations for
 Boto3 documentation:
 [Health.Client.describe_affected_entities_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `organizationEntityFilters`:
   `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("health").describe_event_aggregates` method.
 Boto3 documentation:
 [Health.Client.describe_event_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates)
 
-Arguments:
+Keyword-only arguments:
 
 - `aggregateField`: `Literal['eventTypeCategory']` (see
   [eventAggregateFieldType](./literals.md#eventaggregatefieldtype))
@@ -208,7 +208,7 @@ Type annotations for `boto3.client("health").describe_event_types` method.
 Boto3 documentation:
 [Health.Client.describe_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `filter`: [EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef)
 - `locale`: `str`
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("health").describe_events` method.
 Boto3 documentation:
 [Health.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `nextToken`: `str`
@@ -243,7 +243,7 @@ method.
 Boto3 documentation:
 [Health.Client.describe_events_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `filter`:
   [OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef)

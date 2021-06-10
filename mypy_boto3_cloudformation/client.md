@@ -159,7 +159,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.continue_update_rollback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `RoleARN`: `str`
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("cloudformation").create_change_set` method.
 Boto3 documentation:
 [CloudFormation.Client.create_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `ChangeSetName`: `str` *(required)*
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("cloudformation").create_stack` method.
 Boto3 documentation:
 [CloudFormation.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `TemplateBody`: `str`
@@ -238,7 +238,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.create_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `Regions`: `List`\[`str`\] *(required)*
@@ -262,7 +262,7 @@ Type annotations for `boto3.client("cloudformation").create_stack_set` method.
 Boto3 documentation:
 [CloudFormation.Client.create_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `Description`: `str`
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("cloudformation").delete_stack` method.
 Boto3 documentation:
 [CloudFormation.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `RetainResources`: `List`\[`str`\]
@@ -318,7 +318,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.delete_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `Regions`: `List`\[`str`\] *(required)*
@@ -355,7 +355,7 @@ Type annotations for `boto3.client("cloudformation").deregister_type` method.
 Boto3 documentation:
 [CloudFormation.Client.deregister_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str`
 - `Type`: [RegistryTypeType](./literals.md#registrytypetype)
@@ -387,7 +387,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChangeSetName`: `str` *(required)*
 - `StackName`: `str`
@@ -435,7 +435,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `StackInstanceAccount`: `str` *(required)*
@@ -469,7 +469,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_resource_drifts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `StackResourceDriftStatusFilters`:
@@ -488,7 +488,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str`
 - `LogicalResourceId`: `str`
@@ -521,7 +521,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `OperationId`: `str` *(required)*
@@ -552,7 +552,7 @@ Type annotations for `boto3.client("cloudformation").describe_type` method.
 Boto3 documentation:
 [CloudFormation.Client.describe_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [RegistryTypeType](./literals.md#registrytypetype)
 - `TypeName`: `str`
@@ -616,7 +616,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.detect_stack_set_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `OperationPreferences`:
@@ -635,7 +635,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.estimate_template_cost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
@@ -652,7 +652,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.execute_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChangeSetName`: `str` *(required)*
 - `StackName`: `str`
@@ -698,7 +698,7 @@ Type annotations for `boto3.client("cloudformation").get_template` method.
 Boto3 documentation:
 [CloudFormation.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str`
 - `ChangeSetName`: `str`
@@ -714,7 +714,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.get_template_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
@@ -775,7 +775,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.list_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `NextToken`: `str`
@@ -813,7 +813,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Client.list_stack_set_operation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `OperationId`: `str` *(required)*
@@ -832,7 +832,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.list_stack_set_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `NextToken`: `str`
@@ -849,7 +849,7 @@ Type annotations for `boto3.client("cloudformation").list_stack_sets` method.
 Boto3 documentation:
 [CloudFormation.Client.list_stack_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -882,7 +882,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.list_type_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [RegistryTypeType](./literals.md#registrytypetype)
 - `TypeName`: `str`
@@ -903,7 +903,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.list_type_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [RegistryTypeType](./literals.md#registrytypetype)
 - `TypeName`: `str`
@@ -923,7 +923,7 @@ Type annotations for `boto3.client("cloudformation").list_types` method.
 Boto3 documentation:
 [CloudFormation.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `Visibility`: [VisibilityType](./literals.md#visibilitytype)
 - `ProvisioningType`:
@@ -944,7 +944,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.record_handler_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
 
-Arguments:
+Keyword-only arguments:
 
 - `BearerToken`: `str` *(required)*
 - `OperationStatus`: [OperationStatusType](./literals.md#operationstatustype)
@@ -965,7 +965,7 @@ Type annotations for `boto3.client("cloudformation").register_type` method.
 Boto3 documentation:
 [CloudFormation.Client.register_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `TypeName`: `str` *(required)*
 - `SchemaHandlerPackage`: `str` *(required)*
@@ -983,7 +983,7 @@ Type annotations for `boto3.client("cloudformation").set_stack_policy` method.
 Boto3 documentation:
 [CloudFormation.Client.set_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `StackPolicyBody`: `str`
@@ -997,7 +997,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.set_type_default_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str`
 - `Type`: [RegistryTypeType](./literals.md#registrytypetype)
@@ -1013,7 +1013,7 @@ Type annotations for `boto3.client("cloudformation").signal_resource` method.
 Boto3 documentation:
 [CloudFormation.Client.signal_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `LogicalResourceId`: `str` *(required)*
@@ -1029,7 +1029,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.stop_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `OperationId`: `str` *(required)*
@@ -1044,7 +1044,7 @@ Type annotations for `boto3.client("cloudformation").update_stack` method.
 Boto3 documentation:
 [CloudFormation.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `TemplateBody`: `str`
@@ -1074,7 +1074,7 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.update_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `Regions`: `List`\[`str`\] *(required)*
@@ -1098,7 +1098,7 @@ Type annotations for `boto3.client("cloudformation").update_stack_set` method.
 Boto3 documentation:
 [CloudFormation.Client.update_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `Description`: `str`

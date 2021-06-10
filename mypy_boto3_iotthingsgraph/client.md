@@ -99,7 +99,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.associate_entity_to_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.associate_entity_to_thing)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 - `entityId`: `str` *(required)*
@@ -146,7 +146,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.create_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `definition`:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
@@ -361,7 +361,7 @@ Type annotations for
 Boto3 documentation:
 [IoTThingsGraph.Client.get_flow_template_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template_revisions)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `nextToken`: `str`
@@ -420,7 +420,7 @@ Type annotations for
 Boto3 documentation:
 [IoTThingsGraph.Client.get_system_template_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template_revisions)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `nextToken`: `str`
@@ -451,7 +451,7 @@ Type annotations for
 Boto3 documentation:
 [IoTThingsGraph.Client.list_flow_execution_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_flow_execution_messages)
 
-Arguments:
+Keyword-only arguments:
 
 - `flowExecutionId`: `str` *(required)*
 - `nextToken`: `str`
@@ -468,7 +468,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `maxResults`: `int`
@@ -484,7 +484,7 @@ Type annotations for `boto3.client("iotthingsgraph").search_entities` method.
 Boto3 documentation:
 [IoTThingsGraph.Client.search_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `entityTypes`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
   *(required)*
@@ -505,7 +505,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.search_flow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `systemInstanceId`: `str` *(required)*
 - `flowExecutionId`: `str`
@@ -525,7 +525,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.search_flow_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`:
   `List`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
@@ -543,7 +543,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.search_system_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`:
   `List`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
@@ -561,7 +561,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.search_system_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`:
   `List`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
@@ -578,7 +578,7 @@ Type annotations for `boto3.client("iotthingsgraph").search_things` method.
 Boto3 documentation:
 [IoTThingsGraph.Client.search_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_things)
 
-Arguments:
+Keyword-only arguments:
 
 - `entityId`: `str` *(required)*
 - `nextToken`: `str`
@@ -639,7 +639,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.update_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_flow_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `definition`:
@@ -658,7 +658,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.update_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_system_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `definition`:
@@ -677,7 +677,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.upload_entity_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.upload_entity_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `document`:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)

@@ -79,7 +79,7 @@ method.
 Boto3 documentation:
 [Honeycode.Client.batch_create_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
@@ -99,7 +99,7 @@ method.
 Boto3 documentation:
 [Honeycode.Client.batch_delete_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
@@ -117,7 +117,7 @@ method.
 Boto3 documentation:
 [Honeycode.Client.batch_update_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
@@ -137,7 +137,7 @@ method.
 Boto3 documentation:
 [Honeycode.Client.batch_upsert_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
@@ -170,7 +170,7 @@ method.
 Boto3 documentation:
 [Honeycode.Client.describe_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
@@ -202,7 +202,7 @@ Type annotations for `boto3.client("honeycode").get_screen_data` method.
 Boto3 documentation:
 [Honeycode.Client.get_screen_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `appId`: `str` *(required)*
@@ -223,7 +223,7 @@ method.
 Boto3 documentation:
 [Honeycode.Client.invoke_screen_automation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `appId`: `str` *(required)*
@@ -244,7 +244,7 @@ Type annotations for `boto3.client("honeycode").list_table_columns` method.
 Boto3 documentation:
 [Honeycode.Client.list_table_columns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("honeycode").list_table_rows` method.
 Boto3 documentation:
 [Honeycode.Client.list_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
@@ -278,7 +278,7 @@ Type annotations for `boto3.client("honeycode").list_tables` method.
 Boto3 documentation:
 [Honeycode.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `maxResults`: `int`
@@ -293,7 +293,7 @@ Type annotations for `boto3.client("honeycode").query_table_rows` method.
 Boto3 documentation:
 [Honeycode.Client.query_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
@@ -312,7 +312,7 @@ method.
 Boto3 documentation:
 [Honeycode.Client.start_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `dataSource`:

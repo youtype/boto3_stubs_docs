@@ -83,7 +83,7 @@ method.
 Boto3 documentation:
 [AppRunner.Client.associate_custom_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.associate_custom_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -113,7 +113,7 @@ Type annotations for
 Boto3 documentation:
 [AppRunner.Client.create_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_auto_scaling_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingConfigurationName`: `str` *(required)*
 - `MaxConcurrency`: `int`
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("apprunner").create_connection` method.
 Boto3 documentation:
 [AppRunner.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionName`: `str` *(required)*
 - `ProviderType`: `Literal['GITHUB']` (see
@@ -148,7 +148,7 @@ Type annotations for `boto3.client("apprunner").create_service` method.
 Boto3 documentation:
 [AppRunner.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceName`: `str` *(required)*
 - `SourceConfiguration`:
@@ -232,7 +232,7 @@ method.
 Boto3 documentation:
 [AppRunner.Client.describe_custom_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_custom_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -295,7 +295,7 @@ Type annotations for
 Boto3 documentation:
 [AppRunner.Client.list_auto_scaling_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_auto_scaling_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingConfigurationName`: `str`
 - `LatestOnly`: `bool`
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("apprunner").list_connections` method.
 Boto3 documentation:
 [AppRunner.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionName`: `str`
 - `MaxResults`: `int`
@@ -328,7 +328,7 @@ Type annotations for `boto3.client("apprunner").list_operations` method.
 Boto3 documentation:
 [AppRunner.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_operations)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("apprunner").update_service` method.
 Boto3 documentation:
 [AppRunner.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.update_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 - `SourceConfiguration`:

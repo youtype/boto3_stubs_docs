@@ -84,7 +84,7 @@ Type annotations for `boto3.client("lex-runtime").delete_session` method.
 Boto3 documentation:
 [LexRuntimeService.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.delete_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `botName`: `str` *(required)*
 - `botAlias`: `str` *(required)*
@@ -117,7 +117,7 @@ Type annotations for `boto3.client("lex-runtime").get_session` method.
 Boto3 documentation:
 [LexRuntimeService.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.get_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `botName`: `str` *(required)*
 - `botAlias`: `str` *(required)*
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("lex-runtime").post_content` method.
 Boto3 documentation:
 [LexRuntimeService.Client.post_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.post_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `botName`: `str` *(required)*
 - `botAlias`: `str` *(required)*
@@ -155,7 +155,7 @@ Type annotations for `boto3.client("lex-runtime").post_text` method.
 Boto3 documentation:
 [LexRuntimeService.Client.post_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.post_text)
 
-Arguments:
+Keyword-only arguments:
 
 - `botName`: `str` *(required)*
 - `botAlias`: `str` *(required)*
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("lex-runtime").put_session` method.
 Boto3 documentation:
 [LexRuntimeService.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.put_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `botName`: `str` *(required)*
 - `botAlias`: `str` *(required)*

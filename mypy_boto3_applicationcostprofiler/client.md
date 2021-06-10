@@ -162,7 +162,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.put_report_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
 - `reportDescription`: `str` *(required)*
@@ -183,7 +183,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.update_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.update_report_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
 - `reportDescription`: `str` *(required)*

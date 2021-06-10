@@ -109,7 +109,7 @@ Type annotations for `boto3.client("importexport").create_job` method.
 Boto3 documentation:
 [ImportExport.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobType`: [JobTypeType](./literals.md#jobtypetype) *(required)*
 - `Manifest`: `str` *(required)*
@@ -143,7 +143,7 @@ Type annotations for `boto3.client("importexport").get_shipping_label` method.
 Boto3 documentation:
 [ImportExport.Client.get_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobIds`: `List`\[`str`\] *(required)*
 - `name`: `str`
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("importexport").list_jobs` method.
 Boto3 documentation:
 [ImportExport.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxJobs`: `int`
 - `Marker`: `str`
@@ -197,7 +197,7 @@ Type annotations for `boto3.client("importexport").update_job` method.
 Boto3 documentation:
 [ImportExport.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `Manifest`: `str` *(required)*

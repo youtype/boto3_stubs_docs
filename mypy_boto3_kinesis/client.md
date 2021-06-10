@@ -162,7 +162,7 @@ method.
 Boto3 documentation:
 [Kinesis.Client.deregister_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.deregister_stream_consumer)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamARN`: `str`
 - `ConsumerName`: `str`
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("kinesis").describe_stream` method.
 Boto3 documentation:
 [Kinesis.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `Limit`: `int`
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("kinesis").describe_stream_consumer` method.
 Boto3 documentation:
 [Kinesis.Client.describe_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_consumer)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamARN`: `str`
 - `ConsumerName`: `str`
@@ -295,7 +295,7 @@ Type annotations for `boto3.client("kinesis").get_shard_iterator` method.
 Boto3 documentation:
 [Kinesis.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_shard_iterator)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardId`: `str` *(required)*
@@ -327,7 +327,7 @@ Type annotations for `boto3.client("kinesis").list_shards` method.
 Boto3 documentation:
 [Kinesis.Client.list_shards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_shards)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str`
 - `NextToken`: `str`
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("kinesis").list_stream_consumers` method.
 Boto3 documentation:
 [Kinesis.Client.list_stream_consumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_stream_consumers)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamARN`: `str` *(required)*
 - `NextToken`: `str`
@@ -376,7 +376,7 @@ Type annotations for `boto3.client("kinesis").list_tags_for_stream` method.
 Boto3 documentation:
 [Kinesis.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_tags_for_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ExclusiveStartTagKey`: `str`
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("kinesis").merge_shards` method.
 Boto3 documentation:
 [Kinesis.Client.merge_shards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.merge_shards)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardToMerge`: `str` *(required)*
@@ -405,7 +405,7 @@ Type annotations for `boto3.client("kinesis").put_record` method.
 Boto3 documentation:
 [Kinesis.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("kinesis").split_shard` method.
 Boto3 documentation:
 [Kinesis.Client.split_shard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.split_shard)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardToSplit`: `str` *(required)*
@@ -478,7 +478,7 @@ Type annotations for `boto3.client("kinesis").start_stream_encryption` method.
 Boto3 documentation:
 [Kinesis.Client.start_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.start_stream_encryption)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
@@ -492,7 +492,7 @@ Type annotations for `boto3.client("kinesis").stop_stream_encryption` method.
 Boto3 documentation:
 [Kinesis.Client.stop_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.stop_stream_encryption)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("kinesis").subscribe_to_shard` method.
 Boto3 documentation:
 [Kinesis.Client.subscribe_to_shard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.subscribe_to_shard)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConsumerARN`: `str` *(required)*
 - `ShardId`: `str` *(required)*
@@ -524,7 +524,7 @@ Type annotations for `boto3.client("kinesis").update_shard_count` method.
 Boto3 documentation:
 [Kinesis.Client.update_shard_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_shard_count)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `TargetShardCount`: `int` *(required)*

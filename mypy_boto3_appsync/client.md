@@ -121,7 +121,7 @@ Type annotations for `boto3.client("appsync").create_api_cache` method.
 Boto3 documentation:
 [AppSync.Client.create_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `ttl`: `int` *(required)*
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("appsync").create_api_key` method.
 Boto3 documentation:
 [AppSync.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `description`: `str`
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("appsync").create_data_source` method.
 Boto3 documentation:
 [AppSync.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("appsync").create_function` method.
 Boto3 documentation:
 [AppSync.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -206,7 +206,7 @@ Type annotations for `boto3.client("appsync").create_graphql_api` method.
 Boto3 documentation:
 [AppSync.Client.create_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `authenticationType`:
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("appsync").create_resolver` method.
 Boto3 documentation:
 [AppSync.Client.create_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("appsync").create_type` method.
 Boto3 documentation:
 [AppSync.Client.create_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `definition`: `str` *(required)*
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("appsync").delete_resolver` method.
 Boto3 documentation:
 [AppSync.Client.delete_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
@@ -455,7 +455,7 @@ Type annotations for `boto3.client("appsync").get_introspection_schema` method.
 Boto3 documentation:
 [AppSync.Client.get_introspection_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `format`: [OutputTypeType](./literals.md#outputtypetype) *(required)*
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("appsync").get_resolver` method.
 Boto3 documentation:
 [AppSync.Client.get_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
@@ -502,7 +502,7 @@ Type annotations for `boto3.client("appsync").get_type` method.
 Boto3 documentation:
 [AppSync.Client.get_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
@@ -518,7 +518,7 @@ Type annotations for `boto3.client("appsync").list_api_keys` method.
 Boto3 documentation:
 [AppSync.Client.list_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `nextToken`: `str`
@@ -534,7 +534,7 @@ Type annotations for `boto3.client("appsync").list_data_sources` method.
 Boto3 documentation:
 [AppSync.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `nextToken`: `str`
@@ -550,7 +550,7 @@ Type annotations for `boto3.client("appsync").list_functions` method.
 Boto3 documentation:
 [AppSync.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `nextToken`: `str`
@@ -581,7 +581,7 @@ Type annotations for `boto3.client("appsync").list_resolvers` method.
 Boto3 documentation:
 [AppSync.Client.list_resolvers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
@@ -599,7 +599,7 @@ method.
 Boto3 documentation:
 [AppSync.Client.list_resolvers_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `functionId`: `str` *(required)*
@@ -630,7 +630,7 @@ Type annotations for `boto3.client("appsync").list_types` method.
 Boto3 documentation:
 [AppSync.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
@@ -690,7 +690,7 @@ Type annotations for `boto3.client("appsync").update_api_cache` method.
 Boto3 documentation:
 [AppSync.Client.update_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `ttl`: `int` *(required)*
@@ -708,7 +708,7 @@ Type annotations for `boto3.client("appsync").update_api_key` method.
 Boto3 documentation:
 [AppSync.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `id`: `str` *(required)*
@@ -725,7 +725,7 @@ Type annotations for `boto3.client("appsync").update_data_source` method.
 Boto3 documentation:
 [AppSync.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -753,7 +753,7 @@ Type annotations for `boto3.client("appsync").update_function` method.
 Boto3 documentation:
 [AppSync.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -775,7 +775,7 @@ Type annotations for `boto3.client("appsync").update_graphql_api` method.
 Boto3 documentation:
 [AppSync.Client.update_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -800,7 +800,7 @@ Type annotations for `boto3.client("appsync").update_resolver` method.
 Boto3 documentation:
 [AppSync.Client.update_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
@@ -824,7 +824,7 @@ Type annotations for `boto3.client("appsync").update_type` method.
 Boto3 documentation:
 [AppSync.Client.update_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*

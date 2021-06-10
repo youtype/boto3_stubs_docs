@@ -251,7 +251,7 @@ method.
 Boto3 documentation:
 [Chime.Client.associate_phone_number_with_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -267,7 +267,7 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.associate_phone_numbers_with_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
 
-Arguments:
+Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
@@ -285,7 +285,7 @@ method.
 Boto3 documentation:
 [Chime.Client.associate_phone_numbers_with_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
@@ -336,7 +336,7 @@ method.
 Boto3 documentation:
 [Chime.Client.batch_create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_channel_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArns`: `List`\[`str`\] *(required)*
@@ -354,7 +354,7 @@ method.
 Boto3 documentation:
 [Chime.Client.batch_create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
@@ -476,7 +476,7 @@ Type annotations for `boto3.client("chime").create_app_instance` method.
 Boto3 documentation:
 [Chime.Client.create_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
@@ -508,7 +508,7 @@ Type annotations for `boto3.client("chime").create_app_instance_user` method.
 Boto3 documentation:
 [Chime.Client.create_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `AppInstanceUserId`: `str` *(required)*
@@ -527,7 +527,7 @@ Type annotations for `boto3.client("chime").create_attendee` method.
 Boto3 documentation:
 [Chime.Client.create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee)
 
-Arguments:
+Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `ExternalUserId`: `str` *(required)*
@@ -543,7 +543,7 @@ Type annotations for `boto3.client("chime").create_bot` method.
 Boto3 documentation:
 [Chime.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `DisplayName`: `str` *(required)*
@@ -558,7 +558,7 @@ Type annotations for `boto3.client("chime").create_channel` method.
 Boto3 documentation:
 [Chime.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -579,7 +579,7 @@ Type annotations for `boto3.client("chime").create_channel_ban` method.
 Boto3 documentation:
 [Chime.Client.create_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
@@ -595,7 +595,7 @@ Type annotations for `boto3.client("chime").create_channel_membership` method.
 Boto3 documentation:
 [Chime.Client.create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
@@ -613,7 +613,7 @@ Type annotations for `boto3.client("chime").create_channel_moderator` method.
 Boto3 documentation:
 [Chime.Client.create_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `ChannelModeratorArn`: `str` *(required)*
@@ -629,7 +629,7 @@ Type annotations for `boto3.client("chime").create_meeting` method.
 Boto3 documentation:
 [Chime.Client.create_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientRequestToken`: `str` *(required)*
 - `ExternalMeetingId`: `str`
@@ -649,7 +649,7 @@ Type annotations for `boto3.client("chime").create_meeting_dial_out` method.
 Boto3 documentation:
 [Chime.Client.create_meeting_dial_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
 
-Arguments:
+Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `FromPhoneNumber`: `str` *(required)*
@@ -667,7 +667,7 @@ method.
 Boto3 documentation:
 [Chime.Client.create_meeting_with_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientRequestToken`: `str` *(required)*
 - `ExternalMeetingId`: `str`
@@ -706,7 +706,7 @@ Type annotations for `boto3.client("chime").create_proxy_session` method.
 Boto3 documentation:
 [Chime.Client.create_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `ParticipantPhoneNumbers`: `List`\[`str`\] *(required)*
@@ -730,7 +730,7 @@ Type annotations for `boto3.client("chime").create_room` method.
 Boto3 documentation:
 [Chime.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -745,7 +745,7 @@ Type annotations for `boto3.client("chime").create_room_membership` method.
 Boto3 documentation:
 [Chime.Client.create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
@@ -763,7 +763,7 @@ method.
 Boto3 documentation:
 [Chime.Client.create_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsRegion`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -782,7 +782,7 @@ method.
 Boto3 documentation:
 [Chime.Client.create_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
 
-Arguments:
+Keyword-only arguments:
 
 - `FromPhoneNumber`: `str` *(required)*
 - `ToPhoneNumber`: `str` *(required)*
@@ -798,7 +798,7 @@ Type annotations for `boto3.client("chime").create_sip_rule` method.
 Boto3 documentation:
 [Chime.Client.create_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `TriggerType`: [SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype)
@@ -819,7 +819,7 @@ Type annotations for `boto3.client("chime").create_user` method.
 Boto3 documentation:
 [Chime.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Username`: `str`
@@ -835,7 +835,7 @@ Type annotations for `boto3.client("chime").create_voice_connector` method.
 Boto3 documentation:
 [Chime.Client.create_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RequireEncryption`: `bool` *(required)*
@@ -952,7 +952,7 @@ Type annotations for `boto3.client("chime").delete_channel_ban` method.
 Boto3 documentation:
 [Chime.Client.delete_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
@@ -965,7 +965,7 @@ Type annotations for `boto3.client("chime").delete_channel_membership` method.
 Boto3 documentation:
 [Chime.Client.delete_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
@@ -978,7 +978,7 @@ Type annotations for `boto3.client("chime").delete_channel_message` method.
 Boto3 documentation:
 [Chime.Client.delete_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MessageId`: `str` *(required)*
@@ -991,7 +991,7 @@ Type annotations for `boto3.client("chime").delete_channel_moderator` method.
 Boto3 documentation:
 [Chime.Client.delete_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `ChannelModeratorArn`: `str` *(required)*
@@ -1063,7 +1063,7 @@ Type annotations for `boto3.client("chime").delete_room_membership` method.
 Boto3 documentation:
 [Chime.Client.delete_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
@@ -1255,7 +1255,7 @@ Type annotations for `boto3.client("chime").describe_channel_ban` method.
 Boto3 documentation:
 [Chime.Client.describe_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
@@ -1272,7 +1272,7 @@ method.
 Boto3 documentation:
 [Chime.Client.describe_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
@@ -1290,7 +1290,7 @@ method.
 Boto3 documentation:
 [Chime.Client.describe_channel_membership_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `AppInstanceUserArn`: `str` *(required)*
@@ -1307,7 +1307,7 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.describe_channel_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `AppInstanceUserArn`: `str` *(required)*
@@ -1323,7 +1323,7 @@ Type annotations for `boto3.client("chime").describe_channel_moderator` method.
 Boto3 documentation:
 [Chime.Client.describe_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `ChannelModeratorArn`: `str` *(required)*
@@ -1505,7 +1505,7 @@ Type annotations for `boto3.client("chime").get_channel_message` method.
 Boto3 documentation:
 [Chime.Client.get_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MessageId`: `str` *(required)*
@@ -1855,7 +1855,7 @@ Type annotations for `boto3.client("chime").invite_users` method.
 Boto3 documentation:
 [Chime.Client.invite_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserEmailList`: `List`\[`str`\] *(required)*
@@ -1871,7 +1871,7 @@ Type annotations for `boto3.client("chime").list_accounts` method.
 Boto3 documentation:
 [Chime.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 - `UserEmail`: `str`
@@ -1888,7 +1888,7 @@ Type annotations for `boto3.client("chime").list_app_instance_admins` method.
 Boto3 documentation:
 [Chime.Client.list_app_instance_admins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1904,7 +1904,7 @@ Type annotations for `boto3.client("chime").list_app_instance_users` method.
 Boto3 documentation:
 [Chime.Client.list_app_instance_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1950,7 +1950,7 @@ Type annotations for `boto3.client("chime").list_attendees` method.
 Boto3 documentation:
 [Chime.Client.list_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees)
 
-Arguments:
+Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `NextToken`: `str`
@@ -1966,7 +1966,7 @@ Type annotations for `boto3.client("chime").list_bots` method.
 Boto3 documentation:
 [Chime.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1981,7 +1981,7 @@ Type annotations for `boto3.client("chime").list_channel_bans` method.
 Boto3 documentation:
 [Chime.Client.list_channel_bans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1998,7 +1998,7 @@ Type annotations for `boto3.client("chime").list_channel_memberships` method.
 Boto3 documentation:
 [Chime.Client.list_channel_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
@@ -2017,7 +2017,7 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.list_channel_memberships_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceUserArn`: `str`
 - `MaxResults`: `int`
@@ -2034,7 +2034,7 @@ Type annotations for `boto3.client("chime").list_channel_messages` method.
 Boto3 documentation:
 [Chime.Client.list_channel_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -2054,7 +2054,7 @@ Type annotations for `boto3.client("chime").list_channel_moderators` method.
 Boto3 documentation:
 [Chime.Client.list_channel_moderators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -2071,7 +2071,7 @@ Type annotations for `boto3.client("chime").list_channels` method.
 Boto3 documentation:
 [Chime.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
@@ -2090,7 +2090,7 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.list_channels_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceUserArn`: `str`
 - `MaxResults`: `int`
@@ -2151,7 +2151,7 @@ Type annotations for `boto3.client("chime").list_phone_numbers` method.
 Boto3 documentation:
 [Chime.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`: [PhoneNumberStatusType](./literals.md#phonenumberstatustype)
 - `ProductType`:
@@ -2172,7 +2172,7 @@ Type annotations for `boto3.client("chime").list_proxy_sessions` method.
 Boto3 documentation:
 [Chime.Client.list_proxy_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions)
 
-Arguments:
+Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `Status`: [ProxySessionStatusType](./literals.md#proxysessionstatustype)
@@ -2189,7 +2189,7 @@ Type annotations for `boto3.client("chime").list_room_memberships` method.
 Boto3 documentation:
 [Chime.Client.list_room_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
@@ -2206,7 +2206,7 @@ Type annotations for `boto3.client("chime").list_rooms` method.
 Boto3 documentation:
 [Chime.Client.list_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `MemberId`: `str`
@@ -2238,7 +2238,7 @@ Type annotations for `boto3.client("chime").list_sip_rules` method.
 Boto3 documentation:
 [Chime.Client.list_sip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `SipMediaApplicationId`: `str`
 - `MaxResults`: `int`
@@ -2285,7 +2285,7 @@ Type annotations for `boto3.client("chime").list_users` method.
 Boto3 documentation:
 [Chime.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserEmail`: `str`
@@ -2398,7 +2398,7 @@ Type annotations for `boto3.client("chime").put_events_configuration` method.
 Boto3 documentation:
 [Chime.Client.put_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BotId`: `str` *(required)*
@@ -2503,7 +2503,7 @@ Type annotations for `boto3.client("chime").put_voice_connector_proxy` method.
 Boto3 documentation:
 [Chime.Client.put_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
 
-Arguments:
+Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `DefaultSessionExpiryMinutes`: `int` *(required)*
@@ -2570,7 +2570,7 @@ Type annotations for `boto3.client("chime").redact_channel_message` method.
 Boto3 documentation:
 [Chime.Client.redact_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MessageId`: `str` *(required)*
@@ -2587,7 +2587,7 @@ method.
 Boto3 documentation:
 [Chime.Client.redact_conversation_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `ConversationId`: `str` *(required)*
@@ -2602,7 +2602,7 @@ Type annotations for `boto3.client("chime").redact_room_message` method.
 Boto3 documentation:
 [Chime.Client.redact_room_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
@@ -2662,7 +2662,7 @@ method.
 Boto3 documentation:
 [Chime.Client.search_available_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
 
-Arguments:
+Keyword-only arguments:
 
 - `AreaCode`: `str`
 - `City`: `str`
@@ -2683,7 +2683,7 @@ Type annotations for `boto3.client("chime").send_channel_message` method.
 Boto3 documentation:
 [Chime.Client.send_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `Content`: `str` *(required)*
@@ -2706,7 +2706,7 @@ Type annotations for `boto3.client("chime").tag_attendee` method.
 Boto3 documentation:
 [Chime.Client.tag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee)
 
-Arguments:
+Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `AttendeeId`: `str` *(required)*
@@ -2743,7 +2743,7 @@ Type annotations for `boto3.client("chime").untag_attendee` method.
 Boto3 documentation:
 [Chime.Client.untag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee)
 
-Arguments:
+Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `AttendeeId`: `str` *(required)*
@@ -2810,7 +2810,7 @@ Type annotations for `boto3.client("chime").update_app_instance` method.
 Boto3 documentation:
 [Chime.Client.update_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -2826,7 +2826,7 @@ Type annotations for `boto3.client("chime").update_app_instance_user` method.
 Boto3 documentation:
 [Chime.Client.update_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppInstanceUserArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -2842,7 +2842,7 @@ Type annotations for `boto3.client("chime").update_bot` method.
 Boto3 documentation:
 [Chime.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BotId`: `str` *(required)*
@@ -2857,7 +2857,7 @@ Type annotations for `boto3.client("chime").update_channel` method.
 Boto3 documentation:
 [Chime.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -2875,7 +2875,7 @@ Type annotations for `boto3.client("chime").update_channel_message` method.
 Boto3 documentation:
 [Chime.Client.update_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `MessageId`: `str` *(required)*
@@ -2924,7 +2924,7 @@ Type annotations for `boto3.client("chime").update_phone_number` method.
 Boto3 documentation:
 [Chime.Client.update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number)
 
-Arguments:
+Keyword-only arguments:
 
 - `PhoneNumberId`: `str` *(required)*
 - `ProductType`:
@@ -2953,7 +2953,7 @@ Type annotations for `boto3.client("chime").update_proxy_session` method.
 Boto3 documentation:
 [Chime.Client.update_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `ProxySessionId`: `str` *(required)*
@@ -2971,7 +2971,7 @@ Type annotations for `boto3.client("chime").update_room` method.
 Boto3 documentation:
 [Chime.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
@@ -2986,7 +2986,7 @@ Type annotations for `boto3.client("chime").update_room_membership` method.
 Boto3 documentation:
 [Chime.Client.update_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
@@ -3004,7 +3004,7 @@ method.
 Boto3 documentation:
 [Chime.Client.update_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `SipMediaApplicationId`: `str` *(required)*
 - `Name`: `str`
@@ -3021,7 +3021,7 @@ Type annotations for `boto3.client("chime").update_sip_rule` method.
 Boto3 documentation:
 [Chime.Client.update_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `SipRuleId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -3039,7 +3039,7 @@ Type annotations for `boto3.client("chime").update_user` method.
 Boto3 documentation:
 [Chime.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -3057,7 +3057,7 @@ Type annotations for `boto3.client("chime").update_user_settings` method.
 Boto3 documentation:
 [Chime.Client.update_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -3071,7 +3071,7 @@ Type annotations for `boto3.client("chime").update_voice_connector` method.
 Boto3 documentation:
 [Chime.Client.update_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector)
 
-Arguments:
+Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -3088,7 +3088,7 @@ method.
 Boto3 documentation:
 [Chime.Client.update_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
 - `Name`: `str` *(required)*

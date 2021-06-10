@@ -74,7 +74,7 @@ Type annotations for
 Boto3 documentation:
 [MarketplaceCommerceAnalytics.Client.generate_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `dataSetType`: [DataSetTypeType](./literals.md#datasettypetype) *(required)*
 - `dataSetPublicationDate`: `datetime` *(required)*
@@ -113,7 +113,7 @@ method.
 Boto3 documentation:
 [MarketplaceCommerceAnalytics.Client.start_support_data_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export)
 
-Arguments:
+Keyword-only arguments:
 
 - `dataSetType`: [SupportDataSetTypeType](./literals.md#supportdatasettypetype)
   *(required)*

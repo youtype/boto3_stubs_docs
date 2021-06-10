@@ -795,7 +795,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_application_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `KpiName`: `str` *(required)*
@@ -872,7 +872,7 @@ Type annotations for `boto3.client("pinpoint").get_campaign_activities` method.
 Boto3 documentation:
 [Pinpoint.Client.get_campaign_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `CampaignId`: `str` *(required)*
@@ -890,7 +890,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_campaign_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `CampaignId`: `str` *(required)*
@@ -910,7 +910,7 @@ Type annotations for `boto3.client("pinpoint").get_campaign_version` method.
 Boto3 documentation:
 [Pinpoint.Client.get_campaign_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `CampaignId`: `str` *(required)*
@@ -926,7 +926,7 @@ Type annotations for `boto3.client("pinpoint").get_campaign_versions` method.
 Boto3 documentation:
 [Pinpoint.Client.get_campaign_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `CampaignId`: `str` *(required)*
@@ -943,7 +943,7 @@ Type annotations for `boto3.client("pinpoint").get_campaigns` method.
 Boto3 documentation:
 [Pinpoint.Client.get_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `PageSize`: `str`
@@ -1046,7 +1046,7 @@ Type annotations for `boto3.client("pinpoint").get_export_jobs` method.
 Boto3 documentation:
 [Pinpoint.Client.get_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `PageSize`: `str`
@@ -1091,7 +1091,7 @@ Type annotations for `boto3.client("pinpoint").get_import_jobs` method.
 Boto3 documentation:
 [Pinpoint.Client.get_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `PageSize`: `str`
@@ -1122,7 +1122,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_journey_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JourneyId`: `str` *(required)*
@@ -1143,7 +1143,7 @@ Type annotations for
 Boto3 documentation:
 [Pinpoint.Client.get_journey_execution_activity_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JourneyActivityId`: `str` *(required)*
@@ -1162,7 +1162,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_journey_execution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JourneyId`: `str` *(required)*
@@ -1239,7 +1239,7 @@ Type annotations for `boto3.client("pinpoint").get_segment_export_jobs` method.
 Boto3 documentation:
 [Pinpoint.Client.get_segment_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SegmentId`: `str` *(required)*
@@ -1256,7 +1256,7 @@ Type annotations for `boto3.client("pinpoint").get_segment_import_jobs` method.
 Boto3 documentation:
 [Pinpoint.Client.get_segment_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SegmentId`: `str` *(required)*
@@ -1273,7 +1273,7 @@ Type annotations for `boto3.client("pinpoint").get_segment_version` method.
 Boto3 documentation:
 [Pinpoint.Client.get_segment_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SegmentId`: `str` *(required)*
@@ -1289,7 +1289,7 @@ Type annotations for `boto3.client("pinpoint").get_segment_versions` method.
 Boto3 documentation:
 [Pinpoint.Client.get_segment_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SegmentId`: `str` *(required)*
@@ -1306,7 +1306,7 @@ Type annotations for `boto3.client("pinpoint").get_segments` method.
 Boto3 documentation:
 [Pinpoint.Client.get_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segments)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `PageSize`: `str`
@@ -1395,7 +1395,7 @@ Type annotations for `boto3.client("pinpoint").list_journeys` method.
 Boto3 documentation:
 [Pinpoint.Client.list_journeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_journeys)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `PageSize`: `str`
@@ -1425,7 +1425,7 @@ Type annotations for `boto3.client("pinpoint").list_template_versions` method.
 Boto3 documentation:
 [Pinpoint.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `TemplateType`: `str` *(required)*
@@ -1442,7 +1442,7 @@ Type annotations for `boto3.client("pinpoint").list_templates` method.
 Boto3 documentation:
 [Pinpoint.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `str`
@@ -1507,7 +1507,7 @@ Type annotations for `boto3.client("pinpoint").remove_attributes` method.
 Boto3 documentation:
 [Pinpoint.Client.remove_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `AttributeType`: `str` *(required)*
@@ -1705,7 +1705,7 @@ Type annotations for `boto3.client("pinpoint").update_campaign` method.
 Boto3 documentation:
 [Pinpoint.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `CampaignId`: `str` *(required)*
@@ -1740,7 +1740,7 @@ Type annotations for `boto3.client("pinpoint").update_email_template` method.
 Boto3 documentation:
 [Pinpoint.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailTemplateRequest`:
   [EmailTemplateRequestTypeDef](./type_defs.md#emailtemplaterequesttypedef)
@@ -1759,7 +1759,7 @@ Type annotations for `boto3.client("pinpoint").update_endpoint` method.
 Boto3 documentation:
 [Pinpoint.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EndpointId`: `str` *(required)*
@@ -1810,7 +1810,7 @@ Type annotations for `boto3.client("pinpoint").update_journey` method.
 Boto3 documentation:
 [Pinpoint.Client.update_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JourneyId`: `str` *(required)*
@@ -1828,7 +1828,7 @@ Type annotations for `boto3.client("pinpoint").update_journey_state` method.
 Boto3 documentation:
 [Pinpoint.Client.update_journey_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JourneyId`: `str` *(required)*
@@ -1846,7 +1846,7 @@ Type annotations for `boto3.client("pinpoint").update_push_template` method.
 Boto3 documentation:
 [Pinpoint.Client.update_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_push_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `PushNotificationTemplateRequest`:
   [PushNotificationTemplateRequestTypeDef](./type_defs.md#pushnotificationtemplaterequesttypedef)
@@ -1883,7 +1883,7 @@ Type annotations for `boto3.client("pinpoint").update_segment` method.
 Boto3 documentation:
 [Pinpoint.Client.update_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_segment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SegmentId`: `str` *(required)*
@@ -1918,7 +1918,7 @@ Type annotations for `boto3.client("pinpoint").update_sms_template` method.
 Boto3 documentation:
 [Pinpoint.Client.update_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `SMSTemplateRequest`:
   [SMSTemplateRequestTypeDef](./type_defs.md#smstemplaterequesttypedef)
@@ -1938,7 +1938,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.update_template_active_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateActiveVersionRequest`:
   [TemplateActiveVersionRequestTypeDef](./type_defs.md#templateactiveversionrequesttypedef)
@@ -1973,7 +1973,7 @@ Type annotations for `boto3.client("pinpoint").update_voice_template` method.
 Boto3 documentation:
 [Pinpoint.Client.update_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `VoiceTemplateRequest`:

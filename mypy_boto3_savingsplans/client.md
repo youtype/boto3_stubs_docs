@@ -81,7 +81,7 @@ Type annotations for `boto3.client("savingsplans").create_savings_plan` method.
 Boto3 documentation:
 [SavingsPlans.Client.create_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `savingsPlanOfferingId`: `str` *(required)*
 - `commitment`: `str` *(required)*
@@ -115,7 +115,7 @@ method.
 Boto3 documentation:
 [SavingsPlans.Client.describe_savings_plan_rates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates)
 
-Arguments:
+Keyword-only arguments:
 
 - `savingsPlanId`: `str` *(required)*
 - `filters`:
@@ -134,7 +134,7 @@ method.
 Boto3 documentation:
 [SavingsPlans.Client.describe_savings_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans)
 
-Arguments:
+Keyword-only arguments:
 
 - `savingsPlanArns`: `List`\[`str`\]
 - `savingsPlanIds`: `List`\[`str`\]
@@ -156,7 +156,7 @@ Type annotations for
 Boto3 documentation:
 [SavingsPlans.Client.describe_savings_plans_offering_rates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates)
 
-Arguments:
+Keyword-only arguments:
 
 - `savingsPlanOfferingIds`: `List`\[`str`\]
 - `savingsPlanPaymentOptions`:
@@ -185,7 +185,7 @@ Type annotations for
 Boto3 documentation:
 [SavingsPlans.Client.describe_savings_plans_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings)
 
-Arguments:
+Keyword-only arguments:
 
 - `offeringIds`: `List`\[`str`\]
 - `paymentOptions`:

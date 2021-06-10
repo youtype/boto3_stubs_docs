@@ -128,7 +128,7 @@ Type annotations for `boto3.client("backup").create_backup_plan` method.
 Boto3 documentation:
 [Backup.Client.create_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlan`: [BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef)
   *(required)*
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("backup").create_backup_selection` method.
 Boto3 documentation:
 [Backup.Client.create_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 - `BackupSelection`:
@@ -162,7 +162,7 @@ Type annotations for `boto3.client("backup").create_backup_vault` method.
 Boto3 documentation:
 [Backup.Client.create_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `BackupVaultTags`: `Dict`\[`str`, `str`\]
@@ -518,7 +518,7 @@ Type annotations for `boto3.client("backup").list_backup_jobs` method.
 Boto3 documentation:
 [Backup.Client.list_backup_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -556,7 +556,7 @@ Type annotations for `boto3.client("backup").list_backup_plan_versions` method.
 Boto3 documentation:
 [Backup.Client.list_backup_plan_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 - `NextToken`: `str`
@@ -572,7 +572,7 @@ Type annotations for `boto3.client("backup").list_backup_plans` method.
 Boto3 documentation:
 [Backup.Client.list_backup_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -588,7 +588,7 @@ Type annotations for `boto3.client("backup").list_backup_selections` method.
 Boto3 documentation:
 [Backup.Client.list_backup_selections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 - `NextToken`: `str`
@@ -619,7 +619,7 @@ Type annotations for `boto3.client("backup").list_copy_jobs` method.
 Boto3 documentation:
 [Backup.Client.list_copy_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -656,7 +656,7 @@ Type annotations for
 Boto3 documentation:
 [Backup.Client.list_recovery_points_by_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `NextToken`: `str`
@@ -678,7 +678,7 @@ method.
 Boto3 documentation:
 [Backup.Client.list_recovery_points_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -694,7 +694,7 @@ Type annotations for `boto3.client("backup").list_restore_jobs` method.
 Boto3 documentation:
 [Backup.Client.list_restore_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -713,7 +713,7 @@ Type annotations for `boto3.client("backup").list_tags` method.
 Boto3 documentation:
 [Backup.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -742,7 +742,7 @@ method.
 Boto3 documentation:
 [Backup.Client.put_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `SNSTopicArn`: `str` *(required)*
@@ -757,7 +757,7 @@ Type annotations for `boto3.client("backup").start_backup_job` method.
 Boto3 documentation:
 [Backup.Client.start_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
@@ -779,7 +779,7 @@ Type annotations for `boto3.client("backup").start_copy_job` method.
 Boto3 documentation:
 [Backup.Client.start_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `RecoveryPointArn`: `str` *(required)*
 - `SourceBackupVaultName`: `str` *(required)*
@@ -797,7 +797,7 @@ Type annotations for `boto3.client("backup").start_restore_job` method.
 Boto3 documentation:
 [Backup.Client.start_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `RecoveryPointArn`: `str` *(required)*
 - `Metadata`: `Dict`\[`str`, `str`\] *(required)*
@@ -878,7 +878,7 @@ method.
 Boto3 documentation:
 [Backup.Client.update_recovery_point_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*

@@ -91,7 +91,7 @@ Type annotations for `boto3.client("forecastquery").query_forecast` method.
 Boto3 documentation:
 [ForecastQueryService.Client.query_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast)
 
-Arguments:
+Keyword-only arguments:
 
 - `ForecastArn`: `str` *(required)*
 - `Filters`: `Dict`\[`str`, `str`\] *(required)*

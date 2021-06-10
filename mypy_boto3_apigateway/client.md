@@ -196,7 +196,7 @@ Type annotations for `boto3.client("apigateway").create_api_key` method.
 Boto3 documentation:
 [APIGateway.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_api_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str`
 - `description`: `str`
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("apigateway").create_authorizer` method.
 Boto3 documentation:
 [APIGateway.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_authorizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -239,7 +239,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.create_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `restApiId`: `str` *(required)*
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("apigateway").create_deployment` method.
 Boto3 documentation:
 [APIGateway.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `stageName`: `str`
@@ -279,7 +279,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.create_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_part)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `location`:
@@ -297,7 +297,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.create_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `documentationVersion`: `str` *(required)*
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("apigateway").create_domain_name` method.
 Boto3 documentation:
 [APIGateway.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_domain_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `certificateName`: `str`
@@ -340,7 +340,7 @@ Type annotations for `boto3.client("apigateway").create_model` method.
 Boto3 documentation:
 [APIGateway.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -358,7 +358,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.create_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_request_validator)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `name`: `str`
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("apigateway").create_resource` method.
 Boto3 documentation:
 [APIGateway.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `parentId`: `str` *(required)*
@@ -389,7 +389,7 @@ Type annotations for `boto3.client("apigateway").create_rest_api` method.
 Boto3 documentation:
 [APIGateway.Client.create_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_rest_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -413,7 +413,7 @@ Type annotations for `boto3.client("apigateway").create_stage` method.
 Boto3 documentation:
 [APIGateway.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_stage)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -438,7 +438,7 @@ Type annotations for `boto3.client("apigateway").create_usage_plan` method.
 Boto3 documentation:
 [APIGateway.Client.create_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -456,7 +456,7 @@ Type annotations for `boto3.client("apigateway").create_usage_plan_key` method.
 Boto3 documentation:
 [APIGateway.Client.create_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `usagePlanId`: `str` *(required)*
 - `keyId`: `str` *(required)*
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("apigateway").create_vpc_link` method.
 Boto3 documentation:
 [APIGateway.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_vpc_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `targetArns`: `List`\[`str`\] *(required)*
@@ -598,7 +598,7 @@ Type annotations for `boto3.client("apigateway").delete_integration` method.
 Boto3 documentation:
 [APIGateway.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -612,7 +612,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -626,7 +626,7 @@ Type annotations for `boto3.client("apigateway").delete_method` method.
 Boto3 documentation:
 [APIGateway.Client.delete_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -640,7 +640,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.delete_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -828,7 +828,7 @@ Type annotations for `boto3.client("apigateway").get_api_keys` method.
 Boto3 documentation:
 [APIGateway.Client.get_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `position`: `str`
 - `limit`: `int`
@@ -859,7 +859,7 @@ Type annotations for `boto3.client("apigateway").get_authorizers` method.
 Boto3 documentation:
 [APIGateway.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizers)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `position`: `str`
@@ -889,7 +889,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_base_path_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings)
 
-Arguments:
+Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `position`: `str`
@@ -933,7 +933,7 @@ Type annotations for `boto3.client("apigateway").get_deployment` method.
 Boto3 documentation:
 [APIGateway.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `deploymentId`: `str` *(required)*
@@ -948,7 +948,7 @@ Type annotations for `boto3.client("apigateway").get_deployments` method.
 Boto3 documentation:
 [APIGateway.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployments)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `position`: `str`
@@ -979,7 +979,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `type`: [DocumentationPartTypeType](./literals.md#documentationparttypetype)
@@ -1016,7 +1016,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_documentation_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `position`: `str`
@@ -1059,7 +1059,7 @@ Type annotations for `boto3.client("apigateway").get_export` method.
 Boto3 documentation:
 [APIGateway.Client.get_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_export)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -1091,7 +1091,7 @@ Type annotations for `boto3.client("apigateway").get_gateway_responses` method.
 Boto3 documentation:
 [APIGateway.Client.get_gateway_responses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `position`: `str`
@@ -1106,7 +1106,7 @@ Type annotations for `boto3.client("apigateway").get_integration` method.
 Boto3 documentation:
 [APIGateway.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1122,7 +1122,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1139,7 +1139,7 @@ Type annotations for `boto3.client("apigateway").get_method` method.
 Boto3 documentation:
 [APIGateway.Client.get_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1154,7 +1154,7 @@ Type annotations for `boto3.client("apigateway").get_method_response` method.
 Boto3 documentation:
 [APIGateway.Client.get_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1170,7 +1170,7 @@ Type annotations for `boto3.client("apigateway").get_model` method.
 Boto3 documentation:
 [APIGateway.Client.get_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `modelName`: `str` *(required)*
@@ -1199,7 +1199,7 @@ Type annotations for `boto3.client("apigateway").get_models` method.
 Boto3 documentation:
 [APIGateway.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `position`: `str`
@@ -1229,7 +1229,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_request_validators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validators)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `position`: `str`
@@ -1244,7 +1244,7 @@ Type annotations for `boto3.client("apigateway").get_resource` method.
 Boto3 documentation:
 [APIGateway.Client.get_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1259,7 +1259,7 @@ Type annotations for `boto3.client("apigateway").get_resources` method.
 Boto3 documentation:
 [APIGateway.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `position`: `str`
@@ -1302,7 +1302,7 @@ Type annotations for `boto3.client("apigateway").get_sdk` method.
 Boto3 documentation:
 [APIGateway.Client.get_sdk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -1373,7 +1373,7 @@ Type annotations for `boto3.client("apigateway").get_tags` method.
 Boto3 documentation:
 [APIGateway.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `position`: `str`
@@ -1388,7 +1388,7 @@ Type annotations for `boto3.client("apigateway").get_usage` method.
 Boto3 documentation:
 [APIGateway.Client.get_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `usagePlanId`: `str` *(required)*
 - `startDate`: `str` *(required)*
@@ -1433,7 +1433,7 @@ Type annotations for `boto3.client("apigateway").get_usage_plan_keys` method.
 Boto3 documentation:
 [APIGateway.Client.get_usage_plan_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `usagePlanId`: `str` *(required)*
 - `position`: `str`
@@ -1449,7 +1449,7 @@ Type annotations for `boto3.client("apigateway").get_usage_plans` method.
 Boto3 documentation:
 [APIGateway.Client.get_usage_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plans)
 
-Arguments:
+Keyword-only arguments:
 
 - `position`: `str`
 - `keyId`: `str`
@@ -1491,7 +1491,7 @@ Type annotations for `boto3.client("apigateway").import_api_keys` method.
 Boto3 documentation:
 [APIGateway.Client.import_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_api_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `format`: `Literal['csv']` (see
@@ -1508,7 +1508,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.import_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_documentation_parts)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -1525,7 +1525,7 @@ Type annotations for `boto3.client("apigateway").import_rest_api` method.
 Boto3 documentation:
 [APIGateway.Client.import_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_rest_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `failOnWarnings`: `bool`
@@ -1540,7 +1540,7 @@ Type annotations for `boto3.client("apigateway").put_gateway_response` method.
 Boto3 documentation:
 [APIGateway.Client.put_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_gateway_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `responseType`:
@@ -1558,7 +1558,7 @@ Type annotations for `boto3.client("apigateway").put_integration` method.
 Boto3 documentation:
 [APIGateway.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1589,7 +1589,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.put_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1611,7 +1611,7 @@ Type annotations for `boto3.client("apigateway").put_method` method.
 Boto3 documentation:
 [APIGateway.Client.put_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1634,7 +1634,7 @@ Type annotations for `boto3.client("apigateway").put_method_response` method.
 Boto3 documentation:
 [APIGateway.Client.put_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1652,7 +1652,7 @@ Type annotations for `boto3.client("apigateway").put_rest_api` method.
 Boto3 documentation:
 [APIGateway.Client.put_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_rest_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -1682,7 +1682,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_authorizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `authorizerId`: `str` *(required)*
@@ -1703,7 +1703,7 @@ Type annotations for `boto3.client("apigateway").test_invoke_method` method.
 Boto3 documentation:
 [APIGateway.Client.test_invoke_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_method)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1766,7 +1766,7 @@ Type annotations for `boto3.client("apigateway").update_authorizer` method.
 Boto3 documentation:
 [APIGateway.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_authorizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `authorizerId`: `str` *(required)*
@@ -1783,7 +1783,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.update_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `basePath`: `str` *(required)*
@@ -1815,7 +1815,7 @@ Type annotations for `boto3.client("apigateway").update_deployment` method.
 Boto3 documentation:
 [APIGateway.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `deploymentId`: `str` *(required)*
@@ -1832,7 +1832,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.update_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_part)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `documentationPartId`: `str` *(required)*
@@ -1849,7 +1849,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.update_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `documentationVersion`: `str` *(required)*
@@ -1882,7 +1882,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.update_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_gateway_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `responseType`:
@@ -1899,7 +1899,7 @@ Type annotations for `boto3.client("apigateway").update_integration` method.
 Boto3 documentation:
 [APIGateway.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1917,7 +1917,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1936,7 +1936,7 @@ Type annotations for `boto3.client("apigateway").update_method` method.
 Boto3 documentation:
 [APIGateway.Client.update_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1954,7 +1954,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.update_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method_response)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -1972,7 +1972,7 @@ Type annotations for `boto3.client("apigateway").update_model` method.
 Boto3 documentation:
 [APIGateway.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `modelName`: `str` *(required)*
@@ -1989,7 +1989,7 @@ method.
 Boto3 documentation:
 [APIGateway.Client.update_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_request_validator)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `requestValidatorId`: `str` *(required)*
@@ -2005,7 +2005,7 @@ Type annotations for `boto3.client("apigateway").update_resource` method.
 Boto3 documentation:
 [APIGateway.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
@@ -2036,7 +2036,7 @@ Type annotations for `boto3.client("apigateway").update_stage` method.
 Boto3 documentation:
 [APIGateway.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_stage)
 
-Arguments:
+Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
@@ -2052,7 +2052,7 @@ Type annotations for `boto3.client("apigateway").update_usage` method.
 Boto3 documentation:
 [APIGateway.Client.update_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `usagePlanId`: `str` *(required)*
 - `keyId`: `str` *(required)*

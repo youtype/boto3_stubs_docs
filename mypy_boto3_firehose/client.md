@@ -87,7 +87,7 @@ Type annotations for `boto3.client("firehose").create_delivery_stream` method.
 Boto3 documentation:
 [Firehose.Client.create_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.create_delivery_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `DeliveryStreamType`:
@@ -135,7 +135,7 @@ method.
 Boto3 documentation:
 [Firehose.Client.describe_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.describe_delivery_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `Limit`: `int`
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("firehose").list_delivery_streams` method.
 Boto3 documentation:
 [Firehose.Client.list_delivery_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_delivery_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `DeliveryStreamType`:
@@ -185,7 +185,7 @@ method.
 Boto3 documentation:
 [Firehose.Client.list_tags_for_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.list_tags_for_delivery_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `ExclusiveStartTagKey`: `str`
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("firehose").update_destination` method.
 Boto3 documentation:
 [Firehose.Client.update_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.update_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `CurrentDeliveryStreamVersionId`: `str` *(required)*

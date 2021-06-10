@@ -104,7 +104,7 @@ Type annotations for `boto3.client("batch").create_compute_environment` method.
 Boto3 documentation:
 [Batch.Client.create_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `computeEnvironmentName`: `str` *(required)*
 - `type`: [CETypeType](./literals.md#cetypetype) *(required)*
@@ -124,7 +124,7 @@ Type annotations for `boto3.client("batch").create_job_queue` method.
 Boto3 documentation:
 [Batch.Client.create_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobQueueName`: `str` *(required)*
 - `priority`: `int` *(required)*
@@ -184,7 +184,7 @@ method.
 Boto3 documentation:
 [Batch.Client.describe_compute_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `computeEnvironments`: `List`\[`str`\]
 - `maxResults`: `int`
@@ -200,7 +200,7 @@ Type annotations for `boto3.client("batch").describe_job_definitions` method.
 Boto3 documentation:
 [Batch.Client.describe_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobDefinitions`: `List`\[`str`\]
 - `maxResults`: `int`
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("batch").describe_job_queues` method.
 Boto3 documentation:
 [Batch.Client.describe_job_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobQueues`: `List`\[`str`\]
 - `maxResults`: `int`
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("batch").list_jobs` method.
 Boto3 documentation:
 [Batch.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobQueue`: `str`
 - `arrayJobId`: `str`
@@ -296,7 +296,7 @@ Type annotations for `boto3.client("batch").register_job_definition` method.
 Boto3 documentation:
 [Batch.Client.register_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobDefinitionName`: `str` *(required)*
 - `type`: [JobDefinitionTypeType](./literals.md#jobdefinitiontypetype)
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("batch").submit_job` method.
 Boto3 documentation:
 [Batch.Client.submit_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobName`: `str` *(required)*
 - `jobQueue`: `str` *(required)*
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("batch").update_compute_environment` method.
 Boto3 documentation:
 [Batch.Client.update_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `computeEnvironment`: `str` *(required)*
 - `state`: [CEStateType](./literals.md#cestatetype)
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("batch").update_job_queue` method.
 Boto3 documentation:
 [Batch.Client.update_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobQueue`: `str` *(required)*
 - `state`: [JQStateType](./literals.md#jqstatetype)

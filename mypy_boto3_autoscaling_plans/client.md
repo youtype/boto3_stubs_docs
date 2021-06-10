@@ -82,7 +82,7 @@ method.
 Boto3 documentation:
 [AutoScalingPlans.Client.create_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScalingPlanName`: `str` *(required)*
 - `ApplicationSource`:
@@ -118,7 +118,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScalingPlans.Client.describe_scaling_plan_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScalingPlanName`: `str` *(required)*
 - `ScalingPlanVersion`: `int` *(required)*
@@ -136,7 +136,7 @@ method.
 Boto3 documentation:
 [AutoScalingPlans.Client.describe_scaling_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScalingPlanNames`: `List`\[`str`\]
 - `ScalingPlanVersion`: `int`
@@ -174,7 +174,7 @@ method.
 Boto3 documentation:
 [AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScalingPlanName`: `str` *(required)*
 - `ScalingPlanVersion`: `int` *(required)*
@@ -199,7 +199,7 @@ method.
 Boto3 documentation:
 [AutoScalingPlans.Client.update_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScalingPlanName`: `str` *(required)*
 - `ScalingPlanVersion`: `int` *(required)*

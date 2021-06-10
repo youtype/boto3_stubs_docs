@@ -235,7 +235,7 @@ Type annotations for `boto3.client("lightsail").attach_disk` method.
 Boto3 documentation:
 [Lightsail.Client.attach_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_disk)
 
-Arguments:
+Keyword-only arguments:
 
 - `diskName`: `str` *(required)*
 - `instanceName`: `str` *(required)*
@@ -326,7 +326,7 @@ Type annotations for `boto3.client("lightsail").copy_snapshot` method.
 Boto3 documentation:
 [Lightsail.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.copy_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `targetSnapshotName`: `str` *(required)*
 - `sourceRegion`: [RegionNameType](./literals.md#regionnametype) *(required)*
@@ -344,7 +344,7 @@ Type annotations for `boto3.client("lightsail").create_certificate` method.
 Boto3 documentation:
 [Lightsail.Client.create_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `certificateName`: `str` *(required)*
 - `domainName`: `str` *(required)*
@@ -395,7 +395,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.create_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 - `power`:
@@ -418,7 +418,7 @@ Type annotations for
 Boto3 documentation:
 [Lightsail.Client.create_container_service_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 - `containers`: `Dict`\[`str`,
@@ -447,7 +447,7 @@ Type annotations for `boto3.client("lightsail").create_disk` method.
 Boto3 documentation:
 [Lightsail.Client.create_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk)
 
-Arguments:
+Keyword-only arguments:
 
 - `diskName`: `str` *(required)*
 - `availabilityZone`: `str` *(required)*
@@ -465,7 +465,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.create_disk_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_from_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `diskName`: `str` *(required)*
 - `availabilityZone`: `str` *(required)*
@@ -487,7 +487,7 @@ Type annotations for `boto3.client("lightsail").create_disk_snapshot` method.
 Boto3 documentation:
 [Lightsail.Client.create_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `diskSnapshotName`: `str` *(required)*
 - `diskName`: `str`
@@ -504,7 +504,7 @@ Type annotations for `boto3.client("lightsail").create_distribution` method.
 Boto3 documentation:
 [Lightsail.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `distributionName`: `str` *(required)*
 - `origin`: [InputOriginTypeDef](./type_defs.md#inputorigintypedef)
@@ -560,7 +560,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.create_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instance_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceSnapshotName`: `str` *(required)*
 - `instanceName`: `str` *(required)*
@@ -576,7 +576,7 @@ Type annotations for `boto3.client("lightsail").create_instances` method.
 Boto3 documentation:
 [Lightsail.Client.create_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceNames`: `List`\[`str`\] *(required)*
 - `availabilityZone`: `str` *(required)*
@@ -600,7 +600,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.create_instances_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances_from_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceNames`: `List`\[`str`\] *(required)*
 - `availabilityZone`: `str` *(required)*
@@ -642,7 +642,7 @@ Type annotations for `boto3.client("lightsail").create_load_balancer` method.
 Boto3 documentation:
 [Lightsail.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
 - `instancePort`: `int` *(required)*
@@ -664,7 +664,7 @@ Type annotations for
 Boto3 documentation:
 [Lightsail.Client.create_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer_tls_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
 - `certificateName`: `str` *(required)*
@@ -683,7 +683,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.create_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `relationalDatabaseBlueprintId`: `str` *(required)*
@@ -708,7 +708,7 @@ Type annotations for
 Boto3 documentation:
 [Lightsail.Client.create_relational_database_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_from_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `availabilityZone`: `str`
@@ -731,7 +731,7 @@ Type annotations for
 Boto3 documentation:
 [Lightsail.Client.create_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `relationalDatabaseSnapshotName`: `str` *(required)*
@@ -976,7 +976,7 @@ Type annotations for
 Boto3 documentation:
 [Lightsail.Client.delete_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer_tls_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
 - `certificateName`: `str` *(required)*
@@ -993,7 +993,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.delete_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `skipFinalSnapshot`: `bool`
@@ -1167,7 +1167,7 @@ Type annotations for `boto3.client("lightsail").get_alarms` method.
 Boto3 documentation:
 [Lightsail.Client.get_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_alarms)
 
-Arguments:
+Keyword-only arguments:
 
 - `alarmName`: `str`
 - `pageToken`: `str`
@@ -1225,7 +1225,7 @@ Type annotations for `boto3.client("lightsail").get_certificates` method.
 Boto3 documentation:
 [Lightsail.Client.get_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_certificates)
 
-Arguments:
+Keyword-only arguments:
 
 - `certificateStatuses`:
   `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
@@ -1297,7 +1297,7 @@ Type annotations for `boto3.client("lightsail").get_container_log` method.
 Boto3 documentation:
 [Lightsail.Client.get_container_log](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_log)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 - `containerName`: `str` *(required)*
@@ -1332,7 +1332,7 @@ Type annotations for
 Boto3 documentation:
 [Lightsail.Client.get_container_service_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 - `metricName`:
@@ -1461,7 +1461,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.get_distribution_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `distributionName`: `str` *(required)*
 - `metricName`:
@@ -1572,7 +1572,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.get_instance_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 - `metricName`: [InstanceMetricNameType](./literals.md#instancemetricnametype)
@@ -1706,7 +1706,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.get_load_balancer_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
 - `metricName`:
@@ -1862,7 +1862,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.get_relational_database_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `durationInMinutes`: `int`
@@ -1879,7 +1879,7 @@ Type annotations for
 Boto3 documentation:
 [Lightsail.Client.get_relational_database_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
@@ -1932,7 +1932,7 @@ Type annotations for
 Boto3 documentation:
 [Lightsail.Client.get_relational_database_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `metricName`:
@@ -2092,7 +2092,7 @@ Type annotations for `boto3.client("lightsail").put_alarm` method.
 Boto3 documentation:
 [Lightsail.Client.put_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_alarm)
 
-Arguments:
+Keyword-only arguments:
 
 - `alarmName`: `str` *(required)*
 - `metricName`: [MetricNameType](./literals.md#metricnametype) *(required)*
@@ -2166,7 +2166,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.register_container_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.register_container_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 - `label`: `str` *(required)*
@@ -2228,7 +2228,7 @@ Type annotations for `boto3.client("lightsail").set_ip_address_type` method.
 Boto3 documentation:
 [Lightsail.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.set_ip_address_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
@@ -2305,7 +2305,7 @@ Type annotations for `boto3.client("lightsail").tag_resource` method.
 Boto3 documentation:
 [Lightsail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceName`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2343,7 +2343,7 @@ Type annotations for `boto3.client("lightsail").untag_resource` method.
 Boto3 documentation:
 [Lightsail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceName`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -2360,7 +2360,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.update_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_container_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 - `power`:
@@ -2379,7 +2379,7 @@ Type annotations for `boto3.client("lightsail").update_distribution` method.
 Boto3 documentation:
 [Lightsail.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `distributionName`: `str` *(required)*
 - `origin`: [InputOriginTypeDef](./type_defs.md#inputorigintypedef)
@@ -2434,7 +2434,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.update_load_balancer_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_load_balancer_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
 - `attributeName`:
@@ -2453,7 +2453,7 @@ method.
 Boto3 documentation:
 [Lightsail.Client.update_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `masterUserPassword`: `str`

@@ -84,7 +84,7 @@ Type annotations for `boto3.client("signer").add_profile_permission` method.
 Boto3 documentation:
 [signer.Client.add_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.add_profile_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 - `action`: `str` *(required)*
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("signer").list_signing_jobs` method.
 Boto3 documentation:
 [signer.Client.list_signing_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `status`: [SigningStatusType](./literals.md#signingstatustype)
 - `platformId`: `str`
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("signer").list_signing_platforms` method.
 Boto3 documentation:
 [signer.Client.list_signing_platforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_platforms)
 
-Arguments:
+Keyword-only arguments:
 
 - `category`: `str`
 - `partner`: `str`
@@ -241,7 +241,7 @@ Type annotations for `boto3.client("signer").list_signing_profiles` method.
 Boto3 documentation:
 [signer.Client.list_signing_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `includeCanceled`: `bool`
 - `maxResults`: `int`
@@ -274,7 +274,7 @@ Type annotations for `boto3.client("signer").put_signing_profile` method.
 Boto3 documentation:
 [signer.Client.put_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.put_signing_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 - `platformId`: `str` *(required)*
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("signer").remove_profile_permission` method.
 Boto3 documentation:
 [signer.Client.remove_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.remove_profile_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 - `revisionId`: `str` *(required)*
@@ -313,7 +313,7 @@ Type annotations for `boto3.client("signer").revoke_signature` method.
 Boto3 documentation:
 [signer.Client.revoke_signature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signature)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `reason`: `str` *(required)*
@@ -326,7 +326,7 @@ Type annotations for `boto3.client("signer").revoke_signing_profile` method.
 Boto3 documentation:
 [signer.Client.revoke_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signing_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 - `profileVersion`: `str` *(required)*
@@ -340,7 +340,7 @@ Type annotations for `boto3.client("signer").start_signing_job` method.
 Boto3 documentation:
 [signer.Client.start_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.start_signing_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `source`: [SourceTypeDef](./type_defs.md#sourcetypedef) *(required)*
 - `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)

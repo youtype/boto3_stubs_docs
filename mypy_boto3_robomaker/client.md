@@ -232,7 +232,7 @@ Type annotations for `boto3.client("robomaker").create_deployment_job` method.
 Boto3 documentation:
 [RoboMaker.Client.create_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientRequestToken`: `str` *(required)*
 - `fleet`: `str` *(required)*
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("robomaker").create_robot` method.
 Boto3 documentation:
 [RoboMaker.Client.create_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `architecture`: [ArchitectureType](./literals.md#architecturetype)
@@ -287,7 +287,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.create_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `sources`:
@@ -325,7 +325,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.create_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `sources`:
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("robomaker").create_simulation_job` method.
 Boto3 documentation:
 [RoboMaker.Client.create_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxJobDurationInSeconds`: `int` *(required)*
 - `iamRole`: `str` *(required)*
@@ -397,7 +397,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.create_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `worlds`: `List`\[`str`\] *(required)*
 - `outputLocation`:
@@ -417,7 +417,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.create_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `template`: `str` *(required)*
 - `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("robomaker").create_world_template` method.
 Boto3 documentation:
 [RoboMaker.Client.create_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientRequestToken`: `str`
 - `name`: `str`
@@ -735,7 +735,7 @@ Type annotations for `boto3.client("robomaker").list_deployment_jobs` method.
 Boto3 documentation:
 [RoboMaker.Client.list_deployment_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `nextToken`: `str`
@@ -751,7 +751,7 @@ Type annotations for `boto3.client("robomaker").list_fleets` method.
 Boto3 documentation:
 [RoboMaker.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_fleets)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -767,7 +767,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.list_robot_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `versionQualifier`: `str`
 - `nextToken`: `str`
@@ -784,7 +784,7 @@ Type annotations for `boto3.client("robomaker").list_robots` method.
 Boto3 documentation:
 [RoboMaker.Client.list_robots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robots)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -800,7 +800,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.list_simulation_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `versionQualifier`: `str`
 - `nextToken`: `str`
@@ -818,7 +818,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.list_simulation_job_batches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -834,7 +834,7 @@ Type annotations for `boto3.client("robomaker").list_simulation_jobs` method.
 Boto3 documentation:
 [RoboMaker.Client.list_simulation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -864,7 +864,7 @@ Type annotations for `boto3.client("robomaker").list_world_export_jobs` method.
 Boto3 documentation:
 [RoboMaker.Client.list_world_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -881,7 +881,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.list_world_generation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -912,7 +912,7 @@ Type annotations for `boto3.client("robomaker").list_worlds` method.
 Boto3 documentation:
 [RoboMaker.Client.list_worlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_worlds)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -956,7 +956,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.start_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `createSimulationJobRequests`:
   `List`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
@@ -1019,7 +1019,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.update_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_robot_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `sources`:
@@ -1041,7 +1041,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.update_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `sources`:
@@ -1067,7 +1067,7 @@ Type annotations for `boto3.client("robomaker").update_world_template` method.
 Boto3 documentation:
 [RoboMaker.Client.update_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_world_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `template`: `str` *(required)*
 - `name`: `str`

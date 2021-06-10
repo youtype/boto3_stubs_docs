@@ -91,7 +91,7 @@ method.
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `Author`: `str` *(required)*
 - `Description`: `str` *(required)*
@@ -120,7 +120,7 @@ Type annotations for
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SemanticVersion`: `str` *(required)*
@@ -140,7 +140,7 @@ Type annotations for
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.create_cloud_formation_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `StackName`: `str` *(required)*
@@ -260,7 +260,7 @@ Type annotations for
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.list_application_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `MaxItems`: `int`
@@ -278,7 +278,7 @@ method.
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.list_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `MaxItems`: `int`
@@ -341,7 +341,7 @@ method.
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `Author`: `str`

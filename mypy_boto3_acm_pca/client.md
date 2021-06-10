@@ -113,7 +113,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.create_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityConfiguration`:
   [CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef)
@@ -139,7 +139,7 @@ Type annotations for
 Boto3 documentation:
 [ACMPCA.Client.create_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `S3BucketName`: `str` *(required)*
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("acm-pca").create_permission` method.
 Boto3 documentation:
 [ACMPCA.Client.create_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Principal`: `str` *(required)*
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("acm-pca").delete_permission` method.
 Boto3 documentation:
 [ACMPCA.Client.delete_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Principal`: `str` *(required)*
@@ -315,7 +315,7 @@ Type annotations for
 Boto3 documentation:
 [ACMPCA.Client.import_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -328,7 +328,7 @@ Type annotations for `boto3.client("acm-pca").issue_certificate` method.
 Boto3 documentation:
 [ACMPCA.Client.issue_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Csr`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -352,7 +352,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.list_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("acm-pca").list_permissions` method.
 Boto3 documentation:
 [ACMPCA.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -384,7 +384,7 @@ Type annotations for `boto3.client("acm-pca").list_tags` method.
 Boto3 documentation:
 [ACMPCA.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -423,7 +423,7 @@ Type annotations for `boto3.client("acm-pca").revoke_certificate` method.
 Boto3 documentation:
 [ACMPCA.Client.revoke_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `CertificateSerial`: `str` *(required)*
@@ -464,7 +464,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.update_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `RevocationConfiguration`:

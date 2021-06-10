@@ -108,7 +108,7 @@ Type annotations for `boto3.client("mediapackage-vod").create_asset` method.
 Boto3 documentation:
 [MediaPackageVod.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_asset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `PackagingGroupId`: `str` *(required)*
@@ -128,7 +128,7 @@ Type annotations for
 Boto3 documentation:
 [MediaPackageVod.Client.create_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `PackagingGroupId`: `str` *(required)*
@@ -149,7 +149,7 @@ method.
 Boto3 documentation:
 [MediaPackageVod.Client.create_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
@@ -269,7 +269,7 @@ Type annotations for `boto3.client("mediapackage-vod").list_assets` method.
 Boto3 documentation:
 [MediaPackageVod.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_assets)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -285,7 +285,7 @@ Type annotations for
 Boto3 documentation:
 [MediaPackageVod.Client.list_packaging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`

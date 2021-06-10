@@ -128,7 +128,7 @@ Type annotations for `boto3.client("lookoutmetrics").create_alert` method.
 Boto3 documentation:
 [LookoutMetrics.Client.create_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlertName`: `str` *(required)*
 - `AlertSensitivityThreshold`: `int` *(required)*
@@ -148,7 +148,7 @@ method.
 Boto3 documentation:
 [LookoutMetrics.Client.create_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorName`: `str` *(required)*
 - `AnomalyDetectorConfig`:
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("lookoutmetrics").create_metric_set` method.
 Boto3 documentation:
 [LookoutMetrics.Client.create_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `MetricSetName`: `str` *(required)*
@@ -237,7 +237,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutMetrics.Client.describe_anomaly_detection_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `Timestamp`: `str`
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("lookoutmetrics").get_feedback` method.
 Boto3 documentation:
 [LookoutMetrics.Client.get_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `AnomalyGroupTimeSeriesFeedback`:
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("lookoutmetrics").list_alerts` method.
 Boto3 documentation:
 [LookoutMetrics.Client.list_alerts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str`
 - `NextToken`: `str`
@@ -382,7 +382,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutMetrics.Client.list_anomaly_group_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `SensitivityThreshold`: `int` *(required)*
@@ -400,7 +400,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutMetrics.Client.list_anomaly_group_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `AnomalyGroupId`: `str` *(required)*
@@ -418,7 +418,7 @@ Type annotations for `boto3.client("lookoutmetrics").list_metric_sets` method.
 Boto3 documentation:
 [LookoutMetrics.Client.list_metric_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str`
 - `MaxResults`: `int`
@@ -494,7 +494,7 @@ method.
 Boto3 documentation:
 [LookoutMetrics.Client.update_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `KmsKeyArn`: `str`
@@ -512,7 +512,7 @@ Type annotations for `boto3.client("lookoutmetrics").update_metric_set` method.
 Boto3 documentation:
 [LookoutMetrics.Client.update_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `MetricSetArn`: `str` *(required)*
 - `MetricSetDescription`: `str`

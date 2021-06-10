@@ -92,7 +92,7 @@ Type annotations for `boto3.client("qldb-session").send_command` method.
 Boto3 documentation:
 [QLDBSession.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.send_command)
 
-Arguments:
+Keyword-only arguments:
 
 - `SessionToken`: `str`
 - `StartSession`:

@@ -88,7 +88,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scaling_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyName`: `str` *(required)*
 - `ServiceNamespace`:
@@ -107,7 +107,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scheduled_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
@@ -126,7 +126,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.deregister_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.deregister_scalable_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
@@ -144,7 +144,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scalable_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scalable_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
@@ -165,7 +165,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_activities)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
@@ -186,7 +186,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
@@ -208,7 +208,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scheduled_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
@@ -247,7 +247,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scaling_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyName`: `str` *(required)*
 - `ServiceNamespace`:
@@ -272,7 +272,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.put_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scheduled_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
@@ -297,7 +297,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationAutoScaling.Client.register_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*

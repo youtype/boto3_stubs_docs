@@ -178,7 +178,7 @@ Type annotations for `boto3.client("appstream").copy_image` method.
 Boto3 documentation:
 [AppStream.Client.copy_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.copy_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceImageName`: `str` *(required)*
 - `DestinationImageName`: `str` *(required)*
@@ -195,7 +195,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.create_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_directory_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryName`: `str` *(required)*
 - `OrganizationalUnitDistinguishedNames`: `List`\[`str`\] *(required)*
@@ -212,7 +212,7 @@ Type annotations for `boto3.client("appstream").create_fleet` method.
 Boto3 documentation:
 [AppStream.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InstanceType`: `str` *(required)*
@@ -243,7 +243,7 @@ Type annotations for `boto3.client("appstream").create_image_builder` method.
 Boto3 documentation:
 [AppStream.Client.create_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InstanceType`: `str` *(required)*
@@ -287,7 +287,7 @@ Type annotations for `boto3.client("appstream").create_stack` method.
 Boto3 documentation:
 [AppStream.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("appstream").create_streaming_url` method.
 Boto3 documentation:
 [AppStream.Client.create_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_streaming_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `FleetName`: `str` *(required)*
@@ -333,7 +333,7 @@ Type annotations for `boto3.client("appstream").create_updated_image` method.
 Boto3 documentation:
 [AppStream.Client.create_updated_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_updated_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `existingImageName`: `str` *(required)*
 - `newImageName`: `str` *(required)*
@@ -363,7 +363,7 @@ Type annotations for `boto3.client("appstream").create_user` method.
 Boto3 documentation:
 [AppStream.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `AuthenticationType`:
@@ -489,7 +489,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.describe_directory_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_directory_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryNames`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -521,7 +521,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.describe_image_builders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_builders)
 
-Arguments:
+Keyword-only arguments:
 
 - `Names`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -538,7 +538,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.describe_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `MaxResults`: `int`
@@ -555,7 +555,7 @@ Type annotations for `boto3.client("appstream").describe_images` method.
 Boto3 documentation:
 [AppStream.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `Names`: `List`\[`str`\]
 - `Arns`: `List`\[`str`\]
@@ -573,7 +573,7 @@ Type annotations for `boto3.client("appstream").describe_sessions` method.
 Boto3 documentation:
 [AppStream.Client.describe_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_sessions)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `FleetName`: `str` *(required)*
@@ -625,7 +625,7 @@ Type annotations for
 Boto3 documentation:
 [AppStream.Client.describe_user_stack_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_user_stack_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str`
 - `UserName`: `str`
@@ -644,7 +644,7 @@ Type annotations for `boto3.client("appstream").describe_users` method.
 Boto3 documentation:
 [AppStream.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationType`:
   [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
@@ -862,7 +862,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.update_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_directory_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryName`: `str` *(required)*
 - `OrganizationalUnitDistinguishedNames`: `List`\[`str`\]
@@ -879,7 +879,7 @@ Type annotations for `boto3.client("appstream").update_fleet` method.
 Boto3 documentation:
 [AppStream.Client.update_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageName`: `str`
 - `ImageArn`: `str`
@@ -912,7 +912,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.update_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_image_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SharedAccountId`: `str` *(required)*
@@ -929,7 +929,7 @@ Type annotations for `boto3.client("appstream").update_stack` method.
 Boto3 documentation:
 [AppStream.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DisplayName`: `str`

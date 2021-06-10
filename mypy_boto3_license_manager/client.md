@@ -160,7 +160,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.checkout_borrow_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `Entitlements`:
@@ -184,7 +184,7 @@ Type annotations for `boto3.client("license-manager").checkout_license` method.
 Boto3 documentation:
 [LicenseManager.Client.checkout_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_license)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductSKU`: `str` *(required)*
 - `CheckoutType`: `Literal['PROVISIONAL']` (see
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("license-manager").create_grant` method.
 Boto3 documentation:
 [LicenseManager.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientToken`: `str` *(required)*
 - `GrantName`: `str` *(required)*
@@ -229,7 +229,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.create_grant_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientToken`: `str` *(required)*
 - `GrantArn`: `str` *(required)*
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("license-manager").create_license` method.
 Boto3 documentation:
 [LicenseManager.Client.create_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseName`: `str` *(required)*
 - `ProductName`: `str` *(required)*
@@ -280,7 +280,7 @@ Type annotations for
 Boto3 documentation:
 [LicenseManager.Client.create_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `LicenseCountingType`:
@@ -306,7 +306,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.create_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_manager_report_generator)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReportGeneratorName`: `str` *(required)*
 - `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\] *(required)*
@@ -329,7 +329,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.create_license_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `LicenseName`: `str` *(required)*
@@ -360,7 +360,7 @@ Type annotations for `boto3.client("license-manager").create_token` method.
 Boto3 documentation:
 [LicenseManager.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
@@ -584,7 +584,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_associations_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConfigurationArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -601,7 +601,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_distributed_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants)
 
-Arguments:
+Keyword-only arguments:
 
 - `GrantArns`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -620,7 +620,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_failures_for_license_configuration_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConfigurationArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -637,7 +637,7 @@ Type annotations for
 Boto3 documentation:
 [LicenseManager.Client.list_license_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConfigurationArns`: `List`\[`str`\]
 - `MaxResults`: `int`
@@ -656,7 +656,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_license_manager_report_generators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_manager_report_generators)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
@@ -674,7 +674,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -691,7 +691,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_license_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -707,7 +707,7 @@ Type annotations for `boto3.client("license-manager").list_licenses` method.
 Boto3 documentation:
 [LicenseManager.Client.list_licenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_licenses)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArns`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -725,7 +725,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_received_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants)
 
-Arguments:
+Keyword-only arguments:
 
 - `GrantArns`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -743,7 +743,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_received_licenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArns`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -761,7 +761,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_resource_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -793,7 +793,7 @@ Type annotations for `boto3.client("license-manager").list_tokens` method.
 Boto3 documentation:
 [LicenseManager.Client.list_tokens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tokens)
 
-Arguments:
+Keyword-only arguments:
 
 - `TokenIds`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -810,7 +810,7 @@ Type annotations for
 Boto3 documentation:
 [LicenseManager.Client.list_usage_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConfigurationArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -870,7 +870,7 @@ Type annotations for
 Boto3 documentation:
 [LicenseManager.Client.update_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConfigurationArn`: `str` *(required)*
 - `LicenseConfigurationStatus`:
@@ -895,7 +895,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.update_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_manager_report_generator)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseManagerReportGeneratorArn`: `str` *(required)*
 - `ReportGeneratorName`: `str` *(required)*
@@ -918,7 +918,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.update_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `AddLicenseSpecifications`:
@@ -936,7 +936,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.update_service_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_service_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `S3BucketArn`: `str`
 - `SnsTopicArn`: `str`

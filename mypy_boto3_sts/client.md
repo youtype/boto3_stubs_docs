@@ -71,7 +71,7 @@ Type annotations for `boto3.client("sts").assume_role` method.
 Boto3 documentation:
 [STS.Client.assume_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleArn`: `str` *(required)*
 - `RoleSessionName`: `str` *(required)*
@@ -95,7 +95,7 @@ Type annotations for `boto3.client("sts").assume_role_with_saml` method.
 Boto3 documentation:
 [STS.Client.assume_role_with_saml](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleArn`: `str` *(required)*
 - `PrincipalArn`: `str` *(required)*
@@ -116,7 +116,7 @@ method.
 Boto3 documentation:
 [STS.Client.assume_role_with_web_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleArn`: `str` *(required)*
 - `RoleSessionName`: `str` *(required)*
@@ -204,7 +204,7 @@ Type annotations for `boto3.client("sts").get_federation_token` method.
 Boto3 documentation:
 [STS.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Policy`: `str`
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("sts").get_session_token` method.
 Boto3 documentation:
 [STS.Client.get_session_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `DurationSeconds`: `int`
 - `SerialNumber`: `str`

@@ -128,7 +128,7 @@ method.
 Boto3 documentation:
 [AugmentedAIRuntime.Client.list_human_loops](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowDefinitionArn`: `str` *(required)*
 - `CreationTimeAfter`: `datetime`
@@ -148,7 +148,7 @@ method.
 Boto3 documentation:
 [AugmentedAIRuntime.Client.start_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
 
-Arguments:
+Keyword-only arguments:
 
 - `HumanLoopName`: `str` *(required)*
 - `FlowDefinitionArn`: `str` *(required)*

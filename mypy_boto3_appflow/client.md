@@ -94,7 +94,7 @@ Type annotations for `boto3.client("appflow").create_connector_profile` method.
 Boto3 documentation:
 [Appflow.Client.create_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectorProfileName`: `str` *(required)*
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
@@ -116,7 +116,7 @@ Type annotations for `boto3.client("appflow").create_flow` method.
 Boto3 documentation:
 [Appflow.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 - `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
@@ -170,7 +170,7 @@ method.
 Boto3 documentation:
 [Appflow.Client.describe_connector_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectorEntityName`: `str` *(required)*
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
@@ -187,7 +187,7 @@ method.
 Boto3 documentation:
 [Appflow.Client.describe_connector_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectorProfileNames`: `List`\[`str`\]
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
@@ -235,7 +235,7 @@ method.
 Boto3 documentation:
 [Appflow.Client.describe_flow_execution_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
 
-Arguments:
+Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 - `maxResults`: `int`
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("appflow").list_connector_entities` method.
 Boto3 documentation:
 [Appflow.Client.list_connector_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectorProfileName`: `str`
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("appflow").update_connector_profile` method.
 Boto3 documentation:
 [Appflow.Client.update_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectorProfileName`: `str` *(required)*
 - `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
@@ -384,7 +384,7 @@ Type annotations for `boto3.client("appflow").update_flow` method.
 Boto3 documentation:
 [Appflow.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 - `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)

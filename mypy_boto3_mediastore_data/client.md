@@ -136,7 +136,7 @@ Type annotations for `boto3.client("mediastore-data").list_items` method.
 Boto3 documentation:
 [MediaStoreData.Client.list_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.list_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `Path`: `str`
 - `MaxResults`: `int`
@@ -151,7 +151,7 @@ Type annotations for `boto3.client("mediastore-data").put_object` method.
 Boto3 documentation:
 [MediaStoreData.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.put_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `Path`: `str` *(required)*

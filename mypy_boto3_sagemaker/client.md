@@ -296,7 +296,7 @@ Type annotations for `boto3.client("sagemaker").add_association` method.
 Boto3 documentation:
 [SageMaker.Client.add_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceArn`: `str` *(required)*
 - `DestinationArn`: `str` *(required)*
@@ -356,7 +356,7 @@ Type annotations for `boto3.client("sagemaker").create_action` method.
 Boto3 documentation:
 [SageMaker.Client.create_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ActionName`: `str` *(required)*
 - `Source`: [ActionSourceTypeDef](./type_defs.md#actionsourcetypedef)
@@ -379,7 +379,7 @@ Type annotations for `boto3.client("sagemaker").create_algorithm` method.
 Boto3 documentation:
 [SageMaker.Client.create_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_algorithm)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlgorithmName`: `str` *(required)*
 - `TrainingSpecification`:
@@ -403,7 +403,7 @@ Type annotations for `boto3.client("sagemaker").create_app` method.
 Boto3 documentation:
 [SageMaker.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
@@ -422,7 +422,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.create_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app_image_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppImageConfigName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -439,7 +439,7 @@ Type annotations for `boto3.client("sagemaker").create_artifact` method.
 Boto3 documentation:
 [SageMaker.Client.create_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `Source`: [ArtifactSourceTypeDef](./type_defs.md#artifactsourcetypedef)
   *(required)*
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("sagemaker").create_auto_ml_job` method.
 Boto3 documentation:
 [SageMaker.Client.create_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoMLJobName`: `str` *(required)*
 - `InputDataConfig`:
@@ -490,7 +490,7 @@ Type annotations for `boto3.client("sagemaker").create_code_repository` method.
 Boto3 documentation:
 [SageMaker.Client.create_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_code_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeRepositoryName`: `str` *(required)*
 - `GitConfig`: [GitConfigTypeDef](./type_defs.md#gitconfigtypedef) *(required)*
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("sagemaker").create_compilation_job` method.
 Boto3 documentation:
 [SageMaker.Client.create_compilation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_compilation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `CompilationJobName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
@@ -529,7 +529,7 @@ Type annotations for `boto3.client("sagemaker").create_context` method.
 Boto3 documentation:
 [SageMaker.Client.create_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_context)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContextName`: `str` *(required)*
 - `Source`: [ContextSourceTypeDef](./type_defs.md#contextsourcetypedef)
@@ -550,7 +550,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.create_data_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_data_quality_job_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 - `DataQualityAppSpecification`:
@@ -584,7 +584,7 @@ Type annotations for `boto3.client("sagemaker").create_device_fleet` method.
 Boto3 documentation:
 [SageMaker.Client.create_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_device_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
 - `OutputConfig`:
@@ -601,7 +601,7 @@ Type annotations for `boto3.client("sagemaker").create_domain` method.
 Boto3 documentation:
 [SageMaker.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AuthMode`: [AuthModeType](./literals.md#authmodetype) *(required)*
@@ -626,7 +626,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.create_edge_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_edge_packaging_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `EdgePackagingJobName`: `str` *(required)*
 - `CompilationJobName`: `str` *(required)*
@@ -646,7 +646,7 @@ Type annotations for `boto3.client("sagemaker").create_endpoint` method.
 Boto3 documentation:
 [SageMaker.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `EndpointConfigName`: `str` *(required)*
@@ -662,7 +662,7 @@ Type annotations for `boto3.client("sagemaker").create_endpoint_config` method.
 Boto3 documentation:
 [SageMaker.Client.create_endpoint_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointConfigName`: `str` *(required)*
 - `ProductionVariants`:
@@ -683,7 +683,7 @@ Type annotations for `boto3.client("sagemaker").create_experiment` method.
 Boto3 documentation:
 [SageMaker.Client.create_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_experiment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExperimentName`: `str` *(required)*
 - `DisplayName`: `str`
@@ -700,7 +700,7 @@ Type annotations for `boto3.client("sagemaker").create_feature_group` method.
 Boto3 documentation:
 [SageMaker.Client.create_feature_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_feature_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `FeatureGroupName`: `str` *(required)*
 - `RecordIdentifierFeatureName`: `str` *(required)*
@@ -726,7 +726,7 @@ Type annotations for `boto3.client("sagemaker").create_flow_definition` method.
 Boto3 documentation:
 [SageMaker.Client.create_flow_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_flow_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowDefinitionName`: `str` *(required)*
 - `HumanLoopConfig`:
@@ -751,7 +751,7 @@ Type annotations for `boto3.client("sagemaker").create_human_task_ui` method.
 Boto3 documentation:
 [SageMaker.Client.create_human_task_ui](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_human_task_ui)
 
-Arguments:
+Keyword-only arguments:
 
 - `HumanTaskUiName`: `str` *(required)*
 - `UiTemplate`: [UiTemplateTypeDef](./type_defs.md#uitemplatetypedef)
@@ -769,7 +769,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.create_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_hyper_parameter_tuning_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `HyperParameterTuningJobName`: `str` *(required)*
 - `HyperParameterTuningJobConfig`:
@@ -793,7 +793,7 @@ Type annotations for `boto3.client("sagemaker").create_image` method.
 Boto3 documentation:
 [SageMaker.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
@@ -811,7 +811,7 @@ Type annotations for `boto3.client("sagemaker").create_image_version` method.
 Boto3 documentation:
 [SageMaker.Client.create_image_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `BaseImage`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
@@ -827,7 +827,7 @@ Type annotations for `boto3.client("sagemaker").create_labeling_job` method.
 Boto3 documentation:
 [SageMaker.Client.create_labeling_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_labeling_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `LabelingJobName`: `str` *(required)*
 - `LabelAttributeName`: `str` *(required)*
@@ -857,7 +857,7 @@ Type annotations for `boto3.client("sagemaker").create_model` method.
 Boto3 documentation:
 [SageMaker.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 - `ExecutionRoleArn`: `str` *(required)*
@@ -881,7 +881,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.create_model_bias_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_bias_job_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 - `ModelBiasAppSpecification`:
@@ -916,7 +916,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.create_model_explainability_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_explainability_job_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 - `ModelExplainabilityAppSpecification`:
@@ -950,7 +950,7 @@ Type annotations for `boto3.client("sagemaker").create_model_package` method.
 Boto3 documentation:
 [SageMaker.Client.create_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelPackageName`: `str`
 - `ModelPackageGroupName`: `str`
@@ -981,7 +981,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.create_model_package_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelPackageGroupName`: `str` *(required)*
 - `ModelPackageGroupDescription`: `str`
@@ -998,7 +998,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.create_model_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_quality_job_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 - `ModelQualityAppSpecification`:
@@ -1033,7 +1033,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.create_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_monitoring_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `MonitoringScheduleName`: `str` *(required)*
 - `MonitoringScheduleConfig`:
@@ -1052,7 +1052,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.create_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `NotebookInstanceName`: `str` *(required)*
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
@@ -1083,7 +1083,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.create_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance_lifecycle_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 - `OnCreate`:
@@ -1101,7 +1101,7 @@ Type annotations for `boto3.client("sagemaker").create_pipeline` method.
 Boto3 documentation:
 [SageMaker.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineName`: `str` *(required)*
 - `PipelineDefinition`: `str` *(required)*
@@ -1122,7 +1122,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.create_presigned_domain_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_domain_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
@@ -1155,7 +1155,7 @@ Type annotations for `boto3.client("sagemaker").create_processing_job` method.
 Boto3 documentation:
 [SageMaker.Client.create_processing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_processing_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProcessingJobName`: `str` *(required)*
 - `ProcessingResources`:
@@ -1187,7 +1187,7 @@ Type annotations for `boto3.client("sagemaker").create_project` method.
 Boto3 documentation:
 [SageMaker.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ServiceCatalogProvisioningDetails`:
@@ -1206,7 +1206,7 @@ Type annotations for `boto3.client("sagemaker").create_training_job` method.
 Boto3 documentation:
 [SageMaker.Client.create_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_training_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrainingJobName`: `str` *(required)*
 - `AlgorithmSpecification`:
@@ -1255,7 +1255,7 @@ Type annotations for `boto3.client("sagemaker").create_transform_job` method.
 Boto3 documentation:
 [SageMaker.Client.create_transform_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_transform_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransformJobName`: `str` *(required)*
 - `ModelName`: `str` *(required)*
@@ -1288,7 +1288,7 @@ Type annotations for `boto3.client("sagemaker").create_trial` method.
 Boto3 documentation:
 [SageMaker.Client.create_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrialName`: `str` *(required)*
 - `ExperimentName`: `str` *(required)*
@@ -1307,7 +1307,7 @@ Type annotations for `boto3.client("sagemaker").create_trial_component` method.
 Boto3 documentation:
 [SageMaker.Client.create_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrialComponentName`: `str` *(required)*
 - `DisplayName`: `str`
@@ -1335,7 +1335,7 @@ Type annotations for `boto3.client("sagemaker").create_user_profile` method.
 Boto3 documentation:
 [SageMaker.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_user_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
@@ -1354,7 +1354,7 @@ Type annotations for `boto3.client("sagemaker").create_workforce` method.
 Boto3 documentation:
 [SageMaker.Client.create_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workforce)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkforceName`: `str` *(required)*
 - `CognitoConfig`: [CognitoConfigTypeDef](./type_defs.md#cognitoconfigtypedef)
@@ -1373,7 +1373,7 @@ Type annotations for `boto3.client("sagemaker").create_workteam` method.
 Boto3 documentation:
 [SageMaker.Client.create_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workteam)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkteamName`: `str` *(required)*
 - `MemberDefinitions`:
@@ -1420,7 +1420,7 @@ Type annotations for `boto3.client("sagemaker").delete_app` method.
 Boto3 documentation:
 [SageMaker.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
@@ -1902,7 +1902,7 @@ Type annotations for `boto3.client("sagemaker").describe_app` method.
 Boto3 documentation:
 [SageMaker.Client.describe_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
@@ -2021,7 +2021,7 @@ Type annotations for `boto3.client("sagemaker").describe_device` method.
 Boto3 documentation:
 [SageMaker.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceName`: `str` *(required)*
 - `DeviceFleetName`: `str` *(required)*
@@ -2657,7 +2657,7 @@ Type annotations for `boto3.client("sagemaker").list_actions` method.
 Boto3 documentation:
 [SageMaker.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceUri`: `str`
 - `ActionType`: `str`
@@ -2678,7 +2678,7 @@ Type annotations for `boto3.client("sagemaker").list_algorithms` method.
 Boto3 documentation:
 [SageMaker.Client.list_algorithms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_algorithms)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -2698,7 +2698,7 @@ Type annotations for `boto3.client("sagemaker").list_app_image_configs` method.
 Boto3 documentation:
 [SageMaker.Client.list_app_image_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_app_image_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -2721,7 +2721,7 @@ Type annotations for `boto3.client("sagemaker").list_apps` method.
 Boto3 documentation:
 [SageMaker.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_apps)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2740,7 +2740,7 @@ Type annotations for `boto3.client("sagemaker").list_artifacts` method.
 Boto3 documentation:
 [SageMaker.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_artifacts)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceUri`: `str`
 - `ArtifactType`: `str`
@@ -2762,7 +2762,7 @@ Type annotations for `boto3.client("sagemaker").list_associations` method.
 Boto3 documentation:
 [SageMaker.Client.list_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceArn`: `str`
 - `DestinationArn`: `str`
@@ -2787,7 +2787,7 @@ Type annotations for `boto3.client("sagemaker").list_auto_ml_jobs` method.
 Boto3 documentation:
 [SageMaker.Client.list_auto_ml_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_auto_ml_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -2811,7 +2811,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_candidates_for_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_candidates_for_auto_ml_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoMLJobName`: `str` *(required)*
 - `StatusEquals`: [CandidateStatusType](./literals.md#candidatestatustype)
@@ -2831,7 +2831,7 @@ Type annotations for `boto3.client("sagemaker").list_code_repositories` method.
 Boto3 documentation:
 [SageMaker.Client.list_code_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_code_repositories)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -2854,7 +2854,7 @@ Type annotations for `boto3.client("sagemaker").list_compilation_jobs` method.
 Boto3 documentation:
 [SageMaker.Client.list_compilation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_compilation_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2879,7 +2879,7 @@ Type annotations for `boto3.client("sagemaker").list_contexts` method.
 Boto3 documentation:
 [SageMaker.Client.list_contexts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_contexts)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceUri`: `str`
 - `ContextType`: `str`
@@ -2901,7 +2901,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_data_quality_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_data_quality_job_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
@@ -2923,7 +2923,7 @@ Type annotations for `boto3.client("sagemaker").list_device_fleets` method.
 Boto3 documentation:
 [SageMaker.Client.list_device_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_device_fleets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2946,7 +2946,7 @@ Type annotations for `boto3.client("sagemaker").list_devices` method.
 Boto3 documentation:
 [SageMaker.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2980,7 +2980,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_edge_packaging_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_edge_packaging_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -3006,7 +3006,7 @@ Type annotations for `boto3.client("sagemaker").list_endpoint_configs` method.
 Boto3 documentation:
 [SageMaker.Client.list_endpoint_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoint_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `SortBy`:
   [EndpointConfigSortKeyType](./literals.md#endpointconfigsortkeytype)
@@ -3027,7 +3027,7 @@ Type annotations for `boto3.client("sagemaker").list_endpoints` method.
 Boto3 documentation:
 [SageMaker.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `SortBy`: [EndpointSortKeyType](./literals.md#endpointsortkeytype)
 - `SortOrder`: [OrderKeyType](./literals.md#orderkeytype)
@@ -3050,7 +3050,7 @@ Type annotations for `boto3.client("sagemaker").list_experiments` method.
 Boto3 documentation:
 [SageMaker.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_experiments)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreatedAfter`: `datetime`
 - `CreatedBefore`: `datetime`
@@ -3069,7 +3069,7 @@ Type annotations for `boto3.client("sagemaker").list_feature_groups` method.
 Boto3 documentation:
 [SageMaker.Client.list_feature_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_feature_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NameContains`: `str`
 - `FeatureGroupStatusEquals`:
@@ -3094,7 +3094,7 @@ Type annotations for `boto3.client("sagemaker").list_flow_definitions` method.
 Boto3 documentation:
 [SageMaker.Client.list_flow_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_flow_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3112,7 +3112,7 @@ Type annotations for `boto3.client("sagemaker").list_human_task_uis` method.
 Boto3 documentation:
 [SageMaker.Client.list_human_task_uis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_human_task_uis)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3131,7 +3131,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_hyper_parameter_tuning_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hyper_parameter_tuning_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -3156,7 +3156,7 @@ Type annotations for `boto3.client("sagemaker").list_image_versions` method.
 Boto3 documentation:
 [SageMaker.Client.list_image_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_image_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageName`: `str` *(required)*
 - `CreationTimeAfter`: `datetime`
@@ -3179,7 +3179,7 @@ Type annotations for `boto3.client("sagemaker").list_images` method.
 Boto3 documentation:
 [SageMaker.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3200,7 +3200,7 @@ Type annotations for `boto3.client("sagemaker").list_labeling_jobs` method.
 Boto3 documentation:
 [SageMaker.Client.list_labeling_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3224,7 +3224,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_labeling_jobs_for_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs_for_workteam)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkteamArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -3247,7 +3247,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_model_bias_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_bias_job_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
@@ -3270,7 +3270,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_model_explainability_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_explainability_job_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
@@ -3293,7 +3293,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_model_package_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_package_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3314,7 +3314,7 @@ Type annotations for `boto3.client("sagemaker").list_model_packages` method.
 Boto3 documentation:
 [SageMaker.Client.list_model_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_packages)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3340,7 +3340,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_model_quality_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_quality_job_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
@@ -3362,7 +3362,7 @@ Type annotations for `boto3.client("sagemaker").list_models` method.
 Boto3 documentation:
 [SageMaker.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_models)
 
-Arguments:
+Keyword-only arguments:
 
 - `SortBy`: [ModelSortKeyType](./literals.md#modelsortkeytype)
 - `SortOrder`: [OrderKeyType](./literals.md#orderkeytype)
@@ -3382,7 +3382,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_monitoring_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `MonitoringScheduleName`: `str`
 - `EndpointName`: `str`
@@ -3413,7 +3413,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_monitoring_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_schedules)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str`
 - `SortBy`:
@@ -3442,7 +3442,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_notebook_instance_lifecycle_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instance_lifecycle_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -3467,7 +3467,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_notebook_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -3497,7 +3497,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_pipeline_execution_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_execution_steps)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineExecutionArn`: `str`
 - `NextToken`: `str`
@@ -3515,7 +3515,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineName`: `str` *(required)*
 - `CreatedAfter`: `datetime`
@@ -3537,7 +3537,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.list_pipeline_parameters_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_parameters_for_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineExecutionArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -3553,7 +3553,7 @@ Type annotations for `boto3.client("sagemaker").list_pipelines` method.
 Boto3 documentation:
 [SageMaker.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipelines)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineNamePrefix`: `str`
 - `CreatedAfter`: `datetime`
@@ -3573,7 +3573,7 @@ Type annotations for `boto3.client("sagemaker").list_processing_jobs` method.
 Boto3 documentation:
 [SageMaker.Client.list_processing_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_processing_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3597,7 +3597,7 @@ Type annotations for `boto3.client("sagemaker").list_projects` method.
 Boto3 documentation:
 [SageMaker.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3617,7 +3617,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_subscribed_workteams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_subscribed_workteams)
 
-Arguments:
+Keyword-only arguments:
 
 - `NameContains`: `str`
 - `NextToken`: `str`
@@ -3633,7 +3633,7 @@ Type annotations for `boto3.client("sagemaker").list_tags` method.
 Boto3 documentation:
 [SageMaker.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -3648,7 +3648,7 @@ Type annotations for `boto3.client("sagemaker").list_training_jobs` method.
 Boto3 documentation:
 [SageMaker.Client.list_training_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -3673,7 +3673,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `HyperParameterTuningJobName`: `str` *(required)*
 - `NextToken`: `str`
@@ -3693,7 +3693,7 @@ Type annotations for `boto3.client("sagemaker").list_transform_jobs` method.
 Boto3 documentation:
 [SageMaker.Client.list_transform_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_transform_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreationTimeAfter`: `datetime`
 - `CreationTimeBefore`: `datetime`
@@ -3717,7 +3717,7 @@ Type annotations for `boto3.client("sagemaker").list_trial_components` method.
 Boto3 documentation:
 [SageMaker.Client.list_trial_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trial_components)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExperimentName`: `str`
 - `TrialName`: `str`
@@ -3740,7 +3740,7 @@ Type annotations for `boto3.client("sagemaker").list_trials` method.
 Boto3 documentation:
 [SageMaker.Client.list_trials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trials)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExperimentName`: `str`
 - `TrialComponentName`: `str`
@@ -3760,7 +3760,7 @@ Type annotations for `boto3.client("sagemaker").list_user_profiles` method.
 Boto3 documentation:
 [SageMaker.Client.list_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_user_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -3779,7 +3779,7 @@ Type annotations for `boto3.client("sagemaker").list_workforces` method.
 Boto3 documentation:
 [SageMaker.Client.list_workforces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workforces)
 
-Arguments:
+Keyword-only arguments:
 
 - `SortBy`:
   [ListWorkforcesSortByOptionsType](./literals.md#listworkforcessortbyoptionstype)
@@ -3798,7 +3798,7 @@ Type annotations for `boto3.client("sagemaker").list_workteams` method.
 Boto3 documentation:
 [SageMaker.Client.list_workteams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workteams)
 
-Arguments:
+Keyword-only arguments:
 
 - `SortBy`:
   [ListWorkteamsSortByOptionsType](./literals.md#listworkteamssortbyoptionstype)
@@ -3833,7 +3833,7 @@ Type annotations for `boto3.client("sagemaker").register_devices` method.
 Boto3 documentation:
 [SageMaker.Client.register_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.register_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
 - `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
@@ -3847,7 +3847,7 @@ Type annotations for `boto3.client("sagemaker").render_ui_template` method.
 Boto3 documentation:
 [SageMaker.Client.render_ui_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.render_ui_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `Task`: [RenderableTaskTypeDef](./type_defs.md#renderabletasktypedef)
   *(required)*
@@ -3865,7 +3865,7 @@ Type annotations for `boto3.client("sagemaker").search` method.
 Boto3 documentation:
 [SageMaker.Client.search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.search)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: [ResourceTypeType](./literals.md#resourcetypetype) *(required)*
 - `SearchExpression`:
@@ -3885,7 +3885,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.send_pipeline_execution_step_failure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.send_pipeline_execution_step_failure)
 
-Arguments:
+Keyword-only arguments:
 
 - `CallbackToken`: `str` *(required)*
 - `FailureReason`: `str`
@@ -3902,7 +3902,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.send_pipeline_execution_step_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.send_pipeline_execution_step_success)
 
-Arguments:
+Keyword-only arguments:
 
 - `CallbackToken`: `str` *(required)*
 - `OutputParameters`:
@@ -3944,7 +3944,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_pipeline_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineName`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
@@ -4092,7 +4092,7 @@ Type annotations for `boto3.client("sagemaker").update_action` method.
 Boto3 documentation:
 [SageMaker.Client.update_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ActionName`: `str` *(required)*
 - `Description`: `str`
@@ -4127,7 +4127,7 @@ Type annotations for `boto3.client("sagemaker").update_artifact` method.
 Boto3 documentation:
 [SageMaker.Client.update_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ArtifactArn`: `str` *(required)*
 - `ArtifactName`: `str`
@@ -4160,7 +4160,7 @@ Type annotations for `boto3.client("sagemaker").update_context` method.
 Boto3 documentation:
 [SageMaker.Client.update_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_context)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContextName`: `str` *(required)*
 - `Description`: `str`
@@ -4177,7 +4177,7 @@ Type annotations for `boto3.client("sagemaker").update_device_fleet` method.
 Boto3 documentation:
 [SageMaker.Client.update_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_device_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
 - `OutputConfig`:
@@ -4222,7 +4222,7 @@ Type annotations for `boto3.client("sagemaker").update_endpoint` method.
 Boto3 documentation:
 [SageMaker.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `EndpointConfigName`: `str` *(required)*
@@ -4260,7 +4260,7 @@ Type annotations for `boto3.client("sagemaker").update_experiment` method.
 Boto3 documentation:
 [SageMaker.Client.update_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_experiment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExperimentName`: `str` *(required)*
 - `DisplayName`: `str`
@@ -4276,7 +4276,7 @@ Type annotations for `boto3.client("sagemaker").update_image` method.
 Boto3 documentation:
 [SageMaker.Client.update_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImageName`: `str` *(required)*
 - `DeleteProperties`: `List`\[`str`\]
@@ -4294,7 +4294,7 @@ Type annotations for `boto3.client("sagemaker").update_model_package` method.
 Boto3 documentation:
 [SageMaker.Client.update_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_model_package)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelPackageArn`: `str` *(required)*
 - `ModelApprovalStatus`:
@@ -4330,7 +4330,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.update_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `NotebookInstanceName`: `str` *(required)*
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
@@ -4357,7 +4357,7 @@ Type annotations for
 Boto3 documentation:
 [SageMaker.Client.update_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance_lifecycle_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 - `OnCreate`:
@@ -4374,7 +4374,7 @@ Type annotations for `boto3.client("sagemaker").update_pipeline` method.
 Boto3 documentation:
 [SageMaker.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineName`: `str` *(required)*
 - `PipelineDisplayName`: `str`
@@ -4393,7 +4393,7 @@ method.
 Boto3 documentation:
 [SageMaker.Client.update_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `PipelineExecutionArn`: `str` *(required)*
 - `PipelineExecutionDescription`: `str`
@@ -4409,7 +4409,7 @@ Type annotations for `boto3.client("sagemaker").update_training_job` method.
 Boto3 documentation:
 [SageMaker.Client.update_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_training_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrainingJobName`: `str` *(required)*
 - `ProfilerConfig`:
@@ -4442,7 +4442,7 @@ Type annotations for `boto3.client("sagemaker").update_trial_component` method.
 Boto3 documentation:
 [SageMaker.Client.update_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrialComponentName`: `str` *(required)*
 - `DisplayName`: `str`
@@ -4470,7 +4470,7 @@ Type annotations for `boto3.client("sagemaker").update_user_profile` method.
 Boto3 documentation:
 [SageMaker.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_user_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
@@ -4486,7 +4486,7 @@ Type annotations for `boto3.client("sagemaker").update_workforce` method.
 Boto3 documentation:
 [SageMaker.Client.update_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workforce)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkforceName`: `str` *(required)*
 - `SourceIpConfig`:
@@ -4503,7 +4503,7 @@ Type annotations for `boto3.client("sagemaker").update_workteam` method.
 Boto3 documentation:
 [SageMaker.Client.update_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workteam)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkteamName`: `str` *(required)*
 - `MemberDefinitions`:

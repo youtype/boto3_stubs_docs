@@ -350,7 +350,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.batch_describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_describe_merge_conflicts)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
@@ -437,7 +437,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.create_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_approval_rule_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `approvalRuleTemplateContent`: `str` *(required)*
@@ -453,7 +453,7 @@ Type annotations for `boto3.client("codecommit").create_branch` method.
 Boto3 documentation:
 [CodeCommit.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_branch)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("codecommit").create_commit` method.
 Boto3 documentation:
 [CodeCommit.Client.create_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_commit)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("codecommit").create_pull_request` method.
 Boto3 documentation:
 [CodeCommit.Client.create_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request)
 
-Arguments:
+Keyword-only arguments:
 
 - `title`: `str` *(required)*
 - `targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
@@ -510,7 +510,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.create_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request_approval_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `approvalRuleName`: `str` *(required)*
@@ -526,7 +526,7 @@ Type annotations for `boto3.client("codecommit").create_repository` method.
 Boto3 documentation:
 [CodeCommit.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `repositoryDescription`: `str`
@@ -543,7 +543,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.create_unreferenced_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_unreferenced_merge_commit)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
@@ -615,7 +615,7 @@ Type annotations for `boto3.client("codecommit").delete_file` method.
 Boto3 documentation:
 [CodeCommit.Client.delete_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_file)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -666,7 +666,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_merge_conflicts)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
@@ -692,7 +692,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.describe_pull_request_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_pull_request_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `pullRequestEventType`:
@@ -814,7 +814,7 @@ Type annotations for `boto3.client("codecommit").get_comment_reactions` method.
 Boto3 documentation:
 [CodeCommit.Client.get_comment_reactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment_reactions)
 
-Arguments:
+Keyword-only arguments:
 
 - `commentId`: `str` *(required)*
 - `reactionUserArn`: `str`
@@ -832,7 +832,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.get_comments_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_compared_commit)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `afterCommitId`: `str` *(required)*
@@ -851,7 +851,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.get_comments_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_pull_request)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `repositoryName`: `str`
@@ -884,7 +884,7 @@ Type annotations for `boto3.client("codecommit").get_differences` method.
 Boto3 documentation:
 [CodeCommit.Client.get_differences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_differences)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `afterCommitSpecifier`: `str` *(required)*
@@ -904,7 +904,7 @@ Type annotations for `boto3.client("codecommit").get_file` method.
 Boto3 documentation:
 [CodeCommit.Client.get_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_file)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `filePath`: `str` *(required)*
@@ -919,7 +919,7 @@ Type annotations for `boto3.client("codecommit").get_folder` method.
 Boto3 documentation:
 [CodeCommit.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `folderPath`: `str` *(required)*
@@ -934,7 +934,7 @@ Type annotations for `boto3.client("codecommit").get_merge_commit` method.
 Boto3 documentation:
 [CodeCommit.Client.get_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_commit)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
@@ -954,7 +954,7 @@ Type annotations for `boto3.client("codecommit").get_merge_conflicts` method.
 Boto3 documentation:
 [CodeCommit.Client.get_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_conflicts)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `destinationCommitSpecifier`: `str` *(required)*
@@ -978,7 +978,7 @@ Type annotations for `boto3.client("codecommit").get_merge_options` method.
 Boto3 documentation:
 [CodeCommit.Client.get_merge_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
@@ -1091,7 +1091,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.list_associated_approval_rule_templates_for_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_associated_approval_rule_templates_for_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `nextToken`: `str`
@@ -1121,7 +1121,7 @@ Type annotations for `boto3.client("codecommit").list_pull_requests` method.
 Boto3 documentation:
 [CodeCommit.Client.list_pull_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_pull_requests)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `authorArn`: `str`
@@ -1140,7 +1140,7 @@ Type annotations for `boto3.client("codecommit").list_repositories` method.
 Boto3 documentation:
 [CodeCommit.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `sortBy`: [SortByEnumType](./literals.md#sortbyenumtype)
@@ -1158,7 +1158,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.list_repositories_for_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories_for_approval_rule_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `nextToken`: `str`
@@ -1191,7 +1191,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.merge_branches_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_fast_forward)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
@@ -1209,7 +1209,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.merge_branches_by_squash](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_squash)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
@@ -1237,7 +1237,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.merge_branches_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_three_way)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `sourceCommitSpecifier`: `str` *(required)*
@@ -1265,7 +1265,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.merge_pull_request_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_fast_forward)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
@@ -1282,7 +1282,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.merge_pull_request_by_squash](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_squash)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
@@ -1309,7 +1309,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.merge_pull_request_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_three_way)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
@@ -1336,7 +1336,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.override_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.override_pull_request_approval_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
@@ -1351,7 +1351,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.post_comment_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_compared_commit)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `afterCommitId`: `str` *(required)*
@@ -1371,7 +1371,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.post_comment_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_pull_request)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
@@ -1391,7 +1391,7 @@ Type annotations for `boto3.client("codecommit").post_comment_reply` method.
 Boto3 documentation:
 [CodeCommit.Client.post_comment_reply](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_reply)
 
-Arguments:
+Keyword-only arguments:
 
 - `inReplyTo`: `str` *(required)*
 - `content`: `str` *(required)*
@@ -1419,7 +1419,7 @@ Type annotations for `boto3.client("codecommit").put_file` method.
 Boto3 documentation:
 [CodeCommit.Client.put_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_file)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -1501,7 +1501,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.update_approval_rule_template_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `newRuleContent`: `str` *(required)*
@@ -1577,7 +1577,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_approval_rule_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_rule_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `approvalRuleName`: `str` *(required)*
@@ -1595,7 +1595,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_approval_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*

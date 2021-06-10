@@ -151,7 +151,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.create_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTargetArn`: `str` *(required)*
 - `assessmentTemplateName`: `str` *(required)*
@@ -369,7 +369,7 @@ Type annotations for `boto3.client("inspector").get_assessment_report` method.
 Boto3 documentation:
 [Inspector.Client.get_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
 - `reportFileFormat`:
@@ -386,7 +386,7 @@ Type annotations for `boto3.client("inspector").get_exclusions_preview` method.
 Boto3 documentation:
 [Inspector.Client.get_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTemplateArn`: `str` *(required)*
 - `previewToken`: `str` *(required)*
@@ -419,7 +419,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.list_assessment_run_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
 - `filter`: [AgentFilterTypeDef](./type_defs.md#agentfiltertypedef)
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("inspector").list_assessment_runs` method.
 Boto3 documentation:
 [Inspector.Client.list_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTemplateArns`: `List`\[`str`\]
 - `filter`:
@@ -455,7 +455,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.list_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `filter`:
   [AssessmentTargetFilterTypeDef](./type_defs.md#assessmenttargetfiltertypedef)
@@ -473,7 +473,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.list_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTargetArns`: `List`\[`str`\]
 - `filter`:
@@ -492,7 +492,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.list_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str`
 - `nextToken`: `str`
@@ -508,7 +508,7 @@ Type annotations for `boto3.client("inspector").list_exclusions` method.
 Boto3 documentation:
 [Inspector.Client.list_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -524,7 +524,7 @@ Type annotations for `boto3.client("inspector").list_findings` method.
 Boto3 documentation:
 [Inspector.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentRunArns`: `List`\[`str`\]
 - `filter`: [FindingFilterTypeDef](./type_defs.md#findingfiltertypedef)
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("inspector").preview_agents` method.
 Boto3 documentation:
 [Inspector.Client.preview_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents)
 
-Arguments:
+Keyword-only arguments:
 
 - `previewAgentsArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -653,7 +653,7 @@ Type annotations for `boto3.client("inspector").subscribe_to_event` method.
 Boto3 documentation:
 [Inspector.Client.subscribe_to_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `event`: [InspectorEventType](./literals.md#inspectoreventtype) *(required)*
@@ -666,7 +666,7 @@ Type annotations for `boto3.client("inspector").unsubscribe_from_event` method.
 Boto3 documentation:
 [Inspector.Client.unsubscribe_from_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `event`: [InspectorEventType](./literals.md#inspectoreventtype) *(required)*
@@ -680,7 +680,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.update_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTargetArn`: `str` *(required)*
 - `assessmentTargetName`: `str` *(required)*

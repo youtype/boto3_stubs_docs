@@ -102,7 +102,7 @@ Type annotations for `boto3.resource("dynamodb").batch_write_item` method.
 Boto3 documentation:
 [DynamoDB.ServiceResource.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_write_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `RequestItems`: `Dict`\[`str`,
   `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
@@ -122,7 +122,7 @@ Type annotations for `boto3.resource("dynamodb").create_table` method.
 Boto3 documentation:
 [DynamoDB.ServiceResource.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.create_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttributeDefinitions`:
   `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
@@ -228,7 +228,7 @@ Type annotations for `boto3.resource("dynamodb").delete_item` method.
 Boto3 documentation:
 [DynamoDB.Table.delete_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
   `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
@@ -269,7 +269,7 @@ Type annotations for `boto3.resource("dynamodb").get_item` method.
 Boto3 documentation:
 [DynamoDB.Table.get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
   `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
@@ -298,7 +298,7 @@ Type annotations for `boto3.resource("dynamodb").put_item` method.
 Boto3 documentation:
 [DynamoDB.Table.put_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.put_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
@@ -329,7 +329,7 @@ Type annotations for `boto3.resource("dynamodb").query` method.
 Boto3 documentation:
 [DynamoDB.Table.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.query)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexName`: `str`
 - `Select`: [SelectType](./literals.md#selecttype)
@@ -374,7 +374,7 @@ Type annotations for `boto3.resource("dynamodb").scan` method.
 Boto3 documentation:
 [DynamoDB.Table.scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.scan)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexName`: `str`
 - `AttributesToGet`: `List`\[`str`\]
@@ -410,7 +410,7 @@ Type annotations for `boto3.resource("dynamodb").update` method.
 Boto3 documentation:
 [DynamoDB.Table.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttributeDefinitions`:
   `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
@@ -435,7 +435,7 @@ Type annotations for `boto3.resource("dynamodb").update_item` method.
 Boto3 documentation:
 [DynamoDB.Table.update_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
   `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],

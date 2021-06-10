@@ -314,7 +314,7 @@ Type annotations for `boto3.client("ssm").add_tags_to_resource` method.
 Boto3 documentation:
 [SSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.add_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`:
   [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
@@ -332,7 +332,7 @@ method.
 Boto3 documentation:
 [SSM.Client.associate_ops_item_related_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.associate_ops_item_related_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpsItemId`: `str` *(required)*
 - `AssociationType`: `str` *(required)*
@@ -391,7 +391,7 @@ Type annotations for `boto3.client("ssm").create_activation` method.
 Boto3 documentation:
 [SSM.Client.create_activation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_activation)
 
-Arguments:
+Keyword-only arguments:
 
 - `IamRole`: `str` *(required)*
 - `Description`: `str`
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("ssm").create_association` method.
 Boto3 documentation:
 [SSM.Client.create_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DocumentVersion`: `str`
@@ -459,7 +459,7 @@ Type annotations for `boto3.client("ssm").create_document` method.
 Boto3 documentation:
 [SSM.Client.create_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `Content`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -484,7 +484,7 @@ Type annotations for `boto3.client("ssm").create_maintenance_window` method.
 Boto3 documentation:
 [SSM.Client.create_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_maintenance_window)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Schedule`: `str` *(required)*
@@ -509,7 +509,7 @@ Type annotations for `boto3.client("ssm").create_ops_item` method.
 Boto3 documentation:
 [SSM.Client.create_ops_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `Description`: `str` *(required)*
 - `Source`: `str` *(required)*
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("ssm").create_ops_metadata` method.
 Boto3 documentation:
 [SSM.Client.create_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_ops_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Metadata`: `Dict`\[`str`,
@@ -557,7 +557,7 @@ Type annotations for `boto3.client("ssm").create_patch_baseline` method.
 Boto3 documentation:
 [SSM.Client.create_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_patch_baseline)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
@@ -586,7 +586,7 @@ Type annotations for `boto3.client("ssm").create_resource_data_sync` method.
 Boto3 documentation:
 [SSM.Client.create_resource_data_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.create_resource_data_sync)
 
-Arguments:
+Keyword-only arguments:
 
 - `SyncName`: `str` *(required)*
 - `S3Destination`:
@@ -617,7 +617,7 @@ Type annotations for `boto3.client("ssm").delete_association` method.
 Boto3 documentation:
 [SSM.Client.delete_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 - `InstanceId`: `str`
@@ -632,7 +632,7 @@ Type annotations for `boto3.client("ssm").delete_document` method.
 Boto3 documentation:
 [SSM.Client.delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DocumentVersion`: `str`
@@ -648,7 +648,7 @@ Type annotations for `boto3.client("ssm").delete_inventory` method.
 Boto3 documentation:
 [SSM.Client.delete_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_inventory)
 
-Arguments:
+Keyword-only arguments:
 
 - `TypeName`: `str` *(required)*
 - `SchemaDeleteOption`:
@@ -778,7 +778,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.deregister_target_from_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.deregister_target_from_maintenance_window)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `WindowTargetId`: `str` *(required)*
@@ -810,7 +810,7 @@ Type annotations for `boto3.client("ssm").describe_activations` method.
 Boto3 documentation:
 [SSM.Client.describe_activations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_activations)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
@@ -827,7 +827,7 @@ Type annotations for `boto3.client("ssm").describe_association` method.
 Boto3 documentation:
 [SSM.Client.describe_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 - `InstanceId`: `str`
@@ -845,7 +845,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.describe_association_execution_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_execution_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `ExecutionId`: `str` *(required)*
@@ -865,7 +865,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_association_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_association_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `Filters`:
@@ -884,7 +884,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_automation_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
@@ -902,7 +902,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_automation_step_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_automation_step_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutomationExecutionId`: `str` *(required)*
 - `Filters`:
@@ -921,7 +921,7 @@ Type annotations for `boto3.client("ssm").describe_available_patches` method.
 Boto3 documentation:
 [SSM.Client.describe_available_patches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_available_patches)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
@@ -938,7 +938,7 @@ Type annotations for `boto3.client("ssm").describe_document` method.
 Boto3 documentation:
 [SSM.Client.describe_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DocumentVersion`: `str`
@@ -954,7 +954,7 @@ Type annotations for `boto3.client("ssm").describe_document_permission` method.
 Boto3 documentation:
 [SSM.Client.describe_document_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_document_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `PermissionType`: `Literal['Share']` (see
@@ -974,7 +974,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.describe_effective_instance_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_instance_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -991,7 +991,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.describe_effective_patches_for_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_effective_patches_for_patch_baseline)
 
-Arguments:
+Keyword-only arguments:
 
 - `BaselineId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1008,7 +1008,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.describe_instance_associations_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_associations_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1025,7 +1025,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_instance_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_information)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceInformationFilterList`:
   `List`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
@@ -1045,7 +1045,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_instance_patch_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceIds`: `List`\[`str`\] *(required)*
 - `NextToken`: `str`
@@ -1062,7 +1062,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.describe_instance_patch_states_for_patch_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states_for_patch_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `PatchGroup`: `str` *(required)*
 - `Filters`:
@@ -1080,7 +1080,7 @@ Type annotations for `boto3.client("ssm").describe_instance_patches` method.
 Boto3 documentation:
 [SSM.Client.describe_instance_patches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patches)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Filters`:
@@ -1098,7 +1098,7 @@ Type annotations for `boto3.client("ssm").describe_inventory_deletions` method.
 Boto3 documentation:
 [SSM.Client.describe_inventory_deletions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_inventory_deletions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeletionId`: `str`
 - `NextToken`: `str`
@@ -1116,7 +1116,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_maintenance_window_execution_task_invocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_task_invocations)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowExecutionId`: `str` *(required)*
 - `TaskId`: `str` *(required)*
@@ -1136,7 +1136,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.describe_maintenance_window_execution_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_execution_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowExecutionId`: `str` *(required)*
 - `Filters`:
@@ -1155,7 +1155,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.describe_maintenance_window_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
@@ -1174,7 +1174,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_maintenance_window_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str`
 - `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
@@ -1196,7 +1196,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_maintenance_window_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
@@ -1215,7 +1215,7 @@ method.
 Boto3 documentation:
 [SSM.Client.describe_maintenance_window_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_window_tasks)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
@@ -1233,7 +1233,7 @@ Type annotations for `boto3.client("ssm").describe_maintenance_windows` method.
 Boto3 documentation:
 [SSM.Client.describe_maintenance_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
@@ -1251,7 +1251,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.describe_maintenance_windows_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_maintenance_windows_for_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
   *(required)*
@@ -1271,7 +1271,7 @@ Type annotations for `boto3.client("ssm").describe_ops_items` method.
 Boto3 documentation:
 [SSM.Client.describe_ops_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_ops_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpsItemFilters`:
   `List`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
@@ -1288,7 +1288,7 @@ Type annotations for `boto3.client("ssm").describe_parameters` method.
 Boto3 documentation:
 [SSM.Client.describe_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
@@ -1307,7 +1307,7 @@ Type annotations for `boto3.client("ssm").describe_patch_baselines` method.
 Boto3 documentation:
 [SSM.Client.describe_patch_baselines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_baselines)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
@@ -1338,7 +1338,7 @@ Type annotations for `boto3.client("ssm").describe_patch_groups` method.
 Boto3 documentation:
 [SSM.Client.describe_patch_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `Filters`:
@@ -1355,7 +1355,7 @@ Type annotations for `boto3.client("ssm").describe_patch_properties` method.
 Boto3 documentation:
 [SSM.Client.describe_patch_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_patch_properties)
 
-Arguments:
+Keyword-only arguments:
 
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
   *(required)*
@@ -1374,7 +1374,7 @@ Type annotations for `boto3.client("ssm").describe_sessions` method.
 Boto3 documentation:
 [SSM.Client.describe_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_sessions)
 
-Arguments:
+Keyword-only arguments:
 
 - `State`: [SessionStateType](./literals.md#sessionstatetype) *(required)*
 - `MaxResults`: `int`
@@ -1452,7 +1452,7 @@ Type annotations for `boto3.client("ssm").get_command_invocation` method.
 Boto3 documentation:
 [SSM.Client.get_command_invocation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_command_invocation)
 
-Arguments:
+Keyword-only arguments:
 
 - `CommandId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -1497,7 +1497,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.get_deployable_patch_snapshot_for_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_deployable_patch_snapshot_for_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `SnapshotId`: `str` *(required)*
@@ -1514,7 +1514,7 @@ Type annotations for `boto3.client("ssm").get_document` method.
 Boto3 documentation:
 [SSM.Client.get_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `VersionName`: `str`
@@ -1530,7 +1530,7 @@ Type annotations for `boto3.client("ssm").get_inventory` method.
 Boto3 documentation:
 [SSM.Client.get_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
@@ -1550,7 +1550,7 @@ Type annotations for `boto3.client("ssm").get_inventory_schema` method.
 Boto3 documentation:
 [SSM.Client.get_inventory_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_inventory_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `TypeName`: `str`
 - `NextToken`: `str`
@@ -1614,7 +1614,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.get_maintenance_window_execution_task_invocation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_maintenance_window_execution_task_invocation)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowExecutionId`: `str` *(required)*
 - `TaskId`: `str` *(required)*
@@ -1658,7 +1658,7 @@ Type annotations for `boto3.client("ssm").get_ops_metadata` method.
 Boto3 documentation:
 [SSM.Client.get_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpsMetadataArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1674,7 +1674,7 @@ Type annotations for `boto3.client("ssm").get_ops_summary` method.
 Boto3 documentation:
 [SSM.Client.get_ops_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_ops_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `SyncName`: `str`
 - `Filters`: `List`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
@@ -1709,7 +1709,7 @@ Type annotations for `boto3.client("ssm").get_parameter_history` method.
 Boto3 documentation:
 [SSM.Client.get_parameter_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameter_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `WithDecryption`: `bool`
@@ -1741,7 +1741,7 @@ Type annotations for `boto3.client("ssm").get_parameters_by_path` method.
 Boto3 documentation:
 [SSM.Client.get_parameters_by_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_parameters_by_path)
 
-Arguments:
+Keyword-only arguments:
 
 - `Path`: `str` *(required)*
 - `Recursive`: `bool`
@@ -1805,7 +1805,7 @@ Type annotations for `boto3.client("ssm").label_parameter_version` method.
 Boto3 documentation:
 [SSM.Client.label_parameter_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.label_parameter_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Labels`: `List`\[`str`\] *(required)*
@@ -1821,7 +1821,7 @@ Type annotations for `boto3.client("ssm").list_association_versions` method.
 Boto3 documentation:
 [SSM.Client.list_association_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_association_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1837,7 +1837,7 @@ Type annotations for `boto3.client("ssm").list_associations` method.
 Boto3 documentation:
 [SSM.Client.list_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationFilterList`:
   `List`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
@@ -1854,7 +1854,7 @@ Type annotations for `boto3.client("ssm").list_command_invocations` method.
 Boto3 documentation:
 [SSM.Client.list_command_invocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_command_invocations)
 
-Arguments:
+Keyword-only arguments:
 
 - `CommandId`: `str`
 - `InstanceId`: `str`
@@ -1874,7 +1874,7 @@ Type annotations for `boto3.client("ssm").list_commands` method.
 Boto3 documentation:
 [SSM.Client.list_commands](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_commands)
 
-Arguments:
+Keyword-only arguments:
 
 - `CommandId`: `str`
 - `InstanceId`: `str`
@@ -1892,7 +1892,7 @@ Type annotations for `boto3.client("ssm").list_compliance_items` method.
 Boto3 documentation:
 [SSM.Client.list_compliance_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
@@ -1911,7 +1911,7 @@ Type annotations for `boto3.client("ssm").list_compliance_summaries` method.
 Boto3 documentation:
 [SSM.Client.list_compliance_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_compliance_summaries)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
@@ -1929,7 +1929,7 @@ method.
 Boto3 documentation:
 [SSM.Client.list_document_metadata_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_metadata_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Metadata`: `Literal['DocumentReviews']` (see
@@ -1949,7 +1949,7 @@ Type annotations for `boto3.client("ssm").list_document_versions` method.
 Boto3 documentation:
 [SSM.Client.list_document_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_document_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `MaxResults`: `int`
@@ -1965,7 +1965,7 @@ Type annotations for `boto3.client("ssm").list_documents` method.
 Boto3 documentation:
 [SSM.Client.list_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_documents)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentFilterList`:
   `List`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
@@ -1984,7 +1984,7 @@ Type annotations for `boto3.client("ssm").list_inventory_entries` method.
 Boto3 documentation:
 [SSM.Client.list_inventory_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_inventory_entries)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `TypeName`: `str` *(required)*
@@ -2003,7 +2003,7 @@ Type annotations for `boto3.client("ssm").list_ops_item_events` method.
 Boto3 documentation:
 [SSM.Client.list_ops_item_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_item_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
@@ -2020,7 +2020,7 @@ Type annotations for `boto3.client("ssm").list_ops_item_related_items` method.
 Boto3 documentation:
 [SSM.Client.list_ops_item_related_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_item_related_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpsItemId`: `str`
 - `Filters`:
@@ -2038,7 +2038,7 @@ Type annotations for `boto3.client("ssm").list_ops_metadata` method.
 Boto3 documentation:
 [SSM.Client.list_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_ops_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
@@ -2056,7 +2056,7 @@ method.
 Boto3 documentation:
 [SSM.Client.list_resource_compliance_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_compliance_summaries)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`:
   `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
@@ -2073,7 +2073,7 @@ Type annotations for `boto3.client("ssm").list_resource_data_sync` method.
 Boto3 documentation:
 [SSM.Client.list_resource_data_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.list_resource_data_sync)
 
-Arguments:
+Keyword-only arguments:
 
 - `SyncType`: `str`
 - `NextToken`: `str`
@@ -2106,7 +2106,7 @@ Type annotations for `boto3.client("ssm").modify_document_permission` method.
 Boto3 documentation:
 [SSM.Client.modify_document_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.modify_document_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `PermissionType`: `Literal['Share']` (see
@@ -2125,7 +2125,7 @@ Type annotations for `boto3.client("ssm").put_compliance_items` method.
 Boto3 documentation:
 [SSM.Client.put_compliance_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_compliance_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `ResourceType`: `str` *(required)*
@@ -2165,7 +2165,7 @@ Type annotations for `boto3.client("ssm").put_parameter` method.
 Boto3 documentation:
 [SSM.Client.put_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_parameter)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Value`: `str` *(required)*
@@ -2220,7 +2220,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.register_target_with_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_target_with_maintenance_window)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `ResourceType`:
@@ -2244,7 +2244,7 @@ Type annotations for
 Boto3 documentation:
 [SSM.Client.register_task_with_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.register_task_with_maintenance_window)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `TaskArn`: `str` *(required)*
@@ -2275,7 +2275,7 @@ Type annotations for `boto3.client("ssm").remove_tags_from_resource` method.
 Boto3 documentation:
 [SSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.remove_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`:
   [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
@@ -2320,7 +2320,7 @@ Type annotations for `boto3.client("ssm").send_automation_signal` method.
 Boto3 documentation:
 [SSM.Client.send_automation_signal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_automation_signal)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutomationExecutionId`: `str` *(required)*
 - `SignalType`: [SignalTypeType](./literals.md#signaltypetype) *(required)*
@@ -2335,7 +2335,7 @@ Type annotations for `boto3.client("ssm").send_command` method.
 Boto3 documentation:
 [SSM.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.send_command)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentName`: `str` *(required)*
 - `InstanceIds`: `List`\[`str`\]
@@ -2380,7 +2380,7 @@ Type annotations for `boto3.client("ssm").start_automation_execution` method.
 Boto3 documentation:
 [SSM.Client.start_automation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_automation_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentName`: `str` *(required)*
 - `DocumentVersion`: `str`
@@ -2407,7 +2407,7 @@ method.
 Boto3 documentation:
 [SSM.Client.start_change_request_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_change_request_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentName`: `str` *(required)*
 - `Runbooks`: `List`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
@@ -2431,7 +2431,7 @@ Type annotations for `boto3.client("ssm").start_session` method.
 Boto3 documentation:
 [SSM.Client.start_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.start_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `Target`: `str` *(required)*
 - `DocumentName`: `str`
@@ -2475,7 +2475,7 @@ Type annotations for `boto3.client("ssm").unlabel_parameter_version` method.
 Boto3 documentation:
 [SSM.Client.unlabel_parameter_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.unlabel_parameter_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ParameterVersion`: `int` *(required)*
@@ -2491,7 +2491,7 @@ Type annotations for `boto3.client("ssm").update_association` method.
 Boto3 documentation:
 [SSM.Client.update_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
@@ -2525,7 +2525,7 @@ Type annotations for `boto3.client("ssm").update_association_status` method.
 Boto3 documentation:
 [SSM.Client.update_association_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_association_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -2543,7 +2543,7 @@ Type annotations for `boto3.client("ssm").update_document` method.
 Boto3 documentation:
 [SSM.Client.update_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `Content`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -2581,7 +2581,7 @@ Type annotations for `boto3.client("ssm").update_document_metadata` method.
 Boto3 documentation:
 [SSM.Client.update_document_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_document_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DocumentReviews`:
@@ -2597,7 +2597,7 @@ Type annotations for `boto3.client("ssm").update_maintenance_window` method.
 Boto3 documentation:
 [SSM.Client.update_maintenance_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `Name`: `str`
@@ -2624,7 +2624,7 @@ method.
 Boto3 documentation:
 [SSM.Client.update_maintenance_window_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `WindowTargetId`: `str` *(required)*
@@ -2645,7 +2645,7 @@ method.
 Boto3 documentation:
 [SSM.Client.update_maintenance_window_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_maintenance_window_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `WindowTaskId`: `str` *(required)*
@@ -2688,7 +2688,7 @@ Type annotations for `boto3.client("ssm").update_ops_item` method.
 Boto3 documentation:
 [SSM.Client.update_ops_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpsItemId`: `str` *(required)*
 - `Description`: `str`
@@ -2718,7 +2718,7 @@ Type annotations for `boto3.client("ssm").update_ops_metadata` method.
 Boto3 documentation:
 [SSM.Client.update_ops_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_ops_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpsMetadataArn`: `str` *(required)*
 - `MetadataToUpdate`: `Dict`\[`str`,
@@ -2735,7 +2735,7 @@ Type annotations for `boto3.client("ssm").update_patch_baseline` method.
 Boto3 documentation:
 [SSM.Client.update_patch_baseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_patch_baseline)
 
-Arguments:
+Keyword-only arguments:
 
 - `BaselineId`: `str` *(required)*
 - `Name`: `str`
@@ -2763,7 +2763,7 @@ Type annotations for `boto3.client("ssm").update_resource_data_sync` method.
 Boto3 documentation:
 [SSM.Client.update_resource_data_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.update_resource_data_sync)
 
-Arguments:
+Keyword-only arguments:
 
 - `SyncName`: `str` *(required)*
 - `SyncType`: `str` *(required)*

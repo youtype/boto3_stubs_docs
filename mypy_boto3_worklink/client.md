@@ -94,7 +94,7 @@ Type annotations for `boto3.client("worklink").associate_domain` method.
 Boto3 documentation:
 [WorkLink.Client.associate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -111,7 +111,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.associate_website_authorization_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_authorization_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `AuthorizationProviderType`: `Literal['SAML']` (see
@@ -130,7 +130,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.associate_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.associate_website_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `Certificate`: `str` *(required)*
@@ -159,7 +159,7 @@ Type annotations for `boto3.client("worklink").create_fleet` method.
 Boto3 documentation:
 [WorkLink.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.create_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetName`: `str` *(required)*
 - `DisplayName`: `str`
@@ -369,7 +369,7 @@ Type annotations for `boto3.client("worklink").list_devices` method.
 Boto3 documentation:
 [WorkLink.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -385,7 +385,7 @@ Type annotations for `boto3.client("worklink").list_domains` method.
 Boto3 documentation:
 [WorkLink.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -430,7 +430,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.list_website_authorization_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_authorization_providers)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -447,7 +447,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.list_website_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_website_certificate_authorities)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `MaxResults`: `int`
@@ -549,7 +549,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.update_company_network_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_company_network_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `VpcId`: `str` *(required)*
@@ -580,7 +580,7 @@ Type annotations for `boto3.client("worklink").update_domain_metadata` method.
 Boto3 documentation:
 [WorkLink.Client.update_domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_domain_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -595,7 +595,7 @@ Type annotations for `boto3.client("worklink").update_fleet_metadata` method.
 Boto3 documentation:
 [WorkLink.Client.update_fleet_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_fleet_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DisplayName`: `str`
@@ -611,7 +611,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.update_identity_provider_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_identity_provider_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `IdentityProviderType`: `Literal['SAML']` (see

@@ -239,7 +239,7 @@ Type annotations for `boto3.client("fms").get_protection_status` method.
 Boto3 documentation:
 [FMS.Client.get_protection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `MemberAccountId`: `str`
@@ -273,7 +273,7 @@ Type annotations for `boto3.client("fms").get_violation_details` method.
 Boto3 documentation:
 [FMS.Client.get_violation_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `MemberAccount`: `str` *(required)*
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("fms").list_apps_lists` method.
 Boto3 documentation:
 [FMS.Client.list_apps_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int` *(required)*
 - `DefaultLists`: `bool`
@@ -306,7 +306,7 @@ Type annotations for `boto3.client("fms").list_compliance_status` method.
 Boto3 documentation:
 [FMS.Client.list_compliance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `NextToken`: `str`
@@ -352,7 +352,7 @@ Type annotations for `boto3.client("fms").list_protocols_lists` method.
 Boto3 documentation:
 [FMS.Client.list_protocols_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int` *(required)*
 - `DefaultLists`: `bool`

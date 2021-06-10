@@ -117,7 +117,7 @@ method.
 Boto3 documentation:
 [ServiceQuotas.Client.delete_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.delete_service_quota_increase_request_from_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `QuotaCode`: `str` *(required)*
@@ -219,7 +219,7 @@ method.
 Boto3 documentation:
 [ServiceQuotas.Client.get_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota_increase_request_from_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `QuotaCode`: `str` *(required)*
@@ -236,7 +236,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceQuotas.Client.list_aws_default_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_aws_default_service_quotas)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `NextToken`: `str`
@@ -254,7 +254,7 @@ method.
 Boto3 documentation:
 [ServiceQuotas.Client.list_requested_service_quota_change_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str`
 - `Status`: [RequestStatusType](./literals.md#requeststatustype)
@@ -273,7 +273,7 @@ method.
 Boto3 documentation:
 [ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `QuotaCode`: `str` *(required)*
@@ -293,7 +293,7 @@ method.
 Boto3 documentation:
 [ServiceQuotas.Client.list_service_quota_increase_requests_in_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quota_increase_requests_in_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str`
 - `AwsRegion`: `str`
@@ -311,7 +311,7 @@ method.
 Boto3 documentation:
 [ServiceQuotas.Client.list_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quotas)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `NextToken`: `str`
@@ -359,7 +359,7 @@ method.
 Boto3 documentation:
 [ServiceQuotas.Client.put_service_quota_increase_request_into_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.put_service_quota_increase_request_into_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `QuotaCode`: `str` *(required)*
 - `ServiceCode`: `str` *(required)*
@@ -377,7 +377,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceQuotas.Client.request_service_quota_increase](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.request_service_quota_increase)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `QuotaCode`: `str` *(required)*

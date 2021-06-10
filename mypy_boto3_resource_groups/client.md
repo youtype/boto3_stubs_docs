@@ -92,7 +92,7 @@ Type annotations for `boto3.client("resource-groups").create_group` method.
 Boto3 documentation:
 [ResourceGroups.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.create_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
@@ -214,7 +214,7 @@ method.
 Boto3 documentation:
 [ResourceGroups.Client.list_group_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_group_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `Group`: `str`
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("resource-groups").list_groups` method.
 Boto3 documentation:
 [ResourceGroups.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `Filters`: `List`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
 - `MaxResults`: `int`
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("resource-groups").search_resources` method.
 Boto3 documentation:
 [ResourceGroups.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.search_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
   *(required)*
@@ -325,7 +325,7 @@ Type annotations for `boto3.client("resource-groups").update_group` method.
 Boto3 documentation:
 [ResourceGroups.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `Group`: `str`
@@ -341,7 +341,7 @@ method.
 Boto3 documentation:
 [ResourceGroups.Client.update_group_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_group_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
   *(required)*
