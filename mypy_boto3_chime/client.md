@@ -2780,10 +2780,11 @@ Type annotations for `boto3.client("chime").update_account` method.
 Boto3 documentation:
 [Chime.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str`
+- `DefaultLicense`: [LicenseType](./literals.md#licensetype)
 
 Returns
 [UpdateAccountResponseTypeDef](./type_defs.md#updateaccountresponsetypedef).

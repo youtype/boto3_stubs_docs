@@ -593,6 +593,7 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `EnableIotRoleAlias`: `bool`
 
 ### create_domain
 
@@ -4185,6 +4186,7 @@ Keyword-only arguments:
   *(required)*
 - `RoleArn`: `str`
 - `Description`: `str`
+- `EnableIotRoleAlias`: `bool`
 
 ### update_devices
 

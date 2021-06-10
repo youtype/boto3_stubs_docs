@@ -9152,6 +9152,8 @@ Optional fields:
 - `SubnetId`: `str`
 - `VpcId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ConnectivityType`:
+  [ConnectivityTypeType](./literals.md#connectivitytypetype)
 
 ## NetworkAclAssociationTypeDef
 

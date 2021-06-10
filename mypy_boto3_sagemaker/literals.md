@@ -52,6 +52,8 @@ type annotations stubs module
   - [DirectInternetAccessType](#directinternetaccesstype)
   - [DomainStatusType](#domainstatustype)
   - [EdgePackagingJobStatusType](#edgepackagingjobstatustype)
+  - [EdgePresetDeploymentStatusType](#edgepresetdeploymentstatustype)
+  - [EdgePresetDeploymentTypeType](#edgepresetdeploymenttypetype)
   - [EndpointConfigSortKeyType](#endpointconfigsortkeytype)
   - [EndpointDeletedWaiterName](#endpointdeletedwaitername)
   - [EndpointInServiceWaiterName](#endpointinservicewaitername)
@@ -809,6 +811,27 @@ Values:
 - `STARTING`
 - `STOPPED`
 - `STOPPING`
+
+## EdgePresetDeploymentStatusType
+
+```python
+from mypy_boto3_sagemaker.literals import EdgePresetDeploymentStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+
+## EdgePresetDeploymentTypeType
+
+```python
+from mypy_boto3_sagemaker.literals import EdgePresetDeploymentTypeType
+```
+
+Values:
+
+- `GreengrassV2Component`
 
 ## EndpointConfigSortKeyType
 

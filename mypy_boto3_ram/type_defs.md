@@ -345,6 +345,7 @@ Optional fields:
   [ResourceShareInvitationStatusType](./literals.md#resourceshareinvitationstatustype)
 - `resourceShareAssociations`:
   `List`\[[ResourceShareAssociationTypeDef](./type_defs.md#resourceshareassociationtypedef)\]
+- `receiverArn`: `str`
 
 ## ResourceSharePermissionDetailTypeDef
 
@@ -362,6 +363,7 @@ Optional fields:
 - `permission`: `str`
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
+- `isResourceTypeDefault`: `bool`
 
 ## ResourceSharePermissionSummaryTypeDef
 
@@ -379,6 +381,7 @@ Optional fields:
 - `status`: `str`
 - `creationTime`: `datetime`
 - `lastUpdatedTime`: `datetime`
+- `isResourceTypeDefault`: `bool`
 
 ## ResourceShareTypeDef
 

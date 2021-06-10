@@ -12,6 +12,7 @@ type annotations stubs module
   - [SageMakerFeatureStoreRuntimeClient](#sagemakerfeaturestoreruntimeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [batch_get_record](#batch_get_record)
     - [can_paginate](#can_paginate)
     - [delete_record](#delete_record)
     - [generate_presigned_url](#generate_presigned_url)
@@ -56,6 +57,23 @@ Exceptions:
 - `Exceptions.ValidationError`
 
 ## Methods
+
+### batch_get_record
+
+Type annotations for
+`boto3.client("sagemaker-featurestore-runtime").batch_get_record` method.
+
+Boto3 documentation:
+[SageMakerFeatureStoreRuntime.Client.batch_get_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.batch_get_record)
+
+Arguments:
+
+- `Identifiers`:
+  `List`\[[BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)\]
+  *(required)*
+
+Returns
+[BatchGetRecordResponseTypeDef](./type_defs.md#batchgetrecordresponsetypedef).
 
 ### can_paginate
 

@@ -50,6 +50,7 @@ type annotations stubs module
   - [ClientVpnRouteStatusCodeType](#clientvpnroutestatuscodetype)
   - [ConnectionNotificationStateType](#connectionnotificationstatetype)
   - [ConnectionNotificationTypeType](#connectionnotificationtypetype)
+  - [ConnectivityTypeType](#connectivitytypetype)
   - [ContainerFormatType](#containerformattype)
   - [ConversionTaskCancelledWaiterName](#conversiontaskcancelledwaitername)
   - [ConversionTaskCompletedWaiterName](#conversiontaskcompletedwaitername)
@@ -883,6 +884,17 @@ from mypy_boto3_ec2.literals import ConnectionNotificationTypeType
 Values:
 
 - `Topic`
+
+## ConnectivityTypeType
+
+```python
+from mypy_boto3_ec2.literals import ConnectivityTypeType
+```
+
+Values:
+
+- `private`
+- `public`
 
 ## ContainerFormatType
 

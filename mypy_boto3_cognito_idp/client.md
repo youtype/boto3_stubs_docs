@@ -92,6 +92,7 @@ type annotations stubs module
     - [list_users_in_group](#list_users_in_group)
     - [resend_confirmation_code](#resend_confirmation_code)
     - [respond_to_auth_challenge](#respond_to_auth_challenge)
+    - [revoke_token](#revoke_token)
     - [set_risk_configuration](#set_risk_configuration)
     - [set_ui_customization](#set_ui_customization)
     - [set_user_mfa_preference](#set_user_mfa_preference)
@@ -173,8 +174,11 @@ Exceptions:
 - `Exceptions.SoftwareTokenMFANotFoundException`
 - `Exceptions.TooManyFailedAttemptsException`
 - `Exceptions.TooManyRequestsException`
+- `Exceptions.UnauthorizedException`
 - `Exceptions.UnexpectedLambdaException`
 - `Exceptions.UnsupportedIdentityProviderException`
+- `Exceptions.UnsupportedOperationException`
+- `Exceptions.UnsupportedTokenTypeException`
 - `Exceptions.UnsupportedUserStateException`
 - `Exceptions.UserImportInProgressException`
 - `Exceptions.UserLambdaValidationException`
@@ -914,6 +918,7 @@ Keyword-only arguments:
   [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
 - `PreventUserExistenceErrors`:
   [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
+- `EnableTokenRevocation`: `bool`
 
 Returns
 [CreateUserPoolClientResponseTypeDef](./type_defs.md#createuserpoolclientresponsetypedef).
@@ -1574,6 +1579,21 @@ Keyword-only arguments:
 Returns
 [RespondToAuthChallengeResponseTypeDef](./type_defs.md#respondtoauthchallengeresponsetypedef).
 
+### revoke_token
+
+Type annotations for `boto3.client("cognito-idp").revoke_token` method.
+
+Boto3 documentation:
+[CognitoIdentityProvider.Client.revoke_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.revoke_token)
+
+Keyword-only arguments:
+
+- `Token`: `str` *(required)*
+- `ClientId`: `str` *(required)*
+- `ClientSecret`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### set_risk_configuration
 
 Type annotations for `boto3.client("cognito-idp").set_risk_configuration`
@@ -1934,6 +1954,7 @@ Keyword-only arguments:
   [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
 - `PreventUserExistenceErrors`:
   [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
+- `EnableTokenRevocation`: `bool`
 
 Returns
 [UpdateUserPoolClientResponseTypeDef](./type_defs.md#updateuserpoolclientresponsetypedef).

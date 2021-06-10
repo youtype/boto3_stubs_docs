@@ -42,6 +42,8 @@ type annotations stubs module
   - [EgressFilterTypeDef](#egressfiltertypedef)
   - [FileAccessLogTypeDef](#fileaccesslogtypedef)
   - [GatewayRouteDataTypeDef](#gatewayroutedatatypedef)
+  - [GatewayRouteHostnameMatchTypeDef](#gatewayroutehostnamematchtypedef)
+  - [GatewayRouteHostnameRewriteTypeDef](#gatewayroutehostnamerewritetypedef)
   - [GatewayRouteRefTypeDef](#gatewayroutereftypedef)
   - [GatewayRouteSpecTypeDef](#gatewayroutespectypedef)
   - [GatewayRouteStatusTypeDef](#gatewayroutestatustypedef)
@@ -49,7 +51,10 @@ type annotations stubs module
   - [GatewayRouteVirtualServiceTypeDef](#gatewayroutevirtualservicetypedef)
   - [GrpcGatewayRouteActionTypeDef](#grpcgatewayrouteactiontypedef)
   - [GrpcGatewayRouteMatchTypeDef](#grpcgatewayroutematchtypedef)
+  - [GrpcGatewayRouteMetadataTypeDef](#grpcgatewayroutemetadatatypedef)
+  - [GrpcGatewayRouteRewriteTypeDef](#grpcgatewayrouterewritetypedef)
   - [GrpcGatewayRouteTypeDef](#grpcgatewayroutetypedef)
+  - [GrpcMetadataMatchMethodTypeDef](#grpcmetadatamatchmethodtypedef)
   - [GrpcRetryPolicyTypeDef](#grpcretrypolicytypedef)
   - [GrpcRouteActionTypeDef](#grpcrouteactiontypedef)
   - [GrpcRouteMatchTypeDef](#grpcroutematchtypedef)
@@ -60,8 +65,14 @@ type annotations stubs module
   - [HeaderMatchMethodTypeDef](#headermatchmethodtypedef)
   - [HealthCheckPolicyTypeDef](#healthcheckpolicytypedef)
   - [HttpGatewayRouteActionTypeDef](#httpgatewayrouteactiontypedef)
+  - [HttpGatewayRouteHeaderTypeDef](#httpgatewayrouteheadertypedef)
   - [HttpGatewayRouteMatchTypeDef](#httpgatewayroutematchtypedef)
+  - [HttpGatewayRoutePathRewriteTypeDef](#httpgatewayroutepathrewritetypedef)
+  - [HttpGatewayRoutePrefixRewriteTypeDef](#httpgatewayrouteprefixrewritetypedef)
+  - [HttpGatewayRouteRewriteTypeDef](#httpgatewayrouterewritetypedef)
   - [HttpGatewayRouteTypeDef](#httpgatewayroutetypedef)
+  - [HttpPathMatchTypeDef](#httppathmatchtypedef)
+  - [HttpQueryParameterTypeDef](#httpqueryparametertypedef)
   - [HttpRetryPolicyTypeDef](#httpretrypolicytypedef)
   - [HttpRouteActionTypeDef](#httprouteactiontypedef)
   - [HttpRouteHeaderTypeDef](#httprouteheadertypedef)
@@ -94,6 +105,7 @@ type annotations stubs module
   - [OutlierDetectionTypeDef](#outlierdetectiontypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PortMappingTypeDef](#portmappingtypedef)
+  - [QueryParameterMatchTypeDef](#queryparametermatchtypedef)
   - [ResourceMetadataTypeDef](#resourcemetadatatypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RouteDataTypeDef](#routedatatypedef)
@@ -549,6 +561,10 @@ Required fields:
 
 - `hostname`: `str`
 
+Optional fields:
+
+- `responseType`: [DnsResponseTypeType](./literals.md#dnsresponsetypetype)
+
 ## DurationTypeDef
 
 ```python
@@ -596,6 +612,28 @@ Required fields:
   [GatewayRouteStatusTypeDef](./type_defs.md#gatewayroutestatustypedef)
 - `virtualGatewayName`: `str`
 
+## GatewayRouteHostnameMatchTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import GatewayRouteHostnameMatchTypeDef
+```
+
+Optional fields:
+
+- `exact`: `str`
+- `suffix`: `str`
+
+## GatewayRouteHostnameRewriteTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import GatewayRouteHostnameRewriteTypeDef
+```
+
+Optional fields:
+
+- `defaultTargetHostname`:
+  [DefaultGatewayRouteRewriteType](./literals.md#defaultgatewayrouterewritetype)
+
 ## GatewayRouteRefTypeDef
 
 ```python
@@ -628,6 +666,7 @@ Optional fields:
   [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
 - `httpRoute`:
   [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
+- `priority`: `int`
 
 ## GatewayRouteStatusTypeDef
 
@@ -672,6 +711,11 @@ Required fields:
 - `target`:
   [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
 
+Optional fields:
+
+- `rewrite`:
+  [GrpcGatewayRouteRewriteTypeDef](./type_defs.md#grpcgatewayrouterewritetypedef)
+
 ## GrpcGatewayRouteMatchTypeDef
 
 ```python
@@ -680,7 +724,38 @@ from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteMatchTypeDef
 
 Optional fields:
 
+- `hostname`:
+  [GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef)
+- `metadata`:
+  `List`\[[GrpcGatewayRouteMetadataTypeDef](./type_defs.md#grpcgatewayroutemetadatatypedef)\]
 - `serviceName`: `str`
+
+## GrpcGatewayRouteMetadataTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteMetadataTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+Optional fields:
+
+- `invert`: `bool`
+- `match`:
+  [GrpcMetadataMatchMethodTypeDef](./type_defs.md#grpcmetadatamatchmethodtypedef)
+
+## GrpcGatewayRouteRewriteTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteRewriteTypeDef
+```
+
+Optional fields:
+
+- `hostname`:
+  [GatewayRouteHostnameRewriteTypeDef](./type_defs.md#gatewayroutehostnamerewritetypedef)
 
 ## GrpcGatewayRouteTypeDef
 
@@ -694,6 +769,20 @@ Required fields:
   [GrpcGatewayRouteActionTypeDef](./type_defs.md#grpcgatewayrouteactiontypedef)
 - `match`:
   [GrpcGatewayRouteMatchTypeDef](./type_defs.md#grpcgatewayroutematchtypedef)
+
+## GrpcMetadataMatchMethodTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import GrpcMetadataMatchMethodTypeDef
+```
+
+Optional fields:
+
+- `exact`: `str`
+- `prefix`: `str`
+- `range`: [MatchRangeTypeDef](./type_defs.md#matchrangetypedef)
+- `regex`: `str`
+- `suffix`: `str`
 
 ## GrpcRetryPolicyTypeDef
 
@@ -840,15 +929,80 @@ Required fields:
 - `target`:
   [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
 
+Optional fields:
+
+- `rewrite`:
+  [HttpGatewayRouteRewriteTypeDef](./type_defs.md#httpgatewayrouterewritetypedef)
+
+## HttpGatewayRouteHeaderTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import HttpGatewayRouteHeaderTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+Optional fields:
+
+- `invert`: `bool`
+- `match`: [HeaderMatchMethodTypeDef](./type_defs.md#headermatchmethodtypedef)
+
 ## HttpGatewayRouteMatchTypeDef
 
 ```python
 from mypy_boto3_appmesh.type_defs import HttpGatewayRouteMatchTypeDef
 ```
 
-Required fields:
+Optional fields:
 
+- `headers`:
+  `List`\[[HttpGatewayRouteHeaderTypeDef](./type_defs.md#httpgatewayrouteheadertypedef)\]
+- `hostname`:
+  [GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef)
+- `method`: [HttpMethodType](./literals.md#httpmethodtype)
+- `path`: [HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef)
 - `prefix`: `str`
+- `queryParameters`:
+  `List`\[[HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)\]
+
+## HttpGatewayRoutePathRewriteTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import HttpGatewayRoutePathRewriteTypeDef
+```
+
+Optional fields:
+
+- `exact`: `str`
+
+## HttpGatewayRoutePrefixRewriteTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import HttpGatewayRoutePrefixRewriteTypeDef
+```
+
+Optional fields:
+
+- `defaultPrefix`:
+  [DefaultGatewayRouteRewriteType](./literals.md#defaultgatewayrouterewritetype)
+- `value`: `str`
+
+## HttpGatewayRouteRewriteTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import HttpGatewayRouteRewriteTypeDef
+```
+
+Optional fields:
+
+- `hostname`:
+  [GatewayRouteHostnameRewriteTypeDef](./type_defs.md#gatewayroutehostnamerewritetypedef)
+- `path`:
+  [HttpGatewayRoutePathRewriteTypeDef](./type_defs.md#httpgatewayroutepathrewritetypedef)
+- `prefix`:
+  [HttpGatewayRoutePrefixRewriteTypeDef](./type_defs.md#httpgatewayrouteprefixrewritetypedef)
 
 ## HttpGatewayRouteTypeDef
 
@@ -862,6 +1016,32 @@ Required fields:
   [HttpGatewayRouteActionTypeDef](./type_defs.md#httpgatewayrouteactiontypedef)
 - `match`:
   [HttpGatewayRouteMatchTypeDef](./type_defs.md#httpgatewayroutematchtypedef)
+
+## HttpPathMatchTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import HttpPathMatchTypeDef
+```
+
+Optional fields:
+
+- `exact`: `str`
+- `regex`: `str`
+
+## HttpQueryParameterTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import HttpQueryParameterTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+Optional fields:
+
+- `match`:
+  [QueryParameterMatchTypeDef](./type_defs.md#queryparametermatchtypedef)
 
 ## HttpRetryPolicyTypeDef
 
@@ -912,15 +1092,15 @@ Optional fields:
 from mypy_boto3_appmesh.type_defs import HttpRouteMatchTypeDef
 ```
 
-Required fields:
-
-- `prefix`: `str`
-
 Optional fields:
 
 - `headers`:
   `List`\[[HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef)\]
 - `method`: [HttpMethodType](./literals.md#httpmethodtype)
+- `path`: [HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef)
+- `prefix`: `str`
+- `queryParameters`:
+  `List`\[[HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)\]
 - `scheme`: [HttpSchemeType](./literals.md#httpschemetype)
 
 ## HttpRouteTypeDef
@@ -1291,6 +1471,16 @@ Required fields:
 
 - `port`: `int`
 - `protocol`: [PortProtocolType](./literals.md#portprotocoltype)
+
+## QueryParameterMatchTypeDef
+
+```python
+from mypy_boto3_appmesh.type_defs import QueryParameterMatchTypeDef
+```
+
+Optional fields:
+
+- `exact`: `str`
 
 ## ResourceMetadataTypeDef
 

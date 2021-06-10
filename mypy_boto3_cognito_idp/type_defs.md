@@ -1656,6 +1656,7 @@ Optional fields:
   [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
 - `PreventUserExistenceErrors`:
   [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
+- `EnableTokenRevocation`: `bool`
 
 ## UserPoolDescriptionTypeTypeDef
 

@@ -116,9 +116,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_appmesh.literals import DurationUnitType, ...
+from mypy_boto3_appmesh.literals import DefaultGatewayRouteRewriteType, ...
 ```
 
+- [DefaultGatewayRouteRewriteType](./literals.md#defaultgatewayrouterewritetype)
+- [DnsResponseTypeType](./literals.md#dnsresponsetypetype)
 - [DurationUnitType](./literals.md#durationunittype)
 - [EgressFilterTypeType](./literals.md#egressfiltertypetype)
 - [GatewayRouteStatusCodeType](./literals.md#gatewayroutestatuscodetype)
@@ -190,6 +192,8 @@ from mypy_boto3_appmesh.type_defs import AccessLogTypeDef, ...
 - [EgressFilterTypeDef](./type_defs.md#egressfiltertypedef)
 - [FileAccessLogTypeDef](./type_defs.md#fileaccesslogtypedef)
 - [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
+- [GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef)
+- [GatewayRouteHostnameRewriteTypeDef](./type_defs.md#gatewayroutehostnamerewritetypedef)
 - [GatewayRouteRefTypeDef](./type_defs.md#gatewayroutereftypedef)
 - [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
 - [GatewayRouteStatusTypeDef](./type_defs.md#gatewayroutestatustypedef)
@@ -197,7 +201,10 @@ from mypy_boto3_appmesh.type_defs import AccessLogTypeDef, ...
 - [GatewayRouteVirtualServiceTypeDef](./type_defs.md#gatewayroutevirtualservicetypedef)
 - [GrpcGatewayRouteActionTypeDef](./type_defs.md#grpcgatewayrouteactiontypedef)
 - [GrpcGatewayRouteMatchTypeDef](./type_defs.md#grpcgatewayroutematchtypedef)
+- [GrpcGatewayRouteMetadataTypeDef](./type_defs.md#grpcgatewayroutemetadatatypedef)
+- [GrpcGatewayRouteRewriteTypeDef](./type_defs.md#grpcgatewayrouterewritetypedef)
 - [GrpcGatewayRouteTypeDef](./type_defs.md#grpcgatewayroutetypedef)
+- [GrpcMetadataMatchMethodTypeDef](./type_defs.md#grpcmetadatamatchmethodtypedef)
 - [GrpcRetryPolicyTypeDef](./type_defs.md#grpcretrypolicytypedef)
 - [GrpcRouteActionTypeDef](./type_defs.md#grpcrouteactiontypedef)
 - [GrpcRouteMatchTypeDef](./type_defs.md#grpcroutematchtypedef)
@@ -208,8 +215,14 @@ from mypy_boto3_appmesh.type_defs import AccessLogTypeDef, ...
 - [HeaderMatchMethodTypeDef](./type_defs.md#headermatchmethodtypedef)
 - [HealthCheckPolicyTypeDef](./type_defs.md#healthcheckpolicytypedef)
 - [HttpGatewayRouteActionTypeDef](./type_defs.md#httpgatewayrouteactiontypedef)
+- [HttpGatewayRouteHeaderTypeDef](./type_defs.md#httpgatewayrouteheadertypedef)
 - [HttpGatewayRouteMatchTypeDef](./type_defs.md#httpgatewayroutematchtypedef)
+- [HttpGatewayRoutePathRewriteTypeDef](./type_defs.md#httpgatewayroutepathrewritetypedef)
+- [HttpGatewayRoutePrefixRewriteTypeDef](./type_defs.md#httpgatewayrouteprefixrewritetypedef)
+- [HttpGatewayRouteRewriteTypeDef](./type_defs.md#httpgatewayrouterewritetypedef)
 - [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
+- [HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef)
+- [HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)
 - [HttpRetryPolicyTypeDef](./type_defs.md#httpretrypolicytypedef)
 - [HttpRouteActionTypeDef](./type_defs.md#httprouteactiontypedef)
 - [HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef)
@@ -242,6 +255,7 @@ from mypy_boto3_appmesh.type_defs import AccessLogTypeDef, ...
 - [OutlierDetectionTypeDef](./type_defs.md#outlierdetectiontypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PortMappingTypeDef](./type_defs.md#portmappingtypedef)
+- [QueryParameterMatchTypeDef](./type_defs.md#queryparametermatchtypedef)
 - [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RouteDataTypeDef](./type_defs.md#routedatatypedef)

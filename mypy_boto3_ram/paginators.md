@@ -128,6 +128,7 @@ Arguments for `GetResourceSharesPaginator.paginate` method:
   [ResourceShareStatusType](./literals.md#resourcesharestatustype)
 - `name`: `str`
 - `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `permissionArn`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

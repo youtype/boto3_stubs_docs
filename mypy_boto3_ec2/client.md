@@ -1720,11 +1720,13 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `SubnetId`: `str` *(required)*
-- `AllocationId`: `str` *(required)*
+- `AllocationId`: `str`
 - `ClientToken`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ConnectivityType`:
+  [ConnectivityTypeType](./literals.md#connectivitytypetype)
 
 Returns
 [CreateNatGatewayResultTypeDef](./type_defs.md#createnatgatewayresulttypedef).

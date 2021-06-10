@@ -194,6 +194,7 @@ type annotations stubs module
   - [EdgeModelTypeDef](#edgemodeltypedef)
   - [EdgeOutputConfigTypeDef](#edgeoutputconfigtypedef)
   - [EdgePackagingJobSummaryTypeDef](#edgepackagingjobsummarytypedef)
+  - [EdgePresetDeploymentOutputTypeDef](#edgepresetdeploymentoutputtypedef)
   - [EndpointConfigSummaryTypeDef](#endpointconfigsummarytypedef)
   - [EndpointInputTypeDef](#endpointinputtypedef)
   - [EndpointSummaryTypeDef](#endpointsummarytypedef)
@@ -2484,6 +2485,8 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `ModelArtifact`: `str`
 - `ModelSignature`: `str`
+- `PresetDeploymentOutput`:
+  [EdgePresetDeploymentOutputTypeDef](./type_defs.md#edgepresetdeploymentoutputtypedef)
 
 ## DescribeEndpointConfigOutputTypeDef
 
@@ -3466,6 +3469,9 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
+- `PresetDeploymentType`: `Literal['GreengrassV2Component']` (see
+  [EdgePresetDeploymentTypeType](./literals.md#edgepresetdeploymenttypetype))
+- `PresetDeploymentConfig`: `str`
 
 ## EdgePackagingJobSummaryTypeDef
 
@@ -3487,6 +3493,23 @@ Optional fields:
 - `ModelVersion`: `str`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+
+## EdgePresetDeploymentOutputTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import EdgePresetDeploymentOutputTypeDef
+```
+
+Required fields:
+
+- `Type`: `Literal['GreengrassV2Component']` (see
+  [EdgePresetDeploymentTypeType](./literals.md#edgepresetdeploymenttypetype))
+- `Artifact`: `str`
+- `Status`:
+  [EdgePresetDeploymentStatusType](./literals.md#edgepresetdeploymentstatustype)
+- `StatusMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EndpointConfigSummaryTypeDef
 

@@ -775,6 +775,7 @@ from mypy_boto3_ec2.literals import AccountAttributeNameType, ...
 - [ClientVpnRouteStatusCodeType](./literals.md#clientvpnroutestatuscodetype)
 - [ConnectionNotificationStateType](./literals.md#connectionnotificationstatetype)
 - [ConnectionNotificationTypeType](./literals.md#connectionnotificationtypetype)
+- [ConnectivityTypeType](./literals.md#connectivitytypetype)
 - [ContainerFormatType](./literals.md#containerformattype)
 - [ConversionTaskCancelledWaiterName](./literals.md#conversiontaskcancelledwaitername)
 - [ConversionTaskCompletedWaiterName](./literals.md#conversiontaskcompletedwaitername)

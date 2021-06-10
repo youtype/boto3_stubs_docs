@@ -141,6 +141,7 @@ Keyword-only arguments:
 - `permissionArn`: `str` *(required)*
 - `replace`: `bool`
 - `clientToken`: `str`
+- `permissionVersion`: `int`
 
 Returns
 [AssociateResourceSharePermissionResponseTypeDef](./type_defs.md#associateresourcesharepermissionresponsetypedef).
@@ -346,6 +347,7 @@ Keyword-only arguments:
 - `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `permissionArn`: `str`
 
 Returns
 [GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef).

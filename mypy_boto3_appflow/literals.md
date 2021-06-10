@@ -269,6 +269,7 @@ Values:
 - `CONCAT_FORMAT`
 - `DATA_TYPE`
 - `DESTINATION_DATA_TYPE`
+- `EXCLUDE_SOURCE_FIELDS_LIST`
 - `LOWER_BOUND`
 - `MASK_LENGTH`
 - `MASK_VALUE`
@@ -503,6 +504,7 @@ Values:
 - `Arithmetic`
 - `Filter`
 - `Map`
+- `Map_all`
 - `Mask`
 - `Merge`
 - `Truncate`

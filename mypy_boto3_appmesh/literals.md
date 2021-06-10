@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 - [Literals for boto3 AppMesh module](#literals-for-boto3-appmesh-module)
+  - [DefaultGatewayRouteRewriteType](#defaultgatewayrouterewritetype)
+  - [DnsResponseTypeType](#dnsresponsetypetype)
   - [DurationUnitType](#durationunittype)
   - [EgressFilterTypeType](#egressfiltertypetype)
   - [GatewayRouteStatusCodeType](#gatewayroutestatuscodetype)
@@ -33,6 +35,28 @@ type annotations stubs module
   - [VirtualNodeStatusCodeType](#virtualnodestatuscodetype)
   - [VirtualRouterStatusCodeType](#virtualrouterstatuscodetype)
   - [VirtualServiceStatusCodeType](#virtualservicestatuscodetype)
+
+## DefaultGatewayRouteRewriteType
+
+```python
+from mypy_boto3_appmesh.literals import DefaultGatewayRouteRewriteType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## DnsResponseTypeType
+
+```python
+from mypy_boto3_appmesh.literals import DnsResponseTypeType
+```
+
+Values:
+
+- `ENDPOINTS`
+- `LOADBALANCER`
 
 ## DurationUnitType
 

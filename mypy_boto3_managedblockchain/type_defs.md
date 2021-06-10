@@ -328,6 +328,7 @@ Optional fields:
 - `LogPublishingConfiguration`:
   [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `KmsKeyArn`: `str`
 
 ## MemberFabricAttributesTypeDef
 
@@ -430,6 +431,7 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
+- `KmsKeyArn`: `str`
 
 ## NetworkEthereumAttributesTypeDef
 
@@ -638,6 +640,7 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
+- `KmsKeyArn`: `str`
 
 ## ProposalActionsTypeDef
 

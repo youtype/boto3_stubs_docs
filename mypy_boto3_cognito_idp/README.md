@@ -114,6 +114,7 @@ from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
 - [list_users_in_group](./client.md#list_users_in_group)
 - [resend_confirmation_code](./client.md#resend_confirmation_code)
 - [respond_to_auth_challenge](./client.md#respond_to_auth_challenge)
+- [revoke_token](./client.md#revoke_token)
 - [set_risk_configuration](./client.md#set_risk_configuration)
 - [set_ui_customization](./client.md#set_ui_customization)
 - [set_user_mfa_preference](./client.md#set_user_mfa_preference)
@@ -168,8 +169,11 @@ CognitoIdentityProviderClient [exceptions](./client.md#exceptions)
 - SoftwareTokenMFANotFoundException
 - TooManyFailedAttemptsException
 - TooManyRequestsException
+- UnauthorizedException
 - UnexpectedLambdaException
 - UnsupportedIdentityProviderException
+- UnsupportedOperationException
+- UnsupportedTokenTypeException
 - UnsupportedUserStateException
 - UserImportInProgressException
 - UserLambdaValidationException

@@ -30,6 +30,7 @@ from mypy_boto3_sagemaker_featurestore_runtime.client import SageMakerFeatureSto
 
 ### Methods
 
+- [batch_get_record](./client.md#batch_get_record)
 - [can_paginate](./client.md#can_paginate)
 - [delete_record](./client.md#delete_record)
 - [generate_presigned_url](./client.md#generate_presigned_url)
@@ -55,8 +56,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.type_defs import FeatureValueTypeDef, ...
+from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordErrorTypeDef, ...
 ```
 
+- [BatchGetRecordErrorTypeDef](./type_defs.md#batchgetrecorderrortypedef)
+- [BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)
+- [BatchGetRecordResponseTypeDef](./type_defs.md#batchgetrecordresponsetypedef)
+- [BatchGetRecordResultDetailTypeDef](./type_defs.md#batchgetrecordresultdetailtypedef)
 - [FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)
 - [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef)
