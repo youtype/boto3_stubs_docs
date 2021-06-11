@@ -98,7 +98,7 @@ method.
 Boto3 documentation:
 [MTurk.Client.accept_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.accept_qualification_request)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationRequestId`: `str` *(required)*
 - `IntegerValue`: `int`
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("mturk").create_worker_block` method.
 Boto3 documentation:
 [MTurk.Client.create_worker_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.create_worker_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkerId`: `str` *(required)*
 - `Reason`: `str` *(required)*
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("mturk").delete_hit` method.
 Boto3 documentation:
 [MTurk.Client.delete_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_hit)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 
@@ -302,7 +302,7 @@ Type annotations for `boto3.client("mturk").delete_qualification_type` method.
 Boto3 documentation:
 [MTurk.Client.delete_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_qualification_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationTypeId`: `str` *(required)*
 
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("mturk").delete_worker_block` method.
 Boto3 documentation:
 [MTurk.Client.delete_worker_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.delete_worker_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkerId`: `str` *(required)*
 - `Reason`: `str`
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("mturk").get_assignment` method.
 Boto3 documentation:
 [MTurk.Client.get_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_assignment)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssignmentId`: `str` *(required)*
 
@@ -385,7 +385,7 @@ Type annotations for `boto3.client("mturk").get_file_upload_url` method.
 Boto3 documentation:
 [MTurk.Client.get_file_upload_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_file_upload_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssignmentId`: `str` *(required)*
 - `QuestionIdentifier`: `str` *(required)*
@@ -400,7 +400,7 @@ Type annotations for `boto3.client("mturk").get_hit` method.
 Boto3 documentation:
 [MTurk.Client.get_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_hit)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 
@@ -413,7 +413,7 @@ Type annotations for `boto3.client("mturk").get_qualification_score` method.
 Boto3 documentation:
 [MTurk.Client.get_qualification_score](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_score)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationTypeId`: `str` *(required)*
 - `WorkerId`: `str` *(required)*
@@ -428,7 +428,7 @@ Type annotations for `boto3.client("mturk").get_qualification_type` method.
 Boto3 documentation:
 [MTurk.Client.get_qualification_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.get_qualification_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationTypeId`: `str` *(required)*
 
@@ -477,7 +477,7 @@ Type annotations for `boto3.client("mturk").list_hits` method.
 Boto3 documentation:
 [MTurk.Client.list_hits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_hits)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -581,7 +581,7 @@ Type annotations for `boto3.client("mturk").list_worker_blocks` method.
 Boto3 documentation:
 [MTurk.Client.list_worker_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.list_worker_blocks)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -630,7 +630,7 @@ Type annotations for `boto3.client("mturk").reject_assignment` method.
 Boto3 documentation:
 [MTurk.Client.reject_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_assignment)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssignmentId`: `str` *(required)*
 - `RequesterFeedback`: `str` *(required)*
@@ -645,7 +645,7 @@ method.
 Boto3 documentation:
 [MTurk.Client.reject_qualification_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.reject_qualification_request)
 
-Arguments:
+Keyword-only arguments:
 
 - `QualificationRequestId`: `str` *(required)*
 - `Reason`: `str`
@@ -677,7 +677,7 @@ method.
 Boto3 documentation:
 [MTurk.Client.send_test_event_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.send_test_event_notification)
 
-Arguments:
+Keyword-only arguments:
 
 - `Notification`:
   [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
@@ -693,7 +693,7 @@ Type annotations for `boto3.client("mturk").update_expiration_for_hit` method.
 Boto3 documentation:
 [MTurk.Client.update_expiration_for_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_expiration_for_hit)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 - `ExpireAt`: `datetime` *(required)*
@@ -707,7 +707,7 @@ Type annotations for `boto3.client("mturk").update_hit_review_status` method.
 Boto3 documentation:
 [MTurk.Client.update_hit_review_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_review_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 - `Revert`: `bool`
@@ -721,7 +721,7 @@ Type annotations for `boto3.client("mturk").update_hit_type_of_hit` method.
 Boto3 documentation:
 [MTurk.Client.update_hit_type_of_hit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client.update_hit_type_of_hit)
 
-Arguments:
+Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 - `HITTypeId`: `str` *(required)*

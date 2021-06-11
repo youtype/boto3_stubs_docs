@@ -156,7 +156,7 @@ method.
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_tag_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `PaginationToken`: `str`
 
@@ -170,7 +170,7 @@ method.
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_tag_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
 
-Arguments:
+Keyword-only arguments:
 
 - `Key`: `str` *(required)*
 - `PaginationToken`: `str`
@@ -185,7 +185,7 @@ Type annotations for
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.start_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
 
-Arguments:
+Keyword-only arguments:
 
 - `S3Bucket`: `str` *(required)*
 
@@ -199,7 +199,7 @@ method.
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.tag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARNList`: `List`\[`str`\] *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -214,7 +214,7 @@ method.
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.untag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARNList`: `List`\[`str`\] *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

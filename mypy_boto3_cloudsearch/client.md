@@ -88,7 +88,7 @@ Type annotations for `boto3.client("cloudsearch").build_suggesters` method.
 Boto3 documentation:
 [CloudSearch.Client.build_suggesters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -115,7 +115,7 @@ Type annotations for `boto3.client("cloudsearch").create_domain` method.
 Boto3 documentation:
 [CloudSearch.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.create_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -130,7 +130,7 @@ method.
 Boto3 documentation:
 [CloudSearch.Client.define_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AnalysisScheme`:
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("cloudsearch").define_expression` method.
 Boto3 documentation:
 [CloudSearch.Client.define_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Expression`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
@@ -162,7 +162,7 @@ Type annotations for `boto3.client("cloudsearch").define_index_field` method.
 Boto3 documentation:
 [CloudSearch.Client.define_index_field](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `IndexField`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
@@ -178,7 +178,7 @@ Type annotations for `boto3.client("cloudsearch").define_suggester` method.
 Boto3 documentation:
 [CloudSearch.Client.define_suggester](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Suggester`: [SuggesterTypeDef](./type_defs.md#suggestertypedef) *(required)*
@@ -194,7 +194,7 @@ method.
 Boto3 documentation:
 [CloudSearch.Client.delete_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AnalysisSchemeName`: `str` *(required)*
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("cloudsearch").delete_domain` method.
 Boto3 documentation:
 [CloudSearch.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("cloudsearch").delete_expression` method.
 Boto3 documentation:
 [CloudSearch.Client.delete_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ExpressionName`: `str` *(required)*
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("cloudsearch").delete_index_field` method.
 Boto3 documentation:
 [CloudSearch.Client.delete_index_field](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `IndexFieldName`: `str` *(required)*
@@ -253,7 +253,7 @@ Type annotations for `boto3.client("cloudsearch").delete_suggester` method.
 Boto3 documentation:
 [CloudSearch.Client.delete_suggester](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `SuggesterName`: `str` *(required)*
@@ -286,7 +286,7 @@ Type annotations for
 Boto3 documentation:
 [CloudSearch.Client.describe_availability_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Deployed`: `bool`
@@ -302,7 +302,7 @@ Type annotations for
 Boto3 documentation:
 [CloudSearch.Client.describe_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Deployed`: `bool`
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("cloudsearch").describe_domains` method.
 Boto3 documentation:
 [CloudSearch.Client.describe_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainNames`: `List`\[`str`\]
 
@@ -365,7 +365,7 @@ method.
 Boto3 documentation:
 [CloudSearch.Client.describe_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -380,7 +380,7 @@ Type annotations for
 Boto3 documentation:
 [CloudSearch.Client.describe_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Deployed`: `bool`
@@ -428,7 +428,7 @@ Type annotations for `boto3.client("cloudsearch").index_documents` method.
 Boto3 documentation:
 [CloudSearch.Client.index_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.index_documents)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -453,7 +453,7 @@ method.
 Boto3 documentation:
 [CloudSearch.Client.update_availability_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `MultiAZ`: `bool` *(required)*
@@ -469,7 +469,7 @@ Type annotations for
 Boto3 documentation:
 [CloudSearch.Client.update_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `DomainEndpointOptions`:
@@ -487,7 +487,7 @@ method.
 Boto3 documentation:
 [CloudSearch.Client.update_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ScalingParameters`:
@@ -505,7 +505,7 @@ Type annotations for
 Boto3 documentation:
 [CloudSearch.Client.update_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AccessPolicies`: `str` *(required)*

@@ -174,7 +174,7 @@ Type annotations for
 Boto3 documentation:
 [AppRunner.Client.delete_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_auto_scaling_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingConfigurationArn`: `str` *(required)*
 
@@ -188,7 +188,7 @@ Type annotations for `boto3.client("apprunner").delete_connection` method.
 Boto3 documentation:
 [AppRunner.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionArn`: `str` *(required)*
 
@@ -202,7 +202,7 @@ Type annotations for `boto3.client("apprunner").delete_service` method.
 Boto3 documentation:
 [AppRunner.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
@@ -217,7 +217,7 @@ Type annotations for
 Boto3 documentation:
 [AppRunner.Client.describe_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_auto_scaling_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingConfigurationArn`: `str` *(required)*
 
@@ -248,7 +248,7 @@ Type annotations for `boto3.client("apprunner").describe_service` method.
 Boto3 documentation:
 [AppRunner.Client.describe_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
@@ -263,7 +263,7 @@ method.
 Boto3 documentation:
 [AppRunner.Client.disassociate_custom_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.disassociate_custom_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -344,7 +344,7 @@ Type annotations for `boto3.client("apprunner").list_services` method.
 Boto3 documentation:
 [AppRunner.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -359,7 +359,7 @@ Type annotations for `boto3.client("apprunner").list_tags_for_resource` method.
 Boto3 documentation:
 [AppRunner.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -373,7 +373,7 @@ Type annotations for `boto3.client("apprunner").pause_service` method.
 Boto3 documentation:
 [AppRunner.Client.pause_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.pause_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
@@ -387,7 +387,7 @@ Type annotations for `boto3.client("apprunner").resume_service` method.
 Boto3 documentation:
 [AppRunner.Client.resume_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.resume_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("apprunner").start_deployment` method.
 Boto3 documentation:
 [AppRunner.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.start_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceArn`: `str` *(required)*
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("apprunner").tag_resource` method.
 Boto3 documentation:
 [AppRunner.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -429,7 +429,7 @@ Type annotations for `boto3.client("apprunner").untag_resource` method.
 Boto3 documentation:
 [AppRunner.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

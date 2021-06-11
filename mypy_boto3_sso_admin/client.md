@@ -147,7 +147,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.create_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `InstanceAccessControlAttributeConfiguration`:
@@ -205,7 +205,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.delete_inline_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -221,7 +221,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.delete_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 
@@ -234,7 +234,7 @@ Type annotations for `boto3.client("sso-admin").delete_permission_set` method.
 Boto3 documentation:
 [SSOAdmin.Client.delete_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -249,7 +249,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.describe_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `AccountAssignmentCreationRequestId`: `str` *(required)*
@@ -265,7 +265,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.describe_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `AccountAssignmentDeletionRequestId`: `str` *(required)*
@@ -282,7 +282,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.describe_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 
@@ -297,7 +297,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.describe_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -313,7 +313,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.describe_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `ProvisionPermissionSetRequestId`: `str` *(required)*
@@ -361,7 +361,7 @@ Type annotations for
 Boto3 documentation:
 [SSOAdmin.Client.get_inline_policy_for_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `PermissionSetArn`: `str` *(required)*
@@ -454,7 +454,7 @@ Type annotations for `boto3.client("sso-admin").list_instances` method.
 Boto3 documentation:
 [SSOAdmin.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -625,7 +625,7 @@ method.
 Boto3 documentation:
 [SSOAdmin.Client.update_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 - `InstanceAccessControlAttributeConfiguration`:

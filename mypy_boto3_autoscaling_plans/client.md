@@ -103,7 +103,7 @@ method.
 Boto3 documentation:
 [AutoScalingPlans.Client.delete_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScalingPlanName`: `str` *(required)*
 - `ScalingPlanVersion`: `int` *(required)*

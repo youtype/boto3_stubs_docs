@@ -126,7 +126,7 @@ Type annotations for `boto3.client("timestream-write").delete_database` method.
 Boto3 documentation:
 [TimestreamWrite.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 
@@ -137,7 +137,7 @@ Type annotations for `boto3.client("timestream-write").delete_table` method.
 Boto3 documentation:
 [TimestreamWrite.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -150,7 +150,7 @@ method.
 Boto3 documentation:
 [TimestreamWrite.Client.describe_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("timestream-write").describe_table` method.
 Boto3 documentation:
 [TimestreamWrite.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("timestream-write").list_databases` method.
 Boto3 documentation:
 [TimestreamWrite.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -238,7 +238,7 @@ method.
 Boto3 documentation:
 [TimestreamWrite.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("timestream-write").tag_resource` method.
 Boto3 documentation:
 [TimestreamWrite.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -266,7 +266,7 @@ Type annotations for `boto3.client("timestream-write").untag_resource` method.
 Boto3 documentation:
 [TimestreamWrite.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("timestream-write").update_database` method.
 Boto3 documentation:
 [TimestreamWrite.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `KmsKeyId`: `str` *(required)*

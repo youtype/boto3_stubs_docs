@@ -141,7 +141,7 @@ Type annotations for `boto3.client("appflow").delete_connector_profile` method.
 Boto3 documentation:
 [Appflow.Client.delete_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectorProfileName`: `str` *(required)*
 - `forceDelete`: `bool`
@@ -155,7 +155,7 @@ Type annotations for `boto3.client("appflow").delete_flow` method.
 Boto3 documentation:
 [Appflow.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 - `forceDelete`: `bool`
@@ -204,7 +204,7 @@ Type annotations for `boto3.client("appflow").describe_connectors` method.
 Boto3 documentation:
 [Appflow.Client.describe_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectorTypes`:
   `List`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
@@ -220,7 +220,7 @@ Type annotations for `boto3.client("appflow").describe_flow` method.
 Boto3 documentation:
 [Appflow.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("appflow").list_flows` method.
 Boto3 documentation:
 [Appflow.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("appflow").list_tags_for_resource` method.
 Boto3 documentation:
 [Appflow.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -311,7 +311,7 @@ Type annotations for `boto3.client("appflow").start_flow` method.
 Boto3 documentation:
 [Appflow.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
@@ -324,7 +324,7 @@ Type annotations for `boto3.client("appflow").stop_flow` method.
 Boto3 documentation:
 [Appflow.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
@@ -337,7 +337,7 @@ Type annotations for `boto3.client("appflow").tag_resource` method.
 Boto3 documentation:
 [Appflow.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -351,7 +351,7 @@ Type annotations for `boto3.client("appflow").untag_resource` method.
 Boto3 documentation:
 [Appflow.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

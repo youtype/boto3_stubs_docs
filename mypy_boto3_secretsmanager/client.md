@@ -104,7 +104,7 @@ method.
 Boto3 documentation:
 [SecretsManager.Client.cancel_rotate_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.cancel_rotate_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
@@ -142,7 +142,7 @@ method.
 Boto3 documentation:
 [SecretsManager.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.delete_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("secretsmanager").describe_secret` method.
 Boto3 documentation:
 [SecretsManager.Client.describe_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.describe_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
@@ -226,7 +226,7 @@ method.
 Boto3 documentation:
 [SecretsManager.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.get_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
@@ -327,7 +327,7 @@ Type annotations for
 Boto3 documentation:
 [SecretsManager.Client.remove_regions_from_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.remove_regions_from_replication)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `RemoveReplicaRegions`: `List`\[`str`\] *(required)*
@@ -361,7 +361,7 @@ Type annotations for `boto3.client("secretsmanager").restore_secret` method.
 Boto3 documentation:
 [SecretsManager.Client.restore_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.restore_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
@@ -394,7 +394,7 @@ Type annotations for
 Boto3 documentation:
 [SecretsManager.Client.stop_replication_to_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.stop_replication_to_replica)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("secretsmanager").tag_resource` method.
 Boto3 documentation:
 [SecretsManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -420,7 +420,7 @@ Type annotations for `boto3.client("secretsmanager").untag_resource` method.
 Boto3 documentation:
 [SecretsManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -470,7 +470,7 @@ method.
 Boto3 documentation:
 [SecretsManager.Client.validate_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.validate_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourcePolicy`: `str` *(required)*
 - `SecretId`: `str`

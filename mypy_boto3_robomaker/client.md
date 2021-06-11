@@ -122,7 +122,7 @@ Type annotations for `boto3.client("robomaker").batch_delete_worlds` method.
 Boto3 documentation:
 [RoboMaker.Client.batch_delete_worlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds)
 
-Arguments:
+Keyword-only arguments:
 
 - `worlds`: `List`\[`str`\] *(required)*
 
@@ -137,7 +137,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.batch_describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobs`: `List`\[`str`\] *(required)*
 
@@ -164,7 +164,7 @@ Type annotations for `boto3.client("robomaker").cancel_deployment_job` method.
 Boto3 documentation:
 [RoboMaker.Client.cancel_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -177,7 +177,7 @@ Type annotations for `boto3.client("robomaker").cancel_simulation_job` method.
 Boto3 documentation:
 [RoboMaker.Client.cancel_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -191,7 +191,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.cancel_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `batch`: `str` *(required)*
 
@@ -205,7 +205,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.cancel_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -219,7 +219,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.cancel_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -253,7 +253,7 @@ Type annotations for `boto3.client("robomaker").create_fleet` method.
 Boto3 documentation:
 [RoboMaker.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
@@ -309,7 +309,7 @@ Type annotations for
 Boto3 documentation:
 [RoboMaker.Client.create_robot_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `currentRevisionId`: `str`
@@ -352,7 +352,7 @@ Type annotations for
 Boto3 documentation:
 [RoboMaker.Client.create_simulation_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `currentRevisionId`: `str`
@@ -455,7 +455,7 @@ Type annotations for `boto3.client("robomaker").delete_fleet` method.
 Boto3 documentation:
 [RoboMaker.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `fleet`: `str` *(required)*
 
@@ -468,7 +468,7 @@ Type annotations for `boto3.client("robomaker").delete_robot` method.
 Boto3 documentation:
 [RoboMaker.Client.delete_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot)
 
-Arguments:
+Keyword-only arguments:
 
 - `robot`: `str` *(required)*
 
@@ -482,7 +482,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.delete_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `applicationVersion`: `str`
@@ -497,7 +497,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.delete_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `applicationVersion`: `str`
@@ -511,7 +511,7 @@ Type annotations for `boto3.client("robomaker").delete_world_template` method.
 Boto3 documentation:
 [RoboMaker.Client.delete_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_world_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `template`: `str` *(required)*
 
@@ -524,7 +524,7 @@ Type annotations for `boto3.client("robomaker").deregister_robot` method.
 Boto3 documentation:
 [RoboMaker.Client.deregister_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.deregister_robot)
 
-Arguments:
+Keyword-only arguments:
 
 - `fleet`: `str` *(required)*
 - `robot`: `str` *(required)*
@@ -540,7 +540,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.describe_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("robomaker").describe_fleet` method.
 Boto3 documentation:
 [RoboMaker.Client.describe_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `fleet`: `str` *(required)*
 
@@ -568,7 +568,7 @@ Type annotations for `boto3.client("robomaker").describe_robot` method.
 Boto3 documentation:
 [RoboMaker.Client.describe_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot)
 
-Arguments:
+Keyword-only arguments:
 
 - `robot`: `str` *(required)*
 
@@ -583,7 +583,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.describe_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `applicationVersion`: `str`
@@ -599,7 +599,7 @@ Type annotations for
 Boto3 documentation:
 [RoboMaker.Client.describe_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `applicationVersion`: `str`
@@ -615,7 +615,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -630,7 +630,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.describe_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `batch`: `str` *(required)*
 
@@ -644,7 +644,7 @@ Type annotations for `boto3.client("robomaker").describe_world` method.
 Boto3 documentation:
 [RoboMaker.Client.describe_world](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world)
 
-Arguments:
+Keyword-only arguments:
 
 - `world`: `str` *(required)*
 
@@ -659,7 +659,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.describe_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -674,7 +674,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.describe_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -689,7 +689,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.describe_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `template`: `str` *(required)*
 
@@ -720,7 +720,7 @@ method.
 Boto3 documentation:
 [RoboMaker.Client.get_world_template_body](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body)
 
-Arguments:
+Keyword-only arguments:
 
 - `template`: `str`
 - `generationJob`: `str`
@@ -850,7 +850,7 @@ Type annotations for `boto3.client("robomaker").list_tags_for_resource` method.
 Boto3 documentation:
 [RoboMaker.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -897,7 +897,7 @@ Type annotations for `boto3.client("robomaker").list_world_templates` method.
 Boto3 documentation:
 [RoboMaker.Client.list_world_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -927,7 +927,7 @@ Type annotations for `boto3.client("robomaker").register_robot` method.
 Boto3 documentation:
 [RoboMaker.Client.register_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.register_robot)
 
-Arguments:
+Keyword-only arguments:
 
 - `fleet`: `str` *(required)*
 - `robot`: `str` *(required)*
@@ -942,7 +942,7 @@ Type annotations for `boto3.client("robomaker").restart_simulation_job` method.
 Boto3 documentation:
 [RoboMaker.Client.restart_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `job`: `str` *(required)*
 
@@ -975,7 +975,7 @@ Type annotations for `boto3.client("robomaker").sync_deployment_job` method.
 Boto3 documentation:
 [RoboMaker.Client.sync_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientRequestToken`: `str` *(required)*
 - `fleet`: `str` *(required)*
@@ -990,7 +990,7 @@ Type annotations for `boto3.client("robomaker").tag_resource` method.
 Boto3 documentation:
 [RoboMaker.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -1004,7 +1004,7 @@ Type annotations for `boto3.client("robomaker").untag_resource` method.
 Boto3 documentation:
 [RoboMaker.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

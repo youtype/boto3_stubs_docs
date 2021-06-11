@@ -83,7 +83,7 @@ Type annotations for `boto3.client("redshift-data").cancel_statement` method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.cancel_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -97,7 +97,7 @@ Type annotations for `boto3.client("redshift-data").describe_statement` method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.describe_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -171,7 +171,7 @@ method.
 Boto3 documentation:
 [RedshiftDataAPIService.Client.get_statement_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `NextToken`: `str`

@@ -106,7 +106,7 @@ Type annotations for `boto3.client("datasync").cancel_task_execution` method.
 Boto3 documentation:
 [DataSync.Client.cancel_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskExecutionArn`: `str` *(required)*
 
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("datasync").delete_agent` method.
 Boto3 documentation:
 [DataSync.Client.delete_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent)
 
-Arguments:
+Keyword-only arguments:
 
 - `AgentArn`: `str` *(required)*
 
@@ -294,7 +294,7 @@ Type annotations for `boto3.client("datasync").delete_location` method.
 Boto3 documentation:
 [DataSync.Client.delete_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("datasync").delete_task` method.
 Boto3 documentation:
 [DataSync.Client.delete_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskArn`: `str` *(required)*
 
@@ -320,7 +320,7 @@ Type annotations for `boto3.client("datasync").describe_agent` method.
 Boto3 documentation:
 [DataSync.Client.describe_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent)
 
-Arguments:
+Keyword-only arguments:
 
 - `AgentArn`: `str` *(required)*
 
@@ -334,7 +334,7 @@ Type annotations for `boto3.client("datasync").describe_location_efs` method.
 Boto3 documentation:
 [DataSync.Client.describe_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
@@ -349,7 +349,7 @@ method.
 Boto3 documentation:
 [DataSync.Client.describe_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
@@ -363,7 +363,7 @@ Type annotations for `boto3.client("datasync").describe_location_nfs` method.
 Boto3 documentation:
 [DataSync.Client.describe_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
@@ -378,7 +378,7 @@ Type annotations for
 Boto3 documentation:
 [DataSync.Client.describe_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("datasync").describe_location_s3` method.
 Boto3 documentation:
 [DataSync.Client.describe_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("datasync").describe_location_smb` method.
 Boto3 documentation:
 [DataSync.Client.describe_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb)
 
-Arguments:
+Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
@@ -420,7 +420,7 @@ Type annotations for `boto3.client("datasync").describe_task` method.
 Boto3 documentation:
 [DataSync.Client.describe_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskArn`: `str` *(required)*
 
@@ -434,7 +434,7 @@ Type annotations for `boto3.client("datasync").describe_task_execution` method.
 Boto3 documentation:
 [DataSync.Client.describe_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskExecutionArn`: `str` *(required)*
 
@@ -464,7 +464,7 @@ Type annotations for `boto3.client("datasync").list_agents` method.
 Boto3 documentation:
 [DataSync.Client.list_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -558,7 +558,7 @@ Type annotations for `boto3.client("datasync").tag_resource` method.
 Boto3 documentation:
 [DataSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
@@ -573,7 +573,7 @@ Type annotations for `boto3.client("datasync").untag_resource` method.
 Boto3 documentation:
 [DataSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Keys`: `List`\[`str`\] *(required)*
@@ -587,7 +587,7 @@ Type annotations for `boto3.client("datasync").update_agent` method.
 Boto3 documentation:
 [DataSync.Client.update_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent)
 
-Arguments:
+Keyword-only arguments:
 
 - `AgentArn`: `str` *(required)*
 - `Name`: `str`
@@ -677,7 +677,7 @@ Type annotations for `boto3.client("datasync").update_task_execution` method.
 Boto3 documentation:
 [DataSync.Client.update_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskExecutionArn`: `str` *(required)*
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef) *(required)*

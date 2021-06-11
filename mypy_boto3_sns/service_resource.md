@@ -313,7 +313,7 @@ Type annotations for `boto3.resource("sns").set_attributes` method.
 Boto3 documentation:
 [SNS.PlatformApplication.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.set_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attributes`: `Dict`\[`str`, `str`\] *(required)*
 
@@ -398,7 +398,7 @@ Type annotations for `boto3.resource("sns").set_attributes` method.
 Boto3 documentation:
 [SNS.PlatformEndpoint.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.set_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attributes`: `Dict`\[`str`, `str`\] *(required)*
 
@@ -462,7 +462,7 @@ Type annotations for `boto3.resource("sns").set_attributes` method.
 Boto3 documentation:
 [SNS.Subscription.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.set_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttributeName`: `str` *(required)*
 - `AttributeValue`: `str`
@@ -534,7 +534,7 @@ Type annotations for `boto3.resource("sns").confirm_subscription` method.
 Boto3 documentation:
 [SNS.Topic.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.confirm_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `Token`: `str` *(required)*
 - `AuthenticateOnUnsubscribe`: `str`
@@ -599,7 +599,7 @@ Type annotations for `boto3.resource("sns").remove_permission` method.
 Boto3 documentation:
 [SNS.Topic.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.remove_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 
@@ -610,7 +610,7 @@ Type annotations for `boto3.resource("sns").set_attributes` method.
 Boto3 documentation:
 [SNS.Topic.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.set_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttributeName`: `str` *(required)*
 - `AttributeValue`: `str`

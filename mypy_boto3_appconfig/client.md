@@ -201,7 +201,7 @@ Type annotations for `boto3.client("appconfig").delete_application` method.
 Boto3 documentation:
 [AppConfig.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -213,7 +213,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.delete_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_configuration_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
@@ -226,7 +226,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.delete_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_deployment_strategy)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeploymentStrategyId`: `str` *(required)*
 
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("appconfig").delete_environment` method.
 Boto3 documentation:
 [AppConfig.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("appconfig").get_application` method.
 Boto3 documentation:
 [AppConfig.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -310,7 +310,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.get_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
@@ -341,7 +341,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.get_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment_strategy)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeploymentStrategyId`: `str` *(required)*
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("appconfig").get_environment` method.
 Boto3 documentation:
 [AppConfig.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
@@ -385,7 +385,7 @@ Type annotations for `boto3.client("appconfig").list_applications` method.
 Boto3 documentation:
 [AppConfig.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -417,7 +417,7 @@ method.
 Boto3 documentation:
 [AppConfig.Client.list_deployment_strategies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployment_strategies)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -481,7 +481,7 @@ Type annotations for `boto3.client("appconfig").list_tags_for_resource` method.
 Boto3 documentation:
 [AppConfig.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -528,7 +528,7 @@ Type annotations for `boto3.client("appconfig").tag_resource` method.
 Boto3 documentation:
 [AppConfig.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("appconfig").untag_resource` method.
 Boto3 documentation:
 [AppConfig.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

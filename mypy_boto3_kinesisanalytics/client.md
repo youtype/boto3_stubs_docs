@@ -213,7 +213,7 @@ method.
 Boto3 documentation:
 [KinesisAnalytics.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `CreateTimestamp`: `datetime` *(required)*
@@ -295,7 +295,7 @@ method.
 Boto3 documentation:
 [KinesisAnalytics.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.describe_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 
@@ -349,7 +349,7 @@ method.
 Boto3 documentation:
 [KinesisAnalytics.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `ExclusiveStartApplicationName`: `str`
@@ -365,7 +365,7 @@ method.
 Boto3 documentation:
 [KinesisAnalytics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -380,7 +380,7 @@ method.
 Boto3 documentation:
 [KinesisAnalytics.Client.start_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.start_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `InputConfigurations`:
@@ -397,7 +397,7 @@ method.
 Boto3 documentation:
 [KinesisAnalytics.Client.stop_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.stop_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("kinesisanalytics").tag_resource` method.
 Boto3 documentation:
 [KinesisAnalytics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -424,7 +424,7 @@ Type annotations for `boto3.client("kinesisanalytics").untag_resource` method.
 Boto3 documentation:
 [KinesisAnalytics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

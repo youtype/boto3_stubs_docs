@@ -120,7 +120,7 @@ Type annotations for `boto3.client("firehose").delete_delivery_stream` method.
 Boto3 documentation:
 [Firehose.Client.delete_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.delete_delivery_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `AllowForceDelete`: `bool`
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("firehose").put_record` method.
 Boto3 documentation:
 [Firehose.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `Record`: [RecordTypeDef](./type_defs.md#recordtypedef) *(required)*
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("firehose").put_record_batch` method.
 Boto3 documentation:
 [Firehose.Client.put_record_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.put_record_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
@@ -232,7 +232,7 @@ Type annotations for
 Boto3 documentation:
 [Firehose.Client.start_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.start_delivery_stream_encryption)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `DeliveryStreamEncryptionConfigurationInput`:
@@ -248,7 +248,7 @@ method.
 Boto3 documentation:
 [Firehose.Client.stop_delivery_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.stop_delivery_stream_encryption)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 
@@ -261,7 +261,7 @@ Type annotations for `boto3.client("firehose").tag_delivery_stream` method.
 Boto3 documentation:
 [Firehose.Client.tag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.tag_delivery_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("firehose").untag_delivery_stream` method.
 Boto3 documentation:
 [Firehose.Client.untag_delivery_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.untag_delivery_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

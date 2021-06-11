@@ -187,7 +187,7 @@ method.
 Boto3 documentation:
 [ServiceDiscovery.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("servicediscovery").delete_service` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -215,7 +215,7 @@ method.
 Boto3 documentation:
 [ServiceDiscovery.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("servicediscovery").get_instance` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("servicediscovery").get_namespace` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.get_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("servicediscovery").get_operation` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation)
 
-Arguments:
+Keyword-only arguments:
 
 - `OperationId`: `str` *(required)*
 
@@ -329,7 +329,7 @@ Type annotations for `boto3.client("servicediscovery").get_service` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -410,7 +410,7 @@ method.
 Boto3 documentation:
 [ServiceDiscovery.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -442,7 +442,7 @@ Type annotations for `boto3.client("servicediscovery").tag_resource` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -456,7 +456,7 @@ Type annotations for `boto3.client("servicediscovery").untag_resource` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("servicediscovery").update_service` method.
 Boto3 documentation:
 [ServiceDiscovery.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Service`: [ServiceChangeTypeDef](./type_defs.md#servicechangetypedef)

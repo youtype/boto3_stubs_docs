@@ -81,7 +81,7 @@ Type annotations for `boto3.client("amp").create_workspace` method.
 Boto3 documentation:
 [PrometheusService.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace)
 
-Arguments:
+Keyword-only arguments:
 
 - `alias`: `str`
 - `clientToken`: `str`
@@ -96,7 +96,7 @@ Type annotations for `boto3.client("amp").delete_workspace` method.
 Boto3 documentation:
 [PrometheusService.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace)
 
-Arguments:
+Keyword-only arguments:
 
 - `workspaceId`: `str` *(required)*
 - `clientToken`: `str`
@@ -108,7 +108,7 @@ Type annotations for `boto3.client("amp").describe_workspace` method.
 Boto3 documentation:
 [PrometheusService.Client.describe_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace)
 
-Arguments:
+Keyword-only arguments:
 
 - `workspaceId`: `str` *(required)*
 

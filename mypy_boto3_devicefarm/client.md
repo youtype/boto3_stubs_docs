@@ -221,7 +221,7 @@ Type annotations for `boto3.client("devicefarm").create_project` method.
 Boto3 documentation:
 [DeviceFarm.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `defaultJobTimeoutMinutes`: `int`
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("devicefarm").create_test_grid_url` method.
 Boto3 documentation:
 [DeviceFarm.Client.create_test_grid_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectArn`: `str` *(required)*
 - `expiresInSeconds`: `int` *(required)*
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("devicefarm").delete_device_pool` method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_device_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -344,7 +344,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -358,7 +358,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_network_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("devicefarm").delete_project` method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -385,7 +385,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_remote_access_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("devicefarm").delete_run` method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -412,7 +412,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_test_grid_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectArn`: `str` *(required)*
 
@@ -425,7 +425,7 @@ Type annotations for `boto3.client("devicefarm").delete_upload` method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -439,7 +439,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.delete_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_vpce_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("devicefarm").get_device` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -492,7 +492,7 @@ Type annotations for `boto3.client("devicefarm").get_device_instance` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_device_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("devicefarm").get_device_pool` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("devicefarm").get_instance_profile` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("devicefarm").get_job` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -567,7 +567,7 @@ Type annotations for `boto3.client("devicefarm").get_network_profile` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_network_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -581,7 +581,7 @@ Type annotations for `boto3.client("devicefarm").get_offering_status` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_offering_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_offering_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -595,7 +595,7 @@ Type annotations for `boto3.client("devicefarm").get_project` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -609,7 +609,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.get_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_remote_access_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -623,7 +623,7 @@ Type annotations for `boto3.client("devicefarm").get_run` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -636,7 +636,7 @@ Type annotations for `boto3.client("devicefarm").get_suite` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_suite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_suite)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -649,7 +649,7 @@ Type annotations for `boto3.client("devicefarm").get_test` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -662,7 +662,7 @@ Type annotations for `boto3.client("devicefarm").get_test_grid_project` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectArn`: `str` *(required)*
 
@@ -692,7 +692,7 @@ Type annotations for `boto3.client("devicefarm").get_upload` method.
 Boto3 documentation:
 [DeviceFarm.Client.get_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -706,7 +706,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.get_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_vpce_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -721,7 +721,7 @@ Type annotations for
 Boto3 documentation:
 [DeviceFarm.Client.install_to_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.install_to_remote_access_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `remoteAccessSessionArn`: `str` *(required)*
 - `appArn`: `str` *(required)*
@@ -753,7 +753,7 @@ Type annotations for `boto3.client("devicefarm").list_device_instances` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_device_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -801,7 +801,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_instance_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -816,7 +816,7 @@ Type annotations for `boto3.client("devicefarm").list_jobs` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
@@ -847,7 +847,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.list_offering_promotions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_promotions)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -862,7 +862,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.list_offering_transactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_transactions)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -876,7 +876,7 @@ Type annotations for `boto3.client("devicefarm").list_offerings` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offerings)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -890,7 +890,7 @@ Type annotations for `boto3.client("devicefarm").list_projects` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str`
 - `nextToken`: `str`
@@ -905,7 +905,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.list_remote_access_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_remote_access_sessions)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
@@ -920,7 +920,7 @@ Type annotations for `boto3.client("devicefarm").list_runs` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
@@ -934,7 +934,7 @@ Type annotations for `boto3.client("devicefarm").list_samples` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_samples](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_samples)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
@@ -948,7 +948,7 @@ Type annotations for `boto3.client("devicefarm").list_suites` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_suites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_suites)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
@@ -963,7 +963,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -978,7 +978,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.list_test_grid_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResult`: `int`
 - `nextToken`: `str`
@@ -1052,7 +1052,7 @@ Type annotations for `boto3.client("devicefarm").list_tests` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_tests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tests)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
@@ -1066,7 +1066,7 @@ Type annotations for `boto3.client("devicefarm").list_unique_problems` method.
 Boto3 documentation:
 [DeviceFarm.Client.list_unique_problems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_unique_problems)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `nextToken`: `str`
@@ -1097,7 +1097,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.list_vpce_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_vpce_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1128,7 +1128,7 @@ Type annotations for `boto3.client("devicefarm").renew_offering` method.
 Boto3 documentation:
 [DeviceFarm.Client.renew_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.renew_offering)
 
-Arguments:
+Keyword-only arguments:
 
 - `offeringId`: `str` *(required)*
 - `quantity`: `int` *(required)*
@@ -1167,7 +1167,7 @@ Type annotations for `boto3.client("devicefarm").stop_job` method.
 Boto3 documentation:
 [DeviceFarm.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -1181,7 +1181,7 @@ method.
 Boto3 documentation:
 [DeviceFarm.Client.stop_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_remote_access_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -1195,7 +1195,7 @@ Type annotations for `boto3.client("devicefarm").stop_run` method.
 Boto3 documentation:
 [DeviceFarm.Client.stop_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -1208,7 +1208,7 @@ Type annotations for `boto3.client("devicefarm").tag_resource` method.
 Boto3 documentation:
 [DeviceFarm.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1222,7 +1222,7 @@ Type annotations for `boto3.client("devicefarm").untag_resource` method.
 Boto3 documentation:
 [DeviceFarm.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

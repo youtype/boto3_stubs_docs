@@ -106,7 +106,7 @@ method.
 Boto3 documentation:
 [AppIntegrationsService.Client.delete_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -137,7 +137,7 @@ method.
 Boto3 documentation:
 [AppIntegrationsService.Client.get_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -169,7 +169,7 @@ method.
 Boto3 documentation:
 [AppIntegrationsService.Client.list_event_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -185,7 +185,7 @@ method.
 Boto3 documentation:
 [AppIntegrationsService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("appintegrations").tag_resource` method.
 Boto3 documentation:
 [AppIntegrationsService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -213,7 +213,7 @@ Type annotations for `boto3.client("appintegrations").untag_resource` method.
 Boto3 documentation:
 [AppIntegrationsService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -228,7 +228,7 @@ method.
 Boto3 documentation:
 [AppIntegrationsService.Client.update_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`

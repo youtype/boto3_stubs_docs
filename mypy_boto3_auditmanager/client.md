@@ -112,7 +112,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.associate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `evidenceFolderId`: `str` *(required)*
@@ -145,7 +145,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.batch_create_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment)
 
-Arguments:
+Keyword-only arguments:
 
 - `createDelegationRequests`:
   `List`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
@@ -163,7 +163,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.batch_delete_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment)
 
-Arguments:
+Keyword-only arguments:
 
 - `delegationIds`: `List`\[`str`\] *(required)*
 - `assessmentId`: `str` *(required)*
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("auditmanager").delete_assessment` method.
 Boto3 documentation:
 [AuditManager.Client.delete_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 
@@ -326,7 +326,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.delete_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework)
 
-Arguments:
+Keyword-only arguments:
 
 - `frameworkId`: `str` *(required)*
 
@@ -340,7 +340,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.delete_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `assessmentReportId`: `str` *(required)*
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("auditmanager").delete_control` method.
 Boto3 documentation:
 [AuditManager.Client.delete_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `controlId`: `str` *(required)*
 
@@ -378,7 +378,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.deregister_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `adminAccountId`: `str`
 
@@ -393,7 +393,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.disassociate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `evidenceFolderId`: `str` *(required)*
@@ -434,7 +434,7 @@ Type annotations for `boto3.client("auditmanager").get_assessment` method.
 Boto3 documentation:
 [AuditManager.Client.get_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 
@@ -449,7 +449,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.get_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework)
 
-Arguments:
+Keyword-only arguments:
 
 - `frameworkId`: `str` *(required)*
 
@@ -464,7 +464,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.get_assessment_report_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentReportId`: `str` *(required)*
 - `assessmentId`: `str` *(required)*
@@ -497,7 +497,7 @@ Type annotations for `boto3.client("auditmanager").get_control` method.
 Boto3 documentation:
 [AuditManager.Client.get_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_control)
 
-Arguments:
+Keyword-only arguments:
 
 - `controlId`: `str` *(required)*
 
@@ -510,7 +510,7 @@ Type annotations for `boto3.client("auditmanager").get_delegations` method.
 Boto3 documentation:
 [AuditManager.Client.get_delegations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_delegations)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -636,7 +636,7 @@ Type annotations for `boto3.client("auditmanager").get_settings` method.
 Boto3 documentation:
 [AuditManager.Client.get_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `attribute`: [SettingAttributeType](./literals.md#settingattributetype)
   *(required)*
@@ -670,7 +670,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.list_assessment_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -685,7 +685,7 @@ Type annotations for `boto3.client("auditmanager").list_assessments` method.
 Boto3 documentation:
 [AuditManager.Client.list_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessments)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -733,7 +733,7 @@ Type annotations for `boto3.client("auditmanager").list_notifications` method.
 Boto3 documentation:
 [AuditManager.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_notifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -749,7 +749,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -763,7 +763,7 @@ Type annotations for `boto3.client("auditmanager").register_account` method.
 Boto3 documentation:
 [AuditManager.Client.register_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `kmsKey`: `str`
 - `delegatedAdminAccount`: `str`
@@ -779,7 +779,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.register_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `adminAccountId`: `str` *(required)*
 
@@ -793,7 +793,7 @@ Type annotations for `boto3.client("auditmanager").tag_resource` method.
 Boto3 documentation:
 [AuditManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -807,7 +807,7 @@ Type annotations for `boto3.client("auditmanager").untag_resource` method.
 Boto3 documentation:
 [AuditManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -901,7 +901,7 @@ method.
 Boto3 documentation:
 [AuditManager.Client.update_assessment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
@@ -958,7 +958,7 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.validate_assessment_report_integrity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity)
 
-Arguments:
+Keyword-only arguments:
 
 - `s3RelativePath`: `str` *(required)*
 

@@ -101,7 +101,7 @@ Type annotations for `boto3.client("healthlake").delete_fhir_datastore` method.
 Boto3 documentation:
 [HealthLake.Client.delete_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.delete_fhir_datastore)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatastoreId`: `str`
 
@@ -116,7 +116,7 @@ method.
 Boto3 documentation:
 [HealthLake.Client.describe_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_datastore)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatastoreId`: `str`
 
@@ -131,7 +131,7 @@ method.
 Boto3 documentation:
 [HealthLake.Client.describe_fhir_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatastoreId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -147,7 +147,7 @@ method.
 Boto3 documentation:
 [HealthLake.Client.describe_fhir_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatastoreId`: `str` *(required)*
 - `JobId`: `str` *(required)*

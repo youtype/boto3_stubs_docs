@@ -107,7 +107,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.create_replication_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.create_replication_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `regions`: `Dict`\[`str`,
   [RegionMapInputValueTypeDef](./type_defs.md#regionmapinputvaluetypedef)\]
@@ -168,7 +168,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.delete_incident_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_incident_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -182,7 +182,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.delete_replication_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_replication_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -196,7 +196,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `policyId`: `str` *(required)*
 - `resourceArn`: `str` *(required)*
@@ -211,7 +211,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.delete_response_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_response_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -225,7 +225,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.delete_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.delete_timeline_event)
 
-Arguments:
+Keyword-only arguments:
 
 - `eventId`: `str` *(required)*
 - `incidentRecordArn`: `str` *(required)*
@@ -257,7 +257,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.get_incident_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_incident_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -272,7 +272,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.get_replication_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_replication_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("ssm-incidents").get_response_plan` method.
 Boto3 documentation:
 [SSMIncidents.Client.get_response_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_response_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("ssm-incidents").get_timeline_event` method.
 Boto3 documentation:
 [SSMIncidents.Client.get_timeline_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.get_timeline_event)
 
-Arguments:
+Keyword-only arguments:
 
 - `eventId`: `str` *(required)*
 - `incidentRecordArn`: `str` *(required)*
@@ -366,7 +366,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.list_replication_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_replication_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -382,7 +382,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.list_response_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_response_plans)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -398,7 +398,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -434,7 +434,7 @@ method.
 Boto3 documentation:
 [SSMIncidents.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.put_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `policy`: `str` *(required)*
 - `resourceArn`: `str` *(required)*
@@ -470,7 +470,7 @@ Type annotations for `boto3.client("ssm-incidents").tag_resource` method.
 Boto3 documentation:
 [SSMIncidents.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -484,7 +484,7 @@ Type annotations for `boto3.client("ssm-incidents").untag_resource` method.
 Boto3 documentation:
 [SSMIncidents.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

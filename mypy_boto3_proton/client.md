@@ -113,7 +113,7 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.accept_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.accept_environment_account_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -141,7 +141,7 @@ method.
 Boto3 documentation:
 [Proton.Client.cancel_environment_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_environment_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentName`: `str` *(required)*
 
@@ -156,7 +156,7 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.cancel_service_instance_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_service_instance_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceInstanceName`: `str` *(required)*
 - `serviceName`: `str` *(required)*
@@ -172,7 +172,7 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.cancel_service_pipeline_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_service_pipeline_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 
@@ -337,7 +337,7 @@ Type annotations for `boto3.client("proton").delete_environment` method.
 Boto3 documentation:
 [Proton.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -352,7 +352,7 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.delete_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_account_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -367,7 +367,7 @@ method.
 Boto3 documentation:
 [Proton.Client.delete_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("proton").delete_service` method.
 Boto3 documentation:
 [Proton.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -412,7 +412,7 @@ Type annotations for `boto3.client("proton").delete_service_template` method.
 Boto3 documentation:
 [Proton.Client.delete_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -469,7 +469,7 @@ Type annotations for `boto3.client("proton").get_environment` method.
 Boto3 documentation:
 [Proton.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -484,7 +484,7 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.get_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_account_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -498,7 +498,7 @@ Type annotations for `boto3.client("proton").get_environment_template` method.
 Boto3 documentation:
 [Proton.Client.get_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -529,7 +529,7 @@ Type annotations for `boto3.client("proton").get_service` method.
 Boto3 documentation:
 [Proton.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -542,7 +542,7 @@ Type annotations for `boto3.client("proton").get_service_instance` method.
 Boto3 documentation:
 [Proton.Client.get_service_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `serviceName`: `str` *(required)*
@@ -557,7 +557,7 @@ Type annotations for `boto3.client("proton").get_service_template` method.
 Boto3 documentation:
 [Proton.Client.get_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -629,7 +629,7 @@ method.
 Boto3 documentation:
 [Proton.Client.list_environment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -695,7 +695,7 @@ Type annotations for `boto3.client("proton").list_service_templates` method.
 Boto3 documentation:
 [Proton.Client.list_service_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -710,7 +710,7 @@ Type annotations for `boto3.client("proton").list_services` method.
 Boto3 documentation:
 [Proton.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -741,7 +741,7 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.reject_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.reject_environment_account_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -755,7 +755,7 @@ Type annotations for `boto3.client("proton").tag_resource` method.
 Boto3 documentation:
 [Proton.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -769,7 +769,7 @@ Type annotations for `boto3.client("proton").untag_resource` method.
 Boto3 documentation:
 [Proton.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -783,7 +783,7 @@ Type annotations for `boto3.client("proton").update_account_settings` method.
 Boto3 documentation:
 [Proton.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_account_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineServiceRoleArn`: `str`
 
@@ -821,7 +821,7 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.update_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_account_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `roleArn`: `str` *(required)*

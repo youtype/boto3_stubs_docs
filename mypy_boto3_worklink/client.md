@@ -176,7 +176,7 @@ Type annotations for `boto3.client("worklink").delete_fleet` method.
 Boto3 documentation:
 [WorkLink.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.delete_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
@@ -190,7 +190,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.describe_audit_stream_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_audit_stream_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
@@ -205,7 +205,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.describe_company_network_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_company_network_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("worklink").describe_device` method.
 Boto3 documentation:
 [WorkLink.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DeviceId`: `str` *(required)*
@@ -235,7 +235,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.describe_device_policy_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_device_policy_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("worklink").describe_domain` method.
 Boto3 documentation:
 [WorkLink.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("worklink").describe_fleet_metadata` method.
 Boto3 documentation:
 [WorkLink.Client.describe_fleet_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_fleet_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
@@ -279,7 +279,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.describe_identity_provider_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_identity_provider_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 
@@ -294,7 +294,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.describe_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.describe_website_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `WebsiteCaId`: `str` *(required)*
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("worklink").disassociate_domain` method.
 Boto3 documentation:
 [WorkLink.Client.disassociate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -324,7 +324,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.disassociate_website_authorization_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_authorization_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `AuthorizationProviderId`: `str` *(required)*
@@ -339,7 +339,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.disassociate_website_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.disassociate_website_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `WebsiteCaId`: `str` *(required)*
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("worklink").list_fleets` method.
 Boto3 documentation:
 [WorkLink.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_fleets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("worklink").list_tags_for_resource` method.
 Boto3 documentation:
 [WorkLink.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -463,7 +463,7 @@ Type annotations for `boto3.client("worklink").restore_domain_access` method.
 Boto3 documentation:
 [WorkLink.Client.restore_domain_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.restore_domain_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -477,7 +477,7 @@ Type annotations for `boto3.client("worklink").revoke_domain_access` method.
 Boto3 documentation:
 [WorkLink.Client.revoke_domain_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.revoke_domain_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("worklink").sign_out_user` method.
 Boto3 documentation:
 [WorkLink.Client.sign_out_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.sign_out_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -505,7 +505,7 @@ Type annotations for `boto3.client("worklink").tag_resource` method.
 Boto3 documentation:
 [WorkLink.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -519,7 +519,7 @@ Type annotations for `boto3.client("worklink").untag_resource` method.
 Boto3 documentation:
 [WorkLink.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -534,7 +534,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.update_audit_stream_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_audit_stream_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `AuditStreamArn`: `str`
@@ -566,7 +566,7 @@ Type annotations for
 Boto3 documentation:
 [WorkLink.Client.update_device_policy_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.update_device_policy_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetArn`: `str` *(required)*
 - `DeviceCaCertificate`: `str`

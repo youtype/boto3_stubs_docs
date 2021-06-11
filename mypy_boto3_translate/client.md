@@ -116,7 +116,7 @@ Type annotations for `boto3.client("translate").delete_parallel_data` method.
 Boto3 documentation:
 [Translate.Client.delete_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_parallel_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -130,7 +130,7 @@ Type annotations for `boto3.client("translate").delete_terminology` method.
 Boto3 documentation:
 [Translate.Client.delete_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_terminology)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -142,7 +142,7 @@ method.
 Boto3 documentation:
 [Translate.Client.describe_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.describe_text_translation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("translate").get_parallel_data` method.
 Boto3 documentation:
 [Translate.Client.get_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_parallel_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("translate").get_terminology` method.
 Boto3 documentation:
 [Translate.Client.get_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_terminology)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `TerminologyDataFormat`:
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("translate").list_parallel_data` method.
 Boto3 documentation:
 [Translate.Client.list_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_parallel_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("translate").list_terminologies` method.
 Boto3 documentation:
 [Translate.Client.list_terminologies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_terminologies)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -298,7 +298,7 @@ method.
 Boto3 documentation:
 [Translate.Client.stop_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.stop_text_translation_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 

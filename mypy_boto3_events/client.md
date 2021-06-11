@@ -118,7 +118,7 @@ Type annotations for `boto3.client("events").activate_event_source` method.
 Boto3 documentation:
 [EventBridge.Client.activate_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.activate_event_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -142,7 +142,7 @@ Type annotations for `boto3.client("events").cancel_replay` method.
 Boto3 documentation:
 [EventBridge.Client.cancel_replay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.cancel_replay)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplayName`: `str` *(required)*
 
@@ -233,7 +233,7 @@ method.
 Boto3 documentation:
 [EventBridge.Client.create_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_partner_event_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Account`: `str` *(required)*
@@ -248,7 +248,7 @@ Type annotations for `boto3.client("events").deactivate_event_source` method.
 Boto3 documentation:
 [EventBridge.Client.deactivate_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deactivate_event_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -259,7 +259,7 @@ Type annotations for `boto3.client("events").deauthorize_connection` method.
 Boto3 documentation:
 [EventBridge.Client.deauthorize_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deauthorize_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -273,7 +273,7 @@ Type annotations for `boto3.client("events").delete_api_destination` method.
 Boto3 documentation:
 [EventBridge.Client.delete_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_api_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("events").delete_archive` method.
 Boto3 documentation:
 [EventBridge.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_archive)
 
-Arguments:
+Keyword-only arguments:
 
 - `ArchiveName`: `str` *(required)*
 
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("events").delete_connection` method.
 Boto3 documentation:
 [EventBridge.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -313,7 +313,7 @@ Type annotations for `boto3.client("events").delete_event_bus` method.
 Boto3 documentation:
 [EventBridge.Client.delete_event_bus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_event_bus)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -325,7 +325,7 @@ method.
 Boto3 documentation:
 [EventBridge.Client.delete_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_partner_event_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Account`: `str` *(required)*
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("events").describe_api_destination` method.
 Boto3 documentation:
 [EventBridge.Client.describe_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_api_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("events").describe_archive` method.
 Boto3 documentation:
 [EventBridge.Client.describe_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_archive)
 
-Arguments:
+Keyword-only arguments:
 
 - `ArchiveName`: `str` *(required)*
 
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("events").describe_connection` method.
 Boto3 documentation:
 [EventBridge.Client.describe_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("events").describe_event_bus` method.
 Boto3 documentation:
 [EventBridge.Client.describe_event_bus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_bus)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("events").describe_event_source` method.
 Boto3 documentation:
 [EventBridge.Client.describe_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -421,7 +421,7 @@ method.
 Boto3 documentation:
 [EventBridge.Client.describe_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_partner_event_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("events").describe_replay` method.
 Boto3 documentation:
 [EventBridge.Client.describe_replay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_replay)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplayName`: `str` *(required)*
 
@@ -449,7 +449,7 @@ Type annotations for `boto3.client("events").describe_rule` method.
 Boto3 documentation:
 [EventBridge.Client.describe_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `EventBusName`: `str`
@@ -464,7 +464,7 @@ Type annotations for `boto3.client("events").disable_rule` method.
 Boto3 documentation:
 [EventBridge.Client.disable_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.disable_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `EventBusName`: `str`
@@ -476,7 +476,7 @@ Type annotations for `boto3.client("events").enable_rule` method.
 Boto3 documentation:
 [EventBridge.Client.enable_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.enable_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `EventBusName`: `str`
@@ -673,7 +673,7 @@ Type annotations for `boto3.client("events").list_tags_for_resource` method.
 Boto3 documentation:
 [EventBridge.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -704,7 +704,7 @@ Type annotations for `boto3.client("events").put_events` method.
 Boto3 documentation:
 [EventBridge.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `Entries`:
   `List`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
@@ -719,7 +719,7 @@ Type annotations for `boto3.client("events").put_partner_events` method.
 Boto3 documentation:
 [EventBridge.Client.put_partner_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_partner_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `Entries`:
   `List`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
@@ -838,7 +838,7 @@ Type annotations for `boto3.client("events").tag_resource` method.
 Boto3 documentation:
 [EventBridge.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -852,7 +852,7 @@ Type annotations for `boto3.client("events").test_event_pattern` method.
 Boto3 documentation:
 [EventBridge.Client.test_event_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.test_event_pattern)
 
-Arguments:
+Keyword-only arguments:
 
 - `EventPattern`: `str` *(required)*
 - `Event`: `str` *(required)*
@@ -867,7 +867,7 @@ Type annotations for `boto3.client("events").untag_resource` method.
 Boto3 documentation:
 [EventBridge.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

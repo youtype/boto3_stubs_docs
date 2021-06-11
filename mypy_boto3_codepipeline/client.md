@@ -132,7 +132,7 @@ Type annotations for `boto3.client("codepipeline").acknowledge_job` method.
 Boto3 documentation:
 [CodePipeline.Client.acknowledge_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `nonce`: `str` *(required)*
@@ -204,7 +204,7 @@ Type annotations for `boto3.client("codepipeline").create_pipeline` method.
 Boto3 documentation:
 [CodePipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipeline`:
   [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
@@ -236,7 +236,7 @@ Type annotations for `boto3.client("codepipeline").delete_pipeline` method.
 Boto3 documentation:
 [CodePipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -247,7 +247,7 @@ Type annotations for `boto3.client("codepipeline").delete_webhook` method.
 Boto3 documentation:
 [CodePipeline.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -261,7 +261,7 @@ Type annotations for
 Boto3 documentation:
 [CodePipeline.Client.deregister_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party)
 
-Arguments:
+Keyword-only arguments:
 
 - `webhookName`: `str`
 
@@ -340,7 +340,7 @@ Type annotations for `boto3.client("codepipeline").get_job_details` method.
 Boto3 documentation:
 [CodePipeline.Client.get_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("codepipeline").get_pipeline` method.
 Boto3 documentation:
 [CodePipeline.Client.get_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `int`
@@ -369,7 +369,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.get_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `pipelineExecutionId`: `str` *(required)*
@@ -384,7 +384,7 @@ Type annotations for `boto3.client("codepipeline").get_pipeline_state` method.
 Boto3 documentation:
 [CodePipeline.Client.get_pipeline_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -399,7 +399,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.get_third_party_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `clientToken`: `str` *(required)*
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("codepipeline").list_pipelines` method.
 Boto3 documentation:
 [CodePipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -498,7 +498,7 @@ Type annotations for `boto3.client("codepipeline").list_webhooks` method.
 Boto3 documentation:
 [CodePipeline.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -529,7 +529,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.poll_for_third_party_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
   *(required)*
@@ -583,7 +583,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.put_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `failureDetails`:
@@ -647,7 +647,7 @@ Type annotations for `boto3.client("codepipeline").put_webhook` method.
 Boto3 documentation:
 [CodePipeline.Client.put_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook)
 
-Arguments:
+Keyword-only arguments:
 
 - `webhook`:
   [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
@@ -664,7 +664,7 @@ Type annotations for
 Boto3 documentation:
 [CodePipeline.Client.register_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party)
 
-Arguments:
+Keyword-only arguments:
 
 - `webhookName`: `str`
 
@@ -697,7 +697,7 @@ method.
 Boto3 documentation:
 [CodePipeline.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `clientRequestToken`: `str`
@@ -730,7 +730,7 @@ Type annotations for `boto3.client("codepipeline").tag_resource` method.
 Boto3 documentation:
 [CodePipeline.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -744,7 +744,7 @@ Type annotations for `boto3.client("codepipeline").untag_resource` method.
 Boto3 documentation:
 [CodePipeline.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -758,7 +758,7 @@ Type annotations for `boto3.client("codepipeline").update_action_type` method.
 Boto3 documentation:
 [CodePipeline.Client.update_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `actionType`:
   [ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef)
@@ -771,7 +771,7 @@ Type annotations for `boto3.client("codepipeline").update_pipeline` method.
 Boto3 documentation:
 [CodePipeline.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipeline`:
   [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)

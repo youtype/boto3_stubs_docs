@@ -102,7 +102,7 @@ method.
 Boto3 documentation:
 [GlueDataBrew.Client.batch_delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.batch_delete_recipe_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RecipeVersions`: `List`\[`str`\] *(required)*
@@ -257,7 +257,7 @@ Type annotations for `boto3.client("databrew").delete_dataset` method.
 Boto3 documentation:
 [GlueDataBrew.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("databrew").delete_job` method.
 Boto3 documentation:
 [GlueDataBrew.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("databrew").delete_project` method.
 Boto3 documentation:
 [GlueDataBrew.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -298,7 +298,7 @@ Type annotations for `boto3.client("databrew").delete_recipe_version` method.
 Boto3 documentation:
 [GlueDataBrew.Client.delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_recipe_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RecipeVersion`: `str` *(required)*
@@ -313,7 +313,7 @@ Type annotations for `boto3.client("databrew").delete_schedule` method.
 Boto3 documentation:
 [GlueDataBrew.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -327,7 +327,7 @@ Type annotations for `boto3.client("databrew").describe_dataset` method.
 Boto3 documentation:
 [GlueDataBrew.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -341,7 +341,7 @@ Type annotations for `boto3.client("databrew").describe_job` method.
 Boto3 documentation:
 [GlueDataBrew.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -355,7 +355,7 @@ Type annotations for `boto3.client("databrew").describe_job_run` method.
 Boto3 documentation:
 [GlueDataBrew.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
@@ -370,7 +370,7 @@ Type annotations for `boto3.client("databrew").describe_project` method.
 Boto3 documentation:
 [GlueDataBrew.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -384,7 +384,7 @@ Type annotations for `boto3.client("databrew").describe_recipe` method.
 Boto3 documentation:
 [GlueDataBrew.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RecipeVersion`: `str`
@@ -399,7 +399,7 @@ Type annotations for `boto3.client("databrew").describe_schedule` method.
 Boto3 documentation:
 [GlueDataBrew.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -429,7 +429,7 @@ Type annotations for `boto3.client("databrew").list_datasets` method.
 Boto3 documentation:
 [GlueDataBrew.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_datasets)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -476,7 +476,7 @@ Type annotations for `boto3.client("databrew").list_projects` method.
 Boto3 documentation:
 [GlueDataBrew.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -539,7 +539,7 @@ Type annotations for `boto3.client("databrew").list_tags_for_resource` method.
 Boto3 documentation:
 [GlueDataBrew.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -553,7 +553,7 @@ Type annotations for `boto3.client("databrew").publish_recipe` method.
 Boto3 documentation:
 [GlueDataBrew.Client.publish_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.publish_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
@@ -588,7 +588,7 @@ Type annotations for `boto3.client("databrew").start_job_run` method.
 Boto3 documentation:
 [GlueDataBrew.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_job_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -602,7 +602,7 @@ Type annotations for `boto3.client("databrew").start_project_session` method.
 Boto3 documentation:
 [GlueDataBrew.Client.start_project_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_project_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `AssumeControl`: `bool`
@@ -617,7 +617,7 @@ Type annotations for `boto3.client("databrew").stop_job_run` method.
 Boto3 documentation:
 [GlueDataBrew.Client.stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.stop_job_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
@@ -631,7 +631,7 @@ Type annotations for `boto3.client("databrew").tag_resource` method.
 Boto3 documentation:
 [GlueDataBrew.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -645,7 +645,7 @@ Type annotations for `boto3.client("databrew").untag_resource` method.
 Boto3 documentation:
 [GlueDataBrew.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

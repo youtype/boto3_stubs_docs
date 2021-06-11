@@ -84,7 +84,7 @@ Type annotations for `boto3.client("mwaa").create_cli_token` method.
 Boto3 documentation:
 [MWAA.Client.create_cli_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_cli_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -135,7 +135,7 @@ Type annotations for `boto3.client("mwaa").create_web_login_token` method.
 Boto3 documentation:
 [MWAA.Client.create_web_login_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_web_login_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("mwaa").delete_environment` method.
 Boto3 documentation:
 [MWAA.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.delete_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -178,7 +178,7 @@ Type annotations for `boto3.client("mwaa").get_environment` method.
 Boto3 documentation:
 [MWAA.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.get_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -192,7 +192,7 @@ Type annotations for `boto3.client("mwaa").list_environments` method.
 Boto3 documentation:
 [MWAA.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("mwaa").list_tags_for_resource` method.
 Boto3 documentation:
 [MWAA.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -221,7 +221,7 @@ Type annotations for `boto3.client("mwaa").publish_metrics` method.
 Boto3 documentation:
 [MWAA.Client.publish_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.publish_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `EnvironmentName`: `str` *(required)*
 - `MetricData`:
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("mwaa").tag_resource` method.
 Boto3 documentation:
 [MWAA.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -251,7 +251,7 @@ Type annotations for `boto3.client("mwaa").untag_resource` method.
 Boto3 documentation:
 [MWAA.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

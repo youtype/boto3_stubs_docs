@@ -165,7 +165,7 @@ Type annotations for `boto3.client("waf").create_byte_match_set` method.
 Boto3 documentation:
 [WAF.Client.create_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_byte_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -180,7 +180,7 @@ Type annotations for `boto3.client("waf").create_geo_match_set` method.
 Boto3 documentation:
 [WAF.Client.create_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_geo_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -195,7 +195,7 @@ Type annotations for `boto3.client("waf").create_ip_set` method.
 Boto3 documentation:
 [WAF.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -230,7 +230,7 @@ Type annotations for `boto3.client("waf").create_regex_match_set` method.
 Boto3 documentation:
 [WAF.Client.create_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_regex_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("waf").create_regex_pattern_set` method.
 Boto3 documentation:
 [WAF.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -293,7 +293,7 @@ Type annotations for `boto3.client("waf").create_size_constraint_set` method.
 Boto3 documentation:
 [WAF.Client.create_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_size_constraint_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -309,7 +309,7 @@ method.
 Boto3 documentation:
 [WAF.Client.create_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_sql_injection_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -360,7 +360,7 @@ Type annotations for `boto3.client("waf").create_xss_match_set` method.
 Boto3 documentation:
 [WAF.Client.create_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_xss_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -375,7 +375,7 @@ Type annotations for `boto3.client("waf").delete_byte_match_set` method.
 Boto3 documentation:
 [WAF.Client.delete_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_byte_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ByteMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -390,7 +390,7 @@ Type annotations for `boto3.client("waf").delete_geo_match_set` method.
 Boto3 documentation:
 [WAF.Client.delete_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_geo_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `GeoMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -405,7 +405,7 @@ Type annotations for `boto3.client("waf").delete_ip_set` method.
 Boto3 documentation:
 [WAF.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `IPSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -420,7 +420,7 @@ Type annotations for `boto3.client("waf").delete_logging_configuration` method.
 Boto3 documentation:
 [WAF.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("waf").delete_permission_policy` method.
 Boto3 documentation:
 [WAF.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("waf").delete_rate_based_rule` method.
 Boto3 documentation:
 [WAF.Client.delete_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rate_based_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -461,7 +461,7 @@ Type annotations for `boto3.client("waf").delete_regex_match_set` method.
 Boto3 documentation:
 [WAF.Client.delete_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_regex_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegexMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -476,7 +476,7 @@ Type annotations for `boto3.client("waf").delete_regex_pattern_set` method.
 Boto3 documentation:
 [WAF.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegexPatternSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("waf").delete_rule` method.
 Boto3 documentation:
 [WAF.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -505,7 +505,7 @@ Type annotations for `boto3.client("waf").delete_rule_group` method.
 Boto3 documentation:
 [WAF.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleGroupId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -520,7 +520,7 @@ Type annotations for `boto3.client("waf").delete_size_constraint_set` method.
 Boto3 documentation:
 [WAF.Client.delete_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_size_constraint_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `SizeConstraintSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -536,7 +536,7 @@ method.
 Boto3 documentation:
 [WAF.Client.delete_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_sql_injection_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `SqlInjectionMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -551,7 +551,7 @@ Type annotations for `boto3.client("waf").delete_web_acl` method.
 Boto3 documentation:
 [WAF.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -566,7 +566,7 @@ Type annotations for `boto3.client("waf").delete_xss_match_set` method.
 Boto3 documentation:
 [WAF.Client.delete_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_xss_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `XssMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -597,7 +597,7 @@ Type annotations for `boto3.client("waf").get_byte_match_set` method.
 Boto3 documentation:
 [WAF.Client.get_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_byte_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ByteMatchSetId`: `str` *(required)*
 
@@ -621,7 +621,7 @@ Type annotations for `boto3.client("waf").get_change_token_status` method.
 Boto3 documentation:
 [WAF.Client.get_change_token_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_change_token_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChangeToken`: `str` *(required)*
 
@@ -635,7 +635,7 @@ Type annotations for `boto3.client("waf").get_geo_match_set` method.
 Boto3 documentation:
 [WAF.Client.get_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_geo_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `GeoMatchSetId`: `str` *(required)*
 
@@ -649,7 +649,7 @@ Type annotations for `boto3.client("waf").get_ip_set` method.
 Boto3 documentation:
 [WAF.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `IPSetId`: `str` *(required)*
 
@@ -662,7 +662,7 @@ Type annotations for `boto3.client("waf").get_logging_configuration` method.
 Boto3 documentation:
 [WAF.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -676,7 +676,7 @@ Type annotations for `boto3.client("waf").get_permission_policy` method.
 Boto3 documentation:
 [WAF.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -690,7 +690,7 @@ Type annotations for `boto3.client("waf").get_rate_based_rule` method.
 Boto3 documentation:
 [WAF.Client.get_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rate_based_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 
@@ -705,7 +705,7 @@ method.
 Boto3 documentation:
 [WAF.Client.get_rate_based_rule_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rate_based_rule_managed_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `NextMarker`: `str`
@@ -720,7 +720,7 @@ Type annotations for `boto3.client("waf").get_regex_match_set` method.
 Boto3 documentation:
 [WAF.Client.get_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_regex_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegexMatchSetId`: `str` *(required)*
 
@@ -734,7 +734,7 @@ Type annotations for `boto3.client("waf").get_regex_pattern_set` method.
 Boto3 documentation:
 [WAF.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegexPatternSetId`: `str` *(required)*
 
@@ -748,7 +748,7 @@ Type annotations for `boto3.client("waf").get_rule` method.
 Boto3 documentation:
 [WAF.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 
@@ -761,7 +761,7 @@ Type annotations for `boto3.client("waf").get_rule_group` method.
 Boto3 documentation:
 [WAF.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleGroupId`: `str` *(required)*
 
@@ -793,7 +793,7 @@ Type annotations for `boto3.client("waf").get_size_constraint_set` method.
 Boto3 documentation:
 [WAF.Client.get_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_size_constraint_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `SizeConstraintSetId`: `str` *(required)*
 
@@ -807,7 +807,7 @@ Type annotations for `boto3.client("waf").get_sql_injection_match_set` method.
 Boto3 documentation:
 [WAF.Client.get_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_sql_injection_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `SqlInjectionMatchSetId`: `str` *(required)*
 
@@ -821,7 +821,7 @@ Type annotations for `boto3.client("waf").get_web_acl` method.
 Boto3 documentation:
 [WAF.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 
@@ -834,7 +834,7 @@ Type annotations for `boto3.client("waf").get_xss_match_set` method.
 Boto3 documentation:
 [WAF.Client.get_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_xss_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `XssMatchSetId`: `str` *(required)*
 
@@ -865,7 +865,7 @@ Type annotations for `boto3.client("waf").list_byte_match_sets` method.
 Boto3 documentation:
 [WAF.Client.list_byte_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_byte_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -880,7 +880,7 @@ Type annotations for `boto3.client("waf").list_geo_match_sets` method.
 Boto3 documentation:
 [WAF.Client.list_geo_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_geo_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -895,7 +895,7 @@ Type annotations for `boto3.client("waf").list_ip_sets` method.
 Boto3 documentation:
 [WAF.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_ip_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -909,7 +909,7 @@ Type annotations for `boto3.client("waf").list_logging_configurations` method.
 Boto3 documentation:
 [WAF.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_logging_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -924,7 +924,7 @@ Type annotations for `boto3.client("waf").list_rate_based_rules` method.
 Boto3 documentation:
 [WAF.Client.list_rate_based_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rate_based_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -939,7 +939,7 @@ Type annotations for `boto3.client("waf").list_regex_match_sets` method.
 Boto3 documentation:
 [WAF.Client.list_regex_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_regex_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -954,7 +954,7 @@ Type annotations for `boto3.client("waf").list_regex_pattern_sets` method.
 Boto3 documentation:
 [WAF.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_regex_pattern_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -969,7 +969,7 @@ Type annotations for `boto3.client("waf").list_rule_groups` method.
 Boto3 documentation:
 [WAF.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rule_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -984,7 +984,7 @@ Type annotations for `boto3.client("waf").list_rules` method.
 Boto3 documentation:
 [WAF.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -998,7 +998,7 @@ Type annotations for `boto3.client("waf").list_size_constraint_sets` method.
 Boto3 documentation:
 [WAF.Client.list_size_constraint_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_size_constraint_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1014,7 +1014,7 @@ method.
 Boto3 documentation:
 [WAF.Client.list_sql_injection_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_sql_injection_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1029,7 +1029,7 @@ Type annotations for `boto3.client("waf").list_subscribed_rule_groups` method.
 Boto3 documentation:
 [WAF.Client.list_subscribed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_subscribed_rule_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1060,7 +1060,7 @@ Type annotations for `boto3.client("waf").list_web_acls` method.
 Boto3 documentation:
 [WAF.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_web_acls)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1075,7 +1075,7 @@ Type annotations for `boto3.client("waf").list_xss_match_sets` method.
 Boto3 documentation:
 [WAF.Client.list_xss_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_xss_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1090,7 +1090,7 @@ Type annotations for `boto3.client("waf").put_logging_configuration` method.
 Boto3 documentation:
 [WAF.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.put_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
@@ -1106,7 +1106,7 @@ Type annotations for `boto3.client("waf").put_permission_policy` method.
 Boto3 documentation:
 [WAF.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.put_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -1120,7 +1120,7 @@ Type annotations for `boto3.client("waf").tag_resource` method.
 Boto3 documentation:
 [WAF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1134,7 +1134,7 @@ Type annotations for `boto3.client("waf").untag_resource` method.
 Boto3 documentation:
 [WAF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

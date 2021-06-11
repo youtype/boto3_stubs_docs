@@ -97,7 +97,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.add_flow_media_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_media_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `MediaStreams`:
@@ -114,7 +114,7 @@ Type annotations for `boto3.client("mediaconnect").add_flow_outputs` method.
 Boto3 documentation:
 [MediaConnect.Client.add_flow_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `Outputs`:
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("mediaconnect").add_flow_sources` method.
 Boto3 documentation:
 [MediaConnect.Client.add_flow_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `Sources`:
@@ -149,7 +149,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.add_flow_vpc_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `VpcInterfaces`:
@@ -206,7 +206,7 @@ Type annotations for `boto3.client("mediaconnect").delete_flow` method.
 Boto3 documentation:
 [MediaConnect.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("mediaconnect").describe_flow` method.
 Boto3 documentation:
 [MediaConnect.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("mediaconnect").describe_offering` method.
 Boto3 documentation:
 [MediaConnect.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
 
-Arguments:
+Keyword-only arguments:
 
 - `OfferingArn`: `str` *(required)*
 
@@ -248,7 +248,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservationArn`: `str` *(required)*
 
@@ -280,7 +280,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.grant_flow_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
 
-Arguments:
+Keyword-only arguments:
 
 - `Entitlements`:
   `List`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("mediaconnect").list_entitlements` method.
 Boto3 documentation:
 [MediaConnect.Client.list_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("mediaconnect").list_flows` method.
 Boto3 documentation:
 [MediaConnect.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -326,7 +326,7 @@ Type annotations for `boto3.client("mediaconnect").list_offerings` method.
 Boto3 documentation:
 [MediaConnect.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -341,7 +341,7 @@ Type annotations for `boto3.client("mediaconnect").list_reservations` method.
 Boto3 documentation:
 [MediaConnect.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -357,7 +357,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -388,7 +388,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.remove_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_media_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `MediaStreamName`: `str` *(required)*
@@ -403,7 +403,7 @@ Type annotations for `boto3.client("mediaconnect").remove_flow_output` method.
 Boto3 documentation:
 [MediaConnect.Client.remove_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `OutputArn`: `str` *(required)*
@@ -418,7 +418,7 @@ Type annotations for `boto3.client("mediaconnect").remove_flow_source` method.
 Boto3 documentation:
 [MediaConnect.Client.remove_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `SourceArn`: `str` *(required)*
@@ -434,7 +434,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.remove_flow_vpc_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `VpcInterfaceName`: `str` *(required)*
@@ -450,7 +450,7 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.revoke_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
 
-Arguments:
+Keyword-only arguments:
 
 - `EntitlementArn`: `str` *(required)*
 - `FlowArn`: `str` *(required)*
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("mediaconnect").start_flow` method.
 Boto3 documentation:
 [MediaConnect.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
@@ -478,7 +478,7 @@ Type annotations for `boto3.client("mediaconnect").stop_flow` method.
 Boto3 documentation:
 [MediaConnect.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("mediaconnect").tag_resource` method.
 Boto3 documentation:
 [MediaConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -503,7 +503,7 @@ Type annotations for `boto3.client("mediaconnect").untag_resource` method.
 Boto3 documentation:
 [MediaConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -515,7 +515,7 @@ Type annotations for `boto3.client("mediaconnect").update_flow` method.
 Boto3 documentation:
 [MediaConnect.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `SourceFailoverConfig`:

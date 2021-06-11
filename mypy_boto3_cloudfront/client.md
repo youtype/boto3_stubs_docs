@@ -274,7 +274,7 @@ Type annotations for `boto3.client("cloudfront").create_cache_policy` method.
 Boto3 documentation:
 [CloudFront.Client.create_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `CachePolicyConfig`:
   [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
@@ -291,7 +291,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.create_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `CloudFrontOriginAccessIdentityConfig`:
   [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("cloudfront").create_distribution` method.
 Boto3 documentation:
 [CloudFront.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionConfig`:
   [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
@@ -324,7 +324,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.create_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionConfigWithTags`:
   [DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef)
@@ -341,7 +341,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.create_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FieldLevelEncryptionConfig`:
   [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
@@ -358,7 +358,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.create_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `FieldLevelEncryptionProfileConfig`:
   [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
@@ -391,7 +391,7 @@ Type annotations for `boto3.client("cloudfront").create_invalidation` method.
 Boto3 documentation:
 [CloudFront.Client.create_invalidation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_invalidation)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionId`: `str` *(required)*
 - `InvalidationBatch`:
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("cloudfront").create_key_group` method.
 Boto3 documentation:
 [CloudFront.Client.create_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyGroupConfig`:
   [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) *(required)*
@@ -424,7 +424,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.create_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionId`: `str` *(required)*
 - `MonitoringSubscription`:
@@ -442,7 +442,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.create_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `OriginRequestPolicyConfig`:
   [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
@@ -458,7 +458,7 @@ Type annotations for `boto3.client("cloudfront").create_public_key` method.
 Boto3 documentation:
 [CloudFront.Client.create_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `PublicKeyConfig`:
   [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) *(required)*
@@ -493,7 +493,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.create_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamingDistributionConfig`:
   [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
@@ -510,7 +510,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.create_streaming_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamingDistributionConfigWithTags`:
   [StreamingDistributionConfigWithTagsTypeDef](./type_defs.md#streamingdistributionconfigwithtagstypedef)
@@ -526,7 +526,7 @@ Type annotations for `boto3.client("cloudfront").delete_cache_policy` method.
 Boto3 documentation:
 [CloudFront.Client.delete_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -539,7 +539,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.delete_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -551,7 +551,7 @@ Type annotations for `boto3.client("cloudfront").delete_distribution` method.
 Boto3 documentation:
 [CloudFront.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -564,7 +564,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.delete_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -577,7 +577,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.delete_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -589,7 +589,7 @@ Type annotations for `boto3.client("cloudfront").delete_function` method.
 Boto3 documentation:
 [CloudFront.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `IfMatch`: `str` *(required)*
@@ -601,7 +601,7 @@ Type annotations for `boto3.client("cloudfront").delete_key_group` method.
 Boto3 documentation:
 [CloudFront.Client.delete_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_key_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -614,7 +614,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.delete_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionId`: `str` *(required)*
 
@@ -628,7 +628,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.delete_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -640,7 +640,7 @@ Type annotations for `boto3.client("cloudfront").delete_public_key` method.
 Boto3 documentation:
 [CloudFront.Client.delete_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -653,7 +653,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.delete_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 - `ARN`: `str`
@@ -666,7 +666,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.delete_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IfMatch`: `str`
@@ -678,7 +678,7 @@ Type annotations for `boto3.client("cloudfront").describe_function` method.
 Boto3 documentation:
 [CloudFront.Client.describe_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
@@ -710,7 +710,7 @@ Type annotations for `boto3.client("cloudfront").get_cache_policy` method.
 Boto3 documentation:
 [CloudFront.Client.get_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -725,7 +725,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_cache_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -740,7 +740,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -756,7 +756,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_cloud_front_origin_access_identity_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -770,7 +770,7 @@ Type annotations for `boto3.client("cloudfront").get_distribution` method.
 Boto3 documentation:
 [CloudFront.Client.get_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -785,7 +785,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -800,7 +800,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_field_level_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -815,7 +815,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -830,7 +830,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -845,7 +845,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_field_level_encryption_profile_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -859,7 +859,7 @@ Type annotations for `boto3.client("cloudfront").get_function` method.
 Boto3 documentation:
 [CloudFront.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
@@ -873,7 +873,7 @@ Type annotations for `boto3.client("cloudfront").get_invalidation` method.
 Boto3 documentation:
 [CloudFront.Client.get_invalidation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_invalidation)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionId`: `str` *(required)*
 - `Id`: `str` *(required)*
@@ -888,7 +888,7 @@ Type annotations for `boto3.client("cloudfront").get_key_group` method.
 Boto3 documentation:
 [CloudFront.Client.get_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -901,7 +901,7 @@ Type annotations for `boto3.client("cloudfront").get_key_group_config` method.
 Boto3 documentation:
 [CloudFront.Client.get_key_group_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -916,7 +916,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `DistributionId`: `str` *(required)*
 
@@ -931,7 +931,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -946,7 +946,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_origin_request_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -960,7 +960,7 @@ Type annotations for `boto3.client("cloudfront").get_public_key` method.
 Boto3 documentation:
 [CloudFront.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -973,7 +973,7 @@ Type annotations for `boto3.client("cloudfront").get_public_key_config` method.
 Boto3 documentation:
 [CloudFront.Client.get_public_key_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -988,7 +988,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str`
 - `ARN`: `str`
@@ -1004,7 +1004,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -1019,7 +1019,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_streaming_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -1050,7 +1050,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_cloud_front_origin_access_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1065,7 +1065,7 @@ Type annotations for `boto3.client("cloudfront").list_distributions` method.
 Boto3 documentation:
 [CloudFront.Client.list_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1168,7 +1168,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_field_level_encryption_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1184,7 +1184,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_field_level_encryption_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1231,7 +1231,7 @@ Type annotations for `boto3.client("cloudfront").list_key_groups` method.
 Boto3 documentation:
 [CloudFront.Client.list_key_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_key_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1264,7 +1264,7 @@ Type annotations for `boto3.client("cloudfront").list_public_keys` method.
 Boto3 documentation:
 [CloudFront.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_public_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1280,7 +1280,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_realtime_log_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxItems`: `str`
 - `Marker`: `str`
@@ -1296,7 +1296,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_streaming_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -1312,7 +1312,7 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 
@@ -1326,7 +1326,7 @@ Type annotations for `boto3.client("cloudfront").publish_function` method.
 Boto3 documentation:
 [CloudFront.Client.publish_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.publish_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `IfMatch`: `str` *(required)*
@@ -1341,7 +1341,7 @@ Type annotations for `boto3.client("cloudfront").tag_resource` method.
 Boto3 documentation:
 [CloudFront.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 - `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef) *(required)*
@@ -1369,7 +1369,7 @@ Type annotations for `boto3.client("cloudfront").untag_resource` method.
 Boto3 documentation:
 [CloudFront.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 - `TagKeys`: [TagKeysTypeDef](./type_defs.md#tagkeystypedef) *(required)*

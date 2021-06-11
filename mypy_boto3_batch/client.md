@@ -90,7 +90,7 @@ Type annotations for `boto3.client("batch").cancel_job` method.
 Boto3 documentation:
 [Batch.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `reason`: `str` *(required)*
@@ -144,7 +144,7 @@ Type annotations for `boto3.client("batch").delete_compute_environment` method.
 Boto3 documentation:
 [Batch.Client.delete_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `computeEnvironment`: `str` *(required)*
 
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("batch").delete_job_queue` method.
 Boto3 documentation:
 [Batch.Client.delete_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobQueue`: `str` *(required)*
 
@@ -170,7 +170,7 @@ Type annotations for `boto3.client("batch").deregister_job_definition` method.
 Boto3 documentation:
 [Batch.Client.deregister_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobDefinition`: `str` *(required)*
 
@@ -234,7 +234,7 @@ Type annotations for `boto3.client("batch").describe_jobs` method.
 Boto3 documentation:
 [Batch.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobs`: `List`\[`str`\] *(required)*
 
@@ -282,7 +282,7 @@ Type annotations for `boto3.client("batch").list_tags_for_resource` method.
 Boto3 documentation:
 [Batch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("batch").tag_resource` method.
 Boto3 documentation:
 [Batch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("batch").terminate_job` method.
 Boto3 documentation:
 [Batch.Client.terminate_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 - `reason`: `str` *(required)*
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("batch").untag_resource` method.
 Boto3 documentation:
 [Batch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

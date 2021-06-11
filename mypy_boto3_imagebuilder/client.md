@@ -135,7 +135,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.cancel_image_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.cancel_image_creation)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageBuildVersionArn`: `str` *(required)*
 - `clientToken`: `str` *(required)*
@@ -332,7 +332,7 @@ Type annotations for `boto3.client("imagebuilder").delete_component` method.
 Boto3 documentation:
 [imagebuilder.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `componentBuildVersionArn`: `str` *(required)*
 
@@ -347,7 +347,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.delete_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_container_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `containerRecipeArn`: `str` *(required)*
 
@@ -362,7 +362,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.delete_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_distribution_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `distributionConfigurationArn`: `str` *(required)*
 
@@ -376,7 +376,7 @@ Type annotations for `boto3.client("imagebuilder").delete_image` method.
 Boto3 documentation:
 [imagebuilder.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageBuildVersionArn`: `str` *(required)*
 
@@ -391,7 +391,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.delete_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
 
@@ -405,7 +405,7 @@ Type annotations for `boto3.client("imagebuilder").delete_image_recipe` method.
 Boto3 documentation:
 [imagebuilder.Client.delete_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageRecipeArn`: `str` *(required)*
 
@@ -420,7 +420,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.delete_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_infrastructure_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `infrastructureConfigurationArn`: `str` *(required)*
 
@@ -451,7 +451,7 @@ Type annotations for `boto3.client("imagebuilder").get_component` method.
 Boto3 documentation:
 [imagebuilder.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `componentBuildVersionArn`: `str` *(required)*
 
@@ -466,7 +466,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.get_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `componentArn`: `str` *(required)*
 
@@ -481,7 +481,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.get_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `containerRecipeArn`: `str` *(required)*
 
@@ -496,7 +496,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.get_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `containerRecipeArn`: `str` *(required)*
 
@@ -511,7 +511,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.get_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_distribution_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `distributionConfigurationArn`: `str` *(required)*
 
@@ -525,7 +525,7 @@ Type annotations for `boto3.client("imagebuilder").get_image` method.
 Boto3 documentation:
 [imagebuilder.Client.get_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageBuildVersionArn`: `str` *(required)*
 
@@ -538,7 +538,7 @@ Type annotations for `boto3.client("imagebuilder").get_image_pipeline` method.
 Boto3 documentation:
 [imagebuilder.Client.get_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
 
@@ -552,7 +552,7 @@ Type annotations for `boto3.client("imagebuilder").get_image_policy` method.
 Boto3 documentation:
 [imagebuilder.Client.get_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageArn`: `str` *(required)*
 
@@ -566,7 +566,7 @@ Type annotations for `boto3.client("imagebuilder").get_image_recipe` method.
 Boto3 documentation:
 [imagebuilder.Client.get_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageRecipeArn`: `str` *(required)*
 
@@ -581,7 +581,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.get_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageRecipeArn`: `str` *(required)*
 
@@ -596,7 +596,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.get_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_infrastructure_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `infrastructureConfigurationArn`: `str` *(required)*
 
@@ -828,7 +828,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -843,7 +843,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.put_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_component_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `componentArn`: `str` *(required)*
 - `policy`: `str` *(required)*
@@ -859,7 +859,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.put_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_container_recipe_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `containerRecipeArn`: `str` *(required)*
 - `policy`: `str` *(required)*
@@ -874,7 +874,7 @@ Type annotations for `boto3.client("imagebuilder").put_image_policy` method.
 Boto3 documentation:
 [imagebuilder.Client.put_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageArn`: `str` *(required)*
 - `policy`: `str` *(required)*
@@ -890,7 +890,7 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.put_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_recipe_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `imageRecipeArn`: `str` *(required)*
 - `policy`: `str` *(required)*
@@ -906,7 +906,7 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.start_image_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.start_image_pipeline_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
 - `clientToken`: `str` *(required)*
@@ -921,7 +921,7 @@ Type annotations for `boto3.client("imagebuilder").tag_resource` method.
 Boto3 documentation:
 [imagebuilder.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -935,7 +935,7 @@ Type annotations for `boto3.client("imagebuilder").untag_resource` method.
 Boto3 documentation:
 [imagebuilder.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

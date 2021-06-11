@@ -95,7 +95,7 @@ method.
 Boto3 documentation:
 [QLDB.Client.cancel_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.cancel_journal_kinesis_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `LedgerName`: `str` *(required)*
 - `StreamId`: `str` *(required)*
@@ -128,7 +128,7 @@ Type annotations for `boto3.client("qldb").delete_ledger` method.
 Boto3 documentation:
 [QLDB.Client.delete_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.delete_ledger)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -140,7 +140,7 @@ method.
 Boto3 documentation:
 [QLDB.Client.describe_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_kinesis_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `LedgerName`: `str` *(required)*
 - `StreamId`: `str` *(required)*
@@ -155,7 +155,7 @@ Type annotations for `boto3.client("qldb").describe_journal_s3_export` method.
 Boto3 documentation:
 [QLDB.Client.describe_journal_s3_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_s3_export)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ExportId`: `str` *(required)*
@@ -170,7 +170,7 @@ Type annotations for `boto3.client("qldb").describe_ledger` method.
 Boto3 documentation:
 [QLDB.Client.describe_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_ledger)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -236,7 +236,7 @@ Type annotations for `boto3.client("qldb").get_digest` method.
 Boto3 documentation:
 [QLDB.Client.get_digest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_digest)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("qldb").list_journal_s3_exports` method.
 Boto3 documentation:
 [QLDB.Client.list_journal_s3_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("qldb").list_ledgers` method.
 Boto3 documentation:
 [QLDB.Client.list_ledgers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_ledgers)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -331,7 +331,7 @@ Type annotations for `boto3.client("qldb").list_tags_for_resource` method.
 Boto3 documentation:
 [QLDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("qldb").tag_resource` method.
 Boto3 documentation:
 [QLDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -381,7 +381,7 @@ Type annotations for `boto3.client("qldb").untag_resource` method.
 Boto3 documentation:
 [QLDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("qldb").update_ledger` method.
 Boto3 documentation:
 [QLDB.Client.update_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `DeletionProtection`: `bool`
@@ -411,7 +411,7 @@ method.
 Boto3 documentation:
 [QLDB.Client.update_ledger_permissions_mode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger_permissions_mode)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)

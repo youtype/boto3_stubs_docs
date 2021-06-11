@@ -176,7 +176,7 @@ Type annotations for `boto3.client("mediapackage").delete_channel` method.
 Boto3 documentation:
 [MediaPackage.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -190,7 +190,7 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.delete_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_origin_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("mediapackage").describe_channel` method.
 Boto3 documentation:
 [MediaPackage.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -218,7 +218,7 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.describe_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_harvest_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -233,7 +233,7 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.describe_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_origin_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("mediapackage").list_channels` method.
 Boto3 documentation:
 [MediaPackage.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -314,7 +314,7 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -329,7 +329,7 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.rotate_channel_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_channel_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -344,7 +344,7 @@ Type annotations for
 Boto3 documentation:
 [MediaPackage.Client.rotate_ingest_endpoint_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_ingest_endpoint_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IngestEndpointId`: `str` *(required)*
@@ -359,7 +359,7 @@ Type annotations for `boto3.client("mediapackage").tag_resource` method.
 Boto3 documentation:
 [MediaPackage.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("mediapackage").untag_resource` method.
 Boto3 documentation:
 [MediaPackage.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -383,7 +383,7 @@ Type annotations for `boto3.client("mediapackage").update_channel` method.
 Boto3 documentation:
 [MediaPackage.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Description`: `str`

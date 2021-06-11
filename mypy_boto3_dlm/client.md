@@ -101,7 +101,7 @@ Type annotations for `boto3.client("dlm").delete_lifecycle_policy` method.
 Boto3 documentation:
 [DLM.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("dlm").get_lifecycle_policy` method.
 Boto3 documentation:
 [DLM.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
@@ -164,7 +164,7 @@ Type annotations for `boto3.client("dlm").list_tags_for_resource` method.
 Boto3 documentation:
 [DLM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -178,7 +178,7 @@ Type annotations for `boto3.client("dlm").tag_resource` method.
 Boto3 documentation:
 [DLM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -192,7 +192,7 @@ Type annotations for `boto3.client("dlm").untag_resource` method.
 Boto3 documentation:
 [DLM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

@@ -102,7 +102,7 @@ method.
 Boto3 documentation:
 [mgn.Client.change_server_life_cycle_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `lifeCycle`:
   [ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](./type_defs.md#changeserverlifecyclestatesourceserverlifecycletypedef)
@@ -151,7 +151,7 @@ Type annotations for `boto3.client("mgn").delete_job` method.
 Boto3 documentation:
 [mgn.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobID`: `str` *(required)*
 
@@ -165,7 +165,7 @@ Type annotations for
 Boto3 documentation:
 [mgn.Client.delete_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `replicationConfigurationTemplateID`: `str` *(required)*
 
@@ -178,7 +178,7 @@ Type annotations for `boto3.client("mgn").delete_source_server` method.
 Boto3 documentation:
 [mgn.Client.delete_source_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_source_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("mgn").disconnect_from_service` method.
 Boto3 documentation:
 [mgn.Client.disconnect_from_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disconnect_from_service)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
@@ -273,7 +273,7 @@ Type annotations for `boto3.client("mgn").finalize_cutover` method.
 Boto3 documentation:
 [mgn.Client.finalize_cutover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.finalize_cutover)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
@@ -302,7 +302,7 @@ Type annotations for `boto3.client("mgn").get_launch_configuration` method.
 Boto3 documentation:
 [mgn.Client.get_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_launch_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
@@ -317,7 +317,7 @@ method.
 Boto3 documentation:
 [mgn.Client.get_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_replication_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
@@ -340,7 +340,7 @@ Type annotations for `boto3.client("mgn").list_tags_for_resource` method.
 Boto3 documentation:
 [mgn.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("mgn").mark_as_archived` method.
 Boto3 documentation:
 [mgn.Client.mark_as_archived](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.mark_as_archived)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("mgn").retry_data_replication` method.
 Boto3 documentation:
 [mgn.Client.retry_data_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.retry_data_replication)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
@@ -380,7 +380,7 @@ Type annotations for `boto3.client("mgn").start_cutover` method.
 Boto3 documentation:
 [mgn.Client.start_cutover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_cutover)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerIDs`: `List`\[`str`\] *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("mgn").start_test` method.
 Boto3 documentation:
 [mgn.Client.start_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_test)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerIDs`: `List`\[`str`\] *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
@@ -409,7 +409,7 @@ Type annotations for `boto3.client("mgn").tag_resource` method.
 Boto3 documentation:
 [mgn.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -421,7 +421,7 @@ Type annotations for `boto3.client("mgn").terminate_target_instances` method.
 Boto3 documentation:
 [mgn.Client.terminate_target_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.terminate_target_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceServerIDs`: `List`\[`str`\] *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("mgn").untag_resource` method.
 Boto3 documentation:
 [mgn.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

@@ -96,7 +96,7 @@ Type annotations for `boto3.client("datapipeline").add_tags` method.
 Boto3 documentation:
 [DataPipeline.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.add_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -140,7 +140,7 @@ Type annotations for `boto3.client("datapipeline").deactivate_pipeline` method.
 Boto3 documentation:
 [DataPipeline.Client.deactivate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `cancelActive`: `bool`
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("datapipeline").delete_pipeline` method.
 Boto3 documentation:
 [DataPipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("datapipeline").describe_pipelines` method.
 Boto3 documentation:
 [DataPipeline.Client.describe_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineIds`: `List`\[`str`\] *(required)*
 
@@ -230,7 +230,7 @@ method.
 Boto3 documentation:
 [DataPipeline.Client.get_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `version`: `str`
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("datapipeline").list_pipelines` method.
 Boto3 documentation:
 [DataPipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines)
 
-Arguments:
+Keyword-only arguments:
 
 - `marker`: `str`
 
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("datapipeline").remove_tags` method.
 Boto3 documentation:
 [DataPipeline.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.remove_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineId`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -329,7 +329,7 @@ method.
 Boto3 documentation:
 [DataPipeline.Client.report_task_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
 - `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]

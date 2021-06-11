@@ -133,7 +133,7 @@ method.
 Boto3 documentation:
 [SQS.Client.change_message_visibility_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("sqs").delete_message` method.
 Boto3 documentation:
 [SQS.Client.delete_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `ReceiptHandle`: `str` *(required)*
@@ -179,7 +179,7 @@ Type annotations for `boto3.client("sqs").delete_message_batch` method.
 Boto3 documentation:
 [SQS.Client.delete_message_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("sqs").delete_queue` method.
 Boto3 documentation:
 [SQS.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("sqs").get_queue_attributes` method.
 Boto3 documentation:
 [SQS.Client.get_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `AttributeNames`:
@@ -239,7 +239,7 @@ Type annotations for `boto3.client("sqs").get_queue_url` method.
 Boto3 documentation:
 [SQS.Client.get_queue_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueName`: `str` *(required)*
 - `QueueOwnerAWSAccountId`: `str`
@@ -270,7 +270,7 @@ Type annotations for `boto3.client("sqs").list_queue_tags` method.
 Boto3 documentation:
 [SQS.Client.list_queue_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queue_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("sqs").purge_queue` method.
 Boto3 documentation:
 [SQS.Client.purge_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.purge_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 
@@ -331,7 +331,7 @@ Type annotations for `boto3.client("sqs").remove_permission` method.
 Boto3 documentation:
 [SQS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.remove_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Label`: `str` *(required)*
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("sqs").send_message_batch` method.
 Boto3 documentation:
 [SQS.Client.send_message_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Entries`:
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("sqs").set_queue_attributes` method.
 Boto3 documentation:
 [SQS.Client.set_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.set_queue_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Attributes`:
@@ -396,7 +396,7 @@ Type annotations for `boto3.client("sqs").tag_queue` method.
 Boto3 documentation:
 [SQS.Client.tag_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.tag_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("sqs").untag_queue` method.
 Boto3 documentation:
 [SQS.Client.untag_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.untag_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

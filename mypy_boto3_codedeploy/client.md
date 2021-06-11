@@ -217,7 +217,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.add_tags_to_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.add_tags_to_on_premises_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `instanceNames`: `List`\[`str`\] *(required)*
@@ -230,7 +230,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.batch_get_application_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_application_revisions)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `revisions`:
@@ -248,7 +248,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.batch_get_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationNames`: `List`\[`str`\] *(required)*
 
@@ -263,7 +263,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.batch_get_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `deploymentGroupNames`: `List`\[`str`\] *(required)*
@@ -279,7 +279,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.batch_get_deployment_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 - `instanceIds`: `List`\[`str`\] *(required)*
@@ -295,7 +295,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.batch_get_deployment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployment_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str`
 - `targetIds`: `List`\[`str`\]
@@ -310,7 +310,7 @@ Type annotations for `boto3.client("codedeploy").batch_get_deployments` method.
 Boto3 documentation:
 [CodeDeploy.Client.batch_get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_deployments)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentIds`: `List`\[`str`\] *(required)*
 
@@ -325,7 +325,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.batch_get_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.batch_get_on_premises_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceNames`: `List`\[`str`\] *(required)*
 
@@ -352,7 +352,7 @@ Type annotations for `boto3.client("codedeploy").continue_deployment` method.
 Boto3 documentation:
 [CodeDeploy.Client.continue_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.continue_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str`
 - `deploymentWaitType`:
@@ -470,7 +470,7 @@ Type annotations for `boto3.client("codedeploy").delete_application` method.
 Boto3 documentation:
 [CodeDeploy.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 
@@ -482,7 +482,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.delete_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentConfigName`: `str` *(required)*
 
@@ -494,7 +494,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.delete_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_deployment_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `deploymentGroupName`: `str` *(required)*
@@ -510,7 +510,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.delete_git_hub_account_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_git_hub_account_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `tokenName`: `str`
 
@@ -525,7 +525,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.delete_resources_by_external_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.delete_resources_by_external_id)
 
-Arguments:
+Keyword-only arguments:
 
 - `externalId`: `str`
 
@@ -539,7 +539,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.deregister_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.deregister_on_premises_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
@@ -567,7 +567,7 @@ Type annotations for `boto3.client("codedeploy").get_application` method.
 Boto3 documentation:
 [CodeDeploy.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 
@@ -582,7 +582,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.get_application_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_application_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
@@ -598,7 +598,7 @@ Type annotations for `boto3.client("codedeploy").get_deployment` method.
 Boto3 documentation:
 [CodeDeploy.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 
@@ -612,7 +612,7 @@ Type annotations for `boto3.client("codedeploy").get_deployment_config` method.
 Boto3 documentation:
 [CodeDeploy.Client.get_deployment_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentConfigName`: `str` *(required)*
 
@@ -626,7 +626,7 @@ Type annotations for `boto3.client("codedeploy").get_deployment_group` method.
 Boto3 documentation:
 [CodeDeploy.Client.get_deployment_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `deploymentGroupName`: `str` *(required)*
@@ -642,7 +642,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.get_deployment_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 - `instanceId`: `str` *(required)*
@@ -657,7 +657,7 @@ Type annotations for `boto3.client("codedeploy").get_deployment_target` method.
 Boto3 documentation:
 [CodeDeploy.Client.get_deployment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_deployment_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str`
 - `targetId`: `str`
@@ -673,7 +673,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.get_on_premises_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.get_on_premises_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
@@ -710,7 +710,7 @@ Type annotations for `boto3.client("codedeploy").list_applications` method.
 Boto3 documentation:
 [CodeDeploy.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -725,7 +725,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.list_deployment_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -740,7 +740,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.list_deployment_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
 - `nextToken`: `str`
@@ -815,7 +815,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.list_git_hub_account_token_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_git_hub_account_token_names)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -848,7 +848,7 @@ method.
 Boto3 documentation:
 [CodeDeploy.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -910,7 +910,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.remove_tags_from_on_premises_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.remove_tags_from_on_premises_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `instanceNames`: `List`\[`str`\] *(required)*
@@ -923,7 +923,7 @@ Type annotations for
 Boto3 documentation:
 [CodeDeploy.Client.skip_wait_time_for_instance_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.skip_wait_time_for_instance_termination)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str`
 
@@ -934,7 +934,7 @@ Type annotations for `boto3.client("codedeploy").stop_deployment` method.
 Boto3 documentation:
 [CodeDeploy.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.stop_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 - `autoRollbackEnabled`: `bool`
@@ -949,7 +949,7 @@ Type annotations for `boto3.client("codedeploy").tag_resource` method.
 Boto3 documentation:
 [CodeDeploy.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -963,7 +963,7 @@ Type annotations for `boto3.client("codedeploy").untag_resource` method.
 Boto3 documentation:
 [CodeDeploy.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -977,7 +977,7 @@ Type annotations for `boto3.client("codedeploy").update_application` method.
 Boto3 documentation:
 [CodeDeploy.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.update_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationName`: `str`
 - `newApplicationName`: `str`

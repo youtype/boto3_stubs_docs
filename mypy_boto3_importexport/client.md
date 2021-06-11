@@ -95,7 +95,7 @@ Type annotations for `boto3.client("importexport").cancel_job` method.
 Boto3 documentation:
 [ImportExport.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `APIVersion`: `str`
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("importexport").get_status` method.
 Boto3 documentation:
 [ImportExport.Client.get_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `APIVersion`: `str`

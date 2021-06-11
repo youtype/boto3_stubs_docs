@@ -226,7 +226,7 @@ Type annotations for `boto3.client("ecr").delete_lifecycle_policy` method.
 Boto3 documentation:
 [ECR.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("ecr").delete_repository_policy` method.
 Boto3 documentation:
 [ECR.Client.delete_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("ecr").get_authorization_token` method.
 Boto3 documentation:
 [ECR.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_authorization_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `registryIds`: `List`\[`str`\]
 
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("ecr").get_lifecycle_policy` method.
 Boto3 documentation:
 [ECR.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -441,7 +441,7 @@ Type annotations for `boto3.client("ecr").get_repository_policy` method.
 Boto3 documentation:
 [ECR.Client.get_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_repository_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -456,7 +456,7 @@ Type annotations for `boto3.client("ecr").initiate_layer_upload` method.
 Boto3 documentation:
 [ECR.Client.initiate_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.initiate_layer_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -488,7 +488,7 @@ Type annotations for `boto3.client("ecr").list_tags_for_resource` method.
 Boto3 documentation:
 [ECR.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -572,7 +572,7 @@ Type annotations for `boto3.client("ecr").put_registry_policy` method.
 Boto3 documentation:
 [ECR.Client.put_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_registry_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `policyText`: `str` *(required)*
 
@@ -587,7 +587,7 @@ method.
 Boto3 documentation:
 [ECR.Client.put_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_replication_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `replicationConfiguration`:
   [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
@@ -654,7 +654,7 @@ Type annotations for `boto3.client("ecr").tag_resource` method.
 Boto3 documentation:
 [ECR.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -668,7 +668,7 @@ Type annotations for `boto3.client("ecr").untag_resource` method.
 Boto3 documentation:
 [ECR.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

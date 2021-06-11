@@ -106,7 +106,7 @@ Type annotations for `boto3.client("personalize-events").put_items` method.
 Boto3 documentation:
 [PersonalizeEvents.Client.put_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
 - `items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\] *(required)*
@@ -118,7 +118,7 @@ Type annotations for `boto3.client("personalize-events").put_users` method.
 Boto3 documentation:
 [PersonalizeEvents.Client.put_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
 - `users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\] *(required)*

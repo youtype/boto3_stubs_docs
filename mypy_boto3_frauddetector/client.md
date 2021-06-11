@@ -119,7 +119,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.batch_create_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.batch_create_variable)
 
-Arguments:
+Keyword-only arguments:
 
 - `variableEntries`:
   `List`\[[VariableEntryTypeDef](./type_defs.md#variableentrytypedef)\]
@@ -136,7 +136,7 @@ Type annotations for `boto3.client("frauddetector").batch_get_variable` method.
 Boto3 documentation:
 [FraudDetector.Client.batch_get_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.batch_get_variable)
 
-Arguments:
+Keyword-only arguments:
 
 - `names`: `List`\[`str`\] *(required)*
 
@@ -164,7 +164,7 @@ Type annotations for
 Boto3 documentation:
 [FraudDetector.Client.cancel_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.cancel_batch_prediction_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
@@ -305,7 +305,7 @@ Type annotations for
 Boto3 documentation:
 [FraudDetector.Client.delete_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_batch_prediction_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
@@ -318,7 +318,7 @@ Type annotations for `boto3.client("frauddetector").delete_detector` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 
@@ -332,7 +332,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.delete_detector_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_detector_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `detectorVersionId`: `str` *(required)*
@@ -346,7 +346,7 @@ Type annotations for `boto3.client("frauddetector").delete_entity_type` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_entity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_entity_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -359,7 +359,7 @@ Type annotations for `boto3.client("frauddetector").delete_event` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_event)
 
-Arguments:
+Keyword-only arguments:
 
 - `eventId`: `str` *(required)*
 - `eventTypeName`: `str` *(required)*
@@ -373,7 +373,7 @@ Type annotations for `boto3.client("frauddetector").delete_event_type` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_event_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_event_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -387,7 +387,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.delete_external_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_external_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelEndpoint`: `str` *(required)*
 
@@ -400,7 +400,7 @@ Type annotations for `boto3.client("frauddetector").delete_label` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_label)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -413,7 +413,7 @@ Type annotations for `boto3.client("frauddetector").delete_model` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
@@ -445,7 +445,7 @@ Type annotations for `boto3.client("frauddetector").delete_outcome` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_outcome](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_outcome)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -458,7 +458,7 @@ Type annotations for `boto3.client("frauddetector").delete_rule` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef) *(required)*
 
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("frauddetector").delete_variable` method.
 Boto3 documentation:
 [FraudDetector.Client.delete_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_variable)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -555,7 +555,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.get_detector_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_detector_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `detectorVersionId`: `str` *(required)*
@@ -857,7 +857,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.put_kms_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_kms_encryption_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `kmsEncryptionKeyArn`: `str` *(required)*
 
@@ -900,7 +900,7 @@ Type annotations for `boto3.client("frauddetector").tag_resource` method.
 Boto3 documentation:
 [FraudDetector.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -914,7 +914,7 @@ Type annotations for `boto3.client("frauddetector").untag_resource` method.
 Boto3 documentation:
 [FraudDetector.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -1041,7 +1041,7 @@ method.
 Boto3 documentation:
 [FraudDetector.Client.update_rule_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_rule_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef) *(required)*
 - `description`: `str` *(required)*

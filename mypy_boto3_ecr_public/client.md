@@ -201,7 +201,7 @@ method.
 Boto3 documentation:
 [ECRPublic.Client.delete_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.delete_repository_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("ecr-public").describe_registries` method.
 Boto3 documentation:
 [ECRPublic.Client.describe_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_registries)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -324,7 +324,7 @@ method.
 Boto3 documentation:
 [ECRPublic.Client.get_repository_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_repository_catalog_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("ecr-public").get_repository_policy` method.
 Boto3 documentation:
 [ECRPublic.Client.get_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.get_repository_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("ecr-public").initiate_layer_upload` method.
 Boto3 documentation:
 [ECRPublic.Client.initiate_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.initiate_layer_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `registryId`: `str`
@@ -370,7 +370,7 @@ method.
 Boto3 documentation:
 [ECRPublic.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -403,7 +403,7 @@ method.
 Boto3 documentation:
 [ECRPublic.Client.put_registry_catalog_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_registry_catalog_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `displayName`: `str`
 
@@ -453,7 +453,7 @@ Type annotations for `boto3.client("ecr-public").tag_resource` method.
 Boto3 documentation:
 [ECRPublic.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -467,7 +467,7 @@ Type annotations for `boto3.client("ecr-public").untag_resource` method.
 Boto3 documentation:
 [ECRPublic.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

@@ -172,7 +172,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceQuotas.Client.get_aws_default_service_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_aws_default_service_quota)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `QuotaCode`: `str` *(required)*
@@ -188,7 +188,7 @@ Type annotations for
 Boto3 documentation:
 [ServiceQuotas.Client.get_requested_service_quota_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_requested_service_quota_change)
 
-Arguments:
+Keyword-only arguments:
 
 - `RequestId`: `str` *(required)*
 
@@ -202,7 +202,7 @@ Type annotations for `boto3.client("service-quotas").get_service_quota` method.
 Boto3 documentation:
 [ServiceQuotas.Client.get_service_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceCode`: `str` *(required)*
 - `QuotaCode`: `str` *(required)*
@@ -327,7 +327,7 @@ Type annotations for `boto3.client("service-quotas").list_services` method.
 Boto3 documentation:
 [ServiceQuotas.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -343,7 +343,7 @@ method.
 Boto3 documentation:
 [ServiceQuotas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("service-quotas").tag_resource` method.
 Boto3 documentation:
 [ServiceQuotas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -407,7 +407,7 @@ Type annotations for `boto3.client("service-quotas").untag_resource` method.
 Boto3 documentation:
 [ServiceQuotas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

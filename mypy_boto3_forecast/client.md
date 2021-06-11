@@ -260,7 +260,7 @@ Type annotations for `boto3.client("forecast").delete_dataset` method.
 Boto3 documentation:
 [ForecastService.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetArn`: `str` *(required)*
 
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("forecast").delete_dataset_group` method.
 Boto3 documentation:
 [ForecastService.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetGroupArn`: `str` *(required)*
 
@@ -283,7 +283,7 @@ method.
 Boto3 documentation:
 [ForecastService.Client.delete_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetImportJobArn`: `str` *(required)*
 
@@ -294,7 +294,7 @@ Type annotations for `boto3.client("forecast").delete_forecast` method.
 Boto3 documentation:
 [ForecastService.Client.delete_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast)
 
-Arguments:
+Keyword-only arguments:
 
 - `ForecastArn`: `str` *(required)*
 
@@ -306,7 +306,7 @@ method.
 Boto3 documentation:
 [ForecastService.Client.delete_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ForecastExportJobArn`: `str` *(required)*
 
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("forecast").delete_predictor` method.
 Boto3 documentation:
 [ForecastService.Client.delete_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor)
 
-Arguments:
+Keyword-only arguments:
 
 - `PredictorArn`: `str` *(required)*
 
@@ -329,7 +329,7 @@ Type annotations for
 Boto3 documentation:
 [ForecastService.Client.delete_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor_backtest_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `PredictorBacktestExportJobArn`: `str` *(required)*
 
@@ -340,7 +340,7 @@ Type annotations for `boto3.client("forecast").delete_resource_tree` method.
 Boto3 documentation:
 [ForecastService.Client.delete_resource_tree](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_resource_tree)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -351,7 +351,7 @@ Type annotations for `boto3.client("forecast").describe_dataset` method.
 Boto3 documentation:
 [ForecastService.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetArn`: `str` *(required)*
 
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("forecast").describe_dataset_group` method.
 Boto3 documentation:
 [ForecastService.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetGroupArn`: `str` *(required)*
 
@@ -380,7 +380,7 @@ method.
 Boto3 documentation:
 [ForecastService.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetImportJobArn`: `str` *(required)*
 
@@ -394,7 +394,7 @@ Type annotations for `boto3.client("forecast").describe_forecast` method.
 Boto3 documentation:
 [ForecastService.Client.describe_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast)
 
-Arguments:
+Keyword-only arguments:
 
 - `ForecastArn`: `str` *(required)*
 
@@ -409,7 +409,7 @@ method.
 Boto3 documentation:
 [ForecastService.Client.describe_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ForecastExportJobArn`: `str` *(required)*
 
@@ -423,7 +423,7 @@ Type annotations for `boto3.client("forecast").describe_predictor` method.
 Boto3 documentation:
 [ForecastService.Client.describe_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor)
 
-Arguments:
+Keyword-only arguments:
 
 - `PredictorArn`: `str` *(required)*
 
@@ -438,7 +438,7 @@ Type annotations for
 Boto3 documentation:
 [ForecastService.Client.describe_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor_backtest_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `PredictorBacktestExportJobArn`: `str` *(required)*
 
@@ -468,7 +468,7 @@ Type annotations for `boto3.client("forecast").get_accuracy_metrics` method.
 Boto3 documentation:
 [ForecastService.Client.get_accuracy_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.get_accuracy_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `PredictorArn`: `str` *(required)*
 
@@ -482,7 +482,7 @@ Type annotations for `boto3.client("forecast").list_dataset_groups` method.
 Boto3 documentation:
 [ForecastService.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -514,7 +514,7 @@ Type annotations for `boto3.client("forecast").list_datasets` method.
 Boto3 documentation:
 [ForecastService.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_datasets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -595,7 +595,7 @@ Type annotations for `boto3.client("forecast").list_tags_for_resource` method.
 Boto3 documentation:
 [ForecastService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -609,7 +609,7 @@ Type annotations for `boto3.client("forecast").stop_resource` method.
 Boto3 documentation:
 [ForecastService.Client.stop_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.stop_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -620,7 +620,7 @@ Type annotations for `boto3.client("forecast").tag_resource` method.
 Boto3 documentation:
 [ForecastService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -634,7 +634,7 @@ Type annotations for `boto3.client("forecast").untag_resource` method.
 Boto3 documentation:
 [ForecastService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -648,7 +648,7 @@ Type annotations for `boto3.client("forecast").update_dataset_group` method.
 Boto3 documentation:
 [ForecastService.Client.update_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.update_dataset_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetGroupArn`: `str` *(required)*
 - `DatasetArns`: `List`\[`str`\] *(required)*

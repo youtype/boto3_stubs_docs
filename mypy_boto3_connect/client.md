@@ -172,7 +172,7 @@ method.
 Boto3 documentation:
 [Connect.Client.associate_approved_origin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_approved_origin)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Origin`: `str` *(required)*
@@ -206,7 +206,7 @@ method.
 Boto3 documentation:
 [Connect.Client.associate_lambda_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lambda_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `FunctionArn`: `str` *(required)*
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("connect").associate_lex_bot` method.
 Boto3 documentation:
 [Connect.Client.associate_lex_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lex_bot)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef) *(required)*
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("connect").associate_security_key` method.
 Boto3 documentation:
 [Connect.Client.associate_security_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_security_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Key`: `str` *(required)*
@@ -473,7 +473,7 @@ Type annotations for `boto3.client("connect").delete_instance` method.
 Boto3 documentation:
 [Connect.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
@@ -485,7 +485,7 @@ method.
 Boto3 documentation:
 [Connect.Client.delete_integration_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_integration_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `IntegrationAssociationId`: `str` *(required)*
@@ -497,7 +497,7 @@ Type annotations for `boto3.client("connect").delete_quick_connect` method.
 Boto3 documentation:
 [Connect.Client.delete_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_quick_connect)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QuickConnectId`: `str` *(required)*
@@ -522,7 +522,7 @@ Type annotations for `boto3.client("connect").delete_user` method.
 Boto3 documentation:
 [Connect.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -535,7 +535,7 @@ method.
 Boto3 documentation:
 [Connect.Client.delete_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user_hierarchy_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `HierarchyGroupId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -547,7 +547,7 @@ Type annotations for `boto3.client("connect").describe_contact_flow` method.
 Boto3 documentation:
 [Connect.Client.describe_contact_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowId`: `str` *(required)*
@@ -563,7 +563,7 @@ method.
 Boto3 documentation:
 [Connect.Client.describe_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_hours_of_operation)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `HoursOfOperationId`: `str` *(required)*
@@ -578,7 +578,7 @@ Type annotations for `boto3.client("connect").describe_instance` method.
 Boto3 documentation:
 [Connect.Client.describe_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
@@ -593,7 +593,7 @@ method.
 Boto3 documentation:
 [Connect.Client.describe_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `AttributeType`:
@@ -629,7 +629,7 @@ Type annotations for `boto3.client("connect").describe_queue` method.
 Boto3 documentation:
 [Connect.Client.describe_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
@@ -644,7 +644,7 @@ Type annotations for `boto3.client("connect").describe_quick_connect` method.
 Boto3 documentation:
 [Connect.Client.describe_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_quick_connect)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QuickConnectId`: `str` *(required)*
@@ -659,7 +659,7 @@ Type annotations for `boto3.client("connect").describe_routing_profile` method.
 Boto3 documentation:
 [Connect.Client.describe_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_routing_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
@@ -674,7 +674,7 @@ Type annotations for `boto3.client("connect").describe_user` method.
 Boto3 documentation:
 [Connect.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -690,7 +690,7 @@ method.
 Boto3 documentation:
 [Connect.Client.describe_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `HierarchyGroupId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -706,7 +706,7 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.describe_user_hierarchy_structure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_structure)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
@@ -721,7 +721,7 @@ method.
 Boto3 documentation:
 [Connect.Client.disassociate_approved_origin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_approved_origin)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Origin`: `str` *(required)*
@@ -750,7 +750,7 @@ method.
 Boto3 documentation:
 [Connect.Client.disassociate_lambda_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lambda_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `FunctionArn`: `str` *(required)*
@@ -806,7 +806,7 @@ method.
 Boto3 documentation:
 [Connect.Client.disassociate_security_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_security_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `AssociationId`: `str` *(required)*
@@ -834,7 +834,7 @@ Type annotations for `boto3.client("connect").get_contact_attributes` method.
 Boto3 documentation:
 [Connect.Client.get_contact_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_contact_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `InitialContactId`: `str` *(required)*
@@ -870,7 +870,7 @@ Type annotations for `boto3.client("connect").get_federation_token` method.
 Boto3 documentation:
 [Connect.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_federation_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
@@ -993,7 +993,7 @@ Type annotations for `boto3.client("connect").list_instances` method.
 Boto3 documentation:
 [Connect.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1211,7 +1211,7 @@ Type annotations for `boto3.client("connect").list_tags_for_resource` method.
 Boto3 documentation:
 [Connect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -1371,7 +1371,7 @@ Type annotations for `boto3.client("connect").stop_contact` method.
 Boto3 documentation:
 [Connect.Client.stop_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -1416,7 +1416,7 @@ Type annotations for `boto3.client("connect").tag_resource` method.
 Boto3 documentation:
 [Connect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -1428,7 +1428,7 @@ Type annotations for `boto3.client("connect").untag_resource` method.
 Boto3 documentation:
 [Connect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -1710,7 +1710,7 @@ method.
 Boto3 documentation:
 [Connect.Client.update_user_hierarchy_structure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_structure)
 
-Arguments:
+Keyword-only arguments:
 
 - `HierarchyStructure`:
   [HierarchyStructureUpdateTypeDef](./type_defs.md#hierarchystructureupdatetypedef)

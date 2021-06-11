@@ -66,7 +66,7 @@ Type annotations for
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.batch_get_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.batch_get_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `Identifiers`:
   `List`\[[BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)\]
@@ -144,7 +144,7 @@ Type annotations for
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.put_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `FeatureGroupName`: `str` *(required)*
 - `Record`: `List`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]

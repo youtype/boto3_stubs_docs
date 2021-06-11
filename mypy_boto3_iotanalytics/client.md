@@ -97,7 +97,7 @@ Type annotations for `boto3.client("iotanalytics").batch_put_message` method.
 Boto3 documentation:
 [IoTAnalytics.Client.batch_put_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.batch_put_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
 - `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
@@ -127,7 +127,7 @@ Type annotations for
 Boto3 documentation:
 [IoTAnalytics.Client.cancel_pipeline_reprocessing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.cancel_pipeline_reprocessing)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `reprocessingId`: `str` *(required)*
@@ -189,7 +189,7 @@ method.
 Boto3 documentation:
 [IoTAnalytics.Client.create_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.create_dataset_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 - `versionId`: `str`
@@ -243,7 +243,7 @@ Type annotations for `boto3.client("iotanalytics").delete_channel` method.
 Boto3 documentation:
 [IoTAnalytics.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
 
@@ -254,7 +254,7 @@ Type annotations for `boto3.client("iotanalytics").delete_dataset` method.
 Boto3 documentation:
 [IoTAnalytics.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 
@@ -266,7 +266,7 @@ method.
 Boto3 documentation:
 [IoTAnalytics.Client.delete_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_dataset_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 - `versionId`: `str`
@@ -278,7 +278,7 @@ Type annotations for `boto3.client("iotanalytics").delete_datastore` method.
 Boto3 documentation:
 [IoTAnalytics.Client.delete_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_datastore)
 
-Arguments:
+Keyword-only arguments:
 
 - `datastoreName`: `str` *(required)*
 
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("iotanalytics").delete_pipeline` method.
 Boto3 documentation:
 [IoTAnalytics.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.delete_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("iotanalytics").describe_channel` method.
 Boto3 documentation:
 [IoTAnalytics.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
 - `includeStatistics`: `bool`
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("iotanalytics").describe_dataset` method.
 Boto3 documentation:
 [IoTAnalytics.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 
@@ -329,7 +329,7 @@ Type annotations for `boto3.client("iotanalytics").describe_datastore` method.
 Boto3 documentation:
 [IoTAnalytics.Client.describe_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_datastore)
 
-Arguments:
+Keyword-only arguments:
 
 - `datastoreName`: `str` *(required)*
 - `includeStatistics`: `bool`
@@ -355,7 +355,7 @@ Type annotations for `boto3.client("iotanalytics").describe_pipeline` method.
 Boto3 documentation:
 [IoTAnalytics.Client.describe_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.describe_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 
@@ -386,7 +386,7 @@ Type annotations for `boto3.client("iotanalytics").get_dataset_content` method.
 Boto3 documentation:
 [IoTAnalytics.Client.get_dataset_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.get_dataset_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 - `versionId`: `str`
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("iotanalytics").list_channels` method.
 Boto3 documentation:
 [IoTAnalytics.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("iotanalytics").list_datasets` method.
 Boto3 documentation:
 [IoTAnalytics.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_datasets)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -450,7 +450,7 @@ Type annotations for `boto3.client("iotanalytics").list_datastores` method.
 Boto3 documentation:
 [IoTAnalytics.Client.list_datastores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_datastores)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("iotanalytics").list_pipelines` method.
 Boto3 documentation:
 [IoTAnalytics.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_pipelines)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -481,7 +481,7 @@ method.
 Boto3 documentation:
 [IoTAnalytics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -495,7 +495,7 @@ Type annotations for `boto3.client("iotanalytics").put_logging_options` method.
 Boto3 documentation:
 [IoTAnalytics.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.put_logging_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) *(required)*
@@ -508,7 +508,7 @@ method.
 Boto3 documentation:
 [IoTAnalytics.Client.run_pipeline_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.run_pipeline_activity)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineActivity`:
   [PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)
@@ -561,7 +561,7 @@ Type annotations for `boto3.client("iotanalytics").tag_resource` method.
 Boto3 documentation:
 [IoTAnalytics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -575,7 +575,7 @@ Type annotations for `boto3.client("iotanalytics").untag_resource` method.
 Boto3 documentation:
 [IoTAnalytics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -645,7 +645,7 @@ Type annotations for `boto3.client("iotanalytics").update_pipeline` method.
 Boto3 documentation:
 [IoTAnalytics.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.update_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 - `pipelineActivities`:

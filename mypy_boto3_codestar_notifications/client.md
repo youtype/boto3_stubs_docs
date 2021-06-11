@@ -116,7 +116,7 @@ Type annotations for
 Boto3 documentation:
 [CodeStarNotifications.Client.delete_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_notification_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -131,7 +131,7 @@ method.
 Boto3 documentation:
 [CodeStarNotifications.Client.delete_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetAddress`: `str` *(required)*
 - `ForceUnsubscribeAll`: `bool`
@@ -146,7 +146,7 @@ Type annotations for
 Boto3 documentation:
 [CodeStarNotifications.Client.describe_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.describe_notification_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -214,7 +214,7 @@ Type annotations for
 Boto3 documentation:
 [CodeStarNotifications.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -261,7 +261,7 @@ method.
 Boto3 documentation:
 [CodeStarNotifications.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -276,7 +276,7 @@ method.
 Boto3 documentation:
 [CodeStarNotifications.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.unsubscribe)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `TargetAddress`: `str` *(required)*
@@ -291,7 +291,7 @@ method.
 Boto3 documentation:
 [CodeStarNotifications.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

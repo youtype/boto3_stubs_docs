@@ -83,7 +83,7 @@ method.
 Boto3 documentation:
 [MarketplaceCatalog.Client.cancel_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.cancel_change_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
 - `ChangeSetId`: `str` *(required)*
@@ -99,7 +99,7 @@ method.
 Boto3 documentation:
 [MarketplaceCatalog.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_change_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
 - `ChangeSetId`: `str` *(required)*
@@ -115,7 +115,7 @@ method.
 Boto3 documentation:
 [MarketplaceCatalog.Client.describe_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_entity)
 
-Arguments:
+Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
 - `EntityId`: `str` *(required)*

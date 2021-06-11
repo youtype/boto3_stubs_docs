@@ -272,7 +272,7 @@ Type annotations for
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.create_application_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.create_application_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `SnapshotName`: `str` *(required)*
@@ -287,7 +287,7 @@ method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.delete_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `CreateTimestamp`: `datetime` *(required)*
@@ -409,7 +409,7 @@ method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `IncludeAdditionalDetails`: `bool`
@@ -425,7 +425,7 @@ Type annotations for
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.describe_application_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `SnapshotName`: `str` *(required)*
@@ -441,7 +441,7 @@ Type annotations for
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.describe_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.describe_application_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `ApplicationVersionId`: `int` *(required)*
@@ -530,7 +530,7 @@ method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -546,7 +546,7 @@ Type annotations for
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -561,7 +561,7 @@ method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.rollback_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.rollback_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `CurrentApplicationVersionId`: `int` *(required)*
@@ -577,7 +577,7 @@ method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.start_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.start_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `RunConfiguration`:
@@ -593,7 +593,7 @@ method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.stop_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.stop_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `Force`: `bool`
@@ -607,7 +607,7 @@ Type annotations for `boto3.client("kinesisanalyticsv2").tag_resource` method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -622,7 +622,7 @@ method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -662,7 +662,7 @@ method.
 Boto3 documentation:
 [KinesisAnalyticsV2.Client.update_application_maintenance_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.update_application_maintenance_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `ApplicationMaintenanceConfigurationUpdate`:

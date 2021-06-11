@@ -133,7 +133,7 @@ Type annotations for `boto3.client("opsworks").assign_instance` method.
 Boto3 documentation:
 [OpsWorks.Client.assign_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `LayerIds`: `List`\[`str`\] *(required)*
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("opsworks").assign_volume` method.
 Boto3 documentation:
 [OpsWorks.Client.assign_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 - `InstanceId`: `str`
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("opsworks").associate_elastic_ip` method.
 Boto3 documentation:
 [OpsWorks.Client.associate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.associate_elastic_ip)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
 - `InstanceId`: `str`
@@ -170,7 +170,7 @@ method.
 Boto3 documentation:
 [OpsWorks.Client.attach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.attach_elastic_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticLoadBalancerName`: `str` *(required)*
 - `LayerId`: `str` *(required)*
@@ -402,7 +402,7 @@ Type annotations for `boto3.client("opsworks").delete_app` method.
 Boto3 documentation:
 [OpsWorks.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 
@@ -426,7 +426,7 @@ Type annotations for `boto3.client("opsworks").delete_layer` method.
 Boto3 documentation:
 [OpsWorks.Client.delete_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_layer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerId`: `str` *(required)*
 
@@ -437,7 +437,7 @@ Type annotations for `boto3.client("opsworks").delete_stack` method.
 Boto3 documentation:
 [OpsWorks.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("opsworks").delete_user_profile` method.
 Boto3 documentation:
 [OpsWorks.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_user_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `IamUserArn`: `str` *(required)*
 
@@ -459,7 +459,7 @@ Type annotations for `boto3.client("opsworks").deregister_ecs_cluster` method.
 Boto3 documentation:
 [OpsWorks.Client.deregister_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_ecs_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `EcsClusterArn`: `str` *(required)*
 
@@ -470,7 +470,7 @@ Type annotations for `boto3.client("opsworks").deregister_elastic_ip` method.
 Boto3 documentation:
 [OpsWorks.Client.deregister_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_elastic_ip)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
 
@@ -481,7 +481,7 @@ Type annotations for `boto3.client("opsworks").deregister_instance` method.
 Boto3 documentation:
 [OpsWorks.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
@@ -493,7 +493,7 @@ method.
 Boto3 documentation:
 [OpsWorks.Client.deregister_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_rds_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `RdsDbInstanceArn`: `str` *(required)*
 
@@ -504,7 +504,7 @@ Type annotations for `boto3.client("opsworks").deregister_volume` method.
 Boto3 documentation:
 [OpsWorks.Client.deregister_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 
@@ -515,7 +515,7 @@ Type annotations for `boto3.client("opsworks").describe_agent_versions` method.
 Boto3 documentation:
 [OpsWorks.Client.describe_agent_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_agent_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str`
 - `ConfigurationManager`:
@@ -531,7 +531,7 @@ Type annotations for `boto3.client("opsworks").describe_apps` method.
 Boto3 documentation:
 [OpsWorks.Client.describe_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_apps)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str`
 - `AppIds`: `List`\[`str`\]
@@ -611,7 +611,7 @@ method.
 Boto3 documentation:
 [OpsWorks.Client.describe_elastic_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_load_balancers)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str`
 - `LayerIds`: `List`\[`str`\]
@@ -642,7 +642,7 @@ Type annotations for `boto3.client("opsworks").describe_layers` method.
 Boto3 documentation:
 [OpsWorks.Client.describe_layers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_layers)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str`
 - `LayerIds`: `List`\[`str`\]
@@ -658,7 +658,7 @@ Type annotations for
 Boto3 documentation:
 [OpsWorks.Client.describe_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_load_based_auto_scaling)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerIds`: `List`\[`str`\] *(required)*
 
@@ -694,7 +694,7 @@ Type annotations for `boto3.client("opsworks").describe_permissions` method.
 Boto3 documentation:
 [OpsWorks.Client.describe_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `IamUserArn`: `str`
 - `StackId`: `str`
@@ -726,7 +726,7 @@ method.
 Boto3 documentation:
 [OpsWorks.Client.describe_rds_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_rds_db_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 - `RdsDbInstanceArns`: `List`\[`str`\]
@@ -758,7 +758,7 @@ Type annotations for
 Boto3 documentation:
 [OpsWorks.Client.describe_stack_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_provisioning_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 
@@ -772,7 +772,7 @@ Type annotations for `boto3.client("opsworks").describe_stack_summary` method.
 Boto3 documentation:
 [OpsWorks.Client.describe_stack_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 
@@ -786,7 +786,7 @@ Type annotations for `boto3.client("opsworks").describe_stacks` method.
 Boto3 documentation:
 [OpsWorks.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stacks)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackIds`: `List`\[`str`\]
 
@@ -801,7 +801,7 @@ Type annotations for
 Boto3 documentation:
 [OpsWorks.Client.describe_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_time_based_auto_scaling)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceIds`: `List`\[`str`\] *(required)*
 
@@ -815,7 +815,7 @@ Type annotations for `boto3.client("opsworks").describe_user_profiles` method.
 Boto3 documentation:
 [OpsWorks.Client.describe_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_user_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `IamUserArns`: `List`\[`str`\]
 
@@ -847,7 +847,7 @@ method.
 Boto3 documentation:
 [OpsWorks.Client.detach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.detach_elastic_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticLoadBalancerName`: `str` *(required)*
 - `LayerId`: `str` *(required)*
@@ -859,7 +859,7 @@ Type annotations for `boto3.client("opsworks").disassociate_elastic_ip` method.
 Boto3 documentation:
 [OpsWorks.Client.disassociate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.disassociate_elastic_ip)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
 
@@ -886,7 +886,7 @@ Type annotations for `boto3.client("opsworks").get_hostname_suggestion` method.
 Boto3 documentation:
 [OpsWorks.Client.get_hostname_suggestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.get_hostname_suggestion)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerId`: `str` *(required)*
 
@@ -900,7 +900,7 @@ Type annotations for `boto3.client("opsworks").grant_access` method.
 Boto3 documentation:
 [OpsWorks.Client.grant_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.grant_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ValidForInMinutes`: `int`
@@ -929,7 +929,7 @@ Type annotations for `boto3.client("opsworks").reboot_instance` method.
 Boto3 documentation:
 [OpsWorks.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.reboot_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
@@ -940,7 +940,7 @@ Type annotations for `boto3.client("opsworks").register_ecs_cluster` method.
 Boto3 documentation:
 [OpsWorks.Client.register_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_ecs_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `EcsClusterArn`: `str` *(required)*
 - `StackId`: `str` *(required)*
@@ -955,7 +955,7 @@ Type annotations for `boto3.client("opsworks").register_elastic_ip` method.
 Boto3 documentation:
 [OpsWorks.Client.register_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_elastic_ip)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
 - `StackId`: `str` *(required)*
@@ -1006,7 +1006,7 @@ Type annotations for `boto3.client("opsworks").register_volume` method.
 Boto3 documentation:
 [OpsWorks.Client.register_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 - `Ec2VolumeId`: `str`
@@ -1054,7 +1054,7 @@ method.
 Boto3 documentation:
 [OpsWorks.Client.set_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_time_based_auto_scaling)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `AutoScalingSchedule`:
@@ -1067,7 +1067,7 @@ Type annotations for `boto3.client("opsworks").start_instance` method.
 Boto3 documentation:
 [OpsWorks.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
@@ -1078,7 +1078,7 @@ Type annotations for `boto3.client("opsworks").start_stack` method.
 Boto3 documentation:
 [OpsWorks.Client.start_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 
@@ -1089,7 +1089,7 @@ Type annotations for `boto3.client("opsworks").stop_instance` method.
 Boto3 documentation:
 [OpsWorks.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Force`: `bool`
@@ -1101,7 +1101,7 @@ Type annotations for `boto3.client("opsworks").stop_stack` method.
 Boto3 documentation:
 [OpsWorks.Client.stop_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 
@@ -1112,7 +1112,7 @@ Type annotations for `boto3.client("opsworks").tag_resource` method.
 Boto3 documentation:
 [OpsWorks.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -1124,7 +1124,7 @@ Type annotations for `boto3.client("opsworks").unassign_instance` method.
 Boto3 documentation:
 [OpsWorks.Client.unassign_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
@@ -1135,7 +1135,7 @@ Type annotations for `boto3.client("opsworks").unassign_volume` method.
 Boto3 documentation:
 [OpsWorks.Client.unassign_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeId`: `str` *(required)*
 
@@ -1146,7 +1146,7 @@ Type annotations for `boto3.client("opsworks").untag_resource` method.
 Boto3 documentation:
 [OpsWorks.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1183,7 +1183,7 @@ Type annotations for `boto3.client("opsworks").update_elastic_ip` method.
 Boto3 documentation:
 [OpsWorks.Client.update_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_elastic_ip)
 
-Arguments:
+Keyword-only arguments:
 
 - `ElasticIp`: `str` *(required)*
 - `Name`: `str`
@@ -1249,7 +1249,7 @@ Type annotations for `boto3.client("opsworks").update_my_user_profile` method.
 Boto3 documentation:
 [OpsWorks.Client.update_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_my_user_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `SshPublicKey`: `str`
 

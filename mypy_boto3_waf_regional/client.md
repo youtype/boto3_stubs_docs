@@ -156,7 +156,7 @@ Type annotations for `boto3.client("waf-regional").associate_web_acl` method.
 Boto3 documentation:
 [WAFRegional.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.associate_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
@@ -184,7 +184,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_byte_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -200,7 +200,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_geo_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("waf-regional").create_ip_set` method.
 Boto3 documentation:
 [WAFRegional.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -252,7 +252,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_regex_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -268,7 +268,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -317,7 +317,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_size_constraint_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -333,7 +333,7 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.create_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_sql_injection_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -385,7 +385,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_xss_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -401,7 +401,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_byte_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ByteMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -417,7 +417,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_geo_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `GeoMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("waf-regional").delete_ip_set` method.
 Boto3 documentation:
 [WAFRegional.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `IPSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -448,7 +448,7 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -462,7 +462,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -476,7 +476,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rate_based_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -492,7 +492,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_regex_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegexMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -508,7 +508,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegexPatternSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -523,7 +523,7 @@ Type annotations for `boto3.client("waf-regional").delete_rule` method.
 Boto3 documentation:
 [WAFRegional.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -537,7 +537,7 @@ Type annotations for `boto3.client("waf-regional").delete_rule_group` method.
 Boto3 documentation:
 [WAFRegional.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleGroupId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -553,7 +553,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_size_constraint_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `SizeConstraintSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -569,7 +569,7 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.delete_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_sql_injection_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `SqlInjectionMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -584,7 +584,7 @@ Type annotations for `boto3.client("waf-regional").delete_web_acl` method.
 Boto3 documentation:
 [WAFRegional.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -600,7 +600,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_xss_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `XssMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
@@ -616,7 +616,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.disassociate_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -646,7 +646,7 @@ Type annotations for `boto3.client("waf-regional").get_byte_match_set` method.
 Boto3 documentation:
 [WAFRegional.Client.get_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_byte_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ByteMatchSetId`: `str` *(required)*
 
@@ -671,7 +671,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_change_token_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_change_token_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChangeToken`: `str` *(required)*
 
@@ -685,7 +685,7 @@ Type annotations for `boto3.client("waf-regional").get_geo_match_set` method.
 Boto3 documentation:
 [WAFRegional.Client.get_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_geo_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `GeoMatchSetId`: `str` *(required)*
 
@@ -699,7 +699,7 @@ Type annotations for `boto3.client("waf-regional").get_ip_set` method.
 Boto3 documentation:
 [WAFRegional.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_ip_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `IPSetId`: `str` *(required)*
 
@@ -713,7 +713,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -728,7 +728,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -742,7 +742,7 @@ Type annotations for `boto3.client("waf-regional").get_rate_based_rule` method.
 Boto3 documentation:
 [WAFRegional.Client.get_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rate_based_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 
@@ -757,7 +757,7 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.get_rate_based_rule_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rate_based_rule_managed_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `NextMarker`: `str`
@@ -772,7 +772,7 @@ Type annotations for `boto3.client("waf-regional").get_regex_match_set` method.
 Boto3 documentation:
 [WAFRegional.Client.get_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_regex_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegexMatchSetId`: `str` *(required)*
 
@@ -787,7 +787,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_regex_pattern_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegexPatternSetId`: `str` *(required)*
 
@@ -801,7 +801,7 @@ Type annotations for `boto3.client("waf-regional").get_rule` method.
 Boto3 documentation:
 [WAFRegional.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 
@@ -814,7 +814,7 @@ Type annotations for `boto3.client("waf-regional").get_rule_group` method.
 Boto3 documentation:
 [WAFRegional.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rule_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleGroupId`: `str` *(required)*
 
@@ -848,7 +848,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_size_constraint_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `SizeConstraintSetId`: `str` *(required)*
 
@@ -863,7 +863,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_sql_injection_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `SqlInjectionMatchSetId`: `str` *(required)*
 
@@ -877,7 +877,7 @@ Type annotations for `boto3.client("waf-regional").get_web_acl` method.
 Boto3 documentation:
 [WAFRegional.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 
@@ -891,7 +891,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_web_acl_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -905,7 +905,7 @@ Type annotations for `boto3.client("waf-regional").get_xss_match_set` method.
 Boto3 documentation:
 [WAFRegional.Client.get_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_xss_match_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `XssMatchSetId`: `str` *(required)*
 
@@ -937,7 +937,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_byte_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_byte_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -952,7 +952,7 @@ Type annotations for `boto3.client("waf-regional").list_geo_match_sets` method.
 Boto3 documentation:
 [WAFRegional.Client.list_geo_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_geo_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -967,7 +967,7 @@ Type annotations for `boto3.client("waf-regional").list_ip_sets` method.
 Boto3 documentation:
 [WAFRegional.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_ip_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -982,7 +982,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_logging_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -998,7 +998,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_rate_based_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rate_based_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1014,7 +1014,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_regex_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_regex_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1030,7 +1030,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_regex_pattern_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1046,7 +1046,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_resources_for_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
@@ -1061,7 +1061,7 @@ Type annotations for `boto3.client("waf-regional").list_rule_groups` method.
 Boto3 documentation:
 [WAFRegional.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rule_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1076,7 +1076,7 @@ Type annotations for `boto3.client("waf-regional").list_rules` method.
 Boto3 documentation:
 [WAFRegional.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1091,7 +1091,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_size_constraint_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_size_constraint_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1107,7 +1107,7 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.list_sql_injection_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_sql_injection_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1123,7 +1123,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_subscribed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_subscribed_rule_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1155,7 +1155,7 @@ Type annotations for `boto3.client("waf-regional").list_web_acls` method.
 Boto3 documentation:
 [WAFRegional.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_web_acls)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1170,7 +1170,7 @@ Type annotations for `boto3.client("waf-regional").list_xss_match_sets` method.
 Boto3 documentation:
 [WAFRegional.Client.list_xss_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_xss_match_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
@@ -1186,7 +1186,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.put_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
@@ -1203,7 +1203,7 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.put_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -1217,7 +1217,7 @@ Type annotations for `boto3.client("waf-regional").tag_resource` method.
 Boto3 documentation:
 [WAFRegional.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1231,7 +1231,7 @@ Type annotations for `boto3.client("waf-regional").untag_resource` method.
 Boto3 documentation:
 [WAFRegional.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

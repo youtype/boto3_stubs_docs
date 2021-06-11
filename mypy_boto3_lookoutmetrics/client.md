@@ -88,7 +88,7 @@ method.
 Boto3 documentation:
 [LookoutMetrics.Client.activate_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 
@@ -102,7 +102,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutMetrics.Client.back_test_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 
@@ -195,7 +195,7 @@ Type annotations for `boto3.client("lookoutmetrics").delete_alert` method.
 Boto3 documentation:
 [LookoutMetrics.Client.delete_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlertArn`: `str` *(required)*
 
@@ -209,7 +209,7 @@ method.
 Boto3 documentation:
 [LookoutMetrics.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("lookoutmetrics").describe_alert` method.
 Boto3 documentation:
 [LookoutMetrics.Client.describe_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlertArn`: `str` *(required)*
 
@@ -255,7 +255,7 @@ method.
 Boto3 documentation:
 [LookoutMetrics.Client.describe_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 
@@ -270,7 +270,7 @@ method.
 Boto3 documentation:
 [LookoutMetrics.Client.describe_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `MetricSetArn`: `str` *(required)*
 
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("lookoutmetrics").get_anomaly_group` method.
 Boto3 documentation:
 [LookoutMetrics.Client.get_anomaly_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyGroupId`: `str` *(required)*
 - `AnomalyDetectorArn`: `str` *(required)*
@@ -335,7 +335,7 @@ Type annotations for `boto3.client("lookoutmetrics").get_sample_data` method.
 Boto3 documentation:
 [LookoutMetrics.Client.get_sample_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `S3SourceConfig`:
   [SampleDataS3SourceConfigTypeDef](./type_defs.md#sampledatas3sourceconfigtypedef)
@@ -366,7 +366,7 @@ method.
 Boto3 documentation:
 [LookoutMetrics.Client.list_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -435,7 +435,7 @@ method.
 Boto3 documentation:
 [LookoutMetrics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -449,7 +449,7 @@ Type annotations for `boto3.client("lookoutmetrics").put_feedback` method.
 Boto3 documentation:
 [LookoutMetrics.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 - `AnomalyGroupTimeSeriesFeedback`:
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("lookoutmetrics").tag_resource` method.
 Boto3 documentation:
 [LookoutMetrics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("lookoutmetrics").untag_resource` method.
 Boto3 documentation:
 [LookoutMetrics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

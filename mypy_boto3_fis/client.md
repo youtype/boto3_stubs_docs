@@ -111,7 +111,7 @@ Type annotations for `boto3.client("fis").delete_experiment_template` method.
 Boto3 documentation:
 [FIS.Client.delete_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.delete_experiment_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("fis").get_action` method.
 Boto3 documentation:
 [FIS.Client.get_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("fis").get_experiment` method.
 Boto3 documentation:
 [FIS.Client.get_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("fis").get_experiment_template` method.
 Boto3 documentation:
 [FIS.Client.get_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("fis").list_actions` method.
 Boto3 documentation:
 [FIS.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -197,7 +197,7 @@ Type annotations for `boto3.client("fis").list_experiment_templates` method.
 Boto3 documentation:
 [FIS.Client.list_experiment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiment_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -212,7 +212,7 @@ Type annotations for `boto3.client("fis").list_experiments` method.
 Boto3 documentation:
 [FIS.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiments)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -227,7 +227,7 @@ Type annotations for `boto3.client("fis").list_tags_for_resource` method.
 Boto3 documentation:
 [FIS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -257,7 +257,7 @@ Type annotations for `boto3.client("fis").stop_experiment` method.
 Boto3 documentation:
 [FIS.Client.stop_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.stop_experiment)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("fis").tag_resource` method.
 Boto3 documentation:
 [FIS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -285,7 +285,7 @@ Type annotations for `boto3.client("fis").untag_resource` method.
 Boto3 documentation:
 [FIS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\]

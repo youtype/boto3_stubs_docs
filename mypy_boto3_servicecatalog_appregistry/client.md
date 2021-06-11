@@ -82,7 +82,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.associate_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.associate_attribute_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `attributeGroup`: `str` *(required)*
@@ -167,7 +167,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.delete_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 
@@ -182,7 +182,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.delete_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.delete_attribute_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `attributeGroup`: `str` *(required)*
 
@@ -198,7 +198,7 @@ method.
 Boto3 documentation:
 [AppRegistry.Client.disassociate_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.disassociate_attribute_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `attributeGroup`: `str` *(required)*
@@ -249,7 +249,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `application`: `str` *(required)*
 
@@ -264,7 +264,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.get_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_attribute_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `attributeGroup`: `str` *(required)*
 
@@ -279,7 +279,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -330,7 +330,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.list_attribute_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_attribute_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -346,7 +346,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -361,7 +361,7 @@ method.
 Boto3 documentation:
 [AppRegistry.Client.sync_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.sync_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceType`: `Literal['CFN_STACK']` (see
   [ResourceTypeType](./literals.md#resourcetypetype)) *(required)*
@@ -378,7 +378,7 @@ method.
 Boto3 documentation:
 [AppRegistry.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -393,7 +393,7 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

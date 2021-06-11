@@ -110,7 +110,7 @@ Type annotations for `boto3.client("dynamodbstreams").get_records` method.
 Boto3 documentation:
 [DynamoDBStreams.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records)
 
-Arguments:
+Keyword-only arguments:
 
 - `ShardIterator`: `str` *(required)*
 - `Limit`: `int`

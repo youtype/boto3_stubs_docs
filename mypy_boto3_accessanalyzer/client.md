@@ -119,7 +119,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.cancel_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.cancel_policy_generation)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("accessanalyzer").delete_analyzer` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.delete_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_analyzer)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 - `clientToken`: `str`
@@ -229,7 +229,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.get_access_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_access_preview)
 
-Arguments:
+Keyword-only arguments:
 
 - `accessPreviewId`: `str` *(required)*
 - `analyzerArn`: `str` *(required)*
@@ -245,7 +245,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.get_analyzed_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzed_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `resourceArn`: `str` *(required)*
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("accessanalyzer").get_analyzer` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.get_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzer)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 
@@ -274,7 +274,7 @@ Type annotations for `boto3.client("accessanalyzer").get_archive_rule` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.get_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_archive_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 - `ruleName`: `str` *(required)*
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("accessanalyzer").get_finding` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.get_finding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_finding)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `id`: `str` *(required)*
@@ -445,7 +445,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -480,7 +480,7 @@ method.
 Boto3 documentation:
 [AccessAnalyzer.Client.start_resource_scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_resource_scan)
 
-Arguments:
+Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `resourceArn`: `str` *(required)*
@@ -492,7 +492,7 @@ Type annotations for `boto3.client("accessanalyzer").tag_resource` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -506,7 +506,7 @@ Type annotations for `boto3.client("accessanalyzer").untag_resource` method.
 Boto3 documentation:
 [AccessAnalyzer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

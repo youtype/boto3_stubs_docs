@@ -103,7 +103,7 @@ Type annotations for `boto3.client("outposts").delete_outpost` method.
 Boto3 documentation:
 [Outposts.Client.delete_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_outpost)
 
-Arguments:
+Keyword-only arguments:
 
 - `OutpostId`: `str` *(required)*
 
@@ -116,7 +116,7 @@ Type annotations for `boto3.client("outposts").delete_site` method.
 Boto3 documentation:
 [Outposts.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_site)
 
-Arguments:
+Keyword-only arguments:
 
 - `SiteId`: `str` *(required)*
 
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("outposts").get_outpost` method.
 Boto3 documentation:
 [Outposts.Client.get_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost)
 
-Arguments:
+Keyword-only arguments:
 
 - `OutpostId`: `str` *(required)*
 
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("outposts").list_outposts` method.
 Boto3 documentation:
 [Outposts.Client.list_outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_outposts)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("outposts").list_sites` method.
 Boto3 documentation:
 [Outposts.Client.list_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_sites)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("outposts").list_tags_for_resource` method.
 Boto3 documentation:
 [Outposts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -217,7 +217,7 @@ Type annotations for `boto3.client("outposts").tag_resource` method.
 Boto3 documentation:
 [Outposts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("outposts").untag_resource` method.
 Boto3 documentation:
 [Outposts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

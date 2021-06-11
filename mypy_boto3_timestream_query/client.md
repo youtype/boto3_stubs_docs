@@ -79,7 +79,7 @@ Type annotations for `boto3.client("timestream-query").cancel_query` method.
 Boto3 documentation:
 [TimestreamQuery.Client.cancel_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryId`: `str` *(required)*
 

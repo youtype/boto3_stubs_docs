@@ -136,7 +136,7 @@ Type annotations for `boto3.client("workdocs").activate_user` method.
 Boto3 documentation:
 [WorkDocs.Client.activate_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.activate_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("workdocs").deactivate_user` method.
 Boto3 documentation:
 [WorkDocs.Client.deactivate_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.deactivate_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -340,7 +340,7 @@ Type annotations for `boto3.client("workdocs").delete_document` method.
 Boto3 documentation:
 [WorkDocs.Client.delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -352,7 +352,7 @@ Type annotations for `boto3.client("workdocs").delete_folder` method.
 Boto3 documentation:
 [WorkDocs.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder)
 
-Arguments:
+Keyword-only arguments:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("workdocs").delete_folder_contents` method.
 Boto3 documentation:
 [WorkDocs.Client.delete_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents)
 
-Arguments:
+Keyword-only arguments:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -393,7 +393,7 @@ Type annotations for
 Boto3 documentation:
 [WorkDocs.Client.delete_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionId`: `str` *(required)*
 - `OrganizationId`: `str` *(required)*
@@ -405,7 +405,7 @@ Type annotations for `boto3.client("workdocs").delete_user` method.
 Boto3 documentation:
 [WorkDocs.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `AuthenticationToken`: `str`
@@ -609,7 +609,7 @@ Type annotations for `boto3.client("workdocs").get_current_user` method.
 Boto3 documentation:
 [WorkDocs.Client.get_current_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_current_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationToken`: `str` *(required)*
 
@@ -750,7 +750,7 @@ method.
 Boto3 documentation:
 [WorkDocs.Client.remove_all_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `AuthenticationToken`: `str`

@@ -103,7 +103,7 @@ Type annotations for `boto3.client("mobile").delete_project` method.
 Boto3 documentation:
 [Mobile.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 
@@ -117,7 +117,7 @@ Type annotations for `boto3.client("mobile").describe_bundle` method.
 Boto3 documentation:
 [Mobile.Client.describe_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle)
 
-Arguments:
+Keyword-only arguments:
 
 - `bundleId`: `str` *(required)*
 
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("mobile").describe_project` method.
 Boto3 documentation:
 [Mobile.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `syncFromResources`: `bool`
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("mobile").export_project` method.
 Boto3 documentation:
 [Mobile.Client.export_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("mobile").list_bundles` method.
 Boto3 documentation:
 [Mobile.Client.list_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("mobile").list_projects` method.
 Boto3 documentation:
 [Mobile.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("mobile").update_project` method.
 Boto3 documentation:
 [Mobile.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 - `contents`: `Union`\[`bytes`, `IO`\[`bytes`\]\]

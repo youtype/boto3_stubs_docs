@@ -95,7 +95,7 @@ Type annotations for `boto3.client("athena").batch_get_named_query` method.
 Boto3 documentation:
 [Athena.Client.batch_get_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_named_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `NamedQueryIds`: `List`\[`str`\] *(required)*
 
@@ -109,7 +109,7 @@ Type annotations for `boto3.client("athena").batch_get_query_execution` method.
 Boto3 documentation:
 [Athena.Client.batch_get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_query_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryExecutionIds`: `List`\[`str`\] *(required)*
 
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("athena").delete_data_catalog` method.
 Boto3 documentation:
 [Athena.Client.delete_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_data_catalog)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("athena").delete_named_query` method.
 Boto3 documentation:
 [Athena.Client.delete_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_named_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `NamedQueryId`: `str` *(required)*
 
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("athena").delete_prepared_statement` method.
 Boto3 documentation:
 [Athena.Client.delete_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_prepared_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `StatementName`: `str` *(required)*
 - `WorkGroup`: `str` *(required)*
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("athena").delete_work_group` method.
 Boto3 documentation:
 [Athena.Client.delete_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_work_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkGroup`: `str` *(required)*
 - `RecursiveDeleteOption`: `bool`
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("athena").get_data_catalog` method.
 Boto3 documentation:
 [Athena.Client.get_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_data_catalog)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("athena").get_database` method.
 Boto3 documentation:
 [Athena.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_database)
 
-Arguments:
+Keyword-only arguments:
 
 - `CatalogName`: `str` *(required)*
 - `DatabaseName`: `str` *(required)*
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("athena").get_named_query` method.
 Boto3 documentation:
 [Athena.Client.get_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_named_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `NamedQueryId`: `str` *(required)*
 
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("athena").get_prepared_statement` method.
 Boto3 documentation:
 [Athena.Client.get_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_prepared_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `StatementName`: `str` *(required)*
 - `WorkGroup`: `str` *(required)*
@@ -332,7 +332,7 @@ Type annotations for `boto3.client("athena").get_query_execution` method.
 Boto3 documentation:
 [Athena.Client.get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryExecutionId`: `str` *(required)*
 
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("athena").get_work_group` method.
 Boto3 documentation:
 [Athena.Client.get_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_work_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkGroup`: `str` *(required)*
 
@@ -391,7 +391,7 @@ Type annotations for `boto3.client("athena").list_data_catalogs` method.
 Boto3 documentation:
 [Athena.Client.list_data_catalogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_data_catalogs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -422,7 +422,7 @@ Type annotations for `boto3.client("athena").list_engine_versions` method.
 Boto3 documentation:
 [Athena.Client.list_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_engine_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -519,7 +519,7 @@ Type annotations for `boto3.client("athena").list_work_groups` method.
 Boto3 documentation:
 [Athena.Client.list_work_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_work_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("athena").stop_query_execution` method.
 Boto3 documentation:
 [Athena.Client.stop_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_query_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryExecutionId`: `str` *(required)*
 
@@ -567,7 +567,7 @@ Type annotations for `boto3.client("athena").tag_resource` method.
 Boto3 documentation:
 [Athena.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -581,7 +581,7 @@ Type annotations for `boto3.client("athena").untag_resource` method.
 Boto3 documentation:
 [Athena.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

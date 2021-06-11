@@ -333,7 +333,7 @@ Type annotations for `boto3.client("nimble").delete_studio` method.
 Boto3 documentation:
 [NimbleStudio.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("nimble").get_eula` method.
 Boto3 documentation:
 [NimbleStudio.Client.get_eula](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula)
 
-Arguments:
+Keyword-only arguments:
 
 - `eulaId`: `str` *(required)*
 
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("nimble").get_launch_profile` method.
 Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -424,7 +424,7 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -474,7 +474,7 @@ Type annotations for `boto3.client("nimble").get_streaming_image` method.
 Boto3 documentation:
 [NimbleStudio.Client.get_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `streamingImageId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -489,7 +489,7 @@ Type annotations for `boto3.client("nimble").get_streaming_session` method.
 Boto3 documentation:
 [NimbleStudio.Client.get_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `sessionId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -521,7 +521,7 @@ Type annotations for `boto3.client("nimble").get_studio` method.
 Boto3 documentation:
 [NimbleStudio.Client.get_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 
@@ -534,7 +534,7 @@ Type annotations for `boto3.client("nimble").get_studio_component` method.
 Boto3 documentation:
 [NimbleStudio.Client.get_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioComponentId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -549,7 +549,7 @@ Type annotations for `boto3.client("nimble").get_studio_member` method.
 Boto3 documentation:
 [NimbleStudio.Client.get_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `principalId`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -580,7 +580,7 @@ Type annotations for `boto3.client("nimble").list_eulas` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
 
-Arguments:
+Keyword-only arguments:
 
 - `eulaIds`: `List`\[`str`\]
 - `nextToken`: `str`
@@ -697,7 +697,7 @@ Type annotations for `boto3.client("nimble").list_studios` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -711,7 +711,7 @@ Type annotations for `boto3.client("nimble").list_tags_for_resource` method.
 Boto3 documentation:
 [NimbleStudio.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -764,7 +764,7 @@ Type annotations for
 Boto3 documentation:
 [NimbleStudio.Client.start_studio_sso_configuration_repair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)
 
-Arguments:
+Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
@@ -779,7 +779,7 @@ Type annotations for `boto3.client("nimble").tag_resource` method.
 Boto3 documentation:
 [NimbleStudio.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
@@ -793,7 +793,7 @@ Type annotations for `boto3.client("nimble").untag_resource` method.
 Boto3 documentation:
 [NimbleStudio.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

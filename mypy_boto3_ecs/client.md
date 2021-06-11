@@ -260,7 +260,7 @@ Type annotations for `boto3.client("ecs").delete_account_setting` method.
 Boto3 documentation:
 [ECS.Client.delete_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: [SettingNameType](./literals.md#settingnametype) *(required)*
 - `principalArn`: `str`
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("ecs").delete_attributes` method.
 Boto3 documentation:
 [ECS.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
   *(required)*
@@ -291,7 +291,7 @@ Type annotations for `boto3.client("ecs").delete_capacity_provider` method.
 Boto3 documentation:
 [ECS.Client.delete_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `capacityProvider`: `str` *(required)*
 
@@ -305,7 +305,7 @@ Type annotations for `boto3.client("ecs").delete_cluster` method.
 Boto3 documentation:
 [ECS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `cluster`: `str` *(required)*
 
@@ -369,7 +369,7 @@ Type annotations for `boto3.client("ecs").deregister_task_definition` method.
 Boto3 documentation:
 [ECS.Client.deregister_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskDefinition`: `str` *(required)*
 
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("ecs").describe_clusters` method.
 Boto3 documentation:
 [ECS.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusters`: `List`\[`str`\]
 - `include`: `List`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
@@ -450,7 +450,7 @@ Type annotations for `boto3.client("ecs").describe_task_definition` method.
 Boto3 documentation:
 [ECS.Client.describe_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskDefinition`: `str` *(required)*
 - `include`: `List`\[`Literal['TAGS']` (see
@@ -501,7 +501,7 @@ Type annotations for `boto3.client("ecs").discover_poll_endpoint` method.
 Boto3 documentation:
 [ECS.Client.discover_poll_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `containerInstance`: `str`
 - `cluster`: `str`
@@ -589,7 +589,7 @@ Type annotations for `boto3.client("ecs").list_clusters` method.
 Boto3 documentation:
 [ECS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -642,7 +642,7 @@ Type annotations for `boto3.client("ecs").list_tags_for_resource` method.
 Boto3 documentation:
 [ECS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -730,7 +730,7 @@ Type annotations for `boto3.client("ecs").put_account_setting_default` method.
 Boto3 documentation:
 [ECS.Client.put_account_setting_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: [SettingNameType](./literals.md#settingnametype) *(required)*
 - `value`: `str` *(required)*
@@ -745,7 +745,7 @@ Type annotations for `boto3.client("ecs").put_attributes` method.
 Boto3 documentation:
 [ECS.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
   *(required)*
@@ -913,7 +913,7 @@ method.
 Boto3 documentation:
 [ECS.Client.submit_attachment_state_changes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes)
 
-Arguments:
+Keyword-only arguments:
 
 - `attachments`:
   `List`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
@@ -979,7 +979,7 @@ Type annotations for `boto3.client("ecs").tag_resource` method.
 Boto3 documentation:
 [ECS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -993,7 +993,7 @@ Type annotations for `boto3.client("ecs").untag_resource` method.
 Boto3 documentation:
 [ECS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -1007,7 +1007,7 @@ Type annotations for `boto3.client("ecs").update_capacity_provider` method.
 Boto3 documentation:
 [ECS.Client.update_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `autoScalingGroupProvider`:
@@ -1042,7 +1042,7 @@ Type annotations for `boto3.client("ecs").update_cluster_settings` method.
 Boto3 documentation:
 [ECS.Client.update_cluster_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `cluster`: `str` *(required)*
 - `settings`:
@@ -1059,7 +1059,7 @@ Type annotations for `boto3.client("ecs").update_container_agent` method.
 Boto3 documentation:
 [ECS.Client.update_container_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent)
 
-Arguments:
+Keyword-only arguments:
 
 - `containerInstance`: `str` *(required)*
 - `cluster`: `str`

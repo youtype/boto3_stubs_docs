@@ -323,7 +323,7 @@ Type annotations for `boto3.resource("cloudformation").cancel_update` method.
 Boto3 documentation:
 [CloudFormation.Stack.cancel_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.cancel_update)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientRequestToken`: `str`
 

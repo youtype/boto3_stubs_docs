@@ -134,7 +134,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.batch_detect_dominant_language](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_dominant_language)
 
-Arguments:
+Keyword-only arguments:
 
 - `TextList`: `List`\[`str`\] *(required)*
 
@@ -148,7 +148,7 @@ Type annotations for `boto3.client("comprehend").batch_detect_entities` method.
 Boto3 documentation:
 [Comprehend.Client.batch_detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `TextList`: `List`\[`str`\] *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -165,7 +165,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.batch_detect_key_phrases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_key_phrases)
 
-Arguments:
+Keyword-only arguments:
 
 - `TextList`: `List`\[`str`\] *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -182,7 +182,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.batch_detect_sentiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_sentiment)
 
-Arguments:
+Keyword-only arguments:
 
 - `TextList`: `List`\[`str`\] *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("comprehend").batch_detect_syntax` method.
 Boto3 documentation:
 [Comprehend.Client.batch_detect_syntax](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_syntax)
 
-Arguments:
+Keyword-only arguments:
 
 - `TextList`: `List`\[`str`\] *(required)*
 - `LanguageCode`:
@@ -227,7 +227,7 @@ Type annotations for `boto3.client("comprehend").classify_document` method.
 Boto3 documentation:
 [Comprehend.Client.classify_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.classify_document)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 - `EndpointArn`: `str` *(required)*
@@ -242,7 +242,7 @@ Type annotations for `boto3.client("comprehend").contains_pii_entities` method.
 Boto3 documentation:
 [Comprehend.Client.contains_pii_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.contains_pii_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -334,7 +334,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.delete_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_document_classifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentClassifierArn`: `str` *(required)*
 
@@ -347,7 +347,7 @@ Type annotations for `boto3.client("comprehend").delete_endpoint` method.
 Boto3 documentation:
 [Comprehend.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
@@ -361,7 +361,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.delete_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_entity_recognizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `EntityRecognizerArn`: `str` *(required)*
 
@@ -375,7 +375,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.describe_document_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classification_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -390,7 +390,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.describe_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_document_classifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentClassifierArn`: `str` *(required)*
 
@@ -405,7 +405,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.describe_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_dominant_language_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("comprehend").describe_endpoint` method.
 Boto3 documentation:
 [Comprehend.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
@@ -434,7 +434,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.describe_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entities_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -449,7 +449,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.describe_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_entity_recognizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `EntityRecognizerArn`: `str` *(required)*
 
@@ -464,7 +464,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.describe_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_events_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -479,7 +479,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.describe_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_key_phrases_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -494,7 +494,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.describe_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_pii_entities_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -509,7 +509,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.describe_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_sentiment_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -524,7 +524,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.describe_topics_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_topics_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -539,7 +539,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.detect_dominant_language](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_dominant_language)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
@@ -569,7 +569,7 @@ Type annotations for `boto3.client("comprehend").detect_key_phrases` method.
 Boto3 documentation:
 [Comprehend.Client.detect_key_phrases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_key_phrases)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -585,7 +585,7 @@ Type annotations for `boto3.client("comprehend").detect_pii_entities` method.
 Boto3 documentation:
 [Comprehend.Client.detect_pii_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_pii_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -601,7 +601,7 @@ Type annotations for `boto3.client("comprehend").detect_sentiment` method.
 Boto3 documentation:
 [Comprehend.Client.detect_sentiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_sentiment)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -617,7 +617,7 @@ Type annotations for `boto3.client("comprehend").detect_syntax` method.
 Boto3 documentation:
 [Comprehend.Client.detect_syntax](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_syntax)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 - `LanguageCode`:
@@ -829,7 +829,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -1069,7 +1069,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.stop_dominant_language_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_dominant_language_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -1084,7 +1084,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.stop_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_entities_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -1099,7 +1099,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.stop_events_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_events_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -1114,7 +1114,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.stop_key_phrases_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_key_phrases_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -1129,7 +1129,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.stop_pii_entities_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_pii_entities_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -1144,7 +1144,7 @@ method.
 Boto3 documentation:
 [Comprehend.Client.stop_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_sentiment_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -1159,7 +1159,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.stop_training_document_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_document_classifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `DocumentClassifierArn`: `str` *(required)*
 
@@ -1173,7 +1173,7 @@ Type annotations for
 Boto3 documentation:
 [Comprehend.Client.stop_training_entity_recognizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_training_entity_recognizer)
 
-Arguments:
+Keyword-only arguments:
 
 - `EntityRecognizerArn`: `str` *(required)*
 
@@ -1186,7 +1186,7 @@ Type annotations for `boto3.client("comprehend").tag_resource` method.
 Boto3 documentation:
 [Comprehend.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1200,7 +1200,7 @@ Type annotations for `boto3.client("comprehend").untag_resource` method.
 Boto3 documentation:
 [Comprehend.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1214,7 +1214,7 @@ Type annotations for `boto3.client("comprehend").update_endpoint` method.
 Boto3 documentation:
 [Comprehend.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.update_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 - `DesiredInferenceUnits`: `int` *(required)*

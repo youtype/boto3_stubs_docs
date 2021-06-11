@@ -131,7 +131,7 @@ Type annotations for `boto3.client("cloud9").delete_environment` method.
 Boto3 documentation:
 [Cloud9.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 
@@ -145,7 +145,7 @@ method.
 Boto3 documentation:
 [Cloud9.Client.delete_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 - `userArn`: `str` *(required)*
@@ -179,7 +179,7 @@ method.
 Boto3 documentation:
 [Cloud9.Client.describe_environment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("cloud9").describe_environments` method.
 Boto3 documentation:
 [Cloud9.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentIds`: `List`\[`str`\] *(required)*
 
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("cloud9").list_environments` method.
 Boto3 documentation:
 [Cloud9.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("cloud9").list_tags_for_resource` method.
 Boto3 documentation:
 [Cloud9.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("cloud9").tag_resource` method.
 Boto3 documentation:
 [Cloud9.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -266,7 +266,7 @@ Type annotations for `boto3.client("cloud9").untag_resource` method.
 Boto3 documentation:
 [Cloud9.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

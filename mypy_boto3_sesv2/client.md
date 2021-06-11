@@ -256,7 +256,7 @@ Type annotations for `boto3.client("sesv2").create_dedicated_ip_pool` method.
 Boto3 documentation:
 [SESV2.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_dedicated_ip_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `PoolName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("sesv2").create_email_template` method.
 Boto3 documentation:
 [SESV2.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `TemplateContent`:
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("sesv2").create_import_job` method.
 Boto3 documentation:
 [SESV2.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ImportDestination`:
   [ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef)
@@ -358,7 +358,7 @@ Type annotations for `boto3.client("sesv2").delete_configuration_set` method.
 Boto3 documentation:
 [SESV2.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
@@ -372,7 +372,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set_event_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `EventDestinationName`: `str` *(required)*
@@ -386,7 +386,7 @@ Type annotations for `boto3.client("sesv2").delete_contact` method.
 Boto3 documentation:
 [SESV2.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
 - `EmailAddress`: `str` *(required)*
@@ -400,7 +400,7 @@ Type annotations for `boto3.client("sesv2").delete_contact_list` method.
 Boto3 documentation:
 [SESV2.Client.delete_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
 
@@ -414,7 +414,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.delete_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_custom_verification_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 
@@ -427,7 +427,7 @@ Type annotations for `boto3.client("sesv2").delete_dedicated_ip_pool` method.
 Boto3 documentation:
 [SESV2.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_dedicated_ip_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `PoolName`: `str` *(required)*
 
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("sesv2").delete_email_identity` method.
 Boto3 documentation:
 [SESV2.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 
@@ -454,7 +454,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.delete_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -468,7 +468,7 @@ Type annotations for `boto3.client("sesv2").delete_email_template` method.
 Boto3 documentation:
 [SESV2.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 
@@ -482,7 +482,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.delete_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_suppressed_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailAddress`: `str` *(required)*
 
@@ -520,7 +520,7 @@ Type annotations for `boto3.client("sesv2").get_blacklist_reports` method.
 Boto3 documentation:
 [SESV2.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_blacklist_reports)
 
-Arguments:
+Keyword-only arguments:
 
 - `BlacklistItemNames`: `List`\[`str`\] *(required)*
 
@@ -534,7 +534,7 @@ Type annotations for `boto3.client("sesv2").get_configuration_set` method.
 Boto3 documentation:
 [SESV2.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
@@ -549,7 +549,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set_event_destinations)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
@@ -563,7 +563,7 @@ Type annotations for `boto3.client("sesv2").get_contact` method.
 Boto3 documentation:
 [SESV2.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
 - `EmailAddress`: `str` *(required)*
@@ -577,7 +577,7 @@ Type annotations for `boto3.client("sesv2").get_contact_list` method.
 Boto3 documentation:
 [SESV2.Client.get_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
 
@@ -592,7 +592,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.get_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_custom_verification_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 
@@ -606,7 +606,7 @@ Type annotations for `boto3.client("sesv2").get_dedicated_ip` method.
 Boto3 documentation:
 [SESV2.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ip)
 
-Arguments:
+Keyword-only arguments:
 
 - `Ip`: `str` *(required)*
 
@@ -648,7 +648,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_test_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReportId`: `str` *(required)*
 
@@ -663,7 +663,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_deliverability_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `CampaignId`: `str` *(required)*
 
@@ -694,7 +694,7 @@ Type annotations for `boto3.client("sesv2").get_email_identity` method.
 Boto3 documentation:
 [SESV2.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 
@@ -709,7 +709,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.get_email_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 
@@ -723,7 +723,7 @@ Type annotations for `boto3.client("sesv2").get_email_template` method.
 Boto3 documentation:
 [SESV2.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 
@@ -737,7 +737,7 @@ Type annotations for `boto3.client("sesv2").get_import_job` method.
 Boto3 documentation:
 [SESV2.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -751,7 +751,7 @@ Type annotations for `boto3.client("sesv2").get_suppressed_destination` method.
 Boto3 documentation:
 [SESV2.Client.get_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_suppressed_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailAddress`: `str` *(required)*
 
@@ -765,7 +765,7 @@ Type annotations for `boto3.client("sesv2").list_configuration_sets` method.
 Boto3 documentation:
 [SESV2.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_configuration_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
@@ -780,7 +780,7 @@ Type annotations for `boto3.client("sesv2").list_contact_lists` method.
 Boto3 documentation:
 [SESV2.Client.list_contact_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contact_lists)
 
-Arguments:
+Keyword-only arguments:
 
 - `PageSize`: `int`
 - `NextToken`: `str`
@@ -814,7 +814,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.list_custom_verification_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_custom_verification_email_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
@@ -829,7 +829,7 @@ Type annotations for `boto3.client("sesv2").list_dedicated_ip_pools` method.
 Boto3 documentation:
 [SESV2.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_dedicated_ip_pools)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
@@ -845,7 +845,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_deliverability_test_reports)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
@@ -879,7 +879,7 @@ Type annotations for `boto3.client("sesv2").list_email_identities` method.
 Boto3 documentation:
 [SESV2.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_identities)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
@@ -894,7 +894,7 @@ Type annotations for `boto3.client("sesv2").list_email_templates` method.
 Boto3 documentation:
 [SESV2.Client.list_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
@@ -946,7 +946,7 @@ Type annotations for `boto3.client("sesv2").list_tags_for_resource` method.
 Boto3 documentation:
 [SESV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -961,7 +961,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_dedicated_ip_warmup_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoWarmupEnabled`: `bool`
 
@@ -993,7 +993,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_sending_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `SendingEnabled`: `bool`
 
@@ -1007,7 +1007,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.put_account_suppression_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_suppression_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `SuppressedReasons`:
   `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
@@ -1038,7 +1038,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_reputation_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `ReputationMetricsEnabled`: `bool`
@@ -1053,7 +1053,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_sending_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `SendingEnabled`: `bool`
@@ -1068,7 +1068,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.put_configuration_set_suppression_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_suppression_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `SuppressedReasons`:
@@ -1084,7 +1084,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_tracking_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `CustomRedirectDomain`: `str`
@@ -1098,7 +1098,7 @@ Type annotations for `boto3.client("sesv2").put_dedicated_ip_in_pool` method.
 Boto3 documentation:
 [SESV2.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_in_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `Ip`: `str` *(required)*
 - `DestinationPoolName`: `str` *(required)*
@@ -1113,7 +1113,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_warmup_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `Ip`: `str` *(required)*
 - `WarmupPercentage`: `int` *(required)*
@@ -1128,7 +1128,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_deliverability_dashboard_option)
 
-Arguments:
+Keyword-only arguments:
 
 - `DashboardEnabled`: `bool` *(required)*
 - `SubscribedDomains`:
@@ -1144,7 +1144,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.put_email_identity_configuration_set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_configuration_set_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 - `ConfigurationSetName`: `str`
@@ -1159,7 +1159,7 @@ method.
 Boto3 documentation:
 [SESV2.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 - `SigningEnabled`: `bool`
@@ -1194,7 +1194,7 @@ Type annotations for
 Boto3 documentation:
 [SESV2.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_feedback_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 - `EmailForwardingEnabled`: `bool`
@@ -1225,7 +1225,7 @@ Type annotations for `boto3.client("sesv2").put_suppressed_destination` method.
 Boto3 documentation:
 [SESV2.Client.put_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_suppressed_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailAddress`: `str` *(required)*
 - `Reason`:
@@ -1309,7 +1309,7 @@ Type annotations for `boto3.client("sesv2").tag_resource` method.
 Boto3 documentation:
 [SESV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1323,7 +1323,7 @@ Type annotations for `boto3.client("sesv2").test_render_email_template` method.
 Boto3 documentation:
 [SESV2.Client.test_render_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.test_render_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `TemplateData`: `str` *(required)*
@@ -1338,7 +1338,7 @@ Type annotations for `boto3.client("sesv2").untag_resource` method.
 Boto3 documentation:
 [SESV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1438,7 +1438,7 @@ Type annotations for `boto3.client("sesv2").update_email_template` method.
 Boto3 documentation:
 [SESV2.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `TemplateContent`:

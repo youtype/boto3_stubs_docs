@@ -175,7 +175,7 @@ Type annotations for `boto3.client("customer-profiles").delete_domain` method.
 Boto3 documentation:
 [CustomerProfiles.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -190,7 +190,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Uri`: `str` *(required)*
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("customer-profiles").delete_profile` method.
 Boto3 documentation:
 [CustomerProfiles.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProfileId`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -257,7 +257,7 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.delete_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ObjectTypeName`: `str` *(required)*
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("customer-profiles").get_domain` method.
 Boto3 documentation:
 [CustomerProfiles.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -303,7 +303,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Uri`: `str` *(required)*
@@ -334,7 +334,7 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.get_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ObjectTypeName`: `str` *(required)*
@@ -350,7 +350,7 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.get_profile_object_type_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateId`: `str` *(required)*
 
@@ -381,7 +381,7 @@ Type annotations for `boto3.client("customer-profiles").list_domains` method.
 Boto3 documentation:
 [CustomerProfiles.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -414,7 +414,7 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.list_profile_object_type_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_type_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -466,7 +466,7 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -580,7 +580,7 @@ Type annotations for `boto3.client("customer-profiles").tag_resource` method.
 Boto3 documentation:
 [CustomerProfiles.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -594,7 +594,7 @@ Type annotations for `boto3.client("customer-profiles").untag_resource` method.
 Boto3 documentation:
 [CustomerProfiles.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

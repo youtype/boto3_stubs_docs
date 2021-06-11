@@ -98,7 +98,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.describe_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_entities_detection_v2_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -113,7 +113,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.describe_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_icd10_cm_inference_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -128,7 +128,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.describe_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_phi_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -143,7 +143,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.describe_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_rx_norm_inference_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -158,7 +158,7 @@ method.
 Boto3 documentation:
 [ComprehendMedical.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
@@ -173,7 +173,7 @@ method.
 Boto3 documentation:
 [ComprehendMedical.Client.detect_entities_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities_v2)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
@@ -187,7 +187,7 @@ Type annotations for `boto3.client("comprehendmedical").detect_phi` method.
 Boto3 documentation:
 [ComprehendMedical.Client.detect_phi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_phi)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
@@ -217,7 +217,7 @@ Type annotations for `boto3.client("comprehendmedical").infer_icd10_cm` method.
 Boto3 documentation:
 [ComprehendMedical.Client.infer_icd10_cm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_icd10_cm)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("comprehendmedical").infer_rx_norm` method.
 Boto3 documentation:
 [ComprehendMedical.Client.infer_rx_norm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_rx_norm)
 
-Arguments:
+Keyword-only arguments:
 
 - `Text`: `str` *(required)*
 
@@ -418,7 +418,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.stop_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_entities_detection_v2_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -433,7 +433,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.stop_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_icd10_cm_inference_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -448,7 +448,7 @@ method.
 Boto3 documentation:
 [ComprehendMedical.Client.stop_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_phi_detection_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -463,7 +463,7 @@ Type annotations for
 Boto3 documentation:
 [ComprehendMedical.Client.stop_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_rx_norm_inference_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 

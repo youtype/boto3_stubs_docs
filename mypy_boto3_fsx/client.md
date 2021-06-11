@@ -131,7 +131,7 @@ Type annotations for `boto3.client("fsx").cancel_data_repository_task` method.
 Boto3 documentation:
 [FSx.Client.cancel_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.cancel_data_repository_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskId`: `str` *(required)*
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("fsx").delete_backup` method.
 Boto3 documentation:
 [FSx.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 - `ClientRequestToken`: `str`
@@ -404,7 +404,7 @@ Type annotations for `boto3.client("fsx").tag_resource` method.
 Boto3 documentation:
 [FSx.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -418,7 +418,7 @@ Type annotations for `boto3.client("fsx").untag_resource` method.
 Boto3 documentation:
 [FSx.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

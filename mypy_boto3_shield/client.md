@@ -102,7 +102,7 @@ Type annotations for `boto3.client("shield").associate_drt_log_bucket` method.
 Boto3 documentation:
 [Shield.Client.associate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_log_bucket)
 
-Arguments:
+Keyword-only arguments:
 
 - `LogBucket`: `str` *(required)*
 
@@ -115,7 +115,7 @@ Type annotations for `boto3.client("shield").associate_drt_role` method.
 Boto3 documentation:
 [Shield.Client.associate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleArn`: `str` *(required)*
 
@@ -128,7 +128,7 @@ Type annotations for `boto3.client("shield").associate_health_check` method.
 Boto3 documentation:
 [Shield.Client.associate_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_health_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionId`: `str` *(required)*
 - `HealthCheckArn`: `str` *(required)*
@@ -143,7 +143,7 @@ Type annotations for
 Boto3 documentation:
 [Shield.Client.associate_proactive_engagement_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_proactive_engagement_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmergencyContactList`:
   `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("shield").delete_protection` method.
 Boto3 documentation:
 [Shield.Client.delete_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionId`: `str` *(required)*
 
@@ -232,7 +232,7 @@ Type annotations for `boto3.client("shield").delete_protection_group` method.
 Boto3 documentation:
 [Shield.Client.delete_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionGroupId`: `str` *(required)*
 
@@ -254,7 +254,7 @@ Type annotations for `boto3.client("shield").describe_attack` method.
 Boto3 documentation:
 [Shield.Client.describe_attack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttackId`: `str` *(required)*
 
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("shield").describe_protection` method.
 Boto3 documentation:
 [Shield.Client.describe_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionId`: `str`
 - `ResourceArn`: `str`
@@ -315,7 +315,7 @@ Type annotations for `boto3.client("shield").describe_protection_group` method.
 Boto3 documentation:
 [Shield.Client.describe_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionGroupId`: `str` *(required)*
 
@@ -350,7 +350,7 @@ method.
 Boto3 documentation:
 [Shield.Client.disassociate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_log_bucket)
 
-Arguments:
+Keyword-only arguments:
 
 - `LogBucket`: `str` *(required)*
 
@@ -372,7 +372,7 @@ Type annotations for `boto3.client("shield").disassociate_health_check` method.
 Boto3 documentation:
 [Shield.Client.disassociate_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_health_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtectionId`: `str` *(required)*
 - `HealthCheckArn`: `str` *(required)*
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("shield").list_protection_groups` method.
 Boto3 documentation:
 [Shield.Client.list_protection_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protection_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -455,7 +455,7 @@ Type annotations for `boto3.client("shield").list_protections` method.
 Boto3 documentation:
 [Shield.Client.list_protections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protections)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -487,7 +487,7 @@ Type annotations for `boto3.client("shield").list_tags_for_resource` method.
 Boto3 documentation:
 [Shield.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -501,7 +501,7 @@ Type annotations for `boto3.client("shield").tag_resource` method.
 Boto3 documentation:
 [Shield.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -515,7 +515,7 @@ Type annotations for `boto3.client("shield").untag_resource` method.
 Boto3 documentation:
 [Shield.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -530,7 +530,7 @@ method.
 Boto3 documentation:
 [Shield.Client.update_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_emergency_contact_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmergencyContactList`:
   `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
@@ -566,7 +566,7 @@ Type annotations for `boto3.client("shield").update_subscription` method.
 Boto3 documentation:
 [Shield.Client.update_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoRenew`: [AutoRenewType](./literals.md#autorenewtype)
 

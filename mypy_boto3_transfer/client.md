@@ -177,7 +177,7 @@ Type annotations for `boto3.client("transfer").delete_access` method.
 Boto3 documentation:
 [Transfer.Client.delete_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `ExternalId`: `str` *(required)*
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("transfer").delete_server` method.
 Boto3 documentation:
 [Transfer.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 
@@ -213,7 +213,7 @@ Type annotations for `boto3.client("transfer").delete_user` method.
 Boto3 documentation:
 [Transfer.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("transfer").describe_access` method.
 Boto3 documentation:
 [Transfer.Client.describe_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `ExternalId`: `str` *(required)*
@@ -241,7 +241,7 @@ method.
 Boto3 documentation:
 [Transfer.Client.describe_security_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `SecurityPolicyName`: `str` *(required)*
 
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("transfer").describe_server` method.
 Boto3 documentation:
 [Transfer.Client.describe_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 
@@ -269,7 +269,7 @@ Type annotations for `boto3.client("transfer").describe_user` method.
 Boto3 documentation:
 [Transfer.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `UserName`: `str` *(required)*
@@ -332,7 +332,7 @@ Type annotations for `boto3.client("transfer").list_security_policies` method.
 Boto3 documentation:
 [Transfer.Client.list_security_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -347,7 +347,7 @@ Type annotations for `boto3.client("transfer").list_servers` method.
 Boto3 documentation:
 [Transfer.Client.list_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("transfer").start_server` method.
 Boto3 documentation:
 [Transfer.Client.start_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 
@@ -404,7 +404,7 @@ Type annotations for `boto3.client("transfer").stop_server` method.
 Boto3 documentation:
 [Transfer.Client.stop_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("transfer").tag_resource` method.
 Boto3 documentation:
 [Transfer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -445,7 +445,7 @@ Type annotations for `boto3.client("transfer").untag_resource` method.
 Boto3 documentation:
 [Transfer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

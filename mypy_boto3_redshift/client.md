@@ -281,7 +281,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.accept_reserved_node_exchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.accept_reserved_node_exchange)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservedNodeId`: `str` *(required)*
 - `TargetReservedNodeOfferingId`: `str` *(required)*
@@ -366,7 +366,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.batch_delete_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.batch_delete_cluster_snapshots)
 
-Arguments:
+Keyword-only arguments:
 
 - `Identifiers`:
   `List`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
@@ -412,7 +412,7 @@ Type annotations for `boto3.client("redshift").cancel_resize` method.
 Boto3 documentation:
 [Redshift.Client.cancel_resize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.cancel_resize)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
@@ -599,7 +599,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.create_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_hsm_client_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `HsmClientCertificateIdentifier`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -693,7 +693,7 @@ Type annotations for `boto3.client("redshift").create_tags` method.
 Boto3 documentation:
 [Redshift.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -746,7 +746,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.delete_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 
@@ -758,7 +758,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.delete_cluster_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_security_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterSecurityGroupName`: `str` *(required)*
 
@@ -769,7 +769,7 @@ Type annotations for `boto3.client("redshift").delete_cluster_snapshot` method.
 Boto3 documentation:
 [Redshift.Client.delete_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotIdentifier`: `str` *(required)*
 - `SnapshotClusterIdentifier`: `str`
@@ -785,7 +785,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.delete_cluster_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_cluster_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterSubnetGroupName`: `str` *(required)*
 
@@ -796,7 +796,7 @@ Type annotations for `boto3.client("redshift").delete_endpoint_access` method.
 Boto3 documentation:
 [Redshift.Client.delete_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_endpoint_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 
@@ -810,7 +810,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_event_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
@@ -822,7 +822,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.delete_hsm_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_client_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `HsmClientCertificateIdentifier`: `str` *(required)*
 
@@ -834,7 +834,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.delete_hsm_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_hsm_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `HsmConfigurationIdentifier`: `str` *(required)*
 
@@ -862,7 +862,7 @@ Type annotations for `boto3.client("redshift").delete_scheduled_action` method.
 Boto3 documentation:
 [Redshift.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_scheduled_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScheduledActionName`: `str` *(required)*
 
@@ -874,7 +874,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.delete_snapshot_copy_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_copy_grant)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotCopyGrantName`: `str` *(required)*
 
@@ -886,7 +886,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.delete_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_snapshot_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScheduleIdentifier`: `str` *(required)*
 
@@ -897,7 +897,7 @@ Type annotations for `boto3.client("redshift").delete_tags` method.
 Boto3 documentation:
 [Redshift.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -909,7 +909,7 @@ Type annotations for `boto3.client("redshift").delete_usage_limit` method.
 Boto3 documentation:
 [Redshift.Client.delete_usage_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.delete_usage_limit)
 
-Arguments:
+Keyword-only arguments:
 
 - `UsageLimitId`: `str` *(required)*
 
@@ -921,7 +921,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_account_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttributeNames`: `List`\[`str`\]
 
@@ -1159,7 +1159,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_event_categories)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceType`: `str`
 
@@ -1249,7 +1249,7 @@ Type annotations for `boto3.client("redshift").describe_logging_status` method.
 Boto3 documentation:
 [Redshift.Client.describe_logging_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_logging_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
@@ -1352,7 +1352,7 @@ Type annotations for `boto3.client("redshift").describe_resize` method.
 Boto3 documentation:
 [Redshift.Client.describe_resize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.describe_resize)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
@@ -1496,7 +1496,7 @@ Type annotations for `boto3.client("redshift").disable_logging` method.
 Boto3 documentation:
 [Redshift.Client.disable_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_logging)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
@@ -1509,7 +1509,7 @@ Type annotations for `boto3.client("redshift").disable_snapshot_copy` method.
 Boto3 documentation:
 [Redshift.Client.disable_snapshot_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.disable_snapshot_copy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
@@ -1608,7 +1608,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.modify_aqua_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 - `AquaConfigurationStatus`:
@@ -1663,7 +1663,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.modify_cluster_db_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_db_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 - `RevisionTarget`: `str` *(required)*
@@ -1716,7 +1716,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.modify_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
@@ -1779,7 +1779,7 @@ Type annotations for `boto3.client("redshift").modify_endpoint_access` method.
 Boto3 documentation:
 [Redshift.Client.modify_endpoint_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_endpoint_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `VpcSecurityGroupIds`: `List`\[`str`\]
@@ -1853,7 +1853,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.modify_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_snapshot_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScheduleIdentifier`: `str` *(required)*
 - `ScheduleDefinitions`: `List`\[`str`\] *(required)*
@@ -1883,7 +1883,7 @@ Type annotations for `boto3.client("redshift").pause_cluster` method.
 Boto3 documentation:
 [Redshift.Client.pause_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.pause_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
@@ -1897,7 +1897,7 @@ method.
 Boto3 documentation:
 [Redshift.Client.purchase_reserved_node_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.purchase_reserved_node_offering)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservedNodeOfferingId`: `str` *(required)*
 - `NodeCount`: `int`
@@ -1912,7 +1912,7 @@ Type annotations for `boto3.client("redshift").reboot_cluster` method.
 Boto3 documentation:
 [Redshift.Client.reboot_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.reboot_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
@@ -2027,7 +2027,7 @@ Type annotations for `boto3.client("redshift").resume_cluster` method.
 Boto3 documentation:
 [Redshift.Client.resume_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.resume_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 
@@ -2092,7 +2092,7 @@ Type annotations for `boto3.client("redshift").rotate_encryption_key` method.
 Boto3 documentation:
 [Redshift.Client.rotate_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.rotate_encryption_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 

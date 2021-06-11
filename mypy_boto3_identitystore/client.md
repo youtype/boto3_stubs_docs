@@ -77,7 +77,7 @@ Type annotations for `boto3.client("identitystore").describe_group` method.
 Boto3 documentation:
 [IdentityStore.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityStoreId`: `str` *(required)*
 - `GroupId`: `str` *(required)*
@@ -92,7 +92,7 @@ Type annotations for `boto3.client("identitystore").describe_user` method.
 Boto3 documentation:
 [IdentityStore.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityStoreId`: `str` *(required)*
 - `UserId`: `str` *(required)*

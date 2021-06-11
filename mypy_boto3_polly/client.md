@@ -99,7 +99,7 @@ Type annotations for `boto3.client("polly").delete_lexicon` method.
 Boto3 documentation:
 [Polly.Client.delete_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("polly").get_lexicon` method.
 Boto3 documentation:
 [Polly.Client.get_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -158,7 +158,7 @@ Type annotations for `boto3.client("polly").get_speech_synthesis_task` method.
 Boto3 documentation:
 [Polly.Client.get_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `TaskId`: `str` *(required)*
 
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("polly").list_lexicons` method.
 Boto3 documentation:
 [Polly.Client.list_lexicons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -202,7 +202,7 @@ Type annotations for `boto3.client("polly").put_lexicon` method.
 Boto3 documentation:
 [Polly.Client.put_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Content`: `str` *(required)*

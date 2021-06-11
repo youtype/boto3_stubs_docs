@@ -320,7 +320,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.associate_approval_rule_template_with_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.associate_approval_rule_template_with_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
@@ -334,7 +334,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.batch_associate_approval_rule_template_with_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_associate_approval_rule_template_with_repositories)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryNames`: `List`\[`str`\] *(required)*
@@ -378,7 +378,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryNames`: `List`\[`str`\] *(required)*
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("codecommit").batch_get_commits` method.
 Boto3 documentation:
 [CodeCommit.Client.batch_get_commits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_commits)
 
-Arguments:
+Keyword-only arguments:
 
 - `commitIds`: `List`\[`str`\] *(required)*
 - `repositoryName`: `str` *(required)*
@@ -409,7 +409,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.batch_get_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_repositories)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryNames`: `List`\[`str`\] *(required)*
 
@@ -572,7 +572,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.delete_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_approval_rule_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 
@@ -586,7 +586,7 @@ Type annotations for `boto3.client("codecommit").delete_branch` method.
 Boto3 documentation:
 [CodeCommit.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_branch)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
@@ -601,7 +601,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.delete_comment_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_comment_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `commentId`: `str` *(required)*
 
@@ -636,7 +636,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.delete_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_pull_request_approval_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `approvalRuleName`: `str` *(required)*
@@ -651,7 +651,7 @@ Type annotations for `boto3.client("codecommit").delete_repository` method.
 Boto3 documentation:
 [CodeCommit.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 
@@ -713,7 +713,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.disassociate_approval_rule_template_from_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.disassociate_approval_rule_template_from_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
@@ -726,7 +726,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.evaluate_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.evaluate_pull_request_approval_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
@@ -759,7 +759,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.get_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_approval_rule_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 
@@ -773,7 +773,7 @@ Type annotations for `boto3.client("codecommit").get_blob` method.
 Boto3 documentation:
 [CodeCommit.Client.get_blob](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_blob)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `blobId`: `str` *(required)*
@@ -787,7 +787,7 @@ Type annotations for `boto3.client("codecommit").get_branch` method.
 Boto3 documentation:
 [CodeCommit.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_branch)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str`
 - `branchName`: `str`
@@ -801,7 +801,7 @@ Type annotations for `boto3.client("codecommit").get_comment` method.
 Boto3 documentation:
 [CodeCommit.Client.get_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment)
 
-Arguments:
+Keyword-only arguments:
 
 - `commentId`: `str` *(required)*
 
@@ -870,7 +870,7 @@ Type annotations for `boto3.client("codecommit").get_commit` method.
 Boto3 documentation:
 [CodeCommit.Client.get_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_commit)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `commitId`: `str` *(required)*
@@ -998,7 +998,7 @@ Type annotations for `boto3.client("codecommit").get_pull_request` method.
 Boto3 documentation:
 [CodeCommit.Client.get_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 
@@ -1013,7 +1013,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.get_pull_request_approval_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_approval_states)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
@@ -1029,7 +1029,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.get_pull_request_override_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_override_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
@@ -1044,7 +1044,7 @@ Type annotations for `boto3.client("codecommit").get_repository` method.
 Boto3 documentation:
 [CodeCommit.Client.get_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 
@@ -1059,7 +1059,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.get_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository_triggers)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 
@@ -1074,7 +1074,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.list_approval_rule_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_approval_rule_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -1107,7 +1107,7 @@ Type annotations for `boto3.client("codecommit").list_branches` method.
 Boto3 documentation:
 [CodeCommit.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_branches)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `nextToken`: `str`
@@ -1175,7 +1175,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `nextToken`: `str`
@@ -1407,7 +1407,7 @@ Type annotations for `boto3.client("codecommit").put_comment_reaction` method.
 Boto3 documentation:
 [CodeCommit.Client.put_comment_reaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_comment_reaction)
 
-Arguments:
+Keyword-only arguments:
 
 - `commentId`: `str` *(required)*
 - `reactionValue`: `str` *(required)*
@@ -1441,7 +1441,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.put_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_repository_triggers)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `triggers`:
@@ -1458,7 +1458,7 @@ Type annotations for `boto3.client("codecommit").tag_resource` method.
 Boto3 documentation:
 [CodeCommit.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -1471,7 +1471,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.test_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.test_repository_triggers)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `triggers`:
@@ -1488,7 +1488,7 @@ Type annotations for `boto3.client("codecommit").untag_resource` method.
 Boto3 documentation:
 [CodeCommit.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -1518,7 +1518,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.update_approval_rule_template_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_description)
 
-Arguments:
+Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `approvalRuleTemplateDescription`: `str` *(required)*
@@ -1534,7 +1534,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.update_approval_rule_template_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `oldApprovalRuleTemplateName`: `str` *(required)*
 - `newApprovalRuleTemplateName`: `str` *(required)*
@@ -1549,7 +1549,7 @@ Type annotations for `boto3.client("codecommit").update_comment` method.
 Boto3 documentation:
 [CodeCommit.Client.update_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_comment)
 
-Arguments:
+Keyword-only arguments:
 
 - `commentId`: `str` *(required)*
 - `content`: `str` *(required)*
@@ -1564,7 +1564,7 @@ Type annotations for `boto3.client("codecommit").update_default_branch` method.
 Boto3 documentation:
 [CodeCommit.Client.update_default_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_default_branch)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `defaultBranchName`: `str` *(required)*
@@ -1610,7 +1610,7 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_description)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `description`: `str` *(required)*
@@ -1626,7 +1626,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `pullRequestStatus`:
@@ -1644,7 +1644,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_title](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_title)
 
-Arguments:
+Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `title`: `str` *(required)*
@@ -1660,7 +1660,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.update_repository_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_description)
 
-Arguments:
+Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `repositoryDescription`: `str`
@@ -1673,7 +1673,7 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.update_repository_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `oldName`: `str` *(required)*
 - `newName`: `str` *(required)*

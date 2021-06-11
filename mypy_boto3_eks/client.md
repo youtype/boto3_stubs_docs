@@ -254,7 +254,7 @@ Type annotations for `boto3.client("eks").delete_addon` method.
 Boto3 documentation:
 [EKS.Client.delete_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_addon)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `addonName`: `str` *(required)*
@@ -269,7 +269,7 @@ Type annotations for `boto3.client("eks").delete_cluster` method.
 Boto3 documentation:
 [EKS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("eks").delete_fargate_profile` method.
 Boto3 documentation:
 [EKS.Client.delete_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_fargate_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `fargateProfileName`: `str` *(required)*
@@ -298,7 +298,7 @@ Type annotations for `boto3.client("eks").delete_nodegroup` method.
 Boto3 documentation:
 [EKS.Client.delete_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_nodegroup)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*
@@ -313,7 +313,7 @@ Type annotations for `boto3.client("eks").describe_addon` method.
 Boto3 documentation:
 [EKS.Client.describe_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `addonName`: `str` *(required)*
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("eks").describe_cluster` method.
 Boto3 documentation:
 [EKS.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -359,7 +359,7 @@ Type annotations for `boto3.client("eks").describe_fargate_profile` method.
 Boto3 documentation:
 [EKS.Client.describe_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_fargate_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `fargateProfileName`: `str` *(required)*
@@ -375,7 +375,7 @@ method.
 Boto3 documentation:
 [EKS.Client.describe_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_identity_provider_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `identityProviderConfig`:
@@ -392,7 +392,7 @@ Type annotations for `boto3.client("eks").describe_nodegroup` method.
 Boto3 documentation:
 [EKS.Client.describe_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_nodegroup)
 
-Arguments:
+Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*
@@ -474,7 +474,7 @@ Type annotations for `boto3.client("eks").list_clusters` method.
 Boto3 documentation:
 [EKS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -538,7 +538,7 @@ Type annotations for `boto3.client("eks").list_tags_for_resource` method.
 Boto3 documentation:
 [EKS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("eks").tag_resource` method.
 Boto3 documentation:
 [EKS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -584,7 +584,7 @@ Type annotations for `boto3.client("eks").untag_resource` method.
 Boto3 documentation:
 [EKS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

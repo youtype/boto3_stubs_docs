@@ -106,7 +106,7 @@ Type annotations for `boto3.client("textract").detect_document_text` method.
 Boto3 documentation:
 [Textract.Client.detect_document_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.detect_document_text)
 
-Arguments:
+Keyword-only arguments:
 
 - `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
 

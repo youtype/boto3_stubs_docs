@@ -214,7 +214,7 @@ Type annotations for `boto3.client("network-firewall").delete_firewall` method.
 Boto3 documentation:
 [NetworkFirewall.Client.delete_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallName`: `str`
 - `FirewallArn`: `str`
@@ -230,7 +230,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.delete_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallPolicyName`: `str`
 - `FirewallPolicyArn`: `str`
@@ -246,7 +246,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -277,7 +277,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.describe_firewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallName`: `str`
 - `FirewallArn`: `str`
@@ -293,7 +293,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkFirewall.Client.describe_firewall_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_firewall_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallPolicyName`: `str`
 - `FirewallPolicyArn`: `str`
@@ -309,7 +309,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkFirewall.Client.describe_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
@@ -325,7 +325,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkFirewall.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.describe_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -392,7 +392,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.list_firewall_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_firewall_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -424,7 +424,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.list_rule_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -457,7 +457,7 @@ method.
 Boto3 documentation:
 [NetworkFirewall.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.put_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("network-firewall").tag_resource` method.
 Boto3 documentation:
 [NetworkFirewall.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("network-firewall").untag_resource` method.
 Boto3 documentation:
 [NetworkFirewall.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

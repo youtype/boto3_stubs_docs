@@ -156,7 +156,7 @@ Type annotations for `boto3.client("rekognition").create_collection` method.
 Boto3 documentation:
 [Rekognition.Client.create_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("rekognition").create_project` method.
 Boto3 documentation:
 [Rekognition.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 
@@ -235,7 +235,7 @@ Type annotations for `boto3.client("rekognition").delete_collection` method.
 Boto3 documentation:
 [Rekognition.Client.delete_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("rekognition").delete_faces` method.
 Boto3 documentation:
 [Rekognition.Client.delete_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 - `FaceIds`: `List`\[`str`\] *(required)*
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("rekognition").delete_project` method.
 Boto3 documentation:
 [Rekognition.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectArn`: `str` *(required)*
 
@@ -279,7 +279,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.delete_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectVersionArn`: `str` *(required)*
 
@@ -294,7 +294,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.delete_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("rekognition").describe_collection` method.
 Boto3 documentation:
 [Rekognition.Client.describe_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("rekognition").describe_projects` method.
 Boto3 documentation:
 [Rekognition.Client.describe_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -355,7 +355,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.describe_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -386,7 +386,7 @@ Type annotations for `boto3.client("rekognition").detect_faces` method.
 Boto3 documentation:
 [Rekognition.Client.detect_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces)
 
-Arguments:
+Keyword-only arguments:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `Attributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
@@ -436,7 +436,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.detect_protective_equipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment)
 
-Arguments:
+Keyword-only arguments:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `SummarizationAttributes`:
@@ -452,7 +452,7 @@ Type annotations for `boto3.client("rekognition").detect_text` method.
 Boto3 documentation:
 [Rekognition.Client.detect_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text)
 
-Arguments:
+Keyword-only arguments:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `Filters`:
@@ -484,7 +484,7 @@ Type annotations for `boto3.client("rekognition").get_celebrity_info` method.
 Boto3 documentation:
 [Rekognition.Client.get_celebrity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -654,7 +654,7 @@ Type annotations for `boto3.client("rekognition").list_collections` method.
 Boto3 documentation:
 [Rekognition.Client.list_collections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -685,7 +685,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.list_stream_processors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -701,7 +701,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -716,7 +716,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.recognize_celebrities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities)
 
-Arguments:
+Keyword-only arguments:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 
@@ -884,7 +884,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.start_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectVersionArn`: `str` *(required)*
 - `MinInferenceUnits`: `int` *(required)*
@@ -923,7 +923,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.start_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -956,7 +956,7 @@ Type annotations for `boto3.client("rekognition").stop_project_version` method.
 Boto3 documentation:
 [Rekognition.Client.stop_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectVersionArn`: `str` *(required)*
 
@@ -971,7 +971,7 @@ method.
 Boto3 documentation:
 [Rekognition.Client.stop_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -984,7 +984,7 @@ Type annotations for `boto3.client("rekognition").tag_resource` method.
 Boto3 documentation:
 [Rekognition.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -998,7 +998,7 @@ Type annotations for `boto3.client("rekognition").untag_resource` method.
 Boto3 documentation:
 [Rekognition.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

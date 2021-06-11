@@ -123,7 +123,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.accept_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDeviceId`: `str` *(required)*
 
@@ -153,7 +153,7 @@ Type annotations for `boto3.client("medialive").batch_start` method.
 Boto3 documentation:
 [MediaLive.Client.batch_start](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_start)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("medialive").batch_stop` method.
 Boto3 documentation:
 [MediaLive.Client.batch_stop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_stop)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelIds`: `List`\[`str`\]
 - `MultiplexIds`: `List`\[`str`\]
@@ -213,7 +213,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.cancel_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDeviceId`: `str` *(required)*
 
@@ -286,7 +286,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.create_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input_security_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 - `WhitelistRules`:
@@ -358,7 +358,7 @@ Type annotations for `boto3.client("medialive").create_tags` method.
 Boto3 documentation:
 [MediaLive.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -370,7 +370,7 @@ Type annotations for `boto3.client("medialive").delete_channel` method.
 Boto3 documentation:
 [MediaLive.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
@@ -384,7 +384,7 @@ Type annotations for `boto3.client("medialive").delete_input` method.
 Boto3 documentation:
 [MediaLive.Client.delete_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputId`: `str` *(required)*
 
@@ -398,7 +398,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.delete_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input_security_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputSecurityGroupId`: `str` *(required)*
 
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("medialive").delete_multiplex` method.
 Boto3 documentation:
 [MediaLive.Client.delete_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex)
 
-Arguments:
+Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 
@@ -426,7 +426,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.delete_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program)
 
-Arguments:
+Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 - `ProgramName`: `str` *(required)*
@@ -441,7 +441,7 @@ Type annotations for `boto3.client("medialive").delete_reservation` method.
 Boto3 documentation:
 [MediaLive.Client.delete_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_reservation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservationId`: `str` *(required)*
 
@@ -455,7 +455,7 @@ Type annotations for `boto3.client("medialive").delete_schedule` method.
 Boto3 documentation:
 [MediaLive.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
@@ -468,7 +468,7 @@ Type annotations for `boto3.client("medialive").delete_tags` method.
 Boto3 documentation:
 [MediaLive.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -480,7 +480,7 @@ Type annotations for `boto3.client("medialive").describe_channel` method.
 Boto3 documentation:
 [MediaLive.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
@@ -494,7 +494,7 @@ Type annotations for `boto3.client("medialive").describe_input` method.
 Boto3 documentation:
 [MediaLive.Client.describe_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputId`: `str` *(required)*
 
@@ -508,7 +508,7 @@ Type annotations for `boto3.client("medialive").describe_input_device` method.
 Boto3 documentation:
 [MediaLive.Client.describe_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDeviceId`: `str` *(required)*
 
@@ -523,7 +523,7 @@ Type annotations for
 Boto3 documentation:
 [MediaLive.Client.describe_input_device_thumbnail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDeviceId`: `str` *(required)*
 - `Accept`: `Literal['image/jpeg']` (see
@@ -540,7 +540,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.describe_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_security_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputSecurityGroupId`: `str` *(required)*
 
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("medialive").describe_multiplex` method.
 Boto3 documentation:
 [MediaLive.Client.describe_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex)
 
-Arguments:
+Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 
@@ -569,7 +569,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.describe_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program)
 
-Arguments:
+Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 - `ProgramName`: `str` *(required)*
@@ -584,7 +584,7 @@ Type annotations for `boto3.client("medialive").describe_offering` method.
 Boto3 documentation:
 [MediaLive.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_offering)
 
-Arguments:
+Keyword-only arguments:
 
 - `OfferingId`: `str` *(required)*
 
@@ -598,7 +598,7 @@ Type annotations for `boto3.client("medialive").describe_reservation` method.
 Boto3 documentation:
 [MediaLive.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_reservation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservationId`: `str` *(required)*
 
@@ -644,7 +644,7 @@ Type annotations for `boto3.client("medialive").list_channels` method.
 Boto3 documentation:
 [MediaLive.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -676,7 +676,7 @@ Type annotations for `boto3.client("medialive").list_input_devices` method.
 Boto3 documentation:
 [MediaLive.Client.list_input_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_devices)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -692,7 +692,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.list_input_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_security_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -707,7 +707,7 @@ Type annotations for `boto3.client("medialive").list_inputs` method.
 Boto3 documentation:
 [MediaLive.Client.list_inputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_inputs)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -738,7 +738,7 @@ Type annotations for `boto3.client("medialive").list_multiplexes` method.
 Boto3 documentation:
 [MediaLive.Client.list_multiplexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplexes)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -801,7 +801,7 @@ Type annotations for `boto3.client("medialive").list_tags_for_resource` method.
 Boto3 documentation:
 [MediaLive.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -835,7 +835,7 @@ method.
 Boto3 documentation:
 [MediaLive.Client.reject_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer)
 
-Arguments:
+Keyword-only arguments:
 
 - `InputDeviceId`: `str` *(required)*
 
@@ -848,7 +848,7 @@ Type annotations for `boto3.client("medialive").start_channel` method.
 Boto3 documentation:
 [MediaLive.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
@@ -862,7 +862,7 @@ Type annotations for `boto3.client("medialive").start_multiplex` method.
 Boto3 documentation:
 [MediaLive.Client.start_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_multiplex)
 
-Arguments:
+Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 
@@ -876,7 +876,7 @@ Type annotations for `boto3.client("medialive").stop_channel` method.
 Boto3 documentation:
 [MediaLive.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelId`: `str` *(required)*
 
@@ -890,7 +890,7 @@ Type annotations for `boto3.client("medialive").stop_multiplex` method.
 Boto3 documentation:
 [MediaLive.Client.stop_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_multiplex)
 
-Arguments:
+Keyword-only arguments:
 
 - `MultiplexId`: `str` *(required)*
 
@@ -1062,7 +1062,7 @@ Type annotations for `boto3.client("medialive").update_reservation` method.
 Boto3 documentation:
 [MediaLive.Client.update_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_reservation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReservationId`: `str` *(required)*
 - `Name`: `str`

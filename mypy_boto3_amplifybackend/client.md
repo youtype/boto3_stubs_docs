@@ -172,7 +172,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.create_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendManagerAppId`: `str`
@@ -187,7 +187,7 @@ Type annotations for `boto3.client("amplifybackend").create_token` method.
 Boto3 documentation:
 [AmplifyBackend.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("amplifybackend").delete_backend` method.
 Boto3 documentation:
 [AmplifyBackend.Client.delete_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str` *(required)*
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("amplifybackend").delete_token` method.
 Boto3 documentation:
 [AmplifyBackend.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `SessionId`: `str` *(required)*
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("amplifybackend").get_backend` method.
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str`
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("amplifybackend").get_token` method.
 Boto3 documentation:
 [AmplifyBackend.Client.get_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `SessionId`: `str` *(required)*
@@ -417,7 +417,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.remove_all_backends](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `CleanAmplifyApp`: `bool`
@@ -433,7 +433,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.remove_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 
@@ -487,7 +487,7 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.update_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `LoginAuthConfig`:

@@ -185,7 +185,7 @@ Type annotations for `boto3.client("managedblockchain").delete_member` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("managedblockchain").get_member` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("managedblockchain").get_network` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.get_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_network)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 
@@ -273,7 +273,7 @@ Type annotations for `boto3.client("managedblockchain").get_proposal` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.get_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_proposal)
 
-Arguments:
+Keyword-only arguments:
 
 - `NetworkId`: `str` *(required)*
 - `ProposalId`: `str` *(required)*
@@ -288,7 +288,7 @@ method.
 Boto3 documentation:
 [ManagedBlockchain.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -390,7 +390,7 @@ method.
 Boto3 documentation:
 [ManagedBlockchain.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -405,7 +405,7 @@ method.
 Boto3 documentation:
 [ManagedBlockchain.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.reject_invitation)
 
-Arguments:
+Keyword-only arguments:
 
 - `InvitationId`: `str` *(required)*
 
@@ -418,7 +418,7 @@ Type annotations for `boto3.client("managedblockchain").tag_resource` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("managedblockchain").untag_resource` method.
 Boto3 documentation:
 [ManagedBlockchain.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

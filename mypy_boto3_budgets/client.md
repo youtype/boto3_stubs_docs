@@ -179,7 +179,7 @@ Type annotations for `boto3.client("budgets").delete_budget` method.
 Boto3 documentation:
 [Budgets.Client.delete_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -243,7 +243,7 @@ Type annotations for `boto3.client("budgets").describe_budget` method.
 Boto3 documentation:
 [Budgets.Client.describe_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BudgetName`: `str` *(required)*
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("budgets").update_budget` method.
 Boto3 documentation:
 [Budgets.Client.update_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `NewBudget`: [BudgetTypeDef](./type_defs.md#budgettypedef) *(required)*

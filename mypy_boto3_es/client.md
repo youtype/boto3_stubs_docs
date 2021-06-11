@@ -108,7 +108,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
@@ -122,7 +122,7 @@ Type annotations for `boto3.client("es").add_tags` method.
 Boto3 documentation:
 [ElasticsearchService.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.add_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("es").associate_package` method.
 Boto3 documentation:
 [ElasticsearchService.Client.associate_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.associate_package)
 
-Arguments:
+Keyword-only arguments:
 
 - `PackageID`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -163,7 +163,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.cancel_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.cancel_elasticsearch_service_software_update)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("es").delete_elasticsearch_domain` method.
 Boto3 documentation:
 [ElasticsearchService.Client.delete_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -278,7 +278,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
@@ -293,7 +293,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("es").delete_package` method.
 Boto3 documentation:
 [ElasticsearchService.Client.delete_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_package)
 
-Arguments:
+Keyword-only arguments:
 
 - `PackageID`: `str` *(required)*
 
@@ -337,7 +337,7 @@ Type annotations for `boto3.client("es").describe_elasticsearch_domain` method.
 Boto3 documentation:
 [ElasticsearchService.Client.describe_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -352,7 +352,7 @@ method.
 Boto3 documentation:
 [ElasticsearchService.Client.describe_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -367,7 +367,7 @@ method.
 Boto3 documentation:
 [ElasticsearchService.Client.describe_elasticsearch_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainNames`: `List`\[`str`\] *(required)*
 
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("es").dissociate_package` method.
 Boto3 documentation:
 [ElasticsearchService.Client.dissociate_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.dissociate_package)
 
-Arguments:
+Keyword-only arguments:
 
 - `PackageID`: `str` *(required)*
 - `DomainName`: `str` *(required)*
@@ -517,7 +517,7 @@ method.
 Boto3 documentation:
 [ElasticsearchService.Client.get_compatible_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_compatible_elasticsearch_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str`
 
@@ -563,7 +563,7 @@ Type annotations for `boto3.client("es").get_upgrade_status` method.
 Boto3 documentation:
 [ElasticsearchService.Client.get_upgrade_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -621,7 +621,7 @@ Type annotations for `boto3.client("es").list_elasticsearch_versions` method.
 Boto3 documentation:
 [ElasticsearchService.Client.list_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -652,7 +652,7 @@ Type annotations for `boto3.client("es").list_tags` method.
 Boto3 documentation:
 [ElasticsearchService.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
 
@@ -683,7 +683,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
@@ -697,7 +697,7 @@ Type annotations for `boto3.client("es").remove_tags` method.
 Boto3 documentation:
 [ElasticsearchService.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.remove_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -710,7 +710,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.start_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.start_elasticsearch_service_software_update)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 

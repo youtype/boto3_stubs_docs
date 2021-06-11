@@ -128,7 +128,7 @@ Type annotations for `boto3.client("elbv2").add_listener_certificates` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.add_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_listener_certificates)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `Certificates`:
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("elbv2").add_tags` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArns`: `List`\[`str`\] *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("elbv2").delete_listener` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("elbv2").delete_load_balancer` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 
@@ -294,7 +294,7 @@ Type annotations for `boto3.client("elbv2").delete_rule` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleArn`: `str` *(required)*
 
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("elbv2").delete_target_group` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.delete_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_target_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 
@@ -320,7 +320,7 @@ Type annotations for `boto3.client("elbv2").deregister_targets` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.deregister_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.deregister_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
@@ -336,7 +336,7 @@ Type annotations for `boto3.client("elbv2").describe_account_limits` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_account_limits)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `PageSize`: `int`
@@ -386,7 +386,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancer_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 
@@ -450,7 +450,7 @@ Type annotations for `boto3.client("elbv2").describe_tags` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArns`: `List`\[`str`\] *(required)*
 
@@ -464,7 +464,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_group_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 
@@ -496,7 +496,7 @@ Type annotations for `boto3.client("elbv2").describe_target_health` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.describe_target_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_health)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
@@ -550,7 +550,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_load_balancer_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 - `Attributes`:
@@ -607,7 +607,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.modify_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Attributes`:
@@ -624,7 +624,7 @@ Type annotations for `boto3.client("elbv2").register_targets` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.register_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.register_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
@@ -641,7 +641,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.remove_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_listener_certificates)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `Certificates`:
@@ -657,7 +657,7 @@ Type annotations for `boto3.client("elbv2").remove_tags` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArns`: `List`\[`str`\] *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -671,7 +671,7 @@ Type annotations for `boto3.client("elbv2").set_ip_address_type` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
@@ -687,7 +687,7 @@ Type annotations for `boto3.client("elbv2").set_rule_priorities` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.set_rule_priorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_rule_priorities)
 
-Arguments:
+Keyword-only arguments:
 
 - `RulePriorities`:
   `List`\[[RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef)\]
@@ -703,7 +703,7 @@ Type annotations for `boto3.client("elbv2").set_security_groups` method.
 Boto3 documentation:
 [ElasticLoadBalancingv2.Client.set_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_security_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 - `SecurityGroups`: `List`\[`str`\] *(required)*

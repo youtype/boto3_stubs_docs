@@ -116,7 +116,7 @@ Type annotations for `boto3.client("stepfunctions").create_activity` method.
 Boto3 documentation:
 [SFN.Client.create_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("stepfunctions").delete_activity` method.
 Boto3 documentation:
 [SFN.Client.delete_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity)
 
-Arguments:
+Keyword-only arguments:
 
 - `activityArn`: `str` *(required)*
 
@@ -168,7 +168,7 @@ method.
 Boto3 documentation:
 [SFN.Client.delete_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine)
 
-Arguments:
+Keyword-only arguments:
 
 - `stateMachineArn`: `str` *(required)*
 
@@ -181,7 +181,7 @@ Type annotations for `boto3.client("stepfunctions").describe_activity` method.
 Boto3 documentation:
 [SFN.Client.describe_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity)
 
-Arguments:
+Keyword-only arguments:
 
 - `activityArn`: `str` *(required)*
 
@@ -195,7 +195,7 @@ Type annotations for `boto3.client("stepfunctions").describe_execution` method.
 Boto3 documentation:
 [SFN.Client.describe_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `executionArn`: `str` *(required)*
 
@@ -210,7 +210,7 @@ method.
 Boto3 documentation:
 [SFN.Client.describe_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
 
-Arguments:
+Keyword-only arguments:
 
 - `stateMachineArn`: `str` *(required)*
 
@@ -225,7 +225,7 @@ Type annotations for
 Boto3 documentation:
 [SFN.Client.describe_state_machine_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `executionArn`: `str` *(required)*
 
@@ -256,7 +256,7 @@ Type annotations for `boto3.client("stepfunctions").get_activity_task` method.
 Boto3 documentation:
 [SFN.Client.get_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `activityArn`: `str` *(required)*
 - `workerName`: `str`
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("stepfunctions").list_activities` method.
 Boto3 documentation:
 [SFN.Client.list_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -323,7 +323,7 @@ method.
 Boto3 documentation:
 [SFN.Client.list_state_machines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -339,7 +339,7 @@ method.
 Boto3 documentation:
 [SFN.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -369,7 +369,7 @@ method.
 Boto3 documentation:
 [SFN.Client.send_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
 
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("stepfunctions").send_task_success` method.
 Boto3 documentation:
 [SFN.Client.send_task_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
 - `output`: `str` *(required)*
@@ -447,7 +447,7 @@ Type annotations for `boto3.client("stepfunctions").tag_resource` method.
 Boto3 documentation:
 [SFN.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -461,7 +461,7 @@ Type annotations for `boto3.client("stepfunctions").untag_resource` method.
 Boto3 documentation:
 [SFN.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

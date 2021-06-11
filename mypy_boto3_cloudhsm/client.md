@@ -79,7 +79,7 @@ Type annotations for `boto3.client("cloudhsm").add_tags_to_resource` method.
 Boto3 documentation:
 [CloudHSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -107,7 +107,7 @@ Type annotations for `boto3.client("cloudhsm").create_hapg` method.
 Boto3 documentation:
 [CloudHSM.Client.create_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg)
 
-Arguments:
+Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("cloudhsm").create_luna_client` method.
 Boto3 documentation:
 [CloudHSM.Client.create_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client)
 
-Arguments:
+Keyword-only arguments:
 
 - `Certificate`: `str` *(required)*
 - `Label`: `str`
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("cloudhsm").delete_hapg` method.
 Boto3 documentation:
 [CloudHSM.Client.delete_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg)
 
-Arguments:
+Keyword-only arguments:
 
 - `HapgArn`: `str` *(required)*
 
@@ -169,7 +169,7 @@ Type annotations for `boto3.client("cloudhsm").delete_hsm` method.
 Boto3 documentation:
 [CloudHSM.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm)
 
-Arguments:
+Keyword-only arguments:
 
 - `HsmArn`: `str` *(required)*
 
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("cloudhsm").delete_luna_client` method.
 Boto3 documentation:
 [CloudHSM.Client.delete_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientArn`: `str` *(required)*
 
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("cloudhsm").describe_hapg` method.
 Boto3 documentation:
 [CloudHSM.Client.describe_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg)
 
-Arguments:
+Keyword-only arguments:
 
 - `HapgArn`: `str` *(required)*
 
@@ -210,7 +210,7 @@ Type annotations for `boto3.client("cloudhsm").describe_hsm` method.
 Boto3 documentation:
 [CloudHSM.Client.describe_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm)
 
-Arguments:
+Keyword-only arguments:
 
 - `HsmArn`: `str`
 - `HsmSerialNumber`: `str`
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("cloudhsm").describe_luna_client` method.
 Boto3 documentation:
 [CloudHSM.Client.describe_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientArn`: `str`
 - `CertificateFingerprint`: `str`
@@ -282,7 +282,7 @@ Type annotations for `boto3.client("cloudhsm").list_hapgs` method.
 Boto3 documentation:
 [CloudHSM.Client.list_hapgs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -295,7 +295,7 @@ Type annotations for `boto3.client("cloudhsm").list_hsms` method.
 Boto3 documentation:
 [CloudHSM.Client.list_hsms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -308,7 +308,7 @@ Type annotations for `boto3.client("cloudhsm").list_luna_clients` method.
 Boto3 documentation:
 [CloudHSM.Client.list_luna_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("cloudhsm").list_tags_for_resource` method.
 Boto3 documentation:
 [CloudHSM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -369,7 +369,7 @@ Type annotations for `boto3.client("cloudhsm").modify_luna_client` method.
 Boto3 documentation:
 [CloudHSM.Client.modify_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClientArn`: `str` *(required)*
 - `Certificate`: `str` *(required)*
@@ -385,7 +385,7 @@ method.
 Boto3 documentation:
 [CloudHSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeyList`: `List`\[`str`\] *(required)*

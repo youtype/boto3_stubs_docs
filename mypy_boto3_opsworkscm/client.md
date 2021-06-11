@@ -164,7 +164,7 @@ Type annotations for `boto3.client("opsworkscm").delete_backup` method.
 Boto3 documentation:
 [OpsWorksCM.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 
@@ -177,7 +177,7 @@ Type annotations for `boto3.client("opsworkscm").delete_server` method.
 Boto3 documentation:
 [OpsWorksCM.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 
@@ -235,7 +235,7 @@ Type annotations for
 Boto3 documentation:
 [OpsWorksCM.Client.describe_node_association_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_node_association_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `NodeAssociationStatusToken`: `str` *(required)*
 - `ServerName`: `str` *(required)*
@@ -352,7 +352,7 @@ Type annotations for `boto3.client("opsworkscm").start_maintenance` method.
 Boto3 documentation:
 [OpsWorksCM.Client.start_maintenance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.start_maintenance)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerName`: `str` *(required)*
 - `EngineAttributes`:
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("opsworkscm").tag_resource` method.
 Boto3 documentation:
 [OpsWorksCM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("opsworkscm").untag_resource` method.
 Boto3 documentation:
 [OpsWorksCM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

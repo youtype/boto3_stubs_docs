@@ -121,7 +121,7 @@ Type annotations for `boto3.client("kendra").batch_get_document_status` method.
 Boto3 documentation:
 [kendra.Client.batch_get_document_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_get_document_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 - `DocumentInfoList`:
@@ -168,7 +168,7 @@ Type annotations for `boto3.client("kendra").clear_query_suggestions` method.
 Boto3 documentation:
 [kendra.Client.clear_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.clear_query_suggestions)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 
@@ -288,7 +288,7 @@ Type annotations for `boto3.client("kendra").delete_data_source` method.
 Boto3 documentation:
 [kendra.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("kendra").delete_faq` method.
 Boto3 documentation:
 [kendra.Client.delete_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_faq)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("kendra").delete_index` method.
 Boto3 documentation:
 [kendra.Client.delete_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_index)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -324,7 +324,7 @@ Type annotations for
 Boto3 documentation:
 [kendra.Client.delete_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_query_suggestions_block_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 - `Id`: `str` *(required)*
@@ -336,7 +336,7 @@ Type annotations for `boto3.client("kendra").delete_thesaurus` method.
 Boto3 documentation:
 [kendra.Client.delete_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_thesaurus)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
@@ -348,7 +348,7 @@ Type annotations for `boto3.client("kendra").describe_data_source` method.
 Boto3 documentation:
 [kendra.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
@@ -363,7 +363,7 @@ Type annotations for `boto3.client("kendra").describe_faq` method.
 Boto3 documentation:
 [kendra.Client.describe_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_faq)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("kendra").describe_index` method.
 Boto3 documentation:
 [kendra.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_index)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -393,7 +393,7 @@ Type annotations for
 Boto3 documentation:
 [kendra.Client.describe_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_block_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 - `Id`: `str` *(required)*
@@ -409,7 +409,7 @@ method.
 Boto3 documentation:
 [kendra.Client.describe_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 
@@ -423,7 +423,7 @@ Type annotations for `boto3.client("kendra").describe_thesaurus` method.
 Boto3 documentation:
 [kendra.Client.describe_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_thesaurus)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
@@ -522,7 +522,7 @@ Type annotations for `boto3.client("kendra").list_indices` method.
 Boto3 documentation:
 [kendra.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_indices)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -554,7 +554,7 @@ Type annotations for `boto3.client("kendra").list_tags_for_resource` method.
 Boto3 documentation:
 [kendra.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -613,7 +613,7 @@ method.
 Boto3 documentation:
 [kendra.Client.start_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.start_data_source_sync_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
@@ -628,7 +628,7 @@ Type annotations for `boto3.client("kendra").stop_data_source_sync_job` method.
 Boto3 documentation:
 [kendra.Client.stop_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.stop_data_source_sync_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
@@ -656,7 +656,7 @@ Type annotations for `boto3.client("kendra").tag_resource` method.
 Boto3 documentation:
 [kendra.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -670,7 +670,7 @@ Type annotations for `boto3.client("kendra").untag_resource` method.
 Boto3 documentation:
 [kendra.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

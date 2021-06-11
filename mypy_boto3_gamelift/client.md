@@ -284,7 +284,7 @@ Type annotations for `boto3.client("gamelift").create_fleet_locations` method.
 Boto3 documentation:
 [GameLift.Client.create_fleet_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet_locations)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `Locations`:
@@ -481,7 +481,7 @@ Type annotations for
 Boto3 documentation:
 [GameLift.Client.create_vpc_peering_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameLiftAwsAccountId`: `str` *(required)*
 - `PeerVpcId`: `str` *(required)*
@@ -512,7 +512,7 @@ Type annotations for `boto3.client("gamelift").delete_alias` method.
 Boto3 documentation:
 [GameLift.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AliasId`: `str` *(required)*
 
@@ -523,7 +523,7 @@ Type annotations for `boto3.client("gamelift").delete_build` method.
 Boto3 documentation:
 [GameLift.Client.delete_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_build)
 
-Arguments:
+Keyword-only arguments:
 
 - `BuildId`: `str` *(required)*
 
@@ -534,7 +534,7 @@ Type annotations for `boto3.client("gamelift").delete_fleet` method.
 Boto3 documentation:
 [GameLift.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 
@@ -545,7 +545,7 @@ Type annotations for `boto3.client("gamelift").delete_fleet_locations` method.
 Boto3 documentation:
 [GameLift.Client.delete_fleet_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet_locations)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `Locations`: `List`\[`str`\] *(required)*
@@ -561,7 +561,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.delete_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_server_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 - `DeleteOption`:
@@ -578,7 +578,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.delete_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_session_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -592,7 +592,7 @@ Type annotations for
 Boto3 documentation:
 [GameLift.Client.delete_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -606,7 +606,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.delete_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_rule_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -619,7 +619,7 @@ Type annotations for `boto3.client("gamelift").delete_scaling_policy` method.
 Boto3 documentation:
 [GameLift.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_scaling_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `FleetId`: `str` *(required)*
@@ -631,7 +631,7 @@ Type annotations for `boto3.client("gamelift").delete_script` method.
 Boto3 documentation:
 [GameLift.Client.delete_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_script)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScriptId`: `str` *(required)*
 
@@ -643,7 +643,7 @@ Type annotations for
 Boto3 documentation:
 [GameLift.Client.delete_vpc_peering_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_authorization)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameLiftAwsAccountId`: `str` *(required)*
 - `PeerVpcId`: `str` *(required)*
@@ -658,7 +658,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.delete_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `VpcPeeringConnectionId`: `str` *(required)*
@@ -672,7 +672,7 @@ Type annotations for `boto3.client("gamelift").deregister_game_server` method.
 Boto3 documentation:
 [GameLift.Client.deregister_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_game_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 - `GameServerId`: `str` *(required)*
@@ -684,7 +684,7 @@ Type annotations for `boto3.client("gamelift").describe_alias` method.
 Boto3 documentation:
 [GameLift.Client.describe_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AliasId`: `str` *(required)*
 
@@ -698,7 +698,7 @@ Type annotations for `boto3.client("gamelift").describe_build` method.
 Boto3 documentation:
 [GameLift.Client.describe_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_build)
 
-Arguments:
+Keyword-only arguments:
 
 - `BuildId`: `str` *(required)*
 
@@ -713,7 +713,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.describe_ec2_instance_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_ec2_instance_limits)
 
-Arguments:
+Keyword-only arguments:
 
 - `EC2InstanceType`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
 - `Location`: `str`
@@ -798,7 +798,7 @@ Type annotations for
 Boto3 documentation:
 [GameLift.Client.describe_fleet_location_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_capacity)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `Location`: `str` *(required)*
@@ -814,7 +814,7 @@ Type annotations for
 Boto3 documentation:
 [GameLift.Client.describe_fleet_location_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_utilization)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `Location`: `str` *(required)*
@@ -830,7 +830,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.describe_fleet_port_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_port_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `Location`: `str`
@@ -862,7 +862,7 @@ Type annotations for `boto3.client("gamelift").describe_game_server` method.
 Boto3 documentation:
 [GameLift.Client.describe_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 - `GameServerId`: `str` *(required)*
@@ -878,7 +878,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.describe_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 
@@ -932,7 +932,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.describe_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlacementId`: `str` *(required)*
 
@@ -1001,7 +1001,7 @@ Type annotations for `boto3.client("gamelift").describe_matchmaking` method.
 Boto3 documentation:
 [GameLift.Client.describe_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking)
 
-Arguments:
+Keyword-only arguments:
 
 - `TicketIds`: `List`\[`str`\] *(required)*
 
@@ -1071,7 +1071,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.describe_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_runtime_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 
@@ -1104,7 +1104,7 @@ Type annotations for `boto3.client("gamelift").describe_script` method.
 Boto3 documentation:
 [GameLift.Client.describe_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_script)
 
-Arguments:
+Keyword-only arguments:
 
 - `ScriptId`: `str` *(required)*
 
@@ -1130,7 +1130,7 @@ Type annotations for
 Boto3 documentation:
 [GameLift.Client.describe_vpc_peering_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str`
 
@@ -1161,7 +1161,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.get_game_session_log_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_game_session_log_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameSessionId`: `str` *(required)*
 
@@ -1175,7 +1175,7 @@ Type annotations for `boto3.client("gamelift").get_instance_access` method.
 Boto3 documentation:
 [GameLift.Client.get_instance_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_instance_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
@@ -1238,7 +1238,7 @@ Type annotations for `boto3.client("gamelift").list_game_server_groups` method.
 Boto3 documentation:
 [GameLift.Client.list_game_server_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -1270,7 +1270,7 @@ Type annotations for `boto3.client("gamelift").list_scripts` method.
 Boto3 documentation:
 [GameLift.Client.list_scripts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_scripts)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -1284,7 +1284,7 @@ Type annotations for `boto3.client("gamelift").list_tags_for_resource` method.
 Boto3 documentation:
 [GameLift.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -1343,7 +1343,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.request_upload_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `BuildId`: `str` *(required)*
 
@@ -1357,7 +1357,7 @@ Type annotations for `boto3.client("gamelift").resolve_alias` method.
 Boto3 documentation:
 [GameLift.Client.resolve_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resolve_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AliasId`: `str` *(required)*
 
@@ -1371,7 +1371,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.resume_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resume_game_server_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 - `ResumeActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
@@ -1503,7 +1503,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.stop_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_game_session_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlacementId`: `str` *(required)*
 
@@ -1517,7 +1517,7 @@ Type annotations for `boto3.client("gamelift").stop_matchmaking` method.
 Boto3 documentation:
 [GameLift.Client.stop_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_matchmaking)
 
-Arguments:
+Keyword-only arguments:
 
 - `TicketId`: `str` *(required)*
 
@@ -1531,7 +1531,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.suspend_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.suspend_game_server_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 - `SuspendActions`: `List`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
@@ -1548,7 +1548,7 @@ Type annotations for `boto3.client("gamelift").tag_resource` method.
 Boto3 documentation:
 [GameLift.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1562,7 +1562,7 @@ Type annotations for `boto3.client("gamelift").untag_resource` method.
 Boto3 documentation:
 [GameLift.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1784,7 +1784,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.update_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_runtime_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 - `RuntimeConfiguration`:
@@ -1819,7 +1819,7 @@ method.
 Boto3 documentation:
 [GameLift.Client.validate_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.validate_matchmaking_rule_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleSetBody`: `str` *(required)*
 

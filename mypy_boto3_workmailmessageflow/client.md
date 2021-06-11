@@ -92,7 +92,7 @@ Type annotations for
 Boto3 documentation:
 [WorkMailMessageFlow.Client.get_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.get_raw_message_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `messageId`: `str` *(required)*
 
@@ -107,7 +107,7 @@ Type annotations for
 Boto3 documentation:
 [WorkMailMessageFlow.Client.put_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.put_raw_message_content)
 
-Arguments:
+Keyword-only arguments:
 
 - `messageId`: `str` *(required)*
 - `content`:

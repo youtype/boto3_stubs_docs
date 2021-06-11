@@ -179,7 +179,7 @@ Type annotations for `boto3.client("backup").delete_backup_plan` method.
 Boto3 documentation:
 [Backup.Client.delete_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("backup").delete_backup_selection` method.
 Boto3 documentation:
 [Backup.Client.delete_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 - `SelectionId`: `str` *(required)*
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("backup").delete_backup_vault` method.
 Boto3 documentation:
 [Backup.Client.delete_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
@@ -217,7 +217,7 @@ method.
 Boto3 documentation:
 [Backup.Client.delete_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
@@ -229,7 +229,7 @@ method.
 Boto3 documentation:
 [Backup.Client.delete_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
@@ -240,7 +240,7 @@ Type annotations for `boto3.client("backup").delete_recovery_point` method.
 Boto3 documentation:
 [Backup.Client.delete_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("backup").describe_backup_job` method.
 Boto3 documentation:
 [Backup.Client.describe_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupJobId`: `str` *(required)*
 
@@ -266,7 +266,7 @@ Type annotations for `boto3.client("backup").describe_backup_vault` method.
 Boto3 documentation:
 [Backup.Client.describe_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("backup").describe_copy_job` method.
 Boto3 documentation:
 [Backup.Client.describe_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `CopyJobId`: `str` *(required)*
 
@@ -305,7 +305,7 @@ method.
 Boto3 documentation:
 [Backup.Client.describe_protected_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -319,7 +319,7 @@ Type annotations for `boto3.client("backup").describe_recovery_point` method.
 Boto3 documentation:
 [Backup.Client.describe_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
@@ -344,7 +344,7 @@ Type annotations for `boto3.client("backup").describe_restore_job` method.
 Boto3 documentation:
 [Backup.Client.describe_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `RestoreJobId`: `str` *(required)*
 
@@ -359,7 +359,7 @@ method.
 Boto3 documentation:
 [Backup.Client.disassociate_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
@@ -372,7 +372,7 @@ method.
 Boto3 documentation:
 [Backup.Client.export_backup_plan_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 
@@ -402,7 +402,7 @@ Type annotations for `boto3.client("backup").get_backup_plan` method.
 Boto3 documentation:
 [Backup.Client.get_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 - `VersionId`: `str`
@@ -417,7 +417,7 @@ Type annotations for `boto3.client("backup").get_backup_plan_from_json` method.
 Boto3 documentation:
 [Backup.Client.get_backup_plan_from_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanTemplateJson`: `str` *(required)*
 
@@ -432,7 +432,7 @@ method.
 Boto3 documentation:
 [Backup.Client.get_backup_plan_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanTemplateId`: `str` *(required)*
 
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("backup").get_backup_selection` method.
 Boto3 documentation:
 [Backup.Client.get_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 - `SelectionId`: `str` *(required)*
@@ -462,7 +462,7 @@ method.
 Boto3 documentation:
 [Backup.Client.get_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
@@ -477,7 +477,7 @@ method.
 Boto3 documentation:
 [Backup.Client.get_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
@@ -492,7 +492,7 @@ Type annotations for
 Boto3 documentation:
 [Backup.Client.get_recovery_point_restore_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
@@ -541,7 +541,7 @@ method.
 Boto3 documentation:
 [Backup.Client.list_backup_plan_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -604,7 +604,7 @@ Type annotations for `boto3.client("backup").list_backup_vaults` method.
 Boto3 documentation:
 [Backup.Client.list_backup_vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -640,7 +640,7 @@ Type annotations for `boto3.client("backup").list_protected_resources` method.
 Boto3 documentation:
 [Backup.Client.list_protected_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -729,7 +729,7 @@ method.
 Boto3 documentation:
 [Backup.Client.put_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `Policy`: `str`
@@ -815,7 +815,7 @@ Type annotations for `boto3.client("backup").stop_backup_job` method.
 Boto3 documentation:
 [Backup.Client.stop_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupJobId`: `str` *(required)*
 
@@ -826,7 +826,7 @@ Type annotations for `boto3.client("backup").tag_resource` method.
 Boto3 documentation:
 [Backup.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -838,7 +838,7 @@ Type annotations for `boto3.client("backup").untag_resource` method.
 Boto3 documentation:
 [Backup.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeyList`: `List`\[`str`\] *(required)*
@@ -850,7 +850,7 @@ Type annotations for `boto3.client("backup").update_backup_plan` method.
 Boto3 documentation:
 [Backup.Client.update_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 - `BackupPlan`: [BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef)
@@ -866,7 +866,7 @@ Type annotations for `boto3.client("backup").update_global_settings` method.
 Boto3 documentation:
 [Backup.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalSettings`: `Dict`\[`str`, `str`\]
 
@@ -894,6 +894,6 @@ Type annotations for `boto3.client("backup").update_region_settings` method.
 Boto3 documentation:
 [Backup.Client.update_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceTypeOptInPreference`: `Dict`\[`str`, `bool`\]

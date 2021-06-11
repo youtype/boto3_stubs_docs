@@ -105,7 +105,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.add_attributes_to_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `findingArns`: `List`\[`str`\] *(required)*
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
@@ -135,7 +135,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.create_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTargetName`: `str` *(required)*
 - `resourceGroupArn`: `str`
@@ -171,7 +171,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.create_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTemplateArn`: `str` *(required)*
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("inspector").create_resource_group` method.
 Boto3 documentation:
 [Inspector.Client.create_resource_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceGroupTags`:
   `List`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("inspector").delete_assessment_run` method.
 Boto3 documentation:
 [Inspector.Client.delete_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
 
@@ -213,7 +213,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.delete_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTargetArn`: `str` *(required)*
 
@@ -225,7 +225,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.delete_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTemplateArn`: `str` *(required)*
 
@@ -237,7 +237,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.describe_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentRunArns`: `List`\[`str`\] *(required)*
 
@@ -252,7 +252,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.describe_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTargetArns`: `List`\[`str`\] *(required)*
 
@@ -267,7 +267,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.describe_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTemplateArns`: `List`\[`str`\] *(required)*
 
@@ -292,7 +292,7 @@ Type annotations for `boto3.client("inspector").describe_exclusions` method.
 Boto3 documentation:
 [Inspector.Client.describe_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions)
 
-Arguments:
+Keyword-only arguments:
 
 - `exclusionArns`: `List`\[`str`\] *(required)*
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("inspector").describe_findings` method.
 Boto3 documentation:
 [Inspector.Client.describe_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `findingArns`: `List`\[`str`\] *(required)*
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
@@ -323,7 +323,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.describe_resource_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceGroupArns`: `List`\[`str`\] *(required)*
 
@@ -338,7 +338,7 @@ method.
 Boto3 documentation:
 [Inspector.Client.describe_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages)
 
-Arguments:
+Keyword-only arguments:
 
 - `rulesPackageArns`: `List`\[`str`\] *(required)*
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
@@ -404,7 +404,7 @@ Type annotations for `boto3.client("inspector").get_telemetry_metadata` method.
 Boto3 documentation:
 [Inspector.Client.get_telemetry_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
 
@@ -541,7 +541,7 @@ Type annotations for `boto3.client("inspector").list_rules_packages` method.
 Boto3 documentation:
 [Inspector.Client.list_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -556,7 +556,7 @@ Type annotations for `boto3.client("inspector").list_tags_for_resource` method.
 Boto3 documentation:
 [Inspector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -587,7 +587,7 @@ Type annotations for
 Boto3 documentation:
 [Inspector.Client.register_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `roleArn`: `str` *(required)*
 
@@ -599,7 +599,7 @@ Type annotations for
 Boto3 documentation:
 [Inspector.Client.remove_attributes_from_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `findingArns`: `List`\[`str`\] *(required)*
 - `attributeKeys`: `List`\[`str`\] *(required)*
@@ -614,7 +614,7 @@ Type annotations for `boto3.client("inspector").set_tags_for_resource` method.
 Boto3 documentation:
 [Inspector.Client.set_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -626,7 +626,7 @@ Type annotations for `boto3.client("inspector").start_assessment_run` method.
 Boto3 documentation:
 [Inspector.Client.start_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentTemplateArn`: `str` *(required)*
 - `assessmentRunName`: `str`
@@ -641,7 +641,7 @@ Type annotations for `boto3.client("inspector").stop_assessment_run` method.
 Boto3 documentation:
 [Inspector.Client.stop_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
 - `stopAction`: [StopActionType](./literals.md#stopactiontype)

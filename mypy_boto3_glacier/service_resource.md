@@ -178,7 +178,7 @@ Type annotations for `boto3.resource("glacier").create_vault` method.
 Boto3 documentation:
 [Glacier.ServiceResource.create_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.create_vault)
 
-Arguments:
+Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
@@ -260,7 +260,7 @@ Type annotations for `boto3.resource("glacier").create_vault` method.
 Boto3 documentation:
 [Glacier.Account.create_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.create_vault)
 
-Arguments:
+Keyword-only arguments:
 
 - `vaultName`: `str` *(required)*
 
@@ -334,7 +334,7 @@ method.
 Boto3 documentation:
 [Glacier.Archive.initiate_archive_retrieval](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.initiate_archive_retrieval)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
 
@@ -411,7 +411,7 @@ Type annotations for `boto3.resource("glacier").get_output` method.
 Boto3 documentation:
 [Glacier.Job.get_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.get_output)
 
-Arguments:
+Keyword-only arguments:
 
 - `range`: `str`
 
@@ -483,7 +483,7 @@ Type annotations for `boto3.resource("glacier").complete` method.
 Boto3 documentation:
 [Glacier.MultipartUpload.complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.complete)
 
-Arguments:
+Keyword-only arguments:
 
 - `archiveSize`: `str`
 - `checksum`: `str`
@@ -508,7 +508,7 @@ Type annotations for `boto3.resource("glacier").parts` method.
 Boto3 documentation:
 [Glacier.MultipartUpload.parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.parts)
 
-Arguments:
+Keyword-only arguments:
 
 - `marker`: `str`
 - `limit`: `str`
@@ -603,7 +603,7 @@ Type annotations for `boto3.resource("glacier").set` method.
 Boto3 documentation:
 [Glacier.Notification.set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.set)
 
-Arguments:
+Keyword-only arguments:
 
 - `vaultNotificationConfig`:
   [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
@@ -881,7 +881,7 @@ method.
 Boto3 documentation:
 [Glacier.Vault.initiate_inventory_retrieval](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.initiate_inventory_retrieval)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
 
@@ -895,7 +895,7 @@ method.
 Boto3 documentation:
 [Glacier.Vault.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.initiate_multipart_upload)
 
-Arguments:
+Keyword-only arguments:
 
 - `archiveDescription`: `str`
 - `partSize`: `str`

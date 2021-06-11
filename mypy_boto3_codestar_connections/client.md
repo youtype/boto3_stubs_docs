@@ -124,7 +124,7 @@ method.
 Boto3 documentation:
 [CodeStarconnections.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionArn`: `str` *(required)*
 
@@ -137,7 +137,7 @@ Type annotations for `boto3.client("codestar-connections").delete_host` method.
 Boto3 documentation:
 [CodeStarconnections.Client.delete_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostArn`: `str` *(required)*
 
@@ -168,7 +168,7 @@ method.
 Boto3 documentation:
 [CodeStarconnections.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionArn`: `str` *(required)*
 
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("codestar-connections").get_host` method.
 Boto3 documentation:
 [CodeStarconnections.Client.get_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostArn`: `str` *(required)*
 
@@ -213,7 +213,7 @@ Type annotations for `boto3.client("codestar-connections").list_hosts` method.
 Boto3 documentation:
 [CodeStarconnections.Client.list_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -228,7 +228,7 @@ Type annotations for
 Boto3 documentation:
 [CodeStarconnections.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -243,7 +243,7 @@ method.
 Boto3 documentation:
 [CodeStarconnections.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -258,7 +258,7 @@ method.
 Boto3 documentation:
 [CodeStarconnections.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

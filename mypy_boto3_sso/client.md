@@ -142,7 +142,7 @@ Type annotations for `boto3.client("sso").logout` method.
 Boto3 documentation:
 [SSO.Client.logout](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout)
 
-Arguments:
+Keyword-only arguments:
 
 - `accessToken`: `str` *(required)*
 

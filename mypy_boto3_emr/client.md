@@ -107,7 +107,7 @@ Type annotations for `boto3.client("emr").add_instance_fleet` method.
 Boto3 documentation:
 [EMR.Client.add_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `InstanceFleet`:
@@ -124,7 +124,7 @@ Type annotations for `boto3.client("emr").add_instance_groups` method.
 Boto3 documentation:
 [EMR.Client.add_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceGroups`:
   `List`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("emr").add_job_flow_steps` method.
 Boto3 documentation:
 [EMR.Client.add_job_flow_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobFlowId`: `str` *(required)*
 - `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("emr").add_tags` method.
 Boto3 documentation:
 [EMR.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -201,7 +201,7 @@ method.
 Boto3 documentation:
 [EMR.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SecurityConfiguration`: `str` *(required)*
@@ -257,7 +257,7 @@ method.
 Boto3 documentation:
 [EMR.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -270,7 +270,7 @@ Type annotations for `boto3.client("emr").delete_studio` method.
 Boto3 documentation:
 [EMR.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio)
 
-Arguments:
+Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("emr").describe_cluster` method.
 Boto3 documentation:
 [EMR.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
@@ -329,7 +329,7 @@ Type annotations for `boto3.client("emr").describe_notebook_execution` method.
 Boto3 documentation:
 [EMR.Client.describe_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `NotebookExecutionId`: `str` *(required)*
 
@@ -344,7 +344,7 @@ method.
 Boto3 documentation:
 [EMR.Client.describe_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -358,7 +358,7 @@ Type annotations for `boto3.client("emr").describe_step` method.
 Boto3 documentation:
 [EMR.Client.describe_step](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `StepId`: `str` *(required)*
@@ -372,7 +372,7 @@ Type annotations for `boto3.client("emr").describe_studio` method.
 Boto3 documentation:
 [EMR.Client.describe_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio)
 
-Arguments:
+Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 
@@ -413,7 +413,7 @@ Type annotations for `boto3.client("emr").get_managed_scaling_policy` method.
 Boto3 documentation:
 [EMR.Client.get_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
@@ -445,7 +445,7 @@ Type annotations for `boto3.client("emr").list_bootstrap_actions` method.
 Boto3 documentation:
 [EMR.Client.list_bootstrap_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `Marker`: `str`
@@ -476,7 +476,7 @@ Type annotations for `boto3.client("emr").list_instance_fleets` method.
 Boto3 documentation:
 [EMR.Client.list_instance_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `Marker`: `str`
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("emr").list_instance_groups` method.
 Boto3 documentation:
 [EMR.Client.list_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `Marker`: `str`
@@ -548,7 +548,7 @@ Type annotations for `boto3.client("emr").list_security_configurations` method.
 Boto3 documentation:
 [EMR.Client.list_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 
@@ -594,7 +594,7 @@ Type annotations for `boto3.client("emr").list_studios` method.
 Boto3 documentation:
 [EMR.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 
@@ -607,7 +607,7 @@ Type annotations for `boto3.client("emr").modify_cluster` method.
 Boto3 documentation:
 [EMR.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `StepConcurrencyLevel`: `int`
@@ -622,7 +622,7 @@ Type annotations for `boto3.client("emr").modify_instance_fleet` method.
 Boto3 documentation:
 [EMR.Client.modify_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `InstanceFleet`:
@@ -636,7 +636,7 @@ Type annotations for `boto3.client("emr").modify_instance_groups` method.
 Boto3 documentation:
 [EMR.Client.modify_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str`
 - `InstanceGroups`:
@@ -668,7 +668,7 @@ Type annotations for
 Boto3 documentation:
 [EMR.Client.put_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `BlockPublicAccessConfiguration`:
   [BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef)
@@ -683,7 +683,7 @@ Type annotations for `boto3.client("emr").put_managed_scaling_policy` method.
 Boto3 documentation:
 [EMR.Client.put_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `ManagedScalingPolicy`:
@@ -699,7 +699,7 @@ Type annotations for `boto3.client("emr").remove_auto_scaling_policy` method.
 Boto3 documentation:
 [EMR.Client.remove_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str` *(required)*
@@ -714,7 +714,7 @@ method.
 Boto3 documentation:
 [EMR.Client.remove_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
@@ -727,7 +727,7 @@ Type annotations for `boto3.client("emr").remove_tags` method.
 Boto3 documentation:
 [EMR.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -791,7 +791,7 @@ Type annotations for `boto3.client("emr").set_termination_protection` method.
 Boto3 documentation:
 [EMR.Client.set_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobFlowIds`: `List`\[`str`\] *(required)*
 - `TerminationProtected`: `bool` *(required)*
@@ -803,7 +803,7 @@ Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
 Boto3 documentation:
 [EMR.Client.set_visible_to_all_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobFlowIds`: `List`\[`str`\] *(required)*
 - `VisibleToAllUsers`: `bool` *(required)*
@@ -838,7 +838,7 @@ Type annotations for `boto3.client("emr").stop_notebook_execution` method.
 Boto3 documentation:
 [EMR.Client.stop_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `NotebookExecutionId`: `str` *(required)*
 
@@ -849,7 +849,7 @@ Type annotations for `boto3.client("emr").terminate_job_flows` method.
 Boto3 documentation:
 [EMR.Client.terminate_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobFlowIds`: `List`\[`str`\] *(required)*
 

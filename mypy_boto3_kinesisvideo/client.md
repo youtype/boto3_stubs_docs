@@ -140,7 +140,7 @@ method.
 Boto3 documentation:
 [KinesisVideo.Client.delete_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_signaling_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelARN`: `str` *(required)*
 - `CurrentVersion`: `str`
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("kinesisvideo").delete_stream` method.
 Boto3 documentation:
 [KinesisVideo.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamARN`: `str` *(required)*
 - `CurrentVersion`: `str`
@@ -169,7 +169,7 @@ method.
 Boto3 documentation:
 [KinesisVideo.Client.describe_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_signaling_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str`
 - `ChannelARN`: `str`
@@ -184,7 +184,7 @@ Type annotations for `boto3.client("kinesisvideo").describe_stream` method.
 Boto3 documentation:
 [KinesisVideo.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str`
 - `StreamARN`: `str`
@@ -233,7 +233,7 @@ Type annotations for
 Boto3 documentation:
 [KinesisVideo.Client.get_signaling_channel_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_signaling_channel_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelARN`: `str` *(required)*
 - `SingleMasterChannelEndpointConfiguration`:
@@ -284,7 +284,7 @@ method.
 Boto3 documentation:
 [KinesisVideo.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `NextToken`: `str`
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("kinesisvideo").tag_resource` method.
 Boto3 documentation:
 [KinesisVideo.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("kinesisvideo").untag_resource` method.
 Boto3 documentation:
 [KinesisVideo.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeyList`: `List`\[`str`\] *(required)*

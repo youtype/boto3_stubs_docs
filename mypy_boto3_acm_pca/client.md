@@ -173,7 +173,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.delete_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `PermanentDeletionTimeInDays`: `int`
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("acm-pca").delete_policy` method.
 Boto3 documentation:
 [ACMPCA.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -210,7 +210,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.describe_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 
@@ -225,7 +225,7 @@ Type annotations for
 Boto3 documentation:
 [ACMPCA.Client.describe_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `AuditReportId`: `str` *(required)*
@@ -256,7 +256,7 @@ Type annotations for `boto3.client("acm-pca").get_certificate` method.
 Boto3 documentation:
 [ACMPCA.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `CertificateArn`: `str` *(required)*
@@ -272,7 +272,7 @@ Type annotations for
 Boto3 documentation:
 [ACMPCA.Client.get_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 
@@ -287,7 +287,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.get_certificate_authority_csr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("acm-pca").get_policy` method.
 Boto3 documentation:
 [ACMPCA.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -399,7 +399,7 @@ Type annotations for `boto3.client("acm-pca").put_policy` method.
 Boto3 documentation:
 [ACMPCA.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -412,7 +412,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.restore_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 
@@ -438,7 +438,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.tag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -451,7 +451,7 @@ method.
 Boto3 documentation:
 [ACMPCA.Client.untag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*

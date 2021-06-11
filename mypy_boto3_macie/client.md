@@ -67,7 +67,7 @@ Type annotations for `boto3.client("macie").associate_member_account` method.
 Boto3 documentation:
 [Macie.Client.associate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_member_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `memberAccountId`: `str` *(required)*
 
@@ -78,7 +78,7 @@ Type annotations for `boto3.client("macie").associate_s3_resources` method.
 Boto3 documentation:
 [Macie.Client.associate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_s3_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `s3Resources`:
   `List`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
@@ -109,7 +109,7 @@ method.
 Boto3 documentation:
 [Macie.Client.disassociate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_member_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `memberAccountId`: `str` *(required)*
 
@@ -120,7 +120,7 @@ Type annotations for `boto3.client("macie").disassociate_s3_resources` method.
 Boto3 documentation:
 [Macie.Client.disassociate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_s3_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `associatedS3Resources`:
   `List`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\] *(required)*
@@ -152,7 +152,7 @@ Type annotations for `boto3.client("macie").list_member_accounts` method.
 Boto3 documentation:
 [Macie.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_member_accounts)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -183,7 +183,7 @@ Type annotations for `boto3.client("macie").update_s3_resources` method.
 Boto3 documentation:
 [Macie.Client.update_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.update_s3_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `s3ResourcesUpdate`:
   `List`\[[S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)\]

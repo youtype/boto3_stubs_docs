@@ -88,7 +88,7 @@ Type annotations for `boto3.client("fms").associate_admin_account` method.
 Boto3 documentation:
 [FMS.Client.associate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `AdminAccount`: `str` *(required)*
 
@@ -112,7 +112,7 @@ Type annotations for `boto3.client("fms").delete_apps_list` method.
 Boto3 documentation:
 [FMS.Client.delete_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListId`: `str` *(required)*
 
@@ -130,7 +130,7 @@ Type annotations for `boto3.client("fms").delete_policy` method.
 Boto3 documentation:
 [FMS.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `DeleteAllPolicyResources`: `bool`
@@ -142,7 +142,7 @@ Type annotations for `boto3.client("fms").delete_protocols_list` method.
 Boto3 documentation:
 [FMS.Client.delete_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListId`: `str` *(required)*
 
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("fms").get_apps_list` method.
 Boto3 documentation:
 [FMS.Client.get_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListId`: `str` *(required)*
 - `DefaultList`: `bool`
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("fms").get_compliance_detail` method.
 Boto3 documentation:
 [FMS.Client.get_compliance_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `MemberAccount`: `str` *(required)*
@@ -226,7 +226,7 @@ Type annotations for `boto3.client("fms").get_policy` method.
 Boto3 documentation:
 [FMS.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
@@ -258,7 +258,7 @@ Type annotations for `boto3.client("fms").get_protocols_list` method.
 Boto3 documentation:
 [FMS.Client.get_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListId`: `str` *(required)*
 - `DefaultList`: `bool`
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("fms").list_member_accounts` method.
 Boto3 documentation:
 [FMS.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -337,7 +337,7 @@ Type annotations for `boto3.client("fms").list_policies` method.
 Boto3 documentation:
 [FMS.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("fms").list_tags_for_resource` method.
 Boto3 documentation:
 [FMS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("fms").put_apps_list` method.
 Boto3 documentation:
 [FMS.Client.put_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
   *(required)*
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("fms").put_notification_channel` method.
 Boto3 documentation:
 [FMS.Client.put_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnsTopicArn`: `str` *(required)*
 - `SnsRoleName`: `str` *(required)*
@@ -410,7 +410,7 @@ Type annotations for `boto3.client("fms").put_policy` method.
 Boto3 documentation:
 [FMS.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -424,7 +424,7 @@ Type annotations for `boto3.client("fms").put_protocols_list` method.
 Boto3 documentation:
 [FMS.Client.put_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProtocolsList`:
   [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
@@ -441,7 +441,7 @@ Type annotations for `boto3.client("fms").tag_resource` method.
 Boto3 documentation:
 [FMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -455,7 +455,7 @@ Type annotations for `boto3.client("fms").untag_resource` method.
 Boto3 documentation:
 [FMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

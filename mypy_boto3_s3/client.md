@@ -363,7 +363,7 @@ Type annotations for `boto3.client("s3").delete_bucket` method.
 Boto3 documentation:
 [S3.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -389,7 +389,7 @@ Type annotations for `boto3.client("s3").delete_bucket_cors` method.
 Boto3 documentation:
 [S3.Client.delete_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_cors)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("s3").delete_bucket_encryption` method.
 Boto3 documentation:
 [S3.Client.delete_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_encryption)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -414,7 +414,7 @@ Type annotations for
 Boto3 documentation:
 [S3.Client.delete_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_intelligent_tiering_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Id`: `str` *(required)*
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("s3").delete_bucket_lifecycle` method.
 Boto3 documentation:
 [S3.Client.delete_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_lifecycle)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -467,7 +467,7 @@ method.
 Boto3 documentation:
 [S3.Client.delete_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_ownership_controls)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("s3").delete_bucket_policy` method.
 Boto3 documentation:
 [S3.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("s3").delete_bucket_replication` method.
 Boto3 documentation:
 [S3.Client.delete_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_replication)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -503,7 +503,7 @@ Type annotations for `boto3.client("s3").delete_bucket_tagging` method.
 Boto3 documentation:
 [S3.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_tagging)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -515,7 +515,7 @@ Type annotations for `boto3.client("s3").delete_bucket_website` method.
 Boto3 documentation:
 [S3.Client.delete_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_website)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -584,7 +584,7 @@ Type annotations for `boto3.client("s3").delete_public_access_block` method.
 Boto3 documentation:
 [S3.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_public_access_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -662,7 +662,7 @@ method.
 Boto3 documentation:
 [S3.Client.get_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_accelerate_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -677,7 +677,7 @@ Type annotations for `boto3.client("s3").get_bucket_acl` method.
 Boto3 documentation:
 [S3.Client.get_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -708,7 +708,7 @@ Type annotations for `boto3.client("s3").get_bucket_cors` method.
 Boto3 documentation:
 [S3.Client.get_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_cors)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -723,7 +723,7 @@ Type annotations for `boto3.client("s3").get_bucket_encryption` method.
 Boto3 documentation:
 [S3.Client.get_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_encryption)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -739,7 +739,7 @@ Type annotations for
 Boto3 documentation:
 [S3.Client.get_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_intelligent_tiering_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Id`: `str` *(required)*
@@ -771,7 +771,7 @@ Type annotations for `boto3.client("s3").get_bucket_lifecycle` method.
 Boto3 documentation:
 [S3.Client.get_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -787,7 +787,7 @@ method.
 Boto3 documentation:
 [S3.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -802,7 +802,7 @@ Type annotations for `boto3.client("s3").get_bucket_location` method.
 Boto3 documentation:
 [S3.Client.get_bucket_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_location)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -817,7 +817,7 @@ Type annotations for `boto3.client("s3").get_bucket_logging` method.
 Boto3 documentation:
 [S3.Client.get_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_logging)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -849,7 +849,7 @@ Type annotations for `boto3.client("s3").get_bucket_notification` method.
 Boto3 documentation:
 [S3.Client.get_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -865,7 +865,7 @@ method.
 Boto3 documentation:
 [S3.Client.get_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -880,7 +880,7 @@ Type annotations for `boto3.client("s3").get_bucket_ownership_controls` method.
 Boto3 documentation:
 [S3.Client.get_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_ownership_controls)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -895,7 +895,7 @@ Type annotations for `boto3.client("s3").get_bucket_policy` method.
 Boto3 documentation:
 [S3.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -910,7 +910,7 @@ Type annotations for `boto3.client("s3").get_bucket_policy_status` method.
 Boto3 documentation:
 [S3.Client.get_bucket_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -925,7 +925,7 @@ Type annotations for `boto3.client("s3").get_bucket_replication` method.
 Boto3 documentation:
 [S3.Client.get_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_replication)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -940,7 +940,7 @@ Type annotations for `boto3.client("s3").get_bucket_request_payment` method.
 Boto3 documentation:
 [S3.Client.get_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_request_payment)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -955,7 +955,7 @@ Type annotations for `boto3.client("s3").get_bucket_tagging` method.
 Boto3 documentation:
 [S3.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_tagging)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -970,7 +970,7 @@ Type annotations for `boto3.client("s3").get_bucket_versioning` method.
 Boto3 documentation:
 [S3.Client.get_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_versioning)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -985,7 +985,7 @@ Type annotations for `boto3.client("s3").get_bucket_website` method.
 Boto3 documentation:
 [S3.Client.get_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_website)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -1070,7 +1070,7 @@ Type annotations for `boto3.client("s3").get_object_lock_configuration` method.
 Boto3 documentation:
 [S3.Client.get_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_lock_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -1141,7 +1141,7 @@ Type annotations for `boto3.client("s3").get_public_access_block` method.
 Boto3 documentation:
 [S3.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_public_access_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -1156,7 +1156,7 @@ Type annotations for `boto3.client("s3").head_bucket` method.
 Boto3 documentation:
 [S3.Client.head_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_bucket)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -1213,7 +1213,7 @@ Type annotations for
 Boto3 documentation:
 [S3.Client.list_bucket_intelligent_tiering_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_intelligent_tiering_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ContinuationToken`: `str`

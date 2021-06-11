@@ -284,7 +284,7 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.create_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `policy`: `str` *(required)*
@@ -379,7 +379,7 @@ Type annotations for `boto3.client("lexv2-models").delete_bot` method.
 Boto3 documentation:
 [LexModelsV2.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot)
 
-Arguments:
+Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `skipResourceInUseCheck`: `bool`
@@ -441,7 +441,7 @@ Type annotations for `boto3.client("lexv2-models").delete_export` method.
 Boto3 documentation:
 [LexModelsV2.Client.delete_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_export)
 
-Arguments:
+Keyword-only arguments:
 
 - `exportId`: `str` *(required)*
 
@@ -455,7 +455,7 @@ Type annotations for `boto3.client("lexv2-models").delete_import` method.
 Boto3 documentation:
 [LexModelsV2.Client.delete_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_import)
 
-Arguments:
+Keyword-only arguments:
 
 - `importId`: `str` *(required)*
 
@@ -484,7 +484,7 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `expectedRevisionId`: `str`
@@ -546,7 +546,7 @@ Type annotations for `boto3.client("lexv2-models").describe_bot` method.
 Boto3 documentation:
 [LexModelsV2.Client.describe_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot)
 
-Arguments:
+Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 
@@ -560,7 +560,7 @@ Type annotations for `boto3.client("lexv2-models").describe_bot_alias` method.
 Boto3 documentation:
 [LexModelsV2.Client.describe_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `botAliasId`: `str` *(required)*
 - `botId`: `str` *(required)*
@@ -592,7 +592,7 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.describe_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
@@ -607,7 +607,7 @@ Type annotations for `boto3.client("lexv2-models").describe_export` method.
 Boto3 documentation:
 [LexModelsV2.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_export)
 
-Arguments:
+Keyword-only arguments:
 
 - `exportId`: `str` *(required)*
 
@@ -621,7 +621,7 @@ Type annotations for `boto3.client("lexv2-models").describe_import` method.
 Boto3 documentation:
 [LexModelsV2.Client.describe_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_import)
 
-Arguments:
+Keyword-only arguments:
 
 - `importId`: `str` *(required)*
 
@@ -653,7 +653,7 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -929,7 +929,7 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
 
@@ -963,7 +963,7 @@ Type annotations for `boto3.client("lexv2-models").tag_resource` method.
 Boto3 documentation:
 [LexModelsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -977,7 +977,7 @@ Type annotations for `boto3.client("lexv2-models").untag_resource` method.
 Boto3 documentation:
 [LexModelsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -1053,7 +1053,7 @@ Type annotations for `boto3.client("lexv2-models").update_export` method.
 Boto3 documentation:
 [LexModelsV2.Client.update_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_export)
 
-Arguments:
+Keyword-only arguments:
 
 - `exportId`: `str` *(required)*
 - `filePassword`: `str`

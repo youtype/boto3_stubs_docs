@@ -142,7 +142,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.delete_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `placementName`: `str` *(required)*
 - `projectName`: `str` *(required)*
@@ -157,7 +157,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 
@@ -171,7 +171,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.describe_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `placementName`: `str` *(required)*
 - `projectName`: `str` *(required)*
@@ -187,7 +187,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 
@@ -235,7 +235,7 @@ Type annotations for
 Boto3 documentation:
 [IoT1ClickProjects.Client.get_devices_in_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.get_devices_in_placement)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 - `placementName`: `str` *(required)*
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("iot1click-projects").list_projects` method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -283,7 +283,7 @@ Type annotations for
 Boto3 documentation:
 [IoT1ClickProjects.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("iot1click-projects").tag_resource` method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -312,7 +312,7 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

@@ -85,7 +85,7 @@ Type annotations for `boto3.client("cognito-sync").bulk_publish` method.
 Boto3 documentation:
 [CognitoSync.Client.bulk_publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.bulk_publish)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
@@ -145,7 +145,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoSync.Client.describe_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_pool_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
@@ -160,7 +160,7 @@ method.
 Boto3 documentation:
 [CognitoSync.Client.describe_identity_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `IdentityId`: `str` *(required)*
@@ -193,7 +193,7 @@ method.
 Boto3 documentation:
 [CognitoSync.Client.get_bulk_publish_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_bulk_publish_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("cognito-sync").get_cognito_events` method.
 Boto3 documentation:
 [CognitoSync.Client.get_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_cognito_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
@@ -222,7 +222,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoSync.Client.get_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_identity_pool_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
@@ -254,7 +254,7 @@ method.
 Boto3 documentation:
 [CognitoSync.Client.list_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_identity_pool_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -306,7 +306,7 @@ Type annotations for `boto3.client("cognito-sync").set_cognito_events` method.
 Boto3 documentation:
 [CognitoSync.Client.set_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_cognito_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `Events`: `Dict`\[`str`, `str`\] *(required)*

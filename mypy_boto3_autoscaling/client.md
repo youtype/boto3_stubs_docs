@@ -126,7 +126,7 @@ Type annotations for `boto3.client("autoscaling").attach_instances` method.
 Boto3 documentation:
 [AutoScaling.Client.attach_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `InstanceIds`: `List`\[`str`\]
@@ -139,7 +139,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScaling.Client.attach_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancer_target_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `TargetGroupARNs`: `List`\[`str`\] *(required)*
@@ -154,7 +154,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.attach_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancers)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
@@ -169,7 +169,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScaling.Client.batch_delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_delete_scheduled_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScheduledActionNames`: `List`\[`str`\] *(required)*
@@ -185,7 +185,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScaling.Client.batch_put_scheduled_update_group_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_put_scheduled_update_group_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScheduledUpdateGroupActions`:
@@ -216,7 +216,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.cancel_instance_refresh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 
@@ -319,7 +319,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.create_or_update_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_or_update_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
@@ -331,7 +331,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.delete_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_auto_scaling_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ForceDelete`: `bool`
@@ -344,7 +344,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.delete_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_launch_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LaunchConfigurationName`: `str` *(required)*
 
@@ -356,7 +356,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.delete_lifecycle_hook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_lifecycle_hook)
 
-Arguments:
+Keyword-only arguments:
 
 - `LifecycleHookName`: `str` *(required)*
 - `AutoScalingGroupName`: `str` *(required)*
@@ -371,7 +371,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScaling.Client.delete_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_notification_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `TopicARN`: `str` *(required)*
@@ -383,7 +383,7 @@ Type annotations for `boto3.client("autoscaling").delete_policy` method.
 Boto3 documentation:
 [AutoScaling.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyName`: `str` *(required)*
 - `AutoScalingGroupName`: `str`
@@ -396,7 +396,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_scheduled_action)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScheduledActionName`: `str` *(required)*
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("autoscaling").delete_tags` method.
 Boto3 documentation:
 [AutoScaling.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("autoscaling").delete_warm_pool` method.
 Boto3 documentation:
 [AutoScaling.Client.delete_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_warm_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ForceDelete`: `bool`
@@ -547,7 +547,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.describe_lifecycle_hooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hooks)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `LifecycleHookNames`: `List`\[`str`\]
@@ -748,7 +748,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScaling.Client.detach_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancer_target_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `TargetGroupARNs`: `List`\[`str`\] *(required)*
@@ -763,7 +763,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.detach_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancers)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
@@ -778,7 +778,7 @@ method.
 Boto3 documentation:
 [AutoScaling.Client.disable_metrics_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `Metrics`: `List`\[`str`\]
@@ -834,7 +834,7 @@ Type annotations for `boto3.client("autoscaling").exit_standby` method.
 Boto3 documentation:
 [AutoScaling.Client.exit_standby](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exit_standby)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `InstanceIds`: `List`\[`str`\]
@@ -1000,7 +1000,7 @@ Type annotations for `boto3.client("autoscaling").resume_processes` method.
 Boto3 documentation:
 [AutoScaling.Client.resume_processes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.resume_processes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScalingProcesses`: `List`\[`str`\]
@@ -1073,7 +1073,7 @@ Type annotations for `boto3.client("autoscaling").suspend_processes` method.
 Boto3 documentation:
 [AutoScaling.Client.suspend_processes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.suspend_processes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScalingProcesses`: `List`\[`str`\]
@@ -1086,7 +1086,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScaling.Client.terminate_instance_in_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.terminate_instance_in_auto_scaling_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ShouldDecrementDesiredCapacity`: `bool` *(required)*

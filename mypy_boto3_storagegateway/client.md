@@ -169,7 +169,7 @@ Type annotations for `boto3.client("storagegateway").add_cache` method.
 Boto3 documentation:
 [StorageGateway.Client.add_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `DiskIds`: `List`\[`str`\] *(required)*
@@ -184,7 +184,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("storagegateway").add_upload_buffer` method.
 Boto3 documentation:
 [StorageGateway.Client.add_upload_buffer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_upload_buffer)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `DiskIds`: `List`\[`str`\] *(required)*
@@ -215,7 +215,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.add_working_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_working_storage)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `DiskIds`: `List`\[`str`\] *(required)*
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("storagegateway").cancel_archival` method.
 Boto3 documentation:
 [StorageGateway.Client.cancel_archival](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_archival)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `TapeARN`: `str` *(required)*
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("storagegateway").cancel_retrieval` method.
 Boto3 documentation:
 [StorageGateway.Client.cancel_retrieval](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_retrieval)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `TapeARN`: `str` *(required)*
@@ -547,7 +547,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.delete_automatic_tape_creation_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_automatic_tape_creation_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -562,7 +562,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.delete_bandwidth_rate_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_bandwidth_rate_limit)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `BandwidthType`: `str` *(required)*
@@ -578,7 +578,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.delete_chap_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_chap_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetARN`: `str` *(required)*
 - `InitiatorName`: `str` *(required)*
@@ -593,7 +593,7 @@ Type annotations for `boto3.client("storagegateway").delete_file_share` method.
 Boto3 documentation:
 [StorageGateway.Client.delete_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_file_share)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileShareARN`: `str` *(required)*
 - `ForceDelete`: `bool`
@@ -608,7 +608,7 @@ Type annotations for `boto3.client("storagegateway").delete_gateway` method.
 Boto3 documentation:
 [StorageGateway.Client.delete_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -623,7 +623,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.delete_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_snapshot_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 
@@ -653,7 +653,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.delete_tape_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_archive)
 
-Arguments:
+Keyword-only arguments:
 
 - `TapeARN`: `str` *(required)*
 - `BypassGovernanceRetention`: `bool`
@@ -668,7 +668,7 @@ Type annotations for `boto3.client("storagegateway").delete_tape_pool` method.
 Boto3 documentation:
 [StorageGateway.Client.delete_tape_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `PoolARN`: `str` *(required)*
 
@@ -682,7 +682,7 @@ Type annotations for `boto3.client("storagegateway").delete_volume` method.
 Boto3 documentation:
 [StorageGateway.Client.delete_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 
@@ -696,7 +696,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_availability_monitor_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_availability_monitor_test)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -711,7 +711,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_bandwidth_rate_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -726,7 +726,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_bandwidth_rate_limit_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -740,7 +740,7 @@ Type annotations for `boto3.client("storagegateway").describe_cache` method.
 Boto3 documentation:
 [StorageGateway.Client.describe_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -755,7 +755,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_cached_iscsi_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cached_iscsi_volumes)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeARNs`: `List`\[`str`\] *(required)*
 
@@ -770,7 +770,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_chap_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_chap_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `TargetARN`: `str` *(required)*
 
@@ -785,7 +785,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_file_system_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_file_system_associations)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemAssociationARNList`: `List`\[`str`\] *(required)*
 
@@ -800,7 +800,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_gateway_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_gateway_information)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -815,7 +815,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_maintenance_start_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_maintenance_start_time)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -830,7 +830,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_nfs_file_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_nfs_file_shares)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileShareARNList`: `List`\[`str`\] *(required)*
 
@@ -845,7 +845,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_smb_file_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_file_shares)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileShareARNList`: `List`\[`str`\] *(required)*
 
@@ -860,7 +860,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_smb_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -875,7 +875,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_snapshot_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 
@@ -890,7 +890,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_stored_iscsi_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_stored_iscsi_volumes)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeARNs`: `List`\[`str`\] *(required)*
 
@@ -956,7 +956,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_upload_buffer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_upload_buffer)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -989,7 +989,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_working_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_working_storage)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1003,7 +1003,7 @@ Type annotations for `boto3.client("storagegateway").detach_volume` method.
 Boto3 documentation:
 [StorageGateway.Client.detach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.detach_volume)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 - `ForceDetach`: `bool`
@@ -1017,7 +1017,7 @@ Type annotations for `boto3.client("storagegateway").disable_gateway` method.
 Boto3 documentation:
 [StorageGateway.Client.disable_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disable_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1032,7 +1032,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.disassociate_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disassociate_file_system)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemAssociationARN`: `str` *(required)*
 - `ForceDelete`: `bool`
@@ -1084,7 +1084,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.list_automatic_tape_creation_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_automatic_tape_creation_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str`
 
@@ -1131,7 +1131,7 @@ Type annotations for `boto3.client("storagegateway").list_gateways` method.
 Boto3 documentation:
 [StorageGateway.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_gateways)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `Limit`: `int`
@@ -1145,7 +1145,7 @@ Type annotations for `boto3.client("storagegateway").list_local_disks` method.
 Boto3 documentation:
 [StorageGateway.Client.list_local_disks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_local_disks)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1208,7 +1208,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.list_volume_initiators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_initiators)
 
-Arguments:
+Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 
@@ -1223,7 +1223,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.list_volume_recovery_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_recovery_points)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1253,7 +1253,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.notify_when_uploaded](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.notify_when_uploaded)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileShareARN`: `str` *(required)*
 
@@ -1283,7 +1283,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.remove_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1298,7 +1298,7 @@ Type annotations for `boto3.client("storagegateway").reset_cache` method.
 Boto3 documentation:
 [StorageGateway.Client.reset_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.reset_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1312,7 +1312,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.retrieve_tape_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_archive)
 
-Arguments:
+Keyword-only arguments:
 
 - `TapeARN`: `str` *(required)*
 - `GatewayARN`: `str` *(required)*
@@ -1328,7 +1328,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.retrieve_tape_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_recovery_point)
 
-Arguments:
+Keyword-only arguments:
 
 - `TapeARN`: `str` *(required)*
 - `GatewayARN`: `str` *(required)*
@@ -1344,7 +1344,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.set_local_console_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_local_console_password)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `LocalConsolePassword`: `str` *(required)*
@@ -1360,7 +1360,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.set_smb_guest_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_smb_guest_password)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `Password`: `str` *(required)*
@@ -1375,7 +1375,7 @@ Type annotations for `boto3.client("storagegateway").shutdown_gateway` method.
 Boto3 documentation:
 [StorageGateway.Client.shutdown_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.shutdown_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1390,7 +1390,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.start_availability_monitor_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_availability_monitor_test)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1404,7 +1404,7 @@ Type annotations for `boto3.client("storagegateway").start_gateway` method.
 Boto3 documentation:
 [StorageGateway.Client.start_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1418,7 +1418,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.update_automatic_tape_creation_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_automatic_tape_creation_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutomaticTapeCreationRules`:
   `List`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
@@ -1453,7 +1453,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.update_bandwidth_rate_limit_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit_schedule)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `BandwidthRateLimitIntervals`:
@@ -1527,7 +1527,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.update_gateway_software_now](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_software_now)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
@@ -1624,7 +1624,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.update_smb_file_share_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share_visibility)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `FileSharesVisible`: `bool` *(required)*
@@ -1640,7 +1640,7 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.update_smb_security_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_security_strategy)
 
-Arguments:
+Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `SMBSecurityStrategy`:
@@ -1676,7 +1676,7 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.update_vtl_device_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_vtl_device_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `VTLDeviceARN`: `str` *(required)*
 - `DeviceType`: `str` *(required)*

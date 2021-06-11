@@ -168,7 +168,7 @@ Type annotations for
 Boto3 documentation:
 [DocDB.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_source_identifier_to_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 - `SourceIdentifier`: `str` *(required)*
@@ -183,7 +183,7 @@ Type annotations for `boto3.client("docdb").add_tags_to_resource` method.
 Boto3 documentation:
 [DocDB.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -427,7 +427,7 @@ method.
 Boto3 documentation:
 [DocDB.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 
@@ -438,7 +438,7 @@ Type annotations for `boto3.client("docdb").delete_db_cluster_snapshot` method.
 Boto3 documentation:
 [DocDB.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
@@ -452,7 +452,7 @@ Type annotations for `boto3.client("docdb").delete_db_instance` method.
 Boto3 documentation:
 [DocDB.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("docdb").delete_db_subnet_group` method.
 Boto3 documentation:
 [DocDB.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
 
@@ -477,7 +477,7 @@ Type annotations for `boto3.client("docdb").delete_event_subscription` method.
 Boto3 documentation:
 [DocDB.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_event_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
@@ -491,7 +491,7 @@ Type annotations for `boto3.client("docdb").delete_global_cluster` method.
 Boto3 documentation:
 [DocDB.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_global_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalClusterIdentifier`: `str` *(required)*
 
@@ -559,7 +559,7 @@ Type annotations for
 Boto3 documentation:
 [DocDB.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshot_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
@@ -685,7 +685,7 @@ Type annotations for `boto3.client("docdb").describe_event_categories` method.
 Boto3 documentation:
 [DocDB.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_categories)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceType`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -796,7 +796,7 @@ Type annotations for `boto3.client("docdb").failover_db_cluster` method.
 Boto3 documentation:
 [DocDB.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.failover_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str`
 - `TargetDBInstanceIdentifier`: `str`
@@ -827,7 +827,7 @@ Type annotations for `boto3.client("docdb").list_tags_for_resource` method.
 Boto3 documentation:
 [DocDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -869,7 +869,7 @@ method.
 Boto3 documentation:
 [DocDB.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
@@ -974,7 +974,7 @@ Type annotations for `boto3.client("docdb").reboot_db_instance` method.
 Boto3 documentation:
 [DocDB.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reboot_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 - `ForceFailover`: `bool`
@@ -989,7 +989,7 @@ Type annotations for `boto3.client("docdb").remove_from_global_cluster` method.
 Boto3 documentation:
 [DocDB.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_from_global_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalClusterIdentifier`: `str` *(required)*
 - `DbClusterIdentifier`: `str` *(required)*
@@ -1005,7 +1005,7 @@ Type annotations for
 Boto3 documentation:
 [DocDB.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_source_identifier_from_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 - `SourceIdentifier`: `str` *(required)*
@@ -1020,7 +1020,7 @@ Type annotations for `boto3.client("docdb").remove_tags_from_resource` method.
 Boto3 documentation:
 [DocDB.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1100,7 +1100,7 @@ Type annotations for `boto3.client("docdb").start_db_cluster` method.
 Boto3 documentation:
 [DocDB.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.start_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
@@ -1114,7 +1114,7 @@ Type annotations for `boto3.client("docdb").stop_db_cluster` method.
 Boto3 documentation:
 [DocDB.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.stop_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 

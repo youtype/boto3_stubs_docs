@@ -105,7 +105,7 @@ Type annotations for `boto3.client("codebuild").batch_delete_builds` method.
 Boto3 documentation:
 [CodeBuild.Client.batch_delete_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_delete_builds)
 
-Arguments:
+Keyword-only arguments:
 
 - `ids`: `List`\[`str`\] *(required)*
 
@@ -120,7 +120,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.batch_get_build_batches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_build_batches)
 
-Arguments:
+Keyword-only arguments:
 
 - `ids`: `List`\[`str`\] *(required)*
 
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("codebuild").batch_get_builds` method.
 Boto3 documentation:
 [CodeBuild.Client.batch_get_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_builds)
 
-Arguments:
+Keyword-only arguments:
 
 - `ids`: `List`\[`str`\] *(required)*
 
@@ -148,7 +148,7 @@ Type annotations for `boto3.client("codebuild").batch_get_projects` method.
 Boto3 documentation:
 [CodeBuild.Client.batch_get_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `names`: `List`\[`str`\] *(required)*
 
@@ -163,7 +163,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.batch_get_report_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_report_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportGroupArns`: `List`\[`str`\] *(required)*
 
@@ -177,7 +177,7 @@ Type annotations for `boto3.client("codebuild").batch_get_reports` method.
 Boto3 documentation:
 [CodeBuild.Client.batch_get_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.batch_get_reports)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportArns`: `List`\[`str`\] *(required)*
 
@@ -285,7 +285,7 @@ Type annotations for `boto3.client("codebuild").delete_build_batch` method.
 Boto3 documentation:
 [CodeBuild.Client.delete_build_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_build_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("codebuild").delete_project` method.
 Boto3 documentation:
 [CodeBuild.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("codebuild").delete_report` method.
 Boto3 documentation:
 [CodeBuild.Client.delete_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -325,7 +325,7 @@ Type annotations for `boto3.client("codebuild").delete_report_group` method.
 Boto3 documentation:
 [CodeBuild.Client.delete_report_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_report_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `deleteReports`: `bool`
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("codebuild").delete_resource_policy` method.
 Boto3 documentation:
 [CodeBuild.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -353,7 +353,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.delete_source_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_source_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("codebuild").delete_webhook` method.
 Boto3 documentation:
 [CodeBuild.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.delete_webhook)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 
@@ -453,7 +453,7 @@ Type annotations for `boto3.client("codebuild").get_resource_policy` method.
 Boto3 documentation:
 [CodeBuild.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.get_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -487,7 +487,7 @@ method.
 Boto3 documentation:
 [CodeBuild.Client.invalidate_project_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.invalidate_project_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 
@@ -536,7 +536,7 @@ Type annotations for `boto3.client("codebuild").list_builds` method.
 Boto3 documentation:
 [CodeBuild.Client.list_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.list_builds)
 
-Arguments:
+Keyword-only arguments:
 
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
@@ -694,7 +694,7 @@ Type annotations for `boto3.client("codebuild").put_resource_policy` method.
 Boto3 documentation:
 [CodeBuild.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.put_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `policy`: `str` *(required)*
 - `resourceArn`: `str` *(required)*
@@ -709,7 +709,7 @@ Type annotations for `boto3.client("codebuild").retry_build` method.
 Boto3 documentation:
 [CodeBuild.Client.retry_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.retry_build)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str`
 - `idempotencyToken`: `str`
@@ -846,7 +846,7 @@ Type annotations for `boto3.client("codebuild").stop_build` method.
 Boto3 documentation:
 [CodeBuild.Client.stop_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.stop_build)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -859,7 +859,7 @@ Type annotations for `boto3.client("codebuild").stop_build_batch` method.
 Boto3 documentation:
 [CodeBuild.Client.stop_build_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.stop_build_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 

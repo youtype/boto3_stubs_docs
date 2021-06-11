@@ -78,7 +78,7 @@ Type annotations for `boto3.client("cur").delete_report_definition` method.
 Boto3 documentation:
 [CostandUsageReportService.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReportName`: `str`
 
@@ -92,7 +92,7 @@ Type annotations for `boto3.client("cur").describe_report_definitions` method.
 Boto3 documentation:
 [CostandUsageReportService.Client.describe_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("cur").modify_report_definition` method.
 Boto3 documentation:
 [CostandUsageReportService.Client.modify_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReportName`: `str` *(required)*
 - `ReportDefinition`:
@@ -139,7 +139,7 @@ Type annotations for `boto3.client("cur").put_report_definition` method.
 Boto3 documentation:
 [CostandUsageReportService.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReportDefinition`:
   [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)

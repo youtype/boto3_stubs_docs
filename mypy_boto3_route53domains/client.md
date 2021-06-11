@@ -92,7 +92,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.accept_domain_transfer_from_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.accept_domain_transfer_from_another_aws_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Password`: `str` *(required)*
@@ -122,7 +122,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.cancel_domain_transfer_to_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.cancel_domain_transfer_to_another_aws_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -137,7 +137,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.check_domain_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_availability)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `IdnLangCode`: `str`
@@ -153,7 +153,7 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.check_domain_transferability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_transferability)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AuthCode`: `str`
@@ -169,7 +169,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.delete_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.delete_tags_for_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `TagsToDelete`: `List`\[`str`\] *(required)*
@@ -184,7 +184,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.disable_domain_auto_renew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_auto_renew)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -198,7 +198,7 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.disable_domain_transfer_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_transfer_lock)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -213,7 +213,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.enable_domain_auto_renew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_auto_renew)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -227,7 +227,7 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.enable_domain_transfer_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_transfer_lock)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -259,7 +259,7 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.get_contact_reachability_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_contact_reachability_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `domainName`: `str`
 
@@ -273,7 +273,7 @@ Type annotations for `boto3.client("route53domains").get_domain_detail` method.
 Boto3 documentation:
 [Route53Domains.Client.get_domain_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_detail)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -305,7 +305,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.get_operation_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_operation_detail)
 
-Arguments:
+Keyword-only arguments:
 
 - `OperationId`: `str` *(required)*
 
@@ -319,7 +319,7 @@ Type annotations for `boto3.client("route53domains").list_domains` method.
 Boto3 documentation:
 [Route53Domains.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `int`
@@ -351,7 +351,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.list_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_tags_for_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -393,7 +393,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.reject_domain_transfer_from_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.reject_domain_transfer_from_another_aws_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -424,7 +424,7 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.resend_contact_reachability_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.resend_contact_reachability_email)
 
-Arguments:
+Keyword-only arguments:
 
 - `domainName`: `str`
 
@@ -439,7 +439,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.retrieve_domain_auth_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.retrieve_domain_auth_code)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -483,7 +483,7 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.transfer_domain_to_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain_to_another_aws_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AccountId`: `str` *(required)*
@@ -554,7 +554,7 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.update_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_tags_for_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `TagsToUpdate`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]

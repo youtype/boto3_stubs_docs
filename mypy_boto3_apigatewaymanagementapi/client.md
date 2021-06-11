@@ -77,7 +77,7 @@ Type annotations for
 Boto3 documentation:
 [ApiGatewayManagementApi.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.delete_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionId`: `str` *(required)*
 
@@ -106,7 +106,7 @@ method.
 Boto3 documentation:
 [ApiGatewayManagementApi.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.get_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionId`: `str` *(required)*
 
@@ -121,7 +121,7 @@ Type annotations for
 Boto3 documentation:
 [ApiGatewayManagementApi.Client.post_to_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.post_to_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `ConnectionId`: `str` *(required)*

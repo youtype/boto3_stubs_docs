@@ -99,7 +99,7 @@ Type annotations for
 Boto3 documentation:
 [ConnectParticipant.Client.create_participant_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: `List`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
   *(required)*
@@ -116,7 +116,7 @@ Type annotations for
 Boto3 documentation:
 [ConnectParticipant.Client.disconnect_participant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConnectionToken`: `str` *(required)*
 - `ClientToken`: `str`
@@ -148,7 +148,7 @@ method.
 Boto3 documentation:
 [ConnectParticipant.Client.get_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
 
-Arguments:
+Keyword-only arguments:
 
 - `AttachmentId`: `str` *(required)*
 - `ConnectionToken`: `str` *(required)*

@@ -83,7 +83,7 @@ Type annotations for `boto3.client("iot-data").delete_thing_shadow` method.
 Boto3 documentation:
 [IoTDataPlane.Client.delete_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 - `shadowName`: `str`
@@ -114,7 +114,7 @@ Type annotations for `boto3.client("iot-data").get_thing_shadow` method.
 Boto3 documentation:
 [IoTDataPlane.Client.get_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 - `shadowName`: `str`

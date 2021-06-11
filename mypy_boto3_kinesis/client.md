@@ -99,7 +99,7 @@ Type annotations for `boto3.client("kinesis").add_tags_to_stream` method.
 Boto3 documentation:
 [Kinesis.Client.add_tags_to_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.add_tags_to_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -124,7 +124,7 @@ Type annotations for `boto3.client("kinesis").create_stream` method.
 Boto3 documentation:
 [Kinesis.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.create_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardCount`: `int` *(required)*
@@ -137,7 +137,7 @@ method.
 Boto3 documentation:
 [Kinesis.Client.decrease_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.decrease_stream_retention_period)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `RetentionPeriodHours`: `int` *(required)*
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("kinesis").delete_stream` method.
 Boto3 documentation:
 [Kinesis.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.delete_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `EnforceConsumerDeletion`: `bool`
@@ -217,7 +217,7 @@ Type annotations for `boto3.client("kinesis").describe_stream_summary` method.
 Boto3 documentation:
 [Kinesis.Client.describe_stream_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_summary)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 
@@ -232,7 +232,7 @@ method.
 Boto3 documentation:
 [Kinesis.Client.disable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.disable_enhanced_monitoring)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardLevelMetrics`:
@@ -249,7 +249,7 @@ method.
 Boto3 documentation:
 [Kinesis.Client.enable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.enable_enhanced_monitoring)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `ShardLevelMetrics`:
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("kinesis").get_records` method.
 Boto3 documentation:
 [Kinesis.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_records)
 
-Arguments:
+Keyword-only arguments:
 
 - `ShardIterator`: `str` *(required)*
 - `Limit`: `int`
@@ -315,7 +315,7 @@ method.
 Boto3 documentation:
 [Kinesis.Client.increase_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.increase_stream_retention_period)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `RetentionPeriodHours`: `int` *(required)*
@@ -362,7 +362,7 @@ Type annotations for `boto3.client("kinesis").list_streams` method.
 Boto3 documentation:
 [Kinesis.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `ExclusiveStartStreamName`: `str`
@@ -422,7 +422,7 @@ Type annotations for `boto3.client("kinesis").put_records` method.
 Boto3 documentation:
 [Kinesis.Client.put_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_records)
 
-Arguments:
+Keyword-only arguments:
 
 - `Records`:
   `List`\[[PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef)\]
@@ -438,7 +438,7 @@ Type annotations for `boto3.client("kinesis").register_stream_consumer` method.
 Boto3 documentation:
 [Kinesis.Client.register_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.register_stream_consumer)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamARN`: `str` *(required)*
 - `ConsumerName`: `str` *(required)*
@@ -453,7 +453,7 @@ Type annotations for `boto3.client("kinesis").remove_tags_from_stream` method.
 Boto3 documentation:
 [Kinesis.Client.remove_tags_from_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.remove_tags_from_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

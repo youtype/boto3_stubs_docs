@@ -188,7 +188,7 @@ Type annotations for `boto3.client("pinpoint").create_app` method.
 Boto3 documentation:
 [Pinpoint.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreateApplicationRequest`:
   [CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef)
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("pinpoint").create_campaign` method.
 Boto3 documentation:
 [Pinpoint.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `WriteCampaignRequest`:
@@ -220,7 +220,7 @@ Type annotations for `boto3.client("pinpoint").create_email_template` method.
 Boto3 documentation:
 [Pinpoint.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `EmailTemplateRequest`:
   [EmailTemplateRequestTypeDef](./type_defs.md#emailtemplaterequesttypedef)
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("pinpoint").create_export_job` method.
 Boto3 documentation:
 [Pinpoint.Client.create_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ExportJobRequest`:
@@ -254,7 +254,7 @@ Type annotations for `boto3.client("pinpoint").create_import_job` method.
 Boto3 documentation:
 [Pinpoint.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ImportJobRequest`:
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("pinpoint").create_journey` method.
 Boto3 documentation:
 [Pinpoint.Client.create_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_journey)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `WriteJourneyRequest`:
@@ -288,7 +288,7 @@ Type annotations for `boto3.client("pinpoint").create_push_template` method.
 Boto3 documentation:
 [Pinpoint.Client.create_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_push_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `PushNotificationTemplateRequest`:
   [PushNotificationTemplateRequestTypeDef](./type_defs.md#pushnotificationtemplaterequesttypedef)
@@ -306,7 +306,7 @@ Type annotations for
 Boto3 documentation:
 [Pinpoint.Client.create_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreateRecommenderConfiguration`:
   [CreateRecommenderConfigurationTypeDef](./type_defs.md#createrecommenderconfigurationtypedef)
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("pinpoint").create_segment` method.
 Boto3 documentation:
 [Pinpoint.Client.create_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_segment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `WriteSegmentRequest`:
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("pinpoint").create_sms_template` method.
 Boto3 documentation:
 [Pinpoint.Client.create_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `SMSTemplateRequest`:
   [SMSTemplateRequestTypeDef](./type_defs.md#smstemplaterequesttypedef)
@@ -356,7 +356,7 @@ Type annotations for `boto3.client("pinpoint").create_voice_template` method.
 Boto3 documentation:
 [Pinpoint.Client.create_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `VoiceTemplateRequest`:
@@ -373,7 +373,7 @@ Type annotations for `boto3.client("pinpoint").delete_adm_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -387,7 +387,7 @@ Type annotations for `boto3.client("pinpoint").delete_apns_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -402,7 +402,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.delete_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -417,7 +417,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.delete_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -432,7 +432,7 @@ Type annotations for
 Boto3 documentation:
 [Pinpoint.Client.delete_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("pinpoint").delete_app` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -459,7 +459,7 @@ Type annotations for `boto3.client("pinpoint").delete_baidu_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -473,7 +473,7 @@ Type annotations for `boto3.client("pinpoint").delete_campaign` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `CampaignId`: `str` *(required)*
@@ -488,7 +488,7 @@ Type annotations for `boto3.client("pinpoint").delete_email_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -502,7 +502,7 @@ Type annotations for `boto3.client("pinpoint").delete_email_template` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `Version`: `str`
@@ -517,7 +517,7 @@ Type annotations for `boto3.client("pinpoint").delete_endpoint` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EndpointId`: `str` *(required)*
@@ -532,7 +532,7 @@ Type annotations for `boto3.client("pinpoint").delete_event_stream` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -546,7 +546,7 @@ Type annotations for `boto3.client("pinpoint").delete_gcm_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -560,7 +560,7 @@ Type annotations for `boto3.client("pinpoint").delete_journey` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_journey)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JourneyId`: `str` *(required)*
@@ -575,7 +575,7 @@ Type annotations for `boto3.client("pinpoint").delete_push_template` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `Version`: `str`
@@ -591,7 +591,7 @@ Type annotations for
 Boto3 documentation:
 [Pinpoint.Client.delete_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `RecommenderId`: `str` *(required)*
 
@@ -605,7 +605,7 @@ Type annotations for `boto3.client("pinpoint").delete_segment` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_segment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SegmentId`: `str` *(required)*
@@ -620,7 +620,7 @@ Type annotations for `boto3.client("pinpoint").delete_sms_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -634,7 +634,7 @@ Type annotations for `boto3.client("pinpoint").delete_sms_template` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `Version`: `str`
@@ -649,7 +649,7 @@ Type annotations for `boto3.client("pinpoint").delete_user_endpoints` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -664,7 +664,7 @@ Type annotations for `boto3.client("pinpoint").delete_voice_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -678,7 +678,7 @@ Type annotations for `boto3.client("pinpoint").delete_voice_template` method.
 Boto3 documentation:
 [Pinpoint.Client.delete_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `Version`: `str`
@@ -709,7 +709,7 @@ Type annotations for `boto3.client("pinpoint").get_adm_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.get_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -723,7 +723,7 @@ Type annotations for `boto3.client("pinpoint").get_apns_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.get_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -738,7 +738,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -752,7 +752,7 @@ Type annotations for `boto3.client("pinpoint").get_apns_voip_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.get_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -767,7 +767,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -781,7 +781,7 @@ Type annotations for `boto3.client("pinpoint").get_app` method.
 Boto3 documentation:
 [Pinpoint.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_app)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -815,7 +815,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_application_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -829,7 +829,7 @@ Type annotations for `boto3.client("pinpoint").get_apps` method.
 Boto3 documentation:
 [Pinpoint.Client.get_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apps)
 
-Arguments:
+Keyword-only arguments:
 
 - `PageSize`: `str`
 - `Token`: `str`
@@ -843,7 +843,7 @@ Type annotations for `boto3.client("pinpoint").get_baidu_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.get_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -857,7 +857,7 @@ Type annotations for `boto3.client("pinpoint").get_campaign` method.
 Boto3 documentation:
 [Pinpoint.Client.get_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `CampaignId`: `str` *(required)*
@@ -959,7 +959,7 @@ Type annotations for `boto3.client("pinpoint").get_channels` method.
 Boto3 documentation:
 [Pinpoint.Client.get_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -973,7 +973,7 @@ Type annotations for `boto3.client("pinpoint").get_email_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.get_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -987,7 +987,7 @@ Type annotations for `boto3.client("pinpoint").get_email_template` method.
 Boto3 documentation:
 [Pinpoint.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `Version`: `str`
@@ -1002,7 +1002,7 @@ Type annotations for `boto3.client("pinpoint").get_endpoint` method.
 Boto3 documentation:
 [Pinpoint.Client.get_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EndpointId`: `str` *(required)*
@@ -1017,7 +1017,7 @@ Type annotations for `boto3.client("pinpoint").get_event_stream` method.
 Boto3 documentation:
 [Pinpoint.Client.get_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -1031,7 +1031,7 @@ Type annotations for `boto3.client("pinpoint").get_export_job` method.
 Boto3 documentation:
 [Pinpoint.Client.get_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -1062,7 +1062,7 @@ Type annotations for `boto3.client("pinpoint").get_gcm_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.get_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -1076,7 +1076,7 @@ Type annotations for `boto3.client("pinpoint").get_import_job` method.
 Boto3 documentation:
 [Pinpoint.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -1107,7 +1107,7 @@ Type annotations for `boto3.client("pinpoint").get_journey` method.
 Boto3 documentation:
 [Pinpoint.Client.get_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `JourneyId`: `str` *(required)*
@@ -1179,7 +1179,7 @@ Type annotations for `boto3.client("pinpoint").get_push_template` method.
 Boto3 documentation:
 [Pinpoint.Client.get_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_push_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `Version`: `str`
@@ -1195,7 +1195,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `RecommenderId`: `str` *(required)*
 
@@ -1210,7 +1210,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.get_recommender_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `PageSize`: `str`
 - `Token`: `str`
@@ -1225,7 +1225,7 @@ Type annotations for `boto3.client("pinpoint").get_segment` method.
 Boto3 documentation:
 [Pinpoint.Client.get_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SegmentId`: `str` *(required)*
@@ -1322,7 +1322,7 @@ Type annotations for `boto3.client("pinpoint").get_sms_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.get_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -1336,7 +1336,7 @@ Type annotations for `boto3.client("pinpoint").get_sms_template` method.
 Boto3 documentation:
 [Pinpoint.Client.get_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `Version`: `str`
@@ -1351,7 +1351,7 @@ Type annotations for `boto3.client("pinpoint").get_user_endpoints` method.
 Boto3 documentation:
 [Pinpoint.Client.get_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `UserId`: `str` *(required)*
@@ -1366,7 +1366,7 @@ Type annotations for `boto3.client("pinpoint").get_voice_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.get_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -1380,7 +1380,7 @@ Type annotations for `boto3.client("pinpoint").get_voice_template` method.
 Boto3 documentation:
 [Pinpoint.Client.get_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
 - `Version`: `str`
@@ -1411,7 +1411,7 @@ Type annotations for `boto3.client("pinpoint").list_tags_for_resource` method.
 Boto3 documentation:
 [Pinpoint.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -1459,7 +1459,7 @@ Type annotations for `boto3.client("pinpoint").phone_number_validate` method.
 Boto3 documentation:
 [Pinpoint.Client.phone_number_validate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate)
 
-Arguments:
+Keyword-only arguments:
 
 - `NumberValidateRequest`:
   [NumberValidateRequestTypeDef](./type_defs.md#numbervalidaterequesttypedef)
@@ -1475,7 +1475,7 @@ Type annotations for `boto3.client("pinpoint").put_event_stream` method.
 Boto3 documentation:
 [Pinpoint.Client.put_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `WriteEventStream`:
@@ -1492,7 +1492,7 @@ Type annotations for `boto3.client("pinpoint").put_events` method.
 Boto3 documentation:
 [Pinpoint.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_events)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EventsRequest`: [EventsRequestTypeDef](./type_defs.md#eventsrequesttypedef)
@@ -1525,7 +1525,7 @@ Type annotations for `boto3.client("pinpoint").send_messages` method.
 Boto3 documentation:
 [Pinpoint.Client.send_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_messages)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `MessageRequest`:
@@ -1541,7 +1541,7 @@ Type annotations for `boto3.client("pinpoint").send_users_messages` method.
 Boto3 documentation:
 [Pinpoint.Client.send_users_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SendUsersMessageRequest`:
@@ -1558,7 +1558,7 @@ Type annotations for `boto3.client("pinpoint").tag_resource` method.
 Boto3 documentation:
 [Pinpoint.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagsModel`: [TagsModelTypeDef](./type_defs.md#tagsmodeltypedef) *(required)*
@@ -1570,7 +1570,7 @@ Type annotations for `boto3.client("pinpoint").untag_resource` method.
 Boto3 documentation:
 [Pinpoint.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1582,7 +1582,7 @@ Type annotations for `boto3.client("pinpoint").update_adm_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.update_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ADMChannelRequest`:
   [ADMChannelRequestTypeDef](./type_defs.md#admchannelrequesttypedef)
@@ -1599,7 +1599,7 @@ Type annotations for `boto3.client("pinpoint").update_apns_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.update_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `APNSChannelRequest`:
   [APNSChannelRequestTypeDef](./type_defs.md#apnschannelrequesttypedef)
@@ -1617,7 +1617,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.update_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `APNSSandboxChannelRequest`:
   [APNSSandboxChannelRequestTypeDef](./type_defs.md#apnssandboxchannelrequesttypedef)
@@ -1635,7 +1635,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.update_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `APNSVoipChannelRequest`:
   [APNSVoipChannelRequestTypeDef](./type_defs.md#apnsvoipchannelrequesttypedef)
@@ -1653,7 +1653,7 @@ Type annotations for
 Boto3 documentation:
 [Pinpoint.Client.update_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `APNSVoipSandboxChannelRequest`:
   [APNSVoipSandboxChannelRequestTypeDef](./type_defs.md#apnsvoipsandboxchannelrequesttypedef)
@@ -1671,7 +1671,7 @@ method.
 Boto3 documentation:
 [Pinpoint.Client.update_application_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `WriteApplicationSettingsRequest`:
@@ -1688,7 +1688,7 @@ Type annotations for `boto3.client("pinpoint").update_baidu_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.update_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `BaiduChannelRequest`:
@@ -1723,7 +1723,7 @@ Type annotations for `boto3.client("pinpoint").update_email_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.update_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EmailChannelRequest`:
@@ -1776,7 +1776,7 @@ Type annotations for `boto3.client("pinpoint").update_endpoints_batch` method.
 Boto3 documentation:
 [Pinpoint.Client.update_endpoints_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EndpointBatchRequest`:
@@ -1793,7 +1793,7 @@ Type annotations for `boto3.client("pinpoint").update_gcm_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.update_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `GCMChannelRequest`:
@@ -1866,7 +1866,7 @@ Type annotations for
 Boto3 documentation:
 [Pinpoint.Client.update_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `RecommenderId`: `str` *(required)*
 - `UpdateRecommenderConfiguration`:
@@ -1901,7 +1901,7 @@ Type annotations for `boto3.client("pinpoint").update_sms_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.update_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SMSChannelRequest`:
@@ -1956,7 +1956,7 @@ Type annotations for `boto3.client("pinpoint").update_voice_channel` method.
 Boto3 documentation:
 [Pinpoint.Client.update_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `VoiceChannelRequest`:

@@ -143,7 +143,7 @@ Type annotations for `boto3.client("dax").create_parameter_group` method.
 Boto3 documentation:
 [DAX.Client.create_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `Description`: `str`
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("dax").delete_cluster` method.
 Boto3 documentation:
 [DAX.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 
@@ -205,7 +205,7 @@ Type annotations for `boto3.client("dax").delete_parameter_group` method.
 Boto3 documentation:
 [DAX.Client.delete_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 
@@ -219,7 +219,7 @@ Type annotations for `boto3.client("dax").delete_subnet_group` method.
 Boto3 documentation:
 [DAX.Client.delete_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubnetGroupName`: `str` *(required)*
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("dax").describe_default_parameters` method.
 Boto3 documentation:
 [DAX.Client.describe_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_default_parameters)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("dax").list_tags` method.
 Boto3 documentation:
 [DAX.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `NextToken`: `str`
@@ -379,7 +379,7 @@ Type annotations for `boto3.client("dax").reboot_node` method.
 Boto3 documentation:
 [DAX.Client.reboot_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.reboot_node)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `NodeId`: `str` *(required)*
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("dax").tag_resource` method.
 Boto3 documentation:
 [DAX.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("dax").untag_resource` method.
 Boto3 documentation:
 [DAX.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("dax").update_parameter_group` method.
 Boto3 documentation:
 [DAX.Client.update_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `ParameterNameValues`:

@@ -889,7 +889,7 @@ Type annotations for `boto3.resource("ec2").create_internet_gateway` method.
 Boto3 documentation:
 [EC2.ServiceResource.create_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_internet_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
@@ -1134,7 +1134,7 @@ Type annotations for `boto3.resource("ec2").disassociate_route_table` method.
 Boto3 documentation:
 [EC2.ServiceResource.disassociate_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.disassociate_route_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1330,7 +1330,7 @@ Type annotations for `boto3.resource("ec2").associate_with_vpc` method.
 Boto3 documentation:
 [EC2.DhcpOptions.associate_with_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.associate_with_vpc)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1342,7 +1342,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.DhcpOptions.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -1357,7 +1357,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.DhcpOptions.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.DhcpOptions.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -1440,7 +1440,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.Image.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -1455,7 +1455,7 @@ Type annotations for `boto3.resource("ec2").deregister` method.
 Boto3 documentation:
 [EC2.Image.deregister](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.deregister)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -1466,7 +1466,7 @@ Type annotations for `boto3.resource("ec2").describe_attribute` method.
 Boto3 documentation:
 [EC2.Image.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.describe_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`: [ImageAttributeNameType](./literals.md#imageattributenametype)
   *(required)*
@@ -1524,7 +1524,7 @@ Type annotations for `boto3.resource("ec2").reset_attribute` method.
 Boto3 documentation:
 [EC2.Image.reset_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Image.reset_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`: `Literal['launchPermission']` (see
   [ResetImageAttributeNameType](./literals.md#resetimageattributenametype))
@@ -1698,7 +1698,7 @@ Type annotations for `boto3.resource("ec2").console_output` method.
 Boto3 documentation:
 [EC2.Instance.console_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.console_output)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `Latest`: `bool`
@@ -1733,7 +1733,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.Instance.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -1760,7 +1760,7 @@ Type annotations for `boto3.resource("ec2").describe_attribute` method.
 Boto3 documentation:
 [EC2.Instance.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.describe_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
@@ -1776,7 +1776,7 @@ Type annotations for `boto3.resource("ec2").detach_classic_link_vpc` method.
 Boto3 documentation:
 [EC2.Instance.detach_classic_link_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_classic_link_vpc)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -1857,7 +1857,7 @@ Type annotations for `boto3.resource("ec2").monitor` method.
 Boto3 documentation:
 [EC2.Instance.monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.monitor)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -1871,7 +1871,7 @@ Type annotations for `boto3.resource("ec2").password_data` method.
 Boto3 documentation:
 [EC2.Instance.password_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.password_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -1885,7 +1885,7 @@ Type annotations for `boto3.resource("ec2").reboot` method.
 Boto3 documentation:
 [EC2.Instance.reboot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reboot)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -1922,7 +1922,7 @@ Type annotations for `boto3.resource("ec2").reset_attribute` method.
 Boto3 documentation:
 [EC2.Instance.reset_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
@@ -1936,7 +1936,7 @@ Type annotations for `boto3.resource("ec2").reset_kernel` method.
 Boto3 documentation:
 [EC2.Instance.reset_kernel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_kernel)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
@@ -1950,7 +1950,7 @@ Type annotations for `boto3.resource("ec2").reset_ramdisk` method.
 Boto3 documentation:
 [EC2.Instance.reset_ramdisk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_ramdisk)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
@@ -1964,7 +1964,7 @@ Type annotations for `boto3.resource("ec2").reset_source_dest_check` method.
 Boto3 documentation:
 [EC2.Instance.reset_source_dest_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.reset_source_dest_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
@@ -1978,7 +1978,7 @@ Type annotations for `boto3.resource("ec2").start` method.
 Boto3 documentation:
 [EC2.Instance.start](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.start)
 
-Arguments:
+Keyword-only arguments:
 
 - `AdditionalInfo`: `str`
 - `DryRun`: `bool`
@@ -2009,7 +2009,7 @@ Type annotations for `boto3.resource("ec2").terminate` method.
 Boto3 documentation:
 [EC2.Instance.terminate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.terminate)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -2023,7 +2023,7 @@ Type annotations for `boto3.resource("ec2").unmonitor` method.
 Boto3 documentation:
 [EC2.Instance.unmonitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.unmonitor)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -2091,7 +2091,7 @@ Type annotations for `boto3.resource("ec2").attach_to_vpc` method.
 Boto3 documentation:
 [EC2.InternetGateway.attach_to_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.attach_to_vpc)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -2103,7 +2103,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.InternetGateway.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -2118,7 +2118,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.InternetGateway.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -2129,7 +2129,7 @@ Type annotations for `boto3.resource("ec2").detach_from_vpc` method.
 Boto3 documentation:
 [EC2.InternetGateway.detach_from_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.InternetGateway.detach_from_vpc)
 
-Arguments:
+Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -2191,7 +2191,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.KeyPair.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPair.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyPairId`: `str`
 - `DryRun`: `bool`
@@ -2238,7 +2238,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.KeyPairInfo.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.KeyPairInfo.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyPairId`: `str`
 - `DryRun`: `bool`
@@ -2322,7 +2322,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.NetworkAcl.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -2337,7 +2337,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.NetworkAcl.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -2384,7 +2384,7 @@ Type annotations for `boto3.resource("ec2").replace_association` method.
 Boto3 documentation:
 [EC2.NetworkAcl.replace_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkAcl.replace_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -2498,7 +2498,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.NetworkInterface.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -2513,7 +2513,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.NetworkInterface.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -2524,7 +2524,7 @@ Type annotations for `boto3.resource("ec2").describe_attribute` method.
 Boto3 documentation:
 [EC2.NetworkInterface.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.describe_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [NetworkInterfaceAttributeType](./literals.md#networkinterfaceattributetype)
@@ -2593,7 +2593,7 @@ Type annotations for `boto3.resource("ec2").reset_attribute` method.
 Boto3 documentation:
 [EC2.NetworkInterface.reset_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.reset_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `SourceDestCheck`: `str`
@@ -2606,7 +2606,7 @@ method.
 Boto3 documentation:
 [EC2.NetworkInterface.unassign_private_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterface.unassign_private_ip_addresses)
 
-Arguments:
+Keyword-only arguments:
 
 - `PrivateIpAddresses`: `List`\[`str`\] *(required)*
 
@@ -2644,7 +2644,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.NetworkInterfaceAssociation.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.NetworkInterfaceAssociation.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `PublicIp`: `str`
 - `DryRun`: `bool`
@@ -2731,7 +2731,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.PlacementGroup.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.PlacementGroup.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -2930,7 +2930,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.RouteTable.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -2945,7 +2945,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.RouteTable.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTable.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -3009,7 +3009,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.RouteTableAssociation.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -3029,7 +3029,7 @@ Type annotations for `boto3.resource("ec2").replace_subnet` method.
 Boto3 documentation:
 [EC2.RouteTableAssociation.replace_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.RouteTableAssociation.replace_subnet)
 
-Arguments:
+Keyword-only arguments:
 
 - `RouteTableId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -3112,7 +3112,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.SecurityGroup.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -3127,7 +3127,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.SecurityGroup.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.SecurityGroup.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `DryRun`: `bool`
@@ -3267,7 +3267,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.Snapshot.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -3282,7 +3282,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.Snapshot.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -3293,7 +3293,7 @@ Type annotations for `boto3.resource("ec2").describe_attribute` method.
 Boto3 documentation:
 [EC2.Snapshot.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.describe_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
@@ -3351,7 +3351,7 @@ Type annotations for `boto3.resource("ec2").reset_attribute` method.
 Boto3 documentation:
 [EC2.Snapshot.reset_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Snapshot.reset_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`:
   [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
@@ -3549,7 +3549,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.Subnet.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -3564,7 +3564,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.Subnet.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Subnet.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -3623,7 +3623,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.Tag.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Tag.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -3749,7 +3749,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.Volume.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -3764,7 +3764,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.Volume.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -3775,7 +3775,7 @@ Type annotations for `boto3.resource("ec2").describe_attribute` method.
 Boto3 documentation:
 [EC2.Volume.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.describe_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`: [VolumeAttributeNameType](./literals.md#volumeattributenametype)
   *(required)*
@@ -3824,7 +3824,7 @@ Type annotations for `boto3.resource("ec2").enable_io` method.
 Boto3 documentation:
 [EC2.Volume.enable_io](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.enable_io)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -3851,7 +3851,7 @@ Type annotations for `boto3.resource("ec2").modify_attribute` method.
 Boto3 documentation:
 [EC2.Volume.modify_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Volume.modify_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoEnableIO`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
@@ -4096,7 +4096,7 @@ Type annotations for `boto3.resource("ec2").associate_dhcp_options` method.
 Boto3 documentation:
 [EC2.Vpc.associate_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.associate_dhcp_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `DhcpOptionsId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -4125,7 +4125,7 @@ Type annotations for `boto3.resource("ec2").attach_internet_gateway` method.
 Boto3 documentation:
 [EC2.Vpc.attach_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_internet_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `InternetGatewayId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -4137,7 +4137,7 @@ Type annotations for `boto3.resource("ec2").create_network_acl` method.
 Boto3 documentation:
 [EC2.Vpc.create_network_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_network_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
@@ -4152,7 +4152,7 @@ Type annotations for `boto3.resource("ec2").create_route_table` method.
 Boto3 documentation:
 [EC2.Vpc.create_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_route_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
@@ -4204,7 +4204,7 @@ Type annotations for `boto3.resource("ec2").create_tags` method.
 Boto3 documentation:
 [EC2.Vpc.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
   *(required)*
@@ -4219,7 +4219,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.Vpc.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -4230,7 +4230,7 @@ Type annotations for `boto3.resource("ec2").describe_attribute` method.
 Boto3 documentation:
 [EC2.Vpc.describe_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.describe_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attribute`: [VpcAttributeNameType](./literals.md#vpcattributenametype)
   *(required)*
@@ -4247,7 +4247,7 @@ method.
 Boto3 documentation:
 [EC2.Vpc.detach_classic_link_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_classic_link_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -4262,7 +4262,7 @@ Type annotations for `boto3.resource("ec2").detach_internet_gateway` method.
 Boto3 documentation:
 [EC2.Vpc.detach_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_internet_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `InternetGatewayId`: `str` *(required)*
 - `DryRun`: `bool`
@@ -4274,7 +4274,7 @@ Type annotations for `boto3.resource("ec2").disable_classic_link` method.
 Boto3 documentation:
 [EC2.Vpc.disable_classic_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.disable_classic_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -4288,7 +4288,7 @@ Type annotations for `boto3.resource("ec2").enable_classic_link` method.
 Boto3 documentation:
 [EC2.Vpc.enable_classic_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.enable_classic_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -4318,7 +4318,7 @@ Type annotations for `boto3.resource("ec2").modify_attribute` method.
 Boto3 documentation:
 [EC2.Vpc.modify_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.modify_attribute)
 
-Arguments:
+Keyword-only arguments:
 
 - `EnableDnsHostnames`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
@@ -4402,7 +4402,7 @@ Type annotations for `boto3.resource("ec2").accept` method.
 Boto3 documentation:
 [EC2.VpcPeeringConnection.accept](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.accept)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -4416,7 +4416,7 @@ Type annotations for `boto3.resource("ec2").delete` method.
 Boto3 documentation:
 [EC2.VpcPeeringConnection.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 
@@ -4446,7 +4446,7 @@ Type annotations for `boto3.resource("ec2").reject` method.
 Boto3 documentation:
 [EC2.VpcPeeringConnection.reject](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.VpcPeeringConnection.reject)
 
-Arguments:
+Keyword-only arguments:
 
 - `DryRun`: `bool`
 

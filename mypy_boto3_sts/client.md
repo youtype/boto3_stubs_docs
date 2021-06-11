@@ -150,7 +150,7 @@ Type annotations for `boto3.client("sts").decode_authorization_message` method.
 Boto3 documentation:
 [STS.Client.decode_authorization_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message)
 
-Arguments:
+Keyword-only arguments:
 
 - `EncodedMessage`: `str` *(required)*
 
@@ -180,7 +180,7 @@ Type annotations for `boto3.client("sts").get_access_key_info` method.
 Boto3 documentation:
 [STS.Client.get_access_key_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessKeyId`: `str` *(required)*
 

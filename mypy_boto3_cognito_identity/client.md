@@ -127,7 +127,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.delete_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityIdsToDelete`: `List`\[`str`\] *(required)*
 
@@ -142,7 +142,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.delete_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
@@ -154,7 +154,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.describe_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
 
@@ -169,7 +169,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.describe_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
@@ -232,7 +232,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.get_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
@@ -247,7 +247,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.get_open_id_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
 - `Logins`: `Dict`\[`str`, `str`\]
@@ -283,7 +283,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoIdentity.Client.get_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `IdentityProviderName`: `str` *(required)*
@@ -316,7 +316,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.list_identity_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int` *(required)*
 - `NextToken`: `str`
@@ -332,7 +332,7 @@ method.
 Boto3 documentation:
 [CognitoIdentity.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -416,7 +416,7 @@ Type annotations for `boto3.client("cognito-identity").tag_resource` method.
 Boto3 documentation:
 [CognitoIdentity.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -458,7 +458,7 @@ Type annotations for `boto3.client("cognito-identity").untag_resource` method.
 Boto3 documentation:
 [CognitoIdentity.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

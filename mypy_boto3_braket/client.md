@@ -87,7 +87,7 @@ Type annotations for `boto3.client("braket").cancel_quantum_task` method.
 Boto3 documentation:
 [Braket.Client.cancel_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.cancel_quantum_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `clientToken`: `str` *(required)*
 - `quantumTaskArn`: `str` *(required)*
@@ -139,7 +139,7 @@ Type annotations for `boto3.client("braket").get_device` method.
 Boto3 documentation:
 [Braket.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `deviceArn`: `str` *(required)*
 
@@ -152,7 +152,7 @@ Type annotations for `boto3.client("braket").get_quantum_task` method.
 Boto3 documentation:
 [Braket.Client.get_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_quantum_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `quantumTaskArn`: `str` *(required)*
 
@@ -166,7 +166,7 @@ Type annotations for `boto3.client("braket").list_tags_for_resource` method.
 Boto3 documentation:
 [Braket.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("braket").tag_resource` method.
 Boto3 documentation:
 [Braket.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -230,7 +230,7 @@ Type annotations for `boto3.client("braket").untag_resource` method.
 Boto3 documentation:
 [Braket.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

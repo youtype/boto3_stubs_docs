@@ -86,7 +86,7 @@ method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.create_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.create_suite_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionConfiguration`:
   [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
@@ -103,7 +103,7 @@ method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.delete_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.delete_suite_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionId`: `str` *(required)*
 
@@ -134,7 +134,7 @@ method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.get_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionId`: `str` *(required)*
 - `suiteDefinitionVersion`: `str`
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("iotdeviceadvisor").get_suite_run` method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.get_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionId`: `str` *(required)*
 - `suiteRunId`: `str` *(required)*
@@ -165,7 +165,7 @@ method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.get_suite_run_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionId`: `str` *(required)*
 - `suiteRunId`: `str` *(required)*
@@ -181,7 +181,7 @@ method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.list_suite_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -214,7 +214,7 @@ method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -246,7 +246,7 @@ Type annotations for `boto3.client("iotdeviceadvisor").stop_suite_run` method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.stop_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.stop_suite_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionId`: `str` *(required)*
 - `suiteRunId`: `str` *(required)*
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("iotdeviceadvisor").tag_resource` method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -274,7 +274,7 @@ Type annotations for `boto3.client("iotdeviceadvisor").untag_resource` method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -289,7 +289,7 @@ method.
 Boto3 documentation:
 [IoTDeviceAdvisor.Client.update_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.update_suite_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `suiteDefinitionId`: `str` *(required)*
 - `suiteDefinitionConfiguration`:

@@ -115,7 +115,7 @@ method.
 Boto3 documentation:
 [IoTJobsDataPlane.Client.get_pending_job_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 

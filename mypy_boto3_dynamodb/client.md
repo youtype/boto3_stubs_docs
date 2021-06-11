@@ -136,7 +136,7 @@ Type annotations for `boto3.client("dynamodb").batch_execute_statement` method.
 Boto3 documentation:
 [DynamoDB.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_execute_statement)
 
-Arguments:
+Keyword-only arguments:
 
 - `Statements`:
   `List`\[[BatchStatementRequestTypeDef](./type_defs.md#batchstatementrequesttypedef)\]
@@ -152,7 +152,7 @@ Type annotations for `boto3.client("dynamodb").batch_get_item` method.
 Boto3 documentation:
 [DynamoDB.Client.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.batch_get_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `RequestItems`: `Dict`\[`str`,
   [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
@@ -202,7 +202,7 @@ Type annotations for `boto3.client("dynamodb").create_backup` method.
 Boto3 documentation:
 [DynamoDB.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `BackupName`: `str` *(required)*
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("dynamodb").create_global_table` method.
 Boto3 documentation:
 [DynamoDB.Client.create_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.create_global_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalTableName`: `str` *(required)*
 - `ReplicationGroup`: `List`\[[ReplicaTypeDef](./type_defs.md#replicatypedef)\]
@@ -263,7 +263,7 @@ Type annotations for `boto3.client("dynamodb").delete_backup` method.
 Boto3 documentation:
 [DynamoDB.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupArn`: `str` *(required)*
 
@@ -308,7 +308,7 @@ Type annotations for `boto3.client("dynamodb").delete_table` method.
 Boto3 documentation:
 [DynamoDB.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.delete_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
@@ -321,7 +321,7 @@ Type annotations for `boto3.client("dynamodb").describe_backup` method.
 Boto3 documentation:
 [DynamoDB.Client.describe_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupArn`: `str` *(required)*
 
@@ -336,7 +336,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.describe_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_continuous_backups)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
@@ -351,7 +351,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.describe_contributor_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_contributor_insights)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `IndexName`: `str`
@@ -376,7 +376,7 @@ Type annotations for `boto3.client("dynamodb").describe_export` method.
 Boto3 documentation:
 [DynamoDB.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_export)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExportArn`: `str` *(required)*
 
@@ -390,7 +390,7 @@ Type annotations for `boto3.client("dynamodb").describe_global_table` method.
 Boto3 documentation:
 [DynamoDB.Client.describe_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalTableName`: `str` *(required)*
 
@@ -405,7 +405,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.describe_global_table_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_global_table_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalTableName`: `str` *(required)*
 
@@ -420,7 +420,7 @@ Type annotations for
 Boto3 documentation:
 [DynamoDB.Client.describe_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_kinesis_streaming_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
@@ -444,7 +444,7 @@ Type annotations for `boto3.client("dynamodb").describe_table` method.
 Boto3 documentation:
 [DynamoDB.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
@@ -459,7 +459,7 @@ Type annotations for
 Boto3 documentation:
 [DynamoDB.Client.describe_table_replica_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_table_replica_auto_scaling)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
@@ -473,7 +473,7 @@ Type annotations for `boto3.client("dynamodb").describe_time_to_live` method.
 Boto3 documentation:
 [DynamoDB.Client.describe_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_time_to_live)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 
@@ -488,7 +488,7 @@ Type annotations for
 Boto3 documentation:
 [DynamoDB.Client.disable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.disable_kinesis_streaming_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `StreamArn`: `str` *(required)*
@@ -504,7 +504,7 @@ Type annotations for
 Boto3 documentation:
 [DynamoDB.Client.enable_kinesis_streaming_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.enable_kinesis_streaming_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `StreamArn`: `str` *(required)*
@@ -538,7 +538,7 @@ Type annotations for `boto3.client("dynamodb").execute_transaction` method.
 Boto3 documentation:
 [DynamoDB.Client.execute_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.execute_transaction)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransactStatements`:
   `List`\[[ParameterizedStatementTypeDef](./type_defs.md#parameterizedstatementtypedef)\]
@@ -683,7 +683,7 @@ Type annotations for `boto3.client("dynamodb").list_tables` method.
 Boto3 documentation:
 [DynamoDB.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tables)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExclusiveStartTableName`: `str`
 - `Limit`: `int`
@@ -697,7 +697,7 @@ Type annotations for `boto3.client("dynamodb").list_tags_of_resource` method.
 Boto3 documentation:
 [DynamoDB.Client.list_tags_of_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_tags_of_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -873,7 +873,7 @@ Type annotations for `boto3.client("dynamodb").tag_resource` method.
 Boto3 documentation:
 [DynamoDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -885,7 +885,7 @@ Type annotations for `boto3.client("dynamodb").transact_get_items` method.
 Boto3 documentation:
 [DynamoDB.Client.transact_get_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.transact_get_items)
 
-Arguments:
+Keyword-only arguments:
 
 - `TransactItems`:
   `List`\[[TransactGetItemTypeDef](./type_defs.md#transactgetitemtypedef)\]
@@ -924,7 +924,7 @@ Type annotations for `boto3.client("dynamodb").untag_resource` method.
 Boto3 documentation:
 [DynamoDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -937,7 +937,7 @@ method.
 Boto3 documentation:
 [DynamoDB.Client.update_continuous_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_continuous_backups)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `PointInTimeRecoverySpecification`:
@@ -973,7 +973,7 @@ Type annotations for `boto3.client("dynamodb").update_global_table` method.
 Boto3 documentation:
 [DynamoDB.Client.update_global_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_global_table)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalTableName`: `str` *(required)*
 - `ReplicaUpdates`:
@@ -1095,7 +1095,7 @@ Type annotations for `boto3.client("dynamodb").update_time_to_live` method.
 Boto3 documentation:
 [DynamoDB.Client.update_time_to_live](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.update_time_to_live)
 
-Arguments:
+Keyword-only arguments:
 
 - `TableName`: `str` *(required)*
 - `TimeToLiveSpecification`:

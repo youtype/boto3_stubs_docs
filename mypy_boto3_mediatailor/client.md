@@ -184,7 +184,7 @@ Type annotations for `boto3.client("mediatailor").delete_channel` method.
 Boto3 documentation:
 [MediaTailor.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
@@ -198,7 +198,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.delete_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
@@ -212,7 +212,7 @@ Type annotations for
 Boto3 documentation:
 [MediaTailor.Client.delete_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("mediatailor").delete_program` method.
 Boto3 documentation:
 [MediaTailor.Client.delete_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `ProgramName`: `str` *(required)*
@@ -240,7 +240,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.delete_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceLocationName`: `str` *(required)*
 
@@ -253,7 +253,7 @@ Type annotations for `boto3.client("mediatailor").delete_vod_source` method.
 Boto3 documentation:
 [MediaTailor.Client.delete_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("mediatailor").describe_channel` method.
 Boto3 documentation:
 [MediaTailor.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("mediatailor").describe_program` method.
 Boto3 documentation:
 [MediaTailor.Client.describe_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `ProgramName`: `str` *(required)*
@@ -297,7 +297,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.describe_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceLocationName`: `str` *(required)*
 
@@ -311,7 +311,7 @@ Type annotations for `boto3.client("mediatailor").describe_vod_source` method.
 Boto3 documentation:
 [MediaTailor.Client.describe_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
@@ -343,7 +343,7 @@ Type annotations for `boto3.client("mediatailor").get_channel_policy` method.
 Boto3 documentation:
 [MediaTailor.Client.get_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
@@ -375,7 +375,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.get_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -389,7 +389,7 @@ Type annotations for `boto3.client("mediatailor").list_channels` method.
 Boto3 documentation:
 [MediaTailor.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -405,7 +405,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.list_playback_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -421,7 +421,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.list_source_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -437,7 +437,7 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -467,7 +467,7 @@ Type annotations for `boto3.client("mediatailor").put_channel_policy` method.
 Boto3 documentation:
 [MediaTailor.Client.put_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -514,7 +514,7 @@ Type annotations for `boto3.client("mediatailor").start_channel` method.
 Boto3 documentation:
 [MediaTailor.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
@@ -527,7 +527,7 @@ Type annotations for `boto3.client("mediatailor").stop_channel` method.
 Boto3 documentation:
 [MediaTailor.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
@@ -540,7 +540,7 @@ Type annotations for `boto3.client("mediatailor").tag_resource` method.
 Boto3 documentation:
 [MediaTailor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -552,7 +552,7 @@ Type annotations for `boto3.client("mediatailor").untag_resource` method.
 Boto3 documentation:
 [MediaTailor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -564,7 +564,7 @@ Type annotations for `boto3.client("mediatailor").update_channel` method.
 Boto3 documentation:
 [MediaTailor.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Outputs`:

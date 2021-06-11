@@ -77,7 +77,7 @@ Type annotations for `boto3.client("iotsecuretunneling").close_tunnel` method.
 Boto3 documentation:
 [IoTSecureTunneling.Client.close_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel)
 
-Arguments:
+Keyword-only arguments:
 
 - `tunnelId`: `str` *(required)*
 - `delete`: `bool`
@@ -92,7 +92,7 @@ method.
 Boto3 documentation:
 [IoTSecureTunneling.Client.describe_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel)
 
-Arguments:
+Keyword-only arguments:
 
 - `tunnelId`: `str` *(required)*
 
@@ -124,7 +124,7 @@ Type annotations for
 Boto3 documentation:
 [IoTSecureTunneling.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("iotsecuretunneling").tag_resource` method.
 Boto3 documentation:
 [IoTSecureTunneling.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -186,7 +186,7 @@ method.
 Boto3 documentation:
 [IoTSecureTunneling.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

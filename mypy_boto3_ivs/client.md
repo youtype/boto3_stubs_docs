@@ -92,7 +92,7 @@ Type annotations for `boto3.client("ivs").batch_get_channel` method.
 Boto3 documentation:
 [IVS.Client.batch_get_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `arns`: `List`\[`str`\] *(required)*
 
@@ -106,7 +106,7 @@ Type annotations for `boto3.client("ivs").batch_get_stream_key` method.
 Boto3 documentation:
 [IVS.Client.batch_get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_stream_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `arns`: `List`\[`str`\] *(required)*
 
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("ivs").create_stream_key` method.
 Boto3 documentation:
 [IVS.Client.create_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_stream_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("ivs").delete_channel` method.
 Boto3 documentation:
 [IVS.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -197,7 +197,7 @@ Type annotations for `boto3.client("ivs").delete_playback_key_pair` method.
 Boto3 documentation:
 [IVS.Client.delete_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_playback_key_pair)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -211,7 +211,7 @@ method.
 Boto3 documentation:
 [IVS.Client.delete_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_recording_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("ivs").delete_stream_key` method.
 Boto3 documentation:
 [IVS.Client.delete_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_stream_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("ivs").get_channel` method.
 Boto3 documentation:
 [IVS.Client.get_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -262,7 +262,7 @@ Type annotations for `boto3.client("ivs").get_playback_key_pair` method.
 Boto3 documentation:
 [IVS.Client.get_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_playback_key_pair)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("ivs").get_recording_configuration` method.
 Boto3 documentation:
 [IVS.Client.get_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_recording_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("ivs").get_stream` method.
 Boto3 documentation:
 [IVS.Client.get_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
 
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("ivs").get_stream_key` method.
 Boto3 documentation:
 [IVS.Client.get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -350,7 +350,7 @@ Type annotations for `boto3.client("ivs").list_playback_key_pairs` method.
 Boto3 documentation:
 [IVS.Client.list_playback_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_playback_key_pairs)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -366,7 +366,7 @@ method.
 Boto3 documentation:
 [IVS.Client.list_recording_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_recording_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -397,7 +397,7 @@ Type annotations for `boto3.client("ivs").list_streams` method.
 Boto3 documentation:
 [IVS.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -428,7 +428,7 @@ Type annotations for `boto3.client("ivs").put_metadata` method.
 Boto3 documentation:
 [IVS.Client.put_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.put_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
 - `metadata`: `str` *(required)*
@@ -440,7 +440,7 @@ Type annotations for `boto3.client("ivs").stop_stream` method.
 Boto3 documentation:
 [IVS.Client.stop_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.stop_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
 
@@ -453,7 +453,7 @@ Type annotations for `boto3.client("ivs").tag_resource` method.
 Boto3 documentation:
 [IVS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -467,7 +467,7 @@ Type annotations for `boto3.client("ivs").untag_resource` method.
 Boto3 documentation:
 [IVS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

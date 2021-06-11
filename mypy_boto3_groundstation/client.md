@@ -98,7 +98,7 @@ Type annotations for `boto3.client("groundstation").cancel_contact` method.
 Boto3 documentation:
 [GroundStation.Client.cancel_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.cancel_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `contactId`: `str` *(required)*
 
@@ -128,7 +128,7 @@ Type annotations for
 Boto3 documentation:
 [GroundStation.Client.create_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `endpointDetails`:
   `List`\[[EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)\]
@@ -166,7 +166,7 @@ Type annotations for `boto3.client("groundstation").delete_config` method.
 Boto3 documentation:
 [GroundStation.Client.delete_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `configId`: `str` *(required)*
 - `configType`:
@@ -183,7 +183,7 @@ Type annotations for
 Boto3 documentation:
 [GroundStation.Client.delete_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `dataflowEndpointGroupId`: `str` *(required)*
 
@@ -198,7 +198,7 @@ method.
 Boto3 documentation:
 [GroundStation.Client.delete_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `missionProfileId`: `str` *(required)*
 
@@ -212,7 +212,7 @@ Type annotations for `boto3.client("groundstation").describe_contact` method.
 Boto3 documentation:
 [GroundStation.Client.describe_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `contactId`: `str` *(required)*
 
@@ -243,7 +243,7 @@ Type annotations for `boto3.client("groundstation").get_config` method.
 Boto3 documentation:
 [GroundStation.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `configId`: `str` *(required)*
 - `configType`:
@@ -260,7 +260,7 @@ Type annotations for
 Boto3 documentation:
 [GroundStation.Client.get_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `dataflowEndpointGroupId`: `str` *(required)*
 
@@ -274,7 +274,7 @@ Type annotations for `boto3.client("groundstation").get_minute_usage` method.
 Boto3 documentation:
 [GroundStation.Client.get_minute_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_minute_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `month`: `int` *(required)*
 - `year`: `int` *(required)*
@@ -290,7 +290,7 @@ method.
 Boto3 documentation:
 [GroundStation.Client.get_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_mission_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `missionProfileId`: `str` *(required)*
 
@@ -304,7 +304,7 @@ Type annotations for `boto3.client("groundstation").get_satellite` method.
 Boto3 documentation:
 [GroundStation.Client.get_satellite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_satellite)
 
-Arguments:
+Keyword-only arguments:
 
 - `satelliteId`: `str` *(required)*
 
@@ -318,7 +318,7 @@ Type annotations for `boto3.client("groundstation").list_configs` method.
 Boto3 documentation:
 [GroundStation.Client.list_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -356,7 +356,7 @@ Type annotations for
 Boto3 documentation:
 [GroundStation.Client.list_dataflow_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -389,7 +389,7 @@ method.
 Boto3 documentation:
 [GroundStation.Client.list_mission_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -404,7 +404,7 @@ Type annotations for `boto3.client("groundstation").list_satellites` method.
 Boto3 documentation:
 [GroundStation.Client.list_satellites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_satellites)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -420,7 +420,7 @@ method.
 Boto3 documentation:
 [GroundStation.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -452,7 +452,7 @@ Type annotations for `boto3.client("groundstation").tag_resource` method.
 Boto3 documentation:
 [GroundStation.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("groundstation").untag_resource` method.
 Boto3 documentation:
 [GroundStation.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

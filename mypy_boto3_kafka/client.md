@@ -95,7 +95,7 @@ method.
 Boto3 documentation:
 [Kafka.Client.batch_associate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_associate_scram_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `SecretArnList`: `List`\[`str`\] *(required)*
@@ -111,7 +111,7 @@ method.
 Boto3 documentation:
 [Kafka.Client.batch_disassociate_scram_secret](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.batch_disassociate_scram_secret)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `SecretArnList`: `List`\[`str`\] *(required)*
@@ -187,7 +187,7 @@ Type annotations for `boto3.client("kafka").delete_cluster` method.
 Boto3 documentation:
 [Kafka.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str`
@@ -202,7 +202,7 @@ Type annotations for `boto3.client("kafka").delete_configuration` method.
 Boto3 documentation:
 [Kafka.Client.delete_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.delete_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("kafka").describe_cluster` method.
 Boto3 documentation:
 [Kafka.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 
@@ -230,7 +230,7 @@ Type annotations for `boto3.client("kafka").describe_cluster_operation` method.
 Boto3 documentation:
 [Kafka.Client.describe_cluster_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_cluster_operation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterOperationArn`: `str` *(required)*
 
@@ -244,7 +244,7 @@ Type annotations for `boto3.client("kafka").describe_configuration` method.
 Boto3 documentation:
 [Kafka.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -259,7 +259,7 @@ method.
 Boto3 documentation:
 [Kafka.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.describe_configuration_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Revision`: `int` *(required)*
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("kafka").get_bootstrap_brokers` method.
 Boto3 documentation:
 [Kafka.Client.get_bootstrap_brokers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_bootstrap_brokers)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
 
@@ -305,7 +305,7 @@ method.
 Boto3 documentation:
 [Kafka.Client.get_compatible_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.get_compatible_kafka_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterArn`: `str`
 
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("kafka").list_configurations` method.
 Boto3 documentation:
 [Kafka.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -383,7 +383,7 @@ Type annotations for `boto3.client("kafka").list_kafka_versions` method.
 Boto3 documentation:
 [Kafka.Client.list_kafka_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_kafka_versions)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -429,7 +429,7 @@ Type annotations for `boto3.client("kafka").list_tags_for_resource` method.
 Boto3 documentation:
 [Kafka.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("kafka").reboot_broker` method.
 Boto3 documentation:
 [Kafka.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.reboot_broker)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerIds`: `List`\[`str`\] *(required)*
 - `ClusterArn`: `str` *(required)*
@@ -458,7 +458,7 @@ Type annotations for `boto3.client("kafka").tag_resource` method.
 Boto3 documentation:
 [Kafka.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -470,7 +470,7 @@ Type annotations for `boto3.client("kafka").untag_resource` method.
 Boto3 documentation:
 [Kafka.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

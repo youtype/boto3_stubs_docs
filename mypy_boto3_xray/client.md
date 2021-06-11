@@ -88,7 +88,7 @@ Type annotations for `boto3.client("xray").batch_get_traces` method.
 Boto3 documentation:
 [XRay.Client.batch_get_traces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.batch_get_traces)
 
-Arguments:
+Keyword-only arguments:
 
 - `TraceIds`: `List`\[`str`\] *(required)*
 - `NextToken`: `str`
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("xray").create_sampling_rule` method.
 Boto3 documentation:
 [XRay.Client.create_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_sampling_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `SamplingRule`: [SamplingRuleTypeDef](./type_defs.md#samplingruletypedef)
   *(required)*
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("xray").delete_group` method.
 Boto3 documentation:
 [XRay.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `GroupARN`: `str`
@@ -163,7 +163,7 @@ Type annotations for `boto3.client("xray").delete_sampling_rule` method.
 Boto3 documentation:
 [XRay.Client.delete_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_sampling_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleName`: `str`
 - `RuleARN`: `str`
@@ -204,7 +204,7 @@ Type annotations for `boto3.client("xray").get_group` method.
 Boto3 documentation:
 [XRay.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `GroupARN`: `str`
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("xray").get_groups` method.
 Boto3 documentation:
 [XRay.Client.get_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -231,7 +231,7 @@ Type annotations for `boto3.client("xray").get_insight` method.
 Boto3 documentation:
 [XRay.Client.get_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightId`: `str` *(required)*
 
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("xray").get_sampling_rules` method.
 Boto3 documentation:
 [XRay.Client.get_sampling_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -312,7 +312,7 @@ method.
 Boto3 documentation:
 [XRay.Client.get_sampling_statistic_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_statistic_summaries)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -326,7 +326,7 @@ Type annotations for `boto3.client("xray").get_sampling_targets` method.
 Boto3 documentation:
 [XRay.Client.get_sampling_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_targets)
 
-Arguments:
+Keyword-only arguments:
 
 - `SamplingStatisticsDocuments`:
   `List`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
@@ -382,7 +382,7 @@ Type annotations for `boto3.client("xray").get_trace_graph` method.
 Boto3 documentation:
 [XRay.Client.get_trace_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_graph)
 
-Arguments:
+Keyword-only arguments:
 
 - `TraceIds`: `List`\[`str`\] *(required)*
 - `NextToken`: `str`
@@ -418,7 +418,7 @@ Type annotations for `boto3.client("xray").list_tags_for_resource` method.
 Boto3 documentation:
 [XRay.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `NextToken`: `str`
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("xray").put_encryption_config` method.
 Boto3 documentation:
 [XRay.Client.put_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_encryption_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [EncryptionTypeType](./literals.md#encryptiontypetype) *(required)*
 - `KeyId`: `str`
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("xray").put_trace_segments` method.
 Boto3 documentation:
 [XRay.Client.put_trace_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_trace_segments)
 
-Arguments:
+Keyword-only arguments:
 
 - `TraceSegmentDocuments`: `List`\[`str`\] *(required)*
 
@@ -480,7 +480,7 @@ Type annotations for `boto3.client("xray").tag_resource` method.
 Boto3 documentation:
 [XRay.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -494,7 +494,7 @@ Type annotations for `boto3.client("xray").untag_resource` method.
 Boto3 documentation:
 [XRay.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -525,7 +525,7 @@ Type annotations for `boto3.client("xray").update_sampling_rule` method.
 Boto3 documentation:
 [XRay.Client.update_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_sampling_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `SamplingRuleUpdate`:
   [SamplingRuleUpdateTypeDef](./type_defs.md#samplingruleupdatetypedef)

@@ -232,7 +232,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.associate_connection_with_lag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_connection_with_lag)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `lagId`: `str` *(required)*
@@ -247,7 +247,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.associate_hosted_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_hosted_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `parentConnectionId`: `str` *(required)*
@@ -280,7 +280,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.associate_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_virtual_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 - `connectionId`: `str` *(required)*
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("directconnect").confirm_connection` method.
 Boto3 documentation:
 [DirectConnect.Client.confirm_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 
@@ -339,7 +339,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.confirm_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_public_virtual_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 
@@ -354,7 +354,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.confirm_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_transit_virtual_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 - `directConnectGatewayId`: `str` *(required)*
@@ -369,7 +369,7 @@ Type annotations for `boto3.client("directconnect").create_bgp_peer` method.
 Boto3 documentation:
 [DirectConnect.Client.create_bgp_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_bgp_peer)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualInterfaceId`: `str`
 - `newBGPPeer`: [NewBGPPeerTypeDef](./type_defs.md#newbgppeertypedef)
@@ -404,7 +404,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.create_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `directConnectGatewayName`: `str` *(required)*
 - `amazonSideAsn`: `int`
@@ -502,7 +502,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.create_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_private_virtual_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `newPrivateVirtualInterface`:
@@ -519,7 +519,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.create_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_public_virtual_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `newPublicVirtualInterface`:
@@ -536,7 +536,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.create_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_transit_virtual_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `newTransitVirtualInterface`:
@@ -570,7 +570,7 @@ Type annotations for `boto3.client("directconnect").delete_connection` method.
 Boto3 documentation:
 [DirectConnect.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 
@@ -584,7 +584,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.delete_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `directConnectGatewayId`: `str` *(required)*
 
@@ -618,7 +618,7 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.delete_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association_proposal)
 
-Arguments:
+Keyword-only arguments:
 
 - `proposalId`: `str` *(required)*
 
@@ -633,7 +633,7 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.delete_interconnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_interconnect)
 
-Arguments:
+Keyword-only arguments:
 
 - `interconnectId`: `str` *(required)*
 
@@ -647,7 +647,7 @@ Type annotations for `boto3.client("directconnect").delete_lag` method.
 Boto3 documentation:
 [DirectConnect.Client.delete_lag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_lag)
 
-Arguments:
+Keyword-only arguments:
 
 - `lagId`: `str` *(required)*
 
@@ -661,7 +661,7 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.delete_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_virtual_interface)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 
@@ -694,7 +694,7 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str`
 
@@ -708,7 +708,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.describe_connections_on_interconnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connections_on_interconnect)
 
-Arguments:
+Keyword-only arguments:
 
 - `interconnectId`: `str` *(required)*
 
@@ -799,7 +799,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.describe_hosted_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_hosted_connections)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 
@@ -831,7 +831,7 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.describe_interconnects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_interconnects)
 
-Arguments:
+Keyword-only arguments:
 
 - `interconnectId`: `str`
 
@@ -844,7 +844,7 @@ Type annotations for `boto3.client("directconnect").describe_lags` method.
 Boto3 documentation:
 [DirectConnect.Client.describe_lags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_lags)
 
-Arguments:
+Keyword-only arguments:
 
 - `lagId`: `str`
 
@@ -882,7 +882,7 @@ Type annotations for `boto3.client("directconnect").describe_tags` method.
 Boto3 documentation:
 [DirectConnect.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArns`: `List`\[`str`\] *(required)*
 
@@ -907,7 +907,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.describe_virtual_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_interfaces)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str`
 - `virtualInterfaceId`: `str`
@@ -922,7 +922,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.disassociate_connection_from_lag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.disassociate_connection_from_lag)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `lagId`: `str` *(required)*
@@ -937,7 +937,7 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.disassociate_mac_sec_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.disassociate_mac_sec_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `secretARN`: `str` *(required)*
@@ -1007,7 +1007,7 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.stop_bgp_failover_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.stop_bgp_failover_test)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 
@@ -1021,7 +1021,7 @@ Type annotations for `boto3.client("directconnect").tag_resource` method.
 Boto3 documentation:
 [DirectConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1035,7 +1035,7 @@ Type annotations for `boto3.client("directconnect").untag_resource` method.
 Boto3 documentation:
 [DirectConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -1101,7 +1101,7 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.update_virtual_interface_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_virtual_interface_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 - `mtu`: `int`

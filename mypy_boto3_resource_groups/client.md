@@ -110,7 +110,7 @@ Type annotations for `boto3.client("resource-groups").delete_group` method.
 Boto3 documentation:
 [ResourceGroups.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.delete_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `Group`: `str`
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("resource-groups").get_group` method.
 Boto3 documentation:
 [ResourceGroups.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `Group`: `str`
@@ -156,7 +156,7 @@ method.
 Boto3 documentation:
 [ResourceGroups.Client.get_group_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Group`: `str`
 
@@ -170,7 +170,7 @@ Type annotations for `boto3.client("resource-groups").get_group_query` method.
 Boto3 documentation:
 [ResourceGroups.Client.get_group_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str`
 - `Group`: `str`
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("resource-groups").get_tags` method.
 Boto3 documentation:
 [ResourceGroups.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("resource-groups").group_resources` method.
 Boto3 documentation:
 [ResourceGroups.Client.group_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.group_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `Group`: `str` *(required)*
 - `ResourceArns`: `List`\[`str`\] *(required)*
@@ -249,7 +249,7 @@ method.
 Boto3 documentation:
 [ResourceGroups.Client.put_group_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.put_group_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `Group`: `str`
 - `Configuration`:
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("resource-groups").tag` method.
 Boto3 documentation:
 [ResourceGroups.Client.tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.tag)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -296,7 +296,7 @@ method.
 Boto3 documentation:
 [ResourceGroups.Client.ungroup_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.ungroup_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `Group`: `str` *(required)*
 - `ResourceArns`: `List`\[`str`\] *(required)*
@@ -311,7 +311,7 @@ Type annotations for `boto3.client("resource-groups").untag` method.
 Boto3 documentation:
 [ResourceGroups.Client.untag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.untag)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Keys`: `List`\[`str`\] *(required)*

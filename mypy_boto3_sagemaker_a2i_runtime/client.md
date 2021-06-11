@@ -82,7 +82,7 @@ method.
 Boto3 documentation:
 [AugmentedAIRuntime.Client.delete_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
 
-Arguments:
+Keyword-only arguments:
 
 - `HumanLoopName`: `str` *(required)*
 
@@ -96,7 +96,7 @@ Type annotations for
 Boto3 documentation:
 [AugmentedAIRuntime.Client.describe_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
 
-Arguments:
+Keyword-only arguments:
 
 - `HumanLoopName`: `str` *(required)*
 
@@ -168,7 +168,7 @@ method.
 Boto3 documentation:
 [AugmentedAIRuntime.Client.stop_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
 
-Arguments:
+Keyword-only arguments:
 
 - `HumanLoopName`: `str` *(required)*
 

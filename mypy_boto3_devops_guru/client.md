@@ -85,7 +85,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.add_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.add_notification_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `Config`:
   [NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef)
@@ -126,7 +126,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.describe_account_overview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_account_overview)
 
-Arguments:
+Keyword-only arguments:
 
 - `FromTime`: `datetime` *(required)*
 - `ToTime`: `datetime`
@@ -141,7 +141,7 @@ Type annotations for `boto3.client("devops-guru").describe_anomaly` method.
 Boto3 documentation:
 [DevOpsGuru.Client.describe_anomaly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_anomaly)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -155,7 +155,7 @@ Type annotations for `boto3.client("devops-guru").describe_feedback` method.
 Boto3 documentation:
 [DevOpsGuru.Client.describe_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightId`: `str`
 
@@ -169,7 +169,7 @@ Type annotations for `boto3.client("devops-guru").describe_insight` method.
 Boto3 documentation:
 [DevOpsGuru.Client.describe_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_insight)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -184,7 +184,7 @@ Type annotations for
 Boto3 documentation:
 [DevOpsGuru.Client.describe_resource_collection_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_resource_collection_health)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceCollectionType`:
   [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
@@ -229,7 +229,7 @@ Type annotations for `boto3.client("devops-guru").get_cost_estimation` method.
 Boto3 documentation:
 [DevOpsGuru.Client.get_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.get_cost_estimation)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -244,7 +244,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.get_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.get_resource_collection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceCollectionType`:
   [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
@@ -316,7 +316,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.list_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_notification_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -346,7 +346,7 @@ Type annotations for `boto3.client("devops-guru").put_feedback` method.
 Boto3 documentation:
 [DevOpsGuru.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.put_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightFeedback`:
   [InsightFeedbackTypeDef](./type_defs.md#insightfeedbacktypedef)
@@ -361,7 +361,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.remove_notification_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -395,7 +395,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.start_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.start_cost_estimation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceCollection`:
   [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
@@ -412,7 +412,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.update_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.update_resource_collection)
 
-Arguments:
+Keyword-only arguments:
 
 - `Action`:
   [UpdateResourceCollectionActionType](./literals.md#updateresourcecollectionactiontype)
@@ -431,7 +431,7 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.update_service_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.update_service_integration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceIntegration`:
   [UpdateServiceIntegrationConfigTypeDef](./type_defs.md#updateserviceintegrationconfigtypedef)

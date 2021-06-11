@@ -78,7 +78,7 @@ Type annotations for `boto3.client("mediastore-data").delete_object` method.
 Boto3 documentation:
 [MediaStoreData.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.delete_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `Path`: `str` *(required)*
 
@@ -91,7 +91,7 @@ Type annotations for `boto3.client("mediastore-data").describe_object` method.
 Boto3 documentation:
 [MediaStoreData.Client.describe_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.describe_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `Path`: `str` *(required)*
 
@@ -122,7 +122,7 @@ Type annotations for `boto3.client("mediastore-data").get_object` method.
 Boto3 documentation:
 [MediaStoreData.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.get_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `Path`: `str` *(required)*
 - `Range`: `str`

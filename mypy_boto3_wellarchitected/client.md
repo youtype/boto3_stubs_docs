@@ -93,7 +93,7 @@ Type annotations for `boto3.client("wellarchitected").associate_lenses` method.
 Boto3 documentation:
 [WellArchitected.Client.associate_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAliases`: `List`\[`str`\] *(required)*
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("wellarchitected").delete_workload` method.
 Boto3 documentation:
 [WellArchitected.Client.delete_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
@@ -209,7 +209,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.disassociate_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAliases`: `List`\[`str`\] *(required)*
@@ -288,7 +288,7 @@ Type annotations for
 Boto3 documentation:
 [WellArchitected.Client.get_lens_version_difference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference)
 
-Arguments:
+Keyword-only arguments:
 
 - `LensAlias`: `str` *(required)*
 - `BaseLensVersion`: `str` *(required)*
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("wellarchitected").get_milestone` method.
 Boto3 documentation:
 [WellArchitected.Client.get_milestone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `MilestoneNumber`: `int` *(required)*
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("wellarchitected").get_workload` method.
 Boto3 documentation:
 [WellArchitected.Client.get_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_workload)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 
@@ -386,7 +386,7 @@ Type annotations for `boto3.client("wellarchitected").list_lenses` method.
 Boto3 documentation:
 [WellArchitected.Client.list_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -451,7 +451,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadArn`: `str` *(required)*
 
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("wellarchitected").tag_resource` method.
 Boto3 documentation:
 [WellArchitected.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -513,7 +513,7 @@ Type annotations for `boto3.client("wellarchitected").untag_resource` method.
 Boto3 documentation:
 [WellArchitected.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `WorkloadArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -564,7 +564,7 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.update_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ShareInvitationId`: `str` *(required)*
 - `ShareInvitationAction`:

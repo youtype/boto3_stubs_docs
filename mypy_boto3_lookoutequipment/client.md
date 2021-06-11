@@ -173,7 +173,7 @@ Type annotations for `boto3.client("lookoutequipment").delete_dataset` method.
 Boto3 documentation:
 [LookoutEquipment.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 
@@ -185,7 +185,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.delete_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_inference_scheduler)
 
-Arguments:
+Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("lookoutequipment").delete_model` method.
 Boto3 documentation:
 [LookoutEquipment.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 
@@ -208,7 +208,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.describe_data_ingestion_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -223,7 +223,7 @@ method.
 Boto3 documentation:
 [LookoutEquipment.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 
@@ -238,7 +238,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.describe_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_inference_scheduler)
 
-Arguments:
+Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("lookoutequipment").describe_model` method.
 Boto3 documentation:
 [LookoutEquipment.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 
@@ -374,7 +374,7 @@ method.
 Boto3 documentation:
 [LookoutEquipment.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -409,7 +409,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.start_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_inference_scheduler)
 
-Arguments:
+Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
@@ -424,7 +424,7 @@ Type annotations for
 Boto3 documentation:
 [LookoutEquipment.Client.stop_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.stop_inference_scheduler)
 
-Arguments:
+Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
@@ -438,7 +438,7 @@ Type annotations for `boto3.client("lookoutequipment").tag_resource` method.
 Boto3 documentation:
 [LookoutEquipment.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -452,7 +452,7 @@ Type annotations for `boto3.client("lookoutequipment").untag_resource` method.
 Boto3 documentation:
 [LookoutEquipment.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

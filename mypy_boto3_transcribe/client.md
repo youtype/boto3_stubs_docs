@@ -175,7 +175,7 @@ Type annotations for `boto3.client("transcribe").delete_language_model` method.
 Boto3 documentation:
 [TranscribeService.Client.delete_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_language_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 
@@ -187,7 +187,7 @@ Type annotations for
 Boto3 documentation:
 [TranscribeService.Client.delete_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_transcription_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `MedicalTranscriptionJobName`: `str` *(required)*
 
@@ -199,7 +199,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.delete_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_vocabulary)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 
@@ -211,7 +211,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.delete_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_transcription_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `TranscriptionJobName`: `str` *(required)*
 
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("transcribe").delete_vocabulary` method.
 Boto3 documentation:
 [TranscribeService.Client.delete_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 
@@ -234,7 +234,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.delete_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyFilterName`: `str` *(required)*
 
@@ -246,7 +246,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.describe_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.describe_language_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 
@@ -278,7 +278,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.get_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_transcription_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `MedicalTranscriptionJobName`: `str` *(required)*
 
@@ -293,7 +293,7 @@ method.
 Boto3 documentation:
 [TranscribeService.Client.get_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_vocabulary)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("transcribe").get_transcription_job` method.
 Boto3 documentation:
 [TranscribeService.Client.get_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_transcription_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `TranscriptionJobName`: `str` *(required)*
 
@@ -321,7 +321,7 @@ Type annotations for `boto3.client("transcribe").get_vocabulary` method.
 Boto3 documentation:
 [TranscribeService.Client.get_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 
@@ -335,7 +335,7 @@ Type annotations for `boto3.client("transcribe").get_vocabulary_filter` method.
 Boto3 documentation:
 [TranscribeService.Client.get_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `VocabularyFilterName`: `str` *(required)*
 

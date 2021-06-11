@@ -118,7 +118,7 @@ Type annotations for `boto3.client("license-manager").accept_grant` method.
 Boto3 documentation:
 [LicenseManager.Client.accept_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.accept_grant)
 
-Arguments:
+Keyword-only arguments:
 
 - `GrantArn`: `str` *(required)*
 
@@ -145,7 +145,7 @@ Type annotations for `boto3.client("license-manager").check_in_license` method.
 Boto3 documentation:
 [LicenseManager.Client.check_in_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.check_in_license)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConsumptionToken`: `str` *(required)*
 - `Beneficiary`: `str`
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("license-manager").delete_grant` method.
 Boto3 documentation:
 [LicenseManager.Client.delete_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_grant)
 
-Arguments:
+Keyword-only arguments:
 
 - `GrantArn`: `str` *(required)*
 - `Version`: `str` *(required)*
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("license-manager").delete_license` method.
 Boto3 documentation:
 [LicenseManager.Client.delete_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `SourceVersion`: `str` *(required)*
@@ -409,7 +409,7 @@ Type annotations for
 Boto3 documentation:
 [LicenseManager.Client.delete_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConfigurationArn`: `str` *(required)*
 
@@ -424,7 +424,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.delete_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_manager_report_generator)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseManagerReportGeneratorArn`: `str` *(required)*
 
@@ -437,7 +437,7 @@ Type annotations for `boto3.client("license-manager").delete_token` method.
 Boto3 documentation:
 [LicenseManager.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `TokenId`: `str` *(required)*
 
@@ -451,7 +451,7 @@ Type annotations for
 Boto3 documentation:
 [LicenseManager.Client.extend_license_consumption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConsumptionToken`: `str` *(required)*
 - `DryRun`: `bool`
@@ -483,7 +483,7 @@ Type annotations for `boto3.client("license-manager").get_access_token` method.
 Boto3 documentation:
 [LicenseManager.Client.get_access_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_access_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `Token`: `str` *(required)*
 - `TokenProperties`: `List`\[`str`\]
@@ -498,7 +498,7 @@ Type annotations for `boto3.client("license-manager").get_grant` method.
 Boto3 documentation:
 [LicenseManager.Client.get_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_grant)
 
-Arguments:
+Keyword-only arguments:
 
 - `GrantArn`: `str` *(required)*
 - `Version`: `str`
@@ -512,7 +512,7 @@ Type annotations for `boto3.client("license-manager").get_license` method.
 Boto3 documentation:
 [LicenseManager.Client.get_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `Version`: `str`
@@ -527,7 +527,7 @@ Type annotations for
 Boto3 documentation:
 [LicenseManager.Client.get_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseConfigurationArn`: `str` *(required)*
 
@@ -542,7 +542,7 @@ Type annotations for
 Boto3 documentation:
 [LicenseManager.Client.get_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_manager_report_generator)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseManagerReportGeneratorArn`: `str` *(required)*
 
@@ -557,7 +557,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.get_license_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 
@@ -779,7 +779,7 @@ method.
 Boto3 documentation:
 [LicenseManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -827,7 +827,7 @@ Type annotations for `boto3.client("license-manager").reject_grant` method.
 Boto3 documentation:
 [LicenseManager.Client.reject_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.reject_grant)
 
-Arguments:
+Keyword-only arguments:
 
 - `GrantArn`: `str` *(required)*
 
@@ -841,7 +841,7 @@ Type annotations for `boto3.client("license-manager").tag_resource` method.
 Boto3 documentation:
 [LicenseManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -855,7 +855,7 @@ Type annotations for `boto3.client("license-manager").untag_resource` method.
 Boto3 documentation:
 [LicenseManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

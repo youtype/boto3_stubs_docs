@@ -188,7 +188,7 @@ Type annotations for `boto3.client("codeartifact").delete_domain` method.
 Boto3 documentation:
 [CodeArtifact.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `domainOwner`: `str`
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("codeartifact").describe_domain` method.
 Boto3 documentation:
 [CodeArtifact.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `domainOwner`: `str`
@@ -405,7 +405,7 @@ Type annotations for
 Boto3 documentation:
 [CodeArtifact.Client.get_domain_permissions_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.get_domain_permissions_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `domainOwner`: `str`
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("codeartifact").list_domains` method.
 Boto3 documentation:
 [CodeArtifact.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -640,7 +640,7 @@ method.
 Boto3 documentation:
 [CodeArtifact.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -691,7 +691,7 @@ Type annotations for `boto3.client("codeartifact").tag_resource` method.
 Boto3 documentation:
 [CodeArtifact.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -705,7 +705,7 @@ Type annotations for `boto3.client("codeartifact").untag_resource` method.
 Boto3 documentation:
 [CodeArtifact.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

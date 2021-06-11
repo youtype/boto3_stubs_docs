@@ -86,7 +86,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruProfiler.Client.add_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
   *(required)*
@@ -175,7 +175,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.delete_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 
@@ -189,7 +189,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruProfiler.Client.describe_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 
@@ -238,7 +238,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruProfiler.Client.get_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("codeguruprofiler").get_policy` method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 
@@ -361,7 +361,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -411,7 +411,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruProfiler.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `channelId`: `str` *(required)*
 - `profilingGroupName`: `str` *(required)*
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("codeguruprofiler").tag_resource` method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -474,7 +474,7 @@ Type annotations for `boto3.client("codeguruprofiler").untag_resource` method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
@@ -489,7 +489,7 @@ method.
 Boto3 documentation:
 [CodeGuruProfiler.Client.update_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `agentOrchestrationConfig`:
   [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)

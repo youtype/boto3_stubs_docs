@@ -656,7 +656,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.Bucket.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExpectedBucketOwner`: `str`
 
@@ -929,7 +929,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.BucketCors.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExpectedBucketOwner`: `str`
 
@@ -956,7 +956,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketCors.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `CORSConfiguration`:
   [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
@@ -1009,7 +1009,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.BucketLifecycle.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExpectedBucketOwner`: `str`
 
@@ -1036,7 +1036,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketLifecycle.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `LifecycleConfiguration`:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
@@ -1088,7 +1088,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.BucketLifecycleConfiguration.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExpectedBucketOwner`: `str`
 
@@ -1115,7 +1115,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketLifecycleConfiguration.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `LifecycleConfiguration`:
   [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
@@ -1183,7 +1183,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketLogging.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `BucketLoggingStatus`:
   [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
@@ -1254,7 +1254,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketNotification.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `NotificationConfiguration`:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
@@ -1307,7 +1307,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.BucketPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExpectedBucketOwner`: `str`
 
@@ -1402,7 +1402,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketRequestPayment.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `RequestPaymentConfiguration`:
   [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
@@ -1455,7 +1455,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.BucketTagging.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExpectedBucketOwner`: `str`
 
@@ -1482,7 +1482,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketTagging.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
 - `ExpectedBucketOwner`: `str`
@@ -1637,7 +1637,7 @@ Type annotations for `boto3.resource("s3").delete` method.
 Boto3 documentation:
 [S3.BucketWebsite.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.delete)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExpectedBucketOwner`: `str`
 
@@ -1664,7 +1664,7 @@ Type annotations for `boto3.resource("s3").put` method.
 Boto3 documentation:
 [S3.BucketWebsite.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebsiteConfiguration`:
   [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
@@ -1760,7 +1760,7 @@ Type annotations for `boto3.resource("s3").abort` method.
 Boto3 documentation:
 [S3.MultipartUpload.abort](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.abort)
 
-Arguments:
+Keyword-only arguments:
 
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))

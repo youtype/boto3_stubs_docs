@@ -198,7 +198,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.add_custom_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.add_custom_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `CustomAttributes`:
@@ -269,7 +269,7 @@ Type annotations for `boto3.client("cognito-idp").admin_delete_user` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -298,7 +298,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_disable_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_provider_for_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `User`:
@@ -314,7 +314,7 @@ Type annotations for `boto3.client("cognito-idp").admin_disable_user` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_disable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -328,7 +328,7 @@ Type annotations for `boto3.client("cognito-idp").admin_enable_user` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_enable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_enable_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("cognito-idp").admin_get_user` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -646,7 +646,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_user_global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_user_global_sign_out)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -661,7 +661,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.associate_software_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.associate_software_token)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessToken`: `str`
 - `Session`: `str`
@@ -948,7 +948,7 @@ Type annotations for `boto3.client("cognito-idp").delete_group` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `UserPoolId`: `str` *(required)*
@@ -961,7 +961,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_identity_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `ProviderName`: `str` *(required)*
@@ -974,7 +974,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_resource_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Identifier`: `str` *(required)*
@@ -986,7 +986,7 @@ Type annotations for `boto3.client("cognito-idp").delete_user` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessToken`: `str` *(required)*
 
@@ -998,7 +998,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserAttributeNames`: `List`\[`str`\] *(required)*
 - `AccessToken`: `str` *(required)*
@@ -1012,7 +1012,7 @@ Type annotations for `boto3.client("cognito-idp").delete_user_pool` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
@@ -1024,7 +1024,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_client)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `ClientId`: `str` *(required)*
@@ -1037,7 +1037,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `Domain`: `str` *(required)*
 - `UserPoolId`: `str` *(required)*
@@ -1052,7 +1052,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_identity_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `ProviderName`: `str` *(required)*
@@ -1068,7 +1068,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_resource_server)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Identifier`: `str` *(required)*
@@ -1084,7 +1084,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_risk_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `ClientId`: `str`
@@ -1100,7 +1100,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -1115,7 +1115,7 @@ Type annotations for `boto3.client("cognito-idp").describe_user_pool` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
@@ -1130,7 +1130,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_client)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `ClientId`: `str` *(required)*
@@ -1146,7 +1146,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `Domain`: `str` *(required)*
 
@@ -1160,7 +1160,7 @@ Type annotations for `boto3.client("cognito-idp").forget_device` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.forget_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forget_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceKey`: `str` *(required)*
 - `AccessToken`: `str`
@@ -1210,7 +1210,7 @@ Type annotations for `boto3.client("cognito-idp").get_csv_header` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.get_csv_header](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_csv_header)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
@@ -1224,7 +1224,7 @@ Type annotations for `boto3.client("cognito-idp").get_device` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceKey`: `str` *(required)*
 - `AccessToken`: `str`
@@ -1238,7 +1238,7 @@ Type annotations for `boto3.client("cognito-idp").get_group` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `UserPoolId`: `str` *(required)*
@@ -1253,7 +1253,7 @@ Type annotations for
 Boto3 documentation:
 [CognitoIdentityProvider.Client.get_identity_provider_by_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_identity_provider_by_identifier)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `IdpIdentifier`: `str` *(required)*
@@ -1269,7 +1269,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.get_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_signing_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
@@ -1283,7 +1283,7 @@ Type annotations for `boto3.client("cognito-idp").get_ui_customization` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.get_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_ui_customization)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `ClientId`: `str`
@@ -1298,7 +1298,7 @@ Type annotations for `boto3.client("cognito-idp").get_user` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessToken`: `str` *(required)*
 
@@ -1329,7 +1329,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.get_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_pool_mfa_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
@@ -1343,7 +1343,7 @@ Type annotations for `boto3.client("cognito-idp").global_sign_out` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.global_sign_out)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessToken`: `str` *(required)*
 
@@ -1443,7 +1443,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -1491,7 +1491,7 @@ Type annotations for `boto3.client("cognito-idp").list_user_pools` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.list_user_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pools)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int` *(required)*
 - `NextToken`: `str`
@@ -1678,7 +1678,7 @@ Type annotations for `boto3.client("cognito-idp").set_user_settings` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessToken`: `str` *(required)*
 - `MFAOptions`:
@@ -1720,7 +1720,7 @@ method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.start_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.start_user_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -1735,7 +1735,7 @@ Type annotations for `boto3.client("cognito-idp").stop_user_import_job` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.stop_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.stop_user_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -1750,7 +1750,7 @@ Type annotations for `boto3.client("cognito-idp").tag_resource` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -1764,7 +1764,7 @@ Type annotations for `boto3.client("cognito-idp").untag_resource` method.
 Boto3 documentation:
 [CognitoIdentityProvider.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

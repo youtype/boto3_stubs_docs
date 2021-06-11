@@ -96,7 +96,7 @@ Type annotations for `boto3.client("mediastore").create_container` method.
 Boto3 documentation:
 [MediaStore.Client.create_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.create_container)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -111,7 +111,7 @@ Type annotations for `boto3.client("mediastore").delete_container` method.
 Boto3 documentation:
 [MediaStore.Client.delete_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -125,7 +125,7 @@ method.
 Boto3 documentation:
 [MediaStore.Client.delete_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("mediastore").delete_cors_policy` method.
 Boto3 documentation:
 [MediaStore.Client.delete_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -152,7 +152,7 @@ method.
 Boto3 documentation:
 [MediaStore.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -165,7 +165,7 @@ Type annotations for `boto3.client("mediastore").delete_metric_policy` method.
 Boto3 documentation:
 [MediaStore.Client.delete_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -178,7 +178,7 @@ Type annotations for `boto3.client("mediastore").describe_container` method.
 Boto3 documentation:
 [MediaStore.Client.describe_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.describe_container)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str`
 
@@ -209,7 +209,7 @@ Type annotations for `boto3.client("mediastore").get_container_policy` method.
 Boto3 documentation:
 [MediaStore.Client.get_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_container_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("mediastore").get_cors_policy` method.
 Boto3 documentation:
 [MediaStore.Client.get_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_cors_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("mediastore").get_lifecycle_policy` method.
 Boto3 documentation:
 [MediaStore.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -251,7 +251,7 @@ Type annotations for `boto3.client("mediastore").get_metric_policy` method.
 Boto3 documentation:
 [MediaStore.Client.get_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_metric_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -265,7 +265,7 @@ Type annotations for `boto3.client("mediastore").list_containers` method.
 Boto3 documentation:
 [MediaStore.Client.list_containers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_containers)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -281,7 +281,7 @@ method.
 Boto3 documentation:
 [MediaStore.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 
@@ -295,7 +295,7 @@ Type annotations for `boto3.client("mediastore").put_container_policy` method.
 Boto3 documentation:
 [MediaStore.Client.put_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_container_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("mediastore").put_cors_policy` method.
 Boto3 documentation:
 [MediaStore.Client.put_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_cors_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 - `CorsPolicy`: `List`\[[CorsRuleTypeDef](./type_defs.md#corsruletypedef)\]
@@ -324,7 +324,7 @@ Type annotations for `boto3.client("mediastore").put_lifecycle_policy` method.
 Boto3 documentation:
 [MediaStore.Client.put_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 - `LifecyclePolicy`: `str` *(required)*
@@ -338,7 +338,7 @@ Type annotations for `boto3.client("mediastore").put_metric_policy` method.
 Boto3 documentation:
 [MediaStore.Client.put_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_metric_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 - `MetricPolicy`: [MetricPolicyTypeDef](./type_defs.md#metricpolicytypedef)
@@ -353,7 +353,7 @@ Type annotations for `boto3.client("mediastore").start_access_logging` method.
 Boto3 documentation:
 [MediaStore.Client.start_access_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.start_access_logging)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -366,7 +366,7 @@ Type annotations for `boto3.client("mediastore").stop_access_logging` method.
 Boto3 documentation:
 [MediaStore.Client.stop_access_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.stop_access_logging)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
@@ -379,7 +379,7 @@ Type annotations for `boto3.client("mediastore").tag_resource` method.
 Boto3 documentation:
 [MediaStore.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("mediastore").untag_resource` method.
 Boto3 documentation:
 [MediaStore.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

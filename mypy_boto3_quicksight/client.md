@@ -505,7 +505,7 @@ method.
 Boto3 documentation:
 [QuickSight.Client.delete_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_account_customization)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Namespace`: `str`
@@ -553,7 +553,7 @@ Type annotations for `boto3.client("quicksight").delete_data_set` method.
 Boto3 documentation:
 [QuickSight.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
@@ -568,7 +568,7 @@ Type annotations for `boto3.client("quicksight").delete_data_source` method.
 Boto3 documentation:
 [QuickSight.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DataSourceId`: `str` *(required)*
@@ -634,7 +634,7 @@ Type annotations for `boto3.client("quicksight").delete_namespace` method.
 Boto3 documentation:
 [QuickSight.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_namespace)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Namespace`: `str` *(required)*
@@ -763,7 +763,7 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_settings)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 
@@ -777,7 +777,7 @@ Type annotations for `boto3.client("quicksight").describe_analysis` method.
 Boto3 documentation:
 [QuickSight.Client.describe_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `AnalysisId`: `str` *(required)*
@@ -793,7 +793,7 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `AnalysisId`: `str` *(required)*
@@ -826,7 +826,7 @@ Type annotations for
 Boto3 documentation:
 [QuickSight.Client.describe_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DashboardId`: `str` *(required)*
@@ -841,7 +841,7 @@ Type annotations for `boto3.client("quicksight").describe_data_set` method.
 Boto3 documentation:
 [QuickSight.Client.describe_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
@@ -857,7 +857,7 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
@@ -872,7 +872,7 @@ Type annotations for `boto3.client("quicksight").describe_data_source` method.
 Boto3 documentation:
 [QuickSight.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DataSourceId`: `str` *(required)*
@@ -888,7 +888,7 @@ Type annotations for
 Boto3 documentation:
 [QuickSight.Client.describe_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DataSourceId`: `str` *(required)*
@@ -952,7 +952,7 @@ Type annotations for `boto3.client("quicksight").describe_namespace` method.
 Boto3 documentation:
 [QuickSight.Client.describe_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_namespace)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Namespace`: `str` *(required)*
@@ -1002,7 +1002,7 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `TemplateId`: `str` *(required)*
@@ -1051,7 +1051,7 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `ThemeId`: `str` *(required)*
@@ -1332,7 +1332,7 @@ method.
 Boto3 documentation:
 [QuickSight.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -1507,7 +1507,7 @@ Type annotations for `boto3.client("quicksight").restore_analysis` method.
 Boto3 documentation:
 [QuickSight.Client.restore_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.restore_analysis)
 
-Arguments:
+Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `AnalysisId`: `str` *(required)*
@@ -1560,7 +1560,7 @@ Type annotations for `boto3.client("quicksight").tag_resource` method.
 Boto3 documentation:
 [QuickSight.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1575,7 +1575,7 @@ Type annotations for `boto3.client("quicksight").untag_resource` method.
 Boto3 documentation:
 [QuickSight.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

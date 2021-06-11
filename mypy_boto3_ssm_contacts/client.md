@@ -109,7 +109,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.activate_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.activate_contact_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactChannelId`: `str` *(required)*
 - `ActivationCode`: `str` *(required)*
@@ -178,7 +178,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.deactivate_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.deactivate_contact_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactChannelId`: `str` *(required)*
 
@@ -191,7 +191,7 @@ Type annotations for `boto3.client("ssm-contacts").delete_contact` method.
 Boto3 documentation:
 [SSMContacts.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.delete_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 
@@ -205,7 +205,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.delete_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.delete_contact_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactChannelId`: `str` *(required)*
 
@@ -218,7 +218,7 @@ Type annotations for `boto3.client("ssm-contacts").describe_engagement` method.
 Boto3 documentation:
 [SSMContacts.Client.describe_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.describe_engagement)
 
-Arguments:
+Keyword-only arguments:
 
 - `EngagementId`: `str` *(required)*
 
@@ -232,7 +232,7 @@ Type annotations for `boto3.client("ssm-contacts").describe_page` method.
 Boto3 documentation:
 [SSMContacts.Client.describe_page](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.describe_page)
 
-Arguments:
+Keyword-only arguments:
 
 - `PageId`: `str` *(required)*
 
@@ -262,7 +262,7 @@ Type annotations for `boto3.client("ssm-contacts").get_contact` method.
 Boto3 documentation:
 [SSMContacts.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactId`: `str` *(required)*
 
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("ssm-contacts").get_contact_channel` method.
 Boto3 documentation:
 [SSMContacts.Client.get_contact_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactChannelId`: `str` *(required)*
 
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("ssm-contacts").get_contact_policy` method.
 Boto3 documentation:
 [SSMContacts.Client.get_contact_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.get_contact_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactArn`: `str` *(required)*
 
@@ -404,7 +404,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -418,7 +418,7 @@ Type annotations for `boto3.client("ssm-contacts").put_contact_policy` method.
 Boto3 documentation:
 [SSMContacts.Client.put_contact_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.put_contact_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactArn`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -433,7 +433,7 @@ method.
 Boto3 documentation:
 [SSMContacts.Client.send_activation_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.send_activation_code)
 
-Arguments:
+Keyword-only arguments:
 
 - `ContactChannelId`: `str` *(required)*
 
@@ -467,7 +467,7 @@ Type annotations for `boto3.client("ssm-contacts").stop_engagement` method.
 Boto3 documentation:
 [SSMContacts.Client.stop_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.stop_engagement)
 
-Arguments:
+Keyword-only arguments:
 
 - `EngagementId`: `str` *(required)*
 - `Reason`: `str`
@@ -481,7 +481,7 @@ Type annotations for `boto3.client("ssm-contacts").tag_resource` method.
 Boto3 documentation:
 [SSMContacts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -495,7 +495,7 @@ Type annotations for `boto3.client("ssm-contacts").untag_resource` method.
 Boto3 documentation:
 [SSMContacts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

@@ -129,7 +129,7 @@ method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.describe_code_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_code_review)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 
@@ -161,7 +161,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruReviewer.Client.describe_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_repository_association)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationArn`: `str` *(required)*
 
@@ -176,7 +176,7 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruReviewer.Client.disassociate_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.disassociate_repository)
 
-Arguments:
+Keyword-only arguments:
 
 - `AssociationArn`: `str` *(required)*
 
@@ -285,7 +285,7 @@ method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("codeguru-reviewer").tag_resource` method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("codeguru-reviewer").untag_resource` method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

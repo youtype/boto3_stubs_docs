@@ -117,7 +117,7 @@ Type annotations for `boto3.client("appstream").associate_fleet` method.
 Boto3 documentation:
 [AppStream.Client.associate_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetName`: `str` *(required)*
 - `StackName`: `str` *(required)*
@@ -132,7 +132,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.batch_associate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_associate_user_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserStackAssociations`:
   `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
@@ -149,7 +149,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.batch_disassociate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_disassociate_user_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserStackAssociations`:
   `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
@@ -272,7 +272,7 @@ Type annotations for
 Boto3 documentation:
 [AppStream.Client.create_image_builder_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder_streaming_url)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Validity`: `int`
@@ -382,7 +382,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.delete_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_directory_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryName`: `str` *(required)*
 
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("appstream").delete_fleet` method.
 Boto3 documentation:
 [AppStream.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("appstream").delete_image` method.
 Boto3 documentation:
 [AppStream.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -421,7 +421,7 @@ Type annotations for `boto3.client("appstream").delete_image_builder` method.
 Boto3 documentation:
 [AppStream.Client.delete_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_builder)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -436,7 +436,7 @@ method.
 Boto3 documentation:
 [AppStream.Client.delete_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SharedAccountId`: `str` *(required)*
@@ -450,7 +450,7 @@ Type annotations for `boto3.client("appstream").delete_stack` method.
 Boto3 documentation:
 [AppStream.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_stack)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -473,7 +473,7 @@ Type annotations for `boto3.client("appstream").delete_user` method.
 Boto3 documentation:
 [AppStream.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `AuthenticationType`:
@@ -505,7 +505,7 @@ Type annotations for `boto3.client("appstream").describe_fleets` method.
 Boto3 documentation:
 [AppStream.Client.describe_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_fleets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Names`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -593,7 +593,7 @@ Type annotations for `boto3.client("appstream").describe_stacks` method.
 Boto3 documentation:
 [AppStream.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_stacks)
 
-Arguments:
+Keyword-only arguments:
 
 - `Names`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -609,7 +609,7 @@ Type annotations for
 Boto3 documentation:
 [AppStream.Client.describe_usage_report_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_usage_report_subscriptions)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -661,7 +661,7 @@ Type annotations for `boto3.client("appstream").disable_user` method.
 Boto3 documentation:
 [AppStream.Client.disable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disable_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `AuthenticationType`:
@@ -676,7 +676,7 @@ Type annotations for `boto3.client("appstream").disassociate_fleet` method.
 Boto3 documentation:
 [AppStream.Client.disassociate_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetName`: `str` *(required)*
 - `StackName`: `str` *(required)*
@@ -690,7 +690,7 @@ Type annotations for `boto3.client("appstream").enable_user` method.
 Boto3 documentation:
 [AppStream.Client.enable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.enable_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `AuthenticationType`:
@@ -705,7 +705,7 @@ Type annotations for `boto3.client("appstream").expire_session` method.
 Boto3 documentation:
 [AppStream.Client.expire_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.expire_session)
 
-Arguments:
+Keyword-only arguments:
 
 - `SessionId`: `str` *(required)*
 
@@ -734,7 +734,7 @@ Type annotations for `boto3.client("appstream").list_associated_fleets` method.
 Boto3 documentation:
 [AppStream.Client.list_associated_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_fleets)
 
-Arguments:
+Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `NextToken`: `str`
@@ -749,7 +749,7 @@ Type annotations for `boto3.client("appstream").list_associated_stacks` method.
 Boto3 documentation:
 [AppStream.Client.list_associated_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_stacks)
 
-Arguments:
+Keyword-only arguments:
 
 - `FleetName`: `str` *(required)*
 - `NextToken`: `str`
@@ -764,7 +764,7 @@ Type annotations for `boto3.client("appstream").list_tags_for_resource` method.
 Boto3 documentation:
 [AppStream.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -778,7 +778,7 @@ Type annotations for `boto3.client("appstream").start_fleet` method.
 Boto3 documentation:
 [AppStream.Client.start_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -791,7 +791,7 @@ Type annotations for `boto3.client("appstream").start_image_builder` method.
 Boto3 documentation:
 [AppStream.Client.start_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_image_builder)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `AppstreamAgentVersion`: `str`
@@ -806,7 +806,7 @@ Type annotations for `boto3.client("appstream").stop_fleet` method.
 Boto3 documentation:
 [AppStream.Client.stop_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_fleet)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -819,7 +819,7 @@ Type annotations for `boto3.client("appstream").stop_image_builder` method.
 Boto3 documentation:
 [AppStream.Client.stop_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_image_builder)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -833,7 +833,7 @@ Type annotations for `boto3.client("appstream").tag_resource` method.
 Boto3 documentation:
 [AppStream.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -847,7 +847,7 @@ Type annotations for `boto3.client("appstream").untag_resource` method.
 Boto3 documentation:
 [AppStream.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

@@ -177,7 +177,7 @@ Type annotations for `boto3.client("clouddirectory").apply_schema` method.
 Boto3 documentation:
 [CloudDirectory.Client.apply_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.apply_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `PublishedSchemaArn`: `str` *(required)*
 - `DirectoryArn`: `str` *(required)*
@@ -288,7 +288,7 @@ Type annotations for `boto3.client("clouddirectory").batch_write` method.
 Boto3 documentation:
 [CloudDirectory.Client.batch_write](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_write)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `Operations`:
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("clouddirectory").create_directory` method.
 Boto3 documentation:
 [CloudDirectory.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SchemaArn`: `str` *(required)*
@@ -393,7 +393,7 @@ Type annotations for `boto3.client("clouddirectory").create_schema` method.
 Boto3 documentation:
 [CloudDirectory.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -408,7 +408,7 @@ method.
 Boto3 documentation:
 [CloudDirectory.Client.create_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_typed_link_facet)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 - `Facet`: [TypedLinkFacetTypeDef](./type_defs.md#typedlinkfacettypedef)
@@ -423,7 +423,7 @@ Type annotations for `boto3.client("clouddirectory").delete_directory` method.
 Boto3 documentation:
 [CloudDirectory.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 
@@ -437,7 +437,7 @@ Type annotations for `boto3.client("clouddirectory").delete_facet` method.
 Boto3 documentation:
 [CloudDirectory.Client.delete_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_facet)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -451,7 +451,7 @@ Type annotations for `boto3.client("clouddirectory").delete_object` method.
 Boto3 documentation:
 [CloudDirectory.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_object)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `ObjectReference`:
@@ -466,7 +466,7 @@ Type annotations for `boto3.client("clouddirectory").delete_schema` method.
 Boto3 documentation:
 [CloudDirectory.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 
@@ -481,7 +481,7 @@ method.
 Boto3 documentation:
 [CloudDirectory.Client.delete_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_typed_link_facet)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -547,7 +547,7 @@ Type annotations for `boto3.client("clouddirectory").detach_typed_link` method.
 Boto3 documentation:
 [CloudDirectory.Client.detach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_typed_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `TypedLinkSpecifier`:
@@ -561,7 +561,7 @@ Type annotations for `boto3.client("clouddirectory").disable_directory` method.
 Boto3 documentation:
 [CloudDirectory.Client.disable_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.disable_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 
@@ -575,7 +575,7 @@ Type annotations for `boto3.client("clouddirectory").enable_directory` method.
 Boto3 documentation:
 [CloudDirectory.Client.enable_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.enable_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 
@@ -607,7 +607,7 @@ Type annotations for
 Boto3 documentation:
 [CloudDirectory.Client.get_applied_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_applied_schema_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 
@@ -621,7 +621,7 @@ Type annotations for `boto3.client("clouddirectory").get_directory` method.
 Boto3 documentation:
 [CloudDirectory.Client.get_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 
@@ -635,7 +635,7 @@ Type annotations for `boto3.client("clouddirectory").get_facet` method.
 Boto3 documentation:
 [CloudDirectory.Client.get_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_facet)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -712,7 +712,7 @@ method.
 Boto3 documentation:
 [CloudDirectory.Client.get_schema_as_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_schema_as_json)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 
@@ -727,7 +727,7 @@ Type annotations for
 Boto3 documentation:
 [CloudDirectory.Client.get_typed_link_facet_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_typed_link_facet_information)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -782,7 +782,7 @@ Type annotations for
 Boto3 documentation:
 [CloudDirectory.Client.list_development_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_development_schema_arns)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1166,7 +1166,7 @@ method.
 Boto3 documentation:
 [CloudDirectory.Client.put_schema_from_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.put_schema_from_json)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 - `Document`: `str` *(required)*
@@ -1199,7 +1199,7 @@ Type annotations for `boto3.client("clouddirectory").tag_resource` method.
 Boto3 documentation:
 [CloudDirectory.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1213,7 +1213,7 @@ Type annotations for `boto3.client("clouddirectory").untag_resource` method.
 Boto3 documentation:
 [CloudDirectory.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1284,7 +1284,7 @@ Type annotations for `boto3.client("clouddirectory").update_schema` method.
 Boto3 documentation:
 [CloudDirectory.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*

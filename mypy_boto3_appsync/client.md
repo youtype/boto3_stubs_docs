@@ -271,7 +271,7 @@ Type annotations for `boto3.client("appsync").delete_api_cache` method.
 Boto3 documentation:
 [AppSync.Client.delete_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
@@ -284,7 +284,7 @@ Type annotations for `boto3.client("appsync").delete_api_key` method.
 Boto3 documentation:
 [AppSync.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `id`: `str` *(required)*
@@ -298,7 +298,7 @@ Type annotations for `boto3.client("appsync").delete_data_source` method.
 Boto3 documentation:
 [AppSync.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("appsync").delete_function` method.
 Boto3 documentation:
 [AppSync.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `functionId`: `str` *(required)*
@@ -326,7 +326,7 @@ Type annotations for `boto3.client("appsync").delete_graphql_api` method.
 Boto3 documentation:
 [AppSync.Client.delete_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("appsync").delete_type` method.
 Boto3 documentation:
 [AppSync.Client.delete_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `typeName`: `str` *(required)*
@@ -368,7 +368,7 @@ Type annotations for `boto3.client("appsync").flush_api_cache` method.
 Boto3 documentation:
 [AppSync.Client.flush_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
@@ -397,7 +397,7 @@ Type annotations for `boto3.client("appsync").get_api_cache` method.
 Boto3 documentation:
 [AppSync.Client.get_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("appsync").get_data_source` method.
 Boto3 documentation:
 [AppSync.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `name`: `str` *(required)*
@@ -426,7 +426,7 @@ Type annotations for `boto3.client("appsync").get_function` method.
 Boto3 documentation:
 [AppSync.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `functionId`: `str` *(required)*
@@ -441,7 +441,7 @@ Type annotations for `boto3.client("appsync").get_graphql_api` method.
 Boto3 documentation:
 [AppSync.Client.get_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
@@ -488,7 +488,7 @@ method.
 Boto3 documentation:
 [AppSync.Client.get_schema_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 
@@ -566,7 +566,7 @@ Type annotations for `boto3.client("appsync").list_graphql_apis` method.
 Boto3 documentation:
 [AppSync.Client.list_graphql_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -616,7 +616,7 @@ Type annotations for `boto3.client("appsync").list_tags_for_resource` method.
 Boto3 documentation:
 [AppSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -647,7 +647,7 @@ Type annotations for `boto3.client("appsync").start_schema_creation` method.
 Boto3 documentation:
 [AppSync.Client.start_schema_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation)
 
-Arguments:
+Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
 - `definition`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -662,7 +662,7 @@ Type annotations for `boto3.client("appsync").tag_resource` method.
 Boto3 documentation:
 [AppSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -676,7 +676,7 @@ Type annotations for `boto3.client("appsync").untag_resource` method.
 Boto3 documentation:
 [AppSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

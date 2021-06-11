@@ -151,7 +151,7 @@ Type annotations for `boto3.client("organizations").accept_handshake` method.
 Boto3 documentation:
 [Organizations.Client.accept_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake)
 
-Arguments:
+Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
@@ -165,7 +165,7 @@ Type annotations for `boto3.client("organizations").attach_policy` method.
 Boto3 documentation:
 [Organizations.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `TargetId`: `str` *(required)*
@@ -190,7 +190,7 @@ Type annotations for `boto3.client("organizations").cancel_handshake` method.
 Boto3 documentation:
 [Organizations.Client.cancel_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake)
 
-Arguments:
+Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
@@ -244,7 +244,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `FeatureSet`:
   [OrganizationFeatureSetType](./literals.md#organizationfeaturesettype)
@@ -294,7 +294,7 @@ Type annotations for `boto3.client("organizations").decline_handshake` method.
 Boto3 documentation:
 [Organizations.Client.decline_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake)
 
-Arguments:
+Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
@@ -317,7 +317,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.delete_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationalUnitId`: `str` *(required)*
 
@@ -328,7 +328,7 @@ Type annotations for `boto3.client("organizations").delete_policy` method.
 Boto3 documentation:
 [Organizations.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
@@ -340,7 +340,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.deregister_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `ServicePrincipal`: `str` *(required)*
@@ -352,7 +352,7 @@ Type annotations for `boto3.client("organizations").describe_account` method.
 Boto3 documentation:
 [Organizations.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
@@ -367,7 +367,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.describe_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `CreateAccountRequestId`: `str` *(required)*
 
@@ -382,7 +382,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.describe_effective_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyType`:
   [EffectivePolicyTypeType](./literals.md#effectivepolicytypetype) *(required)*
@@ -398,7 +398,7 @@ Type annotations for `boto3.client("organizations").describe_handshake` method.
 Boto3 documentation:
 [Organizations.Client.describe_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake)
 
-Arguments:
+Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
@@ -424,7 +424,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.describe_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationalUnitId`: `str` *(required)*
 
@@ -438,7 +438,7 @@ Type annotations for `boto3.client("organizations").describe_policy` method.
 Boto3 documentation:
 [Organizations.Client.describe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
@@ -452,7 +452,7 @@ Type annotations for `boto3.client("organizations").detach_policy` method.
 Boto3 documentation:
 [Organizations.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `TargetId`: `str` *(required)*
@@ -465,7 +465,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.disable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServicePrincipal`: `str` *(required)*
 
@@ -477,7 +477,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.disable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `RootId`: `str` *(required)*
 - `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
@@ -504,7 +504,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.enable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServicePrincipal`: `str` *(required)*
 
@@ -515,7 +515,7 @@ Type annotations for `boto3.client("organizations").enable_policy_type` method.
 Boto3 documentation:
 [Organizations.Client.enable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `RootId`: `str` *(required)*
 - `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
@@ -572,7 +572,7 @@ Type annotations for `boto3.client("organizations").list_accounts` method.
 Boto3 documentation:
 [Organizations.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -606,7 +606,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.list_aws_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -791,7 +791,7 @@ Type annotations for `boto3.client("organizations").list_roots` method.
 Boto3 documentation:
 [Organizations.Client.list_roots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -806,7 +806,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `NextToken`: `str`
@@ -852,7 +852,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.register_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `ServicePrincipal`: `str` *(required)*
@@ -865,7 +865,7 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.remove_account_from_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
@@ -876,7 +876,7 @@ Type annotations for `boto3.client("organizations").tag_resource` method.
 Boto3 documentation:
 [Organizations.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -888,7 +888,7 @@ Type annotations for `boto3.client("organizations").untag_resource` method.
 Boto3 documentation:
 [Organizations.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -901,7 +901,7 @@ method.
 Boto3 documentation:
 [Organizations.Client.update_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationalUnitId`: `str` *(required)*
 - `Name`: `str`

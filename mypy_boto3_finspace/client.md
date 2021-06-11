@@ -104,7 +104,7 @@ Type annotations for `boto3.client("finspace").delete_environment` method.
 Boto3 documentation:
 [finspace.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.delete_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 
@@ -133,7 +133,7 @@ Type annotations for `boto3.client("finspace").get_environment` method.
 Boto3 documentation:
 [finspace.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.get_environment)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("finspace").list_environments` method.
 Boto3 documentation:
 [finspace.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.list_environments)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -162,7 +162,7 @@ Type annotations for `boto3.client("finspace").list_tags_for_resource` method.
 Boto3 documentation:
 [finspace.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -176,7 +176,7 @@ Type annotations for `boto3.client("finspace").tag_resource` method.
 Boto3 documentation:
 [finspace.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -190,7 +190,7 @@ Type annotations for `boto3.client("finspace").untag_resource` method.
 Boto3 documentation:
 [finspace.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

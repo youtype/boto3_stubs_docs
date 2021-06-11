@@ -119,7 +119,7 @@ Type annotations for `boto3.client("cloudwatch").delete_alarms` method.
 Boto3 documentation:
 [CloudWatch.Client.delete_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_alarms)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmNames`: `List`\[`str`\] *(required)*
 
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("cloudwatch").delete_dashboards` method.
 Boto3 documentation:
 [CloudWatch.Client.delete_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_dashboards)
 
-Arguments:
+Keyword-only arguments:
 
 - `DashboardNames`: `List`\[`str`\] *(required)*
 
@@ -160,7 +160,7 @@ Type annotations for `boto3.client("cloudwatch").delete_insight_rules` method.
 Boto3 documentation:
 [CloudWatch.Client.delete_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_insight_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleNames`: `List`\[`str`\] *(required)*
 
@@ -174,7 +174,7 @@ Type annotations for `boto3.client("cloudwatch").delete_metric_stream` method.
 Boto3 documentation:
 [CloudWatch.Client.delete_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_metric_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -272,7 +272,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Client.describe_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_insight_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -287,7 +287,7 @@ Type annotations for `boto3.client("cloudwatch").disable_alarm_actions` method.
 Boto3 documentation:
 [CloudWatch.Client.disable_alarm_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_alarm_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmNames`: `List`\[`str`\] *(required)*
 
@@ -298,7 +298,7 @@ Type annotations for `boto3.client("cloudwatch").disable_insight_rules` method.
 Boto3 documentation:
 [CloudWatch.Client.disable_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_insight_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleNames`: `List`\[`str`\] *(required)*
 
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("cloudwatch").enable_alarm_actions` method.
 Boto3 documentation:
 [CloudWatch.Client.enable_alarm_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_alarm_actions)
 
-Arguments:
+Keyword-only arguments:
 
 - `AlarmNames`: `List`\[`str`\] *(required)*
 
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("cloudwatch").enable_insight_rules` method.
 Boto3 documentation:
 [CloudWatch.Client.enable_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_insight_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `RuleNames`: `List`\[`str`\] *(required)*
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("cloudwatch").get_dashboard` method.
 Boto3 documentation:
 [CloudWatch.Client.get_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_dashboard)
 
-Arguments:
+Keyword-only arguments:
 
 - `DashboardName`: `str` *(required)*
 
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("cloudwatch").get_metric_stream` method.
 Boto3 documentation:
 [CloudWatch.Client.get_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -447,7 +447,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Client.get_metric_widget_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_widget_image)
 
-Arguments:
+Keyword-only arguments:
 
 - `MetricWidget`: `str` *(required)*
 - `OutputFormat`: `str`
@@ -462,7 +462,7 @@ Type annotations for `boto3.client("cloudwatch").list_dashboards` method.
 Boto3 documentation:
 [CloudWatch.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_dashboards)
 
-Arguments:
+Keyword-only arguments:
 
 - `DashboardNamePrefix`: `str`
 - `NextToken`: `str`
@@ -477,7 +477,7 @@ Type annotations for `boto3.client("cloudwatch").list_metric_streams` method.
 Boto3 documentation:
 [CloudWatch.Client.list_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metric_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -512,7 +512,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -562,7 +562,7 @@ Type annotations for `boto3.client("cloudwatch").put_dashboard` method.
 Boto3 documentation:
 [CloudWatch.Client.put_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_dashboard)
 
-Arguments:
+Keyword-only arguments:
 
 - `DashboardName`: `str` *(required)*
 - `DashboardBody`: `str` *(required)*
@@ -626,7 +626,7 @@ Type annotations for `boto3.client("cloudwatch").put_metric_data` method.
 Boto3 documentation:
 [CloudWatch.Client.put_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `Namespace`: `str` *(required)*
 - `MetricData`:
@@ -678,7 +678,7 @@ Type annotations for `boto3.client("cloudwatch").start_metric_streams` method.
 Boto3 documentation:
 [CloudWatch.Client.start_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.start_metric_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `Names`: `List`\[`str`\] *(required)*
 
@@ -691,7 +691,7 @@ Type annotations for `boto3.client("cloudwatch").stop_metric_streams` method.
 Boto3 documentation:
 [CloudWatch.Client.stop_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.stop_metric_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `Names`: `List`\[`str`\] *(required)*
 
@@ -704,7 +704,7 @@ Type annotations for `boto3.client("cloudwatch").tag_resource` method.
 Boto3 documentation:
 [CloudWatch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -718,7 +718,7 @@ Type annotations for `boto3.client("cloudwatch").untag_resource` method.
 Boto3 documentation:
 [CloudWatch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

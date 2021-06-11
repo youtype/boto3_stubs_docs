@@ -129,7 +129,7 @@ Type annotations for `boto3.resource("sqs").get_queue_by_name` method.
 Boto3 documentation:
 [SQS.ServiceResource.get_queue_by_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.get_queue_by_name)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueueName`: `str` *(required)*
 - `QueueOwnerAWSAccountId`: `str`
@@ -181,7 +181,7 @@ Type annotations for `boto3.resource("sqs").change_visibility` method.
 Boto3 documentation:
 [SQS.Message.change_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.change_visibility)
 
-Arguments:
+Keyword-only arguments:
 
 - `VisibilityTimeout`: `int` *(required)*
 
@@ -282,7 +282,7 @@ method.
 Boto3 documentation:
 [SQS.Queue.change_message_visibility_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.change_message_visibility_batch)
 
-Arguments:
+Keyword-only arguments:
 
 - `Entries`:
   `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
@@ -305,7 +305,7 @@ Type annotations for `boto3.resource("sqs").delete_messages` method.
 Boto3 documentation:
 [SQS.Queue.delete_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.delete_messages)
 
-Arguments:
+Keyword-only arguments:
 
 - `Entries`:
   `List`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
@@ -370,7 +370,7 @@ Type annotations for `boto3.resource("sqs").remove_permission` method.
 Boto3 documentation:
 [SQS.Queue.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.remove_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 
@@ -402,7 +402,7 @@ Type annotations for `boto3.resource("sqs").send_messages` method.
 Boto3 documentation:
 [SQS.Queue.send_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.send_messages)
 
-Arguments:
+Keyword-only arguments:
 
 - `Entries`:
   `List`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
@@ -418,7 +418,7 @@ Type annotations for `boto3.resource("sqs").set_attributes` method.
 Boto3 documentation:
 [SQS.Queue.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.set_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `Attributes`:
   `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),

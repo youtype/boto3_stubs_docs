@@ -240,7 +240,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.create_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 
@@ -255,7 +255,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.delete_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction)
 
-Arguments:
+Keyword-only arguments:
 
 - `BatchPredictionId`: `str` *(required)*
 
@@ -270,7 +270,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSourceId`: `str` *(required)*
 
@@ -285,7 +285,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.delete_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation)
 
-Arguments:
+Keyword-only arguments:
 
 - `EvaluationId`: `str` *(required)*
 
@@ -299,7 +299,7 @@ Type annotations for `boto3.client("machinelearning").delete_ml_model` method.
 Boto3 documentation:
 [MachineLearning.Client.delete_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 
@@ -314,7 +314,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.delete_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 
@@ -449,7 +449,7 @@ Type annotations for `boto3.client("machinelearning").describe_tags` method.
 Boto3 documentation:
 [MachineLearning.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `ResourceType`:
@@ -483,7 +483,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.get_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction)
 
-Arguments:
+Keyword-only arguments:
 
 - `BatchPredictionId`: `str` *(required)*
 
@@ -497,7 +497,7 @@ Type annotations for `boto3.client("machinelearning").get_data_source` method.
 Boto3 documentation:
 [MachineLearning.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSourceId`: `str` *(required)*
 - `Verbose`: `bool`
@@ -512,7 +512,7 @@ Type annotations for `boto3.client("machinelearning").get_evaluation` method.
 Boto3 documentation:
 [MachineLearning.Client.get_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation)
 
-Arguments:
+Keyword-only arguments:
 
 - `EvaluationId`: `str` *(required)*
 
@@ -526,7 +526,7 @@ Type annotations for `boto3.client("machinelearning").get_ml_model` method.
 Boto3 documentation:
 [MachineLearning.Client.get_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
 - `Verbose`: `bool`
@@ -556,7 +556,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.update_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction)
 
-Arguments:
+Keyword-only arguments:
 
 - `BatchPredictionId`: `str` *(required)*
 - `BatchPredictionName`: `str` *(required)*
@@ -572,7 +572,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_data_source)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSourceId`: `str` *(required)*
 - `DataSourceName`: `str` *(required)*
@@ -588,7 +588,7 @@ method.
 Boto3 documentation:
 [MachineLearning.Client.update_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation)
 
-Arguments:
+Keyword-only arguments:
 
 - `EvaluationId`: `str` *(required)*
 - `EvaluationName`: `str` *(required)*

@@ -93,7 +93,7 @@ method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.associate_configuration_items_to_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.associate_configuration_items_to_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationConfigurationId`: `str` *(required)*
 - `configurationIds`: `List`\[`str`\] *(required)*
@@ -108,7 +108,7 @@ method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.batch_delete_import_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.batch_delete_import_data)
 
-Arguments:
+Keyword-only arguments:
 
 - `importTaskIds`: `List`\[`str`\] *(required)*
 
@@ -135,7 +135,7 @@ Type annotations for `boto3.client("discovery").create_application` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("discovery").create_tags` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `configurationIds`: `List`\[`str`\] *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -164,7 +164,7 @@ Type annotations for `boto3.client("discovery").delete_applications` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.delete_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `configurationIds`: `List`\[`str`\] *(required)*
 
@@ -177,7 +177,7 @@ Type annotations for `boto3.client("discovery").delete_tags` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `configurationIds`: `List`\[`str`\] *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -209,7 +209,7 @@ method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `configurationIds`: `List`\[`str`\] *(required)*
 
@@ -310,7 +310,7 @@ method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationConfigurationId`: `str` *(required)*
 - `configurationIds`: `List`\[`str`\] *(required)*
@@ -411,7 +411,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids)
 
-Arguments:
+Keyword-only arguments:
 
 - `agentIds`: `List`\[`str`\] *(required)*
 
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("discovery").stop_continuous_export` method.
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.stop_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_continuous_export)
 
-Arguments:
+Keyword-only arguments:
 
 - `exportId`: `str` *(required)*
 
@@ -475,7 +475,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids)
 
-Arguments:
+Keyword-only arguments:
 
 - `agentIds`: `List`\[`str`\] *(required)*
 

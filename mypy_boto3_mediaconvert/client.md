@@ -88,7 +88,7 @@ method.
 Boto3 documentation:
 [MediaConvert.Client.associate_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -114,7 +114,7 @@ Type annotations for `boto3.client("mediaconvert").cancel_job` method.
 Boto3 documentation:
 [MediaConvert.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -225,7 +225,7 @@ Type annotations for `boto3.client("mediaconvert").delete_job_template` method.
 Boto3 documentation:
 [MediaConvert.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -238,7 +238,7 @@ Type annotations for `boto3.client("mediaconvert").delete_preset` method.
 Boto3 documentation:
 [MediaConvert.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -251,7 +251,7 @@ Type annotations for `boto3.client("mediaconvert").delete_queue` method.
 Boto3 documentation:
 [MediaConvert.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -281,7 +281,7 @@ method.
 Boto3 documentation:
 [MediaConvert.Client.disassociate_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -311,7 +311,7 @@ Type annotations for `boto3.client("mediaconvert").get_job` method.
 Boto3 documentation:
 [MediaConvert.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -324,7 +324,7 @@ Type annotations for `boto3.client("mediaconvert").get_job_template` method.
 Boto3 documentation:
 [MediaConvert.Client.get_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -338,7 +338,7 @@ Type annotations for `boto3.client("mediaconvert").get_preset` method.
 Boto3 documentation:
 [MediaConvert.Client.get_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_preset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -351,7 +351,7 @@ Type annotations for `boto3.client("mediaconvert").get_queue` method.
 Boto3 documentation:
 [MediaConvert.Client.get_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_queue)
 
-Arguments:
+Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
@@ -434,7 +434,7 @@ method.
 Boto3 documentation:
 [MediaConvert.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -448,7 +448,7 @@ Type annotations for `boto3.client("mediaconvert").tag_resource` method.
 Boto3 documentation:
 [MediaConvert.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -462,7 +462,7 @@ Type annotations for `boto3.client("mediaconvert").untag_resource` method.
 Boto3 documentation:
 [MediaConvert.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\]

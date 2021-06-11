@@ -132,7 +132,7 @@ method.
 Boto3 documentation:
 [CloudSearchDomain.Client.upload_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents)
 
-Arguments:
+Keyword-only arguments:
 
 - `documents`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
 - `contentType`: [ContentTypeType](./literals.md#contenttypetype) *(required)*

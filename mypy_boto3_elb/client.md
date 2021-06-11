@@ -108,7 +108,7 @@ Type annotations for `boto3.client("elb").add_tags` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.add_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -123,7 +123,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `SecurityGroups`: `List`\[`str`\] *(required)*
@@ -139,7 +139,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.attach_load_balancer_to_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.attach_load_balancer_to_subnets)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `Subnets`: `List`\[`str`\] *(required)*
@@ -167,7 +167,7 @@ Type annotations for `boto3.client("elb").configure_health_check` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.configure_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.configure_health_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
@@ -237,7 +237,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.create_load_balancer_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_listeners)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
@@ -269,7 +269,7 @@ Type annotations for `boto3.client("elb").delete_load_balancer` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 
@@ -283,7 +283,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.delete_load_balancer_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_listeners)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `LoadBalancerPorts`: `List`\[`int`\] *(required)*
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("elb").delete_load_balancer_policy` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.delete_load_balancer_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -312,7 +312,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticLoadBalancing.Client.deregister_instances_from_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.deregister_instances_from_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
@@ -328,7 +328,7 @@ Type annotations for `boto3.client("elb").describe_account_limits` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_account_limits)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `PageSize`: `int`
@@ -343,7 +343,7 @@ Type annotations for `boto3.client("elb").describe_instance_health` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_instance_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_instance_health)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
@@ -359,7 +359,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 
@@ -374,7 +374,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_load_balancer_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str`
 - `PolicyNames`: `List`\[`str`\]
@@ -390,7 +390,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_load_balancer_policy_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policy_types)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyTypeNames`: `List`\[`str`\]
 
@@ -420,7 +420,7 @@ Type annotations for `boto3.client("elb").describe_tags` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
 
@@ -434,7 +434,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.detach_load_balancer_from_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.detach_load_balancer_from_subnets)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `Subnets`: `List`\[`str`\] *(required)*
@@ -450,7 +450,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
@@ -466,7 +466,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
@@ -498,7 +498,7 @@ method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.modify_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.modify_load_balancer_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `LoadBalancerAttributes`:
@@ -516,7 +516,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticLoadBalancing.Client.register_instances_with_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.register_instances_with_load_balancer)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
@@ -532,7 +532,7 @@ Type annotations for `boto3.client("elb").remove_tags` method.
 Boto3 documentation:
 [ElasticLoadBalancing.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.remove_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
 - `Tags`: `List`\[[TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)\]

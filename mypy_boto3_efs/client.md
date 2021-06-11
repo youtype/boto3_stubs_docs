@@ -181,7 +181,7 @@ Type annotations for `boto3.client("efs").create_tags` method.
 Boto3 documentation:
 [EFS.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("efs").delete_access_point` method.
 Boto3 documentation:
 [EFS.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessPointId`: `str` *(required)*
 
@@ -204,7 +204,7 @@ Type annotations for `boto3.client("efs").delete_file_system` method.
 Boto3 documentation:
 [EFS.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
@@ -215,7 +215,7 @@ Type annotations for `boto3.client("efs").delete_file_system_policy` method.
 Boto3 documentation:
 [EFS.Client.delete_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
@@ -226,7 +226,7 @@ Type annotations for `boto3.client("efs").delete_mount_target` method.
 Boto3 documentation:
 [EFS.Client.delete_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `MountTargetId`: `str` *(required)*
 
@@ -237,7 +237,7 @@ Type annotations for `boto3.client("efs").delete_tags` method.
 Boto3 documentation:
 [EFS.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -266,7 +266,7 @@ Type annotations for `boto3.client("efs").describe_account_preferences` method.
 Boto3 documentation:
 [EFS.Client.describe_account_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_account_preferences)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("efs").describe_backup_policy` method.
 Boto3 documentation:
 [EFS.Client.describe_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
@@ -295,7 +295,7 @@ Type annotations for `boto3.client("efs").describe_file_system_policy` method.
 Boto3 documentation:
 [EFS.Client.describe_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
@@ -327,7 +327,7 @@ method.
 Boto3 documentation:
 [EFS.Client.describe_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
@@ -342,7 +342,7 @@ Type annotations for
 Boto3 documentation:
 [EFS.Client.describe_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `MountTargetId`: `str` *(required)*
 
@@ -423,7 +423,7 @@ method.
 Boto3 documentation:
 [EFS.Client.modify_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `MountTargetId`: `str` *(required)*
 - `SecurityGroups`: `List`\[`str`\]
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("efs").put_account_preferences` method.
 Boto3 documentation:
 [EFS.Client.put_account_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_account_preferences)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceIdType`: [ResourceIdTypeType](./literals.md#resourceidtypetype)
   *(required)*
@@ -450,7 +450,7 @@ Type annotations for `boto3.client("efs").put_backup_policy` method.
 Boto3 documentation:
 [EFS.Client.put_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `BackupPolicy`: [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
@@ -482,7 +482,7 @@ Type annotations for `boto3.client("efs").put_lifecycle_configuration` method.
 Boto3 documentation:
 [EFS.Client.put_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `LifecyclePolicies`:
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("efs").tag_resource` method.
 Boto3 documentation:
 [EFS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -511,7 +511,7 @@ Type annotations for `boto3.client("efs").untag_resource` method.
 Boto3 documentation:
 [EFS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

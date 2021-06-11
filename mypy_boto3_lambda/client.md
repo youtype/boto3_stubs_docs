@@ -316,7 +316,7 @@ Type annotations for `boto3.client("lambda").delete_alias` method.
 Boto3 documentation:
 [Lambda.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -329,7 +329,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.delete_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeSigningConfigArn`: `str` *(required)*
 
@@ -343,7 +343,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.delete_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `UUID`: `str` *(required)*
 
@@ -357,7 +357,7 @@ Type annotations for `boto3.client("lambda").delete_function` method.
 Boto3 documentation:
 [Lambda.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
@@ -370,7 +370,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.delete_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 
@@ -382,7 +382,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.delete_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 
@@ -394,7 +394,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.delete_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("lambda").delete_layer_version` method.
 Boto3 documentation:
 [Lambda.Client.delete_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerName`: `str` *(required)*
 - `VersionNumber`: `int` *(required)*
@@ -419,7 +419,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.delete_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str` *(required)*
@@ -457,7 +457,7 @@ Type annotations for `boto3.client("lambda").get_alias` method.
 Boto3 documentation:
 [Lambda.Client.get_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("lambda").get_code_signing_config` method.
 Boto3 documentation:
 [Lambda.Client.get_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeSigningConfigArn`: `str` *(required)*
 
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("lambda").get_event_source_mapping` method.
 Boto3 documentation:
 [Lambda.Client.get_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping)
 
-Arguments:
+Keyword-only arguments:
 
 - `UUID`: `str` *(required)*
 
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("lambda").get_function` method.
 Boto3 documentation:
 [Lambda.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
@@ -515,7 +515,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.get_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 
@@ -529,7 +529,7 @@ Type annotations for `boto3.client("lambda").get_function_concurrency` method.
 Boto3 documentation:
 [Lambda.Client.get_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 
@@ -544,7 +544,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.get_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
@@ -560,7 +560,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.get_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
@@ -575,7 +575,7 @@ Type annotations for `boto3.client("lambda").get_layer_version` method.
 Boto3 documentation:
 [Lambda.Client.get_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerName`: `str` *(required)*
 - `VersionNumber`: `int` *(required)*
@@ -590,7 +590,7 @@ Type annotations for `boto3.client("lambda").get_layer_version_by_arn` method.
 Boto3 documentation:
 [Lambda.Client.get_layer_version_by_arn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
@@ -604,7 +604,7 @@ Type annotations for `boto3.client("lambda").get_layer_version_policy` method.
 Boto3 documentation:
 [Lambda.Client.get_layer_version_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `LayerName`: `str` *(required)*
 - `VersionNumber`: `int` *(required)*
@@ -619,7 +619,7 @@ Type annotations for `boto3.client("lambda").get_policy` method.
 Boto3 documentation:
 [Lambda.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
@@ -634,7 +634,7 @@ Type annotations for
 Boto3 documentation:
 [Lambda.Client.get_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str` *(required)*
@@ -667,7 +667,7 @@ Type annotations for `boto3.client("lambda").invoke_async` method.
 Boto3 documentation:
 [Lambda.Client.invoke_async](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -699,7 +699,7 @@ Type annotations for `boto3.client("lambda").list_code_signing_configs` method.
 Boto3 documentation:
 [Lambda.Client.list_code_signing_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `int`
@@ -833,7 +833,7 @@ Type annotations for `boto3.client("lambda").list_tags` method.
 Boto3 documentation:
 [Lambda.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 
@@ -900,7 +900,7 @@ method.
 Boto3 documentation:
 [Lambda.Client.put_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `CodeSigningConfigArn`: `str` *(required)*
 - `FunctionName`: `str` *(required)*
@@ -915,7 +915,7 @@ Type annotations for `boto3.client("lambda").put_function_concurrency` method.
 Boto3 documentation:
 [Lambda.Client.put_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency)
 
-Arguments:
+Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `ReservedConcurrentExecutions`: `int` *(required)*
@@ -995,7 +995,7 @@ Type annotations for `boto3.client("lambda").tag_resource` method.
 Boto3 documentation:
 [Lambda.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -1007,7 +1007,7 @@ Type annotations for `boto3.client("lambda").untag_resource` method.
 Boto3 documentation:
 [Lambda.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

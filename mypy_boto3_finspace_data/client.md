@@ -115,7 +115,7 @@ Type annotations for
 Boto3 documentation:
 [FinSpaceData.Client.get_programmatic_access_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_programmatic_access_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 - `durationInMinutes`: `int`
@@ -131,7 +131,7 @@ method.
 Boto3 documentation:
 [FinSpaceData.Client.get_working_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_working_location)
 
-Arguments:
+Keyword-only arguments:
 
 - `locationType`: [locationTypeType](./literals.md#locationtypetype)
 

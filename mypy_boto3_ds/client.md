@@ -152,7 +152,7 @@ Type annotations for `boto3.client("ds").accept_shared_directory` method.
 Boto3 documentation:
 [DirectoryService.Client.accept_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `SharedDirectoryId`: `str` *(required)*
 
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("ds").add_tags_to_resource` method.
 Boto3 documentation:
 [DirectoryService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -226,7 +226,7 @@ Type annotations for `boto3.client("ds").cancel_schema_extension` method.
 Boto3 documentation:
 [DirectoryService.Client.cancel_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `SchemaExtensionId`: `str` *(required)*
@@ -262,7 +262,7 @@ Type annotations for `boto3.client("ds").create_alias` method.
 Boto3 documentation:
 [DirectoryService.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Alias`: `str` *(required)*
@@ -331,7 +331,7 @@ Type annotations for `boto3.client("ds").create_log_subscription` method.
 Boto3 documentation:
 [DirectoryService.Client.create_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `LogGroupName`: `str` *(required)*
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("ds").create_snapshot` method.
 Boto3 documentation:
 [DirectoryService.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Name`: `str`
@@ -402,7 +402,7 @@ Type annotations for `boto3.client("ds").delete_conditional_forwarder` method.
 Boto3 documentation:
 [DirectoryService.Client.delete_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RemoteDomainName`: `str` *(required)*
@@ -416,7 +416,7 @@ Type annotations for `boto3.client("ds").delete_directory` method.
 Boto3 documentation:
 [DirectoryService.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 
@@ -430,7 +430,7 @@ Type annotations for `boto3.client("ds").delete_log_subscription` method.
 Boto3 documentation:
 [DirectoryService.Client.delete_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("ds").delete_snapshot` method.
 Boto3 documentation:
 [DirectoryService.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 
@@ -457,7 +457,7 @@ Type annotations for `boto3.client("ds").delete_trust` method.
 Boto3 documentation:
 [DirectoryService.Client.delete_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrustId`: `str` *(required)*
 - `DeleteAssociatedConditionalForwarder`: `bool`
@@ -471,7 +471,7 @@ Type annotations for `boto3.client("ds").deregister_certificate` method.
 Boto3 documentation:
 [DirectoryService.Client.deregister_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `CertificateId`: `str` *(required)*
@@ -485,7 +485,7 @@ Type annotations for `boto3.client("ds").deregister_event_topic` method.
 Boto3 documentation:
 [DirectoryService.Client.deregister_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `TopicName`: `str` *(required)*
@@ -499,7 +499,7 @@ Type annotations for `boto3.client("ds").describe_certificate` method.
 Boto3 documentation:
 [DirectoryService.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `CertificateId`: `str` *(required)*
@@ -515,7 +515,7 @@ method.
 Boto3 documentation:
 [DirectoryService.Client.describe_conditional_forwarders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RemoteDomainNames`: `List`\[`str`\]
@@ -563,7 +563,7 @@ Type annotations for `boto3.client("ds").describe_event_topics` method.
 Boto3 documentation:
 [DirectoryService.Client.describe_event_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str`
 - `TopicNames`: `List`\[`str`\]
@@ -663,7 +663,7 @@ Type annotations for `boto3.client("ds").disable_client_authentication` method.
 Boto3 documentation:
 [DirectoryService.Client.disable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Type`: `Literal['SmartCard']` (see
@@ -679,7 +679,7 @@ Type annotations for `boto3.client("ds").disable_ldaps` method.
 Boto3 documentation:
 [DirectoryService.Client.disable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Type`: `Literal['Client']` (see
@@ -694,7 +694,7 @@ Type annotations for `boto3.client("ds").disable_radius` method.
 Boto3 documentation:
 [DirectoryService.Client.disable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 
@@ -722,7 +722,7 @@ Type annotations for `boto3.client("ds").enable_client_authentication` method.
 Boto3 documentation:
 [DirectoryService.Client.enable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Type`: `Literal['SmartCard']` (see
@@ -738,7 +738,7 @@ Type annotations for `boto3.client("ds").enable_ldaps` method.
 Boto3 documentation:
 [DirectoryService.Client.enable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `Type`: `Literal['Client']` (see
@@ -753,7 +753,7 @@ Type annotations for `boto3.client("ds").enable_radius` method.
 Boto3 documentation:
 [DirectoryService.Client.enable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RadiusSettings`:
@@ -809,7 +809,7 @@ Type annotations for `boto3.client("ds").get_snapshot_limits` method.
 Boto3 documentation:
 [DirectoryService.Client.get_snapshot_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 
@@ -920,7 +920,7 @@ Type annotations for `boto3.client("ds").register_event_topic` method.
 Boto3 documentation:
 [DirectoryService.Client.register_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `TopicName`: `str` *(required)*
@@ -934,7 +934,7 @@ Type annotations for `boto3.client("ds").reject_shared_directory` method.
 Boto3 documentation:
 [DirectoryService.Client.reject_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `SharedDirectoryId`: `str` *(required)*
 
@@ -948,7 +948,7 @@ Type annotations for `boto3.client("ds").remove_ip_routes` method.
 Boto3 documentation:
 [DirectoryService.Client.remove_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `CidrIps`: `List`\[`str`\] *(required)*
@@ -962,7 +962,7 @@ Type annotations for `boto3.client("ds").remove_region` method.
 Boto3 documentation:
 [DirectoryService.Client.remove_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 
@@ -975,7 +975,7 @@ Type annotations for `boto3.client("ds").remove_tags_from_resource` method.
 Boto3 documentation:
 [DirectoryService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1004,7 +1004,7 @@ Type annotations for `boto3.client("ds").restore_from_snapshot` method.
 Boto3 documentation:
 [DirectoryService.Client.restore_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 
@@ -1052,7 +1052,7 @@ Type annotations for `boto3.client("ds").unshare_directory` method.
 Boto3 documentation:
 [DirectoryService.Client.unshare_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `UnshareTarget`: [UnshareTargetTypeDef](./type_defs.md#unsharetargettypedef)
@@ -1084,7 +1084,7 @@ method.
 Boto3 documentation:
 [DirectoryService.Client.update_number_of_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `DesiredNumber`: `int` *(required)*
@@ -1098,7 +1098,7 @@ Type annotations for `boto3.client("ds").update_radius` method.
 Boto3 documentation:
 [DirectoryService.Client.update_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius)
 
-Arguments:
+Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RadiusSettings`:
@@ -1113,7 +1113,7 @@ Type annotations for `boto3.client("ds").update_trust` method.
 Boto3 documentation:
 [DirectoryService.Client.update_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrustId`: `str` *(required)*
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
@@ -1127,7 +1127,7 @@ Type annotations for `boto3.client("ds").verify_trust` method.
 Boto3 documentation:
 [DirectoryService.Client.verify_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrustId`: `str` *(required)*
 

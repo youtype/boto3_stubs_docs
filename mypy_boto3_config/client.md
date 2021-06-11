@@ -196,7 +196,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.batch_get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `ResourceIdentifiers`:
@@ -213,7 +213,7 @@ Type annotations for `boto3.client("config").batch_get_resource_config` method.
 Boto3 documentation:
 [ConfigService.Client.batch_get_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_resource_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceKeys`:
   `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
@@ -243,7 +243,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.delete_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthorizedAccountId`: `str` *(required)*
 - `AuthorizedAwsRegion`: `str` *(required)*
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("config").delete_config_rule` method.
 Boto3 documentation:
 [ConfigService.Client.delete_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_config_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 
@@ -267,7 +267,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.delete_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 
@@ -279,7 +279,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.delete_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_recorder)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationRecorderName`: `str` *(required)*
 
@@ -290,7 +290,7 @@ Type annotations for `boto3.client("config").delete_conformance_pack` method.
 Boto3 documentation:
 [ConfigService.Client.delete_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_conformance_pack)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConformancePackName`: `str` *(required)*
 
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("config").delete_delivery_channel` method.
 Boto3 documentation:
 [ConfigService.Client.delete_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_delivery_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryChannelName`: `str` *(required)*
 
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("config").delete_evaluation_results` method.
 Boto3 documentation:
 [ConfigService.Client.delete_evaluation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_evaluation_results)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 
@@ -326,7 +326,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.delete_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_config_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConfigRuleName`: `str` *(required)*
 
@@ -338,7 +338,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.delete_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack)
 
-Arguments:
+Keyword-only arguments:
 
 - `OrganizationConformancePackName`: `str` *(required)*
 
@@ -350,7 +350,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.delete_pending_aggregation_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request)
 
-Arguments:
+Keyword-only arguments:
 
 - `RequesterAccountId`: `str` *(required)*
 - `RequesterAwsRegion`: `str` *(required)*
@@ -363,7 +363,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.delete_remediation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceType`: `str`
@@ -378,7 +378,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.delete_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
@@ -395,7 +395,7 @@ Type annotations for `boto3.client("config").delete_resource_config` method.
 Boto3 documentation:
 [ConfigService.Client.delete_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_resource_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
@@ -408,7 +408,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.delete_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_retention_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `RetentionConfigurationName`: `str` *(required)*
 
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("config").delete_stored_query` method.
 Boto3 documentation:
 [ConfigService.Client.delete_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_stored_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryName`: `str` *(required)*
 
@@ -432,7 +432,7 @@ Type annotations for `boto3.client("config").deliver_config_snapshot` method.
 Boto3 documentation:
 [ConfigService.Client.deliver_config_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.deliver_config_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `deliveryChannelName`: `str` *(required)*
 
@@ -486,7 +486,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_aggregation_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -556,7 +556,7 @@ Type annotations for `boto3.client("config").describe_config_rules` method.
 Boto3 documentation:
 [ConfigService.Client.describe_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rules)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -609,7 +609,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_configuration_recorder_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationRecorderNames`: `List`\[`str`\]
 
@@ -624,7 +624,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_configuration_recorders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorders)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationRecorderNames`: `List`\[`str`\]
 
@@ -692,7 +692,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_delivery_channel_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryChannelNames`: `List`\[`str`\]
 
@@ -707,7 +707,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_delivery_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channels)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryChannelNames`: `List`\[`str`\]
 
@@ -791,7 +791,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_pending_aggregation_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -807,7 +807,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\] *(required)*
 
@@ -860,7 +860,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_retention_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_retention_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `RetentionConfigurationNames`: `List`\[`str`\]
 - `NextToken`: `str`
@@ -978,7 +978,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `ResourceIdentifier`:
@@ -1045,7 +1045,7 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_compliance_summary_by_resource_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceTypes`: `List`\[`str`\]
 
@@ -1174,7 +1174,7 @@ Type annotations for `boto3.client("config").get_stored_query` method.
 Boto3 documentation:
 [ConfigService.Client.get_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_stored_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `QueryName`: `str` *(required)*
 
@@ -1228,7 +1228,7 @@ Type annotations for `boto3.client("config").list_stored_queries` method.
 Boto3 documentation:
 [ConfigService.Client.list_stored_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_stored_queries)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -1276,7 +1276,7 @@ Type annotations for `boto3.client("config").put_config_rule` method.
 Boto3 documentation:
 [ConfigService.Client.put_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRule`: [ConfigRuleTypeDef](./type_defs.md#configruletypedef)
   *(required)*
@@ -1310,7 +1310,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.put_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_recorder)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationRecorder`:
   [ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)
@@ -1343,7 +1343,7 @@ Type annotations for `boto3.client("config").put_delivery_channel` method.
 Boto3 documentation:
 [ConfigService.Client.put_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_delivery_channel)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeliveryChannel`:
   [DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef) *(required)*
@@ -1372,7 +1372,7 @@ Type annotations for `boto3.client("config").put_external_evaluation` method.
 Boto3 documentation:
 [ConfigService.Client.put_external_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_external_evaluation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ExternalEvaluation`:
@@ -1431,7 +1431,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.put_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `RemediationConfigurations`:
   `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
@@ -1484,7 +1484,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.put_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_retention_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `RetentionPeriodInDays`: `int` *(required)*
 
@@ -1498,7 +1498,7 @@ Type annotations for `boto3.client("config").put_stored_query` method.
 Boto3 documentation:
 [ConfigService.Client.put_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_stored_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `StoredQuery`: [StoredQueryTypeDef](./type_defs.md#storedquerytypedef)
   *(required)*
@@ -1550,7 +1550,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.start_config_rules_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\]
 
@@ -1564,7 +1564,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.start_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_configuration_recorder)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationRecorderName`: `str` *(required)*
 
@@ -1576,7 +1576,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.start_remediation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_remediation_execution)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
@@ -1594,7 +1594,7 @@ method.
 Boto3 documentation:
 [ConfigService.Client.stop_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.stop_configuration_recorder)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationRecorderName`: `str` *(required)*
 
@@ -1605,7 +1605,7 @@ Type annotations for `boto3.client("config").tag_resource` method.
 Boto3 documentation:
 [ConfigService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -1617,7 +1617,7 @@ Type annotations for `boto3.client("config").untag_resource` method.
 Boto3 documentation:
 [ConfigService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

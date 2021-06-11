@@ -133,7 +133,7 @@ method.
 Boto3 documentation:
 [MigrationHub.Client.create_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStreamName`: `str` *(required)*
 - `DryRun`: `bool`
@@ -148,7 +148,7 @@ method.
 Boto3 documentation:
 [MigrationHub.Client.delete_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStreamName`: `str` *(required)*
 - `DryRun`: `bool`
@@ -162,7 +162,7 @@ Type annotations for `boto3.client("mgh").describe_application_state` method.
 Boto3 documentation:
 [MigrationHub.Client.describe_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
@@ -176,7 +176,7 @@ Type annotations for `boto3.client("mgh").describe_migration_task` method.
 Boto3 documentation:
 [MigrationHub.Client.describe_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("mgh").list_progress_update_streams` method.
 Boto3 documentation:
 [MigrationHub.Client.list_progress_update_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`

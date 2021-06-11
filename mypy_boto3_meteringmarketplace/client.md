@@ -77,7 +77,7 @@ method.
 Boto3 documentation:
 [MarketplaceMetering.Client.batch_meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `UsageRecords`:
   `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
@@ -161,7 +161,7 @@ method.
 Boto3 documentation:
 [MarketplaceMetering.Client.resolve_customer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer)
 
-Arguments:
+Keyword-only arguments:
 
 - `RegistrationToken`: `str` *(required)*
 

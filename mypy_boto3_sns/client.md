@@ -150,7 +150,7 @@ method.
 Boto3 documentation:
 [SNS.Client.check_if_phone_number_is_opted_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out)
 
-Arguments:
+Keyword-only arguments:
 
 - `phoneNumber`: `str` *(required)*
 
@@ -214,7 +214,7 @@ method.
 Boto3 documentation:
 [SNS.Client.create_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_sms_sandbox_phone_number)
 
-Arguments:
+Keyword-only arguments:
 
 - `PhoneNumber`: `str` *(required)*
 - `LanguageCode`:
@@ -245,7 +245,7 @@ Type annotations for `boto3.client("sns").delete_endpoint` method.
 Boto3 documentation:
 [SNS.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
@@ -256,7 +256,7 @@ Type annotations for `boto3.client("sns").delete_platform_application` method.
 Boto3 documentation:
 [SNS.Client.delete_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_platform_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
 
@@ -268,7 +268,7 @@ method.
 Boto3 documentation:
 [SNS.Client.delete_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_sms_sandbox_phone_number)
 
-Arguments:
+Keyword-only arguments:
 
 - `PhoneNumber`: `str` *(required)*
 
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("sns").delete_topic` method.
 Boto3 documentation:
 [SNS.Client.delete_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_topic)
 
-Arguments:
+Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 
@@ -308,7 +308,7 @@ Type annotations for `boto3.client("sns").get_endpoint_attributes` method.
 Boto3 documentation:
 [SNS.Client.get_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_endpoint_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
@@ -323,7 +323,7 @@ method.
 Boto3 documentation:
 [SNS.Client.get_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_platform_application_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
 
@@ -337,7 +337,7 @@ Type annotations for `boto3.client("sns").get_sms_attributes` method.
 Boto3 documentation:
 [SNS.Client.get_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `attributes`: `List`\[`str`\]
 
@@ -362,7 +362,7 @@ Type annotations for `boto3.client("sns").get_subscription_attributes` method.
 Boto3 documentation:
 [SNS.Client.get_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_subscription_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionArn`: `str` *(required)*
 
@@ -376,7 +376,7 @@ Type annotations for `boto3.client("sns").get_topic_attributes` method.
 Boto3 documentation:
 [SNS.Client.get_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_topic_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 
@@ -391,7 +391,7 @@ Type annotations for
 Boto3 documentation:
 [SNS.Client.list_endpoints_by_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("sns").list_origination_numbers` method.
 Boto3 documentation:
 [SNS.Client.list_origination_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_origination_numbers)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -421,7 +421,7 @@ Type annotations for `boto3.client("sns").list_phone_numbers_opted_out` method.
 Boto3 documentation:
 [SNS.Client.list_phone_numbers_opted_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -435,7 +435,7 @@ Type annotations for `boto3.client("sns").list_platform_applications` method.
 Boto3 documentation:
 [SNS.Client.list_platform_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_platform_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -450,7 +450,7 @@ method.
 Boto3 documentation:
 [SNS.Client.list_sms_sandbox_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_sms_sandbox_phone_numbers)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("sns").list_subscriptions` method.
 Boto3 documentation:
 [SNS.Client.list_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -479,7 +479,7 @@ Type annotations for `boto3.client("sns").list_subscriptions_by_topic` method.
 Boto3 documentation:
 [SNS.Client.list_subscriptions_by_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic)
 
-Arguments:
+Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 - `NextToken`: `str`
@@ -494,7 +494,7 @@ Type annotations for `boto3.client("sns").list_tags_for_resource` method.
 Boto3 documentation:
 [SNS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -508,7 +508,7 @@ Type annotations for `boto3.client("sns").list_topics` method.
 Boto3 documentation:
 [SNS.Client.list_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_topics)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 
@@ -521,7 +521,7 @@ Type annotations for `boto3.client("sns").opt_in_phone_number` method.
 Boto3 documentation:
 [SNS.Client.opt_in_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.opt_in_phone_number)
 
-Arguments:
+Keyword-only arguments:
 
 - `phoneNumber`: `str` *(required)*
 
@@ -556,7 +556,7 @@ Type annotations for `boto3.client("sns").remove_permission` method.
 Boto3 documentation:
 [SNS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.remove_permission)
 
-Arguments:
+Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 - `Label`: `str` *(required)*
@@ -568,7 +568,7 @@ Type annotations for `boto3.client("sns").set_endpoint_attributes` method.
 Boto3 documentation:
 [SNS.Client.set_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_endpoint_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 - `Attributes`: `Dict`\[`str`, `str`\] *(required)*
@@ -581,7 +581,7 @@ method.
 Boto3 documentation:
 [SNS.Client.set_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_platform_application_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
 - `Attributes`: `Dict`\[`str`, `str`\] *(required)*
@@ -593,7 +593,7 @@ Type annotations for `boto3.client("sns").set_sms_attributes` method.
 Boto3 documentation:
 [SNS.Client.set_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_sms_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `attributes`: `Dict`\[`str`, `str`\] *(required)*
 
@@ -649,7 +649,7 @@ Type annotations for `boto3.client("sns").tag_resource` method.
 Boto3 documentation:
 [SNS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -663,7 +663,7 @@ Type annotations for `boto3.client("sns").unsubscribe` method.
 Boto3 documentation:
 [SNS.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.unsubscribe)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionArn`: `str` *(required)*
 
@@ -674,7 +674,7 @@ Type annotations for `boto3.client("sns").untag_resource` method.
 Boto3 documentation:
 [SNS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -689,7 +689,7 @@ method.
 Boto3 documentation:
 [SNS.Client.verify_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.verify_sms_sandbox_phone_number)
 
-Arguments:
+Keyword-only arguments:
 
 - `PhoneNumber`: `str` *(required)*
 - `OneTimePassword`: `str` *(required)*

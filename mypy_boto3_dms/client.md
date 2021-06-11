@@ -135,7 +135,7 @@ Type annotations for `boto3.client("dms").add_tags_to_resource` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -180,7 +180,7 @@ Type annotations for
 Boto3 documentation:
 [DatabaseMigrationService.Client.cancel_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationTaskAssessmentRunArn`: `str` *(required)*
 
@@ -346,7 +346,7 @@ Type annotations for `boto3.client("dms").delete_certificate` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
@@ -360,7 +360,7 @@ Type annotations for `boto3.client("dms").delete_connection` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 - `ReplicationInstanceArn`: `str` *(required)*
@@ -375,7 +375,7 @@ Type annotations for `boto3.client("dms").delete_endpoint` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
@@ -389,7 +389,7 @@ Type annotations for `boto3.client("dms").delete_event_subscription` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
@@ -403,7 +403,7 @@ Type annotations for `boto3.client("dms").delete_replication_instance` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.delete_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationInstanceArn`: `str` *(required)*
 
@@ -418,7 +418,7 @@ method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.delete_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationSubnetGroupIdentifier`: `str` *(required)*
 
@@ -431,7 +431,7 @@ Type annotations for `boto3.client("dms").delete_replication_task` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.delete_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 
@@ -446,7 +446,7 @@ Type annotations for
 Boto3 documentation:
 [DatabaseMigrationService.Client.delete_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationTaskAssessmentRunArn`: `str` *(required)*
 
@@ -572,7 +572,7 @@ Type annotations for `boto3.client("dms").describe_event_categories` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceType`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -628,7 +628,7 @@ Type annotations for
 Boto3 documentation:
 [DatabaseMigrationService.Client.describe_orderable_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxRecords`: `int`
 - `Marker`: `str`
@@ -662,7 +662,7 @@ method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.describe_refresh_schemas_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
@@ -861,7 +861,7 @@ Type annotations for `boto3.client("dms").list_tags_for_resource` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -1013,7 +1013,7 @@ Type annotations for `boto3.client("dms").move_replication_task` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.move_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 - `TargetReplicationInstanceArn`: `str` *(required)*
@@ -1028,7 +1028,7 @@ Type annotations for `boto3.client("dms").reboot_replication_instance` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.reboot_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationInstanceArn`: `str` *(required)*
 - `ForceFailover`: `bool`
@@ -1043,7 +1043,7 @@ Type annotations for `boto3.client("dms").refresh_schemas` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.refresh_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 - `ReplicationInstanceArn`: `str` *(required)*
@@ -1076,7 +1076,7 @@ Type annotations for `boto3.client("dms").remove_tags_from_resource` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1111,7 +1111,7 @@ method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.start_replication_task_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 
@@ -1148,7 +1148,7 @@ Type annotations for `boto3.client("dms").stop_replication_task` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.stop_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationTaskArn`: `str` *(required)*
 
@@ -1162,7 +1162,7 @@ Type annotations for `boto3.client("dms").test_connection` method.
 Boto3 documentation:
 [DatabaseMigrationService.Client.test_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationInstanceArn`: `str` *(required)*
 - `EndpointArn`: `str` *(required)*

@@ -132,7 +132,7 @@ Type annotations for `boto3.client("lookoutvision").create_project` method.
 Boto3 documentation:
 [LookoutforVision.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ClientToken`: `str`
@@ -178,7 +178,7 @@ Type annotations for `boto3.client("lookoutvision").delete_project` method.
 Boto3 documentation:
 [LookoutforVision.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ClientToken`: `str`
@@ -193,7 +193,7 @@ Type annotations for `boto3.client("lookoutvision").describe_dataset` method.
 Boto3 documentation:
 [LookoutforVision.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `DatasetType`: `str` *(required)*
@@ -208,7 +208,7 @@ Type annotations for `boto3.client("lookoutvision").describe_model` method.
 Boto3 documentation:
 [LookoutforVision.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ModelVersion`: `str` *(required)*
@@ -223,7 +223,7 @@ Type annotations for `boto3.client("lookoutvision").describe_project` method.
 Boto3 documentation:
 [LookoutforVision.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 
@@ -309,7 +309,7 @@ Type annotations for `boto3.client("lookoutvision").list_projects` method.
 Boto3 documentation:
 [LookoutforVision.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -325,7 +325,7 @@ method.
 Boto3 documentation:
 [LookoutforVision.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -370,7 +370,7 @@ Type annotations for `boto3.client("lookoutvision").tag_resource` method.
 Boto3 documentation:
 [LookoutforVision.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -384,7 +384,7 @@ Type annotations for `boto3.client("lookoutvision").untag_resource` method.
 Boto3 documentation:
 [LookoutforVision.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

@@ -140,7 +140,7 @@ Type annotations for `boto3.client("cloudhsmv2").delete_backup` method.
 Boto3 documentation:
 [CloudHSMV2.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 
@@ -154,7 +154,7 @@ Type annotations for `boto3.client("cloudhsmv2").delete_cluster` method.
 Boto3 documentation:
 [CloudHSMV2.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
@@ -266,7 +266,7 @@ method.
 Boto3 documentation:
 [CloudHSMV2.Client.modify_backup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 - `NeverExpires`: `bool` *(required)*
@@ -281,7 +281,7 @@ Type annotations for `boto3.client("cloudhsmv2").modify_cluster` method.
 Boto3 documentation:
 [CloudHSMV2.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupRetentionPolicy`:
   [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
@@ -298,7 +298,7 @@ Type annotations for `boto3.client("cloudhsmv2").restore_backup` method.
 Boto3 documentation:
 [CloudHSMV2.Client.restore_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 
@@ -312,7 +312,7 @@ Type annotations for `boto3.client("cloudhsmv2").tag_resource` method.
 Boto3 documentation:
 [CloudHSMV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -326,7 +326,7 @@ Type annotations for `boto3.client("cloudhsmv2").untag_resource` method.
 Boto3 documentation:
 [CloudHSMV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagKeyList`: `List`\[`str`\] *(required)*

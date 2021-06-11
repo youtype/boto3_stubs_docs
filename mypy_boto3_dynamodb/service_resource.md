@@ -85,7 +85,7 @@ Type annotations for `boto3.resource("dynamodb").batch_get_item` method.
 Boto3 documentation:
 [DynamoDB.ServiceResource.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_get_item)
 
-Arguments:
+Keyword-only arguments:
 
 - `RequestItems`: `Dict`\[`str`,
   [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]

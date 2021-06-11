@@ -98,7 +98,7 @@ Type annotations for `boto3.client("dataexchange").cancel_job` method.
 Boto3 documentation:
 [DataExchange.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.cancel_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -127,7 +127,7 @@ Type annotations for `boto3.client("dataexchange").create_job` method.
 Boto3 documentation:
 [DataExchange.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Details`: [RequestDetailsTypeDef](./type_defs.md#requestdetailstypedef)
   *(required)*
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("dataexchange").delete_data_set` method.
 Boto3 documentation:
 [DataExchange.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_data_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("dataexchange").delete_revision` method.
 Boto3 documentation:
 [DataExchange.Client.delete_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*
@@ -226,7 +226,7 @@ Type annotations for `boto3.client("dataexchange").get_data_set` method.
 Boto3 documentation:
 [DataExchange.Client.get_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_data_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 
@@ -239,7 +239,7 @@ Type annotations for `boto3.client("dataexchange").get_job` method.
 Boto3 documentation:
 [DataExchange.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -252,7 +252,7 @@ Type annotations for `boto3.client("dataexchange").get_revision` method.
 Boto3 documentation:
 [DataExchange.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*
@@ -335,7 +335,7 @@ method.
 Boto3 documentation:
 [DataExchange.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -349,7 +349,7 @@ Type annotations for `boto3.client("dataexchange").start_job` method.
 Boto3 documentation:
 [DataExchange.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.start_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -362,7 +362,7 @@ Type annotations for `boto3.client("dataexchange").tag_resource` method.
 Boto3 documentation:
 [DataExchange.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -374,7 +374,7 @@ Type annotations for `boto3.client("dataexchange").untag_resource` method.
 Boto3 documentation:
 [DataExchange.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

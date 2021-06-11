@@ -115,7 +115,7 @@ Type annotations for `boto3.client("lex-models").create_bot_version` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_bot_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `checksum`: `str`
@@ -130,7 +130,7 @@ Type annotations for `boto3.client("lex-models").create_intent_version` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.create_intent_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_intent_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `checksum`: `str`
@@ -146,7 +146,7 @@ method.
 Boto3 documentation:
 [LexModelBuildingService.Client.create_slot_type_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_slot_type_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `checksum`: `str`
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("lex-models").delete_bot` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("lex-models").delete_bot_alias` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `botName`: `str` *(required)*
@@ -198,7 +198,7 @@ Type annotations for `boto3.client("lex-models").delete_bot_version` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
@@ -210,7 +210,7 @@ Type annotations for `boto3.client("lex-models").delete_intent` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -221,7 +221,7 @@ Type annotations for `boto3.client("lex-models").delete_intent_version` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.delete_intent_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
@@ -233,7 +233,7 @@ Type annotations for `boto3.client("lex-models").delete_slot_type` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
@@ -245,7 +245,7 @@ method.
 Boto3 documentation:
 [LexModelBuildingService.Client.delete_slot_type_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
@@ -257,7 +257,7 @@ Type annotations for `boto3.client("lex-models").delete_utterances` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.delete_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_utterances)
 
-Arguments:
+Keyword-only arguments:
 
 - `botName`: `str` *(required)*
 - `userId`: `str` *(required)*
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("lex-models").get_bot` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `versionOrAlias`: `str` *(required)*
@@ -300,7 +300,7 @@ Type annotations for `boto3.client("lex-models").get_bot_alias` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.get_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `botName`: `str` *(required)*
@@ -399,7 +399,7 @@ Type annotations for `boto3.client("lex-models").get_builtin_intent` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.get_builtin_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intent)
 
-Arguments:
+Keyword-only arguments:
 
 - `signature`: `str` *(required)*
 
@@ -465,7 +465,7 @@ Type annotations for `boto3.client("lex-models").get_import` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.get_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_import)
 
-Arguments:
+Keyword-only arguments:
 
 - `importId`: `str` *(required)*
 
@@ -478,7 +478,7 @@ Type annotations for `boto3.client("lex-models").get_intent` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.get_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
@@ -523,7 +523,7 @@ Type annotations for `boto3.client("lex-models").get_slot_type` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.get_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `str` *(required)*
@@ -588,7 +588,7 @@ method.
 Boto3 documentation:
 [LexModelBuildingService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -727,7 +727,7 @@ Type annotations for `boto3.client("lex-models").tag_resource` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -741,7 +741,7 @@ Type annotations for `boto3.client("lex-models").untag_resource` method.
 Boto3 documentation:
 [LexModelBuildingService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

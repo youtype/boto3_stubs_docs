@@ -96,7 +96,7 @@ Type annotations for `boto3.client("greengrassv2").cancel_deployment` method.
 Boto3 documentation:
 [GreengrassV2.Client.cancel_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.cancel_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 
@@ -150,7 +150,7 @@ Type annotations for `boto3.client("greengrassv2").delete_component` method.
 Boto3 documentation:
 [GreengrassV2.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("greengrassv2").delete_core_device` method.
 Boto3 documentation:
 [GreengrassV2.Client.delete_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_core_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
 
@@ -172,7 +172,7 @@ Type annotations for `boto3.client("greengrassv2").describe_component` method.
 Boto3 documentation:
 [GreengrassV2.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.describe_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
@@ -203,7 +203,7 @@ Type annotations for `boto3.client("greengrassv2").get_component` method.
 Boto3 documentation:
 [GreengrassV2.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `recipeOutputFormat`:
@@ -220,7 +220,7 @@ Type annotations for
 Boto3 documentation:
 [GreengrassV2.Client.get_component_version_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component_version_artifact)
 
-Arguments:
+Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `artifactName`: `str` *(required)*
@@ -235,7 +235,7 @@ Type annotations for `boto3.client("greengrassv2").get_core_device` method.
 Boto3 documentation:
 [GreengrassV2.Client.get_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_core_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("greengrassv2").get_deployment` method.
 Boto3 documentation:
 [GreengrassV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_deployment)
 
-Arguments:
+Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 
@@ -367,7 +367,7 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -382,7 +382,7 @@ Type annotations for
 Boto3 documentation:
 [GreengrassV2.Client.resolve_component_candidates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.resolve_component_candidates)
 
-Arguments:
+Keyword-only arguments:
 
 - `platform`:
   [ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("greengrassv2").tag_resource` method.
 Boto3 documentation:
 [GreengrassV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -415,7 +415,7 @@ Type annotations for `boto3.client("greengrassv2").untag_resource` method.
 Boto3 documentation:
 [GreengrassV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

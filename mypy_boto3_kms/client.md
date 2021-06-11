@@ -148,7 +148,7 @@ Type annotations for `boto3.client("kms").cancel_key_deletion` method.
 Boto3 documentation:
 [KMS.Client.cancel_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.cancel_key_deletion)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
@@ -162,7 +162,7 @@ Type annotations for `boto3.client("kms").connect_custom_key_store` method.
 Boto3 documentation:
 [KMS.Client.connect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.connect_custom_key_store)
 
-Arguments:
+Keyword-only arguments:
 
 - `CustomKeyStoreId`: `str` *(required)*
 
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("kms").create_alias` method.
 Boto3 documentation:
 [KMS.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AliasName`: `str` *(required)*
 - `TargetKeyId`: `str` *(required)*
@@ -265,7 +265,7 @@ Type annotations for `boto3.client("kms").delete_alias` method.
 Boto3 documentation:
 [KMS.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AliasName`: `str` *(required)*
 
@@ -276,7 +276,7 @@ Type annotations for `boto3.client("kms").delete_custom_key_store` method.
 Boto3 documentation:
 [KMS.Client.delete_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_custom_key_store)
 
-Arguments:
+Keyword-only arguments:
 
 - `CustomKeyStoreId`: `str` *(required)*
 
@@ -289,7 +289,7 @@ Type annotations for `boto3.client("kms").delete_imported_key_material` method.
 Boto3 documentation:
 [KMS.Client.delete_imported_key_material](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_imported_key_material)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("kms").describe_key` method.
 Boto3 documentation:
 [KMS.Client.describe_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `GrantTokens`: `List`\[`str`\]
@@ -332,7 +332,7 @@ Type annotations for `boto3.client("kms").disable_key` method.
 Boto3 documentation:
 [KMS.Client.disable_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
@@ -343,7 +343,7 @@ Type annotations for `boto3.client("kms").disable_key_rotation` method.
 Boto3 documentation:
 [KMS.Client.disable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key_rotation)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("kms").disconnect_custom_key_store` method.
 Boto3 documentation:
 [KMS.Client.disconnect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disconnect_custom_key_store)
 
-Arguments:
+Keyword-only arguments:
 
 - `CustomKeyStoreId`: `str` *(required)*
 
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("kms").enable_key` method.
 Boto3 documentation:
 [KMS.Client.enable_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("kms").enable_key_rotation` method.
 Boto3 documentation:
 [KMS.Client.enable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key_rotation)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
@@ -497,7 +497,7 @@ Type annotations for `boto3.client("kms").generate_random` method.
 Boto3 documentation:
 [KMS.Client.generate_random](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_random)
 
-Arguments:
+Keyword-only arguments:
 
 - `NumberOfBytes`: `int`
 - `CustomKeyStoreId`: `str`
@@ -512,7 +512,7 @@ Type annotations for `boto3.client("kms").get_key_policy` method.
 Boto3 documentation:
 [KMS.Client.get_key_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -527,7 +527,7 @@ Type annotations for `boto3.client("kms").get_key_rotation_status` method.
 Boto3 documentation:
 [KMS.Client.get_key_rotation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_rotation_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
@@ -559,7 +559,7 @@ Type annotations for `boto3.client("kms").get_public_key` method.
 Boto3 documentation:
 [KMS.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `GrantTokens`: `List`\[`str`\]
@@ -641,7 +641,7 @@ Type annotations for `boto3.client("kms").list_keys` method.
 Boto3 documentation:
 [KMS.Client.list_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_keys)
 
-Arguments:
+Keyword-only arguments:
 
 - `Limit`: `int`
 - `Marker`: `str`
@@ -735,7 +735,7 @@ Type annotations for `boto3.client("kms").revoke_grant` method.
 Boto3 documentation:
 [KMS.Client.revoke_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.revoke_grant)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `GrantId`: `str` *(required)*
@@ -747,7 +747,7 @@ Type annotations for `boto3.client("kms").schedule_key_deletion` method.
 Boto3 documentation:
 [KMS.Client.schedule_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.schedule_key_deletion)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `PendingWindowInDays`: `int`
@@ -781,7 +781,7 @@ Type annotations for `boto3.client("kms").tag_resource` method.
 Boto3 documentation:
 [KMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -793,7 +793,7 @@ Type annotations for `boto3.client("kms").untag_resource` method.
 Boto3 documentation:
 [KMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -805,7 +805,7 @@ Type annotations for `boto3.client("kms").update_alias` method.
 Boto3 documentation:
 [KMS.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AliasName`: `str` *(required)*
 - `TargetKeyId`: `str` *(required)*
@@ -833,7 +833,7 @@ Type annotations for `boto3.client("kms").update_key_description` method.
 Boto3 documentation:
 [KMS.Client.update_key_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_key_description)
 
-Arguments:
+Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `Description`: `str` *(required)*

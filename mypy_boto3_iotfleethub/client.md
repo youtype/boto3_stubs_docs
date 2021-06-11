@@ -101,7 +101,7 @@ Type annotations for `boto3.client("iotfleethub").delete_application` method.
 Boto3 documentation:
 [IoTFleetHub.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.delete_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationId`: `str` *(required)*
 - `clientToken`: `str`
@@ -115,7 +115,7 @@ Type annotations for `boto3.client("iotfleethub").describe_application` method.
 Boto3 documentation:
 [IoTFleetHub.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.describe_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `applicationId`: `str` *(required)*
 
@@ -146,7 +146,7 @@ Type annotations for `boto3.client("iotfleethub").list_applications` method.
 Boto3 documentation:
 [IoTFleetHub.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 
@@ -161,7 +161,7 @@ method.
 Boto3 documentation:
 [IoTFleetHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("iotfleethub").tag_resource` method.
 Boto3 documentation:
 [IoTFleetHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -189,7 +189,7 @@ Type annotations for `boto3.client("iotfleethub").untag_resource` method.
 Boto3 documentation:
 [IoTFleetHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

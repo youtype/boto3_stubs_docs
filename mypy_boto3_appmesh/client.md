@@ -270,7 +270,7 @@ Type annotations for `boto3.client("appmesh").delete_mesh` method.
 Boto3 documentation:
 [AppMesh.Client.delete_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_mesh)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 
@@ -380,7 +380,7 @@ Type annotations for `boto3.client("appmesh").describe_mesh` method.
 Boto3 documentation:
 [AppMesh.Client.describe_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_mesh)
 
-Arguments:
+Keyword-only arguments:
 
 - `meshName`: `str` *(required)*
 - `meshOwner`: `str`
@@ -509,7 +509,7 @@ Type annotations for `boto3.client("appmesh").list_meshes` method.
 Boto3 documentation:
 [AppMesh.Client.list_meshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_meshes)
 
-Arguments:
+Keyword-only arguments:
 
 - `limit`: `int`
 - `nextToken`: `str`
@@ -624,7 +624,7 @@ Type annotations for `boto3.client("appmesh").tag_resource` method.
 Boto3 documentation:
 [AppMesh.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\] *(required)*
@@ -638,7 +638,7 @@ Type annotations for `boto3.client("appmesh").untag_resource` method.
 Boto3 documentation:
 [AppMesh.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

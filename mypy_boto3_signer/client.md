@@ -116,7 +116,7 @@ Type annotations for `boto3.client("signer").cancel_signing_profile` method.
 Boto3 documentation:
 [signer.Client.cancel_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.cancel_signing_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 
@@ -127,7 +127,7 @@ Type annotations for `boto3.client("signer").describe_signing_job` method.
 Boto3 documentation:
 [signer.Client.describe_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.describe_signing_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
@@ -157,7 +157,7 @@ Type annotations for `boto3.client("signer").get_signing_platform` method.
 Boto3 documentation:
 [signer.Client.get_signing_platform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_platform)
 
-Arguments:
+Keyword-only arguments:
 
 - `platformId`: `str` *(required)*
 
@@ -171,7 +171,7 @@ Type annotations for `boto3.client("signer").get_signing_profile` method.
 Boto3 documentation:
 [signer.Client.get_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 - `profileOwner`: `str`
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("signer").list_profile_permissions` method.
 Boto3 documentation:
 [signer.Client.list_profile_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_profile_permissions)
 
-Arguments:
+Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 - `nextToken`: `str`
@@ -260,7 +260,7 @@ Type annotations for `boto3.client("signer").list_tags_for_resource` method.
 Boto3 documentation:
 [signer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -359,7 +359,7 @@ Type annotations for `boto3.client("signer").tag_resource` method.
 Boto3 documentation:
 [signer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -373,7 +373,7 @@ Type annotations for `boto3.client("signer").untag_resource` method.
 Boto3 documentation:
 [signer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

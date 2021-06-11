@@ -339,7 +339,7 @@ Type annotations for
 Boto3 documentation:
 [RDS.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_source_identifier_to_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 - `SourceIdentifier`: `str` *(required)*
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("rds").add_tags_to_resource` method.
 Boto3 documentation:
 [RDS.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -431,7 +431,7 @@ Type annotations for `boto3.client("rds").cancel_export_task` method.
 Boto3 documentation:
 [RDS.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.cancel_export_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `ExportTaskIdentifier`: `str` *(required)*
 
@@ -937,7 +937,7 @@ method.
 Boto3 documentation:
 [RDS.Client.delete_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_availability_zone)
 
-Arguments:
+Keyword-only arguments:
 
 - `CustomAvailabilityZoneId`: `str` *(required)*
 
@@ -967,7 +967,7 @@ Type annotations for `boto3.client("rds").delete_db_cluster_endpoint` method.
 Boto3 documentation:
 [RDS.Client.delete_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterEndpointIdentifier`: `str` *(required)*
 
@@ -981,7 +981,7 @@ method.
 Boto3 documentation:
 [RDS.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 
@@ -992,7 +992,7 @@ Type annotations for `boto3.client("rds").delete_db_cluster_snapshot` method.
 Boto3 documentation:
 [RDS.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
@@ -1024,7 +1024,7 @@ method.
 Boto3 documentation:
 [RDS.Client.delete_db_instance_automated_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance_automated_backup)
 
-Arguments:
+Keyword-only arguments:
 
 - `DbiResourceId`: `str`
 - `DBInstanceAutomatedBackupsArn`: `str`
@@ -1039,7 +1039,7 @@ Type annotations for `boto3.client("rds").delete_db_parameter_group` method.
 Boto3 documentation:
 [RDS.Client.delete_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 
@@ -1050,7 +1050,7 @@ Type annotations for `boto3.client("rds").delete_db_proxy` method.
 Boto3 documentation:
 [RDS.Client.delete_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBProxyName`: `str` *(required)*
 
@@ -1064,7 +1064,7 @@ Type annotations for `boto3.client("rds").delete_db_proxy_endpoint` method.
 Boto3 documentation:
 [RDS.Client.delete_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBProxyEndpointName`: `str` *(required)*
 
@@ -1078,7 +1078,7 @@ Type annotations for `boto3.client("rds").delete_db_security_group` method.
 Boto3 documentation:
 [RDS.Client.delete_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_security_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBSecurityGroupName`: `str` *(required)*
 
@@ -1089,7 +1089,7 @@ Type annotations for `boto3.client("rds").delete_db_snapshot` method.
 Boto3 documentation:
 [RDS.Client.delete_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBSnapshotIdentifier`: `str` *(required)*
 
@@ -1103,7 +1103,7 @@ Type annotations for `boto3.client("rds").delete_db_subnet_group` method.
 Boto3 documentation:
 [RDS.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
 
@@ -1114,7 +1114,7 @@ Type annotations for `boto3.client("rds").delete_event_subscription` method.
 Boto3 documentation:
 [RDS.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_event_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
@@ -1128,7 +1128,7 @@ Type annotations for `boto3.client("rds").delete_global_cluster` method.
 Boto3 documentation:
 [RDS.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_global_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalClusterIdentifier`: `str` *(required)*
 
@@ -1142,7 +1142,7 @@ Type annotations for `boto3.client("rds").delete_installation_media` method.
 Boto3 documentation:
 [RDS.Client.delete_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_installation_media)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstallationMediaId`: `str` *(required)*
 
@@ -1155,7 +1155,7 @@ Type annotations for `boto3.client("rds").delete_option_group` method.
 Boto3 documentation:
 [RDS.Client.delete_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_option_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `OptionGroupName`: `str` *(required)*
 
@@ -1302,7 +1302,7 @@ Type annotations for
 Boto3 documentation:
 [RDS.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshot_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
@@ -1559,7 +1559,7 @@ method.
 Boto3 documentation:
 [RDS.Client.describe_db_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshot_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBSnapshotIdentifier`: `str` *(required)*
 
@@ -1647,7 +1647,7 @@ Type annotations for `boto3.client("rds").describe_event_categories` method.
 Boto3 documentation:
 [RDS.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_categories)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceType`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -1895,7 +1895,7 @@ Type annotations for
 Boto3 documentation:
 [RDS.Client.describe_valid_db_instance_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_valid_db_instance_modifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 
@@ -1926,7 +1926,7 @@ Type annotations for `boto3.client("rds").failover_db_cluster` method.
 Boto3 documentation:
 [RDS.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `TargetDBInstanceIdentifier`: `str`
@@ -1941,7 +1941,7 @@ Type annotations for `boto3.client("rds").failover_global_cluster` method.
 Boto3 documentation:
 [RDS.Client.failover_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_global_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalClusterIdentifier`: `str` *(required)*
 - `TargetDbClusterIdentifier`: `str` *(required)*
@@ -2005,7 +2005,7 @@ Type annotations for `boto3.client("rds").list_tags_for_resource` method.
 Boto3 documentation:
 [RDS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -2019,7 +2019,7 @@ Type annotations for `boto3.client("rds").modify_certificates` method.
 Boto3 documentation:
 [RDS.Client.modify_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_certificates)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateIdentifier`: `str`
 - `RemoveCustomerOverride`: `bool`
@@ -2108,7 +2108,7 @@ method.
 Boto3 documentation:
 [RDS.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
@@ -2202,7 +2202,7 @@ Type annotations for `boto3.client("rds").modify_db_parameter_group` method.
 Boto3 documentation:
 [RDS.Client.modify_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
@@ -2394,7 +2394,7 @@ method.
 Boto3 documentation:
 [RDS.Client.promote_read_replica_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
@@ -2426,7 +2426,7 @@ Type annotations for `boto3.client("rds").reboot_db_instance` method.
 Boto3 documentation:
 [RDS.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 - `ForceFailover`: `bool`
@@ -2458,7 +2458,7 @@ Type annotations for `boto3.client("rds").remove_from_global_cluster` method.
 Boto3 documentation:
 [RDS.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_from_global_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalClusterIdentifier`: `str`
 - `DbClusterIdentifier`: `str`
@@ -2500,7 +2500,7 @@ Type annotations for
 Boto3 documentation:
 [RDS.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_source_identifier_from_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 - `SourceIdentifier`: `str` *(required)*
@@ -2515,7 +2515,7 @@ Type annotations for `boto3.client("rds").remove_tags_from_resource` method.
 Boto3 documentation:
 [RDS.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2862,7 +2862,7 @@ Type annotations for `boto3.client("rds").start_db_cluster` method.
 Boto3 documentation:
 [RDS.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
@@ -2876,7 +2876,7 @@ Type annotations for `boto3.client("rds").start_db_instance` method.
 Boto3 documentation:
 [RDS.Client.start_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 
@@ -2928,7 +2928,7 @@ Type annotations for `boto3.client("rds").stop_activity_stream` method.
 Boto3 documentation:
 [RDS.Client.stop_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_activity_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `ApplyImmediately`: `bool`
@@ -2943,7 +2943,7 @@ Type annotations for `boto3.client("rds").stop_db_cluster` method.
 Boto3 documentation:
 [RDS.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
@@ -2957,7 +2957,7 @@ Type annotations for `boto3.client("rds").stop_db_instance` method.
 Boto3 documentation:
 [RDS.Client.stop_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 - `DBSnapshotIdentifier`: `str`
@@ -2973,7 +2973,7 @@ Type annotations for
 Boto3 documentation:
 [RDS.Client.stop_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance_automated_backups_replication)
 
-Arguments:
+Keyword-only arguments:
 
 - `SourceDBInstanceArn`: `str` *(required)*
 

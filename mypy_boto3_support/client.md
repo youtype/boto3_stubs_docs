@@ -79,7 +79,7 @@ Type annotations for `boto3.client("support").add_attachments_to_set` method.
 Boto3 documentation:
 [Support.Client.add_attachments_to_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_attachments_to_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `attachments`:
   `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\] *(required)*
@@ -147,7 +147,7 @@ Type annotations for `boto3.client("support").describe_attachment` method.
 Boto3 documentation:
 [Support.Client.describe_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_attachment)
 
-Arguments:
+Keyword-only arguments:
 
 - `attachmentId`: `str` *(required)*
 
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("support").describe_services` method.
 Boto3 documentation:
 [Support.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_services)
 
-Arguments:
+Keyword-only arguments:
 
 - `serviceCodeList`: `List`\[`str`\]
 - `language`: `str`
@@ -216,7 +216,7 @@ Type annotations for `boto3.client("support").describe_severity_levels` method.
 Boto3 documentation:
 [Support.Client.describe_severity_levels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_severity_levels)
 
-Arguments:
+Keyword-only arguments:
 
 - `language`: `str`
 
@@ -232,7 +232,7 @@ method.
 Boto3 documentation:
 [Support.Client.describe_trusted_advisor_check_refresh_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses)
 
-Arguments:
+Keyword-only arguments:
 
 - `checkIds`: `List`\[`str`\] *(required)*
 
@@ -247,7 +247,7 @@ Type annotations for
 Boto3 documentation:
 [Support.Client.describe_trusted_advisor_check_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result)
 
-Arguments:
+Keyword-only arguments:
 
 - `checkId`: `str` *(required)*
 - `language`: `str`
@@ -263,7 +263,7 @@ Type annotations for
 Boto3 documentation:
 [Support.Client.describe_trusted_advisor_check_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries)
 
-Arguments:
+Keyword-only arguments:
 
 - `checkIds`: `List`\[`str`\] *(required)*
 
@@ -278,7 +278,7 @@ method.
 Boto3 documentation:
 [Support.Client.describe_trusted_advisor_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_checks)
 
-Arguments:
+Keyword-only arguments:
 
 - `language`: `str` *(required)*
 
@@ -309,7 +309,7 @@ method.
 Boto3 documentation:
 [Support.Client.refresh_trusted_advisor_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.refresh_trusted_advisor_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `checkId`: `str` *(required)*
 
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("support").resolve_case` method.
 Boto3 documentation:
 [Support.Client.resolve_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.resolve_case)
 
-Arguments:
+Keyword-only arguments:
 
 - `caseId`: `str`
 

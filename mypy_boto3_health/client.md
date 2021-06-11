@@ -142,7 +142,7 @@ method.
 Boto3 documentation:
 [Health.Client.describe_entity_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates)
 
-Arguments:
+Keyword-only arguments:
 
 - `eventArns`: `List`\[`str`\]
 
@@ -175,7 +175,7 @@ Type annotations for `boto3.client("health").describe_event_details` method.
 Boto3 documentation:
 [Health.Client.describe_event_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `eventArns`: `List`\[`str`\] *(required)*
 - `locale`: `str`
@@ -191,7 +191,7 @@ Type annotations for
 Boto3 documentation:
 [Health.Client.describe_event_details_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization)
 
-Arguments:
+Keyword-only arguments:
 
 - `organizationEventDetailFilters`:
   `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]

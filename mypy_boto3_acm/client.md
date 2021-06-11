@@ -88,7 +88,7 @@ Type annotations for `boto3.client("acm").add_tags_to_certificate` method.
 Boto3 documentation:
 [ACM.Client.add_tags_to_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -113,7 +113,7 @@ Type annotations for `boto3.client("acm").delete_certificate` method.
 Boto3 documentation:
 [ACM.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
@@ -124,7 +124,7 @@ Type annotations for `boto3.client("acm").describe_certificate` method.
 Boto3 documentation:
 [ACM.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
@@ -138,7 +138,7 @@ Type annotations for `boto3.client("acm").export_certificate` method.
 Boto3 documentation:
 [ACM.Client.export_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 - `Passphrase`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
@@ -179,7 +179,7 @@ Type annotations for `boto3.client("acm").get_certificate` method.
 Boto3 documentation:
 [ACM.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
@@ -229,7 +229,7 @@ Type annotations for `boto3.client("acm").list_tags_for_certificate` method.
 Boto3 documentation:
 [ACM.Client.list_tags_for_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
@@ -243,7 +243,7 @@ Type annotations for `boto3.client("acm").put_account_configuration` method.
 Boto3 documentation:
 [ACM.Client.put_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `IdempotencyToken`: `str` *(required)*
 - `ExpiryEvents`:
@@ -256,7 +256,7 @@ Type annotations for `boto3.client("acm").remove_tags_from_certificate` method.
 Boto3 documentation:
 [ACM.Client.remove_tags_from_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("acm").renew_certificate` method.
 Boto3 documentation:
 [ACM.Client.renew_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("acm").update_certificate_options` method.
 Boto3 documentation:
 [ACM.Client.update_certificate_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 - `Options`:

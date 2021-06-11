@@ -351,7 +351,7 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.update_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `status`: [StatusType](./literals.md#statustype) *(required)*
 - `includeMemberAccounts`: `bool`

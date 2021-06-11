@@ -243,7 +243,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.add_client_id_to_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `ClientID`: `str` *(required)*
@@ -255,7 +255,7 @@ Type annotations for `boto3.client("iam").add_role_to_instance_profile` method.
 Boto3 documentation:
 [IAM.Client.add_role_to_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_role_to_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `RoleName`: `str` *(required)*
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("iam").add_user_to_group` method.
 Boto3 documentation:
 [IAM.Client.add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_user_to_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `UserName`: `str` *(required)*
@@ -279,7 +279,7 @@ Type annotations for `boto3.client("iam").attach_group_policy` method.
 Boto3 documentation:
 [IAM.Client.attach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_group_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
@@ -291,7 +291,7 @@ Type annotations for `boto3.client("iam").attach_role_policy` method.
 Boto3 documentation:
 [IAM.Client.attach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_role_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
@@ -303,7 +303,7 @@ Type annotations for `boto3.client("iam").attach_user_policy` method.
 Boto3 documentation:
 [IAM.Client.attach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_user_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
@@ -328,7 +328,7 @@ Type annotations for `boto3.client("iam").change_password` method.
 Boto3 documentation:
 [IAM.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.change_password)
 
-Arguments:
+Keyword-only arguments:
 
 - `OldPassword`: `str` *(required)*
 - `NewPassword`: `str` *(required)*
@@ -340,7 +340,7 @@ Type annotations for `boto3.client("iam").create_access_key` method.
 Boto3 documentation:
 [IAM.Client.create_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_access_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str`
 
@@ -354,7 +354,7 @@ Type annotations for `boto3.client("iam").create_account_alias` method.
 Boto3 documentation:
 [IAM.Client.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_account_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountAlias`: `str` *(required)*
 
@@ -365,7 +365,7 @@ Type annotations for `boto3.client("iam").create_group` method.
 Boto3 documentation:
 [IAM.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `Path`: `str`
@@ -516,7 +516,7 @@ method.
 Boto3 documentation:
 [IAM.Client.create_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_specific_credential)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `ServiceName`: `str` *(required)*
@@ -563,7 +563,7 @@ Type annotations for `boto3.client("iam").deactivate_mfa_device` method.
 Boto3 documentation:
 [IAM.Client.deactivate_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.deactivate_mfa_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `SerialNumber`: `str` *(required)*
@@ -575,7 +575,7 @@ Type annotations for `boto3.client("iam").delete_access_key` method.
 Boto3 documentation:
 [IAM.Client.delete_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_access_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessKeyId`: `str` *(required)*
 - `UserName`: `str`
@@ -587,7 +587,7 @@ Type annotations for `boto3.client("iam").delete_account_alias` method.
 Boto3 documentation:
 [IAM.Client.delete_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountAlias`: `str` *(required)*
 
@@ -606,7 +606,7 @@ Type annotations for `boto3.client("iam").delete_group` method.
 Boto3 documentation:
 [IAM.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 
@@ -617,7 +617,7 @@ Type annotations for `boto3.client("iam").delete_group_policy` method.
 Boto3 documentation:
 [IAM.Client.delete_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -629,7 +629,7 @@ Type annotations for `boto3.client("iam").delete_instance_profile` method.
 Boto3 documentation:
 [IAM.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 
@@ -640,7 +640,7 @@ Type annotations for `boto3.client("iam").delete_login_profile` method.
 Boto3 documentation:
 [IAM.Client.delete_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
@@ -652,7 +652,7 @@ method.
 Boto3 documentation:
 [IAM.Client.delete_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 
@@ -663,7 +663,7 @@ Type annotations for `boto3.client("iam").delete_policy` method.
 Boto3 documentation:
 [IAM.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
@@ -674,7 +674,7 @@ Type annotations for `boto3.client("iam").delete_policy_version` method.
 Boto3 documentation:
 [IAM.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -686,7 +686,7 @@ Type annotations for `boto3.client("iam").delete_role` method.
 Boto3 documentation:
 [IAM.Client.delete_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
@@ -698,7 +698,7 @@ method.
 Boto3 documentation:
 [IAM.Client.delete_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
@@ -709,7 +709,7 @@ Type annotations for `boto3.client("iam").delete_role_policy` method.
 Boto3 documentation:
 [IAM.Client.delete_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -721,7 +721,7 @@ Type annotations for `boto3.client("iam").delete_saml_provider` method.
 Boto3 documentation:
 [IAM.Client.delete_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_saml_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
 
@@ -732,7 +732,7 @@ Type annotations for `boto3.client("iam").delete_server_certificate` method.
 Boto3 documentation:
 [IAM.Client.delete_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_server_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 
@@ -743,7 +743,7 @@ Type annotations for `boto3.client("iam").delete_service_linked_role` method.
 Boto3 documentation:
 [IAM.Client.delete_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_linked_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
@@ -758,7 +758,7 @@ method.
 Boto3 documentation:
 [IAM.Client.delete_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_specific_credential)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceSpecificCredentialId`: `str` *(required)*
 - `UserName`: `str`
@@ -770,7 +770,7 @@ Type annotations for `boto3.client("iam").delete_signing_certificate` method.
 Boto3 documentation:
 [IAM.Client.delete_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_signing_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateId`: `str` *(required)*
 - `UserName`: `str`
@@ -782,7 +782,7 @@ Type annotations for `boto3.client("iam").delete_ssh_public_key` method.
 Boto3 documentation:
 [IAM.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_ssh_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `SSHPublicKeyId`: `str` *(required)*
@@ -794,7 +794,7 @@ Type annotations for `boto3.client("iam").delete_user` method.
 Boto3 documentation:
 [IAM.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
@@ -806,7 +806,7 @@ method.
 Boto3 documentation:
 [IAM.Client.delete_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
@@ -817,7 +817,7 @@ Type annotations for `boto3.client("iam").delete_user_policy` method.
 Boto3 documentation:
 [IAM.Client.delete_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -829,7 +829,7 @@ Type annotations for `boto3.client("iam").delete_virtual_mfa_device` method.
 Boto3 documentation:
 [IAM.Client.delete_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
 
@@ -840,7 +840,7 @@ Type annotations for `boto3.client("iam").detach_group_policy` method.
 Boto3 documentation:
 [IAM.Client.detach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_group_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
@@ -852,7 +852,7 @@ Type annotations for `boto3.client("iam").detach_role_policy` method.
 Boto3 documentation:
 [IAM.Client.detach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_role_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
@@ -864,7 +864,7 @@ Type annotations for `boto3.client("iam").detach_user_policy` method.
 Boto3 documentation:
 [IAM.Client.detach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_user_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
@@ -901,7 +901,7 @@ method.
 Boto3 documentation:
 [IAM.Client.generate_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_organizations_access_report)
 
-Arguments:
+Keyword-only arguments:
 
 - `EntityPath`: `str` *(required)*
 - `OrganizationsPolicyId`: `str`
@@ -933,7 +933,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.generate_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details)
 
-Arguments:
+Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Granularity`:
@@ -949,7 +949,7 @@ Type annotations for `boto3.client("iam").get_access_key_last_used` method.
 Boto3 documentation:
 [IAM.Client.get_access_key_last_used](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_access_key_last_used)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccessKeyId`: `str` *(required)*
 
@@ -1001,7 +1001,7 @@ method.
 Boto3 documentation:
 [IAM.Client.get_context_keys_for_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyInputList`: `List`\[`str`\] *(required)*
 
@@ -1016,7 +1016,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.get_context_keys_for_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicySourceArn`: `str` *(required)*
 - `PolicyInputList`: `List`\[`str`\]
@@ -1056,7 +1056,7 @@ Type annotations for `boto3.client("iam").get_group_policy` method.
 Boto3 documentation:
 [IAM.Client.get_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -1071,7 +1071,7 @@ Type annotations for `boto3.client("iam").get_instance_profile` method.
 Boto3 documentation:
 [IAM.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 
@@ -1085,7 +1085,7 @@ Type annotations for `boto3.client("iam").get_login_profile` method.
 Boto3 documentation:
 [IAM.Client.get_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_login_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
@@ -1099,7 +1099,7 @@ Type annotations for `boto3.client("iam").get_open_id_connect_provider` method.
 Boto3 documentation:
 [IAM.Client.get_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_open_id_connect_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 
@@ -1131,7 +1131,7 @@ Type annotations for `boto3.client("iam").get_policy` method.
 Boto3 documentation:
 [IAM.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
@@ -1144,7 +1144,7 @@ Type annotations for `boto3.client("iam").get_policy_version` method.
 Boto3 documentation:
 [IAM.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -1159,7 +1159,7 @@ Type annotations for `boto3.client("iam").get_role` method.
 Boto3 documentation:
 [IAM.Client.get_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
@@ -1172,7 +1172,7 @@ Type annotations for `boto3.client("iam").get_role_policy` method.
 Boto3 documentation:
 [IAM.Client.get_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -1187,7 +1187,7 @@ Type annotations for `boto3.client("iam").get_saml_provider` method.
 Boto3 documentation:
 [IAM.Client.get_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_saml_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
 
@@ -1201,7 +1201,7 @@ Type annotations for `boto3.client("iam").get_server_certificate` method.
 Boto3 documentation:
 [IAM.Client.get_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_server_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 
@@ -1251,7 +1251,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.get_service_linked_role_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeletionTaskId`: `str` *(required)*
 
@@ -1281,7 +1281,7 @@ Type annotations for `boto3.client("iam").get_user` method.
 Boto3 documentation:
 [IAM.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str`
 
@@ -1294,7 +1294,7 @@ Type annotations for `boto3.client("iam").get_user_policy` method.
 Boto3 documentation:
 [IAM.Client.get_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
@@ -1325,7 +1325,7 @@ Type annotations for `boto3.client("iam").list_account_aliases` method.
 Boto3 documentation:
 [IAM.Client.list_account_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_account_aliases)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `int`
@@ -1740,7 +1740,7 @@ method.
 Boto3 documentation:
 [IAM.Client.list_service_specific_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_service_specific_credentials)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str`
 - `ServiceName`: `str`
@@ -1865,7 +1865,7 @@ method.
 Boto3 documentation:
 [IAM.Client.put_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_permissions_boundary)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PermissionsBoundary`: `str` *(required)*
@@ -1891,7 +1891,7 @@ method.
 Boto3 documentation:
 [IAM.Client.put_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_permissions_boundary)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `PermissionsBoundary`: `str` *(required)*
@@ -1917,7 +1917,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.remove_client_id_from_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `ClientID`: `str` *(required)*
@@ -1930,7 +1930,7 @@ method.
 Boto3 documentation:
 [IAM.Client.remove_role_from_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `RoleName`: `str` *(required)*
@@ -1942,7 +1942,7 @@ Type annotations for `boto3.client("iam").remove_user_from_group` method.
 Boto3 documentation:
 [IAM.Client.remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_user_from_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `UserName`: `str` *(required)*
@@ -1955,7 +1955,7 @@ method.
 Boto3 documentation:
 [IAM.Client.reset_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.reset_service_specific_credential)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServiceSpecificCredentialId`: `str` *(required)*
 - `UserName`: `str`
@@ -1984,7 +1984,7 @@ Type annotations for `boto3.client("iam").set_default_policy_version` method.
 Boto3 documentation:
 [IAM.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_default_policy_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `VersionId`: `str` *(required)*
@@ -1997,7 +1997,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.set_security_token_service_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_security_token_service_preferences)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalEndpointTokenVersion`:
   [globalEndpointTokenVersionType](./literals.md#globalendpointtokenversiontype)
@@ -2061,7 +2061,7 @@ Type annotations for `boto3.client("iam").tag_instance_profile` method.
 Boto3 documentation:
 [IAM.Client.tag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2073,7 +2073,7 @@ Type annotations for `boto3.client("iam").tag_mfa_device` method.
 Boto3 documentation:
 [IAM.Client.tag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_mfa_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2085,7 +2085,7 @@ Type annotations for `boto3.client("iam").tag_open_id_connect_provider` method.
 Boto3 documentation:
 [IAM.Client.tag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2097,7 +2097,7 @@ Type annotations for `boto3.client("iam").tag_policy` method.
 Boto3 documentation:
 [IAM.Client.tag_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2109,7 +2109,7 @@ Type annotations for `boto3.client("iam").tag_role` method.
 Boto3 documentation:
 [IAM.Client.tag_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2121,7 +2121,7 @@ Type annotations for `boto3.client("iam").tag_saml_provider` method.
 Boto3 documentation:
 [IAM.Client.tag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_saml_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2133,7 +2133,7 @@ Type annotations for `boto3.client("iam").tag_server_certificate` method.
 Boto3 documentation:
 [IAM.Client.tag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_server_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2145,7 +2145,7 @@ Type annotations for `boto3.client("iam").tag_user` method.
 Boto3 documentation:
 [IAM.Client.tag_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -2157,7 +2157,7 @@ Type annotations for `boto3.client("iam").untag_instance_profile` method.
 Boto3 documentation:
 [IAM.Client.untag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_instance_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2169,7 +2169,7 @@ Type annotations for `boto3.client("iam").untag_mfa_device` method.
 Boto3 documentation:
 [IAM.Client.untag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_mfa_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2182,7 +2182,7 @@ method.
 Boto3 documentation:
 [IAM.Client.untag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2194,7 +2194,7 @@ Type annotations for `boto3.client("iam").untag_policy` method.
 Boto3 documentation:
 [IAM.Client.untag_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2206,7 +2206,7 @@ Type annotations for `boto3.client("iam").untag_role` method.
 Boto3 documentation:
 [IAM.Client.untag_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2218,7 +2218,7 @@ Type annotations for `boto3.client("iam").untag_saml_provider` method.
 Boto3 documentation:
 [IAM.Client.untag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_saml_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2230,7 +2230,7 @@ Type annotations for `boto3.client("iam").untag_server_certificate` method.
 Boto3 documentation:
 [IAM.Client.untag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_server_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2242,7 +2242,7 @@ Type annotations for `boto3.client("iam").untag_user` method.
 Boto3 documentation:
 [IAM.Client.untag_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -2287,7 +2287,7 @@ Type annotations for `boto3.client("iam").update_assume_role_policy` method.
 Boto3 documentation:
 [IAM.Client.update_assume_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_assume_role_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
@@ -2326,7 +2326,7 @@ Type annotations for
 Boto3 documentation:
 [IAM.Client.update_open_id_connect_provider_thumbprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint)
 
-Arguments:
+Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `ThumbprintList`: `List`\[`str`\] *(required)*
@@ -2353,7 +2353,7 @@ Type annotations for `boto3.client("iam").update_role_description` method.
 Boto3 documentation:
 [IAM.Client.update_role_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role_description)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `Description`: `str` *(required)*
@@ -2368,7 +2368,7 @@ Type annotations for `boto3.client("iam").update_saml_provider` method.
 Boto3 documentation:
 [IAM.Client.update_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_saml_provider)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 - `SAMLProviderArn`: `str` *(required)*
@@ -2468,7 +2468,7 @@ Type annotations for `boto3.client("iam").upload_signing_certificate` method.
 Boto3 documentation:
 [IAM.Client.upload_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_signing_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateBody`: `str` *(required)*
 - `UserName`: `str`
@@ -2483,7 +2483,7 @@ Type annotations for `boto3.client("iam").upload_ssh_public_key` method.
 Boto3 documentation:
 [IAM.Client.upload_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_ssh_public_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `SSHPublicKeyBody`: `str` *(required)*

@@ -216,7 +216,7 @@ Type annotations for `boto3.client("s3control").delete_access_point` method.
 Boto3 documentation:
 [S3Control.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -229,7 +229,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.delete_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -242,7 +242,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.delete_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -256,7 +256,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.delete_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -268,7 +268,7 @@ Type annotations for `boto3.client("s3control").delete_bucket` method.
 Boto3 documentation:
 [S3Control.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -281,7 +281,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.delete_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -293,7 +293,7 @@ Type annotations for `boto3.client("s3control").delete_bucket_policy` method.
 Boto3 documentation:
 [S3Control.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -305,7 +305,7 @@ Type annotations for `boto3.client("s3control").delete_bucket_tagging` method.
 Boto3 documentation:
 [S3Control.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -317,7 +317,7 @@ Type annotations for `boto3.client("s3control").delete_job_tagging` method.
 Boto3 documentation:
 [S3Control.Client.delete_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -332,7 +332,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
@@ -344,7 +344,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.delete_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
@@ -357,7 +357,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.delete_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
@@ -371,7 +371,7 @@ Type annotations for `boto3.client("s3control").describe_job` method.
 Boto3 documentation:
 [S3Control.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -401,7 +401,7 @@ Type annotations for `boto3.client("s3control").get_access_point` method.
 Boto3 documentation:
 [S3Control.Client.get_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -418,7 +418,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.get_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -434,7 +434,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.get_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -450,7 +450,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.get_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -466,7 +466,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.get_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -482,7 +482,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.get_access_point_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -499,7 +499,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.get_access_point_policy_status_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -514,7 +514,7 @@ Type annotations for `boto3.client("s3control").get_bucket` method.
 Boto3 documentation:
 [S3Control.Client.get_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -529,7 +529,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -544,7 +544,7 @@ Type annotations for `boto3.client("s3control").get_bucket_policy` method.
 Boto3 documentation:
 [S3Control.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -559,7 +559,7 @@ Type annotations for `boto3.client("s3control").get_bucket_tagging` method.
 Boto3 documentation:
 [S3Control.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -574,7 +574,7 @@ Type annotations for `boto3.client("s3control").get_job_tagging` method.
 Boto3 documentation:
 [S3Control.Client.get_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
@@ -590,7 +590,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
@@ -605,7 +605,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.get_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
@@ -621,7 +621,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.get_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
@@ -704,7 +704,7 @@ Type annotations for
 Boto3 documentation:
 [S3Control.Client.list_storage_lens_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `NextToken`: `str`
@@ -822,7 +822,7 @@ method.
 Boto3 documentation:
 [S3Control.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block)
 
-Arguments:
+Keyword-only arguments:
 
 - `PublicAccessBlockConfiguration`:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)

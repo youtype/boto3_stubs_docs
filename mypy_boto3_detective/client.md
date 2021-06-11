@@ -75,7 +75,7 @@ Type annotations for `boto3.client("detective").accept_invitation` method.
 Boto3 documentation:
 [Detective.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.accept_invitation)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 
@@ -99,7 +99,7 @@ Type annotations for `boto3.client("detective").create_graph` method.
 Boto3 documentation:
 [Detective.Client.create_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_graph)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("detective").delete_graph` method.
 Boto3 documentation:
 [Detective.Client.delete_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_graph)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 
@@ -142,7 +142,7 @@ Type annotations for `boto3.client("detective").delete_members` method.
 Boto3 documentation:
 [Detective.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
@@ -158,7 +158,7 @@ method.
 Boto3 documentation:
 [Detective.Client.disassociate_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disassociate_membership)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 
@@ -185,7 +185,7 @@ Type annotations for `boto3.client("detective").get_members` method.
 Boto3 documentation:
 [Detective.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.get_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
@@ -199,7 +199,7 @@ Type annotations for `boto3.client("detective").list_graphs` method.
 Boto3 documentation:
 [Detective.Client.list_graphs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_graphs)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -213,7 +213,7 @@ Type annotations for `boto3.client("detective").list_invitations` method.
 Boto3 documentation:
 [Detective.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_invitations)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -244,7 +244,7 @@ Type annotations for `boto3.client("detective").list_tags_for_resource` method.
 Boto3 documentation:
 [Detective.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -258,7 +258,7 @@ Type annotations for `boto3.client("detective").reject_invitation` method.
 Boto3 documentation:
 [Detective.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.reject_invitation)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 
@@ -270,7 +270,7 @@ method.
 Boto3 documentation:
 [Detective.Client.start_monitoring_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.start_monitoring_member)
 
-Arguments:
+Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 - `AccountId`: `str` *(required)*
@@ -282,7 +282,7 @@ Type annotations for `boto3.client("detective").tag_resource` method.
 Boto3 documentation:
 [Detective.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -296,7 +296,7 @@ Type annotations for `boto3.client("detective").untag_resource` method.
 Boto3 documentation:
 [Detective.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

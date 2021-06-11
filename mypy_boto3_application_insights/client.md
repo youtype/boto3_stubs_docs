@@ -159,7 +159,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 
@@ -173,7 +173,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
@@ -204,7 +204,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_application)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 
@@ -219,7 +219,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
@@ -235,7 +235,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.describe_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
@@ -286,7 +286,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.describe_observation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation)
 
-Arguments:
+Keyword-only arguments:
 
 - `ObservationId`: `str` *(required)*
 
@@ -301,7 +301,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.describe_problem](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProblemId`: `str` *(required)*
 
@@ -316,7 +316,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.describe_problem_observations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProblemId`: `str` *(required)*
 
@@ -348,7 +348,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_applications)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -456,7 +456,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
@@ -471,7 +471,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -486,7 +486,7 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

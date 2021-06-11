@@ -207,7 +207,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.create_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_global_network)
 
-Arguments:
+Keyword-only arguments:
 
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -257,7 +257,7 @@ Type annotations for `boto3.client("networkmanager").delete_connection` method.
 Boto3 documentation:
 [NetworkManager.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connection)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `ConnectionId`: `str` *(required)*
@@ -272,7 +272,7 @@ Type annotations for `boto3.client("networkmanager").delete_device` method.
 Boto3 documentation:
 [NetworkManager.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `DeviceId`: `str` *(required)*
@@ -288,7 +288,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.delete_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 
@@ -302,7 +302,7 @@ Type annotations for `boto3.client("networkmanager").delete_link` method.
 Boto3 documentation:
 [NetworkManager.Client.delete_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_link)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `LinkId`: `str` *(required)*
@@ -316,7 +316,7 @@ Type annotations for `boto3.client("networkmanager").delete_site` method.
 Boto3 documentation:
 [NetworkManager.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_site)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `SiteId`: `str` *(required)*
@@ -331,7 +331,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkManager.Client.deregister_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `TransitGatewayArn`: `str` *(required)*
@@ -364,7 +364,7 @@ Type annotations for
 Boto3 documentation:
 [NetworkManager.Client.disassociate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `CustomerGatewayArn`: `str` *(required)*
@@ -397,7 +397,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.disassociate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `TransitGatewayConnectPeerArn`: `str` *(required)*
@@ -574,7 +574,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -589,7 +589,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.register_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `TransitGatewayArn`: `str` *(required)*
@@ -604,7 +604,7 @@ Type annotations for `boto3.client("networkmanager").tag_resource` method.
 Boto3 documentation:
 [NetworkManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -618,7 +618,7 @@ Type annotations for `boto3.client("networkmanager").untag_resource` method.
 Boto3 documentation:
 [NetworkManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -674,7 +674,7 @@ method.
 Boto3 documentation:
 [NetworkManager.Client.update_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_global_network)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `Description`: `str`

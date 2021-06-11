@@ -128,7 +128,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.create_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_flow_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `definition`:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
@@ -171,7 +171,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.create_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `definition`:
   [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
@@ -189,7 +189,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.delete_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_flow_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -213,7 +213,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.delete_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str`
 
@@ -227,7 +227,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.delete_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -241,7 +241,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.deploy_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deploy_system_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str`
 
@@ -256,7 +256,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.deprecate_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_flow_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -270,7 +270,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.deprecate_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_system_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -284,7 +284,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.describe_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.describe_namespace)
 
-Arguments:
+Keyword-only arguments:
 
 - `namespaceName`: `str`
 
@@ -299,7 +299,7 @@ Type annotations for
 Boto3 documentation:
 [IoTThingsGraph.Client.dissociate_entity_from_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.dissociate_entity_from_thing)
 
-Arguments:
+Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 - `entityType`: [EntityTypeType](./literals.md#entitytypetype) *(required)*
@@ -330,7 +330,7 @@ Type annotations for `boto3.client("iotthingsgraph").get_entities` method.
 Boto3 documentation:
 [IoTThingsGraph.Client.get_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_entities)
 
-Arguments:
+Keyword-only arguments:
 
 - `ids`: `List`\[`str`\] *(required)*
 - `namespaceVersion`: `int`
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("iotthingsgraph").get_flow_template` method.
 Boto3 documentation:
 [IoTThingsGraph.Client.get_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `revisionNumber`: `int`
@@ -389,7 +389,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.get_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
@@ -404,7 +404,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.get_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `revisionNumber`: `int`
@@ -436,7 +436,7 @@ Type annotations for `boto3.client("iotthingsgraph").get_upload_status` method.
 Boto3 documentation:
 [IoTThingsGraph.Client.get_upload_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_upload_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `uploadId`: `str` *(required)*
 
@@ -595,7 +595,7 @@ Type annotations for `boto3.client("iotthingsgraph").tag_resource` method.
 Boto3 documentation:
 [IoTThingsGraph.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -610,7 +610,7 @@ method.
 Boto3 documentation:
 [IoTThingsGraph.Client.undeploy_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.undeploy_system_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `id`: `str`
 
@@ -624,7 +624,7 @@ Type annotations for `boto3.client("iotthingsgraph").untag_resource` method.
 Boto3 documentation:
 [IoTThingsGraph.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

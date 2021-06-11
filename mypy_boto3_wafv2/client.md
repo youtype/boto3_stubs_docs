@@ -110,7 +110,7 @@ Type annotations for `boto3.client("wafv2").associate_web_acl` method.
 Boto3 documentation:
 [WAFV2.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.associate_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLArn`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
@@ -137,7 +137,7 @@ Type annotations for `boto3.client("wafv2").check_capacity` method.
 Boto3 documentation:
 [WAFV2.Client.check_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.check_capacity)
 
-Arguments:
+Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
@@ -241,7 +241,7 @@ Type annotations for
 Boto3 documentation:
 [WAFV2.Client.delete_firewall_manager_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLArn`: `str` *(required)*
 - `WebACLLockToken`: `str` *(required)*
@@ -273,7 +273,7 @@ method.
 Boto3 documentation:
 [WAFV2.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -286,7 +286,7 @@ Type annotations for `boto3.client("wafv2").delete_permission_policy` method.
 Boto3 documentation:
 [WAFV2.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -364,7 +364,7 @@ Type annotations for `boto3.client("wafv2").disassociate_web_acl` method.
 Boto3 documentation:
 [WAFV2.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -408,7 +408,7 @@ Type annotations for `boto3.client("wafv2").get_logging_configuration` method.
 Boto3 documentation:
 [WAFV2.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -422,7 +422,7 @@ Type annotations for `boto3.client("wafv2").get_permission_policy` method.
 Boto3 documentation:
 [WAFV2.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -520,7 +520,7 @@ Type annotations for `boto3.client("wafv2").get_web_acl_for_resource` method.
 Boto3 documentation:
 [WAFV2.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -599,7 +599,7 @@ Type annotations for `boto3.client("wafv2").list_resources_for_web_acl` method.
 Boto3 documentation:
 [WAFV2.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl)
 
-Arguments:
+Keyword-only arguments:
 
 - `WebACLArn`: `str` *(required)*
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
@@ -662,7 +662,7 @@ Type annotations for `boto3.client("wafv2").put_logging_configuration` method.
 Boto3 documentation:
 [WAFV2.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
@@ -678,7 +678,7 @@ Type annotations for `boto3.client("wafv2").put_permission_policy` method.
 Boto3 documentation:
 [WAFV2.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_permission_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Policy`: `str` *(required)*
@@ -692,7 +692,7 @@ Type annotations for `boto3.client("wafv2").tag_resource` method.
 Boto3 documentation:
 [WAFV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -706,7 +706,7 @@ Type annotations for `boto3.client("wafv2").untag_resource` method.
 Boto3 documentation:
 [WAFV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*

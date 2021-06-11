@@ -83,7 +83,7 @@ Type annotations for `boto3.client("sdb").batch_delete_attributes` method.
 Boto3 documentation:
 [SimpleDB.Client.batch_delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Items`:
@@ -97,7 +97,7 @@ Type annotations for `boto3.client("sdb").batch_put_attributes` method.
 Boto3 documentation:
 [SimpleDB.Client.batch_put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Items`:
@@ -124,7 +124,7 @@ Type annotations for `boto3.client("sdb").create_domain` method.
 Boto3 documentation:
 [SimpleDB.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.create_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -149,7 +149,7 @@ Type annotations for `boto3.client("sdb").delete_domain` method.
 Boto3 documentation:
 [SimpleDB.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_domain)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -160,7 +160,7 @@ Type annotations for `boto3.client("sdb").domain_metadata` method.
 Boto3 documentation:
 [SimpleDB.Client.domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.domain_metadata)
 
-Arguments:
+Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
@@ -207,7 +207,7 @@ Type annotations for `boto3.client("sdb").list_domains` method.
 Boto3 documentation:
 [SimpleDB.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.list_domains)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxNumberOfDomains`: `int`
 - `NextToken`: `str`

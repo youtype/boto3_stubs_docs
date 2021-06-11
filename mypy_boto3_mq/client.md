@@ -153,7 +153,7 @@ Type annotations for `boto3.client("mq").create_tags` method.
 Boto3 documentation:
 [MQ.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -182,7 +182,7 @@ Type annotations for `boto3.client("mq").delete_broker` method.
 Boto3 documentation:
 [MQ.Client.delete_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_broker)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 
@@ -196,7 +196,7 @@ Type annotations for `boto3.client("mq").delete_tags` method.
 Boto3 documentation:
 [MQ.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -208,7 +208,7 @@ Type annotations for `boto3.client("mq").delete_user` method.
 Boto3 documentation:
 [MQ.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -222,7 +222,7 @@ Type annotations for `boto3.client("mq").describe_broker` method.
 Boto3 documentation:
 [MQ.Client.describe_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("mq").describe_configuration` method.
 Boto3 documentation:
 [MQ.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationId`: `str` *(required)*
 
@@ -286,7 +286,7 @@ method.
 Boto3 documentation:
 [MQ.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration_revision)
 
-Arguments:
+Keyword-only arguments:
 
 - `ConfigurationId`: `str` *(required)*
 - `ConfigurationRevision`: `str` *(required)*
@@ -301,7 +301,7 @@ Type annotations for `boto3.client("mq").describe_user` method.
 Boto3 documentation:
 [MQ.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 - `Username`: `str` *(required)*
@@ -332,7 +332,7 @@ Type annotations for `boto3.client("mq").list_brokers` method.
 Boto3 documentation:
 [MQ.Client.list_brokers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_brokers)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -363,7 +363,7 @@ Type annotations for `boto3.client("mq").list_configurations` method.
 Boto3 documentation:
 [MQ.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configurations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("mq").list_tags` method.
 Boto3 documentation:
 [MQ.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_tags)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -406,7 +406,7 @@ Type annotations for `boto3.client("mq").reboot_broker` method.
 Boto3 documentation:
 [MQ.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.reboot_broker)
 
-Arguments:
+Keyword-only arguments:
 
 - `BrokerId`: `str` *(required)*
 

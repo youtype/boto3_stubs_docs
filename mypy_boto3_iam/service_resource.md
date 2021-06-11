@@ -588,7 +588,7 @@ Type annotations for `boto3.resource("iam").change_password` method.
 Boto3 documentation:
 [IAM.ServiceResource.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.change_password)
 
-Arguments:
+Keyword-only arguments:
 
 - `OldPassword`: `str` *(required)*
 - `NewPassword`: `str` *(required)*
@@ -600,7 +600,7 @@ Type annotations for `boto3.resource("iam").create_account_alias` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_account_alias)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountAlias`: `str` *(required)*
 
@@ -633,7 +633,7 @@ Type annotations for `boto3.resource("iam").create_group` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `Path`: `str`
@@ -731,7 +731,7 @@ Type annotations for `boto3.resource("iam").create_signing_certificate` method.
 Boto3 documentation:
 [IAM.ServiceResource.create_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_signing_certificate)
 
-Arguments:
+Keyword-only arguments:
 
 - `CertificateBody`: `str` *(required)*
 - `UserName`: `str`
@@ -820,7 +820,7 @@ Type annotations for `boto3.resource("iam").activate` method.
 Boto3 documentation:
 [IAM.AccessKey.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.activate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 
@@ -831,7 +831,7 @@ Type annotations for `boto3.resource("iam").deactivate` method.
 Boto3 documentation:
 [IAM.AccessKey.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.deactivate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 
@@ -886,7 +886,7 @@ Type annotations for `boto3.resource("iam").activate` method.
 Boto3 documentation:
 [IAM.AccessKeyPair.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.activate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 
@@ -897,7 +897,7 @@ Type annotations for `boto3.resource("iam").deactivate` method.
 Boto3 documentation:
 [IAM.AccessKeyPair.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.deactivate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 
@@ -1089,7 +1089,7 @@ Type annotations for `boto3.resource("iam").update` method.
 Boto3 documentation:
 [IAM.AssumeRolePolicy.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyDocument`: `str` *(required)*
 
@@ -1325,7 +1325,7 @@ Type annotations for `boto3.resource("iam").add_user` method.
 Boto3 documentation:
 [IAM.Group.add_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.add_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
@@ -1336,7 +1336,7 @@ Type annotations for `boto3.resource("iam").attach_policy` method.
 Boto3 documentation:
 [IAM.Group.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.attach_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
@@ -1347,7 +1347,7 @@ Type annotations for `boto3.resource("iam").create` method.
 Boto3 documentation:
 [IAM.Group.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create)
 
-Arguments:
+Keyword-only arguments:
 
 - `Path`: `str`
 
@@ -1360,7 +1360,7 @@ Type annotations for `boto3.resource("iam").create_policy` method.
 Boto3 documentation:
 [IAM.Group.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
@@ -1381,7 +1381,7 @@ Type annotations for `boto3.resource("iam").detach_policy` method.
 Boto3 documentation:
 [IAM.Group.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.detach_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
@@ -1415,7 +1415,7 @@ Type annotations for `boto3.resource("iam").remove_user` method.
 Boto3 documentation:
 [IAM.Group.remove_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.remove_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
@@ -1426,7 +1426,7 @@ Type annotations for `boto3.resource("iam").update` method.
 Boto3 documentation:
 [IAM.Group.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `NewPath`: `str`
 - `NewGroupName`: `str`
@@ -1497,7 +1497,7 @@ Type annotations for `boto3.resource("iam").put` method.
 Boto3 documentation:
 [IAM.GroupPolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyDocument`: `str` *(required)*
 
@@ -1545,7 +1545,7 @@ Type annotations for `boto3.resource("iam").add_role` method.
 Boto3 documentation:
 [IAM.InstanceProfile.add_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.add_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
@@ -1586,7 +1586,7 @@ Type annotations for `boto3.resource("iam").remove_role` method.
 Boto3 documentation:
 [IAM.InstanceProfile.remove_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.remove_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
@@ -1630,7 +1630,7 @@ Type annotations for `boto3.resource("iam").create` method.
 Boto3 documentation:
 [IAM.LoginProfile.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.create)
 
-Arguments:
+Keyword-only arguments:
 
 - `Password`: `str` *(required)*
 - `PasswordResetRequired`: `bool`
@@ -1674,7 +1674,7 @@ Type annotations for `boto3.resource("iam").update` method.
 Boto3 documentation:
 [IAM.LoginProfile.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `Password`: `str`
 - `PasswordResetRequired`: `bool`
@@ -1719,7 +1719,7 @@ Type annotations for `boto3.resource("iam").associate` method.
 Boto3 documentation:
 [IAM.MfaDevice.associate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.associate)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationCode1`: `str` *(required)*
 - `AuthenticationCode2`: `str` *(required)*
@@ -1747,7 +1747,7 @@ Type annotations for `boto3.resource("iam").resync` method.
 Boto3 documentation:
 [IAM.MfaDevice.resync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.resync)
 
-Arguments:
+Keyword-only arguments:
 
 - `AuthenticationCode1`: `str` *(required)*
 - `AuthenticationCode2`: `str` *(required)*
@@ -1881,7 +1881,7 @@ Type annotations for `boto3.resource("iam").attach_group` method.
 Boto3 documentation:
 [IAM.Policy.attach_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 
@@ -1892,7 +1892,7 @@ Type annotations for `boto3.resource("iam").attach_role` method.
 Boto3 documentation:
 [IAM.Policy.attach_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
@@ -1903,7 +1903,7 @@ Type annotations for `boto3.resource("iam").attach_user` method.
 Boto3 documentation:
 [IAM.Policy.attach_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
@@ -1914,7 +1914,7 @@ Type annotations for `boto3.resource("iam").create_version` method.
 Boto3 documentation:
 [IAM.Policy.create_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.create_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyDocument`: `str` *(required)*
 - `SetAsDefault`: `bool`
@@ -1935,7 +1935,7 @@ Type annotations for `boto3.resource("iam").detach_group` method.
 Boto3 documentation:
 [IAM.Policy.detach_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 
@@ -1946,7 +1946,7 @@ Type annotations for `boto3.resource("iam").detach_role` method.
 Boto3 documentation:
 [IAM.Policy.detach_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_role)
 
-Arguments:
+Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
@@ -1957,7 +1957,7 @@ Type annotations for `boto3.resource("iam").detach_user` method.
 Boto3 documentation:
 [IAM.Policy.detach_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
@@ -2175,7 +2175,7 @@ Type annotations for `boto3.resource("iam").attach_policy` method.
 Boto3 documentation:
 [IAM.Role.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.attach_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
@@ -2193,7 +2193,7 @@ Type annotations for `boto3.resource("iam").detach_policy` method.
 Boto3 documentation:
 [IAM.Role.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.detach_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
@@ -2284,7 +2284,7 @@ Type annotations for `boto3.resource("iam").put` method.
 Boto3 documentation:
 [IAM.RolePolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyDocument`: `str` *(required)*
 
@@ -2358,7 +2358,7 @@ Type annotations for `boto3.resource("iam").update` method.
 Boto3 documentation:
 [IAM.SamlProvider.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 
@@ -2428,7 +2428,7 @@ Type annotations for `boto3.resource("iam").update` method.
 Boto3 documentation:
 [IAM.ServerCertificate.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `NewPath`: `str`
 - `NewServerCertificateName`: `str`
@@ -2478,7 +2478,7 @@ Type annotations for `boto3.resource("iam").activate` method.
 Boto3 documentation:
 [IAM.SigningCertificate.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.activate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 
@@ -2489,7 +2489,7 @@ Type annotations for `boto3.resource("iam").deactivate` method.
 Boto3 documentation:
 [IAM.SigningCertificate.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.deactivate)
 
-Arguments:
+Keyword-only arguments:
 
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 
@@ -2733,7 +2733,7 @@ Type annotations for `boto3.resource("iam").add_group` method.
 Boto3 documentation:
 [IAM.User.add_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.add_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 
@@ -2744,7 +2744,7 @@ Type annotations for `boto3.resource("iam").attach_policy` method.
 Boto3 documentation:
 [IAM.User.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.attach_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
@@ -2779,7 +2779,7 @@ Type annotations for `boto3.resource("iam").create_login_profile` method.
 Boto3 documentation:
 [IAM.User.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_login_profile)
 
-Arguments:
+Keyword-only arguments:
 
 - `Password`: `str` *(required)*
 - `PasswordResetRequired`: `bool`
@@ -2793,7 +2793,7 @@ Type annotations for `boto3.resource("iam").create_policy` method.
 Boto3 documentation:
 [IAM.User.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
@@ -2814,7 +2814,7 @@ Type annotations for `boto3.resource("iam").detach_policy` method.
 Boto3 documentation:
 [IAM.User.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.detach_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
@@ -2863,7 +2863,7 @@ Type annotations for `boto3.resource("iam").remove_group` method.
 Boto3 documentation:
 [IAM.User.remove_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.remove_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 
@@ -2874,7 +2874,7 @@ Type annotations for `boto3.resource("iam").update` method.
 Boto3 documentation:
 [IAM.User.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.update)
 
-Arguments:
+Keyword-only arguments:
 
 - `NewPath`: `str`
 - `NewUserName`: `str`
@@ -2945,7 +2945,7 @@ Type annotations for `boto3.resource("iam").put` method.
 Boto3 documentation:
 [IAM.UserPolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.put)
 
-Arguments:
+Keyword-only arguments:
 
 - `PolicyDocument`: `str` *(required)*
 

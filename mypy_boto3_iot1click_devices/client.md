@@ -90,7 +90,7 @@ Type annotations for
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.claim_devices_by_claim_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClaimCode`: `str` *(required)*
 
@@ -105,7 +105,7 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
@@ -120,7 +120,7 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.finalize_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -153,7 +153,7 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.get_device_methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
@@ -168,7 +168,7 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.initiate_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
@@ -235,7 +235,7 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("iot1click-devices").tag_resource` method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -261,7 +261,7 @@ Type annotations for `boto3.client("iot1click-devices").unclaim_device` method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.unclaim_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
@@ -275,7 +275,7 @@ Type annotations for `boto3.client("iot1click-devices").untag_resource` method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -288,7 +288,7 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.update_device_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 - `Enabled`: `bool`

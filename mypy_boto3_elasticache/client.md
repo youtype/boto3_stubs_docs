@@ -189,7 +189,7 @@ Type annotations for `boto3.client("elasticache").add_tags_to_resource` method.
 Boto3 documentation:
 [ElastiCache.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.add_tags_to_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("elasticache").complete_migration` method.
 Boto3 documentation:
 [ElastiCache.Client.complete_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.complete_migration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationGroupId`: `str` *(required)*
 - `Force`: `bool`
@@ -552,7 +552,7 @@ Type annotations for `boto3.client("elasticache").delete_cache_cluster` method.
 Boto3 documentation:
 [ElastiCache.Client.delete_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `CacheClusterId`: `str` *(required)*
 - `FinalSnapshotIdentifier`: `str`
@@ -568,7 +568,7 @@ method.
 Boto3 documentation:
 [ElastiCache.Client.delete_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `CacheParameterGroupName`: `str` *(required)*
 
@@ -580,7 +580,7 @@ method.
 Boto3 documentation:
 [ElastiCache.Client.delete_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_security_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `CacheSecurityGroupName`: `str` *(required)*
 
@@ -592,7 +592,7 @@ method.
 Boto3 documentation:
 [ElastiCache.Client.delete_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_subnet_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `CacheSubnetGroupName`: `str` *(required)*
 
@@ -604,7 +604,7 @@ Type annotations for
 Boto3 documentation:
 [ElastiCache.Client.delete_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_global_replication_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalReplicationGroupId`: `str` *(required)*
 - `RetainPrimaryReplicationGroup`: `bool` *(required)*
@@ -636,7 +636,7 @@ Type annotations for `boto3.client("elasticache").delete_snapshot` method.
 Boto3 documentation:
 [ElastiCache.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_snapshot)
 
-Arguments:
+Keyword-only arguments:
 
 - `SnapshotName`: `str` *(required)*
 
@@ -650,7 +650,7 @@ Type annotations for `boto3.client("elasticache").delete_user` method.
 Boto3 documentation:
 [ElastiCache.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_user)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 
@@ -663,7 +663,7 @@ Type annotations for `boto3.client("elasticache").delete_user_group` method.
 Boto3 documentation:
 [ElastiCache.Client.delete_user_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_user_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `UserGroupId`: `str` *(required)*
 
@@ -1089,7 +1089,7 @@ Type annotations for
 Boto3 documentation:
 [ElastiCache.Client.list_allowed_node_type_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.list_allowed_node_type_modifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `CacheClusterId`: `str`
 - `ReplicationGroupId`: `str`
@@ -1105,7 +1105,7 @@ method.
 Boto3 documentation:
 [ElastiCache.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 
@@ -1154,7 +1154,7 @@ method.
 Boto3 documentation:
 [ElastiCache.Client.modify_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_parameter_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `CacheParameterGroupName`: `str` *(required)*
 - `ParameterNameValues`:
@@ -1324,7 +1324,7 @@ method.
 Boto3 documentation:
 [ElastiCache.Client.rebalance_slots_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.rebalance_slots_in_global_replication_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `GlobalReplicationGroupId`: `str` *(required)*
 - `ApplyImmediately`: `bool` *(required)*
@@ -1339,7 +1339,7 @@ Type annotations for `boto3.client("elasticache").reboot_cache_cluster` method.
 Boto3 documentation:
 [ElastiCache.Client.reboot_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.reboot_cache_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `CacheClusterId`: `str` *(required)*
 - `CacheNodeIdsToReboot`: `List`\[`str`\] *(required)*
@@ -1355,7 +1355,7 @@ method.
 Boto3 documentation:
 [ElastiCache.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.remove_tags_from_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -1404,7 +1404,7 @@ Type annotations for `boto3.client("elasticache").start_migration` method.
 Boto3 documentation:
 [ElastiCache.Client.start_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.start_migration)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationGroupId`: `str` *(required)*
 - `CustomerNodeEndpointList`:
@@ -1421,7 +1421,7 @@ Type annotations for `boto3.client("elasticache").test_failover` method.
 Boto3 documentation:
 [ElastiCache.Client.test_failover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.test_failover)
 
-Arguments:
+Keyword-only arguments:
 
 - `ReplicationGroupId`: `str` *(required)*
 - `NodeGroupId`: `str` *(required)*

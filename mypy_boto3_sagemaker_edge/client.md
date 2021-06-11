@@ -89,7 +89,7 @@ method.
 Boto3 documentation:
 [SagemakerEdgeManager.Client.get_device_registration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.get_device_registration)
 
-Arguments:
+Keyword-only arguments:
 
 - `DeviceName`: `str` *(required)*
 - `DeviceFleetName`: `str` *(required)*

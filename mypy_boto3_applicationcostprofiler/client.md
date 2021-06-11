@@ -82,7 +82,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.delete_report_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
 
@@ -114,7 +114,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.get_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.get_report_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
 
@@ -129,7 +129,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.import_application_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.import_application_usage)
 
-Arguments:
+Keyword-only arguments:
 
 - `sourceS3Location`:
   [SourceS3LocationTypeDef](./type_defs.md#sources3locationtypedef)
@@ -146,7 +146,7 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.list_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.list_report_definitions)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`

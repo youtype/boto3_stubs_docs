@@ -108,7 +108,7 @@ Type annotations for `boto3.client("ce").create_anomaly_monitor` method.
 Boto3 documentation:
 [CostExplorer.Client.create_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyMonitor`:
   [AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef) *(required)*
@@ -123,7 +123,7 @@ Type annotations for `boto3.client("ce").create_anomaly_subscription` method.
 Boto3 documentation:
 [CostExplorer.Client.create_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalySubscription`:
   [AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef)
@@ -161,7 +161,7 @@ Type annotations for `boto3.client("ce").delete_anomaly_monitor` method.
 Boto3 documentation:
 [CostExplorer.Client.delete_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_monitor)
 
-Arguments:
+Keyword-only arguments:
 
 - `MonitorArn`: `str` *(required)*
 
@@ -174,7 +174,7 @@ Type annotations for `boto3.client("ce").delete_anomaly_subscription` method.
 Boto3 documentation:
 [CostExplorer.Client.delete_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_subscription)
 
-Arguments:
+Keyword-only arguments:
 
 - `SubscriptionArn`: `str` *(required)*
 
@@ -188,7 +188,7 @@ method.
 Boto3 documentation:
 [CostExplorer.Client.delete_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_cost_category_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `CostCategoryArn`: `str` *(required)*
 
@@ -203,7 +203,7 @@ method.
 Boto3 documentation:
 [CostExplorer.Client.describe_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `CostCategoryArn`: `str` *(required)*
 - `EffectiveOn`: `str`
@@ -634,7 +634,7 @@ Type annotations for `boto3.client("ce").provide_anomaly_feedback` method.
 Boto3 documentation:
 [CostExplorer.Client.provide_anomaly_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.provide_anomaly_feedback)
 
-Arguments:
+Keyword-only arguments:
 
 - `AnomalyId`: `str` *(required)*
 - `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
@@ -650,7 +650,7 @@ Type annotations for `boto3.client("ce").update_anomaly_monitor` method.
 Boto3 documentation:
 [CostExplorer.Client.update_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_monitor)
 
-Arguments:
+Keyword-only arguments:
 
 - `MonitorArn`: `str` *(required)*
 - `MonitorName`: `str`

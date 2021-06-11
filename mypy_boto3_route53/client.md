@@ -184,7 +184,7 @@ Type annotations for `boto3.client("route53").activate_key_signing_key` method.
 Boto3 documentation:
 [Route53.Client.activate_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.activate_key_signing_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -230,7 +230,7 @@ method.
 Boto3 documentation:
 [Route53.Client.change_resource_record_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_resource_record_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `ChangeBatch`: [ChangeBatchTypeDef](./type_defs.md#changebatchtypedef)
@@ -263,7 +263,7 @@ Type annotations for `boto3.client("route53").create_health_check` method.
 Boto3 documentation:
 [Route53.Client.create_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_health_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `CallerReference`: `str` *(required)*
 - `HealthCheckConfig`:
@@ -318,7 +318,7 @@ method.
 Boto3 documentation:
 [Route53.Client.create_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_query_logging_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `CloudWatchLogsLogGroupArn`: `str` *(required)*
@@ -334,7 +334,7 @@ method.
 Boto3 documentation:
 [Route53.Client.create_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_reusable_delegation_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `CallerReference`: `str` *(required)*
 - `HostedZoneId`: `str`
@@ -402,7 +402,7 @@ Type annotations for
 Boto3 documentation:
 [Route53.Client.create_vpc_association_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_vpc_association_authorization)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
@@ -418,7 +418,7 @@ method.
 Boto3 documentation:
 [Route53.Client.deactivate_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.deactivate_key_signing_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("route53").delete_health_check` method.
 Boto3 documentation:
 [Route53.Client.delete_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_health_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `HealthCheckId`: `str` *(required)*
 
@@ -446,7 +446,7 @@ Type annotations for `boto3.client("route53").delete_hosted_zone` method.
 Boto3 documentation:
 [Route53.Client.delete_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_hosted_zone)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -460,7 +460,7 @@ Type annotations for `boto3.client("route53").delete_key_signing_key` method.
 Boto3 documentation:
 [Route53.Client.delete_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_key_signing_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `Name`: `str` *(required)*
@@ -476,7 +476,7 @@ method.
 Boto3 documentation:
 [Route53.Client.delete_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_query_logging_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -490,7 +490,7 @@ method.
 Boto3 documentation:
 [Route53.Client.delete_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_reusable_delegation_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -503,7 +503,7 @@ Type annotations for `boto3.client("route53").delete_traffic_policy` method.
 Boto3 documentation:
 [Route53.Client.delete_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Version`: `int` *(required)*
@@ -518,7 +518,7 @@ method.
 Boto3 documentation:
 [Route53.Client.delete_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -532,7 +532,7 @@ Type annotations for
 Boto3 documentation:
 [Route53.Client.delete_vpc_association_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_vpc_association_authorization)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 - `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
@@ -547,7 +547,7 @@ method.
 Boto3 documentation:
 [Route53.Client.disable_hosted_zone_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disable_hosted_zone_dnssec)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 
@@ -579,7 +579,7 @@ method.
 Boto3 documentation:
 [Route53.Client.enable_hosted_zone_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.enable_hosted_zone_dnssec)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 
@@ -609,7 +609,7 @@ Type annotations for `boto3.client("route53").get_account_limit` method.
 Boto3 documentation:
 [Route53.Client.get_account_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_account_limit)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [AccountLimitTypeType](./literals.md#accountlimittypetype)
   *(required)*
@@ -624,7 +624,7 @@ Type annotations for `boto3.client("route53").get_change` method.
 Boto3 documentation:
 [Route53.Client.get_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_change)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -647,7 +647,7 @@ Type annotations for `boto3.client("route53").get_dnssec` method.
 Boto3 documentation:
 [Route53.Client.get_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_dnssec)
 
-Arguments:
+Keyword-only arguments:
 
 - `HostedZoneId`: `str` *(required)*
 
@@ -676,7 +676,7 @@ Type annotations for `boto3.client("route53").get_health_check` method.
 Boto3 documentation:
 [Route53.Client.get_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check)
 
-Arguments:
+Keyword-only arguments:
 
 - `HealthCheckId`: `str` *(required)*
 
@@ -701,7 +701,7 @@ Type annotations for
 Boto3 documentation:
 [Route53.Client.get_health_check_last_failure_reason](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_last_failure_reason)
 
-Arguments:
+Keyword-only arguments:
 
 - `HealthCheckId`: `str` *(required)*
 
@@ -715,7 +715,7 @@ Type annotations for `boto3.client("route53").get_health_check_status` method.
 Boto3 documentation:
 [Route53.Client.get_health_check_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `HealthCheckId`: `str` *(required)*
 
@@ -729,7 +729,7 @@ Type annotations for `boto3.client("route53").get_hosted_zone` method.
 Boto3 documentation:
 [Route53.Client.get_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -753,7 +753,7 @@ Type annotations for `boto3.client("route53").get_hosted_zone_limit` method.
 Boto3 documentation:
 [Route53.Client.get_hosted_zone_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_limit)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: [HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype)
   *(required)*
@@ -769,7 +769,7 @@ Type annotations for `boto3.client("route53").get_query_logging_config` method.
 Boto3 documentation:
 [Route53.Client.get_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_query_logging_config)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -784,7 +784,7 @@ method.
 Boto3 documentation:
 [Route53.Client.get_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -799,7 +799,7 @@ Type annotations for
 Boto3 documentation:
 [Route53.Client.get_reusable_delegation_set_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set_limit)
 
-Arguments:
+Keyword-only arguments:
 
 - `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']` (see
   [ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype))
@@ -816,7 +816,7 @@ Type annotations for `boto3.client("route53").get_traffic_policy` method.
 Boto3 documentation:
 [Route53.Client.get_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Version`: `int` *(required)*
@@ -832,7 +832,7 @@ method.
 Boto3 documentation:
 [Route53.Client.get_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -874,7 +874,7 @@ Type annotations for `boto3.client("route53").list_health_checks` method.
 Boto3 documentation:
 [Route53.Client.list_health_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_health_checks)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -976,7 +976,7 @@ method.
 Boto3 documentation:
 [Route53.Client.list_reusable_delegation_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_reusable_delegation_sets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
@@ -991,7 +991,7 @@ Type annotations for `boto3.client("route53").list_tags_for_resource` method.
 Boto3 documentation:
 [Route53.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
   *(required)*
@@ -1007,7 +1007,7 @@ Type annotations for `boto3.client("route53").list_tags_for_resources` method.
 Boto3 documentation:
 [Route53.Client.list_tags_for_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resources)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
   *(required)*
@@ -1023,7 +1023,7 @@ Type annotations for `boto3.client("route53").list_traffic_policies` method.
 Boto3 documentation:
 [Route53.Client.list_traffic_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `TrafficPolicyIdMarker`: `str`
 - `MaxItems`: `str`
@@ -1182,7 +1182,7 @@ method.
 Boto3 documentation:
 [Route53.Client.update_hosted_zone_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_hosted_zone_comment)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Comment`: `str`

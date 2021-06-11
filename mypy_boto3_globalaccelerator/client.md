@@ -122,7 +122,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.add_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_custom_routing_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointConfigurations`:
   `List`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
@@ -140,7 +140,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.advertise_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr)
 
-Arguments:
+Keyword-only arguments:
 
 - `Cidr`: `str` *(required)*
 
@@ -313,7 +313,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.delete_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_accelerator)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
@@ -325,7 +325,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.delete_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_accelerator)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
@@ -338,7 +338,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.delete_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 
@@ -350,7 +350,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.delete_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 
@@ -362,7 +362,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.delete_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 
@@ -374,7 +374,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 
@@ -402,7 +402,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.deprovision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr)
 
-Arguments:
+Keyword-only arguments:
 
 - `Cidr`: `str` *(required)*
 
@@ -417,7 +417,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.describe_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
@@ -432,7 +432,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.describe_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
@@ -447,7 +447,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.describe_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
@@ -463,7 +463,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes)
 
-Arguments:
+Keyword-only arguments:
 
 - `AcceleratorArn`: `str` *(required)*
 
@@ -479,7 +479,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.describe_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 
@@ -494,7 +494,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.describe_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 
@@ -509,7 +509,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.describe_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_endpoint_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointGroupArn`: `str` *(required)*
 
@@ -524,7 +524,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.describe_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 
@@ -556,7 +556,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.list_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -572,7 +572,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.list_byoip_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_byoip_cidrs)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -588,7 +588,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.list_custom_routing_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -708,7 +708,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -723,7 +723,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.provision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr)
 
-Arguments:
+Keyword-only arguments:
 
 - `Cidr`: `str` *(required)*
 - `CidrAuthorizationContext`:
@@ -741,7 +741,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.remove_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_custom_routing_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointIds`: `List`\[`str`\] *(required)*
 - `EndpointGroupArn`: `str` *(required)*
@@ -753,7 +753,7 @@ Type annotations for `boto3.client("globalaccelerator").tag_resource` method.
 Boto3 documentation:
 [GlobalAccelerator.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
@@ -767,7 +767,7 @@ Type annotations for `boto3.client("globalaccelerator").untag_resource` method.
 Boto3 documentation:
 [GlobalAccelerator.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -857,7 +857,7 @@ Type annotations for
 Boto3 documentation:
 [GlobalAccelerator.Client.update_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_listener)
 
-Arguments:
+Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
@@ -918,7 +918,7 @@ method.
 Boto3 documentation:
 [GlobalAccelerator.Client.withdraw_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.withdraw_byoip_cidr)
 
-Arguments:
+Keyword-only arguments:
 
 - `Cidr`: `str` *(required)*
 

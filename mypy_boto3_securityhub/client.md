@@ -115,7 +115,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.accept_administrator_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation)
 
-Arguments:
+Keyword-only arguments:
 
 - `AdministratorId`: `str` *(required)*
 - `InvitationId`: `str` *(required)*
@@ -129,7 +129,7 @@ Type annotations for `boto3.client("securityhub").accept_invitation` method.
 Boto3 documentation:
 [SecurityHub.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation)
 
-Arguments:
+Keyword-only arguments:
 
 - `MasterId`: `str` *(required)*
 - `InvitationId`: `str` *(required)*
@@ -144,7 +144,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.batch_disable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards)
 
-Arguments:
+Keyword-only arguments:
 
 - `StandardsSubscriptionArns`: `List`\[`str`\] *(required)*
 
@@ -159,7 +159,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.batch_enable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards)
 
-Arguments:
+Keyword-only arguments:
 
 - `StandardsSubscriptionRequests`:
   `List`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
@@ -176,7 +176,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.batch_import_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings)
 
-Arguments:
+Keyword-only arguments:
 
 - `Findings`:
   `List`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
@@ -267,7 +267,7 @@ Type annotations for `boto3.client("securityhub").create_members` method.
 Boto3 documentation:
 [SecurityHub.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountDetails`:
   `List`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
@@ -283,7 +283,7 @@ Type annotations for `boto3.client("securityhub").decline_invitations` method.
 Boto3 documentation:
 [SecurityHub.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
@@ -297,7 +297,7 @@ Type annotations for `boto3.client("securityhub").delete_action_target` method.
 Boto3 documentation:
 [SecurityHub.Client.delete_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target)
 
-Arguments:
+Keyword-only arguments:
 
 - `ActionTargetArn`: `str` *(required)*
 
@@ -311,7 +311,7 @@ Type annotations for `boto3.client("securityhub").delete_insight` method.
 Boto3 documentation:
 [SecurityHub.Client.delete_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightArn`: `str` *(required)*
 
@@ -325,7 +325,7 @@ Type annotations for `boto3.client("securityhub").delete_invitations` method.
 Boto3 documentation:
 [SecurityHub.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
@@ -339,7 +339,7 @@ Type annotations for `boto3.client("securityhub").delete_members` method.
 Boto3 documentation:
 [SecurityHub.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
@@ -370,7 +370,7 @@ Type annotations for `boto3.client("securityhub").describe_hub` method.
 Boto3 documentation:
 [SecurityHub.Client.describe_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub)
 
-Arguments:
+Keyword-only arguments:
 
 - `HubArn`: `str`
 
@@ -411,7 +411,7 @@ Type annotations for `boto3.client("securityhub").describe_standards` method.
 Boto3 documentation:
 [SecurityHub.Client.describe_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -444,7 +444,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.disable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductSubscriptionArn`: `str` *(required)*
 
@@ -458,7 +458,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `AdminAccountId`: `str` *(required)*
 
@@ -500,7 +500,7 @@ Type annotations for `boto3.client("securityhub").disassociate_members` method.
 Boto3 documentation:
 [SecurityHub.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
@@ -514,7 +514,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.enable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product)
 
-Arguments:
+Keyword-only arguments:
 
 - `ProductArn`: `str` *(required)*
 
@@ -529,7 +529,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account)
 
-Arguments:
+Keyword-only arguments:
 
 - `AdminAccountId`: `str` *(required)*
 
@@ -542,7 +542,7 @@ Type annotations for `boto3.client("securityhub").enable_security_hub` method.
 Boto3 documentation:
 [SecurityHub.Client.enable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub)
 
-Arguments:
+Keyword-only arguments:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 - `EnableDefaultStandards`: `bool`
@@ -620,7 +620,7 @@ Type annotations for `boto3.client("securityhub").get_insight_results` method.
 Boto3 documentation:
 [SecurityHub.Client.get_insight_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results)
 
-Arguments:
+Keyword-only arguments:
 
 - `InsightArn`: `str` *(required)*
 
@@ -671,7 +671,7 @@ Type annotations for `boto3.client("securityhub").get_members` method.
 Boto3 documentation:
 [SecurityHub.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
@@ -684,7 +684,7 @@ Type annotations for `boto3.client("securityhub").invite_members` method.
 Boto3 documentation:
 [SecurityHub.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members)
 
-Arguments:
+Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
@@ -699,7 +699,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.list_enabled_products_for_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -714,7 +714,7 @@ Type annotations for `boto3.client("securityhub").list_invitations` method.
 Boto3 documentation:
 [SecurityHub.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -746,7 +746,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -762,7 +762,7 @@ method.
 Boto3 documentation:
 [SecurityHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
@@ -776,7 +776,7 @@ Type annotations for `boto3.client("securityhub").tag_resource` method.
 Boto3 documentation:
 [SecurityHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -790,7 +790,7 @@ Type annotations for `boto3.client("securityhub").untag_resource` method.
 Boto3 documentation:
 [SecurityHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
@@ -854,7 +854,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoEnable`: `bool` *(required)*
 
@@ -868,7 +868,7 @@ Type annotations for
 Boto3 documentation:
 [SecurityHub.Client.update_security_hub_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration)
 
-Arguments:
+Keyword-only arguments:
 
 - `AutoEnableControls`: `bool`
 

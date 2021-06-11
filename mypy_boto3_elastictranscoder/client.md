@@ -94,7 +94,7 @@ Type annotations for `boto3.client("elastictranscoder").cancel_job` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -173,7 +173,7 @@ method.
 Boto3 documentation:
 [ElasticTranscoder.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -186,7 +186,7 @@ Type annotations for `boto3.client("elastictranscoder").delete_preset` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("elastictranscoder").list_pipelines` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines)
 
-Arguments:
+Keyword-only arguments:
 
 - `Ascending`: `str`
 - `PageToken`: `str`
@@ -265,7 +265,7 @@ Type annotations for `boto3.client("elastictranscoder").list_presets` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets)
 
-Arguments:
+Keyword-only arguments:
 
 - `Ascending`: `str`
 - `PageToken`: `str`
@@ -280,7 +280,7 @@ Type annotations for `boto3.client("elastictranscoder").read_job` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.read_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -293,7 +293,7 @@ Type annotations for `boto3.client("elastictranscoder").read_pipeline` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.read_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -307,7 +307,7 @@ Type annotations for `boto3.client("elastictranscoder").read_preset` method.
 Boto3 documentation:
 [ElasticTranscoder.Client.read_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
@@ -361,7 +361,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticTranscoder.Client.update_pipeline_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
@@ -378,7 +378,7 @@ method.
 Boto3 documentation:
 [ElasticTranscoder.Client.update_pipeline_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status)
 
-Arguments:
+Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Status`: `str` *(required)*

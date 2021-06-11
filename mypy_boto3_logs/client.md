@@ -109,7 +109,7 @@ Type annotations for `boto3.client("logs").associate_kms_key` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.associate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `kmsKeyId`: `str` *(required)*
@@ -134,7 +134,7 @@ Type annotations for `boto3.client("logs").cancel_export_task` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task)
 
-Arguments:
+Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
 
@@ -178,7 +178,7 @@ Type annotations for `boto3.client("logs").create_log_stream` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.create_log_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
@@ -190,7 +190,7 @@ Type annotations for `boto3.client("logs").delete_destination` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.delete_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_destination)
 
-Arguments:
+Keyword-only arguments:
 
 - `destinationName`: `str` *(required)*
 
@@ -201,7 +201,7 @@ Type annotations for `boto3.client("logs").delete_log_group` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.delete_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
@@ -212,7 +212,7 @@ Type annotations for `boto3.client("logs").delete_log_stream` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.delete_log_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
@@ -224,7 +224,7 @@ Type annotations for `boto3.client("logs").delete_metric_filter` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.delete_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `filterName`: `str` *(required)*
@@ -236,7 +236,7 @@ Type annotations for `boto3.client("logs").delete_query_definition` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.delete_query_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition)
 
-Arguments:
+Keyword-only arguments:
 
 - `queryDefinitionId`: `str` *(required)*
 
@@ -250,7 +250,7 @@ Type annotations for `boto3.client("logs").delete_resource_policy` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `policyName`: `str`
 
@@ -261,7 +261,7 @@ Type annotations for `boto3.client("logs").delete_retention_policy` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
@@ -272,7 +272,7 @@ Type annotations for `boto3.client("logs").delete_subscription_filter` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.delete_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `filterName`: `str` *(required)*
@@ -405,7 +405,7 @@ Type annotations for `boto3.client("logs").describe_resource_policies` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.describe_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `limit`: `int`
@@ -438,7 +438,7 @@ Type annotations for `boto3.client("logs").disassociate_kms_key` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.disassociate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
@@ -507,7 +507,7 @@ Type annotations for `boto3.client("logs").get_log_group_fields` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.get_log_group_fields](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `time`: `int`
@@ -522,7 +522,7 @@ Type annotations for `boto3.client("logs").get_log_record` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.get_log_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_record)
 
-Arguments:
+Keyword-only arguments:
 
 - `logRecordPointer`: `str` *(required)*
 
@@ -536,7 +536,7 @@ Type annotations for `boto3.client("logs").get_query_results` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_query_results)
 
-Arguments:
+Keyword-only arguments:
 
 - `queryId`: `str` *(required)*
 
@@ -550,7 +550,7 @@ Type annotations for `boto3.client("logs").list_tags_log_group` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.list_tags_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
@@ -580,7 +580,7 @@ Type annotations for `boto3.client("logs").put_destination_policy` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.put_destination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `destinationName`: `str` *(required)*
 - `accessPolicy`: `str` *(required)*
@@ -644,7 +644,7 @@ Type annotations for `boto3.client("logs").put_resource_policy` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `policyName`: `str`
 - `policyDocument`: `str`
@@ -659,7 +659,7 @@ Type annotations for `boto3.client("logs").put_retention_policy` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `retentionInDays`: `int` *(required)*
@@ -705,7 +705,7 @@ Type annotations for `boto3.client("logs").stop_query` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.stop_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.stop_query)
 
-Arguments:
+Keyword-only arguments:
 
 - `queryId`: `str` *(required)*
 
@@ -718,7 +718,7 @@ Type annotations for `boto3.client("logs").tag_log_group` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.tag_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -730,7 +730,7 @@ Type annotations for `boto3.client("logs").test_metric_filter` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.test_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `filterPattern`: `str` *(required)*
 - `logEventMessages`: `List`\[`str`\] *(required)*
@@ -745,7 +745,7 @@ Type annotations for `boto3.client("logs").untag_log_group` method.
 Boto3 documentation:
 [CloudWatchLogs.Client.untag_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `tags`: `List`\[`str`\] *(required)*

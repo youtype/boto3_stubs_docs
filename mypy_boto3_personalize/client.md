@@ -240,7 +240,7 @@ Type annotations for `boto3.client("personalize").create_event_tracker` method.
 Boto3 documentation:
 [Personalize.Client.create_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `datasetGroupArn`: `str` *(required)*
@@ -271,7 +271,7 @@ Type annotations for `boto3.client("personalize").create_schema` method.
 Boto3 documentation:
 [Personalize.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `schema`: `str` *(required)*
@@ -308,7 +308,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.create_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionArn`: `str` *(required)*
 - `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
@@ -323,7 +323,7 @@ Type annotations for `boto3.client("personalize").delete_campaign` method.
 Boto3 documentation:
 [Personalize.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
 
@@ -334,7 +334,7 @@ Type annotations for `boto3.client("personalize").delete_dataset` method.
 Boto3 documentation:
 [Personalize.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
 
@@ -345,7 +345,7 @@ Type annotations for `boto3.client("personalize").delete_dataset_group` method.
 Boto3 documentation:
 [Personalize.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetGroupArn`: `str` *(required)*
 
@@ -356,7 +356,7 @@ Type annotations for `boto3.client("personalize").delete_event_tracker` method.
 Boto3 documentation:
 [Personalize.Client.delete_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
 
-Arguments:
+Keyword-only arguments:
 
 - `eventTrackerArn`: `str` *(required)*
 
@@ -367,7 +367,7 @@ Type annotations for `boto3.client("personalize").delete_filter` method.
 Boto3 documentation:
 [Personalize.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `filterArn`: `str` *(required)*
 
@@ -378,7 +378,7 @@ Type annotations for `boto3.client("personalize").delete_schema` method.
 Boto3 documentation:
 [Personalize.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `schemaArn`: `str` *(required)*
 
@@ -389,7 +389,7 @@ Type annotations for `boto3.client("personalize").delete_solution` method.
 Boto3 documentation:
 [Personalize.Client.delete_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionArn`: `str` *(required)*
 
@@ -400,7 +400,7 @@ Type annotations for `boto3.client("personalize").describe_algorithm` method.
 Boto3 documentation:
 [Personalize.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm)
 
-Arguments:
+Keyword-only arguments:
 
 - `algorithmArn`: `str` *(required)*
 
@@ -415,7 +415,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `batchInferenceJobArn`: `str` *(required)*
 
@@ -429,7 +429,7 @@ Type annotations for `boto3.client("personalize").describe_campaign` method.
 Boto3 documentation:
 [Personalize.Client.describe_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign)
 
-Arguments:
+Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
 
@@ -443,7 +443,7 @@ Type annotations for `boto3.client("personalize").describe_dataset` method.
 Boto3 documentation:
 [Personalize.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
 
@@ -458,7 +458,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetExportJobArn`: `str` *(required)*
 
@@ -473,7 +473,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetGroupArn`: `str` *(required)*
 
@@ -488,7 +488,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `datasetImportJobArn`: `str` *(required)*
 
@@ -503,7 +503,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
 
-Arguments:
+Keyword-only arguments:
 
 - `eventTrackerArn`: `str` *(required)*
 
@@ -518,7 +518,7 @@ Type annotations for
 Boto3 documentation:
 [Personalize.Client.describe_feature_transformation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
 
-Arguments:
+Keyword-only arguments:
 
 - `featureTransformationArn`: `str` *(required)*
 
@@ -532,7 +532,7 @@ Type annotations for `boto3.client("personalize").describe_filter` method.
 Boto3 documentation:
 [Personalize.Client.describe_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter)
 
-Arguments:
+Keyword-only arguments:
 
 - `filterArn`: `str` *(required)*
 
@@ -546,7 +546,7 @@ Type annotations for `boto3.client("personalize").describe_recipe` method.
 Boto3 documentation:
 [Personalize.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe)
 
-Arguments:
+Keyword-only arguments:
 
 - `recipeArn`: `str` *(required)*
 
@@ -560,7 +560,7 @@ Type annotations for `boto3.client("personalize").describe_schema` method.
 Boto3 documentation:
 [Personalize.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema)
 
-Arguments:
+Keyword-only arguments:
 
 - `schemaArn`: `str` *(required)*
 
@@ -574,7 +574,7 @@ Type annotations for `boto3.client("personalize").describe_solution` method.
 Boto3 documentation:
 [Personalize.Client.describe_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionArn`: `str` *(required)*
 
@@ -589,7 +589,7 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
 
@@ -620,7 +620,7 @@ Type annotations for `boto3.client("personalize").get_solution_metrics` method.
 Boto3 documentation:
 [Personalize.Client.get_solution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
 
@@ -684,7 +684,7 @@ Type annotations for `boto3.client("personalize").list_dataset_groups` method.
 Boto3 documentation:
 [Personalize.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -781,7 +781,7 @@ Type annotations for `boto3.client("personalize").list_schemas` method.
 Boto3 documentation:
 [Personalize.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas)
 
-Arguments:
+Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -830,7 +830,7 @@ Type annotations for
 Boto3 documentation:
 [Personalize.Client.stop_solution_version_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.stop_solution_version_creation)
 
-Arguments:
+Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
 

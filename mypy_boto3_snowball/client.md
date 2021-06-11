@@ -105,7 +105,7 @@ Type annotations for `boto3.client("snowball").cancel_cluster` method.
 Boto3 documentation:
 [Snowball.Client.cancel_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
@@ -118,7 +118,7 @@ Type annotations for `boto3.client("snowball").cancel_job` method.
 Boto3 documentation:
 [Snowball.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -131,7 +131,7 @@ Type annotations for `boto3.client("snowball").create_address` method.
 Boto3 documentation:
 [Snowball.Client.create_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address)
 
-Arguments:
+Keyword-only arguments:
 
 - `Address`: [AddressTypeDef](./type_defs.md#addresstypedef) *(required)*
 
@@ -220,7 +220,7 @@ method.
 Boto3 documentation:
 [Snowball.Client.create_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
@@ -235,7 +235,7 @@ Type annotations for `boto3.client("snowball").describe_address` method.
 Boto3 documentation:
 [Snowball.Client.describe_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address)
 
-Arguments:
+Keyword-only arguments:
 
 - `AddressId`: `str` *(required)*
 
@@ -249,7 +249,7 @@ Type annotations for `boto3.client("snowball").describe_addresses` method.
 Boto3 documentation:
 [Snowball.Client.describe_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -264,7 +264,7 @@ Type annotations for `boto3.client("snowball").describe_cluster` method.
 Boto3 documentation:
 [Snowball.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster)
 
-Arguments:
+Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
@@ -278,7 +278,7 @@ Type annotations for `boto3.client("snowball").describe_job` method.
 Boto3 documentation:
 [Snowball.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -292,7 +292,7 @@ method.
 Boto3 documentation:
 [Snowball.Client.describe_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -322,7 +322,7 @@ Type annotations for `boto3.client("snowball").get_job_manifest` method.
 Boto3 documentation:
 [Snowball.Client.get_job_manifest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -336,7 +336,7 @@ Type annotations for `boto3.client("snowball").get_job_unlock_code` method.
 Boto3 documentation:
 [Snowball.Client.get_job_unlock_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -360,7 +360,7 @@ Type annotations for `boto3.client("snowball").get_software_updates` method.
 Boto3 documentation:
 [Snowball.Client.get_software_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
@@ -390,7 +390,7 @@ Type annotations for `boto3.client("snowball").list_clusters` method.
 Boto3 documentation:
 [Snowball.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -404,7 +404,7 @@ Type annotations for `boto3.client("snowball").list_compatible_images` method.
 Boto3 documentation:
 [Snowball.Client.list_compatible_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -419,7 +419,7 @@ Type annotations for `boto3.client("snowball").list_jobs` method.
 Boto3 documentation:
 [Snowball.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -433,7 +433,7 @@ Type annotations for `boto3.client("snowball").list_long_term_pricing` method.
 Boto3 documentation:
 [Snowball.Client.list_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_long_term_pricing)
 
-Arguments:
+Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -491,7 +491,7 @@ method.
 Boto3 documentation:
 [Snowball.Client.update_job_shipment_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state)
 
-Arguments:
+Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `ShipmentState`: [ShipmentStateType](./literals.md#shipmentstatetype)

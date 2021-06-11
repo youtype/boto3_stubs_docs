@@ -79,7 +79,7 @@ Type annotations for
 Boto3 documentation:
 [ElasticInference.Client.describe_accelerator_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings)
 
-Arguments:
+Keyword-only arguments:
 
 - `locationType`: [LocationTypeType](./literals.md#locationtypetype)
   *(required)*
@@ -142,7 +142,7 @@ method.
 Boto3 documentation:
 [ElasticInference.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
@@ -156,7 +156,7 @@ Type annotations for `boto3.client("elastic-inference").tag_resource` method.
 Boto3 documentation:
 [ElasticInference.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
@@ -170,7 +170,7 @@ Type annotations for `boto3.client("elastic-inference").untag_resource` method.
 Boto3 documentation:
 [ElasticInference.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource)
 
-Arguments:
+Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*

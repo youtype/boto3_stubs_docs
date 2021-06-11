@@ -93,7 +93,7 @@ Type annotations for `boto3.client("s3outposts").delete_endpoint` method.
 Boto3 documentation:
 [S3Outposts.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint)
 
-Arguments:
+Keyword-only arguments:
 
 - `EndpointId`: `str` *(required)*
 - `OutpostId`: `str` *(required)*
@@ -122,7 +122,7 @@ Type annotations for `boto3.client("s3outposts").list_endpoints` method.
 Boto3 documentation:
 [S3Outposts.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints)
 
-Arguments:
+Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
