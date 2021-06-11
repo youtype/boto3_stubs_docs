@@ -14,6 +14,7 @@ type annotations stubs module
   - [EncoderProfileType](#encoderprofiletype)
   - [EncodingNameType](#encodingnametype)
   - [EntitlementStatusType](#entitlementstatustype)
+  - [FailoverModeType](#failovermodetype)
   - [FlowActiveWaiterName](#flowactivewaitername)
   - [FlowDeletedWaiterName](#flowdeletedwaitername)
   - [FlowStandbyWaiterName](#flowstandbywaitername)
@@ -107,6 +108,17 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+## FailoverModeType
+
+```python
+from mypy_boto3_mediaconnect.literals import FailoverModeType
+```
+
+Values:
+
+- `FAILOVER`
+- `MERGE`
 
 ## FlowActiveWaiterName
 

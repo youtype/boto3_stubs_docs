@@ -63,6 +63,7 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RevokeFlowEntitlementResponseTypeDef](#revokeflowentitlementresponsetypedef)
   - [SetSourceRequestTypeDef](#setsourcerequesttypedef)
+  - [SourcePriorityTypeDef](#sourceprioritytypedef)
   - [SourceTypeDef](#sourcetypedef)
   - [StartFlowResponseTypeDef](#startflowresponsetypedef)
   - [StopFlowResponseTypeDef](#stopflowresponsetypedef)
@@ -322,7 +323,10 @@ from mypy_boto3_mediaconnect.type_defs import FailoverConfigTypeDef
 
 Optional fields:
 
+- `FailoverMode`: [FailoverModeType](./literals.md#failovermodetype)
 - `RecoveryWindow`: `int`
+- `SourcePriority`:
+  [SourcePriorityTypeDef](./type_defs.md#sourceprioritytypedef)
 - `State`: [StateType](./literals.md#statetype)
 
 ## FlowTypeDef
@@ -874,6 +878,16 @@ Optional fields:
 - `VpcInterfaceName`: `str`
 - `WhitelistCidr`: `str`
 
+## SourcePriorityTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import SourcePriorityTypeDef
+```
+
+Optional fields:
+
+- `PrimarySource`: `str`
+
 ## SourceTypeDef
 
 ```python
@@ -968,7 +982,10 @@ from mypy_boto3_mediaconnect.type_defs import UpdateFailoverConfigTypeDef
 
 Optional fields:
 
+- `FailoverMode`: [FailoverModeType](./literals.md#failovermodetype)
 - `RecoveryWindow`: `int`
+- `SourcePriority`:
+  [SourcePriorityTypeDef](./type_defs.md#sourceprioritytypedef)
 - `State`: [StateType](./literals.md#statetype)
 
 ## UpdateFlowEntitlementResponseTypeDef

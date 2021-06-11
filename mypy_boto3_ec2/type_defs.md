@@ -363,6 +363,7 @@ type annotations stubs module
   - [DisableFastSnapshotRestoreStateErrorTypeDef](#disablefastsnapshotrestorestateerrortypedef)
   - [DisableFastSnapshotRestoreSuccessItemTypeDef](#disablefastsnapshotrestoresuccessitemtypedef)
   - [DisableFastSnapshotRestoresResultTypeDef](#disablefastsnapshotrestoresresulttypedef)
+  - [DisableImageDeprecationResultTypeDef](#disableimagedeprecationresulttypedef)
   - [DisableSerialConsoleAccessResultTypeDef](#disableserialconsoleaccessresulttypedef)
   - [DisableTransitGatewayRouteTablePropagationResultTypeDef](#disabletransitgatewayroutetablepropagationresulttypedef)
   - [DisableVpcClassicLinkDnsSupportResultTypeDef](#disablevpcclassiclinkdnssupportresulttypedef)
@@ -401,6 +402,7 @@ type annotations stubs module
   - [EnableFastSnapshotRestoreStateErrorTypeDef](#enablefastsnapshotrestorestateerrortypedef)
   - [EnableFastSnapshotRestoreSuccessItemTypeDef](#enablefastsnapshotrestoresuccessitemtypedef)
   - [EnableFastSnapshotRestoresResultTypeDef](#enablefastsnapshotrestoresresulttypedef)
+  - [EnableImageDeprecationResultTypeDef](#enableimagedeprecationresulttypedef)
   - [EnableSerialConsoleAccessResultTypeDef](#enableserialconsoleaccessresulttypedef)
   - [EnableTransitGatewayRouteTablePropagationResultTypeDef](#enabletransitgatewayroutetablepropagationresulttypedef)
   - [EnableVpcClassicLinkDnsSupportResultTypeDef](#enablevpcclassiclinkdnssupportresulttypedef)
@@ -5192,6 +5194,16 @@ Optional fields:
 - `Unsuccessful`:
   `List`\[[DisableFastSnapshotRestoreErrorItemTypeDef](./type_defs.md#disablefastsnapshotrestoreerroritemtypedef)\]
 
+## DisableImageDeprecationResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableImageDeprecationResultTypeDef
+```
+
+Optional fields:
+
+- `Return`: `bool`
+
 ## DisableSerialConsoleAccessResultTypeDef
 
 ```python
@@ -5657,6 +5669,16 @@ Optional fields:
   `List`\[[EnableFastSnapshotRestoreSuccessItemTypeDef](./type_defs.md#enablefastsnapshotrestoresuccessitemtypedef)\]
 - `Unsuccessful`:
   `List`\[[EnableFastSnapshotRestoreErrorItemTypeDef](./type_defs.md#enablefastsnapshotrestoreerroritemtypedef)\]
+
+## EnableImageDeprecationResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableImageDeprecationResultTypeDef
+```
+
+Optional fields:
+
+- `Return`: `bool`
 
 ## EnableSerialConsoleAccessResultTypeDef
 
@@ -6902,6 +6924,7 @@ Optional fields:
 - `VirtualizationType`:
   [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 - `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
+- `DeprecationTime`: `str`
 
 ## ImportClientVpnClientCertificateRevocationListResultTypeDef
 

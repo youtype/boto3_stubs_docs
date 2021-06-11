@@ -223,6 +223,7 @@ Arguments for `ImageAvailableWaiter.wait` method:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ImageIds`: `List`\[`str`\]
 - `Owners`: `List`\[`str`\]
+- `IncludeDeprecated`: `bool`
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -248,6 +249,7 @@ Arguments for `ImageExistsWaiter.wait` method:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ImageIds`: `List`\[`str`\]
 - `Owners`: `List`\[`str`\]
+- `IncludeDeprecated`: `bool`
 - `DryRun`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 

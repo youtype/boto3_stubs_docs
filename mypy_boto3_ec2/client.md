@@ -305,6 +305,7 @@ type annotations stubs module
     - [detach_vpn_gateway](#detach_vpn_gateway)
     - [disable_ebs_encryption_by_default](#disable_ebs_encryption_by_default)
     - [disable_fast_snapshot_restores](#disable_fast_snapshot_restores)
+    - [disable_image_deprecation](#disable_image_deprecation)
     - [disable_serial_console_access](#disable_serial_console_access)
     - [disable_transit_gateway_route_table_propagation](#disable_transit_gateway_route_table_propagation)
     - [disable_vgw_route_propagation](#disable_vgw_route_propagation)
@@ -321,6 +322,7 @@ type annotations stubs module
     - [disassociate_vpc_cidr_block](#disassociate_vpc_cidr_block)
     - [enable_ebs_encryption_by_default](#enable_ebs_encryption_by_default)
     - [enable_fast_snapshot_restores](#enable_fast_snapshot_restores)
+    - [enable_image_deprecation](#enable_image_deprecation)
     - [enable_serial_console_access](#enable_serial_console_access)
     - [enable_transit_gateway_route_table_propagation](#enable_transit_gateway_route_table_propagation)
     - [enable_vgw_route_propagation](#enable_vgw_route_propagation)
@@ -4086,6 +4088,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ImageIds`: `List`\[`str`\]
 - `Owners`: `List`\[`str`\]
+- `IncludeDeprecated`: `bool`
 - `DryRun`: `bool`
 
 Returns
@@ -5752,6 +5755,21 @@ Keyword-only arguments:
 Returns
 [DisableFastSnapshotRestoresResultTypeDef](./type_defs.md#disablefastsnapshotrestoresresulttypedef).
 
+### disable_image_deprecation
+
+Type annotations for `boto3.client("ec2").disable_image_deprecation` method.
+
+Boto3 documentation:
+[EC2.Client.disable_image_deprecation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_image_deprecation)
+
+Keyword-only arguments:
+
+- `ImageId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DisableImageDeprecationResultTypeDef](./type_defs.md#disableimagedeprecationresulttypedef).
+
 ### disable_serial_console_access
 
 Type annotations for `boto3.client("ec2").disable_serial_console_access`
@@ -5997,6 +6015,22 @@ Keyword-only arguments:
 
 Returns
 [EnableFastSnapshotRestoresResultTypeDef](./type_defs.md#enablefastsnapshotrestoresresulttypedef).
+
+### enable_image_deprecation
+
+Type annotations for `boto3.client("ec2").enable_image_deprecation` method.
+
+Boto3 documentation:
+[EC2.Client.enable_image_deprecation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_image_deprecation)
+
+Keyword-only arguments:
+
+- `ImageId`: `str` *(required)*
+- `DeprecateAt`: `datetime` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[EnableImageDeprecationResultTypeDef](./type_defs.md#enableimagedeprecationresulttypedef).
 
 ### enable_serial_console_access
 

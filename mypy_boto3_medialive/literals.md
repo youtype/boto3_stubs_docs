@@ -58,6 +58,7 @@ type annotations stubs module
   - [DvbSubDestinationOutlineColorType](#dvbsubdestinationoutlinecolortype)
   - [DvbSubDestinationShadowColorType](#dvbsubdestinationshadowcolortype)
   - [DvbSubDestinationTeletextGridControlType](#dvbsubdestinationteletextgridcontroltype)
+  - [DvbSubOcrLanguageType](#dvbsubocrlanguagetype)
   - [Eac3AttenuationControlType](#eac3attenuationcontroltype)
   - [Eac3BitstreamModeType](#eac3bitstreammodetype)
   - [Eac3CodingModeType](#eac3codingmodetype)
@@ -141,6 +142,7 @@ type annotations stubs module
   - [HlsOutputSelectionType](#hlsoutputselectiontype)
   - [HlsProgramDateTimeType](#hlsprogramdatetimetype)
   - [HlsRedundantManifestType](#hlsredundantmanifesttype)
+  - [HlsScte35SourceTypeType](#hlsscte35sourcetypetype)
   - [HlsSegmentationModeType](#hlssegmentationmodetype)
   - [HlsStreamInfResolutionType](#hlsstreaminfresolutiontype)
   - [HlsTimedMetadataId3FrameType](#hlstimedmetadataid3frametype)
@@ -247,6 +249,7 @@ type annotations stubs module
   - [RtmpOutputCertificateModeType](#rtmpoutputcertificatemodetype)
   - [S3CannedAclType](#s3cannedacltype)
   - [Scte20Convert608To708Type](#scte20convert608to708type)
+  - [Scte27OcrLanguageType](#scte27ocrlanguagetype)
   - [Scte35AposNoRegionalBlackoutBehaviorType](#scte35aposnoregionalblackoutbehaviortype)
   - [Scte35AposWebDeliveryAllowedBehaviorType](#scte35aposwebdeliveryallowedbehaviortype)
   - [Scte35ArchiveAllowedFlagType](#scte35archiveallowedflagtype)
@@ -871,6 +874,21 @@ Values:
 
 - `FIXED`
 - `SCALED`
+
+## DvbSubOcrLanguageType
+
+```python
+from mypy_boto3_medialive.literals import DvbSubOcrLanguageType
+```
+
+Values:
+
+- `DEU`
+- `ENG`
+- `FRA`
+- `NLD`
+- `POR`
+- `SPA`
 
 ## Eac3AttenuationControlType
 
@@ -1857,6 +1875,17 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+## HlsScte35SourceTypeType
+
+```python
+from mypy_boto3_medialive.literals import HlsScte35SourceTypeType
+```
+
+Values:
+
+- `MANIFEST`
+- `SEGMENTS`
 
 ## HlsSegmentationModeType
 
@@ -2961,6 +2990,8 @@ Values:
 
 - `ADVANCED_AUDIO`
 - `AUDIO_NORMALIZATION`
+- `MGHD`
+- `MGUHD`
 
 ## ReservationStateType
 
@@ -3054,6 +3085,21 @@ Values:
 
 - `DISABLED`
 - `UPCONVERT`
+
+## Scte27OcrLanguageType
+
+```python
+from mypy_boto3_medialive.literals import Scte27OcrLanguageType
+```
+
+Values:
+
+- `DEU`
+- `ENG`
+- `FRA`
+- `NLD`
+- `POR`
+- `SPA`
 
 ## Scte35AposNoRegionalBlackoutBehaviorType
 

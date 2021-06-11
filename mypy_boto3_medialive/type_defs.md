@@ -1405,6 +1405,7 @@ from mypy_boto3_medialive.type_defs import DvbSubSourceSettingsTypeDef
 
 Optional fields:
 
+- `OcrLanguage`: [DvbSubOcrLanguageType](./literals.md#dvbsubocrlanguagetype)
 - `Pid`: `int`
 
 ## DvbTdtSettingsTypeDef
@@ -1990,6 +1991,8 @@ Optional fields:
 - `BufferSegments`: `int`
 - `Retries`: `int`
 - `RetryInterval`: `int`
+- `Scte35Source`:
+  [HlsScte35SourceTypeType](./literals.md#hlsscte35sourcetypetype)
 
 ## HlsMediaStoreSettingsTypeDef
 
@@ -3537,6 +3540,7 @@ from mypy_boto3_medialive.type_defs import Scte27SourceSettingsTypeDef
 
 Optional fields:
 
+- `OcrLanguage`: [Scte27OcrLanguageType](./literals.md#scte27ocrlanguagetype)
 - `Pid`: `int`
 
 ## Scte35DeliveryRestrictionsTypeDef

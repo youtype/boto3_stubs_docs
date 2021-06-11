@@ -1429,6 +1429,7 @@ Boto3 documentation:
 - `tags`: `List`\[`Any`\]
 - `virtualization_type`: `str`
 - `boot_mode`: `str`
+- `deprecation_time`: `str`
 - `id`: `str`
 
 ### Image methods
