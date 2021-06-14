@@ -8,6 +8,11 @@ type annotations stubs module
 [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 - [Typed dictionaries for boto3 GreengrassV2 module](#typed-dictionaries-for-boto3-greengrassv2-module)
+  - [AssociateClientDeviceWithCoreDeviceEntryTypeDef](#associateclientdevicewithcoredeviceentrytypedef)
+  - [AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](#associateclientdevicewithcoredeviceerrorentrytypedef)
+  - [AssociatedClientDeviceTypeDef](#associatedclientdevicetypedef)
+  - [BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](#batchassociateclientdevicewithcoredeviceresponsetypedef)
+  - [BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](#batchdisassociateclientdevicefromcoredeviceresponsetypedef)
   - [CancelDeploymentResponseTypeDef](#canceldeploymentresponsetypedef)
   - [CloudComponentStatusTypeDef](#cloudcomponentstatustypedef)
   - [ComponentCandidateTypeDef](#componentcandidatetypedef)
@@ -28,6 +33,8 @@ type annotations stubs module
   - [DeploymentPoliciesTypeDef](#deploymentpoliciestypedef)
   - [DeploymentTypeDef](#deploymenttypedef)
   - [DescribeComponentResponseTypeDef](#describecomponentresponsetypedef)
+  - [DisassociateClientDeviceFromCoreDeviceEntryTypeDef](#disassociateclientdevicefromcoredeviceentrytypedef)
+  - [DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](#disassociateclientdevicefromcoredeviceerrorentrytypedef)
   - [EffectiveDeploymentTypeDef](#effectivedeploymenttypedef)
   - [GetComponentResponseTypeDef](#getcomponentresponsetypedef)
   - [GetComponentVersionArtifactResponseTypeDef](#getcomponentversionartifactresponsetypedef)
@@ -47,6 +54,7 @@ type annotations stubs module
   - [LambdaFunctionRecipeSourceTypeDef](#lambdafunctionrecipesourcetypedef)
   - [LambdaLinuxProcessParamsTypeDef](#lambdalinuxprocessparamstypedef)
   - [LambdaVolumeMountTypeDef](#lambdavolumemounttypedef)
+  - [ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](#listclientdevicesassociatedwithcoredeviceresponsetypedef)
   - [ListComponentVersionsResponseTypeDef](#listcomponentversionsresponsetypedef)
   - [ListComponentsResponseTypeDef](#listcomponentsresponsetypedef)
   - [ListCoreDevicesResponseTypeDef](#listcoredevicesresponsetypedef)
@@ -57,6 +65,61 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResolveComponentCandidatesResponseTypeDef](#resolvecomponentcandidatesresponsetypedef)
   - [ResolvedComponentVersionTypeDef](#resolvedcomponentversiontypedef)
+
+## AssociateClientDeviceWithCoreDeviceEntryTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDeviceEntryTypeDef
+```
+
+Required fields:
+
+- `thingName`: `str`
+
+## AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef
+```
+
+Optional fields:
+
+- `thingName`: `str`
+- `code`: `str`
+- `message`: `str`
+
+## AssociatedClientDeviceTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import AssociatedClientDeviceTypeDef
+```
+
+Optional fields:
+
+- `thingName`: `str`
+- `associationTimestamp`: `datetime`
+
+## BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef
+```
+
+Optional fields:
+
+- `errorEntries`:
+  `List`\[[AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceerrorentrytypedef)\]
+
+## BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef
+```
+
+Optional fields:
+
+- `errorEntries`:
+  `List`\[[DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceerrorentrytypedef)\]
 
 ## CancelDeploymentResponseTypeDef
 
@@ -321,6 +384,28 @@ Optional fields:
 - `platforms`:
   `List`\[[ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
+
+## DisassociateClientDeviceFromCoreDeviceEntryTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import DisassociateClientDeviceFromCoreDeviceEntryTypeDef
+```
+
+Required fields:
+
+- `thingName`: `str`
+
+## DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef
+```
+
+Optional fields:
+
+- `thingName`: `str`
+- `code`: `str`
+- `message`: `str`
 
 ## EffectiveDeploymentTypeDef
 
@@ -615,6 +700,18 @@ Optional fields:
 - `permission`:
   [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
 - `addGroupOwner`: `bool`
+
+## ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
+```
+
+Optional fields:
+
+- `associatedClientDevices`:
+  `List`\[[AssociatedClientDeviceTypeDef](./type_defs.md#associatedclientdevicetypedef)\]
+- `nextToken`: `str`
 
 ## ListComponentVersionsResponseTypeDef
 

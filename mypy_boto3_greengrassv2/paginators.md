@@ -8,12 +8,40 @@ type annotations stubs module
 [mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 - [Paginators for boto3 GreengrassV2 module](#paginators-for-boto3-greengrassv2-module)
+  - [ListClientDevicesAssociatedWithCoreDevicePaginator](#listclientdevicesassociatedwithcoredevicepaginator)
   - [ListComponentVersionsPaginator](#listcomponentversionspaginator)
   - [ListComponentsPaginator](#listcomponentspaginator)
   - [ListCoreDevicesPaginator](#listcoredevicespaginator)
   - [ListDeploymentsPaginator](#listdeploymentspaginator)
   - [ListEffectiveDeploymentsPaginator](#listeffectivedeploymentspaginator)
   - [ListInstalledComponentsPaginator](#listinstalledcomponentspaginator)
+
+## ListClientDevicesAssociatedWithCoreDevicePaginator
+
+Type annotations for
+`boto3.client("greengrassv2").get_paginator("list_client_devices_associated_with_core_device")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCoreDevicePaginator
+
+def get_list_client_devices_associated_with_core_device_paginator() -> ListClientDevicesAssociatedWithCoreDevicePaginator:
+    return boto3.client("greengrassv2").get_paginator("list_client_devices_associated_with_core_device")
+```
+
+Boto3 documentation:
+[GreengrassV2.Paginator.ListClientDevicesAssociatedWithCoreDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Paginator.ListClientDevicesAssociatedWithCoreDevice)
+
+Arguments for `ListClientDevicesAssociatedWithCoreDevicePaginator.paginate`
+method:
+
+- `coreDeviceThingName`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListClientDevicesAssociatedWithCoreDevicePaginator.paginate` returns
+`Iterator`\[[ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef)\].
 
 ## ListComponentVersionsPaginator
 

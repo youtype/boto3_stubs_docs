@@ -80,6 +80,7 @@ Values:
 - `DELETING`
 - `FAILED`
 - `INACTIVE`
+- `LEARNING`
 
 ## CSVFileCompressionType
 

@@ -32,6 +32,8 @@ from mypy_boto3_greengrassv2.client import GreengrassV2Client
 
 ### Methods
 
+- [batch_associate_client_device_with_core_device](./client.md#batch_associate_client_device_with_core_device)
+- [batch_disassociate_client_device_from_core_device](./client.md#batch_disassociate_client_device_from_core_device)
 - [can_paginate](./client.md#can_paginate)
 - [cancel_deployment](./client.md#cancel_deployment)
 - [create_component_version](./client.md#create_component_version)
@@ -45,6 +47,7 @@ from mypy_boto3_greengrassv2.client import GreengrassV2Client
 - [get_core_device](./client.md#get_core_device)
 - [get_deployment](./client.md#get_deployment)
 - [get_paginator](./client.md#get_paginator)
+- [list_client_devices_associated_with_core_device](./client.md#list_client_devices_associated_with_core_device)
 - [list_component_versions](./client.md#list_component_versions)
 - [list_components](./client.md#list_components)
 - [list_core_devices](./client.md#list_core_devices)
@@ -77,9 +80,10 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_greengrassv2.paginators import ListComponentVersionsPaginator, ...
+from mypy_boto3_greengrassv2.paginators import ListClientDevicesAssociatedWithCoreDevicePaginator, ...
 ```
 
+- [ListClientDevicesAssociatedWithCoreDevicePaginator](./paginators.md#listclientdevicesassociatedwithcoredevicepaginator)
 - [ListComponentVersionsPaginator](./paginators.md#listcomponentversionspaginator)
 - [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - [ListCoreDevicesPaginator](./paginators.md#listcoredevicespaginator)
@@ -113,6 +117,7 @@ from mypy_boto3_greengrassv2.literals import CloudComponentStateType, ...
 - [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
 - [LambdaInputPayloadEncodingTypeType](./literals.md#lambdainputpayloadencodingtypetype)
 - [LambdaIsolationModeType](./literals.md#lambdaisolationmodetype)
+- [ListClientDevicesAssociatedWithCoreDevicePaginatorName](./literals.md#listclientdevicesassociatedwithcoredevicepaginatorname)
 - [ListComponentVersionsPaginatorName](./literals.md#listcomponentversionspaginatorname)
 - [ListComponentsPaginatorName](./literals.md#listcomponentspaginatorname)
 - [ListCoreDevicesPaginatorName](./literals.md#listcoredevicespaginatorname)
@@ -129,9 +134,14 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import CancelDeploymentResponseTypeDef, ...
+from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDeviceEntryTypeDef, ...
 ```
 
+- [AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)
+- [AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceerrorentrytypedef)
+- [AssociatedClientDeviceTypeDef](./type_defs.md#associatedclientdevicetypedef)
+- [BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponsetypedef)
+- [BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponsetypedef)
 - [CancelDeploymentResponseTypeDef](./type_defs.md#canceldeploymentresponsetypedef)
 - [CloudComponentStatusTypeDef](./type_defs.md#cloudcomponentstatustypedef)
 - [ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)
@@ -152,6 +162,8 @@ from mypy_boto3_greengrassv2.type_defs import CancelDeploymentResponseTypeDef, .
 - [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
 - [DeploymentTypeDef](./type_defs.md#deploymenttypedef)
 - [DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef)
+- [DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)
+- [DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceerrorentrytypedef)
 - [EffectiveDeploymentTypeDef](./type_defs.md#effectivedeploymenttypedef)
 - [GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef)
 - [GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef)
@@ -171,6 +183,7 @@ from mypy_boto3_greengrassv2.type_defs import CancelDeploymentResponseTypeDef, .
 - [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
 - [LambdaLinuxProcessParamsTypeDef](./type_defs.md#lambdalinuxprocessparamstypedef)
 - [LambdaVolumeMountTypeDef](./type_defs.md#lambdavolumemounttypedef)
+- [ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef)
 - [ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef)
 - [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef)
 - [ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef)

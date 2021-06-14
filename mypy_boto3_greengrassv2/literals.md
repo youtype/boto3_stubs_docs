@@ -24,6 +24,7 @@ type annotations stubs module
   - [LambdaFilesystemPermissionType](#lambdafilesystempermissiontype)
   - [LambdaInputPayloadEncodingTypeType](#lambdainputpayloadencodingtypetype)
   - [LambdaIsolationModeType](#lambdaisolationmodetype)
+  - [ListClientDevicesAssociatedWithCoreDevicePaginatorName](#listclientdevicesassociatedwithcoredevicepaginatorname)
   - [ListComponentVersionsPaginatorName](#listcomponentversionspaginatorname)
   - [ListComponentsPaginatorName](#listcomponentspaginatorname)
   - [ListCoreDevicesPaginatorName](#listcoredevicespaginatorname)
@@ -225,6 +226,16 @@ Values:
 
 - `GreengrassContainer`
 - `NoContainer`
+
+## ListClientDevicesAssociatedWithCoreDevicePaginatorName
+
+```python
+from mypy_boto3_greengrassv2.literals import ListClientDevicesAssociatedWithCoreDevicePaginatorName
+```
+
+Values:
+
+- `list_client_devices_associated_with_core_device`
 
 ## ListComponentVersionsPaginatorName
 

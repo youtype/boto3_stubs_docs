@@ -41,6 +41,8 @@ type annotations stubs module
   - [DatasetTriggerTypeDef](#datasettriggertypedef)
   - [DatasetTypeDef](#datasettypedef)
   - [DatastoreActivityTypeDef](#datastoreactivitytypedef)
+  - [DatastorePartitionTypeDef](#datastorepartitiontypedef)
+  - [DatastorePartitionsTypeDef](#datastorepartitionstypedef)
   - [DatastoreStatisticsTypeDef](#datastorestatisticstypedef)
   - [DatastoreStorageSummaryTypeDef](#datastorestoragesummarytypedef)
   - [DatastoreStorageTypeDef](#datastorestoragetypedef)
@@ -76,6 +78,7 @@ type annotations stubs module
   - [OutputFileUriValueTypeDef](#outputfileurivaluetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParquetConfigurationTypeDef](#parquetconfigurationtypedef)
+  - [PartitionTypeDef](#partitiontypedef)
   - [PipelineActivityTypeDef](#pipelineactivitytypedef)
   - [PipelineSummaryTypeDef](#pipelinesummarytypedef)
   - [PipelineTypeDef](#pipelinetypedef)
@@ -93,6 +96,7 @@ type annotations stubs module
   - [SqlQueryDatasetActionTypeDef](#sqlquerydatasetactiontypedef)
   - [StartPipelineReprocessingResponseTypeDef](#startpipelinereprocessingresponsetypedef)
   - [TagTypeDef](#tagtypedef)
+  - [TimestampPartitionTypeDef](#timestamppartitiontypedef)
   - [TriggeringDatasetTypeDef](#triggeringdatasettypedef)
   - [VariableTypeDef](#variabletypedef)
   - [VersioningConfigurationTypeDef](#versioningconfigurationtypedef)
@@ -537,6 +541,29 @@ Required fields:
 - `name`: `str`
 - `datastoreName`: `str`
 
+## DatastorePartitionTypeDef
+
+```python
+from mypy_boto3_iotanalytics.type_defs import DatastorePartitionTypeDef
+```
+
+Optional fields:
+
+- `attributePartition`: [PartitionTypeDef](./type_defs.md#partitiontypedef)
+- `timestampPartition`:
+  [TimestampPartitionTypeDef](./type_defs.md#timestamppartitiontypedef)
+
+## DatastorePartitionsTypeDef
+
+```python
+from mypy_boto3_iotanalytics.type_defs import DatastorePartitionsTypeDef
+```
+
+Optional fields:
+
+- `partitions`:
+  `List`\[[DatastorePartitionTypeDef](./type_defs.md#datastorepartitiontypedef)\]
+
 ## DatastoreStatisticsTypeDef
 
 ```python
@@ -588,6 +615,8 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
 - `fileFormatType`: [FileFormatTypeType](./literals.md#fileformattypetype)
+- `datastorePartitions`:
+  [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 
 ## DatastoreTypeDef
 
@@ -608,6 +637,8 @@ Optional fields:
 - `lastMessageArrivalTime`: `datetime`
 - `fileFormatConfiguration`:
   [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
+- `datastorePartitions`:
+  [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 
 ## DeltaTimeSessionWindowConfigurationTypeDef
 
@@ -978,6 +1009,16 @@ Optional fields:
 - `schemaDefinition`:
   [SchemaDefinitionTypeDef](./type_defs.md#schemadefinitiontypedef)
 
+## PartitionTypeDef
+
+```python
+from mypy_boto3_iotanalytics.type_defs import PartitionTypeDef
+```
+
+Required fields:
+
+- `attributeName`: `str`
+
 ## PipelineActivityTypeDef
 
 ```python
@@ -1200,6 +1241,20 @@ Required fields:
 
 - `key`: `str`
 - `value`: `str`
+
+## TimestampPartitionTypeDef
+
+```python
+from mypy_boto3_iotanalytics.type_defs import TimestampPartitionTypeDef
+```
+
+Required fields:
+
+- `attributeName`: `str`
+
+Optional fields:
+
+- `timestampFormat`: `str`
 
 ## TriggeringDatasetTypeDef
 

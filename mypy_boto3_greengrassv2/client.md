@@ -11,6 +11,8 @@ type annotations stubs module
   - [GreengrassV2Client](#greengrassv2client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [batch_associate_client_device_with_core_device](#batch_associate_client_device_with_core_device)
+    - [batch_disassociate_client_device_from_core_device](#batch_disassociate_client_device_from_core_device)
     - [can_paginate](#can_paginate)
     - [cancel_deployment](#cancel_deployment)
     - [create_component_version](#create_component_version)
@@ -23,6 +25,7 @@ type annotations stubs module
     - [get_component_version_artifact](#get_component_version_artifact)
     - [get_core_device](#get_core_device)
     - [get_deployment](#get_deployment)
+    - [list_client_devices_associated_with_core_device](#list_client_devices_associated_with_core_device)
     - [list_component_versions](#list_component_versions)
     - [list_components](#list_components)
     - [list_core_devices](#list_core_devices)
@@ -75,6 +78,42 @@ Exceptions:
 - `Exceptions.ValidationException`
 
 ## Methods
+
+### batch_associate_client_device_with_core_device
+
+Type annotations for
+`boto3.client("greengrassv2").batch_associate_client_device_with_core_device`
+method.
+
+Boto3 documentation:
+[GreengrassV2.Client.batch_associate_client_device_with_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_associate_client_device_with_core_device)
+
+Keyword-only arguments:
+
+- `coreDeviceThingName`: `str` *(required)*
+- `entries`:
+  `List`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
+
+Returns
+[BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponsetypedef).
+
+### batch_disassociate_client_device_from_core_device
+
+Type annotations for
+`boto3.client("greengrassv2").batch_disassociate_client_device_from_core_device`
+method.
+
+Boto3 documentation:
+[GreengrassV2.Client.batch_disassociate_client_device_from_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_disassociate_client_device_from_core_device)
+
+Keyword-only arguments:
+
+- `coreDeviceThingName`: `str` *(required)*
+- `entries`:
+  `List`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
+
+Returns
+[BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponsetypedef).
 
 ### can_paginate
 
@@ -256,6 +295,24 @@ Keyword-only arguments:
 Returns
 [GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
 
+### list_client_devices_associated_with_core_device
+
+Type annotations for
+`boto3.client("greengrassv2").list_client_devices_associated_with_core_device`
+method.
+
+Boto3 documentation:
+[GreengrassV2.Client.list_client_devices_associated_with_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_client_devices_associated_with_core_device)
+
+Keyword-only arguments:
+
+- `coreDeviceThingName`: `str` *(required)*
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef).
+
 ### list_component_versions
 
 Type annotations for `boto3.client("greengrassv2").list_component_versions`
@@ -427,6 +484,8 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("greengrassv2").get_paginator` method with
 overloads.
 
+- `client.get_paginator("list_client_devices_associated_with_core_device")` ->
+  [ListClientDevicesAssociatedWithCoreDevicePaginator](./paginators.md#listclientdevicesassociatedwithcoredevicepaginator)
 - `client.get_paginator("list_component_versions")` ->
   [ListComponentVersionsPaginator](./paginators.md#listcomponentversionspaginator)
 - `client.get_paginator("list_components")` ->

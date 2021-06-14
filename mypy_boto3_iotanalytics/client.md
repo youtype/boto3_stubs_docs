@@ -214,6 +214,8 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `fileFormatConfiguration`:
   [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
+- `datastorePartitions`:
+  [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 
 Returns
 [CreateDatastoreResponseTypeDef](./type_defs.md#createdatastoreresponsetypedef).
