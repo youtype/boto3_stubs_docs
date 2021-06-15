@@ -100,6 +100,7 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MessageGroupTypeDef](#messagegrouptypedef)
   - [MessageTypeDef](#messagetypedef)
+  - [MultipleValuesSettingTypeDef](#multiplevaluessettingtypedef)
   - [ObfuscationSettingTypeDef](#obfuscationsettingtypedef)
   - [OutputContextTypeDef](#outputcontexttypedef)
   - [PlainTextMessageTypeDef](#plaintextmessagetypedef)
@@ -665,6 +666,8 @@ Optional fields:
 - `localeId`: `str`
 - `intentId`: `str`
 - `creationDateTime`: `datetime`
+- `multipleValuesSetting`:
+  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
 ## CreateSlotTypeResponseTypeDef
 
@@ -1005,6 +1008,8 @@ Optional fields:
 - `intentId`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `multipleValuesSetting`:
+  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
 ## DescribeSlotTypeResponseTypeDef
 
@@ -1468,6 +1473,16 @@ Optional fields:
 - `ssmlMessage`: [SSMLMessageTypeDef](./type_defs.md#ssmlmessagetypedef)
 - `imageResponseCard`:
   [ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef)
+
+## MultipleValuesSettingTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import MultipleValuesSettingTypeDef
+```
+
+Optional fields:
+
+- `allowMultipleValues`: `bool`
 
 ## ObfuscationSettingTypeDef
 
@@ -1972,6 +1987,8 @@ Optional fields:
 - `intentId`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+- `multipleValuesSetting`:
+  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
 ## UpdateSlotTypeResponseTypeDef
 

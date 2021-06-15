@@ -253,6 +253,7 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)
 - [MessageTypeDef](./type_defs.md#messagetypedef)
+- [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 - [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
 - [OutputContextTypeDef](./type_defs.md#outputcontexttypedef)
 - [PlainTextMessageTypeDef](./type_defs.md#plaintextmessagetypedef)

@@ -335,6 +335,8 @@ Keyword-only arguments:
 - `description`: `str`
 - `obfuscationSetting`:
   [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
+- `multipleValuesSetting`:
+  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
 Returns [CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef).
 
@@ -1138,6 +1140,8 @@ Keyword-only arguments:
 - `description`: `str`
 - `obfuscationSetting`:
   [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
+- `multipleValuesSetting`:
+  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
 Returns [UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef).
 

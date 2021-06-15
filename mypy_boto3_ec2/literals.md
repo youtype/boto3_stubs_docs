@@ -2955,6 +2955,7 @@ Values:
 - `m5dn.4xlarge`
 - `m5dn.8xlarge`
 - `m5dn.large`
+- `m5dn.metal`
 - `m5dn.xlarge`
 - `m5n.12xlarge`
 - `m5n.16xlarge`
@@ -2963,6 +2964,7 @@ Values:
 - `m5n.4xlarge`
 - `m5n.8xlarge`
 - `m5n.large`
+- `m5n.metal`
 - `m5n.xlarge`
 - `m5zn.12xlarge`
 - `m5zn.2xlarge`
@@ -3059,6 +3061,7 @@ Values:
 - `r5dn.4xlarge`
 - `r5dn.8xlarge`
 - `r5dn.large`
+- `r5dn.metal`
 - `r5dn.xlarge`
 - `r5n.12xlarge`
 - `r5n.16xlarge`
@@ -3067,6 +3070,7 @@ Values:
 - `r5n.4xlarge`
 - `r5n.8xlarge`
 - `r5n.large`
+- `r5n.metal`
 - `r5n.xlarge`
 - `r6g.12xlarge`
 - `r6g.16xlarge`

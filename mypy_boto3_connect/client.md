@@ -12,6 +12,7 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [associate_approved_origin](#associate_approved_origin)
+    - [associate_bot](#associate_bot)
     - [associate_instance_storage_config](#associate_instance_storage_config)
     - [associate_lambda_function](#associate_lambda_function)
     - [associate_lex_bot](#associate_lex_bot)
@@ -46,6 +47,7 @@ type annotations stubs module
     - [describe_user_hierarchy_group](#describe_user_hierarchy_group)
     - [describe_user_hierarchy_structure](#describe_user_hierarchy_structure)
     - [disassociate_approved_origin](#disassociate_approved_origin)
+    - [disassociate_bot](#disassociate_bot)
     - [disassociate_instance_storage_config](#disassociate_instance_storage_config)
     - [disassociate_lambda_function](#disassociate_lambda_function)
     - [disassociate_lex_bot](#disassociate_lex_bot)
@@ -58,6 +60,7 @@ type annotations stubs module
     - [get_federation_token](#get_federation_token)
     - [get_metric_data](#get_metric_data)
     - [list_approved_origins](#list_approved_origins)
+    - [list_bots](#list_bots)
     - [list_contact_flows](#list_contact_flows)
     - [list_hours_of_operations](#list_hours_of_operations)
     - [list_instance_attributes](#list_instance_attributes)
@@ -176,6 +179,19 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Origin`: `str` *(required)*
+
+### associate_bot
+
+Type annotations for `boto3.client("connect").associate_bot` method.
+
+Boto3 documentation:
+[Connect.Client.associate_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_bot)
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
+- `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
 
 ### associate_instance_storage_config
 
@@ -726,6 +742,19 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Origin`: `str` *(required)*
 
+### disassociate_bot
+
+Type annotations for `boto3.client("connect").disassociate_bot` method.
+
+Boto3 documentation:
+[Connect.Client.disassociate_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_bot)
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
+- `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+
 ### disassociate_instance_storage_config
 
 Type annotations for
@@ -915,6 +944,22 @@ Keyword-only arguments:
 
 Returns
 [ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef).
+
+### list_bots
+
+Type annotations for `boto3.client("connect").list_bots` method.
+
+Boto3 documentation:
+[Connect.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_bots)
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `LexVersion`: [LexVersionType](./literals.md#lexversiontype) *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
 
 ### list_contact_flows
 
@@ -1784,6 +1829,8 @@ overloads.
   [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
 - `client.get_paginator("list_approved_origins")` ->
   [ListApprovedOriginsPaginator](./paginators.md#listapprovedoriginspaginator)
+- `client.get_paginator("list_bots")` ->
+  [ListBotsPaginator](./paginators.md#listbotspaginator)
 - `client.get_paginator("list_contact_flows")` ->
   [ListContactFlowsPaginator](./paginators.md#listcontactflowspaginator)
 - `client.get_paginator("list_hours_of_operations")` ->

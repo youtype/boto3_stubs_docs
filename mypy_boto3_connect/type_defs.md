@@ -67,8 +67,11 @@ type annotations stubs module
   - [KinesisFirehoseConfigTypeDef](#kinesisfirehoseconfigtypedef)
   - [KinesisStreamConfigTypeDef](#kinesisstreamconfigtypedef)
   - [KinesisVideoStreamConfigTypeDef](#kinesisvideostreamconfigtypedef)
+  - [LexBotConfigTypeDef](#lexbotconfigtypedef)
   - [LexBotTypeDef](#lexbottypedef)
+  - [LexV2BotTypeDef](#lexv2bottypedef)
   - [ListApprovedOriginsResponseTypeDef](#listapprovedoriginsresponsetypedef)
+  - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
   - [ListContactFlowsResponseTypeDef](#listcontactflowsresponsetypedef)
   - [ListHoursOfOperationsResponseTypeDef](#listhoursofoperationsresponsetypedef)
   - [ListInstanceAttributesResponseTypeDef](#listinstanceattributesresponsetypedef)
@@ -849,6 +852,17 @@ Required fields:
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
 
+## LexBotConfigTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import LexBotConfigTypeDef
+```
+
+Optional fields:
+
+- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
+- `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+
 ## LexBotTypeDef
 
 ```python
@@ -860,6 +874,16 @@ Optional fields:
 - `Name`: `str`
 - `LexRegion`: `str`
 
+## LexV2BotTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import LexV2BotTypeDef
+```
+
+Optional fields:
+
+- `AliasArn`: `str`
+
 ## ListApprovedOriginsResponseTypeDef
 
 ```python
@@ -869,6 +893,18 @@ from mypy_boto3_connect.type_defs import ListApprovedOriginsResponseTypeDef
 Optional fields:
 
 - `Origins`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## ListBotsResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListBotsResponseTypeDef
+```
+
+Optional fields:
+
+- `LexBots`:
+  `List`\[[LexBotConfigTypeDef](./type_defs.md#lexbotconfigtypedef)\]
 - `NextToken`: `str`
 
 ## ListContactFlowsResponseTypeDef

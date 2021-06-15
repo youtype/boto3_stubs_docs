@@ -21,6 +21,7 @@ type annotations stubs module
   - [ListTablesResponseTypeDef](#listtablesresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SqlParameterTypeDef](#sqlparametertypedef)
   - [StatementDataTypeDef](#statementdatatypedef)
   - [TableMemberTypeDef](#tablemembertypedef)
 
@@ -75,6 +76,8 @@ Optional fields:
 - `Duration`: `int`
 - `Error`: `str`
 - `HasResultSet`: `bool`
+- `QueryParameters`:
+  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `QueryString`: `str`
 - `RedshiftPid`: `int`
 - `RedshiftQueryId`: `int`
@@ -220,6 +223,17 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
+## SqlParameterTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import SqlParameterTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `value`: `str`
+
 ## StatementDataTypeDef
 
 ```python
@@ -233,6 +247,8 @@ Required fields:
 Optional fields:
 
 - `CreatedAt`: `datetime`
+- `QueryParameters`:
+  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `QueryString`: `str`
 - `SecretArn`: `str`
 - `StatementName`: `str`

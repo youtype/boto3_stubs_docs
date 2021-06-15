@@ -10,6 +10,7 @@ type annotations stubs module
 - [Paginators for boto3 Connect module](#paginators-for-boto3-connect-module)
   - [GetMetricDataPaginator](#getmetricdatapaginator)
   - [ListApprovedOriginsPaginator](#listapprovedoriginspaginator)
+  - [ListBotsPaginator](#listbotspaginator)
   - [ListContactFlowsPaginator](#listcontactflowspaginator)
   - [ListHoursOfOperationsPaginator](#listhoursofoperationspaginator)
   - [ListInstanceAttributesPaginator](#listinstanceattributespaginator)
@@ -89,6 +90,32 @@ Arguments for `ListApprovedOriginsPaginator.paginate` method:
 
 `ListApprovedOriginsPaginator.paginate` returns
 `Iterator`\[[ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef)\].
+
+## ListBotsPaginator
+
+Type annotations for `boto3.client("connect").get_paginator("list_bots")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_connect.paginator import ListBotsPaginator
+
+def get_list_bots_paginator() -> ListBotsPaginator:
+    return boto3.client("connect").get_paginator("list_bots")
+```
+
+Boto3 documentation:
+[Connect.Paginator.ListBots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListBots)
+
+Arguments for `ListBotsPaginator.paginate` method:
+
+- `InstanceId`: `str` *(required)*
+- `LexVersion`: [LexVersionType](./literals.md#lexversiontype) *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListBotsPaginator.paginate` returns
+`Iterator`\[[ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef)\].
 
 ## ListContactFlowsPaginator
 

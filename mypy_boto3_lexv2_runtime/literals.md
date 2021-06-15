@@ -13,6 +13,7 @@ type annotations stubs module
   - [IntentStateType](#intentstatetype)
   - [MessageContentTypeType](#messagecontenttypetype)
   - [SentimentTypeType](#sentimenttypetype)
+  - [ShapeType](#shapetype)
 
 ## ConfirmationStateType
 
@@ -79,3 +80,14 @@ Values:
 - `NEGATIVE`
 - `NEUTRAL`
 - `POSITIVE`
+
+## ShapeType
+
+```python
+from mypy_boto3_lexv2_runtime.literals import ShapeType
+```
+
+Values:
+
+- `List`
+- `Scalar`

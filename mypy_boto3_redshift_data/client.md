@@ -139,6 +139,8 @@ Keyword-only arguments:
 - `Sql`: `str` *(required)*
 - `Database`: `str`
 - `DbUser`: `str`
+- `Parameters`:
+  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `SecretArn`: `str`
 - `StatementName`: `str`
 - `WithEvent`: `bool`

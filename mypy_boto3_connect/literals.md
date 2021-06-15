@@ -22,7 +22,9 @@ type annotations stubs module
   - [InstanceStatusType](#instancestatustype)
   - [InstanceStorageResourceTypeType](#instancestorageresourcetypetype)
   - [IntegrationTypeType](#integrationtypetype)
+  - [LexVersionType](#lexversiontype)
   - [ListApprovedOriginsPaginatorName](#listapprovedoriginspaginatorname)
+  - [ListBotsPaginatorName](#listbotspaginatorname)
   - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
   - [ListHoursOfOperationsPaginatorName](#listhoursofoperationspaginatorname)
   - [ListInstanceAttributesPaginatorName](#listinstanceattributespaginatorname)
@@ -265,6 +267,17 @@ Values:
 
 - `EVENT`
 
+## LexVersionType
+
+```python
+from mypy_boto3_connect.literals import LexVersionType
+```
+
+Values:
+
+- `V1`
+- `V2`
+
 ## ListApprovedOriginsPaginatorName
 
 ```python
@@ -274,6 +287,16 @@ from mypy_boto3_connect.literals import ListApprovedOriginsPaginatorName
 Values:
 
 - `list_approved_origins`
+
+## ListBotsPaginatorName
+
+```python
+from mypy_boto3_connect.literals import ListBotsPaginatorName
+```
+
+Values:
+
+- `list_bots`
 
 ## ListContactFlowsPaginatorName
 

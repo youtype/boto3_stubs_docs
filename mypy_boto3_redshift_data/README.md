@@ -116,5 +116,6 @@ from mypy_boto3_redshift_data.type_defs import CancelStatementResponseTypeDef, .
 - [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)
 - [StatementDataTypeDef](./type_defs.md#statementdatatypedef)
 - [TableMemberTypeDef](./type_defs.md#tablemembertypedef)

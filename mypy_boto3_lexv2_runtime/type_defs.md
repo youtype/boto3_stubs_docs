@@ -50,9 +50,6 @@ Required fields:
 - `name`: `str`
 - `timeToLive`:
   [ActiveContextTimeToLiveTypeDef](./type_defs.md#activecontexttimetolivetypedef)
-
-Optional fields:
-
 - `contextAttributes`: `Dict`\[`str`, `str`\]
 
 ## ButtonTypeDef
@@ -170,10 +167,13 @@ Optional fields:
 from mypy_boto3_lexv2_runtime.type_defs import MessageTypeDef
 ```
 
+Required fields:
+
+- `contentType`: [MessageContentTypeType](./literals.md#messagecontenttypetype)
+
 Optional fields:
 
 - `content`: `str`
-- `contentType`: [MessageContentTypeType](./literals.md#messagecontenttypetype)
 - `imageResponseCard`:
   [ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef)
 
@@ -274,6 +274,8 @@ from mypy_boto3_lexv2_runtime.type_defs import SlotTypeDef
 Optional fields:
 
 - `value`: [ValueTypeDef](./type_defs.md#valuetypedef)
+- `shape`: [ShapeType](./literals.md#shapetype)
+- `values`: `List`\[[SlotTypeDef](./type_defs.md#slottypedef)\]
 
 ## ValueTypeDef
 
