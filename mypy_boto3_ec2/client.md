@@ -32,6 +32,7 @@ type annotations stubs module
     - [associate_subnet_cidr_block](#associate_subnet_cidr_block)
     - [associate_transit_gateway_multicast_domain](#associate_transit_gateway_multicast_domain)
     - [associate_transit_gateway_route_table](#associate_transit_gateway_route_table)
+    - [associate_trunk_interface](#associate_trunk_interface)
     - [associate_vpc_cidr_block](#associate_vpc_cidr_block)
     - [attach_classic_link_vpc](#attach_classic_link_vpc)
     - [attach_internet_gateway](#attach_internet_gateway)
@@ -281,6 +282,7 @@ type annotations stubs module
     - [describe_transit_gateway_route_tables](#describe_transit_gateway_route_tables)
     - [describe_transit_gateway_vpc_attachments](#describe_transit_gateway_vpc_attachments)
     - [describe_transit_gateways](#describe_transit_gateways)
+    - [describe_trunk_interface_associations](#describe_trunk_interface_associations)
     - [describe_volume_attribute](#describe_volume_attribute)
     - [describe_volume_status](#describe_volume_status)
     - [describe_volumes](#describe_volumes)
@@ -319,6 +321,7 @@ type annotations stubs module
     - [disassociate_subnet_cidr_block](#disassociate_subnet_cidr_block)
     - [disassociate_transit_gateway_multicast_domain](#disassociate_transit_gateway_multicast_domain)
     - [disassociate_transit_gateway_route_table](#disassociate_transit_gateway_route_table)
+    - [disassociate_trunk_interface](#disassociate_trunk_interface)
     - [disassociate_vpc_cidr_block](#disassociate_vpc_cidr_block)
     - [enable_ebs_encryption_by_default](#enable_ebs_encryption_by_default)
     - [enable_fast_snapshot_restores](#enable_fast_snapshot_restores)
@@ -865,6 +868,25 @@ Keyword-only arguments:
 
 Returns
 [AssociateTransitGatewayRouteTableResultTypeDef](./type_defs.md#associatetransitgatewayroutetableresulttypedef).
+
+### associate_trunk_interface
+
+Type annotations for `boto3.client("ec2").associate_trunk_interface` method.
+
+Boto3 documentation:
+[EC2.Client.associate_trunk_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_trunk_interface)
+
+Keyword-only arguments:
+
+- `BranchInterfaceId`: `str` *(required)*
+- `TrunkInterfaceId`: `str` *(required)*
+- `VlanId`: `int`
+- `GreKey`: `int`
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+
+Returns
+[AssociateTrunkInterfaceResultTypeDef](./type_defs.md#associatetrunkinterfaceresulttypedef).
 
 ### associate_vpc_cidr_block
 
@@ -1813,8 +1835,8 @@ Keyword-only arguments:
 - `PrivateIpAddresses`:
   `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
-- `InterfaceType`: `Literal['efa']` (see
-  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype))
+- `InterfaceType`:
+  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
@@ -5349,6 +5371,25 @@ Keyword-only arguments:
 Returns
 [DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef).
 
+### describe_trunk_interface_associations
+
+Type annotations for
+`boto3.client("ec2").describe_trunk_interface_associations` method.
+
+Boto3 documentation:
+[EC2.Client.describe_trunk_interface_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_trunk_interface_associations)
+
+Keyword-only arguments:
+
+- `AssociationIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef).
+
 ### describe_volume_attribute
 
 Type annotations for `boto3.client("ec2").describe_volume_attribute` method.
@@ -5969,6 +6010,22 @@ Keyword-only arguments:
 
 Returns
 [DisassociateTransitGatewayRouteTableResultTypeDef](./type_defs.md#disassociatetransitgatewayroutetableresulttypedef).
+
+### disassociate_trunk_interface
+
+Type annotations for `boto3.client("ec2").disassociate_trunk_interface` method.
+
+Boto3 documentation:
+[EC2.Client.disassociate_trunk_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_trunk_interface)
+
+Keyword-only arguments:
+
+- `AssociationId`: `str` *(required)*
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+
+Returns
+[DisassociateTrunkInterfaceResultTypeDef](./type_defs.md#disassociatetrunkinterfaceresulttypedef).
 
 ### disassociate_vpc_cidr_block
 

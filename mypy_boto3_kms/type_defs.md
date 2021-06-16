@@ -36,8 +36,11 @@ type annotations stubs module
   - [ListKeyPoliciesResponseTypeDef](#listkeypoliciesresponsetypedef)
   - [ListKeysResponseTypeDef](#listkeysresponsetypedef)
   - [ListResourceTagsResponseTypeDef](#listresourcetagsresponsetypedef)
+  - [MultiRegionConfigurationTypeDef](#multiregionconfigurationtypedef)
+  - [MultiRegionKeyTypeDef](#multiregionkeytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ReEncryptResponseTypeDef](#reencryptresponsetypedef)
+  - [ReplicateKeyResponseTypeDef](#replicatekeyresponsetypedef)
   - [ScheduleKeyDeletionResponseTypeDef](#schedulekeydeletionresponsetypedef)
   - [SignResponseTypeDef](#signresponsetypedef)
   - [TagTypeDef](#tagtypedef)
@@ -351,6 +354,10 @@ Optional fields:
   `List`\[[EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)\]
 - `SigningAlgorithms`:
   `List`\[[SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)\]
+- `MultiRegion`: `bool`
+- `MultiRegionConfiguration`:
+  [MultiRegionConfigurationTypeDef](./type_defs.md#multiregionconfigurationtypedef)
+- `PendingDeletionWindowInDays`: `int`
 
 ## ListAliasesResponseTypeDef
 
@@ -414,6 +421,31 @@ Optional fields:
 - `NextMarker`: `str`
 - `Truncated`: `bool`
 
+## MultiRegionConfigurationTypeDef
+
+```python
+from mypy_boto3_kms.type_defs import MultiRegionConfigurationTypeDef
+```
+
+Optional fields:
+
+- `MultiRegionKeyType`:
+  [MultiRegionKeyTypeType](./literals.md#multiregionkeytypetype)
+- `PrimaryKey`: [MultiRegionKeyTypeDef](./type_defs.md#multiregionkeytypedef)
+- `ReplicaKeys`:
+  `List`\[[MultiRegionKeyTypeDef](./type_defs.md#multiregionkeytypedef)\]
+
+## MultiRegionKeyTypeDef
+
+```python
+from mypy_boto3_kms.type_defs import MultiRegionKeyTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Region`: `str`
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -442,6 +474,18 @@ Optional fields:
 - `DestinationEncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
+## ReplicateKeyResponseTypeDef
+
+```python
+from mypy_boto3_kms.type_defs import ReplicateKeyResponseTypeDef
+```
+
+Optional fields:
+
+- `ReplicaKeyMetadata`: [KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef)
+- `ReplicaPolicy`: `str`
+- `ReplicaTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## ScheduleKeyDeletionResponseTypeDef
 
 ```python
@@ -452,6 +496,8 @@ Optional fields:
 
 - `KeyId`: `str`
 - `DeletionDate`: `datetime`
+- `KeyState`: [KeyStateType](./literals.md#keystatetype)
+- `PendingWindowInDays`: `int`
 
 ## SignResponseTypeDef
 

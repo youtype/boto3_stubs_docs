@@ -44,6 +44,7 @@ type annotations stubs module
   - [AssociateSubnetCidrBlockResultTypeDef](#associatesubnetcidrblockresulttypedef)
   - [AssociateTransitGatewayMulticastDomainResultTypeDef](#associatetransitgatewaymulticastdomainresulttypedef)
   - [AssociateTransitGatewayRouteTableResultTypeDef](#associatetransitgatewayroutetableresulttypedef)
+  - [AssociateTrunkInterfaceResultTypeDef](#associatetrunkinterfaceresulttypedef)
   - [AssociateVpcCidrBlockResultTypeDef](#associatevpccidrblockresulttypedef)
   - [AssociatedRoleTypeDef](#associatedroletypedef)
   - [AssociatedTargetNetworkTypeDef](#associatedtargetnetworktypedef)
@@ -335,6 +336,7 @@ type annotations stubs module
   - [DescribeTransitGatewayRouteTablesResultTypeDef](#describetransitgatewayroutetablesresulttypedef)
   - [DescribeTransitGatewayVpcAttachmentsResultTypeDef](#describetransitgatewayvpcattachmentsresulttypedef)
   - [DescribeTransitGatewaysResultTypeDef](#describetransitgatewaysresulttypedef)
+  - [DescribeTrunkInterfaceAssociationsResultTypeDef](#describetrunkinterfaceassociationsresulttypedef)
   - [DescribeVolumeAttributeResultTypeDef](#describevolumeattributeresulttypedef)
   - [DescribeVolumeStatusResultTypeDef](#describevolumestatusresulttypedef)
   - [DescribeVolumesModificationsResultTypeDef](#describevolumesmodificationsresulttypedef)
@@ -374,6 +376,7 @@ type annotations stubs module
   - [DisassociateSubnetCidrBlockResultTypeDef](#disassociatesubnetcidrblockresulttypedef)
   - [DisassociateTransitGatewayMulticastDomainResultTypeDef](#disassociatetransitgatewaymulticastdomainresulttypedef)
   - [DisassociateTransitGatewayRouteTableResultTypeDef](#disassociatetransitgatewayroutetableresulttypedef)
+  - [DisassociateTrunkInterfaceResultTypeDef](#disassociatetrunkinterfaceresulttypedef)
   - [DisassociateVpcCidrBlockResultTypeDef](#disassociatevpccidrblockresulttypedef)
   - [DiskImageDescriptionTypeDef](#diskimagedescriptiontypedef)
   - [DiskImageDetailTypeDef](#diskimagedetailtypedef)
@@ -883,6 +886,7 @@ type annotations stubs module
   - [TransitGatewayTypeDef](#transitgatewaytypedef)
   - [TransitGatewayVpcAttachmentOptionsTypeDef](#transitgatewayvpcattachmentoptionstypedef)
   - [TransitGatewayVpcAttachmentTypeDef](#transitgatewayvpcattachmenttypedef)
+  - [TrunkInterfaceAssociationTypeDef](#trunkinterfaceassociationtypedef)
   - [TunnelOptionTypeDef](#tunneloptiontypedef)
   - [UnassignIpv6AddressesResultTypeDef](#unassignipv6addressesresulttypedef)
   - [UnmonitorInstancesResultTypeDef](#unmonitorinstancesresulttypedef)
@@ -1375,6 +1379,18 @@ Optional fields:
 
 - `Association`:
   [TransitGatewayAssociationTypeDef](./type_defs.md#transitgatewayassociationtypedef)
+
+## AssociateTrunkInterfaceResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateTrunkInterfaceResultTypeDef
+```
+
+Optional fields:
+
+- `InterfaceAssociation`:
+  [TrunkInterfaceAssociationTypeDef](./type_defs.md#trunkinterfaceassociationtypedef)
+- `ClientToken`: `str`
 
 ## AssociateVpcCidrBlockResultTypeDef
 
@@ -4855,6 +4871,18 @@ Optional fields:
   `List`\[[TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)\]
 - `NextToken`: `str`
 
+## DescribeTrunkInterfaceAssociationsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTrunkInterfaceAssociationsResultTypeDef
+```
+
+Optional fields:
+
+- `InterfaceAssociations`:
+  `List`\[[TrunkInterfaceAssociationTypeDef](./type_defs.md#trunkinterfaceassociationtypedef)\]
+- `NextToken`: `str`
+
 ## DescribeVolumeAttributeResultTypeDef
 
 ```python
@@ -5310,6 +5338,17 @@ Optional fields:
 
 - `Association`:
   [TransitGatewayAssociationTypeDef](./type_defs.md#transitgatewayassociationtypedef)
+
+## DisassociateTrunkInterfaceResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateTrunkInterfaceResultTypeDef
+```
+
+Optional fields:
+
+- `Return`: `bool`
+- `ClientToken`: `str`
 
 ## DisassociateVpcCidrBlockResultTypeDef
 
@@ -12611,6 +12650,23 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `Options`:
   [TransitGatewayVpcAttachmentOptionsTypeDef](./type_defs.md#transitgatewayvpcattachmentoptionstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## TrunkInterfaceAssociationTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import TrunkInterfaceAssociationTypeDef
+```
+
+Optional fields:
+
+- `AssociationId`: `str`
+- `BranchInterfaceId`: `str`
+- `TrunkInterfaceId`: `str`
+- `InterfaceProtocol`:
+  [InterfaceProtocolTypeType](./literals.md#interfaceprotocoltypetype)
+- `VlanId`: `int`
+- `GreKey`: `int`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TunnelOptionTypeDef

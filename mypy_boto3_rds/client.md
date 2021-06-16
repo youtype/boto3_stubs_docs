@@ -2663,6 +2663,9 @@ Keyword-only arguments:
 - `CopyTagsToSnapshot`: `bool`
 - `Domain`: `str`
 - `DomainIAMRoleName`: `str`
+- `ScalingConfiguration`:
+  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
+- `EngineMode`: `str`
 
 Returns
 [RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).

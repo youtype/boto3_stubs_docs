@@ -225,6 +225,7 @@ type annotations stubs module
   - [InstanceTypeHypervisorType](#instancetypehypervisortype)
   - [InstanceTypeType](#instancetypetype)
   - [InterfacePermissionTypeType](#interfacepermissiontypetype)
+  - [InterfaceProtocolTypeType](#interfaceprotocoltypetype)
   - [Ipv6SupportValueType](#ipv6supportvaluetype)
   - [KeyPairExistsWaiterName](#keypairexistswaitername)
   - [LaunchTemplateErrorCodeType](#launchtemplateerrorcodetype)
@@ -3164,6 +3165,17 @@ Values:
 - `EIP-ASSOCIATE`
 - `INSTANCE-ATTACH`
 
+## InterfaceProtocolTypeType
+
+```python
+from mypy_boto3_ec2.literals import InterfaceProtocolTypeType
+```
+
+Values:
+
+- `GRE`
+- `VLAN`
+
 ## Ipv6SupportValueType
 
 ```python
@@ -3429,7 +3441,9 @@ from mypy_boto3_ec2.literals import NetworkInterfaceCreationTypeType
 
 Values:
 
+- `branch`
 - `efa`
+- `trunk`
 
 ## NetworkInterfacePermissionStateCodeType
 
@@ -3469,6 +3483,7 @@ Values:
 - `efa`
 - `interface`
 - `natGateway`
+- `trunk`
 
 ## OfferingClassTypeType
 

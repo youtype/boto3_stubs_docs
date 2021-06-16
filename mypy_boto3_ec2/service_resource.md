@@ -949,8 +949,8 @@ Keyword-only arguments:
 - `PrivateIpAddresses`:
   `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
-- `InterfaceType`: `Literal['efa']` (see
-  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype))
+- `InterfaceType`:
+  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
@@ -3535,8 +3535,8 @@ Keyword-only arguments:
 - `PrivateIpAddresses`:
   `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
-- `InterfaceType`: `Literal['efa']` (see
-  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype))
+- `InterfaceType`:
+  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`

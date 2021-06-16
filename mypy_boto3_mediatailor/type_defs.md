@@ -48,6 +48,7 @@ type annotations stubs module
   - [ResponseOutputItemTypeDef](#responseoutputitemtypedef)
   - [ScheduleConfigurationTypeDef](#scheduleconfigurationtypedef)
   - [ScheduleEntryTypeDef](#scheduleentrytypedef)
+  - [SecretsManagerAccessTokenConfigurationTypeDef](#secretsmanageraccesstokenconfigurationtypedef)
   - [SlateSourceTypeDef](#slatesourcetypedef)
   - [SourceLocationTypeDef](#sourcelocationtypedef)
   - [SpliceInsertMessageTypeDef](#spliceinsertmessagetypedef)
@@ -65,8 +66,9 @@ from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef
 
 Optional fields:
 
-- `AccessType`: `Literal['S3_SIGV4']` (see
-  [AccessTypeType](./literals.md#accesstypetype))
+- `AccessType`: [AccessTypeType](./literals.md#accesstypetype)
+- `SecretsManagerAccessTokenConfiguration`:
+  [SecretsManagerAccessTokenConfigurationTypeDef](./type_defs.md#secretsmanageraccesstokenconfigurationtypedef)
 
 ## AdBreakTypeDef
 
@@ -655,6 +657,18 @@ Optional fields:
 
 - `ApproximateDurationSeconds`: `int`
 - `ApproximateStartTime`: `datetime`
+
+## SecretsManagerAccessTokenConfigurationTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import SecretsManagerAccessTokenConfigurationTypeDef
+```
+
+Optional fields:
+
+- `HeaderName`: `str`
+- `SecretArn`: `str`
+- `SecretStringKey`: `str`
 
 ## SlateSourceTypeDef
 

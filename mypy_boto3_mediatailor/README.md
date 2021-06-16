@@ -166,6 +166,7 @@ from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef, ...
 - [ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)
 - [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
 - [ScheduleEntryTypeDef](./type_defs.md#scheduleentrytypedef)
+- [SecretsManagerAccessTokenConfigurationTypeDef](./type_defs.md#secretsmanageraccesstokenconfigurationtypedef)
 - [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - [SourceLocationTypeDef](./type_defs.md#sourcelocationtypedef)
 - [SpliceInsertMessageTypeDef](./type_defs.md#spliceinsertmessagetypedef)

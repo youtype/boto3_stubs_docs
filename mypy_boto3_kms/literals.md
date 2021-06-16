@@ -25,6 +25,7 @@ type annotations stubs module
   - [ListKeyPoliciesPaginatorName](#listkeypoliciespaginatorname)
   - [ListKeysPaginatorName](#listkeyspaginatorname)
   - [MessageTypeType](#messagetypetype)
+  - [MultiRegionKeyTypeType](#multiregionkeytypetype)
   - [OriginTypeType](#origintypetype)
   - [SigningAlgorithmSpecType](#signingalgorithmspectype)
   - [WrappingKeySpecType](#wrappingkeyspectype)
@@ -182,11 +183,14 @@ from mypy_boto3_kms.literals import KeyStateType
 
 Values:
 
+- `Creating`
 - `Disabled`
 - `Enabled`
 - `PendingDeletion`
 - `PendingImport`
+- `PendingReplicaDeletion`
 - `Unavailable`
+- `Updating`
 
 ## KeyUsageTypeType
 
@@ -249,6 +253,17 @@ Values:
 
 - `DIGEST`
 - `RAW`
+
+## MultiRegionKeyTypeType
+
+```python
+from mypy_boto3_kms.literals import MultiRegionKeyTypeType
+```
+
+Values:
+
+- `PRIMARY`
+- `REPLICA`
 
 ## OriginTypeType
 

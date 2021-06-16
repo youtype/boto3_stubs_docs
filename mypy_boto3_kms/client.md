@@ -49,6 +49,7 @@ type annotations stubs module
     - [list_retirable_grants](#list_retirable_grants)
     - [put_key_policy](#put_key_policy)
     - [re_encrypt](#re_encrypt)
+    - [replicate_key](#replicate_key)
     - [retire_grant](#retire_grant)
     - [revoke_grant](#revoke_grant)
     - [schedule_key_deletion](#schedule_key_deletion)
@@ -58,6 +59,7 @@ type annotations stubs module
     - [update_alias](#update_alias)
     - [update_custom_key_store](#update_custom_key_store)
     - [update_key_description](#update_key_description)
+    - [update_primary_region](#update_primary_region)
     - [verify](#verify)
     - [get_paginator](#get_paginator)
 
@@ -237,6 +239,7 @@ Keyword-only arguments:
 - `CustomKeyStoreId`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `MultiRegion`: `bool`
 
 Returns [CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef).
 
@@ -715,6 +718,25 @@ Keyword-only arguments:
 
 Returns [ReEncryptResponseTypeDef](./type_defs.md#reencryptresponsetypedef).
 
+### replicate_key
+
+Type annotations for `boto3.client("kms").replicate_key` method.
+
+Boto3 documentation:
+[KMS.Client.replicate_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.replicate_key)
+
+Keyword-only arguments:
+
+- `KeyId`: `str` *(required)*
+- `ReplicaRegion`: `str` *(required)*
+- `Policy`: `str`
+- `BypassPolicyLockoutSafetyCheck`: `bool`
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[ReplicateKeyResponseTypeDef](./type_defs.md#replicatekeyresponsetypedef).
+
 ### retire_grant
 
 Type annotations for `boto3.client("kms").retire_grant` method.
@@ -837,6 +859,18 @@ Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 - `Description`: `str` *(required)*
+
+### update_primary_region
+
+Type annotations for `boto3.client("kms").update_primary_region` method.
+
+Boto3 documentation:
+[KMS.Client.update_primary_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_primary_region)
+
+Keyword-only arguments:
+
+- `KeyId`: `str` *(required)*
+- `PrimaryRegion`: `str` *(required)*
 
 ### verify
 

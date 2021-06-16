@@ -31,6 +31,7 @@ from mypy_boto3_mediatailor.literals import AccessTypeType
 Values:
 
 - `S3_SIGV4`
+- `SECRETS_MANAGER_ACCESS_TOKEN`
 
 ## ChannelStateType
 
