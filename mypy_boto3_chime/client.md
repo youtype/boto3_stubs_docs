@@ -191,6 +191,7 @@ type annotations stubs module
     - [update_room](#update_room)
     - [update_room_membership](#update_room_membership)
     - [update_sip_media_application](#update_sip_media_application)
+    - [update_sip_media_application_call](#update_sip_media_application_call)
     - [update_sip_rule](#update_sip_rule)
     - [update_user](#update_user)
     - [update_user_settings](#update_user_settings)
@@ -3014,6 +3015,23 @@ Keyword-only arguments:
 
 Returns
 [UpdateSipMediaApplicationResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponsetypedef).
+
+### update_sip_media_application_call
+
+Type annotations for `boto3.client("chime").update_sip_media_application_call`
+method.
+
+Boto3 documentation:
+[Chime.Client.update_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application_call)
+
+Keyword-only arguments:
+
+- `SipMediaApplicationId`: `str` *(required)*
+- `TransactionId`: `str` *(required)*
+- `Arguments`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns
+[UpdateSipMediaApplicationCallResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponsetypedef).
 
 ### update_sip_rule
 

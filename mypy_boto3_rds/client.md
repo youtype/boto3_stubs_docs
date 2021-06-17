@@ -2854,6 +2854,7 @@ Keyword-only arguments:
   *(required)*
 - `KmsKeyId`: `str` *(required)*
 - `ApplyImmediately`: `bool`
+- `EngineNativeAuditFieldsIncluded`: `bool`
 
 Returns
 [StartActivityStreamResponseTypeDef](./type_defs.md#startactivitystreamresponsetypedef).

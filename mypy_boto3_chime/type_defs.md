@@ -220,6 +220,7 @@ type annotations stubs module
   - [UpdateProxySessionResponseTypeDef](#updateproxysessionresponsetypedef)
   - [UpdateRoomMembershipResponseTypeDef](#updateroommembershipresponsetypedef)
   - [UpdateRoomResponseTypeDef](#updateroomresponsetypedef)
+  - [UpdateSipMediaApplicationCallResponseTypeDef](#updatesipmediaapplicationcallresponsetypedef)
   - [UpdateSipMediaApplicationResponseTypeDef](#updatesipmediaapplicationresponsetypedef)
   - [UpdateSipRuleResponseTypeDef](#updatesipruleresponsetypedef)
   - [UpdateUserRequestItemTypeDef](#updateuserrequestitemtypedef)
@@ -2715,6 +2716,17 @@ from mypy_boto3_chime.type_defs import UpdateRoomResponseTypeDef
 Optional fields:
 
 - `Room`: [RoomTypeDef](./type_defs.md#roomtypedef)
+
+## UpdateSipMediaApplicationCallResponseTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import UpdateSipMediaApplicationCallResponseTypeDef
+```
+
+Optional fields:
+
+- `SipMediaApplicationCall`:
+  [SipMediaApplicationCallTypeDef](./type_defs.md#sipmediaapplicationcalltypedef)
 
 ## UpdateSipMediaApplicationResponseTypeDef
 

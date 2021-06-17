@@ -47,6 +47,7 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [ThesaurusStatusType](#thesaurusstatustype)
   - [UserContextPolicyType](#usercontextpolicytype)
+  - [WebCrawlerModeType](#webcrawlermodetype)
 
 ## AdditionalResultAttributeValueTypeType
 
@@ -202,6 +203,7 @@ Values:
 - `SALESFORCE`
 - `SERVICENOW`
 - `SHAREPOINT`
+- `WEBCRAWLER`
 
 ## DatabaseEngineTypeType
 
@@ -563,3 +565,15 @@ Values:
 
 - `ATTRIBUTE_FILTER`
 - `USER_TOKEN`
+
+## WebCrawlerModeType
+
+```python
+from mypy_boto3_kendra.literals import WebCrawlerModeType
+```
+
+Values:
+
+- `EVERYTHING`
+- `HOST_ONLY`
+- `SUBDOMAINS`

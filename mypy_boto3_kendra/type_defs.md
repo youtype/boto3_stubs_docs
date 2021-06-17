@@ -13,6 +13,8 @@ type annotations stubs module
   - [AdditionalResultAttributeTypeDef](#additionalresultattributetypedef)
   - [AdditionalResultAttributeValueTypeDef](#additionalresultattributevaluetypedef)
   - [AttributeFilterTypeDef](#attributefiltertypedef)
+  - [AuthenticationConfigurationTypeDef](#authenticationconfigurationtypedef)
+  - [BasicAuthenticationConfigurationTypeDef](#basicauthenticationconfigurationtypedef)
   - [BatchDeleteDocumentResponseFailedDocumentTypeDef](#batchdeletedocumentresponsefaileddocumenttypedef)
   - [BatchDeleteDocumentResponseTypeDef](#batchdeletedocumentresponsetypedef)
   - [BatchGetDocumentStatusResponseErrorTypeDef](#batchgetdocumentstatusresponseerrortypedef)
@@ -80,6 +82,7 @@ type annotations stubs module
   - [OneDriveConfigurationTypeDef](#onedriveconfigurationtypedef)
   - [OneDriveUsersTypeDef](#onedriveuserstypedef)
   - [PrincipalTypeDef](#principaltypedef)
+  - [ProxyConfigurationTypeDef](#proxyconfigurationtypedef)
   - [QueryResultItemTypeDef](#queryresultitemtypedef)
   - [QueryResultTypeDef](#queryresulttypedef)
   - [QuerySuggestionsBlockListSummaryTypeDef](#querysuggestionsblocklistsummarytypedef)
@@ -96,11 +99,13 @@ type annotations stubs module
   - [SalesforceStandardObjectConfigurationTypeDef](#salesforcestandardobjectconfigurationtypedef)
   - [ScoreAttributesTypeDef](#scoreattributestypedef)
   - [SearchTypeDef](#searchtypedef)
+  - [SeedUrlConfigurationTypeDef](#seedurlconfigurationtypedef)
   - [ServerSideEncryptionConfigurationTypeDef](#serversideencryptionconfigurationtypedef)
   - [ServiceNowConfigurationTypeDef](#servicenowconfigurationtypedef)
   - [ServiceNowKnowledgeArticleConfigurationTypeDef](#servicenowknowledgearticleconfigurationtypedef)
   - [ServiceNowServiceCatalogConfigurationTypeDef](#servicenowservicecatalogconfigurationtypedef)
   - [SharePointConfigurationTypeDef](#sharepointconfigurationtypedef)
+  - [SiteMapsConfigurationTypeDef](#sitemapsconfigurationtypedef)
   - [SortingConfigurationTypeDef](#sortingconfigurationtypedef)
   - [SqlConfigurationTypeDef](#sqlconfigurationtypedef)
   - [StartDataSourceSyncJobResponseTypeDef](#startdatasourcesyncjobresponsetypedef)
@@ -114,8 +119,10 @@ type annotations stubs module
   - [TextWithHighlightsTypeDef](#textwithhighlightstypedef)
   - [ThesaurusSummaryTypeDef](#thesaurussummarytypedef)
   - [TimeRangeTypeDef](#timerangetypedef)
+  - [UrlsTypeDef](#urlstypedef)
   - [UserContextTypeDef](#usercontexttypedef)
   - [UserTokenConfigurationTypeDef](#usertokenconfigurationtypedef)
+  - [WebCrawlerConfigurationTypeDef](#webcrawlerconfigurationtypedef)
 
 ## AccessControlListConfigurationTypeDef
 
@@ -189,6 +196,29 @@ Optional fields:
   [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 - `LessThanOrEquals`:
   [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
+
+## AuthenticationConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import AuthenticationConfigurationTypeDef
+```
+
+Optional fields:
+
+- `BasicAuthentication`:
+  `List`\[[BasicAuthenticationConfigurationTypeDef](./type_defs.md#basicauthenticationconfigurationtypedef)\]
+
+## BasicAuthenticationConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import BasicAuthenticationConfigurationTypeDef
+```
+
+Required fields:
+
+- `Host`: `str`
+- `Port`: `int`
+- `Credentials`: `str`
 
 ## BatchDeleteDocumentResponseFailedDocumentTypeDef
 
@@ -516,6 +546,8 @@ Optional fields:
   [ConfluenceConfigurationTypeDef](./type_defs.md#confluenceconfigurationtypedef)
 - `GoogleDriveConfiguration`:
   [GoogleDriveConfigurationTypeDef](./type_defs.md#googledriveconfigurationtypedef)
+- `WebCrawlerConfiguration`:
+  [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
 
 ## DataSourceSummaryTypeDef
 
@@ -1157,6 +1189,21 @@ Required fields:
 - `Type`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `Access`: [ReadAccessTypeType](./literals.md#readaccesstypetype)
 
+## ProxyConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ProxyConfigurationTypeDef
+```
+
+Required fields:
+
+- `Host`: `str`
+- `Port`: `int`
+
+Optional fields:
+
+- `Credentials`: `str`
+
 ## QueryResultItemTypeDef
 
 ```python
@@ -1415,6 +1462,20 @@ Optional fields:
 - `Displayable`: `bool`
 - `Sortable`: `bool`
 
+## SeedUrlConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SeedUrlConfigurationTypeDef
+```
+
+Required fields:
+
+- `SeedUrls`: `List`\[`str`\]
+
+Optional fields:
+
+- `WebCrawlerMode`: [WebCrawlerModeType](./literals.md#webcrawlermodetype)
+
 ## ServerSideEncryptionConfigurationTypeDef
 
 ```python
@@ -1511,6 +1572,16 @@ Optional fields:
   `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `DocumentTitleFieldName`: `str`
 - `DisableLocalGroups`: `bool`
+
+## SiteMapsConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SiteMapsConfigurationTypeDef
+```
+
+Required fields:
+
+- `SiteMaps`: `List`\[`str`\]
 
 ## SortingConfigurationTypeDef
 
@@ -1660,6 +1731,19 @@ Optional fields:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 
+## UrlsTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UrlsTypeDef
+```
+
+Optional fields:
+
+- `SeedUrlConfiguration`:
+  [SeedUrlConfigurationTypeDef](./type_defs.md#seedurlconfigurationtypedef)
+- `SiteMapsConfiguration`:
+  [SiteMapsConfigurationTypeDef](./type_defs.md#sitemapsconfigurationtypedef)
+
 ## UserContextTypeDef
 
 ```python
@@ -1682,3 +1766,26 @@ Optional fields:
   [JwtTokenTypeConfigurationTypeDef](./type_defs.md#jwttokentypeconfigurationtypedef)
 - `JsonTokenTypeConfiguration`:
   [JsonTokenTypeConfigurationTypeDef](./type_defs.md#jsontokentypeconfigurationtypedef)
+
+## WebCrawlerConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import WebCrawlerConfigurationTypeDef
+```
+
+Required fields:
+
+- `Urls`: [UrlsTypeDef](./type_defs.md#urlstypedef)
+
+Optional fields:
+
+- `CrawlDepth`: `int`
+- `MaxLinksPerPage`: `int`
+- `MaxContentSizePerPageInMegaBytes`: `float`
+- `MaxUrlsPerMinuteCrawlRate`: `int`
+- `UrlInclusionPatterns`: `List`\[`str`\]
+- `UrlExclusionPatterns`: `List`\[`str`\]
+- `ProxyConfiguration`:
+  [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
+- `AuthenticationConfiguration`:
+  [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)

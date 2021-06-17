@@ -1151,6 +1151,13 @@ Optional fields:
   `List`\[[DBInstanceAutomatedBackupsReplicationTypeDef](./type_defs.md#dbinstanceautomatedbackupsreplicationtypedef)\]
 - `CustomerOwnedIpEnabled`: `bool`
 - `AwsBackupRecoveryPointArn`: `str`
+- `ActivityStreamStatus`:
+  [ActivityStreamStatusType](./literals.md#activitystreamstatustype)
+- `ActivityStreamKmsKeyId`: `str`
+- `ActivityStreamKinesisStreamName`: `str`
+- `ActivityStreamMode`:
+  [ActivityStreamModeType](./literals.md#activitystreammodetype)
+- `ActivityStreamEngineNativeAuditFieldsIncluded`: `bool`
 
 ## DBParameterGroupDetailsTypeDef
 
@@ -2340,6 +2347,7 @@ Optional fields:
 - `SupportsStorageAutoscaling`: `bool`
 - `SupportsKerberosAuthentication`: `bool`
 - `OutpostCapable`: `bool`
+- `SupportedActivityStreamModes`: `List`\[`str`\]
 - `SupportsGlobalDatabases`: `bool`
 
 ## OrderableDBInstanceOptionsMessageTypeDef
@@ -2798,6 +2806,7 @@ Optional fields:
 - `Status`: [ActivityStreamStatusType](./literals.md#activitystreamstatustype)
 - `Mode`: [ActivityStreamModeType](./literals.md#activitystreammodetype)
 - `ApplyImmediately`: `bool`
+- `EngineNativeAuditFieldsIncluded`: `bool`
 
 ## StartDBClusterResultTypeDef
 

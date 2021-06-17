@@ -2251,6 +2251,12 @@ Values:
 - `ml.c5.4xlarge`
 - `ml.c5.9xlarge`
 - `ml.c5.xlarge`
+- `ml.g4dn.12xlarge`
+- `ml.g4dn.16xlarge`
+- `ml.g4dn.2xlarge`
+- `ml.g4dn.4xlarge`
+- `ml.g4dn.8xlarge`
+- `ml.g4dn.xlarge`
 - `ml.m4.10xlarge`
 - `ml.m4.16xlarge`
 - `ml.m4.2xlarge`
@@ -3057,6 +3063,12 @@ Values:
 - `ml.c5.4xlarge`
 - `ml.c5.9xlarge`
 - `ml.c5.xlarge`
+- `ml.g4dn.12xlarge`
+- `ml.g4dn.16xlarge`
+- `ml.g4dn.2xlarge`
+- `ml.g4dn.4xlarge`
+- `ml.g4dn.8xlarge`
+- `ml.g4dn.xlarge`
 - `ml.m4.10xlarge`
 - `ml.m4.16xlarge`
 - `ml.m4.2xlarge`
