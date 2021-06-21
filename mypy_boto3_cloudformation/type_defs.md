@@ -10,7 +10,10 @@ type annotations stubs module
 - [Typed dictionaries for boto3 CloudFormation module](#typed-dictionaries-for-boto3-cloudformation-module)
   - [AccountGateResultTypeDef](#accountgateresulttypedef)
   - [AccountLimitTypeDef](#accountlimittypedef)
+  - [ActivateTypeOutputTypeDef](#activatetypeoutputtypedef)
   - [AutoDeploymentTypeDef](#autodeploymenttypedef)
+  - [BatchDescribeTypeConfigurationsErrorTypeDef](#batchdescribetypeconfigurationserrortypedef)
+  - [BatchDescribeTypeConfigurationsOutputTypeDef](#batchdescribetypeconfigurationsoutputtypedef)
   - [ChangeSetSummaryTypeDef](#changesetsummarytypedef)
   - [ChangeTypeDef](#changetypedef)
   - [CreateChangeSetOutputTypeDef](#createchangesetoutputtypedef)
@@ -21,6 +24,7 @@ type annotations stubs module
   - [DeploymentTargetsTypeDef](#deploymenttargetstypedef)
   - [DescribeAccountLimitsOutputTypeDef](#describeaccountlimitsoutputtypedef)
   - [DescribeChangeSetOutputTypeDef](#describechangesetoutputtypedef)
+  - [DescribePublisherOutputTypeDef](#describepublisheroutputtypedef)
   - [DescribeStackDriftDetectionStatusOutputTypeDef](#describestackdriftdetectionstatusoutputtypedef)
   - [DescribeStackEventsOutputTypeDef](#describestackeventsoutputtypedef)
   - [DescribeStackInstanceOutputTypeDef](#describestackinstanceoutputtypedef)
@@ -61,7 +65,10 @@ type annotations stubs module
   - [ParameterTypeDef](#parametertypedef)
   - [PhysicalResourceIdContextKeyValuePairTypeDef](#physicalresourceidcontextkeyvaluepairtypedef)
   - [PropertyDifferenceTypeDef](#propertydifferencetypedef)
+  - [PublishTypeOutputTypeDef](#publishtypeoutputtypedef)
+  - [RegisterPublisherOutputTypeDef](#registerpublisheroutputtypedef)
   - [RegisterTypeOutputTypeDef](#registertypeoutputtypedef)
+  - [RequiredActivatedTypeTypeDef](#requiredactivatedtypetypedef)
   - [ResourceChangeDetailTypeDef](#resourcechangedetailtypedef)
   - [ResourceChangeTypeDef](#resourcechangetypedef)
   - [ResourceIdentifierSummaryTypeDef](#resourceidentifiersummarytypedef)
@@ -70,6 +77,7 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RollbackConfigurationTypeDef](#rollbackconfigurationtypedef)
   - [RollbackTriggerTypeDef](#rollbacktriggertypedef)
+  - [SetTypeConfigurationOutputTypeDef](#settypeconfigurationoutputtypedef)
   - [StackDriftInformationSummaryTypeDef](#stackdriftinformationsummarytypedef)
   - [StackDriftInformationTypeDef](#stackdriftinformationtypedef)
   - [StackEventTypeDef](#stackeventtypedef)
@@ -94,6 +102,10 @@ type annotations stubs module
   - [StackTypeDef](#stacktypedef)
   - [TagTypeDef](#tagtypedef)
   - [TemplateParameterTypeDef](#templateparametertypedef)
+  - [TestTypeOutputTypeDef](#testtypeoutputtypedef)
+  - [TypeConfigurationDetailsTypeDef](#typeconfigurationdetailstypedef)
+  - [TypeConfigurationIdentifierTypeDef](#typeconfigurationidentifiertypedef)
+  - [TypeFiltersTypeDef](#typefilterstypedef)
   - [TypeSummaryTypeDef](#typesummarytypedef)
   - [TypeVersionSummaryTypeDef](#typeversionsummarytypedef)
   - [UpdateStackInstancesOutputTypeDef](#updatestackinstancesoutputtypedef)
@@ -125,6 +137,18 @@ Optional fields:
 - `Name`: `str`
 - `Value`: `int`
 
+## ActivateTypeOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ActivateTypeOutputTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## AutoDeploymentTypeDef
 
 ```python
@@ -135,6 +159,36 @@ Optional fields:
 
 - `Enabled`: `bool`
 - `RetainStacksOnAccountRemoval`: `bool`
+
+## BatchDescribeTypeConfigurationsErrorTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsErrorTypeDef
+```
+
+Optional fields:
+
+- `ErrorCode`: `str`
+- `ErrorMessage`: `str`
+- `TypeConfigurationIdentifier`:
+  [TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)
+
+## BatchDescribeTypeConfigurationsOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsOutputTypeDef
+```
+
+Required fields:
+
+- `Errors`:
+  `List`\[[BatchDescribeTypeConfigurationsErrorTypeDef](./type_defs.md#batchdescribetypeconfigurationserrortypedef)\]
+- `UnprocessedTypeConfigurations`:
+  `List`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
+- `TypeConfigurations`:
+  `List`\[[TypeConfigurationDetailsTypeDef](./type_defs.md#typeconfigurationdetailstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ChangeSetSummaryTypeDef
 
@@ -288,6 +342,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribePublisherOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribePublisherOutputTypeDef
+```
+
+Required fields:
+
+- `PublisherId`: `str`
+- `PublisherStatus`: [PublisherStatusType](./literals.md#publisherstatustype)
+- `IdentityProvider`:
+  [IdentityProviderType](./literals.md#identityprovidertype)
+- `PublisherProfile`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeStackDriftDetectionStatusOutputTypeDef
 
 ```python
@@ -425,6 +495,8 @@ Required fields:
 - `TypeName`: `str`
 - `DefaultVersionId`: `str`
 - `IsDefaultVersion`: `bool`
+- `TypeTestsStatus`: [TypeTestsStatusType](./literals.md#typetestsstatustype)
+- `TypeTestsStatusDescription`: `str`
 - `Description`: `str`
 - `Schema`: `str`
 - `ProvisioningType`:
@@ -432,12 +504,22 @@ Required fields:
 - `DeprecatedStatus`:
   [DeprecatedStatusType](./literals.md#deprecatedstatustype)
 - `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
+- `RequiredActivatedTypes`:
+  `List`\[[RequiredActivatedTypeTypeDef](./type_defs.md#requiredactivatedtypetypedef)\]
 - `ExecutionRoleArn`: `str`
 - `Visibility`: [VisibilityType](./literals.md#visibilitytype)
 - `SourceUrl`: `str`
 - `DocumentationUrl`: `str`
 - `LastUpdated`: `datetime`
 - `TimeCreated`: `datetime`
+- `ConfigurationSchema`: `str`
+- `PublisherId`: `str`
+- `OriginalTypeName`: `str`
+- `OriginalTypeArn`: `str`
+- `PublicVersionNumber`: `str`
+- `LatestPublicVersion`: `str`
+- `IsActivated`: `bool`
+- `AutoUpdate`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -843,6 +925,30 @@ Required fields:
 - `ActualValue`: `str`
 - `DifferenceType`: [DifferenceTypeType](./literals.md#differencetypetype)
 
+## PublishTypeOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import PublishTypeOutputTypeDef
+```
+
+Required fields:
+
+- `PublicTypeArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RegisterPublisherOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RegisterPublisherOutputTypeDef
+```
+
+Required fields:
+
+- `PublisherId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RegisterTypeOutputTypeDef
 
 ```python
@@ -854,6 +960,19 @@ Required fields:
 - `RegistrationToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RequiredActivatedTypeTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RequiredActivatedTypeTypeDef
+```
+
+Optional fields:
+
+- `TypeNameAlias`: `str`
+- `OriginalTypeName`: `str`
+- `PublisherId`: `str`
+- `SupportedMajorVersions`: `List`\[`int`\]
 
 ## ResourceChangeDetailTypeDef
 
@@ -962,6 +1081,18 @@ Required fields:
 
 - `Arn`: `str`
 - `Type`: `str`
+
+## SetTypeConfigurationOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import SetTypeConfigurationOutputTypeDef
+```
+
+Required fields:
+
+- `ConfigurationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StackDriftInformationSummaryTypeDef
 
@@ -1429,6 +1560,60 @@ Optional fields:
 - `NoEcho`: `bool`
 - `Description`: `str`
 
+## TestTypeOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import TestTypeOutputTypeDef
+```
+
+Required fields:
+
+- `TypeVersionArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TypeConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import TypeConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Alias`: `str`
+- `Configuration`: `str`
+- `LastUpdated`: `datetime`
+- `TypeArn`: `str`
+- `TypeName`: `str`
+- `IsDefaultConfiguration`: `bool`
+
+## TypeConfigurationIdentifierTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import TypeConfigurationIdentifierTypeDef
+```
+
+Optional fields:
+
+- `TypeArn`: `str`
+- `TypeConfigurationAlias`: `str`
+- `TypeConfigurationArn`: `str`
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `TypeName`: `str`
+
+## TypeFiltersTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import TypeFiltersTypeDef
+```
+
+Optional fields:
+
+- `Category`: [CategoryType](./literals.md#categorytype)
+- `PublisherId`: `str`
+- `TypeNamePrefix`: `str`
+
 ## TypeSummaryTypeDef
 
 ```python
@@ -1443,6 +1628,14 @@ Optional fields:
 - `TypeArn`: `str`
 - `LastUpdated`: `datetime`
 - `Description`: `str`
+- `PublisherId`: `str`
+- `OriginalTypeName`: `str`
+- `PublicVersionNumber`: `str`
+- `LatestPublicVersion`: `str`
+- `PublisherIdentity`:
+  [IdentityProviderType](./literals.md#identityprovidertype)
+- `PublisherName`: `str`
+- `IsActivated`: `bool`
 
 ## TypeVersionSummaryTypeDef
 
@@ -1459,6 +1652,7 @@ Optional fields:
 - `Arn`: `str`
 - `TimeCreated`: `datetime`
 - `Description`: `str`
+- `PublicVersionNumber`: `str`
 
 ## UpdateStackInstancesOutputTypeDef
 

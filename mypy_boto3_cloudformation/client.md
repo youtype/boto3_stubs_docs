@@ -11,6 +11,8 @@ type annotations stubs module
   - [CloudFormationClient](#cloudformationclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [activate_type](#activate_type)
+    - [batch_describe_type_configurations](#batch_describe_type_configurations)
     - [can_paginate](#can_paginate)
     - [cancel_update_stack](#cancel_update_stack)
     - [continue_update_rollback](#continue_update_rollback)
@@ -18,6 +20,7 @@ type annotations stubs module
     - [create_stack](#create_stack)
     - [create_stack_instances](#create_stack_instances)
     - [create_stack_set](#create_stack_set)
+    - [deactivate_type](#deactivate_type)
     - [delete_change_set](#delete_change_set)
     - [delete_stack](#delete_stack)
     - [delete_stack_instances](#delete_stack_instances)
@@ -25,6 +28,7 @@ type annotations stubs module
     - [deregister_type](#deregister_type)
     - [describe_account_limits](#describe_account_limits)
     - [describe_change_set](#describe_change_set)
+    - [describe_publisher](#describe_publisher)
     - [describe_stack_drift_detection_status](#describe_stack_drift_detection_status)
     - [describe_stack_events](#describe_stack_events)
     - [describe_stack_instance](#describe_stack_instance)
@@ -57,12 +61,16 @@ type annotations stubs module
     - [list_type_registrations](#list_type_registrations)
     - [list_type_versions](#list_type_versions)
     - [list_types](#list_types)
+    - [publish_type](#publish_type)
     - [record_handler_progress](#record_handler_progress)
+    - [register_publisher](#register_publisher)
     - [register_type](#register_type)
     - [set_stack_policy](#set_stack_policy)
+    - [set_type_configuration](#set_type_configuration)
     - [set_type_default_version](#set_type_default_version)
     - [signal_resource](#signal_resource)
     - [stop_stack_set_operation](#stop_stack_set_operation)
+    - [test_type](#test_type)
     - [update_stack](#update_stack)
     - [update_stack_instances](#update_stack_instances)
     - [update_stack_set](#update_stack_set)
@@ -121,9 +129,49 @@ Exceptions:
 - `Exceptions.StackSetNotFoundException`
 - `Exceptions.StaleRequestException`
 - `Exceptions.TokenAlreadyExistsException`
+- `Exceptions.TypeConfigurationNotFoundException`
 - `Exceptions.TypeNotFoundException`
 
 ## Methods
+
+### activate_type
+
+Type annotations for `boto3.client("cloudformation").activate_type` method.
+
+Boto3 documentation:
+[CloudFormation.Client.activate_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.activate_type)
+
+Keyword-only arguments:
+
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `PublicTypeArn`: `str`
+- `PublisherId`: `str`
+- `TypeName`: `str`
+- `TypeNameAlias`: `str`
+- `AutoUpdate`: `bool`
+- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
+- `ExecutionRoleArn`: `str`
+- `VersionBump`: [VersionBumpType](./literals.md#versionbumptype)
+- `MajorVersion`: `int`
+
+Returns [ActivateTypeOutputTypeDef](./type_defs.md#activatetypeoutputtypedef).
+
+### batch_describe_type_configurations
+
+Type annotations for
+`boto3.client("cloudformation").batch_describe_type_configurations` method.
+
+Boto3 documentation:
+[CloudFormation.Client.batch_describe_type_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.batch_describe_type_configurations)
+
+Keyword-only arguments:
+
+- `TypeConfigurationIdentifiers`:
+  `List`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
+  *(required)*
+
+Returns
+[BatchDescribeTypeConfigurationsOutputTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputtypedef).
 
 ### can_paginate
 
@@ -282,6 +330,21 @@ Keyword-only arguments:
 Returns
 [CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef).
 
+### deactivate_type
+
+Type annotations for `boto3.client("cloudformation").deactivate_type` method.
+
+Boto3 documentation:
+[CloudFormation.Client.deactivate_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deactivate_type)
+
+Keyword-only arguments:
+
+- `TypeName`: `str`
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `Arn`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_change_set
 
 Type annotations for `boto3.client("cloudformation").delete_change_set` method.
@@ -395,6 +458,21 @@ Keyword-only arguments:
 
 Returns
 [DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef).
+
+### describe_publisher
+
+Type annotations for `boto3.client("cloudformation").describe_publisher`
+method.
+
+Boto3 documentation:
+[CloudFormation.Client.describe_publisher](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_publisher)
+
+Keyword-only arguments:
+
+- `PublisherId`: `str`
+
+Returns
+[DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef).
 
 ### describe_stack_drift_detection_status
 
@@ -558,6 +636,8 @@ Keyword-only arguments:
 - `TypeName`: `str`
 - `Arn`: `str`
 - `VersionId`: `str`
+- `PublisherId`: `str`
+- `PublicVersionNumber`: `str`
 
 Returns [DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef).
 
@@ -912,6 +992,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `DeprecatedStatus`:
   [DeprecatedStatusType](./literals.md#deprecatedstatustype)
+- `PublisherId`: `str`
 
 Returns
 [ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef).
@@ -931,10 +1012,27 @@ Keyword-only arguments:
 - `DeprecatedStatus`:
   [DeprecatedStatusType](./literals.md#deprecatedstatustype)
 - `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `Filters`: [TypeFiltersTypeDef](./type_defs.md#typefilterstypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef).
+
+### publish_type
+
+Type annotations for `boto3.client("cloudformation").publish_type` method.
+
+Boto3 documentation:
+[CloudFormation.Client.publish_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.publish_type)
+
+Keyword-only arguments:
+
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `Arn`: `str`
+- `TypeName`: `str`
+- `PublicVersionNumber`: `str`
+
+Returns [PublishTypeOutputTypeDef](./type_defs.md#publishtypeoutputtypedef).
 
 ### record_handler_progress
 
@@ -957,6 +1055,22 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+### register_publisher
+
+Type annotations for `boto3.client("cloudformation").register_publisher`
+method.
+
+Boto3 documentation:
+[CloudFormation.Client.register_publisher](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_publisher)
+
+Keyword-only arguments:
+
+- `AcceptTermsAndConditions`: `bool`
+- `ConnectionArn`: `str`
+
+Returns
+[RegisterPublisherOutputTypeDef](./type_defs.md#registerpublisheroutputtypedef).
 
 ### register_type
 
@@ -988,6 +1102,25 @@ Keyword-only arguments:
 - `StackName`: `str` *(required)*
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
+
+### set_type_configuration
+
+Type annotations for `boto3.client("cloudformation").set_type_configuration`
+method.
+
+Boto3 documentation:
+[CloudFormation.Client.set_type_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_configuration)
+
+Keyword-only arguments:
+
+- `Configuration`: `str` *(required)*
+- `TypeArn`: `str`
+- `ConfigurationAlias`: `str`
+- `TypeName`: `str`
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+
+Returns
+[SetTypeConfigurationOutputTypeDef](./type_defs.md#settypeconfigurationoutputtypedef).
 
 ### set_type_default_version
 
@@ -1036,6 +1169,23 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+### test_type
+
+Type annotations for `boto3.client("cloudformation").test_type` method.
+
+Boto3 documentation:
+[CloudFormation.Client.test_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.test_type)
+
+Keyword-only arguments:
+
+- `Arn`: `str`
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `TypeName`: `str`
+- `VersionId`: `str`
+- `LogDeliveryBucket`: `str`
+
+Returns [TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef).
 
 ### update_stack
 
@@ -1187,6 +1337,8 @@ overloads.
   [ListStackSetsPaginator](./paginators.md#liststacksetspaginator)
 - `client.get_paginator("list_stacks")` ->
   [ListStacksPaginator](./paginators.md#liststackspaginator)
+- `client.get_paginator("list_types")` ->
+  [ListTypesPaginator](./paginators.md#listtypespaginator)
 
 ### get_waiter
 

@@ -21,6 +21,7 @@ type annotations stubs module
   - [ListStackSetOperationsPaginator](#liststacksetoperationspaginator)
   - [ListStackSetsPaginator](#liststacksetspaginator)
   - [ListStacksPaginator](#liststackspaginator)
+  - [ListTypesPaginator](#listtypespaginator)
 
 ## DescribeAccountLimitsPaginator
 
@@ -368,3 +369,35 @@ Arguments for `ListStacksPaginator.paginate` method:
 
 `ListStacksPaginator.paginate` returns
 `Iterator`\[[ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef)\].
+
+## ListTypesPaginator
+
+Type annotations for
+`boto3.client("cloudformation").get_paginator("list_types")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_cloudformation.paginator import ListTypesPaginator
+
+def get_list_types_paginator() -> ListTypesPaginator:
+    return boto3.client("cloudformation").get_paginator("list_types")
+```
+
+Boto3 documentation:
+[CloudFormation.Paginator.ListTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Paginator.ListTypes)
+
+Arguments for `ListTypesPaginator.paginate` method:
+
+- `Visibility`: [VisibilityType](./literals.md#visibilitytype)
+- `ProvisioningType`:
+  [ProvisioningTypeType](./literals.md#provisioningtypetype)
+- `DeprecatedStatus`:
+  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `Filters`: [TypeFiltersTypeDef](./type_defs.md#typefilterstypedef)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListTypesPaginator.paginate` returns
+`Iterator`\[[ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef)\].

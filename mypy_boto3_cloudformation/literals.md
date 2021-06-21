@@ -11,6 +11,7 @@ type annotations stubs module
   - [AccountGateStatusType](#accountgatestatustype)
   - [CallAsType](#callastype)
   - [CapabilityType](#capabilitytype)
+  - [CategoryType](#categorytype)
   - [ChangeActionType](#changeactiontype)
   - [ChangeSetCreateCompleteWaiterName](#changesetcreatecompletewaitername)
   - [ChangeSetStatusType](#changesetstatustype)
@@ -26,6 +27,7 @@ type annotations stubs module
   - [EvaluationTypeType](#evaluationtypetype)
   - [ExecutionStatusType](#executionstatustype)
   - [HandlerErrorCodeType](#handlererrorcodetype)
+  - [IdentityProviderType](#identityprovidertype)
   - [ListChangeSetsPaginatorName](#listchangesetspaginatorname)
   - [ListExportsPaginatorName](#listexportspaginatorname)
   - [ListImportsPaginatorName](#listimportspaginatorname)
@@ -35,10 +37,12 @@ type annotations stubs module
   - [ListStackSetOperationsPaginatorName](#liststacksetoperationspaginatorname)
   - [ListStackSetsPaginatorName](#liststacksetspaginatorname)
   - [ListStacksPaginatorName](#liststackspaginatorname)
+  - [ListTypesPaginatorName](#listtypespaginatorname)
   - [OnFailureType](#onfailuretype)
   - [OperationStatusType](#operationstatustype)
   - [PermissionModelsType](#permissionmodelstype)
   - [ProvisioningTypeType](#provisioningtypetype)
+  - [PublisherStatusType](#publisherstatustype)
   - [RegionConcurrencyTypeType](#regionconcurrencytypetype)
   - [RegistrationStatusType](#registrationstatustype)
   - [RegistryTypeType](#registrytypetype)
@@ -67,7 +71,10 @@ type annotations stubs module
   - [StackStatusType](#stackstatustype)
   - [StackUpdateCompleteWaiterName](#stackupdatecompletewaitername)
   - [TemplateStageType](#templatestagetype)
+  - [ThirdPartyTypeType](#thirdpartytypetype)
   - [TypeRegistrationCompleteWaiterName](#typeregistrationcompletewaitername)
+  - [TypeTestsStatusType](#typetestsstatustype)
+  - [VersionBumpType](#versionbumptype)
   - [VisibilityType](#visibilitytype)
 
 ## AccountGateStatusType
@@ -104,6 +111,19 @@ Values:
 - `CAPABILITY_AUTO_EXPAND`
 - `CAPABILITY_IAM`
 - `CAPABILITY_NAMED_IAM`
+
+## CategoryType
+
+```python
+from mypy_boto3_cloudformation.literals import CategoryType
+```
+
+Values:
+
+- `ACTIVATED`
+- `AWS_TYPES`
+- `REGISTERED`
+- `THIRD_PARTY`
 
 ## ChangeActionType
 
@@ -285,6 +305,7 @@ Values:
 - `InternalFailure`
 - `InvalidCredentials`
 - `InvalidRequest`
+- `InvalidTypeConfiguration`
 - `NetworkFailure`
 - `NotFound`
 - `NotStabilized`
@@ -293,6 +314,18 @@ Values:
 - `ServiceInternalError`
 - `ServiceLimitExceeded`
 - `Throttling`
+
+## IdentityProviderType
+
+```python
+from mypy_boto3_cloudformation.literals import IdentityProviderType
+```
+
+Values:
+
+- `AWS_Marketplace`
+- `Bitbucket`
+- `GitHub`
 
 ## ListChangeSetsPaginatorName
 
@@ -384,6 +417,16 @@ Values:
 
 - `list_stacks`
 
+## ListTypesPaginatorName
+
+```python
+from mypy_boto3_cloudformation.literals import ListTypesPaginatorName
+```
+
+Values:
+
+- `list_types`
+
 ## OnFailureType
 
 ```python
@@ -431,6 +474,17 @@ Values:
 - `FULLY_MUTABLE`
 - `IMMUTABLE`
 - `NON_PROVISIONABLE`
+
+## PublisherStatusType
+
+```python
+from mypy_boto3_cloudformation.literals import PublisherStatusType
+```
+
+Values:
+
+- `UNVERIFIED`
+- `VERIFIED`
 
 ## RegionConcurrencyTypeType
 
@@ -805,6 +859,17 @@ Values:
 - `Original`
 - `Processed`
 
+## ThirdPartyTypeType
+
+```python
+from mypy_boto3_cloudformation.literals import ThirdPartyTypeType
+```
+
+Values:
+
+- `MODULE`
+- `RESOURCE`
+
 ## TypeRegistrationCompleteWaiterName
 
 ```python
@@ -814,6 +879,30 @@ from mypy_boto3_cloudformation.literals import TypeRegistrationCompleteWaiterNam
 Values:
 
 - `type_registration_complete`
+
+## TypeTestsStatusType
+
+```python
+from mypy_boto3_cloudformation.literals import TypeTestsStatusType
+```
+
+Values:
+
+- `FAILED`
+- `IN_PROGRESS`
+- `NOT_TESTED`
+- `PASSED`
+
+## VersionBumpType
+
+```python
+from mypy_boto3_cloudformation.literals import VersionBumpType
+```
+
+Values:
+
+- `MAJOR`
+- `MINOR`
 
 ## VisibilityType
 

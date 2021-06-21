@@ -36,6 +36,8 @@ from mypy_boto3_cloudformation.client import CloudFormationClient
 
 ### Methods
 
+- [activate_type](./client.md#activate_type)
+- [batch_describe_type_configurations](./client.md#batch_describe_type_configurations)
 - [can_paginate](./client.md#can_paginate)
 - [cancel_update_stack](./client.md#cancel_update_stack)
 - [continue_update_rollback](./client.md#continue_update_rollback)
@@ -43,6 +45,7 @@ from mypy_boto3_cloudformation.client import CloudFormationClient
 - [create_stack](./client.md#create_stack)
 - [create_stack_instances](./client.md#create_stack_instances)
 - [create_stack_set](./client.md#create_stack_set)
+- [deactivate_type](./client.md#deactivate_type)
 - [delete_change_set](./client.md#delete_change_set)
 - [delete_stack](./client.md#delete_stack)
 - [delete_stack_instances](./client.md#delete_stack_instances)
@@ -50,6 +53,7 @@ from mypy_boto3_cloudformation.client import CloudFormationClient
 - [deregister_type](./client.md#deregister_type)
 - [describe_account_limits](./client.md#describe_account_limits)
 - [describe_change_set](./client.md#describe_change_set)
+- [describe_publisher](./client.md#describe_publisher)
 - [describe_stack_drift_detection_status](./client.md#describe_stack_drift_detection_status)
 - [describe_stack_events](./client.md#describe_stack_events)
 - [describe_stack_instance](./client.md#describe_stack_instance)
@@ -84,12 +88,16 @@ from mypy_boto3_cloudformation.client import CloudFormationClient
 - [list_type_registrations](./client.md#list_type_registrations)
 - [list_type_versions](./client.md#list_type_versions)
 - [list_types](./client.md#list_types)
+- [publish_type](./client.md#publish_type)
 - [record_handler_progress](./client.md#record_handler_progress)
+- [register_publisher](./client.md#register_publisher)
 - [register_type](./client.md#register_type)
 - [set_stack_policy](./client.md#set_stack_policy)
+- [set_type_configuration](./client.md#set_type_configuration)
 - [set_type_default_version](./client.md#set_type_default_version)
 - [signal_resource](./client.md#signal_resource)
 - [stop_stack_set_operation](./client.md#stop_stack_set_operation)
+- [test_type](./client.md#test_type)
 - [update_stack](./client.md#update_stack)
 - [update_stack_instances](./client.md#update_stack_instances)
 - [update_stack_set](./client.md#update_stack_set)
@@ -120,6 +128,7 @@ CloudFormationClient [exceptions](./client.md#exceptions)
 - StackSetNotFoundException
 - StaleRequestException
 - TokenAlreadyExistsException
+- TypeConfigurationNotFoundException
 - TypeNotFoundException
 
 ## CloudFormationServiceResource
@@ -185,6 +194,7 @@ from mypy_boto3_cloudformation.paginators import DescribeAccountLimitsPaginator,
 - [ListStackSetOperationsPaginator](./paginators.md#liststacksetoperationspaginator)
 - [ListStackSetsPaginator](./paginators.md#liststacksetspaginator)
 - [ListStacksPaginator](./paginators.md#liststackspaginator)
+- [ListTypesPaginator](./paginators.md#listtypespaginator)
 
 ## Waiters
 
@@ -219,6 +229,7 @@ from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
 - [AccountGateStatusType](./literals.md#accountgatestatustype)
 - [CallAsType](./literals.md#callastype)
 - [CapabilityType](./literals.md#capabilitytype)
+- [CategoryType](./literals.md#categorytype)
 - [ChangeActionType](./literals.md#changeactiontype)
 - [ChangeSetCreateCompleteWaiterName](./literals.md#changesetcreatecompletewaitername)
 - [ChangeSetStatusType](./literals.md#changesetstatustype)
@@ -234,6 +245,7 @@ from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
 - [EvaluationTypeType](./literals.md#evaluationtypetype)
 - [ExecutionStatusType](./literals.md#executionstatustype)
 - [HandlerErrorCodeType](./literals.md#handlererrorcodetype)
+- [IdentityProviderType](./literals.md#identityprovidertype)
 - [ListChangeSetsPaginatorName](./literals.md#listchangesetspaginatorname)
 - [ListExportsPaginatorName](./literals.md#listexportspaginatorname)
 - [ListImportsPaginatorName](./literals.md#listimportspaginatorname)
@@ -243,10 +255,12 @@ from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
 - [ListStackSetOperationsPaginatorName](./literals.md#liststacksetoperationspaginatorname)
 - [ListStackSetsPaginatorName](./literals.md#liststacksetspaginatorname)
 - [ListStacksPaginatorName](./literals.md#liststackspaginatorname)
+- [ListTypesPaginatorName](./literals.md#listtypespaginatorname)
 - [OnFailureType](./literals.md#onfailuretype)
 - [OperationStatusType](./literals.md#operationstatustype)
 - [PermissionModelsType](./literals.md#permissionmodelstype)
 - [ProvisioningTypeType](./literals.md#provisioningtypetype)
+- [PublisherStatusType](./literals.md#publisherstatustype)
 - [RegionConcurrencyTypeType](./literals.md#regionconcurrencytypetype)
 - [RegistrationStatusType](./literals.md#registrationstatustype)
 - [RegistryTypeType](./literals.md#registrytypetype)
@@ -275,7 +289,10 @@ from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
 - [StackStatusType](./literals.md#stackstatustype)
 - [StackUpdateCompleteWaiterName](./literals.md#stackupdatecompletewaitername)
 - [TemplateStageType](./literals.md#templatestagetype)
+- [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
 - [TypeRegistrationCompleteWaiterName](./literals.md#typeregistrationcompletewaitername)
+- [TypeTestsStatusType](./literals.md#typetestsstatustype)
+- [VersionBumpType](./literals.md#versionbumptype)
 - [VisibilityType](./literals.md#visibilitytype)
 
 ## Typed dictionaries
@@ -291,7 +308,10 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 
 - [AccountGateResultTypeDef](./type_defs.md#accountgateresulttypedef)
 - [AccountLimitTypeDef](./type_defs.md#accountlimittypedef)
+- [ActivateTypeOutputTypeDef](./type_defs.md#activatetypeoutputtypedef)
 - [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
+- [BatchDescribeTypeConfigurationsErrorTypeDef](./type_defs.md#batchdescribetypeconfigurationserrortypedef)
+- [BatchDescribeTypeConfigurationsOutputTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputtypedef)
 - [ChangeSetSummaryTypeDef](./type_defs.md#changesetsummarytypedef)
 - [ChangeTypeDef](./type_defs.md#changetypedef)
 - [CreateChangeSetOutputTypeDef](./type_defs.md#createchangesetoutputtypedef)
@@ -302,6 +322,7 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - [DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)
 - [DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef)
+- [DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef)
 - [DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef)
 - [DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef)
 - [DescribeStackInstanceOutputTypeDef](./type_defs.md#describestackinstanceoutputtypedef)
@@ -342,7 +363,10 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [ParameterTypeDef](./type_defs.md#parametertypedef)
 - [PhysicalResourceIdContextKeyValuePairTypeDef](./type_defs.md#physicalresourceidcontextkeyvaluepairtypedef)
 - [PropertyDifferenceTypeDef](./type_defs.md#propertydifferencetypedef)
+- [PublishTypeOutputTypeDef](./type_defs.md#publishtypeoutputtypedef)
+- [RegisterPublisherOutputTypeDef](./type_defs.md#registerpublisheroutputtypedef)
 - [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef)
+- [RequiredActivatedTypeTypeDef](./type_defs.md#requiredactivatedtypetypedef)
 - [ResourceChangeDetailTypeDef](./type_defs.md#resourcechangedetailtypedef)
 - [ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef)
 - [ResourceIdentifierSummaryTypeDef](./type_defs.md#resourceidentifiersummarytypedef)
@@ -351,6 +375,7 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - [RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)
+- [SetTypeConfigurationOutputTypeDef](./type_defs.md#settypeconfigurationoutputtypedef)
 - [StackDriftInformationSummaryTypeDef](./type_defs.md#stackdriftinformationsummarytypedef)
 - [StackDriftInformationTypeDef](./type_defs.md#stackdriftinformationtypedef)
 - [StackEventTypeDef](./type_defs.md#stackeventtypedef)
@@ -375,6 +400,10 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [StackTypeDef](./type_defs.md#stacktypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TemplateParameterTypeDef](./type_defs.md#templateparametertypedef)
+- [TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef)
+- [TypeConfigurationDetailsTypeDef](./type_defs.md#typeconfigurationdetailstypedef)
+- [TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)
+- [TypeFiltersTypeDef](./type_defs.md#typefilterstypedef)
 - [TypeSummaryTypeDef](./type_defs.md#typesummarytypedef)
 - [TypeVersionSummaryTypeDef](./type_defs.md#typeversionsummarytypedef)
 - [UpdateStackInstancesOutputTypeDef](./type_defs.md#updatestackinstancesoutputtypedef)
