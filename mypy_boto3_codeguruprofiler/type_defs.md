@@ -276,7 +276,7 @@ from mypy_boto3_codeguruprofiler.type_defs import GetProfileResponseTypeDef
 Required fields:
 
 - `contentType`: `str`
-- `profile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `profile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Optional fields:
 

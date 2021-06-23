@@ -1256,7 +1256,7 @@ from mypy_boto3_glue.type_defs import DecimalNumberTypeDef
 
 Required fields:
 
-- `UnscaledValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `UnscaledValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Scale`: `int`
 
 ## DeleteJobResponseTypeDef

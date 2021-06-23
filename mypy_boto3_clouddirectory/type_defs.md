@@ -1836,7 +1836,7 @@ from mypy_boto3_clouddirectory.type_defs import TypedAttributeValueTypeDef
 Optional fields:
 
 - `StringValue`: `str`
-- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `BooleanValue`: `bool`
 - `NumberValue`: `str`
 - `DatetimeValue`: `datetime`

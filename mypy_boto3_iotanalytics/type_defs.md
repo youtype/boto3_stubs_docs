@@ -974,7 +974,7 @@ from mypy_boto3_iotanalytics.type_defs import MessageTypeDef
 Required fields:
 
 - `messageId`: `str`
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## OutputFileUriValueTypeDef
 
@@ -1142,7 +1142,7 @@ from mypy_boto3_iotanalytics.type_defs import RunPipelineActivityResponseTypeDef
 
 Optional fields:
 
-- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\]
+- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]\]
 - `logResult`: `str`
 
 ## S3DestinationConfigurationTypeDef
@@ -1170,7 +1170,7 @@ from mypy_boto3_iotanalytics.type_defs import SampleChannelDataResponseTypeDef
 
 Optional fields:
 
-- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\]
+- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]\]
 
 ## ScheduleTypeDef
 

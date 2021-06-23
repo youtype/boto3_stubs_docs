@@ -186,7 +186,7 @@ Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
-- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `ContentType`: `str` *(required)*
 - `Description`: `str`
 - `LatestVersionNumber`: `int`

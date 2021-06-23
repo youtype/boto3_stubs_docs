@@ -6741,7 +6741,8 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `KeyName`: `str` *(required)*
-- `PublicKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `PublicKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `DryRun`: `bool`
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
@@ -7703,6 +7704,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `PoolTagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `MultiRegion`: `bool`
 
 Returns
 [ProvisionByoipCidrResultTypeDef](./type_defs.md#provisionbyoipcidrresulttypedef).

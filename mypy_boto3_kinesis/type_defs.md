@@ -382,7 +382,7 @@ from mypy_boto3_kinesis.type_defs import PutRecordsRequestEntryTypeDef
 
 Required fields:
 
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `PartitionKey`: `str`
 
 Optional fields:
@@ -411,7 +411,7 @@ from mypy_boto3_kinesis.type_defs import RecordTypeDef
 Required fields:
 
 - `SequenceNumber`: `str`
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `PartitionKey`: `str`
 
 Optional fields:

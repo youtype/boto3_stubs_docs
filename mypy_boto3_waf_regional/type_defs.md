@@ -206,7 +206,7 @@ from mypy_boto3_waf_regional.type_defs import ByteMatchTupleTypeDef
 Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TargetString`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `TargetString`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `TextTransformation`:
   [TextTransformationType](./literals.md#texttransformationtype)
 - `PositionalConstraint`:

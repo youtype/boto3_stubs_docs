@@ -655,7 +655,7 @@ Keyword-only arguments:
 - `InvocationType`: [InvocationTypeType](./literals.md#invocationtypetype)
 - `LogType`: [LogTypeType](./literals.md#logtypetype)
 - `ClientContext`: `str`
-- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Qualifier`: `str`
 
 Returns [InvocationResponseTypeDef](./type_defs.md#invocationresponsetypedef).
@@ -670,7 +670,8 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
-- `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 
 Returns
 [InvokeAsyncResponseTypeDef](./type_defs.md#invokeasyncresponsetypedef).
@@ -1091,7 +1092,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Bucket`: `str`
 - `S3Key`: `str`
 - `S3ObjectVersion`: `str`

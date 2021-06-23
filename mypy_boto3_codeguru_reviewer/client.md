@@ -28,6 +28,7 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
+    - [get_waiter](#get_waiter)
 
 ## CodeGuruReviewerClient
 
@@ -344,3 +345,13 @@ with overloads.
 
 - `client.get_paginator("list_repository_associations")` ->
   [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
+
+### get_waiter
+
+Type annotations for `boto3.client("codeguru-reviewer").get_waiter` method with
+overloads.
+
+- `client.get_waiter("code_review_completed")` ->
+  [CodeReviewCompletedWaiter](./waiters.md#codereviewcompletedwaiter)
+- `client.get_waiter("repository_association_succeeded")` ->
+  [RepositoryAssociationSucceededWaiter](./waiters.md#repositoryassociationsucceededwaiter)

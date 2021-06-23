@@ -252,7 +252,8 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `GrantTokens`: `List`\[`str`\]
 - `KeyId`: `str`
@@ -395,7 +396,8 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `EncryptionContext`: `Dict`\[`str`, `str`\]
 - `GrantTokens`: `List`\[`str`\]
 - `EncryptionAlgorithm`:
@@ -580,8 +582,10 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `ImportToken`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `EncryptedKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `ImportToken`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
+- `EncryptedKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `ValidTo`: `datetime`
 - `ExpirationModel`:
   [ExpirationModelTypeType](./literals.md#expirationmodeltypetype)
@@ -705,7 +709,8 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `DestinationKeyId`: `str` *(required)*
 - `SourceEncryptionContext`: `Dict`\[`str`, `str`\]
 - `SourceKeyId`: `str`
@@ -787,7 +792,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `Message`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Message`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `SigningAlgorithm`:
   [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
   *(required)*
@@ -882,8 +887,9 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `Message`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Message`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
+- `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `SigningAlgorithm`:
   [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
   *(required)*

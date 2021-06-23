@@ -589,7 +589,7 @@ Keyword-only arguments:
 - `accountId`: `str` *(required)*
 - `archiveDescription`: `str`
 - `checksum`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
 [ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
@@ -608,7 +608,7 @@ Keyword-only arguments:
 - `uploadId`: `str` *(required)*
 - `checksum`: `str`
 - `range`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
 [UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef).

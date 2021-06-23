@@ -1423,7 +1423,8 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
-- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `filePath`: `str` *(required)*
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 - `parentCommitId`: `str`

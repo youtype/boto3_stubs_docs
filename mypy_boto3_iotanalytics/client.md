@@ -515,7 +515,8 @@ Keyword-only arguments:
 - `pipelineActivity`:
   [PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)
   *(required)*
-- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\] *(required)*
+- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]\]
+  *(required)*
 
 Returns
 [RunPipelineActivityResponseTypeDef](./type_defs.md#runpipelineactivityresponsetypedef).

@@ -1701,7 +1701,7 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -1962,7 +1962,7 @@ Keyword-only arguments:
 - `Key`: `str` *(required)*
 - `PartNumber`: `int` *(required)*
 - `UploadId`: `str` *(required)*
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `SSECustomerAlgorithm`: `str`
@@ -2019,7 +2019,7 @@ Keyword-only arguments:
 
 - `RequestRoute`: `str` *(required)*
 - `RequestToken`: `str` *(required)*
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `StatusCode`: `int`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`

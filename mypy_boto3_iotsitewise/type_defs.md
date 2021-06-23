@@ -1092,7 +1092,7 @@ from mypy_boto3_iotsitewise.type_defs import ImageFileTypeDef
 
 Required fields:
 
-- `data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `type`: `Literal['PNG']` (see
   [ImageFileTypeType](./literals.md#imagefiletypetype))
 

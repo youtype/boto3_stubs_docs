@@ -45,7 +45,7 @@ from mypy_boto3_qldb_session.type_defs import CommitTransactionRequestTypeDef
 Required fields:
 
 - `TransactionId`: `str`
-- `CommitDigest`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CommitDigest`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## CommitTransactionResultTypeDef
 
@@ -56,7 +56,7 @@ from mypy_boto3_qldb_session.type_defs import CommitTransactionResultTypeDef
 Optional fields:
 
 - `TransactionId`: `str`
-- `CommitDigest`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CommitDigest`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `TimingInformation`:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 - `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
@@ -221,5 +221,5 @@ from mypy_boto3_qldb_session.type_defs import ValueHolderTypeDef
 
 Optional fields:
 
-- `IonBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `IonBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `IonText`: `str`

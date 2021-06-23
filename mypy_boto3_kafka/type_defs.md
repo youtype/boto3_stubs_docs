@@ -430,7 +430,7 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `Description`: `str`
 - `Revision`: `int`
-- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## EBSStorageInfoTypeDef
 

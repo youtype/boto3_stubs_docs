@@ -125,7 +125,7 @@ from mypy_boto3_redshift_data.type_defs import FieldTypeDef
 
 Optional fields:
 
-- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `booleanValue`: `bool`
 - `doubleValue`: `float`
 - `isNull`: `bool`

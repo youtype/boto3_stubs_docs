@@ -139,7 +139,8 @@ Keyword-only arguments:
 - `botAlias`: `str` *(required)*
 - `userId`: `str` *(required)*
 - `contentType`: `str` *(required)*
-- `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `sessionAttributes`: `str`
 - `requestAttributes`: `str`
 - `accept`: `str`

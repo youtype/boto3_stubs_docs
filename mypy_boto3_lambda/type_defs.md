@@ -332,7 +332,7 @@ from mypy_boto3_lambda.type_defs import FunctionCodeTypeDef
 
 Optional fields:
 
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Bucket`: `str`
 - `S3Key`: `str`
 - `S3ObjectVersion`: `str`
@@ -597,7 +597,7 @@ Optional fields:
 - `S3Bucket`: `str`
 - `S3Key`: `str`
 - `S3ObjectVersion`: `str`
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## LayerVersionContentOutputTypeDef
 

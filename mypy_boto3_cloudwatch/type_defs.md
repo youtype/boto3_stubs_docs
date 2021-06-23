@@ -393,7 +393,7 @@ from mypy_boto3_cloudwatch.type_defs import GetMetricWidgetImageOutputTypeDef
 
 Required fields:
 
-- `MetricWidgetImage`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `MetricWidgetImage`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

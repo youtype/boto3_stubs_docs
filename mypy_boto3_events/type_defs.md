@@ -15,6 +15,7 @@ type annotations stubs module
   - [BatchParametersTypeDef](#batchparameterstypedef)
   - [BatchRetryStrategyTypeDef](#batchretrystrategytypedef)
   - [CancelReplayResponseTypeDef](#cancelreplayresponsetypedef)
+  - [CapacityProviderStrategyItemTypeDef](#capacityproviderstrategyitemtypedef)
   - [ConditionTypeDef](#conditiontypedef)
   - [ConnectionApiKeyAuthResponseParametersTypeDef](#connectionapikeyauthresponseparameterstypedef)
   - [ConnectionAuthResponseParametersTypeDef](#connectionauthresponseparameterstypedef)
@@ -69,6 +70,8 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PartnerEventSourceAccountTypeDef](#partnereventsourceaccounttypedef)
   - [PartnerEventSourceTypeDef](#partnereventsourcetypedef)
+  - [PlacementConstraintTypeDef](#placementconstrainttypedef)
+  - [PlacementStrategyTypeDef](#placementstrategytypedef)
   - [PutEventsRequestEntryTypeDef](#puteventsrequestentrytypedef)
   - [PutEventsResponseTypeDef](#puteventsresponsetypedef)
   - [PutEventsResultEntryTypeDef](#puteventsresultentrytypedef)
@@ -204,6 +207,21 @@ Optional fields:
 - `ReplayArn`: `str`
 - `State`: [ReplayStateType](./literals.md#replaystatetype)
 - `StateReason`: `str`
+
+## CapacityProviderStrategyItemTypeDef
+
+```python
+from mypy_boto3_events.type_defs import CapacityProviderStrategyItemTypeDef
+```
+
+Required fields:
+
+- `capacityProvider`: `str`
+
+Optional fields:
+
+- `weight`: `int`
+- `base`: `int`
 
 ## ConditionTypeDef
 
@@ -676,6 +694,18 @@ Optional fields:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `PlatformVersion`: `str`
 - `Group`: `str`
+- `CapacityProviderStrategy`:
+  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
+- `EnableECSManagedTags`: `bool`
+- `EnableExecuteCommand`: `bool`
+- `PlacementConstraints`:
+  `List`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
+- `PlacementStrategy`:
+  `List`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
+- `PropagateTags`: `Literal['TASK_DEFINITION']` (see
+  [PropagateTagsType](./literals.md#propagatetagstype))
+- `ReferenceId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## EventBusTypeDef
 
@@ -922,6 +952,29 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
+
+## PlacementConstraintTypeDef
+
+```python
+from mypy_boto3_events.type_defs import PlacementConstraintTypeDef
+```
+
+Optional fields:
+
+- `type`:
+  [PlacementConstraintTypeType](./literals.md#placementconstrainttypetype)
+- `expression`: `str`
+
+## PlacementStrategyTypeDef
+
+```python
+from mypy_boto3_events.type_defs import PlacementStrategyTypeDef
+```
+
+Optional fields:
+
+- `type`: [PlacementStrategyTypeType](./literals.md#placementstrategytypetype)
+- `field`: `str`
 
 ## PutEventsRequestEntryTypeDef
 

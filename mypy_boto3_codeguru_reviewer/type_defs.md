@@ -9,6 +9,8 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 CodeGuruReviewer module](#typed-dictionaries-for-boto3-codegurureviewer-module)
   - [AssociateRepositoryResponseTypeDef](#associaterepositoryresponsetypedef)
+  - [BranchDiffSourceCodeTypeTypeDef](#branchdiffsourcecodetypetypedef)
+  - [CodeArtifactsTypeDef](#codeartifactstypedef)
   - [CodeCommitRepositoryTypeDef](#codecommitrepositorytypedef)
   - [CodeReviewSummaryTypeDef](#codereviewsummarytypedef)
   - [CodeReviewTypeDef](#codereviewtypedef)
@@ -19,6 +21,7 @@ type annotations stubs module
   - [DescribeRecommendationFeedbackResponseTypeDef](#describerecommendationfeedbackresponsetypedef)
   - [DescribeRepositoryAssociationResponseTypeDef](#describerepositoryassociationresponsetypedef)
   - [DisassociateRepositoryResponseTypeDef](#disassociaterepositoryresponsetypedef)
+  - [EventInfoTypeDef](#eventinfotypedef)
   - [KMSKeyDetailsTypeDef](#kmskeydetailstypedef)
   - [ListCodeReviewsResponseTypeDef](#listcodereviewsresponsetypedef)
   - [ListRecommendationFeedbackResponseTypeDef](#listrecommendationfeedbackresponsetypedef)
@@ -36,8 +39,13 @@ type annotations stubs module
   - [RepositoryAssociationTypeDef](#repositoryassociationtypedef)
   - [RepositoryHeadSourceCodeTypeTypeDef](#repositoryheadsourcecodetypetypedef)
   - [RepositoryTypeDef](#repositorytypedef)
+  - [RequestMetadataTypeDef](#requestmetadatatypedef)
+  - [S3BucketRepositoryTypeDef](#s3bucketrepositorytypedef)
+  - [S3RepositoryDetailsTypeDef](#s3repositorydetailstypedef)
+  - [S3RepositoryTypeDef](#s3repositorytypedef)
   - [SourceCodeTypeTypeDef](#sourcecodetypetypedef)
   - [ThirdPartySourceRepositoryTypeDef](#thirdpartysourcerepositorytypedef)
+  - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AssociateRepositoryResponseTypeDef
 
@@ -50,6 +58,31 @@ Optional fields:
 - `RepositoryAssociation`:
   [RepositoryAssociationTypeDef](./type_defs.md#repositoryassociationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## BranchDiffSourceCodeTypeTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import BranchDiffSourceCodeTypeTypeDef
+```
+
+Required fields:
+
+- `SourceBranchName`: `str`
+- `DestinationBranchName`: `str`
+
+## CodeArtifactsTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import CodeArtifactsTypeDef
+```
+
+Required fields:
+
+- `SourceCodeArtifactsObjectKey`: `str`
+
+Optional fields:
+
+- `BuildArtifactsObjectKey`: `str`
 
 ## CodeCommitRepositoryTypeDef
 
@@ -81,6 +114,8 @@ Optional fields:
 - `PullRequestId`: `str`
 - `MetricsSummary`:
   [MetricsSummaryTypeDef](./type_defs.md#metricssummarytypedef)
+- `SourceCodeType`:
+  [SourceCodeTypeTypeDef](./type_defs.md#sourcecodetypetypedef)
 
 ## CodeReviewTypeDef
 
@@ -105,6 +140,7 @@ Optional fields:
   [SourceCodeTypeTypeDef](./type_defs.md#sourcecodetypetypedef)
 - `AssociationArn`: `str`
 - `Metrics`: [MetricsTypeDef](./type_defs.md#metricstypedef)
+- `AnalysisTypes`: `List`\[[AnalysisTypeType](./literals.md#analysistypetype)\]
 
 ## CodeReviewTypeTypeDef
 
@@ -117,6 +153,10 @@ Required fields:
 - `RepositoryAnalysis`:
   [RepositoryAnalysisTypeDef](./type_defs.md#repositoryanalysistypedef)
 
+Optional fields:
+
+- `AnalysisTypes`: `List`\[[AnalysisTypeType](./literals.md#analysistypetype)\]
+
 ## CommitDiffSourceCodeTypeTypeDef
 
 ```python
@@ -127,6 +167,7 @@ Optional fields:
 
 - `SourceCommit`: `str`
 - `DestinationCommit`: `str`
+- `MergeBaseCommit`: `str`
 
 ## CreateCodeReviewResponseTypeDef
 
@@ -182,6 +223,17 @@ Optional fields:
 - `RepositoryAssociation`:
   [RepositoryAssociationTypeDef](./type_defs.md#repositoryassociationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## EventInfoTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import EventInfoTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `State`: `str`
 
 ## KMSKeyDetailsTypeDef
 
@@ -327,6 +379,8 @@ Optional fields:
 - `StartLine`: `int`
 - `EndLine`: `int`
 - `Description`: `str`
+- `RecommendationCategory`:
+  [RecommendationCategoryType](./literals.md#recommendationcategorytype)
 
 ## RepositoryAnalysisTypeDef
 
@@ -334,10 +388,12 @@ Optional fields:
 from mypy_boto3_codeguru_reviewer.type_defs import RepositoryAnalysisTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `RepositoryHead`:
   [RepositoryHeadSourceCodeTypeTypeDef](./type_defs.md#repositoryheadsourcecodetypetypedef)
+- `SourceCodeType`:
+  [SourceCodeTypeTypeDef](./type_defs.md#sourcecodetypetypedef)
 
 ## RepositoryAssociationSummaryTypeDef
 
@@ -377,6 +433,8 @@ Optional fields:
 - `LastUpdatedTimeStamp`: `datetime`
 - `CreatedTimeStamp`: `datetime`
 - `KMSKeyDetails`: [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
+- `S3RepositoryDetails`:
+  [S3RepositoryDetailsTypeDef](./type_defs.md#s3repositorydetailstypedef)
 
 ## RepositoryHeadSourceCodeTypeTypeDef
 
@@ -402,6 +460,57 @@ Optional fields:
   [ThirdPartySourceRepositoryTypeDef](./type_defs.md#thirdpartysourcerepositorytypedef)
 - `GitHubEnterpriseServer`:
   [ThirdPartySourceRepositoryTypeDef](./type_defs.md#thirdpartysourcerepositorytypedef)
+- `S3Bucket`: [S3RepositoryTypeDef](./type_defs.md#s3repositorytypedef)
+
+## RequestMetadataTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import RequestMetadataTypeDef
+```
+
+Optional fields:
+
+- `RequestId`: `str`
+- `Requester`: `str`
+- `EventInfo`: [EventInfoTypeDef](./type_defs.md#eventinfotypedef)
+- `VendorName`: [VendorNameType](./literals.md#vendornametype)
+
+## S3BucketRepositoryTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import S3BucketRepositoryTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `Details`:
+  [S3RepositoryDetailsTypeDef](./type_defs.md#s3repositorydetailstypedef)
+
+## S3RepositoryDetailsTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import S3RepositoryDetailsTypeDef
+```
+
+Optional fields:
+
+- `BucketName`: `str`
+- `CodeArtifacts`: [CodeArtifactsTypeDef](./type_defs.md#codeartifactstypedef)
+
+## S3RepositoryTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import S3RepositoryTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `BucketName`: `str`
 
 ## SourceCodeTypeTypeDef
 
@@ -415,6 +524,12 @@ Optional fields:
   [CommitDiffSourceCodeTypeTypeDef](./type_defs.md#commitdiffsourcecodetypetypedef)
 - `RepositoryHead`:
   [RepositoryHeadSourceCodeTypeTypeDef](./type_defs.md#repositoryheadsourcecodetypetypedef)
+- `BranchDiff`:
+  [BranchDiffSourceCodeTypeTypeDef](./type_defs.md#branchdiffsourcecodetypetypedef)
+- `S3BucketRepository`:
+  [S3BucketRepositoryTypeDef](./type_defs.md#s3bucketrepositorytypedef)
+- `RequestMetadata`:
+  [RequestMetadataTypeDef](./type_defs.md#requestmetadatatypedef)
 
 ## ThirdPartySourceRepositoryTypeDef
 
@@ -427,3 +542,14 @@ Required fields:
 - `Name`: `str`
 - `ConnectionArn`: `str`
 - `Owner`: `str`
+
+## WaiterConfigTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import WaiterConfigTypeDef
+```
+
+Optional fields:
+
+- `Delay`: `int`
+- `MaxAttempts`: `int`

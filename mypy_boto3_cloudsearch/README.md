@@ -70,6 +70,7 @@ CloudSearchClient [exceptions](./client.md#exceptions)
 - InternalException
 - InvalidTypeException
 - LimitExceededException
+- ResourceAlreadyExistsException
 - ResourceNotFoundException
 - ValidationException
 

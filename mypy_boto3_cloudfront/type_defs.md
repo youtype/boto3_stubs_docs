@@ -1451,7 +1451,7 @@ from mypy_boto3_cloudfront.type_defs import GetFunctionResultTypeDef
 
 Optional fields:
 
-- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ETag`: `str`
 - `ContentType`: `str`
 

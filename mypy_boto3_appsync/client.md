@@ -650,7 +650,8 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `apiId`: `str` *(required)*
-- `definition`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `definition`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 
 Returns
 [StartSchemaCreationResponseTypeDef](./type_defs.md#startschemacreationresponsetypedef).

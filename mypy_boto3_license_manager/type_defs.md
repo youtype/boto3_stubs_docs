@@ -933,6 +933,7 @@ from mypy_boto3_license_manager.type_defs import ReceivedMetadataTypeDef
 Optional fields:
 
 - `ReceivedStatus`: [ReceivedStatusType](./literals.md#receivedstatustype)
+- `ReceivedStatusReason`: `str`
 - `AllowedOperations`:
   `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 

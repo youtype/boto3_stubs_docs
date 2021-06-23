@@ -123,5 +123,5 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `ConnectionId`: `str` *(required)*

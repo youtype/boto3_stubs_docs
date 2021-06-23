@@ -18,6 +18,8 @@ type annotations stubs module
     - [create_dashboard](#create_dashboard)
     - [create_data_set](#create_data_set)
     - [create_data_source](#create_data_source)
+    - [create_folder](#create_folder)
+    - [create_folder_membership](#create_folder_membership)
     - [create_group](#create_group)
     - [create_group_membership](#create_group_membership)
     - [create_iam_policy_assignment](#create_iam_policy_assignment)
@@ -32,6 +34,8 @@ type annotations stubs module
     - [delete_dashboard](#delete_dashboard)
     - [delete_data_set](#delete_data_set)
     - [delete_data_source](#delete_data_source)
+    - [delete_folder](#delete_folder)
+    - [delete_folder_membership](#delete_folder_membership)
     - [delete_group](#delete_group)
     - [delete_group_membership](#delete_group_membership)
     - [delete_iam_policy_assignment](#delete_iam_policy_assignment)
@@ -52,6 +56,9 @@ type annotations stubs module
     - [describe_data_set_permissions](#describe_data_set_permissions)
     - [describe_data_source](#describe_data_source)
     - [describe_data_source_permissions](#describe_data_source_permissions)
+    - [describe_folder](#describe_folder)
+    - [describe_folder_permissions](#describe_folder_permissions)
+    - [describe_folder_resolved_permissions](#describe_folder_resolved_permissions)
     - [describe_group](#describe_group)
     - [describe_iam_policy_assignment](#describe_iam_policy_assignment)
     - [describe_ingestion](#describe_ingestion)
@@ -71,6 +78,8 @@ type annotations stubs module
     - [list_dashboards](#list_dashboards)
     - [list_data_sets](#list_data_sets)
     - [list_data_sources](#list_data_sources)
+    - [list_folder_members](#list_folder_members)
+    - [list_folders](#list_folders)
     - [list_group_memberships](#list_group_memberships)
     - [list_groups](#list_groups)
     - [list_iam_policy_assignments](#list_iam_policy_assignments)
@@ -90,6 +99,7 @@ type annotations stubs module
     - [restore_analysis](#restore_analysis)
     - [search_analyses](#search_analyses)
     - [search_dashboards](#search_dashboards)
+    - [search_folders](#search_folders)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_account_customization](#update_account_customization)
@@ -103,6 +113,8 @@ type annotations stubs module
     - [update_data_set_permissions](#update_data_set_permissions)
     - [update_data_source](#update_data_source)
     - [update_data_source_permissions](#update_data_source_permissions)
+    - [update_folder](#update_folder)
+    - [update_folder_permissions](#update_folder_permissions)
     - [update_group](#update_group)
     - [update_iam_policy_assignment](#update_iam_policy_assignment)
     - [update_template](#update_template)
@@ -325,6 +337,46 @@ Keyword-only arguments:
 
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
+
+### create_folder
+
+Type annotations for `boto3.client("quicksight").create_folder` method.
+
+Boto3 documentation:
+[QuickSight.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_folder)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+- `Name`: `str`
+- `FolderType`: `Literal['SHARED']` (see
+  [FolderTypeType](./literals.md#foldertypetype))
+- `ParentFolderArn`: `str`
+- `Permissions`:
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
+
+### create_folder_membership
+
+Type annotations for `boto3.client("quicksight").create_folder_membership`
+method.
+
+Boto3 documentation:
+[QuickSight.Client.create_folder_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_folder_membership)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+- `MemberId`: `str` *(required)*
+- `MemberType`: [MemberTypeType](./literals.md#membertypetype) *(required)*
+
+Returns
+[CreateFolderMembershipResponseTypeDef](./type_defs.md#createfoldermembershipresponsetypedef).
 
 ### create_group
 
@@ -575,6 +627,39 @@ Keyword-only arguments:
 
 Returns
 [DeleteDataSourceResponseTypeDef](./type_defs.md#deletedatasourceresponsetypedef).
+
+### delete_folder
+
+Type annotations for `boto3.client("quicksight").delete_folder` method.
+
+Boto3 documentation:
+[QuickSight.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_folder)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+
+Returns
+[DeleteFolderResponseTypeDef](./type_defs.md#deletefolderresponsetypedef).
+
+### delete_folder_membership
+
+Type annotations for `boto3.client("quicksight").delete_folder_membership`
+method.
+
+Boto3 documentation:
+[QuickSight.Client.delete_folder_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_folder_membership)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+- `MemberId`: `str` *(required)*
+- `MemberType`: [MemberTypeType](./literals.md#membertypetype) *(required)*
+
+Returns
+[DeleteFolderMembershipResponseTypeDef](./type_defs.md#deletefoldermembershipresponsetypedef).
 
 ### delete_group
 
@@ -896,6 +981,53 @@ Keyword-only arguments:
 Returns
 [DescribeDataSourcePermissionsResponseTypeDef](./type_defs.md#describedatasourcepermissionsresponsetypedef).
 
+### describe_folder
+
+Type annotations for `boto3.client("quicksight").describe_folder` method.
+
+Boto3 documentation:
+[QuickSight.Client.describe_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+
+Returns
+[DescribeFolderResponseTypeDef](./type_defs.md#describefolderresponsetypedef).
+
+### describe_folder_permissions
+
+Type annotations for `boto3.client("quicksight").describe_folder_permissions`
+method.
+
+Boto3 documentation:
+[QuickSight.Client.describe_folder_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder_permissions)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+
+Returns
+[DescribeFolderPermissionsResponseTypeDef](./type_defs.md#describefolderpermissionsresponsetypedef).
+
+### describe_folder_resolved_permissions
+
+Type annotations for
+`boto3.client("quicksight").describe_folder_resolved_permissions` method.
+
+Boto3 documentation:
+[QuickSight.Client.describe_folder_resolved_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder_resolved_permissions)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+
+Returns
+[DescribeFolderResolvedPermissionsResponseTypeDef](./type_defs.md#describefolderresolvedpermissionsresponsetypedef).
+
 ### describe_group
 
 Type annotations for `boto3.client("quicksight").describe_group` method.
@@ -1216,6 +1348,39 @@ Keyword-only arguments:
 
 Returns
 [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+
+### list_folder_members
+
+Type annotations for `boto3.client("quicksight").list_folder_members` method.
+
+Boto3 documentation:
+[QuickSight.Client.list_folder_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folder_members)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFolderMembersResponseTypeDef](./type_defs.md#listfoldermembersresponsetypedef).
+
+### list_folders
+
+Type annotations for `boto3.client("quicksight").list_folders` method.
+
+Boto3 documentation:
+[QuickSight.Client.list_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folders)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListFoldersResponseTypeDef](./type_defs.md#listfoldersresponsetypedef).
 
 ### list_group_memberships
 
@@ -1553,6 +1718,25 @@ Keyword-only arguments:
 Returns
 [SearchDashboardsResponseTypeDef](./type_defs.md#searchdashboardsresponsetypedef).
 
+### search_folders
+
+Type annotations for `boto3.client("quicksight").search_folders` method.
+
+Boto3 documentation:
+[QuickSight.Client.search_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_folders)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `Filters`:
+  `List`\[[FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef)\]
+  *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[SearchFoldersResponseTypeDef](./type_defs.md#searchfoldersresponsetypedef).
+
 ### tag_resource
 
 Type annotations for `boto3.client("quicksight").tag_resource` method.
@@ -1813,6 +1997,42 @@ Keyword-only arguments:
 
 Returns
 [UpdateDataSourcePermissionsResponseTypeDef](./type_defs.md#updatedatasourcepermissionsresponsetypedef).
+
+### update_folder
+
+Type annotations for `boto3.client("quicksight").update_folder` method.
+
+Boto3 documentation:
+[QuickSight.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_folder)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[UpdateFolderResponseTypeDef](./type_defs.md#updatefolderresponsetypedef).
+
+### update_folder_permissions
+
+Type annotations for `boto3.client("quicksight").update_folder_permissions`
+method.
+
+Boto3 documentation:
+[QuickSight.Client.update_folder_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_folder_permissions)
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `FolderId`: `str` *(required)*
+- `GrantPermissions`:
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `RevokePermissions`:
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+
+Returns
+[UpdateFolderPermissionsResponseTypeDef](./type_defs.md#updatefolderpermissionsresponsetypedef).
 
 ### update_group
 

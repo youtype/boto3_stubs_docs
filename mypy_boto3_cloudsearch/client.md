@@ -76,6 +76,7 @@ Exceptions:
 - `Exceptions.InternalException`
 - `Exceptions.InvalidTypeException`
 - `Exceptions.LimitExceededException`
+- `Exceptions.ResourceAlreadyExistsException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 

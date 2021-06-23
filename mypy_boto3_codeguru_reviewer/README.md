@@ -16,6 +16,7 @@ pip install mypy-boto3-codeguru-reviewer
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
+  - [Waiters](#waiters)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
@@ -41,6 +42,7 @@ from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
 - [disassociate_repository](./client.md#disassociate_repository)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
 - [list_code_reviews](./client.md#list_code_reviews)
 - [list_recommendation_feedback](./client.md#list_recommendation_feedback)
 - [list_recommendations](./client.md#list_recommendations)
@@ -76,6 +78,20 @@ from mypy_boto3_codeguru_reviewer.paginators import ListRepositoryAssociationsPa
 
 - [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
 
+## Waiters
+
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("codeguru-reviewer").get_waiter("...")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_codeguru_reviewer.waiters import CodeReviewCompletedWaiter, ...
+```
+
+- [CodeReviewCompletedWaiter](./waiters.md#codereviewcompletedwaiter)
+- [RepositoryAssociationSucceededWaiter](./waiters.md#repositoryassociationsucceededwaiter)
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -83,16 +99,21 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_codeguru_reviewer.literals import EncryptionOptionType, ...
+from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType, ...
 ```
 
+- [AnalysisTypeType](./literals.md#analysistypetype)
+- [CodeReviewCompletedWaiterName](./literals.md#codereviewcompletedwaitername)
 - [EncryptionOptionType](./literals.md#encryptionoptiontype)
 - [JobStateType](./literals.md#jobstatetype)
 - [ListRepositoryAssociationsPaginatorName](./literals.md#listrepositoryassociationspaginatorname)
 - [ProviderTypeType](./literals.md#providertypetype)
 - [ReactionType](./literals.md#reactiontype)
+- [RecommendationCategoryType](./literals.md#recommendationcategorytype)
 - [RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)
+- [RepositoryAssociationSucceededWaiterName](./literals.md#repositoryassociationsucceededwaitername)
 - [TypeType](./literals.md#typetype)
+- [VendorNameType](./literals.md#vendornametype)
 
 ## Typed dictionaries
 
@@ -106,6 +127,8 @@ from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryResponseTy
 ```
 
 - [AssociateRepositoryResponseTypeDef](./type_defs.md#associaterepositoryresponsetypedef)
+- [BranchDiffSourceCodeTypeTypeDef](./type_defs.md#branchdiffsourcecodetypetypedef)
+- [CodeArtifactsTypeDef](./type_defs.md#codeartifactstypedef)
 - [CodeCommitRepositoryTypeDef](./type_defs.md#codecommitrepositorytypedef)
 - [CodeReviewSummaryTypeDef](./type_defs.md#codereviewsummarytypedef)
 - [CodeReviewTypeDef](./type_defs.md#codereviewtypedef)
@@ -116,6 +139,7 @@ from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryResponseTy
 - [DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef)
 - [DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef)
 - [DisassociateRepositoryResponseTypeDef](./type_defs.md#disassociaterepositoryresponsetypedef)
+- [EventInfoTypeDef](./type_defs.md#eventinfotypedef)
 - [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
 - [ListCodeReviewsResponseTypeDef](./type_defs.md#listcodereviewsresponsetypedef)
 - [ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef)
@@ -133,5 +157,10 @@ from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryResponseTy
 - [RepositoryAssociationTypeDef](./type_defs.md#repositoryassociationtypedef)
 - [RepositoryHeadSourceCodeTypeTypeDef](./type_defs.md#repositoryheadsourcecodetypetypedef)
 - [RepositoryTypeDef](./type_defs.md#repositorytypedef)
+- [RequestMetadataTypeDef](./type_defs.md#requestmetadatatypedef)
+- [S3BucketRepositoryTypeDef](./type_defs.md#s3bucketrepositorytypedef)
+- [S3RepositoryDetailsTypeDef](./type_defs.md#s3repositorydetailstypedef)
+- [S3RepositoryTypeDef](./type_defs.md#s3repositorytypedef)
 - [SourceCodeTypeTypeDef](./type_defs.md#sourcecodetypetypedef)
 - [ThirdPartySourceRepositoryTypeDef](./type_defs.md#thirdpartysourcerepositorytypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

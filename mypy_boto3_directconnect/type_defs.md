@@ -604,7 +604,7 @@ from mypy_boto3_directconnect.type_defs import LoaTypeDef
 
 Optional fields:
 
-- `loaContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `loaContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `loaContentType`: `Literal['application/pdf']` (see
   [LoaContentTypeType](./literals.md#loacontenttypetype))
 

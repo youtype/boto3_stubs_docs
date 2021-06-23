@@ -152,7 +152,7 @@ from mypy_boto3_wafv2.type_defs import ByteMatchStatementTypeDef
 
 Required fields:
 
-- `SearchString`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `SearchString`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
   `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]

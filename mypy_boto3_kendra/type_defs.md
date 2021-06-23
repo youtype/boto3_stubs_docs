@@ -889,7 +889,7 @@ Required fields:
 Optional fields:
 
 - `Title`: `str`
-- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 - `Attributes`:
   `List`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]

@@ -440,7 +440,7 @@ Required fields:
 
 - `recipeOutputFormat`:
   [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
-- `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Optional fields:
 
@@ -828,4 +828,4 @@ Optional fields:
 - `arn`: `str`
 - `componentName`: `str`
 - `componentVersion`: `str`
-- `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]

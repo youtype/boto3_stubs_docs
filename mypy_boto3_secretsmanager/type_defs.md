@@ -159,7 +159,7 @@ Optional fields:
 - `ARN`: `str`
 - `Name`: `str`
 - `VersionId`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
 - `VersionStages`: `List`\[`str`\]
 - `CreatedDate`: `datetime`

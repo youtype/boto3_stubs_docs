@@ -127,7 +127,7 @@ from mypy_boto3_qldb.type_defs import GetDigestResponseTypeDef
 
 Required fields:
 
-- `Digest`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Digest`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
 ## GetRevisionResponseTypeDef

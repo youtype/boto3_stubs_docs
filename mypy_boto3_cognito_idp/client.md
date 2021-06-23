@@ -1628,7 +1628,7 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `ClientId`: `str`
 - `CSS`: `str`
-- `ImageFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ImageFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
 [SetUICustomizationResponseTypeDef](./type_defs.md#setuicustomizationresponsetypedef).

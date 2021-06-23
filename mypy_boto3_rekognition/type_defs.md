@@ -946,7 +946,7 @@ from mypy_boto3_rekognition.type_defs import ImageTypeDef
 
 Optional fields:
 
-- `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
 ## IndexFacesResponseTypeDef

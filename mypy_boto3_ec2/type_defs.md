@@ -1589,7 +1589,7 @@ from mypy_boto3_ec2.type_defs import BlobAttributeValueTypeDef
 
 Optional fields:
 
-- `Value`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Value`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## BlockDeviceMappingTypeDef
 
@@ -10876,7 +10876,7 @@ Optional fields:
 - `AWSAccessKeyId`: `str`
 - `Bucket`: `str`
 - `Prefix`: `str`
-- `UploadPolicy`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `UploadPolicy`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `UploadPolicySignature`: `str`
 
 ## ScheduledInstanceAvailabilityTypeDef

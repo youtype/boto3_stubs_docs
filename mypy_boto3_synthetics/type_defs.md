@@ -48,7 +48,7 @@ Optional fields:
 - `S3Bucket`: `str`
 - `S3Key`: `str`
 - `S3Version`: `str`
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## CanaryCodeOutputTypeDef
 

@@ -128,7 +128,7 @@ from mypy_boto3_kms.type_defs import DecryptResponseTypeDef
 Optional fields:
 
 - `KeyId`: `str`
-- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
@@ -163,7 +163,7 @@ from mypy_boto3_kms.type_defs import EncryptResponseTypeDef
 
 Optional fields:
 
-- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `KeyId`: `str`
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
@@ -176,9 +176,10 @@ from mypy_boto3_kms.type_defs import GenerateDataKeyPairResponseTypeDef
 
 Optional fields:
 
-- `PrivateKeyCiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `PrivateKeyPlaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `PrivateKeyCiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\],
+  `StreamingBody`\]
+- `PrivateKeyPlaintext`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `KeyId`: `str`
 - `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
 
@@ -190,8 +191,9 @@ from mypy_boto3_kms.type_defs import GenerateDataKeyPairWithoutPlaintextResponse
 
 Optional fields:
 
-- `PrivateKeyCiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `PrivateKeyCiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\],
+  `StreamingBody`\]
+- `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `KeyId`: `str`
 - `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
 
@@ -203,8 +205,8 @@ from mypy_boto3_kms.type_defs import GenerateDataKeyResponseTypeDef
 
 Optional fields:
 
-- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `KeyId`: `str`
 
 ## GenerateDataKeyWithoutPlaintextResponseTypeDef
@@ -215,7 +217,7 @@ from mypy_boto3_kms.type_defs import GenerateDataKeyWithoutPlaintextResponseType
 
 Optional fields:
 
-- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `KeyId`: `str`
 
 ## GenerateRandomResponseTypeDef
@@ -226,7 +228,7 @@ from mypy_boto3_kms.type_defs import GenerateRandomResponseTypeDef
 
 Optional fields:
 
-- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## GetKeyPolicyResponseTypeDef
 
@@ -257,8 +259,8 @@ from mypy_boto3_kms.type_defs import GetParametersForImportResponseTypeDef
 Optional fields:
 
 - `KeyId`: `str`
-- `ImportToken`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ImportToken`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ParametersValidTo`: `datetime`
 
 ## GetPublicKeyResponseTypeDef
@@ -270,7 +272,7 @@ from mypy_boto3_kms.type_defs import GetPublicKeyResponseTypeDef
 Optional fields:
 
 - `KeyId`: `str`
-- `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `PublicKey`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `CustomerMasterKeySpec`:
   [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
 - `KeyUsage`: [KeyUsageTypeType](./literals.md#keyusagetypetype)
@@ -466,7 +468,7 @@ from mypy_boto3_kms.type_defs import ReEncryptResponseTypeDef
 
 Optional fields:
 
-- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SourceKeyId`: `str`
 - `KeyId`: `str`
 - `SourceEncryptionAlgorithm`:
@@ -508,7 +510,7 @@ from mypy_boto3_kms.type_defs import SignResponseTypeDef
 Optional fields:
 
 - `KeyId`: `str`
-- `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Signature`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SigningAlgorithm`:
   [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
 

@@ -708,7 +708,7 @@ from mypy_boto3_pinpoint_email.type_defs import RawMessageTypeDef
 
 Required fields:
 
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## ReputationOptionsTypeDef
 

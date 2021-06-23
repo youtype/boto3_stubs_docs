@@ -81,7 +81,7 @@ from mypy_boto3_support.type_defs import AttachmentTypeDef
 Optional fields:
 
 - `fileName`: `str`
-- `data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## CaseDetailsTypeDef
 

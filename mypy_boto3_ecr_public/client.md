@@ -487,7 +487,8 @@ Keyword-only arguments:
 - `uploadId`: `str` *(required)*
 - `partFirstByte`: `int` *(required)*
 - `partLastByte`: `int` *(required)*
-- `layerPartBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `layerPartBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `registryId`: `str`
 
 Returns

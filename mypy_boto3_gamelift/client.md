@@ -468,7 +468,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Version`: `str`
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef).
@@ -1807,7 +1807,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Version`: `str`
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns [UpdateScriptOutputTypeDef](./type_defs.md#updatescriptoutputtypedef).
 

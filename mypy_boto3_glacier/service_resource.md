@@ -526,7 +526,7 @@ Keyword-only arguments:
 
 - `checksum`: `str`
 - `range`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
 [UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef).
@@ -927,6 +927,6 @@ Keyword-only arguments:
 
 - `archiveDescription`: `str`
 - `checksum`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns [Archive](#archive).

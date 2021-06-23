@@ -446,7 +446,7 @@ Optional fields:
 - `description`: `str`
 - `architectures`: `List`\[`str`\]
 - `operatingSystems`: `List`\[`str`\]
-- `logoImageBlob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `logoImageBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `aboutText`: `str`
 - `usageText`: `str`
 

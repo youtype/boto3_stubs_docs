@@ -378,7 +378,8 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `agentProfile`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `agentProfile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `contentType`: `str` *(required)*
 - `profilingGroupName`: `str` *(required)*
 - `profileToken`: `str`

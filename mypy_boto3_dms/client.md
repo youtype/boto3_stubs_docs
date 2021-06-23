@@ -848,7 +848,7 @@ Keyword-only arguments:
 
 - `CertificateIdentifier`: `str` *(required)*
 - `CertificatePem`: `str`
-- `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns

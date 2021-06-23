@@ -280,7 +280,7 @@ Required fields:
 Optional fields:
 
 - `StringValue`: `str`
-- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## PaginatorConfigTypeDef
 

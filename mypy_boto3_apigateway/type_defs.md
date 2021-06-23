@@ -424,7 +424,7 @@ Optional fields:
 
 - `contentType`: `str`
 - `contentDisposition`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## GatewayResponseTypeDef
 
@@ -752,7 +752,7 @@ Optional fields:
 
 - `contentType`: `str`
 - `contentDisposition`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## SdkTypeTypeDef
 

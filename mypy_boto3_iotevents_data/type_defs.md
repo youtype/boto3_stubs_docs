@@ -431,7 +431,7 @@ Required fields:
 
 - `messageId`: `str`
 - `inputName`: `str`
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Optional fields:
 

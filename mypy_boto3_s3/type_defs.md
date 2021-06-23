@@ -2265,7 +2265,7 @@ from mypy_boto3_s3.type_defs import RecordsEventTypeDef
 
 Optional fields:
 
-- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## RedirectAllRequestsToTypeDef
 

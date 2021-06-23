@@ -183,7 +183,7 @@ Keyword-only arguments:
 - `sessionState`: `str`
 - `requestAttributes`: `str`
 - `responseContentType`: `str`
-- `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
 [RecognizeUtteranceResponseTypeDef](./type_defs.md#recognizeutteranceresponsetypedef).

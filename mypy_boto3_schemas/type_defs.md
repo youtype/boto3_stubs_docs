@@ -181,7 +181,7 @@ from mypy_boto3_schemas.type_defs import GetCodeBindingSourceResponseTypeDef
 
 Optional fields:
 
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## GetDiscoveredSchemaResponseTypeDef
 

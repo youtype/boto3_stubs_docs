@@ -40,6 +40,8 @@ type annotations stubs module
   - [CreateDashboardResponseTypeDef](#createdashboardresponsetypedef)
   - [CreateDataSetResponseTypeDef](#createdatasetresponsetypedef)
   - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
+  - [CreateFolderMembershipResponseTypeDef](#createfoldermembershipresponsetypedef)
+  - [CreateFolderResponseTypeDef](#createfolderresponsetypedef)
   - [CreateGroupMembershipResponseTypeDef](#creategroupmembershipresponsetypedef)
   - [CreateGroupResponseTypeDef](#creategroupresponsetypedef)
   - [CreateIAMPolicyAssignmentResponseTypeDef](#createiampolicyassignmentresponsetypedef)
@@ -77,6 +79,8 @@ type annotations stubs module
   - [DeleteDashboardResponseTypeDef](#deletedashboardresponsetypedef)
   - [DeleteDataSetResponseTypeDef](#deletedatasetresponsetypedef)
   - [DeleteDataSourceResponseTypeDef](#deletedatasourceresponsetypedef)
+  - [DeleteFolderMembershipResponseTypeDef](#deletefoldermembershipresponsetypedef)
+  - [DeleteFolderResponseTypeDef](#deletefolderresponsetypedef)
   - [DeleteGroupMembershipResponseTypeDef](#deletegroupmembershipresponsetypedef)
   - [DeleteGroupResponseTypeDef](#deletegroupresponsetypedef)
   - [DeleteIAMPolicyAssignmentResponseTypeDef](#deleteiampolicyassignmentresponsetypedef)
@@ -97,6 +101,9 @@ type annotations stubs module
   - [DescribeDataSetResponseTypeDef](#describedatasetresponsetypedef)
   - [DescribeDataSourcePermissionsResponseTypeDef](#describedatasourcepermissionsresponsetypedef)
   - [DescribeDataSourceResponseTypeDef](#describedatasourceresponsetypedef)
+  - [DescribeFolderPermissionsResponseTypeDef](#describefolderpermissionsresponsetypedef)
+  - [DescribeFolderResolvedPermissionsResponseTypeDef](#describefolderresolvedpermissionsresponsetypedef)
+  - [DescribeFolderResponseTypeDef](#describefolderresponsetypedef)
   - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
   - [DescribeIAMPolicyAssignmentResponseTypeDef](#describeiampolicyassignmentresponsetypedef)
   - [DescribeIngestionResponseTypeDef](#describeingestionresponsetypedef)
@@ -112,6 +119,10 @@ type annotations stubs module
   - [ExportToCSVOptionTypeDef](#exporttocsvoptiontypedef)
   - [FieldFolderTypeDef](#fieldfoldertypedef)
   - [FilterOperationTypeDef](#filteroperationtypedef)
+  - [FolderMemberTypeDef](#foldermembertypedef)
+  - [FolderSearchFilterTypeDef](#foldersearchfiltertypedef)
+  - [FolderSummaryTypeDef](#foldersummarytypedef)
+  - [FolderTypeDef](#foldertypedef)
   - [GeoSpatialColumnGroupTypeDef](#geospatialcolumngrouptypedef)
   - [GetDashboardEmbedUrlResponseTypeDef](#getdashboardembedurlresponsetypedef)
   - [GetSessionEmbedUrlResponseTypeDef](#getsessionembedurlresponsetypedef)
@@ -131,6 +142,8 @@ type annotations stubs module
   - [ListDashboardsResponseTypeDef](#listdashboardsresponsetypedef)
   - [ListDataSetsResponseTypeDef](#listdatasetsresponsetypedef)
   - [ListDataSourcesResponseTypeDef](#listdatasourcesresponsetypedef)
+  - [ListFolderMembersResponseTypeDef](#listfoldermembersresponsetypedef)
+  - [ListFoldersResponseTypeDef](#listfoldersresponsetypedef)
   - [ListGroupMembershipsResponseTypeDef](#listgroupmembershipsresponsetypedef)
   - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
   - [ListIAMPolicyAssignmentsForUserResponseTypeDef](#listiampolicyassignmentsforuserresponsetypedef)
@@ -151,6 +164,7 @@ type annotations stubs module
   - [ManifestFileLocationTypeDef](#manifestfilelocationtypedef)
   - [MarginStyleTypeDef](#marginstyletypedef)
   - [MariaDbParametersTypeDef](#mariadbparameterstypedef)
+  - [MemberIdArnPairTypeDef](#memberidarnpairtypedef)
   - [MySqlParametersTypeDef](#mysqlparameterstypedef)
   - [NamespaceErrorTypeDef](#namespaceerrortypedef)
   - [NamespaceInfoV2TypeDef](#namespaceinfov2typedef)
@@ -176,6 +190,7 @@ type annotations stubs module
   - [S3SourceTypeDef](#s3sourcetypedef)
   - [SearchAnalysesResponseTypeDef](#searchanalysesresponsetypedef)
   - [SearchDashboardsResponseTypeDef](#searchdashboardsresponsetypedef)
+  - [SearchFoldersResponseTypeDef](#searchfoldersresponsetypedef)
   - [ServiceNowParametersTypeDef](#servicenowparameterstypedef)
   - [SheetControlsOptionTypeDef](#sheetcontrolsoptiontypedef)
   - [SheetStyleTypeDef](#sheetstyletypedef)
@@ -222,6 +237,8 @@ type annotations stubs module
   - [UpdateDataSetResponseTypeDef](#updatedatasetresponsetypedef)
   - [UpdateDataSourcePermissionsResponseTypeDef](#updatedatasourcepermissionsresponsetypedef)
   - [UpdateDataSourceResponseTypeDef](#updatedatasourceresponsetypedef)
+  - [UpdateFolderPermissionsResponseTypeDef](#updatefolderpermissionsresponsetypedef)
+  - [UpdateFolderResponseTypeDef](#updatefolderresponsetypedef)
   - [UpdateGroupResponseTypeDef](#updategroupresponsetypedef)
   - [UpdateIAMPolicyAssignmentResponseTypeDef](#updateiampolicyassignmentresponsetypedef)
   - [UpdateTemplateAliasResponseTypeDef](#updatetemplatealiasresponsetypedef)
@@ -630,6 +647,31 @@ Optional fields:
 - `CreationStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `RequestId`: `str`
 - `Status`: `int`
+
+## CreateFolderMembershipResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import CreateFolderMembershipResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `FolderMember`: [FolderMemberTypeDef](./type_defs.md#foldermembertypedef)
+- `RequestId`: `str`
+
+## CreateFolderResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import CreateFolderResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `Arn`: `str`
+- `FolderId`: `str`
+- `RequestId`: `str`
 
 ## CreateGroupMembershipResponseTypeDef
 
@@ -1199,6 +1241,30 @@ Optional fields:
 - `RequestId`: `str`
 - `Status`: `int`
 
+## DeleteFolderMembershipResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `RequestId`: `str`
+
+## DeleteFolderResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DeleteFolderResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `Arn`: `str`
+- `FolderId`: `str`
+- `RequestId`: `str`
+
 ## DeleteGroupMembershipResponseTypeDef
 
 ```python
@@ -1457,6 +1523,48 @@ Optional fields:
 - `RequestId`: `str`
 - `Status`: `int`
 
+## DescribeFolderPermissionsResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `FolderId`: `str`
+- `Arn`: `str`
+- `Permissions`:
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `RequestId`: `str`
+
+## DescribeFolderResolvedPermissionsResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `FolderId`: `str`
+- `Arn`: `str`
+- `Permissions`:
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `RequestId`: `str`
+
+## DescribeFolderResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DescribeFolderResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `Folder`: [FolderTypeDef](./type_defs.md#foldertypedef)
+- `RequestId`: `str`
+
 ## DescribeGroupResponseTypeDef
 
 ```python
@@ -1638,6 +1746,64 @@ from mypy_boto3_quicksight.type_defs import FilterOperationTypeDef
 Required fields:
 
 - `ConditionExpression`: `str`
+
+## FolderMemberTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import FolderMemberTypeDef
+```
+
+Optional fields:
+
+- `MemberId`: `str`
+- `MemberType`: [MemberTypeType](./literals.md#membertypetype)
+
+## FolderSearchFilterTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import FolderSearchFilterTypeDef
+```
+
+Optional fields:
+
+- `Operator`: `Literal['StringEquals']` (see
+  [FilterOperatorType](./literals.md#filteroperatortype))
+- `Name`: `Literal['PARENT_FOLDER_ARN']` (see
+  [FolderFilterAttributeType](./literals.md#folderfilterattributetype))
+- `Value`: `str`
+
+## FolderSummaryTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import FolderSummaryTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `FolderId`: `str`
+- `Name`: `str`
+- `FolderType`: `Literal['SHARED']` (see
+  [FolderTypeType](./literals.md#foldertypetype))
+- `CreatedTime`: `datetime`
+- `LastUpdatedTime`: `datetime`
+
+## FolderTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import FolderTypeDef
+```
+
+Optional fields:
+
+- `FolderId`: `str`
+- `Arn`: `str`
+- `Name`: `str`
+- `FolderType`: `Literal['SHARED']` (see
+  [FolderTypeType](./literals.md#foldertypetype))
+- `FolderPath`: `List`\[`str`\]
+- `CreatedTime`: `datetime`
+- `LastUpdatedTime`: `datetime`
 
 ## GeoSpatialColumnGroupTypeDef
 
@@ -1894,6 +2060,34 @@ Optional fields:
 - `NextToken`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
+
+## ListFolderMembersResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import ListFolderMembersResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `FolderMemberList`:
+  `List`\[[MemberIdArnPairTypeDef](./type_defs.md#memberidarnpairtypedef)\]
+- `NextToken`: `str`
+- `RequestId`: `str`
+
+## ListFoldersResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import ListFoldersResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `FolderSummaryList`:
+  `List`\[[FolderSummaryTypeDef](./type_defs.md#foldersummarytypedef)\]
+- `NextToken`: `str`
+- `RequestId`: `str`
 
 ## ListGroupMembershipsResponseTypeDef
 
@@ -2160,6 +2354,17 @@ Required fields:
 - `Host`: `str`
 - `Port`: `int`
 - `Database`: `str`
+
+## MemberIdArnPairTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import MemberIdArnPairTypeDef
+```
+
+Optional fields:
+
+- `MemberId`: `str`
+- `MemberArn`: `str`
 
 ## MySqlParametersTypeDef
 
@@ -2488,6 +2693,20 @@ Optional fields:
   `List`\[[DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef)\]
 - `NextToken`: `str`
 - `Status`: `int`
+- `RequestId`: `str`
+
+## SearchFoldersResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import SearchFoldersResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `FolderSummaryList`:
+  `List`\[[FolderSummaryTypeDef](./type_defs.md#foldersummarytypedef)\]
+- `NextToken`: `str`
 - `RequestId`: `str`
 
 ## ServiceNowParametersTypeDef
@@ -3098,6 +3317,34 @@ Optional fields:
 - `UpdateStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `RequestId`: `str`
 - `Status`: `int`
+
+## UpdateFolderPermissionsResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import UpdateFolderPermissionsResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `Arn`: `str`
+- `FolderId`: `str`
+- `Permissions`:
+  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `RequestId`: `str`
+
+## UpdateFolderResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import UpdateFolderResponseTypeDef
+```
+
+Optional fields:
+
+- `Status`: `int`
+- `Arn`: `str`
+- `FolderId`: `str`
+- `RequestId`: `str`
 
 ## UpdateGroupResponseTypeDef
 

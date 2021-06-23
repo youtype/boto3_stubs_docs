@@ -173,7 +173,8 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `Description`: `str`
 - `KafkaVersions`: `List`\[`str`\]
 
@@ -573,7 +574,8 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `Description`: `str`
 
 Returns

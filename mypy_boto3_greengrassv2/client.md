@@ -152,7 +152,7 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `lambdaFunction`:
   [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
 - `tags`: `Dict`\[`str`, `str`\]

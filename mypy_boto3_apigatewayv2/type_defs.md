@@ -477,7 +477,7 @@ from mypy_boto3_apigatewayv2.type_defs import ExportApiResponseTypeDef
 
 Optional fields:
 
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## GetApiMappingResponseTypeDef
 

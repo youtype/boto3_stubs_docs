@@ -736,7 +736,7 @@ Keyword-only arguments:
 
 - `Key`: `str` *(required)*
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -1879,7 +1879,7 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `SSECustomerAlgorithm`: `str`
@@ -2204,7 +2204,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
@@ -2642,7 +2642,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `CacheControl`: `str`
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`

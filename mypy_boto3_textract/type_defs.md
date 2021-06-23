@@ -124,7 +124,7 @@ from mypy_boto3_textract.type_defs import DocumentTypeDef
 
 Optional fields:
 
-- `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
 ## GeometryTypeDef

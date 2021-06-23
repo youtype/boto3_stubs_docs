@@ -365,7 +365,7 @@ from mypy_boto3_appsync.type_defs import GetIntrospectionSchemaResponseTypeDef
 
 Optional fields:
 
-- `schema`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `schema`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## GetResolverResponseTypeDef
 

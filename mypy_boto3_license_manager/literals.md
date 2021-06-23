@@ -155,6 +155,7 @@ Values:
 - `PENDING_DELETE`
 - `PENDING_WORKFLOW`
 - `REJECTED`
+- `WORKFLOW_COMPLETED`
 
 ## InventoryFilterConditionType
 
@@ -285,6 +286,7 @@ Values:
 - `PENDING_ACCEPT`
 - `PENDING_WORKFLOW`
 - `REJECTED`
+- `WORKFLOW_COMPLETED`
 
 ## RenewTypeType
 

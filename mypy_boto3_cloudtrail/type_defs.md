@@ -296,7 +296,7 @@ from mypy_boto3_cloudtrail.type_defs import PublicKeyTypeDef
 
 Optional fields:
 
-- `Value`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Value`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ValidityStartTime`: `datetime`
 - `ValidityEndTime`: `datetime`
 - `Fingerprint`: `str`

@@ -408,7 +408,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `PartitionKey`: `str` *(required)*
 - `ExplicitHashKey`: `str`
 - `SequenceNumberForOrdering`: `str`

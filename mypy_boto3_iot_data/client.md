@@ -150,7 +150,7 @@ Keyword-only arguments:
 
 - `topic`: `str` *(required)*
 - `qos`: `int`
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ### update_thing_shadow
 
@@ -162,7 +162,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `shadowName`: `str`
 
 Returns

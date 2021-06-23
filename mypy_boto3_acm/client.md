@@ -141,7 +141,8 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
-- `Passphrase`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Passphrase`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 
 Returns
 [ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef).
@@ -195,10 +196,12 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `PrivateKey`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
+- `PrivateKey`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `CertificateArn`: `str`
-- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns

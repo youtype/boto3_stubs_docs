@@ -710,7 +710,7 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
 - `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)

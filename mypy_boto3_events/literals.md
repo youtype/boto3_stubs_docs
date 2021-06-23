@@ -20,6 +20,9 @@ type annotations stubs module
   - [ListRuleNamesByTargetPaginatorName](#listrulenamesbytargetpaginatorname)
   - [ListRulesPaginatorName](#listrulespaginatorname)
   - [ListTargetsByRulePaginatorName](#listtargetsbyrulepaginatorname)
+  - [PlacementConstraintTypeType](#placementconstrainttypetype)
+  - [PlacementStrategyTypeType](#placementstrategytypetype)
+  - [PropagateTagsType](#propagatetagstype)
   - [ReplayStateType](#replaystatetype)
   - [RuleStateType](#rulestatetype)
 
@@ -168,6 +171,39 @@ from mypy_boto3_events.literals import ListTargetsByRulePaginatorName
 Values:
 
 - `list_targets_by_rule`
+
+## PlacementConstraintTypeType
+
+```python
+from mypy_boto3_events.literals import PlacementConstraintTypeType
+```
+
+Values:
+
+- `distinctInstance`
+- `memberOf`
+
+## PlacementStrategyTypeType
+
+```python
+from mypy_boto3_events.literals import PlacementStrategyTypeType
+```
+
+Values:
+
+- `binpack`
+- `random`
+- `spread`
+
+## PropagateTagsType
+
+```python
+from mypy_boto3_events.literals import PropagateTagsType
+```
+
+Values:
+
+- `TASK_DEFINITION`
 
 ## ReplayStateType
 

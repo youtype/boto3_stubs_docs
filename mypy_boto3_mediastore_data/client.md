@@ -153,7 +153,7 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `Path`: `str` *(required)*
 - `ContentType`: `str`
 - `CacheControl`: `str`

@@ -629,7 +629,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import CodeContentTypeDef
 Optional fields:
 
 - `TextContent`: `str`
-- `ZipFileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ZipFileContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3ContentLocation`:
   [S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef)
 
@@ -642,7 +642,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import CodeContentUpdateTypeDef
 Optional fields:
 
 - `TextContentUpdate`: `str`
-- `ZipFileContentUpdate`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `ZipFileContentUpdate`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3ContentLocationUpdate`:
   [S3ContentLocationUpdateTypeDef](./type_defs.md#s3contentlocationupdatetypedef)
 

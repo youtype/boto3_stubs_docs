@@ -568,7 +568,7 @@ from mypy_boto3_iam.type_defs import GetCredentialReportResponseTypeDef
 
 Optional fields:
 
-- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ReportFormat`: `Literal['text/csv']` (see
   [ReportFormatTypeType](./literals.md#reportformattypetype))
 - `GeneratedTime`: `datetime`
@@ -1997,8 +1997,8 @@ Required fields:
 
 Optional fields:
 
-- `Base32StringSeed`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
-- `QRCodePNG`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Base32StringSeed`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `QRCodePNG`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `EnableDate`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]

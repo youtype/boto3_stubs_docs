@@ -1047,7 +1047,7 @@ from mypy_boto3_iot.type_defs import CodeSigningSignatureTypeDef
 
 Optional fields:
 
-- `inlineDocument`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `inlineDocument`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## CodeSigningTypeDef
 
@@ -3394,7 +3394,7 @@ from mypy_boto3_iot.type_defs import MqttContextTypeDef
 Optional fields:
 
 - `username`: `str`
-- `password`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `password`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `clientId`: `str`
 
 ## NonCompliantResourceTypeDef

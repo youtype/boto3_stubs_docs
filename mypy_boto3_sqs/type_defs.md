@@ -199,9 +199,10 @@ Required fields:
 Optional fields:
 
 - `StringValue`: `str`
-- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `StringListValues`: `List`\[`str`\]
-- `BinaryListValues`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\]
+- `BinaryListValues`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\],
+  `StreamingBody`\]\]
 
 ## MessageSystemAttributeValueTypeDef
 
@@ -216,9 +217,10 @@ Required fields:
 Optional fields:
 
 - `StringValue`: `str`
-- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `StringListValues`: `List`\[`str`\]
-- `BinaryListValues`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\]
+- `BinaryListValues`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\],
+  `StreamingBody`\]\]
 
 ## MessageTypeDef
 

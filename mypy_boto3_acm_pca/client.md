@@ -318,8 +318,9 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
-- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
-- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
+- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ### issue_certificate
 
@@ -331,7 +332,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
-- `Csr`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Csr`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `SigningAlgorithm`:
   [SigningAlgorithmType](./literals.md#signingalgorithmtype) *(required)*
 - `Validity`: [ValidityTypeDef](./type_defs.md#validitytypedef) *(required)*

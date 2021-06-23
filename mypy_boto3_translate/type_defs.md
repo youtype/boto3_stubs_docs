@@ -317,7 +317,7 @@ from mypy_boto3_translate.type_defs import TerminologyDataTypeDef
 
 Required fields:
 
-- `File`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `File`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Format`:
   [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 

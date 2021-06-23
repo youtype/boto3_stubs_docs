@@ -379,7 +379,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `FunctionConfig`:
   [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) *(required)*
-- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 
 Returns
 [CreateFunctionResultTypeDef](./type_defs.md#createfunctionresulttypedef).
@@ -1357,7 +1358,8 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `IfMatch`: `str` *(required)*
-- `EventObject`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `EventObject`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
 Returns [TestFunctionResultTypeDef](./type_defs.md#testfunctionresulttypedef).
@@ -1480,7 +1482,8 @@ Keyword-only arguments:
 - `IfMatch`: `str` *(required)*
 - `FunctionConfig`:
   [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) *(required)*
-- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 
 Returns
 [UpdateFunctionResultTypeDef](./type_defs.md#updatefunctionresulttypedef).

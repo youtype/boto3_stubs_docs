@@ -103,7 +103,7 @@ from mypy_boto3_appconfig.type_defs import ConfigurationTypeDef
 
 Optional fields:
 
-- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ConfigurationVersion`: `str`
 - `ContentType`: `str`
 
@@ -261,7 +261,7 @@ Optional fields:
 - `ConfigurationProfileId`: `str`
 - `VersionNumber`: `int`
 - `Description`: `str`
-- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentType`: `str`
 
 ## HostedConfigurationVersionsTypeDef

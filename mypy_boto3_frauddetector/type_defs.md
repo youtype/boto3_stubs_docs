@@ -591,7 +591,7 @@ from mypy_boto3_frauddetector.type_defs import ModelEndpointDataBlobTypeDef
 
 Optional fields:
 
-- `byteBuffer`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `byteBuffer`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `contentType`: `str`
 
 ## ModelInputConfigurationTypeDef

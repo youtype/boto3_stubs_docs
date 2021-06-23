@@ -164,7 +164,7 @@ Optional fields:
 - `CertificateIdentifier`: `str`
 - `CertificateCreationDate`: `datetime`
 - `CertificatePem`: `str`
-- `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `CertificateArn`: `str`
 - `CertificateOwner`: `str`
 - `ValidFromDate`: `datetime`

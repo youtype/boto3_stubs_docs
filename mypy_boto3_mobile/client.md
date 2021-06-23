@@ -90,7 +90,7 @@ Keyword-only arguments:
 
 - `name`: `str`
 - `region`: `str`
-- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `snapshotId`: `str`
 
 Returns
@@ -222,7 +222,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
-- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
 [UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).

@@ -130,7 +130,7 @@ from mypy_boto3_rds_data.type_defs import FieldTypeDef
 Optional fields:
 
 - `arrayValue`: [ArrayValueTypeDef](./type_defs.md#arrayvaluetypedef)
-- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `booleanValue`: `bool`
 - `doubleValue`: `float`
 - `isNull`: `bool`
@@ -246,7 +246,7 @@ Optional fields:
 - `arrayValues`: `List`\[[ValueTypeDef](./type_defs.md#valuetypedef)\]
 - `bigIntValue`: `int`
 - `bitValue`: `bool`
-- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `doubleValue`: `float`
 - `intValue`: `int`
 - `isNull`: `bool`

@@ -1493,7 +1493,7 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `format`: `Literal['csv']` (see
   [ApiKeysFormatType](./literals.md#apikeysformattype)) *(required)*
 - `failOnWarnings`: `bool`
@@ -1511,7 +1511,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `mode`: [PutModeType](./literals.md#putmodetype)
 - `failOnWarnings`: `bool`
 
@@ -1527,7 +1527,7 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `failOnWarnings`: `bool`
 - `parameters`: `Dict`\[`str`, `str`\]
 
@@ -1655,7 +1655,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `mode`: [PutModeType](./literals.md#putmodetype)
 - `failOnWarnings`: `bool`
 - `parameters`: `Dict`\[`str`, `str`\]

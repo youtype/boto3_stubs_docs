@@ -124,7 +124,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `Description`: `str`
 - `KmsKeyId`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AddReplicaRegions`:
@@ -312,7 +312,7 @@ Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `ClientRequestToken`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
 - `VersionStages`: `List`\[`str`\]
 
@@ -438,7 +438,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `Description`: `str`
 - `KmsKeyId`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SecretString`: `str`
 
 Returns

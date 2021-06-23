@@ -570,7 +570,7 @@ from mypy_boto3_location.type_defs import GetMapGlyphsResponseTypeDef
 
 Optional fields:
 
-- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentType`: `str`
 
 ## GetMapSpritesResponseTypeDef
@@ -581,7 +581,7 @@ from mypy_boto3_location.type_defs import GetMapSpritesResponseTypeDef
 
 Optional fields:
 
-- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentType`: `str`
 
 ## GetMapStyleDescriptorResponseTypeDef
@@ -592,7 +592,7 @@ from mypy_boto3_location.type_defs import GetMapStyleDescriptorResponseTypeDef
 
 Optional fields:
 
-- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentType`: `str`
 
 ## GetMapTileResponseTypeDef
@@ -603,7 +603,7 @@ from mypy_boto3_location.type_defs import GetMapTileResponseTypeDef
 
 Optional fields:
 
-- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentType`: `str`
 
 ## LegGeometryTypeDef

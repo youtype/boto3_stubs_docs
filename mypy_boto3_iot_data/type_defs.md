@@ -21,7 +21,7 @@ from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseTypeDef
 
 Required fields:
 
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## GetThingShadowResponseTypeDef
 
@@ -31,7 +31,7 @@ from mypy_boto3_iot_data.type_defs import GetThingShadowResponseTypeDef
 
 Optional fields:
 
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## ListNamedShadowsForThingResponseTypeDef
 
@@ -53,4 +53,4 @@ from mypy_boto3_iot_data.type_defs import UpdateThingShadowResponseTypeDef
 
 Optional fields:
 
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]

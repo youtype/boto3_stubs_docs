@@ -2740,7 +2740,7 @@ Optional fields:
 
 - `ClientContext`: `str`
 - `Qualifier`: `str`
-- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## MaintenanceWindowRunCommandParametersTypeDef
 

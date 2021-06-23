@@ -94,7 +94,7 @@ Boto3 documentation:
 Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `ContentType`: `str`
 - `Accept`: `str`
 - `CustomAttributes`: `str`

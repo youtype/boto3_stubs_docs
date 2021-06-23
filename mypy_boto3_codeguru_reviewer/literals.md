@@ -8,13 +8,39 @@ type annotations stubs module
 [mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 - [Literals for boto3 CodeGuruReviewer module](#literals-for-boto3-codegurureviewer-module)
+  - [AnalysisTypeType](#analysistypetype)
+  - [CodeReviewCompletedWaiterName](#codereviewcompletedwaitername)
   - [EncryptionOptionType](#encryptionoptiontype)
   - [JobStateType](#jobstatetype)
   - [ListRepositoryAssociationsPaginatorName](#listrepositoryassociationspaginatorname)
   - [ProviderTypeType](#providertypetype)
   - [ReactionType](#reactiontype)
+  - [RecommendationCategoryType](#recommendationcategorytype)
   - [RepositoryAssociationStateType](#repositoryassociationstatetype)
+  - [RepositoryAssociationSucceededWaiterName](#repositoryassociationsucceededwaitername)
   - [TypeType](#typetype)
+  - [VendorNameType](#vendornametype)
+
+## AnalysisTypeType
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType
+```
+
+Values:
+
+- `CodeQuality`
+- `Security`
+
+## CodeReviewCompletedWaiterName
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import CodeReviewCompletedWaiterName
+```
+
+Values:
+
+- `code_review_completed`
 
 ## EncryptionOptionType
 
@@ -62,6 +88,7 @@ Values:
 - `CodeCommit`
 - `GitHub`
 - `GitHubEnterpriseServer`
+- `S3Bucket`
 
 ## ReactionType
 
@@ -73,6 +100,25 @@ Values:
 
 - `ThumbsDown`
 - `ThumbsUp`
+
+## RecommendationCategoryType
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import RecommendationCategoryType
+```
+
+Values:
+
+- `AWSBestPractices`
+- `AWSCloudFormationIssues`
+- `CodeMaintenanceIssues`
+- `ConcurrencyIssues`
+- `DuplicateCode`
+- `InputValidations`
+- `JavaBestPractices`
+- `PythonBestPractices`
+- `ResourceLeaks`
+- `SecurityIssues`
 
 ## RepositoryAssociationStateType
 
@@ -88,6 +134,16 @@ Values:
 - `Disassociating`
 - `Failed`
 
+## RepositoryAssociationSucceededWaiterName
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import RepositoryAssociationSucceededWaiterName
+```
+
+Values:
+
+- `repository_association_succeeded`
+
 ## TypeType
 
 ```python
@@ -98,3 +154,15 @@ Values:
 
 - `PullRequest`
 - `RepositoryAnalysis`
+
+## VendorNameType
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import VendorNameType
+```
+
+Values:
+
+- `GitHub`
+- `GitLab`
+- `NativeS3`

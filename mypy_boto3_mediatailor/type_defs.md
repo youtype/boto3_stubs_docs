@@ -46,6 +46,7 @@ type annotations stubs module
   - [PutPlaybackConfigurationResponseTypeDef](#putplaybackconfigurationresponsetypedef)
   - [RequestOutputItemTypeDef](#requestoutputitemtypedef)
   - [ResponseOutputItemTypeDef](#responseoutputitemtypedef)
+  - [ScheduleAdBreakTypeDef](#scheduleadbreaktypedef)
   - [ScheduleConfigurationTypeDef](#scheduleconfigurationtypedef)
   - [ScheduleEntryTypeDef](#scheduleentrytypedef)
   - [SecretsManagerAccessTokenConfigurationTypeDef](#secretsmanageraccesstokenconfigurationtypedef)
@@ -629,6 +630,19 @@ Optional fields:
 - `HlsPlaylistSettings`:
   [HlsPlaylistSettingsTypeDef](./type_defs.md#hlsplaylistsettingstypedef)
 
+## ScheduleAdBreakTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ScheduleAdBreakTypeDef
+```
+
+Optional fields:
+
+- `ApproximateDurationSeconds`: `int`
+- `ApproximateStartTime`: `datetime`
+- `SourceLocationName`: `str`
+- `VodSourceName`: `str`
+
 ## ScheduleConfigurationTypeDef
 
 ```python
@@ -657,6 +671,8 @@ Optional fields:
 
 - `ApproximateDurationSeconds`: `int`
 - `ApproximateStartTime`: `datetime`
+- `ScheduleAdBreaks`:
+  `List`\[[ScheduleAdBreakTypeDef](./type_defs.md#scheduleadbreaktypedef)\]
 
 ## SecretsManagerAccessTokenConfigurationTypeDef
 

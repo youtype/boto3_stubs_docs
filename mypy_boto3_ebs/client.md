@@ -173,7 +173,8 @@ Keyword-only arguments:
 
 - `SnapshotId`: `str` *(required)*
 - `BlockIndex`: `int` *(required)*
-- `BlockData`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `BlockData`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `DataLength`: `int` *(required)*
 - `Checksum`: `str` *(required)*
 - `ChecksumAlgorithm`: `Literal['SHA256']` (see

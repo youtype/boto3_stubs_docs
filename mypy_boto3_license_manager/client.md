@@ -237,6 +237,7 @@ Keyword-only arguments:
 - `AllowedOperations`:
   `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
+- `StatusReason`: `str`
 - `SourceVersion`: `str`
 
 Returns
@@ -382,6 +383,7 @@ Keyword-only arguments:
 
 - `GrantArn`: `str` *(required)*
 - `Version`: `str` *(required)*
+- `StatusReason`: `str`
 
 Returns
 [DeleteGrantResponseTypeDef](./type_defs.md#deletegrantresponsetypedef).

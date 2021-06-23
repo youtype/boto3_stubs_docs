@@ -125,6 +125,10 @@ Values:
 - `search.m3.medium`
 - `search.m3.xlarge`
 - `search.medium`
+- `search.previousgeneration.2xlarge`
+- `search.previousgeneration.large`
+- `search.previousgeneration.small`
+- `search.previousgeneration.xlarge`
 - `search.small`
 - `search.xlarge`
 

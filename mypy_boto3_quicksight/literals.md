@@ -23,6 +23,8 @@ type annotations stubs module
   - [EmbeddingIdentityTypeType](#embeddingidentitytypetype)
   - [FileFormatType](#fileformattype)
   - [FilterOperatorType](#filteroperatortype)
+  - [FolderFilterAttributeType](#folderfilterattributetype)
+  - [FolderTypeType](#foldertypetype)
   - [GeoSpatialCountryCodeType](#geospatialcountrycodetype)
   - [GeoSpatialDataRoleType](#geospatialdataroletype)
   - [IdentityStoreType](#identitystoretype)
@@ -45,6 +47,7 @@ type annotations stubs module
   - [ListTemplatesPaginatorName](#listtemplatespaginatorname)
   - [ListThemeVersionsPaginatorName](#listthemeversionspaginatorname)
   - [ListThemesPaginatorName](#listthemespaginatorname)
+  - [MemberTypeType](#membertypetype)
   - [NamespaceErrorTypeType](#namespaceerrortypetype)
   - [NamespaceStatusType](#namespacestatustype)
   - [ResourceStatusType](#resourcestatustype)
@@ -270,6 +273,26 @@ from mypy_boto3_quicksight.literals import FilterOperatorType
 Values:
 
 - `StringEquals`
+
+## FolderFilterAttributeType
+
+```python
+from mypy_boto3_quicksight.literals import FolderFilterAttributeType
+```
+
+Values:
+
+- `PARENT_FOLDER_ARN`
+
+## FolderTypeType
+
+```python
+from mypy_boto3_quicksight.literals import FolderTypeType
+```
+
+Values:
+
+- `SHARED`
 
 ## GeoSpatialCountryCodeType
 
@@ -554,6 +577,18 @@ from mypy_boto3_quicksight.literals import ListThemesPaginatorName
 Values:
 
 - `list_themes`
+
+## MemberTypeType
+
+```python
+from mypy_boto3_quicksight.literals import MemberTypeType
+```
+
+Values:
+
+- `ANALYSIS`
+- `DASHBOARD`
+- `DATASET`
 
 ## NamespaceErrorTypeType
 

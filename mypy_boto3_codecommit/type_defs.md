@@ -791,7 +791,7 @@ from mypy_boto3_codecommit.type_defs import GetBlobOutputTypeDef
 
 Required fields:
 
-- `content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -900,7 +900,7 @@ Required fields:
 - `filePath`: `str`
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 - `fileSize`: `int`
-- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1492,7 +1492,7 @@ Required fields:
 Optional fields:
 
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
-- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `sourceFile`:
   [SourceFileSpecifierTypeDef](./type_defs.md#sourcefilespecifiertypedef)
 
@@ -1561,7 +1561,7 @@ Required fields:
 
 Optional fields:
 
-- `content`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
 ## RepositoryMetadataTypeDef

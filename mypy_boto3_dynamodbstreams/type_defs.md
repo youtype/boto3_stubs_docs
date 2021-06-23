@@ -33,10 +33,10 @@ Optional fields:
 
 - `S`: `str`
 - `N`: `str`
-- `B`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `B`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `SS`: `List`\[`str`\]
 - `NS`: `List`\[`str`\]
-- `BS`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\]\]\]
+- `BS`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]\]
 - `M`: `Dict`\[`str`,
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
 - `L`: `List`\[[AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]

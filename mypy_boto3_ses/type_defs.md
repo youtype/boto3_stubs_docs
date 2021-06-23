@@ -689,7 +689,7 @@ from mypy_boto3_ses.type_defs import RawMessageTypeDef
 
 Required fields:
 
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## ReceiptActionTypeDef
 

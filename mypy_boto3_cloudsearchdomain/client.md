@@ -134,7 +134,8 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `documents`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `documents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+  *(required)*
 - `contentType`: [ContentTypeType](./literals.md#contenttypetype) *(required)*
 
 Returns

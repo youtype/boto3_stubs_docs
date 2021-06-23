@@ -3283,7 +3283,7 @@ from mypy_boto3_pinpoint.type_defs import RawEmailTypeDef
 
 Optional fields:
 
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\]\]
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## RecencyDimensionTypeDef
 

@@ -241,7 +241,7 @@ Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `ModelVersion`: `str` *(required)*
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `ContentType`: `str` *(required)*
 
 Returns
@@ -403,7 +403,7 @@ Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 - `DatasetType`: `str` *(required)*
-- `Changes`: `Union`\[`bytes`, `IO`\[`bytes`\]\] *(required)*
+- `Changes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
 - `ClientToken`: `str`
 
 Returns
