@@ -1555,8 +1555,8 @@ from mypy_boto3_kendra.type_defs import SharePointConfigurationTypeDef
 
 Required fields:
 
-- `SharePointVersion`: `Literal['SHAREPOINT_ONLINE']` (see
-  [SharePointVersionType](./literals.md#sharepointversiontype))
+- `SharePointVersion`:
+  [SharePointVersionType](./literals.md#sharepointversiontype)
 - `Urls`: `List`\[`str`\]
 - `SecretArn`: `str`
 
@@ -1572,6 +1572,7 @@ Optional fields:
   `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `DocumentTitleFieldName`: `str`
 - `DisableLocalGroups`: `bool`
+- `SslCertificateS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 
 ## SiteMapsConfigurationTypeDef
 

@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Literals for boto3 DAX module](#literals-for-boto3-dax-module)
   - [ChangeTypeType](#changetypetype)
+  - [ClusterEndpointEncryptionTypeType](#clusterendpointencryptiontypetype)
   - [DescribeClustersPaginatorName](#describeclusterspaginatorname)
   - [DescribeDefaultParametersPaginatorName](#describedefaultparameterspaginatorname)
   - [DescribeEventsPaginatorName](#describeeventspaginatorname)
@@ -31,6 +32,17 @@ Values:
 
 - `IMMEDIATE`
 - `REQUIRES_REBOOT`
+
+## ClusterEndpointEncryptionTypeType
+
+```python
+from mypy_boto3_dax.literals import ClusterEndpointEncryptionTypeType
+```
+
+Values:
+
+- `NONE`
+- `TLS`
 
 ## DescribeClustersPaginatorName
 

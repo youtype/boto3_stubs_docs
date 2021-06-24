@@ -143,6 +143,7 @@ from mypy_boto3_transfer.type_defs import CreateAccessResponseTypeDef, ...
 - [ListedUserTypeDef](./type_defs.md#listedusertypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
+- [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
 - [SshPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TestIdentityProviderResponseTypeDef](./type_defs.md#testidentityproviderresponsetypedef)

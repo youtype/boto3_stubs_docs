@@ -76,6 +76,8 @@ Optional fields:
   [ParameterGroupStatusTypeDef](./type_defs.md#parametergroupstatustypedef)
 - `SSEDescription`:
   [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
+- `ClusterEndpointEncryptionType`:
+  [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
 
 ## CreateClusterResponseTypeDef
 
@@ -226,6 +228,7 @@ Optional fields:
 
 - `Address`: `str`
 - `Port`: `int`
+- `URL`: `str`
 
 ## EventTypeDef
 

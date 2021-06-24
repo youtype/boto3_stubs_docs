@@ -85,6 +85,7 @@ Exceptions:
 - `Exceptions.ParameterGroupNotFoundFault`
 - `Exceptions.ParameterGroupQuotaExceededFault`
 - `Exceptions.ServiceLinkedRoleNotFoundFault`
+- `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.SubnetGroupAlreadyExistsFault`
 - `Exceptions.SubnetGroupInUseFault`
 - `Exceptions.SubnetGroupNotFoundFault`
@@ -132,6 +133,8 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+- `ClusterEndpointEncryptionType`:
+  [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
 
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).

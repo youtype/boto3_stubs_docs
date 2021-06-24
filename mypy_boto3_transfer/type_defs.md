@@ -33,6 +33,7 @@ type annotations stubs module
   - [ListedUserTypeDef](#listedusertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PosixProfileTypeDef](#posixprofiletypedef)
+  - [ProtocolDetailsTypeDef](#protocoldetailstypedef)
   - [SshPublicKeyTypeDef](#sshpublickeytypedef)
   - [TagTypeDef](#tagtypedef)
   - [TestIdentityProviderResponseTypeDef](#testidentityproviderresponsetypedef)
@@ -164,6 +165,8 @@ Required fields:
 Optional fields:
 
 - `Certificate`: `str`
+- `ProtocolDetails`:
+  [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
 - `Domain`: [DomainType](./literals.md#domaintype)
 - `EndpointDetails`:
   [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
@@ -407,6 +410,16 @@ Required fields:
 Optional fields:
 
 - `SecondaryGids`: `List`\[`int`\]
+
+## ProtocolDetailsTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ProtocolDetailsTypeDef
+```
+
+Optional fields:
+
+- `PassiveIp`: `str`
 
 ## SshPublicKeyTypeDef
 

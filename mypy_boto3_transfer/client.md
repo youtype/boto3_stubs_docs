@@ -484,6 +484,8 @@ Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 - `Certificate`: `str`
+- `ProtocolDetails`:
+  [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
 - `EndpointDetails`:
   [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
 - `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)

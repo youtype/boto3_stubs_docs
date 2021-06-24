@@ -208,8 +208,6 @@ Optional fields:
 - `overrideArtifactName`: `bool`
 - `encryptionDisabled`: `bool`
 - `artifactIdentifier`: `str`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## BuildBatchFilterTypeDef
 
@@ -904,8 +902,6 @@ Optional fields:
 - `overrideArtifactName`: `bool`
 - `encryptionDisabled`: `bool`
 - `artifactIdentifier`: `str`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## ProjectBadgeTypeDef
 
@@ -1238,8 +1234,6 @@ Optional fields:
 
 - `location`: `str`
 - `encryptionDisabled`: `bool`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
 ## S3ReportExportConfigTypeDef
 

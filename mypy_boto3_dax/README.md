@@ -79,6 +79,7 @@ DAXClient [exceptions](./client.md#exceptions)
 - ParameterGroupNotFoundFault
 - ParameterGroupQuotaExceededFault
 - ServiceLinkedRoleNotFoundFault
+- ServiceQuotaExceededException
 - SubnetGroupAlreadyExistsFault
 - SubnetGroupInUseFault
 - SubnetGroupNotFoundFault
@@ -118,6 +119,7 @@ from mypy_boto3_dax.literals import ChangeTypeType, ...
 ```
 
 - [ChangeTypeType](./literals.md#changetypetype)
+- [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
 - [DescribeClustersPaginatorName](./literals.md#describeclusterspaginatorname)
 - [DescribeDefaultParametersPaginatorName](./literals.md#describedefaultparameterspaginatorname)
 - [DescribeEventsPaginatorName](./literals.md#describeeventspaginatorname)

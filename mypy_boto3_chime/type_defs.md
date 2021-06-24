@@ -1924,6 +1924,7 @@ Optional fields:
 - `ScreenViewingUrl`: `str`
 - `SignalingUrl`: `str`
 - `TurnControlUrl`: `str`
+- `EventIngestionUrl`: `str`
 
 ## MeetingNotificationConfigurationTypeDef
 

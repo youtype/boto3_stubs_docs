@@ -71,6 +71,7 @@ type annotations stubs module
   - [AwsDynamoDbTableStreamSpecificationTypeDef](#awsdynamodbtablestreamspecificationtypedef)
   - [AwsEc2EipDetailsTypeDef](#awsec2eipdetailstypedef)
   - [AwsEc2InstanceDetailsTypeDef](#awsec2instancedetailstypedef)
+  - [AwsEc2InstanceNetworkInterfacesDetailsTypeDef](#awsec2instancenetworkinterfacesdetailstypedef)
   - [AwsEc2NetworkAclAssociationTypeDef](#awsec2networkaclassociationtypedef)
   - [AwsEc2NetworkAclDetailsTypeDef](#awsec2networkacldetailstypedef)
   - [AwsEc2NetworkAclEntryTypeDef](#awsec2networkaclentrytypedef)
@@ -89,6 +90,43 @@ type annotations stubs module
   - [AwsEc2VolumeAttachmentTypeDef](#awsec2volumeattachmenttypedef)
   - [AwsEc2VolumeDetailsTypeDef](#awsec2volumedetailstypedef)
   - [AwsEc2VpcDetailsTypeDef](#awsec2vpcdetailstypedef)
+  - [AwsEcsClusterClusterSettingsDetailsTypeDef](#awsecsclusterclustersettingsdetailstypedef)
+  - [AwsEcsClusterConfigurationDetailsTypeDef](#awsecsclusterconfigurationdetailstypedef)
+  - [AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef](#awsecsclusterconfigurationexecutecommandconfigurationdetailstypedef)
+  - [AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef](#awsecsclusterconfigurationexecutecommandconfigurationlogconfigurationdetailstypedef)
+  - [AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef](#awsecsclusterdefaultcapacityproviderstrategydetailstypedef)
+  - [AwsEcsClusterDetailsTypeDef](#awsecsclusterdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsdependsondetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsenvironmentdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsenvironmentfilesdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsextrahostsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsfirelensconfigurationdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionshealthcheckdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionslinuxparameterscapabilitiesdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionslinuxparametersdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionslinuxparametersdevicesdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionslinuxparameterstmpfsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionslogconfigurationdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionslogconfigurationsecretoptionsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsmountpointsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsportmappingsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsrepositorycredentialsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsresourcerequirementsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionssecretsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionssystemcontrolsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsulimitsdetailstypedef)
+  - [AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsvolumesfromdetailstypedef)
+  - [AwsEcsTaskDefinitionDetailsTypeDef](#awsecstaskdefinitiondetailstypedef)
+  - [AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef](#awsecstaskdefinitioninferenceacceleratorsdetailstypedef)
+  - [AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef](#awsecstaskdefinitionplacementconstraintsdetailstypedef)
+  - [AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef](#awsecstaskdefinitionproxyconfigurationdetailstypedef)
+  - [AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef](#awsecstaskdefinitionproxyconfigurationproxyconfigurationpropertiesdetailstypedef)
+  - [AwsEcsTaskDefinitionVolumesDetailsTypeDef](#awsecstaskdefinitionvolumesdetailstypedef)
+  - [AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef](#awsecstaskdefinitionvolumesdockervolumeconfigurationdetailstypedef)
+  - [AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef](#awsecstaskdefinitionvolumesefsvolumeconfigurationauthorizationconfigdetailstypedef)
+  - [AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef](#awsecstaskdefinitionvolumesefsvolumeconfigurationdetailstypedef)
+  - [AwsEcsTaskDefinitionVolumesHostDetailsTypeDef](#awsecstaskdefinitionvolumeshostdetailstypedef)
   - [AwsElasticBeanstalkEnvironmentDetailsTypeDef](#awselasticbeanstalkenvironmentdetailstypedef)
   - [AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](#awselasticbeanstalkenvironmentenvironmentlinktypedef)
   - [AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](#awselasticbeanstalkenvironmentoptionsettingtypedef)
@@ -96,7 +134,10 @@ type annotations stubs module
   - [AwsElasticsearchDomainDetailsTypeDef](#awselasticsearchdomaindetailstypedef)
   - [AwsElasticsearchDomainDomainEndpointOptionsTypeDef](#awselasticsearchdomaindomainendpointoptionstypedef)
   - [AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](#awselasticsearchdomainencryptionatrestoptionstypedef)
+  - [AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](#awselasticsearchdomainlogpublishingoptionslogconfigtypedef)
+  - [AwsElasticsearchDomainLogPublishingOptionsTypeDef](#awselasticsearchdomainlogpublishingoptionstypedef)
   - [AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef](#awselasticsearchdomainnodetonodeencryptionoptionstypedef)
+  - [AwsElasticsearchDomainServiceSoftwareOptionsTypeDef](#awselasticsearchdomainservicesoftwareoptionstypedef)
   - [AwsElasticsearchDomainVPCOptionsTypeDef](#awselasticsearchdomainvpcoptionstypedef)
   - [AwsElbAppCookieStickinessPolicyTypeDef](#awselbappcookiestickinesspolicytypedef)
   - [AwsElbLbCookieStickinessPolicyTypeDef](#awselblbcookiestickinesspolicytypedef)
@@ -176,6 +217,16 @@ type annotations stubs module
   - [AwsRedshiftClusterRestoreStatusTypeDef](#awsredshiftclusterrestorestatustypedef)
   - [AwsRedshiftClusterVpcSecurityGroupTypeDef](#awsredshiftclustervpcsecuritygrouptypedef)
   - [AwsS3AccountPublicAccessBlockDetailsTypeDef](#awss3accountpublicaccessblockdetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationdetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesabortincompletemultipartuploaddetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesdetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesfilterdetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatedetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandsdetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandstagdetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatetagdetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesnoncurrentversiontransitionsdetailstypedef)
+  - [AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulestransitionsdetailstypedef)
   - [AwsS3BucketDetailsTypeDef](#awss3bucketdetailstypedef)
   - [AwsS3BucketServerSideEncryptionByDefaultTypeDef](#awss3bucketserversideencryptionbydefaulttypedef)
   - [AwsS3BucketServerSideEncryptionConfigurationTypeDef](#awss3bucketserversideencryptionconfigurationtypedef)
@@ -593,6 +644,7 @@ from mypy_boto3_securityhub.type_defs import AwsApiGatewayV2StageDetailsTypeDef
 
 Optional fields:
 
+- `ClientCertificateId`: `str`
 - `CreatedDate`: `str`
 - `Description`: `str`
 - `DefaultRouteSettings`:
@@ -1232,6 +1284,18 @@ Optional fields:
 - `VpcId`: `str`
 - `SubnetId`: `str`
 - `LaunchedAt`: `str`
+- `NetworkInterfaces`:
+  `List`\[[AwsEc2InstanceNetworkInterfacesDetailsTypeDef](./type_defs.md#awsec2instancenetworkinterfacesdetailstypedef)\]
+
+## AwsEc2InstanceNetworkInterfacesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEc2InstanceNetworkInterfacesDetailsTypeDef
+```
+
+Optional fields:
+
+- `NetworkInterfaceId`: `str`
 
 ## AwsEc2NetworkAclAssociationTypeDef
 
@@ -1498,6 +1562,524 @@ Optional fields:
 - `DhcpOptionsId`: `str`
 - `State`: `str`
 
+## AwsEcsClusterClusterSettingsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterClusterSettingsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Value`: `str`
+
+## AwsEcsClusterConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `ExecuteCommandConfiguration`:
+  [AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationexecutecommandconfigurationdetailstypedef)
+
+## AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `KmsKeyId`: `str`
+- `LogConfiguration`:
+  [AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationexecutecommandconfigurationlogconfigurationdetailstypedef)
+- `Logging`: `str`
+
+## AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `CloudWatchEncryptionEnabled`: `bool`
+- `CloudWatchLogGroupName`: `str`
+- `S3BucketName`: `str`
+- `S3EncryptionEnabled`: `bool`
+- `S3KeyPrefix`: `str`
+
+## AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef
+```
+
+Optional fields:
+
+- `Base`: `int`
+- `CapacityProvider`: `str`
+- `Weight`: `int`
+
+## AwsEcsClusterDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsClusterDetailsTypeDef
+```
+
+Optional fields:
+
+- `CapacityProviders`: `List`\[`str`\]
+- `ClusterSettings`:
+  `List`\[[AwsEcsClusterClusterSettingsDetailsTypeDef](./type_defs.md#awsecsclusterclustersettingsdetailstypedef)\]
+- `Configuration`:
+  [AwsEcsClusterConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationdetailstypedef)
+- `DefaultCapacityProviderStrategy`:
+  `List`\[[AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsclusterdefaultcapacityproviderstrategydetailstypedef)\]
+
+## AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef
+```
+
+Optional fields:
+
+- `Condition`: `str`
+- `ContainerName`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Command`: `List`\[`str`\]
+- `Cpu`: `int`
+- `DependsOn`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdependsondetailstypedef)\]
+- `DisableNetworking`: `bool`
+- `DnsSearchDomains`: `List`\[`str`\]
+- `DnsServers`: `List`\[`str`\]
+- `DockerLabels`: `Dict`\[`str`, `str`\]
+- `DockerSecurityOptions`: `List`\[`str`\]
+- `EntryPoint`: `List`\[`str`\]
+- `Environment`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentdetailstypedef)\]
+- `EnvironmentFiles`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentfilesdetailstypedef)\]
+- `Essential`: `bool`
+- `ExtraHosts`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsextrahostsdetailstypedef)\]
+- `FirelensConfiguration`:
+  [AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsfirelensconfigurationdetailstypedef)
+- `HealthCheck`:
+  [AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionshealthcheckdetailstypedef)
+- `Hostname`: `str`
+- `Image`: `str`
+- `Interactive`: `bool`
+- `Links`: `List`\[`str`\]
+- `LinuxParameters`:
+  [AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdetailstypedef)
+- `LogConfiguration`:
+  [AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslogconfigurationdetailstypedef)
+- `Memory`: `int`
+- `MemoryReservation`: `int`
+- `MountPoints`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsmountpointsdetailstypedef)\]
+- `Name`: `str`
+- `PortMappings`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsportmappingsdetailstypedef)\]
+- `Privileged`: `bool`
+- `PseudoTerminal`: `bool`
+- `ReadonlyRootFilesystem`: `bool`
+- `RepositoryCredentials`:
+  [AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsrepositorycredentialsdetailstypedef)
+- `ResourceRequirements`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsresourcerequirementsdetailstypedef)\]
+- `Secrets`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssecretsdetailstypedef)\]
+- `StartTimeout`: `int`
+- `StopTimeout`: `int`
+- `SystemControls`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssystemcontrolsdetailstypedef)\]
+- `Ulimits`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsulimitsdetailstypedef)\]
+- `User`: `str`
+- `VolumesFrom`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsvolumesfromdetailstypedef)\]
+- `WorkingDirectory`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Value`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef
+```
+
+Optional fields:
+
+- `Type`: `str`
+- `Value`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Hostname`: `str`
+- `IpAddress`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `Options`: `Dict`\[`str`, `str`\]
+- `Type`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef
+```
+
+Optional fields:
+
+- `Command`: `List`\[`str`\]
+- `Interval`: `int`
+- `Retries`: `int`
+- `StartPeriod`: `int`
+- `Timeout`: `int`
+
+## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef
+```
+
+Optional fields:
+
+- `Add`: `List`\[`str`\]
+- `Drop`: `List`\[`str`\]
+
+## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef
+```
+
+Optional fields:
+
+- `Capabilities`:
+  [AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterscapabilitiesdetailstypedef)
+- `Devices`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdevicesdetailstypedef)\]
+- `InitProcessEnabled`: `bool`
+- `MaxSwap`: `int`
+- `SharedMemorySize`: `int`
+- `Swappiness`: `int`
+- `Tmpfs`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterstmpfsdetailstypedef)\]
+
+## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef
+```
+
+Optional fields:
+
+- `ContainerPath`: `str`
+- `HostPath`: `str`
+- `Permissions`: `List`\[`str`\]
+
+## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef
+```
+
+Optional fields:
+
+- `ContainerPath`: `str`
+- `MountOptions`: `List`\[`str`\]
+- `Size`: `int`
+
+## AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `LogDriver`: `str`
+- `Options`: `Dict`\[`str`, `str`\]
+- `SecretOptions`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslogconfigurationsecretoptionsdetailstypedef)\]
+
+## AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `ValueFrom`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef
+```
+
+Optional fields:
+
+- `ContainerPath`: `str`
+- `ReadOnly`: `bool`
+- `SourceVolume`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef
+```
+
+Optional fields:
+
+- `ContainerPort`: `int`
+- `HostPort`: `int`
+- `Protocol`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef
+```
+
+Optional fields:
+
+- `CredentialsParameter`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Type`: `str`
+- `Value`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `ValueFrom`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Namespace`: `str`
+- `Value`: `str`
+
+## AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef
+```
+
+Optional fields:
+
+- `HardLimit`: `int`
+- `Name`: `str`
+- `SoftLimit`: `int`
+
+## AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef
+```
+
+Optional fields:
+
+- `ReadOnly`: `bool`
+- `SourceContainer`: `str`
+
+## AwsEcsTaskDefinitionDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionDetailsTypeDef
+```
+
+Optional fields:
+
+- `ContainerDefinitions`:
+  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdetailstypedef)\]
+- `Cpu`: `str`
+- `ExecutionRoleArn`: `str`
+- `Family`: `str`
+- `InferenceAccelerators`:
+  `List`\[[AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioninferenceacceleratorsdetailstypedef)\]
+- `IpcMode`: `str`
+- `Memory`: `str`
+- `NetworkMode`: `str`
+- `PidMode`: `str`
+- `PlacementConstraints`:
+  `List`\[[AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef](./type_defs.md#awsecstaskdefinitionplacementconstraintsdetailstypedef)\]
+- `ProxyConfiguration`:
+  [AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationdetailstypedef)
+- `RequiresCompatibilities`: `List`\[`str`\]
+- `TaskRoleArn`: `str`
+- `Volumes`:
+  `List`\[[AwsEcsTaskDefinitionVolumesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdetailstypedef)\]
+
+## AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef
+```
+
+Optional fields:
+
+- `DeviceName`: `str`
+- `DeviceType`: `str`
+
+## AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Expression`: `str`
+- `Type`: `str`
+
+## AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `ContainerName`: `str`
+- `ProxyConfigurationProperties`:
+  `List`\[[AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationproxyconfigurationpropertiesdetailstypedef)\]
+- `Type`: `str`
+
+## AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Value`: `str`
+
+## AwsEcsTaskDefinitionVolumesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesDetailsTypeDef
+```
+
+Optional fields:
+
+- `DockerVolumeConfiguration`:
+  [AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdockervolumeconfigurationdetailstypedef)
+- `EfsVolumeConfiguration`:
+  [AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesefsvolumeconfigurationdetailstypedef)
+- `Host`:
+  [AwsEcsTaskDefinitionVolumesHostDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumeshostdetailstypedef)
+- `Name`: `str`
+
+## AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `Autoprovision`: `bool`
+- `Driver`: `str`
+- `DriverOpts`: `Dict`\[`str`, `str`\]
+- `Labels`: `Dict`\[`str`, `str`\]
+- `Scope`: `str`
+
+## AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `AccessPointId`: `str`
+- `Iam`: `str`
+
+## AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `AuthorizationConfig`:
+  [AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesefsvolumeconfigurationauthorizationconfigdetailstypedef)
+- `FilesystemId`: `str`
+- `RootDirectory`: `str`
+- `TransitEncryption`: `str`
+- `TransitEncryptionPort`: `int`
+
+## AwsEcsTaskDefinitionVolumesHostDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionVolumesHostDetailsTypeDef
+```
+
+Optional fields:
+
+- `SourcePath`: `str`
+
 ## AwsElasticBeanstalkEnvironmentDetailsTypeDef
 
 ```python
@@ -1580,8 +2162,12 @@ Optional fields:
 - `ElasticsearchVersion`: `str`
 - `EncryptionAtRestOptions`:
   [AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](./type_defs.md#awselasticsearchdomainencryptionatrestoptionstypedef)
+- `LogPublishingOptions`:
+  [AwsElasticsearchDomainLogPublishingOptionsTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionstypedef)
 - `NodeToNodeEncryptionOptions`:
   [AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef](./type_defs.md#awselasticsearchdomainnodetonodeencryptionoptionstypedef)
+- `ServiceSoftwareOptions`:
+  [AwsElasticsearchDomainServiceSoftwareOptionsTypeDef](./type_defs.md#awselasticsearchdomainservicesoftwareoptionstypedef)
 - `VPCOptions`:
   [AwsElasticsearchDomainVPCOptionsTypeDef](./type_defs.md#awselasticsearchdomainvpcoptionstypedef)
 
@@ -1607,6 +2193,30 @@ Optional fields:
 - `Enabled`: `bool`
 - `KmsKeyId`: `str`
 
+## AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef
+```
+
+Optional fields:
+
+- `CloudWatchLogsLogGroupArn`: `str`
+- `Enabled`: `bool`
+
+## AwsElasticsearchDomainLogPublishingOptionsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainLogPublishingOptionsTypeDef
+```
+
+Optional fields:
+
+- `IndexSlowLogs`:
+  [AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef)
+- `SearchSlowLogs`:
+  [AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef)
+
 ## AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef
 
 ```python
@@ -1616,6 +2226,22 @@ from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainNodeToNodeEnc
 Optional fields:
 
 - `Enabled`: `bool`
+
+## AwsElasticsearchDomainServiceSoftwareOptionsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainServiceSoftwareOptionsTypeDef
+```
+
+Optional fields:
+
+- `AutomatedUpdateDate`: `str`
+- `Cancellable`: `bool`
+- `CurrentVersion`: `str`
+- `Description`: `str`
+- `NewVersion`: `str`
+- `UpdateAvailable`: `bool`
+- `UpdateStatus`: `str`
 
 ## AwsElasticsearchDomainVPCOptionsTypeDef
 
@@ -2876,6 +3502,135 @@ Optional fields:
 - `IgnorePublicAcls`: `bool`
 - `RestrictPublicBuckets`: `bool`
 
+## AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `Rules`:
+  `List`\[[AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesdetailstypedef)\]
+
+## AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef
+```
+
+Optional fields:
+
+- `DaysAfterInitiation`: `int`
+
+## AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef
+```
+
+Optional fields:
+
+- `AbortIncompleteMultipartUpload`:
+  [AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesabortincompletemultipartuploaddetailstypedef)
+- `ExpirationDate`: `str`
+- `ExpirationInDays`: `int`
+- `ExpiredObjectDeleteMarker`: `bool`
+- `Filter`:
+  [AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterdetailstypedef)
+- `ID`: `str`
+- `NoncurrentVersionExpirationInDays`: `int`
+- `NoncurrentVersionTransitions`:
+  `List`\[[AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesnoncurrentversiontransitionsdetailstypedef)\]
+- `Prefix`: `str`
+- `Status`: `str`
+- `Transitions`:
+  `List`\[[AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulestransitionsdetailstypedef)\]
+
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef
+```
+
+Optional fields:
+
+- `Predicate`:
+  [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatedetailstypedef)
+
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetailsTypeDef
+```
+
+Optional fields:
+
+- `Operands`:
+  `List`\[[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandsdetailstypedef)\]
+- `Prefix`: `str`
+- `Tag`:
+  [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatetagdetailstypedef)
+- `Type`: `str`
+
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Prefix`: `str`
+- `Tag`:
+  [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandstagdetailstypedef)
+- `Type`: `str`
+
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsTagDetailsTypeDef
+```
+
+Optional fields:
+
+- `Key`: `str`
+- `Value`: `str`
+
+## AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef
+```
+
+Optional fields:
+
+- `Key`: `str`
+- `Value`: `str`
+
+## AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Days`: `int`
+- `StorageClass`: `str`
+
+## AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Date`: `str`
+- `Days`: `int`
+- `StorageClass`: `str`
+
 ## AwsS3BucketDetailsTypeDef
 
 ```python
@@ -2889,6 +3644,8 @@ Optional fields:
 - `CreatedAt`: `str`
 - `ServerSideEncryptionConfiguration`:
   [AwsS3BucketServerSideEncryptionConfigurationTypeDef](./type_defs.md#awss3bucketserversideencryptionconfigurationtypedef)
+- `BucketLifecycleConfiguration`:
+  [AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationdetailstypedef)
 - `PublicAccessBlockConfiguration`:
   [AwsS3AccountPublicAccessBlockDetailsTypeDef](./type_defs.md#awss3accountpublicaccessblockdetailstypedef)
 
@@ -4537,6 +5294,10 @@ Optional fields:
   [AwsRdsDbClusterSnapshotDetailsTypeDef](./type_defs.md#awsrdsdbclustersnapshotdetailstypedef)
 - `AwsRdsDbCluster`:
   [AwsRdsDbClusterDetailsTypeDef](./type_defs.md#awsrdsdbclusterdetailstypedef)
+- `AwsEcsCluster`:
+  [AwsEcsClusterDetailsTypeDef](./type_defs.md#awsecsclusterdetailstypedef)
+- `AwsEcsTaskDefinition`:
+  [AwsEcsTaskDefinitionDetailsTypeDef](./type_defs.md#awsecstaskdefinitiondetailstypedef)
 - `Container`:
   [ContainerDetailsTypeDef](./type_defs.md#containerdetailstypedef)
 - `Other`: `Dict`\[`str`, `str`\]

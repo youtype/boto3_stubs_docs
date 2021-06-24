@@ -527,6 +527,8 @@ from mypy_boto3_kendra.literals import SharePointVersionType
 
 Values:
 
+- `SHAREPOINT_2013`
+- `SHAREPOINT_2016`
 - `SHAREPOINT_ONLINE`
 
 ## SortOrderType

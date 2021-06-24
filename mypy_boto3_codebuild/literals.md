@@ -12,7 +12,6 @@ type annotations stubs module
   - [ArtifactPackagingType](#artifactpackagingtype)
   - [ArtifactsTypeType](#artifactstypetype)
   - [AuthTypeType](#authtypetype)
-  - [BucketOwnerAccessType](#bucketowneraccesstype)
   - [BuildBatchPhaseTypeType](#buildbatchphasetypetype)
   - [BuildPhaseTypeType](#buildphasetypetype)
   - [CacheModeType](#cachemodetype)
@@ -102,18 +101,6 @@ Values:
 - `BASIC_AUTH`
 - `OAUTH`
 - `PERSONAL_ACCESS_TOKEN`
-
-## BucketOwnerAccessType
-
-```python
-from mypy_boto3_codebuild.literals import BucketOwnerAccessType
-```
-
-Values:
-
-- `FULL`
-- `NONE`
-- `READ_ONLY`
 
 ## BuildBatchPhaseTypeType
 

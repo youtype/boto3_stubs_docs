@@ -472,9 +472,10 @@ Boto3 documentation:
 
 Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `ARN`: `str`
 
 Returns
 [GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
