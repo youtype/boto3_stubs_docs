@@ -16,6 +16,7 @@ pip install mypy-boto3-proton
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
+  - [Waiters](#waiters)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
@@ -61,6 +62,7 @@ from mypy_boto3_proton.client import ProtonClient
 - [get_service_instance](./client.md#get_service_instance)
 - [get_service_template](./client.md#get_service_template)
 - [get_service_template_version](./client.md#get_service_template_version)
+- [get_waiter](./client.md#get_waiter)
 - [list_environment_account_connections](./client.md#list_environment_account_connections)
 - [list_environment_template_versions](./client.md#list_environment_template_versions)
 - [list_environment_templates](./client.md#list_environment_templates)
@@ -118,6 +120,26 @@ from mypy_boto3_proton.paginators import ListEnvironmentAccountConnectionsPagina
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
+## Waiters
+
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("proton").get_waiter("...")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_proton.waiters import EnvironmentDeployedWaiter, ...
+```
+
+- [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
+- [EnvironmentTemplateVersionRegisteredWaiter](./waiters.md#environmenttemplateversionregisteredwaiter)
+- [ServiceCreatedWaiter](./waiters.md#servicecreatedwaiter)
+- [ServiceDeletedWaiter](./waiters.md#servicedeletedwaiter)
+- [ServiceInstanceDeployedWaiter](./waiters.md#serviceinstancedeployedwaiter)
+- [ServicePipelineDeployedWaiter](./waiters.md#servicepipelinedeployedwaiter)
+- [ServiceTemplateVersionRegisteredWaiter](./waiters.md#servicetemplateversionregisteredwaiter)
+- [ServiceUpdatedWaiter](./waiters.md#serviceupdatedwaiter)
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -132,6 +154,8 @@ from mypy_boto3_proton.literals import DeploymentStatusType, ...
 - [DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype)
 - [EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype)
 - [EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)
+- [EnvironmentDeployedWaiterName](./literals.md#environmentdeployedwaitername)
+- [EnvironmentTemplateVersionRegisteredWaiterName](./literals.md#environmenttemplateversionregisteredwaitername)
 - [ListEnvironmentAccountConnectionsPaginatorName](./literals.md#listenvironmentaccountconnectionspaginatorname)
 - [ListEnvironmentTemplateVersionsPaginatorName](./literals.md#listenvironmenttemplateversionspaginatorname)
 - [ListEnvironmentTemplatesPaginatorName](./literals.md#listenvironmenttemplatespaginatorname)
@@ -142,7 +166,13 @@ from mypy_boto3_proton.literals import DeploymentStatusType, ...
 - [ListServicesPaginatorName](./literals.md#listservicespaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
 - [ProvisioningType](./literals.md#provisioningtype)
+- [ServiceCreatedWaiterName](./literals.md#servicecreatedwaitername)
+- [ServiceDeletedWaiterName](./literals.md#servicedeletedwaitername)
+- [ServiceInstanceDeployedWaiterName](./literals.md#serviceinstancedeployedwaitername)
+- [ServicePipelineDeployedWaiterName](./literals.md#servicepipelinedeployedwaitername)
 - [ServiceStatusType](./literals.md#servicestatustype)
+- [ServiceTemplateVersionRegisteredWaiterName](./literals.md#servicetemplateversionregisteredwaitername)
+- [ServiceUpdatedWaiterName](./literals.md#serviceupdatedwaitername)
 - [TemplateVersionStatusType](./literals.md#templateversionstatustype)
 
 ## Typed dictionaries
@@ -229,3 +259,4 @@ from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionOutput
 - [UpdateServicePipelineOutputTypeDef](./type_defs.md#updateservicepipelineoutputtypedef)
 - [UpdateServiceTemplateOutputTypeDef](./type_defs.md#updateservicetemplateoutputtypedef)
 - [UpdateServiceTemplateVersionOutputTypeDef](./type_defs.md#updateservicetemplateversionoutputtypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

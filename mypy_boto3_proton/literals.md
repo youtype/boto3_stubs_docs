@@ -12,6 +12,8 @@ type annotations stubs module
   - [DeploymentUpdateTypeType](#deploymentupdatetypetype)
   - [EnvironmentAccountConnectionRequesterAccountTypeType](#environmentaccountconnectionrequesteraccounttypetype)
   - [EnvironmentAccountConnectionStatusType](#environmentaccountconnectionstatustype)
+  - [EnvironmentDeployedWaiterName](#environmentdeployedwaitername)
+  - [EnvironmentTemplateVersionRegisteredWaiterName](#environmenttemplateversionregisteredwaitername)
   - [ListEnvironmentAccountConnectionsPaginatorName](#listenvironmentaccountconnectionspaginatorname)
   - [ListEnvironmentTemplateVersionsPaginatorName](#listenvironmenttemplateversionspaginatorname)
   - [ListEnvironmentTemplatesPaginatorName](#listenvironmenttemplatespaginatorname)
@@ -22,7 +24,13 @@ type annotations stubs module
   - [ListServicesPaginatorName](#listservicespaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [ProvisioningType](#provisioningtype)
+  - [ServiceCreatedWaiterName](#servicecreatedwaitername)
+  - [ServiceDeletedWaiterName](#servicedeletedwaitername)
+  - [ServiceInstanceDeployedWaiterName](#serviceinstancedeployedwaitername)
+  - [ServicePipelineDeployedWaiterName](#servicepipelinedeployedwaitername)
   - [ServiceStatusType](#servicestatustype)
+  - [ServiceTemplateVersionRegisteredWaiterName](#servicetemplateversionregisteredwaitername)
+  - [ServiceUpdatedWaiterName](#serviceupdatedwaitername)
   - [TemplateVersionStatusType](#templateversionstatustype)
 
 ## DeploymentStatusType
@@ -77,6 +85,26 @@ Values:
 - `CONNECTED`
 - `PENDING`
 - `REJECTED`
+
+## EnvironmentDeployedWaiterName
+
+```python
+from mypy_boto3_proton.literals import EnvironmentDeployedWaiterName
+```
+
+Values:
+
+- `environment_deployed`
+
+## EnvironmentTemplateVersionRegisteredWaiterName
+
+```python
+from mypy_boto3_proton.literals import EnvironmentTemplateVersionRegisteredWaiterName
+```
+
+Values:
+
+- `environment_template_version_registered`
 
 ## ListEnvironmentAccountConnectionsPaginatorName
 
@@ -178,6 +206,46 @@ Values:
 
 - `CUSTOMER_MANAGED`
 
+## ServiceCreatedWaiterName
+
+```python
+from mypy_boto3_proton.literals import ServiceCreatedWaiterName
+```
+
+Values:
+
+- `service_created`
+
+## ServiceDeletedWaiterName
+
+```python
+from mypy_boto3_proton.literals import ServiceDeletedWaiterName
+```
+
+Values:
+
+- `service_deleted`
+
+## ServiceInstanceDeployedWaiterName
+
+```python
+from mypy_boto3_proton.literals import ServiceInstanceDeployedWaiterName
+```
+
+Values:
+
+- `service_instance_deployed`
+
+## ServicePipelineDeployedWaiterName
+
+```python
+from mypy_boto3_proton.literals import ServicePipelineDeployedWaiterName
+```
+
+Values:
+
+- `service_pipeline_deployed`
+
 ## ServiceStatusType
 
 ```python
@@ -200,6 +268,26 @@ Values:
 - `UPDATE_FAILED_CLEANUP_FAILED`
 - `UPDATE_FAILED_CLEANUP_IN_PROGRESS`
 - `UPDATE_IN_PROGRESS`
+
+## ServiceTemplateVersionRegisteredWaiterName
+
+```python
+from mypy_boto3_proton.literals import ServiceTemplateVersionRegisteredWaiterName
+```
+
+Values:
+
+- `service_template_version_registered`
+
+## ServiceUpdatedWaiterName
+
+```python
+from mypy_boto3_proton.literals import ServiceUpdatedWaiterName
+```
+
+Values:
+
+- `service_updated`
 
 ## TemplateVersionStatusType
 

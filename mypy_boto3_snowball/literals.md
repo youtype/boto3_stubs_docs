@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 Snowball module](#literals-for-boto3-snowball-module)
   - [ClusterStateType](#clusterstatetype)
   - [DescribeAddressesPaginatorName](#describeaddressespaginatorname)
+  - [DeviceServiceNameType](#deviceservicenametype)
   - [JobStateType](#jobstatetype)
   - [JobTypeType](#jobtypetype)
   - [ListClusterJobsPaginatorName](#listclusterjobspaginatorname)
@@ -17,11 +18,14 @@ type annotations stubs module
   - [ListCompatibleImagesPaginatorName](#listcompatibleimagespaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [LongTermPricingTypeType](#longtermpricingtypetype)
+  - [RemoteManagementType](#remotemanagementtype)
   - [ShipmentStateType](#shipmentstatetype)
   - [ShippingLabelStatusType](#shippinglabelstatustype)
   - [ShippingOptionType](#shippingoptiontype)
   - [SnowballCapacityType](#snowballcapacitytype)
   - [SnowballTypeType](#snowballtypetype)
+  - [StorageUnitType](#storageunittype)
+  - [TransferOptionType](#transferoptiontype)
 
 ## ClusterStateType
 
@@ -46,6 +50,17 @@ from mypy_boto3_snowball.literals import DescribeAddressesPaginatorName
 Values:
 
 - `describe_addresses`
+
+## DeviceServiceNameType
+
+```python
+from mypy_boto3_snowball.literals import DeviceServiceNameType
+```
+
+Values:
+
+- `NFS_ON_DEVICE_SERVICE`
+- `S3_ON_DEVICE_SERVICE`
 
 ## JobStateType
 
@@ -132,6 +147,17 @@ Values:
 - `OneYear`
 - `ThreeYear`
 
+## RemoteManagementType
+
+```python
+from mypy_boto3_snowball.literals import RemoteManagementType
+```
+
+Values:
+
+- `INSTALLED_AUTOSTART`
+- `INSTALLED_ONLY`
+
 ## ShipmentStateType
 
 ```python
@@ -201,3 +227,25 @@ Values:
 - `SNC1_HDD`
 - `SNC1_SSD`
 - `STANDARD`
+
+## StorageUnitType
+
+```python
+from mypy_boto3_snowball.literals import StorageUnitType
+```
+
+Values:
+
+- `TB`
+
+## TransferOptionType
+
+```python
+from mypy_boto3_snowball.literals import TransferOptionType
+```
+
+Values:
+
+- `EXPORT`
+- `IMPORT`
+- `LOCAL_USE`

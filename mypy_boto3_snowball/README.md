@@ -107,6 +107,7 @@ from mypy_boto3_snowball.literals import ClusterStateType, ...
 
 - [ClusterStateType](./literals.md#clusterstatetype)
 - [DescribeAddressesPaginatorName](./literals.md#describeaddressespaginatorname)
+- [DeviceServiceNameType](./literals.md#deviceservicenametype)
 - [JobStateType](./literals.md#jobstatetype)
 - [JobTypeType](./literals.md#jobtypetype)
 - [ListClusterJobsPaginatorName](./literals.md#listclusterjobspaginatorname)
@@ -114,11 +115,14 @@ from mypy_boto3_snowball.literals import ClusterStateType, ...
 - [ListCompatibleImagesPaginatorName](./literals.md#listcompatibleimagespaginatorname)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
 - [LongTermPricingTypeType](./literals.md#longtermpricingtypetype)
+- [RemoteManagementType](./literals.md#remotemanagementtype)
 - [ShipmentStateType](./literals.md#shipmentstatetype)
 - [ShippingLabelStatusType](./literals.md#shippinglabelstatustype)
 - [ShippingOptionType](./literals.md#shippingoptiontype)
 - [SnowballCapacityType](./literals.md#snowballcapacitytype)
 - [SnowballTypeType](./literals.md#snowballtypetype)
+- [StorageUnitType](./literals.md#storageunittype)
+- [TransferOptionType](./literals.md#transferoptiontype)
 
 ## Typed dictionaries
 
@@ -166,11 +170,14 @@ from mypy_boto3_snowball.type_defs import AddressTypeDef, ...
 - [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)
 - [ListLongTermPricingResultTypeDef](./type_defs.md#listlongtermpricingresulttypedef)
 - [LongTermPricingListEntryTypeDef](./type_defs.md#longtermpricinglistentrytypedef)
+- [NFSOnDeviceServiceConfigurationTypeDef](./type_defs.md#nfsondeviceserviceconfigurationtypedef)
 - [NotificationTypeDef](./type_defs.md#notificationtypedef)
+- [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)
 - [ShipmentTypeDef](./type_defs.md#shipmenttypedef)
 - [ShippingDetailsTypeDef](./type_defs.md#shippingdetailstypedef)
 - [SnowconeDeviceConfigurationTypeDef](./type_defs.md#snowconedeviceconfigurationtypedef)
+- [TargetOnDeviceServiceTypeDef](./type_defs.md#targetondeviceservicetypedef)
 - [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
 - [WirelessConnectionTypeDef](./type_defs.md#wirelessconnectiontypedef)

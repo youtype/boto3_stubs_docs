@@ -63,6 +63,7 @@ type annotations stubs module
     - [update_service_template](#update_service_template)
     - [update_service_template_version](#update_service_template_version)
     - [get_paginator](#get_paginator)
+    - [get_waiter](#get_waiter)
 
 ## ProtonClient
 
@@ -984,3 +985,24 @@ overloads.
   [ListServicesPaginator](./paginators.md#listservicespaginator)
 - `client.get_paginator("list_tags_for_resource")` ->
   [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+### get_waiter
+
+Type annotations for `boto3.client("proton").get_waiter` method with overloads.
+
+- `client.get_waiter("environment_deployed")` ->
+  [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
+- `client.get_waiter("environment_template_version_registered")` ->
+  [EnvironmentTemplateVersionRegisteredWaiter](./waiters.md#environmenttemplateversionregisteredwaiter)
+- `client.get_waiter("service_created")` ->
+  [ServiceCreatedWaiter](./waiters.md#servicecreatedwaiter)
+- `client.get_waiter("service_deleted")` ->
+  [ServiceDeletedWaiter](./waiters.md#servicedeletedwaiter)
+- `client.get_waiter("service_instance_deployed")` ->
+  [ServiceInstanceDeployedWaiter](./waiters.md#serviceinstancedeployedwaiter)
+- `client.get_waiter("service_pipeline_deployed")` ->
+  [ServicePipelineDeployedWaiter](./waiters.md#servicepipelinedeployedwaiter)
+- `client.get_waiter("service_template_version_registered")` ->
+  [ServiceTemplateVersionRegisteredWaiter](./waiters.md#servicetemplateversionregisteredwaiter)
+- `client.get_waiter("service_updated")` ->
+  [ServiceUpdatedWaiter](./waiters.md#serviceupdatedwaiter)

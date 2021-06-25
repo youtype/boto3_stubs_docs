@@ -39,6 +39,7 @@ type annotations stubs module
   - [GetBackendJobResponseTypeDef](#getbackendjobresponsetypedef)
   - [GetBackendResponseTypeDef](#getbackendresponsetypedef)
   - [GetTokenResponseTypeDef](#gettokenresponsetypedef)
+  - [ImportBackendAuthResponseTypeDef](#importbackendauthresponsetypedef)
   - [ListBackendJobsResponseTypeDef](#listbackendjobsresponsetypedef)
   - [LoginAuthConfigReqObjTypeDef](#loginauthconfigreqobjtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -518,6 +519,21 @@ Optional fields:
 - `ChallengeCode`: `str`
 - `SessionId`: `str`
 - `Ttl`: `str`
+
+## ImportBackendAuthResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import ImportBackendAuthResponseTypeDef
+```
+
+Optional fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `Error`: `str`
+- `JobId`: `str`
+- `Operation`: `str`
+- `Status`: `str`
 
 ## ListBackendJobsResponseTypeDef
 

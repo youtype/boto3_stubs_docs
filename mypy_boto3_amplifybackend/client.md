@@ -30,6 +30,7 @@ type annotations stubs module
     - [get_backend_auth](#get_backend_auth)
     - [get_backend_job](#get_backend_job)
     - [get_token](#get_token)
+    - [import_backend_auth](#import_backend_auth)
     - [list_backend_jobs](#list_backend_jobs)
     - [remove_all_backends](#remove_all_backends)
     - [remove_backend_config](#remove_backend_config)
@@ -388,6 +389,26 @@ Keyword-only arguments:
 - `SessionId`: `str` *(required)*
 
 Returns [GetTokenResponseTypeDef](./type_defs.md#gettokenresponsetypedef).
+
+### import_backend_auth
+
+Type annotations for `boto3.client("amplifybackend").import_backend_auth`
+method.
+
+Boto3 documentation:
+[AmplifyBackend.Client.import_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.import_backend_auth)
+
+Keyword-only arguments:
+
+- `AppId`: `str` *(required)*
+- `BackendEnvironmentName`: `str` *(required)*
+- `NativeClientId`: `str` *(required)*
+- `UserPoolId`: `str` *(required)*
+- `WebClientId`: `str` *(required)*
+- `IdentityPoolId`: `str`
+
+Returns
+[ImportBackendAuthResponseTypeDef](./type_defs.md#importbackendauthresponsetypedef).
 
 ### list_backend_jobs
 

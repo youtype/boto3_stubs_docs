@@ -156,11 +156,15 @@ Keyword-only arguments:
   *(required)*
 - `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
   *(required)*
+- `OnDeviceServiceConfiguration`:
+  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
 - `Description`: `str`
 - `KmsKeyARN`: `str`
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `ForwardingAddressId`: `str`
 - `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
+- `RemoteManagement`:
+  [RemoteManagementType](./literals.md#remotemanagementtype)
 
 Returns
 [CreateClusterResultTypeDef](./type_defs.md#createclusterresulttypedef).
@@ -176,6 +180,8 @@ Keyword-only arguments:
 
 - `JobType`: [JobTypeType](./literals.md#jobtypetype)
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
+- `OnDeviceServiceConfiguration`:
+  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
 - `Description`: `str`
 - `AddressId`: `str`
 - `KmsKeyARN`: `str`
@@ -190,6 +196,8 @@ Keyword-only arguments:
 - `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
 - `DeviceConfiguration`:
   [DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef)
+- `RemoteManagement`:
+  [RemoteManagementType](./literals.md#remotemanagementtype)
 - `LongTermPricingId`: `str`
 
 Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
@@ -454,6 +462,8 @@ Keyword-only arguments:
 - `RoleARN`: `str`
 - `Description`: `str`
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
+- `OnDeviceServiceConfiguration`:
+  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
 - `AddressId`: `str`
 - `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
@@ -474,6 +484,8 @@ Keyword-only arguments:
 - `RoleARN`: `str`
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
+- `OnDeviceServiceConfiguration`:
+  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
 - `AddressId`: `str`
 - `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 - `Description`: `str`

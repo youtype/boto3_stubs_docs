@@ -81,6 +81,7 @@ type annotations stubs module
   - [UpdateServicePipelineOutputTypeDef](#updateservicepipelineoutputtypedef)
   - [UpdateServiceTemplateOutputTypeDef](#updateservicetemplateoutputtypedef)
   - [UpdateServiceTemplateVersionOutputTypeDef](#updateservicetemplateversionoutputtypedef)
+  - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AcceptEnvironmentAccountConnectionOutputTypeDef
 
@@ -1188,3 +1189,14 @@ Required fields:
   [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## WaiterConfigTypeDef
+
+```python
+from mypy_boto3_proton.type_defs import WaiterConfigTypeDef
+```
+
+Optional fields:
+
+- `Delay`: `int`
+- `MaxAttempts`: `int`

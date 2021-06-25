@@ -43,12 +43,15 @@ type annotations stubs module
   - [ListJobsResultTypeDef](#listjobsresulttypedef)
   - [ListLongTermPricingResultTypeDef](#listlongtermpricingresulttypedef)
   - [LongTermPricingListEntryTypeDef](#longtermpricinglistentrytypedef)
+  - [NFSOnDeviceServiceConfigurationTypeDef](#nfsondeviceserviceconfigurationtypedef)
   - [NotificationTypeDef](#notificationtypedef)
+  - [OnDeviceServiceConfigurationTypeDef](#ondeviceserviceconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [S3ResourceTypeDef](#s3resourcetypedef)
   - [ShipmentTypeDef](#shipmenttypedef)
   - [ShippingDetailsTypeDef](#shippingdetailstypedef)
   - [SnowconeDeviceConfigurationTypeDef](#snowconedeviceconfigurationtypedef)
+  - [TargetOnDeviceServiceTypeDef](#targetondeviceservicetypedef)
   - [TaxDocumentsTypeDef](#taxdocumentstypedef)
   - [WirelessConnectionTypeDef](#wirelessconnectiontypedef)
 
@@ -110,6 +113,8 @@ Optional fields:
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `ForwardingAddressId`: `str`
 - `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
+- `OnDeviceServiceConfiguration`:
+  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
 
 ## CompatibleImageTypeDef
 
@@ -385,7 +390,11 @@ Optional fields:
 - `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
 - `DeviceConfiguration`:
   [DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef)
+- `RemoteManagement`:
+  [RemoteManagementType](./literals.md#remotemanagementtype)
 - `LongTermPricingId`: `str`
+- `OnDeviceServiceConfiguration`:
+  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
 
 ## JobResourceTypeDef
 
@@ -505,6 +514,18 @@ Optional fields:
 - `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 - `JobIds`: `List`\[`str`\]
 
+## NFSOnDeviceServiceConfigurationTypeDef
+
+```python
+from mypy_boto3_snowball.type_defs import NFSOnDeviceServiceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `StorageLimit`: `int`
+- `StorageUnit`: `Literal['TB']` (see
+  [StorageUnitType](./literals.md#storageunittype))
+
 ## NotificationTypeDef
 
 ```python
@@ -516,6 +537,17 @@ Optional fields:
 - `SnsTopicARN`: `str`
 - `JobStatesToNotify`: `List`\[[JobStateType](./literals.md#jobstatetype)\]
 - `NotifyAll`: `bool`
+
+## OnDeviceServiceConfigurationTypeDef
+
+```python
+from mypy_boto3_snowball.type_defs import OnDeviceServiceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `NFSOnDeviceService`:
+  [NFSOnDeviceServiceConfigurationTypeDef](./type_defs.md#nfsondeviceserviceconfigurationtypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -539,6 +571,8 @@ Optional fields:
 
 - `BucketArn`: `str`
 - `KeyRange`: [KeyRangeTypeDef](./type_defs.md#keyrangetypedef)
+- `TargetOnDeviceServices`:
+  `List`\[[TargetOnDeviceServiceTypeDef](./type_defs.md#targetondeviceservicetypedef)\]
 
 ## ShipmentTypeDef
 
@@ -573,6 +607,17 @@ Optional fields:
 
 - `WirelessConnection`:
   [WirelessConnectionTypeDef](./type_defs.md#wirelessconnectiontypedef)
+
+## TargetOnDeviceServiceTypeDef
+
+```python
+from mypy_boto3_snowball.type_defs import TargetOnDeviceServiceTypeDef
+```
+
+Optional fields:
+
+- `ServiceName`: [DeviceServiceNameType](./literals.md#deviceservicenametype)
+- `TransferOption`: [TransferOptionType](./literals.md#transferoptiontype)
 
 ## TaxDocumentsTypeDef
 
